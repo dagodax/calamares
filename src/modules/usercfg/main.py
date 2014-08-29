@@ -25,6 +25,7 @@ import libcalamares
 
 def run():
     """ Create Distribution specific settings for users """
+    install_path = libcalamares.globalstorage.value( "rootMountPoint" )
     user = libcalamares.globalstorage.value( "username" )
 
     print('create common dirs')
@@ -103,6 +104,10 @@ def run():
     #             line = 'CursorTheme=breeze\n'
     #     sddm_conf.write(line)
     #sddm_conf.close()
+    
+    # fix SUID to capable permissions on iputils
+    libcalamares.utils.chroot_call(['setcap', 'cap_net_raw=ep', '/usr/bin/ping'])
+    libcalamares.utils.chroot_call(['setcap', 'cap_net_raw=ep', '/usr/bin/ping6'])
   
     print('configure users settings done')
     
