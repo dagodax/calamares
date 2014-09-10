@@ -33,11 +33,6 @@ def detect_firmware_type():
     libcalamares.globalstorage.insert("firmwareType", fw_type)
     libcalamares.utils.debug("Firmware type: {!s}".format(fw_type))
 
-def run():
-    detect_firmware_type()
-    return None
-
-
 def install_grub(boot_loader, fw_type):
     if fw_type == 'efi' then:
         efi_directory = "/boot/efi"
@@ -51,6 +46,7 @@ def install_grub(boot_loader, fw_type):
     check_chroot_call(["grub-mkconfig", "-o", "/boot/grub/grub.cfg"])
 
 def run():
+    detect_firmware_type()
     boot_loader = libcalamares.globalstorage.value("bootLoader")
     fw_type = libcalamares.globalstorage.value("firmwareType")
     install_grub(boot_loader, fw_type)

@@ -114,6 +114,7 @@ def run():
     hostname_path = os.path.join(install_path, "etc/hostname")
     with open(hostname_path, "w") as hostname_file:
         hostname_file.write(hostname)
+    hostname_file.close()
   
     print('configure users settings done')
     
