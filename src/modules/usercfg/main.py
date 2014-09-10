@@ -108,6 +108,12 @@ def run():
     # fix SUID to capable permissions on iputils
     libcalamares.utils.chroot_call(['setcap', 'cap_net_raw=ep', '/usr/bin/ping'])
     libcalamares.utils.chroot_call(['setcap', 'cap_net_raw=ep', '/usr/bin/ping6'])
+    
+    # set hostname static, until upstream creates the var
+    hostname = 'kaos'
+    hostname_path = os.path.join(install_path, "etc/hostname")
+    with open(hostname_path, "w") as hostname_file:
+        hostname_file.write(hostname)
   
     print('configure users settings done')
     
