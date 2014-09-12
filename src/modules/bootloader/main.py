@@ -20,6 +20,7 @@
 
 import libcalamares
 import os
+import shutil
 
 from libcalamares.utils import check_chroot_call
 
@@ -34,20 +35,21 @@ def detect_firmware_type():
     libcalamares.utils.debug("Firmware type: {!s}".format(fw_type))
 
 def install_grub(boot_loader, fw_type):
-    if fw_type == 'efi' then:
-        efi_directory = "/boot"
+    if fw_type == 'efi':
+        efi_directory = "/boot/efi"
         #distribution_name = "DistributionName"
         #check_chroot_call(["blkid -s", "PARTUUID -o value", install_path])
-        check_chroot_call(["gummiboot", "--path=/boot", "install"])
+        check_chroot_call(["gummiboot", "--path=/boot/efi", "install"])
+        shutil.copy2('/usr/lib/gummiboot/loader/entries/KaOS.conf', '%s/boot/efi/loader/entries/KaOS.conf' % (install_path))
     else:
         install_path = boot_loader["installPath"]
         check_chroot_call(["grub-install", install_path])
-
-    check_chroot_call(["grub-mkconfig", "-o", "/boot/grub/grub.cfg"])
+        check_chroot_call(["grub-mkconfig", "-o", "/boot/grub/grub.cfg"])
 
 def run():
     detect_firmware_type()
     boot_loader = libcalamares.globalstorage.value("bootLoader")
     fw_type = libcalamares.globalstorage.value("firmwareType")
+    install_path = libcalamares.globalstorage.value( "rootMountPoint" )
     install_grub(boot_loader, fw_type)
     return None

@@ -68,7 +68,7 @@ def run():
     ]
   
     for f,  d in distro_settings:
-        shutil.copy2('/etc/skel/%s' % f,  '%s/home/%s/%s%s' % (install_path,  user,  d,  f))
+        shutil.copy2('/etc/skel/%s' % f, '%s/home/%s/%s%s' % (install_path,  user,  d,  f))
       
     libcalamares.utils.chroot_call(['chown', '-R', '%s:users' % user, "/home/%s" % user])
   
