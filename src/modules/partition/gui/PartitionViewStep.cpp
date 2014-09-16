@@ -187,16 +187,23 @@ PartitionViewStep::isNextEnabled() const
         return m_choicePage->isNextEnabled();
 
     if ( m_erasePage && m_erasePage == m_widget->currentWidget() )
-        return m_erasePage->isNextEnabled(); //FIXME: also check for mount point
+    {
+        return m_erasePage->isNextEnabled() &&
+               m_core->hasRootMountPoint();
+    }
 
-    return m_core->hasRootMountPoint();
+    if ( m_manualPartitionPage && m_manualPartitionPage == m_widget->currentWidget() )
+        return m_core->hasRootMountPoint();
+
+    return false;
 }
 
 
 bool
 PartitionViewStep::isAtBeginning() const
 {
-    if ( m_widget->currentWidget() == m_manualPartitionPage )
+    if ( m_widget->currentWidget() == m_manualPartitionPage ||
+         m_widget->currentWidget() == m_erasePage )
         return false;
     return true;
 }
