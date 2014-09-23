@@ -36,11 +36,12 @@ def detect_firmware_type():
 
 def install_grub(boot_loader, fw_type):
     if fw_type == 'efi':
-        efi_directory = "/boot/efi"
+        install_path = boot_loader["installPath"]
+        #efi_directory = "/boot/efi"
         #distribution_name = "DistributionName"
         #check_chroot_call(["blkid -s", "PARTUUID -o value", install_path])
-        #check_chroot_call(["gummiboot", "--path=/boot/efi", "install"])
-        shutil.copy2('/usr/lib/gummiboot/loader/entries/KaOS.conf', '%s/boot/efi/loader/entries/KaOS.conf' % (install_path))
+        check_chroot_call(["gummiboot", "--path=/boot", "install"])
+        shutil.copytree('/usr/lib/gummiboot/loader', '%s/boot/loader' % (install_path))
         print('UEFI install not supported at this time, no bootloader installed')
     else:
         install_path = boot_loader["installPath"]
@@ -51,6 +52,5 @@ def run():
     detect_firmware_type()
     boot_loader = libcalamares.globalstorage.value("bootLoader")
     fw_type = libcalamares.globalstorage.value("firmwareType")
-    install_path = libcalamares.globalstorage.value( "rootMountPoint" )
     install_grub(boot_loader, fw_type)
     return None

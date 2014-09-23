@@ -19,13 +19,15 @@
 #   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
 
 import os
+import shutil
 
 import libcalamares
 
 def uncomment_locale_gen(locale, install_path):
     """ Uncomment selected locale in /etc/locale.gen """
-
-    shutil.copy2('%s/etc/locale.gen.bak', '%s/etc/locale.gen' % install-path)
+    
+    install_path = libcalamares.globalstorage.value( "rootMountPoint" )
+    shutil.copy2('%s/etc/locale.gen.bak', '%s/etc/locale.gen' % install_path)
     
     text = []
     with open("%s/etc/locale.gen" % install_path, "r") as gen:
@@ -44,8 +46,6 @@ def uncomment_locale_gen(locale, install_path):
 
 def run():
     """ Setup locale """
-
-    install_path = libcalamares.globalstorage.value( "rootMountPoint" )
 
     # Generate locales
     keyboard_layout = libcalamares.globalstorage.value("keyboardLayout")
