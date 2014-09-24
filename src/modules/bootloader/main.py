@@ -19,8 +19,10 @@
 #   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
 
 import libcalamares
+
 import os
 import shutil
+import subprocess
 
 from libcalamares.utils import check_chroot_call
 
@@ -40,7 +42,8 @@ def install_grub(boot_loader, fw_type):
         #efi_directory = "/boot/efi"
         #distribution_name = "DistributionName"
         #check_chroot_call(["blkid -s", "PARTUUID -o value", install_path])
-        check_chroot_call(["gummiboot", "--path=/boot", "install"])
+        #check_chroot_call(["mount", "/dev/sda1", "/boot"])
+        check_chroot_call(["gummiboot", "install", install_path])
         shutil.copytree('/usr/lib/gummiboot/loader', '%s/boot/loader' % (install_path))
         print('UEFI install not supported at this time, no bootloader installed')
     else:

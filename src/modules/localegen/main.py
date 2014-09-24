@@ -23,11 +23,17 @@ import shutil
 
 import libcalamares
 
-def uncomment_locale_gen(locale, install_path):
-    """ Uncomment selected locale in /etc/locale.gen """
+def run():
+    """ Setup locale """
+
+    # Generate locales
+    keyboard_layout = libcalamares.globalstorage.value("keyboardLayout")
     
+    us = '#en_US'
+    locale = 'en_US.UTF-8'
+
     install_path = libcalamares.globalstorage.value( "rootMountPoint" )
-    shutil.copy2('%s/etc/locale.gen.bak', '%s/etc/locale.gen' % install_path)
+    shutil.copy2('%s/etc/locale.gen.bak' % (install_path), '%s/etc/locale.gen' % (install_path))
     
     text = []
     with open("%s/etc/locale.gen" % install_path, "r") as gen:
@@ -43,17 +49,6 @@ def uncomment_locale_gen(locale, install_path):
                 # uncomment line
                 line = line[1:]
             gen.write(line)
-
-def run():
-    """ Setup locale """
-
-    # Generate locales
-    keyboard_layout = libcalamares.globalstorage.value("keyboardLayout")
-    
-    us = '#en_US'
-    locale = 'en_US.UTF-8'
-
-    uncomment_locale_gen(locale, install_path)
 
     libcalamares.utils.chroot_call(['locale-gen'])
     locale_conf_path = os.path.join(install_path, "etc/locale.conf")
