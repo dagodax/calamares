@@ -54,7 +54,7 @@ def run():
                 else:
                     try:
                         libcalamares.utils.chroot_call(['pacman', '-R', '--noconfirm', 
-                                                        'xf86-video-nouveau', 'xf86-video-vmware'])
+                                                        'xf86-video-nouveau'])
                     except Exception as e:
                         pass
                 if "ati" in line or "radeon" in line:
@@ -62,7 +62,15 @@ def run():
                 else:
                     try:
                         libcalamares.utils.chroot_call(['pacman', '-R', '--noconfirm', 
-                                                        'xf86-video-ati', 'xf86-video-vmware'])
+                                                        'xf86-video-ati'])
+                    except Exception as e:
+                        pass
+                if "vmware" in line:
+                    print(line)
+                else:
+                    try:
+                        libcalamares.utils.chroot_call(['pacman', '-R', '--noconfirm', 
+                                                        'xf86-video-vmware'])
                     except Exception as e:
                         pass
         searchfile.close()
