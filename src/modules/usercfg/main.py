@@ -89,7 +89,7 @@ def run():
                 line = 'HaltCmd=/sbin/poweroff\n' 
             if '#RebootCmd=' in line:
                 line = 'RebootCmd=/sbin/reboot\n' 
-        kdm_conf.write(line)
+            kdm_conf.write(line)
     kdm_conf.close()
                     
     #sddm_conf_path = os.path.join(install_path, "etc/sddm.conf")
