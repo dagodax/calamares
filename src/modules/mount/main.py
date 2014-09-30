@@ -57,8 +57,6 @@ def run():
     mount_partitions(root_mount_point, extra_mounts)
     if(os.path.exists("/sys/firmware/efi/efivars")):
         mount_partitions(root_mount_point, extra_mounts_efi)
-    else:
-        mount_partitions(root_mount_point, extra_mounts)
        
     libcalamares.globalstorage.insert("rootMountPoint", root_mount_point)
     return None
