@@ -310,7 +310,18 @@ def run():
 
     # Setup kdm
     if "kdm" in displaymanagers:
-        if not os.path.exists("%s/usr/bin/kdm" % root_mount_point):
+        if os.path.exists("%s/usr/bin/kdm" % root_mount_point):
+            libcalamares.utils.chroot_call(['getent', 'group', 'kdm'])
+            libcalamares.utils.chroot_call(['groupadd', '-g', '135', 'kdm'])
+            libcalamares.utils.chroot_call(['getent', 'passwd', 'kdm'])
+            libcalamares.utils.chroot_call(['useradd', '-u', '135', '-g', 'kdm', '-d',
+                                            '/var/lib/kdm', '-s', '/bin/false', '-r', '-M', 'kdm'])
+            libcalamares.utils.chroot_call(
+                ['chown', '-R', '135:135', 'var/lib/kdm'])
+            libcalamares.utils.chroot_call(
+                ['xdg-icon-resource', 'forceupdate', '--theme', 'hicolor'])
+            libcalamares.utils.chroot_call(['update-desktop-database', '-q'])
+        else:
             return "kdm selected but not installed", ""
 
     if username != None:

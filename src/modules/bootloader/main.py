@@ -39,8 +39,6 @@ def detect_firmware_type():
 def install_grub(boot_loader, fw_type):
     if fw_type == 'efi':
         install_path = boot_loader["installPath"]
-        #efi_directory = "/boot/efi"
-        #distribution_name = "DistributionName"
         #check_chroot_call(["blkid -s", "PARTUUID -o value", install_path])
         #check_chroot_call(["mount", "/dev/sda1", "/boot"])
         #check_chroot_call(["gummiboot", "install", install_path])
