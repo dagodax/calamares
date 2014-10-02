@@ -36,13 +36,53 @@ def detect_firmware_type():
     libcalamares.globalstorage.insert("firmwareType", fw_type)
     libcalamares.utils.debug("Firmware type: {!s}".format(fw_type))
 
+def get_partuuid(root):
+    root_mount_point = libcalamares.globalstorage.value("rootMountPoint")
+    p = subprocess.Popen("blkid -s PARTUUID -o value %s" % root_mount_point, 
+                         shell=True, stdout=subprocess.PIPE)
+    l = p.stdout.readlines()
+    if len(l):
+        return l[0]
+    return "" #shouldn't happen
+    
+def create_conf(partuuid, conf_path):
+    lines = [
+        '## This is just an exmaple config file.\n',
+        '## Please edit the paths and kernel parameters according to your system.\n',
+        '\n',
+        'title   KaOS GNU/Linux, with Linux core repo kernel\n',
+        'linux   /vmlinuz-linux\n',
+        'initrd  /initramfs-linux.img\n',
+        'options root=PARTUUID=%s quiet rw\n' % partuuid,
+    ]
+    
+    with open(conf_path, 'w') as f:
+        for l in lines:
+            f.write(l)
+    f.close()
+  
+def create_loader(loader_path):
+    lines = [
+        'timeout 10\n',
+        'default KaOS\n',
+    ]
+    
+    with open(loader_path, 'w') as f:
+        for l in lines:
+            f.write(l)
+    f.close()
+    
 def install_grub(boot_loader, fw_type):
     if fw_type == 'efi':
         install_path = boot_loader["installPath"]
+        uuid = get_partuuid(root)
+        conf_path =
+        loader_path =
         #check_chroot_call(["blkid -s", "PARTUUID -o value", install_path])
         #check_chroot_call(["mount", "/dev/sda1", "/boot"])
-        #check_chroot_call(["gummiboot", "install", install_path])
-        #shutil.copytree('/usr/lib/gummiboot/loader', '%s/boot/loader' % (install_path))
+        check_chroot_call(["gummiboot", "install", install_path])
+        create_conf(uuid, conf_path)
+        create_loader(loader_path)
         print('UEFI install not supported at this time, no bootloader installed')
     else:
         install_path = boot_loader["installPath"]
