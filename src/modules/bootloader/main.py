@@ -75,13 +75,11 @@ def create_loader(loader_path):
 def install_grub(boot_loader, fw_type):
     if fw_type == 'efi':
         install_path = boot_loader["installPath"]
-        uuid = get_partuuid(root)
-        conf_path =
-        loader_path =
-        #check_chroot_call(["blkid -s", "PARTUUID -o value", install_path])
-        #check_chroot_call(["mount", "/dev/sda1", "/boot"])
-        check_chroot_call(["gummiboot", "install", install_path])
-        create_conf(uuid, conf_path)
+        partuuid = get_partuuid(root)
+        conf_path = os.path.join(install_path, "loader", "entries", "KaOS.conf")
+        loader_path = os.path.join(install_path, "loader", "loader.conf")
+        check_chroot_call(["gummiboot", "install"])
+        create_conf(partuuid, conf_path)
         create_loader(loader_path)
         print('UEFI install not supported at this time, no bootloader installed')
     else:
