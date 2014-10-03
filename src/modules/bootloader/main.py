@@ -3,7 +3,8 @@
 # === This file is part of Calamares - <http://github.com/calamares> ===
 #
 #   Copyright 2014, Aurélien Gâteau <agateau@kde.org>
-#   Copyright 2014 KaOS (http://kaosx.us)
+#   Copyright 2014 Anke Boersma <demm@kaosx.us>
+#   Copyright 2014, Daniel Hillenbrand <codeworkx@bbqlinux.org>
 #
 #   Calamares is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
