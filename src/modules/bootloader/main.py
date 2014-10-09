@@ -37,7 +37,7 @@ def detect_firmware_type():
     libcalamares.globalstorage.insert("firmwareType", fw_type)
     libcalamares.utils.debug("Firmware type: {!s}".format(fw_type))
 
-def get_partuuid(root):
+def get_partuuid():
     root_mount_point = libcalamares.globalstorage.value("rootMountPoint")
     p = subprocess.Popen("blkid -s PARTUUID -o value %s" % root_mount_point, 
                          shell=True, stdout=subprocess.PIPE)
@@ -75,11 +75,11 @@ def create_loader(loader_path):
     
 def install_grub(boot_loader, fw_type):
     if fw_type == 'efi':
-        install_path = boot_loader["installPath"]
-        partuuid = get_partuuid(root)
+        install_path = libcalamares.globalstorage.value( "rootMountPoint" )
+        partuuid = get_partuuid()
         conf_path = os.path.join(install_path, "loader", "entries", "KaOS.conf")
         loader_path = os.path.join(install_path, "loader", "loader.conf")
-        check_chroot_call(["gummiboot", "install"])
+        subprocess.call(["gummiboot", "--path=%s/boot" % install_path, "install"])
         create_conf(partuuid, conf_path)
         create_loader(loader_path)
         print('UEFI install not supported at this time, no bootloader installed')
