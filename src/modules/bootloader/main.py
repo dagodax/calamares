@@ -39,7 +39,7 @@ def detect_firmware_type():
 
 def get_partuuid():
     root_mount_point = libcalamares.globalstorage.value("rootMountPoint")
-    p = subprocess.Popen("blkid -s PARTUUID -o value %s" % root_mount_point, 
+    p = subprocess.Popen('blkid', '-s', 'PARTUUID', '-o', 'value', '%s' % root_mount_point, 
                          shell=True, stdout=subprocess.PIPE)
     l = p.stdout.readlines()
     if len(l):
