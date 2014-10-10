@@ -37,16 +37,23 @@ def detect_firmware_type():
     libcalamares.globalstorage.insert("firmwareType", fw_type)
     libcalamares.utils.debug("Firmware type: {!s}".format(fw_type))
 
-def get_partuuid():
+#def get_partuuid():
+#    root_mount_point = libcalamares.globalstorage.value("rootMountPoint")
+#    p = subprocess.Popen('blkid', '-s', 'PARTUUID', '-o', 'value', '%s' % root_mount_point, 
+#                         shell=True, stdout=subprocess.PIPE)
+#    l = p.stdout.readlines()
+#    if len(l):
+#        return l[0]
+#    return "" #shouldn't happen
+
+def get_uuid():
     root_mount_point = libcalamares.globalstorage.value("rootMountPoint")
-    p = subprocess.Popen('blkid', '-s', 'PARTUUID', '-o', 'value', '%s' % root_mount_point, 
-                         shell=True, stdout=subprocess.PIPE)
-    l = p.stdout.readlines()
-    if len(l):
-        return l[0]
-    return "" #shouldn't happen
+    partitions = libcalamares.globalstorage.value("partitions")
+    for partition in partitions if partition["mountPoint"] == root_mount_point:
+        return partition["uuid"]
+    return ""
     
-def create_conf(partuuid, conf_path):
+def create_conf(uuid, conf_path):
     lines = [
         '## This is just an exmaple config file.\n',
         '## Please edit the paths and kernel parameters according to your system.\n',
@@ -54,7 +61,7 @@ def create_conf(partuuid, conf_path):
         'title   KaOS GNU/Linux, with Linux core repo kernel\n',
         'linux   /vmlinuz-linux\n',
         'initrd  /initramfs-linux.img\n',
-        'options root=PARTUUID=%s quiet rw\n' % partuuid,
+        'options root=UUID=%s quiet rw\n' % uuid,
     ]
     
     with open(conf_path, 'w') as f:
