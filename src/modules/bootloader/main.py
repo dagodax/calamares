@@ -32,25 +32,20 @@ def detect_firmware_type():
     if(os.path.exists("/sys/firmware/efi/efivars")):
         fw_type = 'efi'
     else:
-        fw_type = 'bios'
+        fw_type = 'efi'
 
     libcalamares.globalstorage.insert("firmwareType", fw_type)
     libcalamares.utils.debug("Firmware type: {!s}".format(fw_type))
 
-#def get_partuuid():
-#    root_mount_point = libcalamares.globalstorage.value("rootMountPoint")
-#    p = subprocess.Popen('blkid', '-s', 'PARTUUID', '-o', 'value', '%s' % root_mount_point, 
-#                         shell=True, stdout=subprocess.PIPE)
-#    l = p.stdout.readlines()
-#    if len(l):
-#        return l[0]
-#    return "" #shouldn't happen
-
 def get_uuid():
     root_mount_point = libcalamares.globalstorage.value("rootMountPoint")
+    print(root_mount_point)
     partitions = libcalamares.globalstorage.value("partitions")
-    for partition in partitions if partition["mountPoint"] == root_mount_point:
-        return partition["uuid"]
+    print(partitions)
+    for partition in partitions:
+        if partition["mountPoint"] == "/":
+            print(partition["uuid"])
+            return partition["uuid"]
     return ""
     
 def create_conf(uuid, conf_path):
@@ -83,11 +78,11 @@ def create_loader(loader_path):
 def install_grub(boot_loader, fw_type):
     if fw_type == 'efi':
         install_path = libcalamares.globalstorage.value( "rootMountPoint" )
-        partuuid = get_partuuid()
-        conf_path = os.path.join(install_path, "loader", "entries", "KaOS.conf")
-        loader_path = os.path.join(install_path, "loader", "loader.conf")
+        uuid = get_uuid()
+        conf_path = os.path.join(install_path, "boot", "loader", "entries", "KaOS.conf")
+        loader_path = os.path.join(install_path, "boot", "loader", "loader.conf")
         subprocess.call(["gummiboot", "--path=%s/boot" % install_path, "install"])
-        create_conf(partuuid, conf_path)
+        create_conf(uuid, conf_path)
         create_loader(loader_path)
         print('UEFI install not supported at this time, no bootloader installed')
     else:
