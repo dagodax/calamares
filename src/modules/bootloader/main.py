@@ -32,7 +32,7 @@ def detect_firmware_type():
     if(os.path.exists("/sys/firmware/efi/efivars")):
         fw_type = 'efi'
     else:
-        fw_type = 'efi'
+        fw_type = 'bios'
 
     libcalamares.globalstorage.insert("firmwareType", fw_type)
     libcalamares.utils.debug("Firmware type: {!s}".format(fw_type))
