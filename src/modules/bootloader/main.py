@@ -53,7 +53,7 @@ def create_conf(uuid, conf_path):
         '## This is just an exmaple config file.\n',
         '## Please edit the paths and kernel parameters according to your system.\n',
         '\n',
-        'title   KaOS GNU/Linux, with Linux core repo kernel\n',
+        'title   %s GNU/Linux, with Linux core repo kernel\n' % distribution,
         'linux   /vmlinuz-linux\n',
         'initrd  /initramfs-linux.img\n',
         'options root=UUID=%s quiet rw\n' % uuid,
@@ -66,8 +66,8 @@ def create_conf(uuid, conf_path):
   
 def create_loader(loader_path):
     lines = [
-        'timeout 10\n',
-        'default KaOS\n',
+        'timeout %s\n' % timeout,
+        'default %s\n' % distribution,
     ]
     
     with open(loader_path, 'w') as f:
@@ -79,7 +79,7 @@ def install_grub(boot_loader, fw_type):
     if fw_type == 'efi':
         install_path = libcalamares.globalstorage.value( "rootMountPoint" )
         uuid = get_uuid()
-        conf_path = os.path.join(install_path, "boot", "loader", "entries", "KaOS.conf")
+        conf_path = os.path.join(install_path, "boot", "loader", "entries", "%s.conf" % distribution)
         loader_path = os.path.join(install_path, "boot", "loader", "loader.conf")
         subprocess.call(["gummiboot", "--path=%s/boot" % install_path, "install"])
         create_conf(uuid, conf_path)
