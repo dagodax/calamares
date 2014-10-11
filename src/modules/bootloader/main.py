@@ -3,8 +3,9 @@
 # === This file is part of Calamares - <http://github.com/calamares> ===
 #
 #   Copyright 2014, Aurélien Gâteau <agateau@kde.org>
-#   Copyright 2014 Anke Boersma <demm@kaosx.us>
+#   Copyright 2014, Anke Boersma <demm@kaosx.us>
 #   Copyright 2014, Daniel Hillenbrand <codeworkx@bbqlinux.org>
+#   Copyright 2014, Benjamin Vaudour <benjamin.vaudour@yahoo.fr>
 #
 #   Calamares is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -84,7 +85,6 @@ def install_grub(boot_loader, fw_type):
         subprocess.call(["gummiboot", "--path=%s/boot" % install_path, "install"])
         create_conf(uuid, conf_path)
         create_loader(loader_path)
-        print('UEFI install not supported at this time, no bootloader installed')
     else:
         install_path = boot_loader["installPath"]
         check_chroot_call(["grub-install", install_path])
