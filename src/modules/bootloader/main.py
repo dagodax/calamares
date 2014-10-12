@@ -50,6 +50,7 @@ def get_uuid():
     return ""
     
 def create_conf(uuid, conf_path):
+    distribution = libcalamares.job.configuration["distribution"]
     lines = [
         '## This is just an exmaple config file.\n',
         '## Please edit the paths and kernel parameters according to your system.\n',
@@ -66,6 +67,8 @@ def create_conf(uuid, conf_path):
     f.close()
   
 def create_loader(loader_path):
+    distribution = libcalamares.job.configuration["distribution"]
+    timeout = libcalamares.job.configuration["timeout"]
     lines = [
         'timeout %s\n' % timeout,
         'default %s\n' % distribution,
@@ -80,6 +83,7 @@ def install_grub(boot_loader, fw_type):
     if fw_type == 'efi':
         install_path = libcalamares.globalstorage.value( "rootMountPoint" )
         uuid = get_uuid()
+        distribution = libcalamares.job.configuration["distribution"]
         conf_path = os.path.join(install_path, "boot", "loader", "entries", "%s.conf" % distribution)
         loader_path = os.path.join(install_path, "boot", "loader", "loader.conf")
         subprocess.call(["gummiboot", "--path=%s/boot" % install_path, "install"])
