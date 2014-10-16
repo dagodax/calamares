@@ -1,0 +1,16 @@
+---
+componentName:  kaos_branding
+
+strings:
+    productName:        KaOS
+    version:            2014.10
+    shortVersion:       KaOS
+    versionedName:      KaOS 2014.10
+    shortVersionedName: KaOS 2014.10
+
+images:
+    productLogo:        "squid.png"
+    productIcon:        "kaos.png"
+
+slideshow:
+    - "slide.png"
