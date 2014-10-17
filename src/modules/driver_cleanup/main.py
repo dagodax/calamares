@@ -21,23 +21,24 @@
 
 import os
 import shutil
-import subprocess 
+import subprocess
 
 import libcalamares
+
 
 def run():
     """ Clean up unused drivers """
 
     print('cleaning up video drivers')
-    
-    install_path = libcalamares.globalstorage.value( "rootMountPoint" )
+
+    install_path = libcalamares.globalstorage.value("rootMountPoint")
 
     # remove any db.lck
     db_lock = os.path.join(install_path, "var/lib/pacman/db.lck")
     if os.path.exists(db_lock):
         with misc.raised_privileges():
             os.remove(db_lock)
-  
+
     if os.path.exists("/tmp/used_drivers"):
         with open("/tmp/used_drivers", "r") as searchfile:
             for line in searchfile:
@@ -45,7 +46,7 @@ def run():
                     print(line)
                 else:
                     try:
-                        libcalamares.utils.chroot_call(['pacman', '-R', '--noconfirm', 
+                        libcalamares.utils.chroot_call(['pacman', '-R', '--noconfirm',
                                                         'xf86-video-vmware'])
                     except Exception as e:
                         pass
@@ -53,7 +54,7 @@ def run():
                     print(line)
                 else:
                     try:
-                        libcalamares.utils.chroot_call(['pacman', '-R', '--noconfirm', 
+                        libcalamares.utils.chroot_call(['pacman', '-R', '--noconfirm',
                                                         'xf86-video-nouveau'])
                     except Exception as e:
                         pass
@@ -61,7 +62,7 @@ def run():
                     print(line)
                 else:
                     try:
-                        libcalamares.utils.chroot_call(['pacman', '-R', '--noconfirm', 
+                        libcalamares.utils.chroot_call(['pacman', '-R', '--noconfirm',
                                                         'xf86-video-ati'])
                     except Exception as e:
                         pass
@@ -69,14 +70,14 @@ def run():
                     print(line)
                 else:
                     try:
-                        libcalamares.utils.chroot_call(['pacman', '-R', '--noconfirm', 
+                        libcalamares.utils.chroot_call(['pacman', '-R', '--noconfirm',
                                                         'xf86-video-vmware'])
                     except Exception as e:
                         pass
         searchfile.close()
     else:
         try:
-            libcalamares.utils.chroot_call(['pacman', '-R', '--noconfirm', 'xf86-video-ati', 
+            libcalamares.utils.chroot_call(['pacman', '-R', '--noconfirm', 'xf86-video-ati',
                                             'xf86-video-vmware'])
         except Exception as e:
             pass
@@ -98,13 +99,13 @@ def run():
         print('wacom in use')
     else:
         try:
-            libcalamares.utils.chroot_call(['pacman', '-Rncs', '--noconfirm', 
-                                             'xf86-input-wacom'])
+            libcalamares.utils.chroot_call(['pacman', '-Rncs', '--noconfirm',
+                                            'xf86-input-wacom'])
         except Exception as e:
             pass
 
     print('input driver removal complete')
 
     print('job_cleanup_drivers')
-    
+
     return None

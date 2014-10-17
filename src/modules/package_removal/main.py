@@ -20,15 +20,16 @@
 
 import os
 import shutil
-import subprocess 
+import subprocess
 
 import libcalamares
 
+
 def run():
     """ Package removal module. Live only packages, surplus language packs """
-    
-    install_path = libcalamares.globalstorage.value( "rootMountPoint" )
-    
+
+    install_path = libcalamares.globalstorage.value("rootMountPoint")
+
     # remove any db.lck
     db_lock = os.path.join(install_path, "var/lib/pacman/db.lck")
     if os.path.exists(db_lock):
@@ -38,76 +39,84 @@ def run():
     # Remove Calamares and depends
     if os.path.exists("%s/usr/bin/calamares" % install_path):
         print('Removing installer packages')
-        libcalamares.utils.chroot_call(['pacman', '-Rns', '--noconfirm', 'calamares'])
-            
+        libcalamares.utils.chroot_call(
+            ['pacman', '-Rns', '--noconfirm', 'calamares'])
+
     # Remove welcome
     if os.path.exists("%s/usr/bin/welcome" % install_path):
         print('Removing live ISO packages')
-        libcalamares.utils.chroot_call(['pacman', '-R', '--noconfirm', 'welcome'])
-            
+        libcalamares.utils.chroot_call(
+            ['pacman', '-R', '--noconfirm', 'welcome'])
+
     # Remove hardware detection
     if os.path.exists("%s/etc/kdeos-hwdetect.conf" % install_path):
         print('Removing live start-up packages')
-        libcalamares.utils.chroot_call(['pacman', '-Rns', '--noconfirm', 'kdeos-hardware-detection'])
-            
+        libcalamares.utils.chroot_call(
+            ['pacman', '-Rns', '--noconfirm', 'kdeos-hardware-detection'])
+
     # Remove init-live
     if os.path.exists("%s/etc/live" % install_path):
         print('Removing live configuration packages')
-        libcalamares.utils.chroot_call(['pacman', '-R', '--noconfirm', 'init-live'])
-  
-    # Remove KDE l10n 
+        libcalamares.utils.chroot_call(
+            ['pacman', '-R', '--noconfirm', 'init-live'])
+
+    # Remove KDE l10n
     # TODO: get this_locale
     #this_locale = self.settings.get("language_code")[:2]
     this_locale = 'us'
     list_of_pkgs = []
-    
-    print (this_locale)
- 
-    p = subprocess.Popen("pacman -Q | grep -i kde-l10n | awk '{print $1}'", 
-        shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
- 
+
+    print(this_locale)
+
+    p = subprocess.Popen("pacman -Q | grep -i kde-l10n | awk '{print $1}'",
+                         shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+
     # Iterates over every found pkg and put each one in a list
     for line in p.stdout.readlines():
         s = line.decode('ascii')
         s = s.rstrip('\n')
         list_of_pkgs.append(s)
-    
-    print (list_of_pkgs)
- 
-    # Print the pkgs that do not have the locale 'this_locale' for future removal!
+
+    print(list_of_pkgs)
+
+    # Print the pkgs that do not have the locale 'this_locale' for future
+    # removal!
     for pkg in list_of_pkgs:
         if pkg[9:] != this_locale:
-          print (pkg)
-        
+            print(pkg)
+
     # Remove the pkgs that do not have the locale 'this_locale'
     for pkg in list_of_pkgs:
         if pkg[9:] != this_locale:
             print('Removing KDE l10n packages')
-            libcalamares.utils.chroot_call(['pacman', '-Rddn', '--noconfirm', '%s' % (pkg)])
+            libcalamares.utils.chroot_call(
+                ['pacman', '-Rddn', '--noconfirm', '%s' % (pkg)])
 
-    # Remove Calligra l10n 
+    # Remove Calligra l10n
     list_of_pkgs = []
- 
-    p = subprocess.Popen("pacman -Q | grep -i calligra-l10n | awk '{print $1}'", 
-        shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
- 
+
+    p = subprocess.Popen("pacman -Q | grep -i calligra-l10n | awk '{print $1}'",
+                         shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+
     # Iterates over every found pkg and put each one in a list
     for line in p.stdout.readlines():
         s = line.decode('ascii')
         s = s.rstrip('\n')
         list_of_pkgs.append(s)
-    
-    print (list_of_pkgs)
- 
-    # Print the pkgs that do not have the locale 'this_locale' for future removal!
+
+    print(list_of_pkgs)
+
+    # Print the pkgs that do not have the locale 'this_locale' for future
+    # removal!
     for pkg in list_of_pkgs:
         if pkg[14:] != this_locale:
-          print (pkg)
+            print(pkg)
 
     # Remove the pkgs that do not have the locale 'this_locale'
     for pkg in list_of_pkgs:
         if pkg[14:] != this_locale:
             print('Removing Calligra l10n packages')
-            libcalamares.utils.chroot_call(['pacman', '-Rddn', '--noconfirm', '%s' % (pkg)])
+            libcalamares.utils.chroot_call(
+                ['pacman', '-Rddn', '--noconfirm', '%s' % (pkg)])
 
     print('package removal completed')

@@ -23,18 +23,20 @@ import shutil
 
 import libcalamares
 
+
 def run():
     """ Setup locale """
 
     # Generate locales
     keyboard_layout = libcalamares.globalstorage.value("keyboardLayout")
-    
+
     us = '#en_US'
     locale = 'en_US.UTF-8'
 
-    install_path = libcalamares.globalstorage.value( "rootMountPoint" )
-    shutil.copy2('%s/etc/locale.gen.bak' % (install_path), '%s/etc/locale.gen' % (install_path))
-    
+    install_path = libcalamares.globalstorage.value("rootMountPoint")
+    shutil.copy2('%s/etc/locale.gen.bak' %
+                 (install_path), '%s/etc/locale.gen' % (install_path))
+
     text = []
     with open("%s/etc/locale.gen" % install_path, "r") as gen:
         text = gen.readlines()
