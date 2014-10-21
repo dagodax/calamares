@@ -116,11 +116,11 @@ def run():
         ['setcap', 'cap_net_raw=ep', '/usr/bin/ping6'])
 
     # set hostname static, until upstream creates the var
-    hostname = 'kaos'
-    hostname_path = os.path.join(install_path, "etc/hostname")
-    with open(hostname_path, "w") as hostname_file:
-        hostname_file.write(hostname)
-    hostname_file.close()
+    #hostname = 'kaos'
+    #hostname_path = os.path.join(install_path, "etc/hostname")
+    #with open(hostname_path, "w") as hostname_file:
+    #    hostname_file.write(hostname)
+    #hostname_file.close()
 
     print('configure users settings done')
 
