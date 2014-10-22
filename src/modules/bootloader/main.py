@@ -90,6 +90,15 @@ def install_bootloader(boot_loader, fw_type):
             install_path, "boot", "loader", "entries", "%s.conf" % distribution)
         loader_path = os.path.join(
             install_path, "boot", "loader", "loader.conf")
+        partitions = libcalamares.globalstorage.value("partitions")
+        for partition in partitions:
+            if partition["mountPoint"] == "/boot":
+                print(partition["device"])
+                boot_device = partition["device"]
+                boot_p = boot_device[-1:]
+                device = boot_device[:-1]
+                print(device)
+        subprocess.call(['sgdisk --typecode=%s:EF00 %s' % (boot_p, device)])
         subprocess.call(
             ["gummiboot", "--path=%s/boot" % install_path, "install"])
         create_conf(uuid, conf_path)
