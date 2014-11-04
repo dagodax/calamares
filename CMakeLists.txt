@@ -31,6 +31,7 @@ set( QT_VERSION 5.3.0 )
 
 find_package( Qt5 ${QT_VERSION} CONFIG REQUIRED Core Gui Widgets LinguistTools Svg )
 find_package( YamlCpp 0.5.1 REQUIRED )
+find_package( PolkitQt5-1 REQUIRED )
 
 option( WITH_PYTHON "Enable Python modules support." ON )
 
@@ -66,7 +67,7 @@ set( CALAMARES_ORGANIZATION_NAME "Calamares" )
 set( CALAMARES_ORGANIZATION_DOMAIN "github.com/calamares" )
 set( CALAMARES_APPLICATION_NAME  "Calamares" )
 set( CALAMARES_DESCRIPTION_SUMMARY "The distribution-independent installer framework" )
-set( CALAMARES_TRANSLATION_LANGUAGES de en )
+set( CALAMARES_TRANSLATION_LANGUAGES ast ca de en es_MX es fr it_IT ja pl pt_BR tr_TR zh_TW )
 
 set( CALAMARES_VERSION_MAJOR 0 )
 set( CALAMARES_VERSION_MINOR 1 )
@@ -177,4 +178,18 @@ install(
         settings.conf
     DESTINATION
         share/calamares
+)
+
+install(
+  FILES
+      com.github.calamares.calamares.bin
+  DESTINATION
+      "${POLKITQT-1_POLICY_FILES_INSTALL_DIR}"
+)
+
+install(
+  FILES
+      calamares.desktop
+  DESTINATION
+      ${CMAKE_INSTALL_DATADIR}/applications
 )
