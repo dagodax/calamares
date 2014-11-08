@@ -53,7 +53,6 @@ def run():
         ('kickoffrc', '.config/'),
         ('.bashrc', ''),
         ('mimeapps.list', '.local/share/applications/'),
-        ('networkmanagementrc', '.kde4/share/config/'),
         ('xdg-user-dirs-update.desktop', '.config/autostart/'),
         ('octopi-notifier.desktop', '.config/autostart/'),
         ('katerc', '.config/')
