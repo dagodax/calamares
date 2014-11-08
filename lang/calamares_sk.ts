@@ -1,20 +1,20 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="sl" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="sk" version="2.1">
 <context>
     <name>AlongsidePage</name>
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="54"/>
         <source>Choose partition to shrink:</source>
-        <translation>Izberite razdelek, ki naj bo zmanjšan:</translation>
+        <translation>Zvoľte si partíciu na zmenšenie:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="63"/>
         <source>Allocate drive space by dragging the divider below:</source>
-        <translation>Dodelite prostor na disku prek vlečenja razdelilnika spodaj:</translation>
+        <translation>Vyhradenie miesta na disku potiahnutím posuvníka dole:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="161"/>
         <source>With this operation, the partition &lt;b&gt;%1&lt;/b&gt; which contains %4 will be shrunk to %2MB and a new %3MB partition will be created for %5.</source>
-        <translation>S to operacijo bo razdelek &lt;b&gt;%1&lt;/b&gt;, ki vsebuje %4 zmanjšan na %2MB, za %5 pa bo ustvarjen nov razdelek v velikosti %3MB.</translation>
+        <translation>Touto operáciou, sa partícia &lt;b&gt;%1&lt;/b&gt; ktorá obsahuje %4 sa zmenší na %2MB a vytvorí  sa  nová %3MB partícia na %5.</translation>
     </message>
 </context>
 <context>
@@ -22,12 +22,12 @@
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdetailswidgetbase.ui" line="37"/>
         <source>Save</source>
-        <translation>Shrani</translation>
+        <translation>Uložiť</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdetailswidgetbase.ui" line="44"/>
         <source>Open in External Browser</source>
-        <translation>Odpri v zunanjem brskalniku</translation>
+        <translation>Otvoriť v externom prehliadači</translation>
     </message>
 </context>
 <context>
@@ -35,32 +35,32 @@
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="33"/>
         <source>Operations and Jobs</source>
-        <translation>Dejanja in opravila</translation>
+        <translation>Operácie a úlohy</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="38"/>
         <source>Time Elapsed</source>
-        <translation>Pretekel čas</translation>
+        <translation>Ubehnutý čas</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="64"/>
         <source>Total Time: 00:00:00</source>
-        <translation>Celoten čas: 00:00:00</translation>
+        <translation>Celkový čas: 00:00:00</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="81"/>
         <source>Operation: %p%</source>
-        <translation>opravilo: %p%</translation>
+        <translation>Operácia: %p%</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="91"/>
         <source>Status</source>
-        <translation>Stanje</translation>
+        <translation>Stav</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="107"/>
         <source>Total: %p%</source>
-        <translation>Skupno: %p%</translation>
+        <translation>Celkom: %p%</translation>
     </message>
 </context>
 <context>
@@ -68,7 +68,7 @@
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="20"/>
         <source>Installer</source>
-        <translation>Namestilnik</translation>
+        <translation>Inštalátor</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="168"/>
@@ -77,21 +77,17 @@
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Welcome&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Dobrodošli&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="198"/>
         <source>Location</source>
-        <translation>Lega</translation>
+        <translation>Miesto</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="224"/>
         <source>License Approval</source>
-        <translation type="unfinished"/>
+        <translation>Schválená licencia</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="257"/>
@@ -100,16 +96,12 @@ p, li { white-space: pre-wrap; }
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Installation&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Namestitev&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="287"/>
         <source>Install System</source>
-        <translation>Namesti sistem</translation>
+        <translation>Inštalovať systém</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="320"/>
@@ -118,41 +110,37 @@ p, li { white-space: pre-wrap; }
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Configuration&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Nastavitev&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="331"/>
         <source>Reboot</source>
-        <translation>Ponovni zagon</translation>
+        <translation>Reštartovať</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="410"/>
         <source>Language</source>
-        <translation>Jezik</translation>
+        <translation>Jazyk</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="443"/>
         <source>User Info</source>
-        <translation>Uporabniške informacije</translation>
+        <translation>Užív.info</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="469"/>
         <source>Summary</source>
-        <translation>Povzetek</translation>
+        <translation>Celkovo</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="514"/>
         <source>Keyboard</source>
-        <translation>Tipkovnica</translation>
+        <translation>Klávesnica</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="521"/>
         <source>Disk Setup</source>
-        <translation>Nastavitev diska</translation>
+        <translation>Nastavenia disku</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="528"/>
@@ -161,11 +149,7 @@ p, li { white-space: pre-wrap; }
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Preparation&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Priprava&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -173,17 +157,17 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="57"/>
         <source>Master Boot Record of %1</source>
-        <translation type="unfinished"/>
+        <translation>Hlavný Bootovací Záznam z %1</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="71"/>
         <source>Boot Partition</source>
-        <translation>Zagonski razdelek</translation>
+        <translation>Boot Partícia</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="76"/>
         <source>System Partition</source>
-        <translation>Sistemski razdelek</translation>
+        <translation>Systémová Partícia</translation>
     </message>
 </context>
 <context>
@@ -191,7 +175,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamaresui/InstallationViewStep.cpp" line="47"/>
         <source>Install</source>
-        <translation>Namesti</translation>
+        <translation>Inštalovať</translation>
     </message>
 </context>
 <context>
@@ -199,7 +183,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamares/JobQueue.cpp" line="88"/>
         <source>Done</source>
-        <translation>Končano</translation>
+        <translation>Hotovo</translation>
     </message>
 </context>
 <context>
@@ -207,68 +191,68 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="51"/>
         <source>Run command %1</source>
-        <translation>Zaženi ukaz %1</translation>
+        <translation>Spustiť príkaz %1</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="77"/>
         <source>External command crashed</source>
-        <translation>Zunanji ukaz se je sesul</translation>
+        <translation>Externý príkaz zlyhal</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="78"/>
         <source>Command %1 crashed.
 Output:
 %2</source>
-        <translation>Sesutje ukaza %1.
-Izpis:
+        <translation>Príkaz %1 zlyhal.
+Oznam:
 %2</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="83"/>
         <source>External command failed to start</source>
-        <translation>Zunanjega ukaza ni bilo mogoče zagnati</translation>
+        <translation>Externý príkaz zlyhal pri štarte</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="84"/>
         <source>Command %1 failed to start.</source>
-        <translation>Ukaz %1 se ni zagnal.</translation>
+        <translation>Príkaz %1 zlyhal pri štarte.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="88"/>
         <source>Internal error when starting command</source>
-        <translation>Notranja napaka ob zagonu ukaza</translation>
+        <translation>Vnútorná chyba pri spustení príkazu</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="89"/>
         <source>Bad parameters for process job call.</source>
-        <translation>Nepravilni parametri za klic procesa opravila.</translation>
+        <translation>Zlé parametre volania úlohy procesu.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="92"/>
         <source>External command failed to finish</source>
-        <translation>Zunanji ukaz se ni uspel zaključiti</translation>
+        <translation>Externý príkaz zlyhal pri dokončení</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="93"/>
         <source>Command %1 failed to finish in %2s.
 Output:
 %3</source>
-        <translation>Zunanji ukaz %1 se ni uspel zaključiti v %2s.
-Izpis:
+        <translation>Príkaz %1 zlyhal pri dokončení v %2s.
+Oznam:
 %3</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="99"/>
         <source>External command finished with errors</source>
-        <translation>Zunanji ukaz se je zaključil z napakami</translation>
+        <translation>Externý príkaz sa dokončil s chybami</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="100"/>
         <source>Command %1 finished with exit code %2.
 Output:
 %3</source>
-        <translation>Ukaz %1 se je zaključil z izhodno kodo %2.
-Izpis:
+        <translation>Príkaz %1 dokončený s vystupným kódom %2.
+Oznam:
 %3</translation>
     </message>
 </context>
@@ -277,32 +261,32 @@ Izpis:
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="234"/>
         <source>Run script %1</source>
-        <translation>Zaženi skript %1</translation>
+        <translation>Spustený skript %1</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="249"/>
         <source>Bad working directory path</source>
-        <translation>Nepravilna pot delovne mape</translation>
+        <translation>Zlá cesta pracovného adresára</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="250"/>
         <source>Working directory %1 for python job %2 is not readable.</source>
-        <translation>Ni mogoče brati delovne mape %1 za pythonovo opravilo %2.</translation>
+        <translation>Pracovný adresár %1 pre úlohu pythona %2 nie je čitateľný.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="260"/>
         <source>Bad main script file</source>
-        <translation>Nepravilna datoteka glavnega skripta</translation>
+        <translation>Zlý hlavný súbor skriptu</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="261"/>
         <source>Main script file %1 for python job %2 is not readable.</source>
-        <translation>Ni mogoče brati datoteke %1 glavnega skripta za pythonovo opravilo %2.</translation>
+        <translation>Hlavný súbor skriptu %1 pre úlohu pythona %2 nie je čitateľný.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="305"/>
         <source>Boost.Python error in job &quot;%1&quot;.</source>
-        <translation>Napaka Boost.Python v opravilu &quot;%1&quot;.</translation>
+        <translation>Rýchlo.Python chyba v úlohe &quot;%1&quot;.</translation>
     </message>
 </context>
 <context>
@@ -310,27 +294,27 @@ Izpis:
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="55"/>
         <source>&amp;Back</source>
-        <translation>&amp;Nazaj</translation>
+        <translation>&amp;Späť</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="56"/>
         <source>&amp;Next</source>
-        <translation>&amp;Naprej</translation>
+        <translation>Ď&amp;alší</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="57"/>
         <source>&amp;Quit</source>
-        <translation>&amp;Izhod</translation>
+        <translation>&amp;Ukončiť</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="137"/>
         <source>Error</source>
-        <translation>Napaka</translation>
+        <translation>Chyba</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="138"/>
         <source>Installation Failed</source>
-        <translation>Namestitev je spodletela</translation>
+        <translation>Zlyhanie inštalácie</translation>
     </message>
 </context>
 <context>
@@ -338,22 +322,22 @@ Izpis:
     <message>
         <location filename="../src/libcalamares/PythonHelper.cpp" line="228"/>
         <source>Unknown exception type</source>
-        <translation>Neznana vrsta izjeme</translation>
+        <translation>Neznámy typ výnimky</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonHelper.cpp" line="241"/>
         <source>unparseable Python error</source>
-        <translation>nerazčlenljiva napaka Python</translation>
+        <translation>nerozoznateľná chyba Pythona</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonHelper.cpp" line="257"/>
         <source>unparseable Python traceback</source>
-        <translation type="unfinished"/>
+        <translation>nerozoznateľé zpätná ladenie Pythona</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonHelper.cpp" line="261"/>
         <source>Unfetchable Python error.</source>
-        <translation type="unfinished"/>
+        <translation>Nezachytiteľná chyba Pythona.</translation>
     </message>
 </context>
 <context>
@@ -361,7 +345,7 @@ Izpis:
     <message>
         <location filename="../src/calamares/CalamaresWindow.cpp" line="40"/>
         <source>%1 Installer</source>
-        <translation>%1 Namestilnik</translation>
+        <translation>%1 Inštalátor</translation>
     </message>
 </context>
 <context>
@@ -369,12 +353,12 @@ Izpis:
     <message>
         <location filename="../src/modules/partition/jobs/CheckFileSystemJob.cpp" line="34"/>
         <source>Checking file system on partition %1.</source>
-        <translation>Preverjanje datotečnega sistema na razdelku %1.</translation>
+        <translation>Kontrola súborového systému na partícii %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CheckFileSystemJob.cpp" line="50"/>
         <source>The file system check on partition %1 failed.</source>
-        <translation>Preverjanje datotečnega sistema na razdelku %1 je spodletelo.</translation>
+        <translation>Kontrola súborového systému na partícii %1 zlyhala.</translation>
     </message>
 </context>
 <context>
@@ -382,58 +366,58 @@ Izpis:
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="105"/>
         <source>This computer currently does not seem to have an operating system on it. What would you like to do?</source>
-        <translation>Za ta računalnik se zdi, da trenutno nima nameščenega operacijskega sistema. Kaj želite storiti?</translation>
+        <translation>Tento počítač neobsahuje žiadny operačný systém. Čo si prajete robiť?</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="108"/>
         <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your programs, documents, photos, music, and any other files.</source>
-        <translation>&lt;b&gt;Pobriši disk in namesti %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Opozorilo: &lt;/font&gt;To dejanje bo izbrisalo vse vaše programe, dokumente, slike, glasbo in vse preostale datoteke.</translation>
+        <translation>&lt;b&gt;Vymazať disk a inštalovať %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Varovanie: &lt;/font&gt;Vymažú sa všetky vaše programy, dokumenty, fotky, hudba, a všetky ďalšie súbory.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="122"/>
         <source>This computer currently has %1 on it. What would you like to do?</source>
-        <translation>Ta računalnik ima trenutno nameščen %1. Kaj želite storiti?</translation>
+        <translation>Tento počítač má %1. Čo si prajete robiť?</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="126"/>
         <source>&lt;b&gt;Install %2 alongside %1&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.</source>
-        <translation>&lt;b&gt;Namesti %2 poleg %1&lt;/b&gt;&lt;br/&gt;Dokumenti, glasba in ostale osebne datoteke bodo ohranjeni. Izberete lahko, kateri operacijski sistem naj se zažene ob vsakokratnem zagonu računalnika.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="134"/>
         <source>&lt;b&gt;Replace %1 with %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files.</source>
-        <translation>&lt;b&gt;Zamenjaj %1 z %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Opozorilo: &lt;/font&gt;To dejanje bo pobrisalo celoten disk in izbrisalo vse programe, dokumente, slike, glasbo in vse preostale datoteke sistema %1.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="144"/>
         <source>This computer already has an operating system on it. What would you like to do?</source>
-        <translation>Na tem računalniku je že nameščen operacijski sistem. Kaj želite storiti?</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="147"/>
         <source>&lt;b&gt;Install %1 alongside your current operating system&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.</source>
-        <translation>&lt;b&gt;Namesti %1 poleg trenutnega operacijskega sistema&lt;/b&gt;&lt;br/&gt;Dokumenti, glasba in preostale osebne datoteke bodo ohranjeni. Izberete lahko, kateri operacijski sistem naj se zažene ob vsakokratnem zagonu računalnika.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="154"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="188"/>
         <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your Windows 7 programs, documents, photos, music, and any other files.</source>
-        <translation>&lt;b&gt;Pobriši disk in namesti %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Opozorilo: &lt;/font&gt;To dejanje bo izbrisalo vse programe, dokumente, slike, glasbo in vse prostale datoteke sistema Windows 7.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="178"/>
         <source>This computer currently has multiple operating systems on it. What would you like to do?</source>
-        <translation>Na tem računalniku je nameščenih več operacijskih sistemov. Kaj želite storiti?</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="181"/>
         <source>&lt;b&gt;Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.</source>
-        <translation>&lt;b&gt;Namesti %1 poleg nameščenih operacijskih sistemov&lt;/b&gt;&lt;br/&gt;Dokumenti, glasba in preostale osebne datoteke bodo ohranjene. Izberete lahko, kateri operacijski sistem naj se zažene ob vsakokratnem zagonu računalnika.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="203"/>
         <source>&lt;b&gt;Something else&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.</source>
-        <translation>&lt;b&gt;Nekaj drugega&lt;/b&gt;&lt;br/&gt;Ustvarite lahko razdelke, spremenite njihovo velikost ali izberete več razdelkov za %1.</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -441,32 +425,32 @@ Izpis:
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="23"/>
         <source>Permissions</source>
-        <translation>Dovoljenja</translation>
+        <translation>Prístup</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="35"/>
         <source>Allow applying operations without administrator privileges</source>
-        <translation>Dovoli uveljavljanje opravil brez skrbniških dovoljenj</translation>
+        <translation>Povoliť aplikovať operácie bez administrátorskych práv</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="51"/>
         <source>Backend</source>
-        <translation>Začelje</translation>
+        <translation>Odozva</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="57"/>
         <source>Active backend:</source>
-        <translation>Dejavno začelje:</translation>
+        <translation>Aktívna odozva:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="79"/>
         <source>Units</source>
-        <translation>Enote</translation>
+        <translation>Jednotky</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="85"/>
         <source>Preferred unit:</source>
-        <translation>Prednostna enota:</translation>
+        <translation>Preferovaná jednotka:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="96"/>
@@ -509,7 +493,7 @@ Izpis:
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="23"/>
         <source>File Systems</source>
-        <translation>Datotečni sistemi</translation>
+        <translation>Súborový Systém</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="29"/>
@@ -609,17 +593,17 @@ Izpis:
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="489"/>
         <source>extended:</source>
-        <translation>extended:</translation>
+        <translation>rozšírený:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="518"/>
         <source>unformatted:</source>
-        <translation>neformatirano:</translation>
+        <translation>neformatovaný:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="547"/>
         <source>unknown:</source>
-        <translation>neznano:</translation>
+        <translation>neznámy:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="570"/>
@@ -642,87 +626,87 @@ Izpis:
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="23"/>
         <source>Partition Alignment</source>
-        <translation>Poravnanje razdelkov</translation>
+        <translation>Zarovnanie partície</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="29"/>
         <source>Use cylinder based alignment (Windows XP compatible)</source>
-        <translation>Uporabi poravnavo, osnovano na cilindrih (združljivo z Windows XP)</translation>
+        <translation>Použiť zarovnanie založené na cylindroch (Windows XP kompatibilné)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="42"/>
         <source>Sector alignment:</source>
-        <translation>Poravnava sektorjev:</translation>
+        <translation>Zarovnanie Sektora:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="55"/>
         <source> sectors</source>
-        <translation>sektorji</translation>
+        <translation>sektory</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="71"/>
         <source>Align partitions per default</source>
-        <translation>Privzeto poravnavanje razdelkov</translation>
+        <translation>Zarovnať partície ako východzie</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="90"/>
         <source>Logging</source>
-        <translation>Beleženje</translation>
+        <translation>Zapisovanie</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="96"/>
         <source>Hide messages below:</source>
-        <translation>Skrij spodnja sporočila:</translation>
+        <translation>Skryť správy dole:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="107"/>
         <source>Debug</source>
-        <translation>Razhroščevanje</translation>
+        <translation>Ladiť</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="112"/>
         <source>Information</source>
-        <translation>Informacije</translation>
+        <translation>Informácie</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="117"/>
         <source>Warning</source>
-        <translation>Opozorilo</translation>
+        <translation>Varovanie</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="122"/>
         <source>Error</source>
-        <translation>Napaka</translation>
+        <translation>Chyba</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="139"/>
         <source>File Systems</source>
-        <translation>Datotečni sistemi</translation>
+        <translation>Súborový Systém</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="145"/>
         <source>Default file system:</source>
-        <translation>Privzet datotečni sistem:</translation>
+        <translation>Východzí súborový systém:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="167"/>
         <source>Shredding</source>
-        <translation type="unfinished"/>
+        <translation>Skartovať</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="173"/>
         <source>Overwrite with:</source>
-        <translation>Prepiši z:</translation>
+        <translation>Prepísať s:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="180"/>
         <source>Random data</source>
-        <translation>Naključni podatki</translation>
+        <translation>Náhodné data</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="190"/>
         <source>Zeros</source>
-        <translation>Ničlami</translation>
+        <translation>Nuly</translation>
     </message>
 </context>
 <context>
@@ -730,32 +714,32 @@ Izpis:
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="14"/>
         <source>Create a Partition</source>
-        <translation>Ustvari razdelek</translation>
+        <translation>Vytvoriť partíciu</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="38"/>
         <source>Partition &amp;Type:</source>
-        <translation>&amp;Vrsta razdelka:</translation>
+        <translation>&amp;Typ partície:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="50"/>
         <source>&amp;Primary</source>
-        <translation>&amp;Primaren</translation>
+        <translation>&amp;Primárna</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="60"/>
         <source>E&amp;xtended</source>
-        <translation>R&amp;azširjen</translation>
+        <translation>Ro&amp;zšírená</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="89"/>
         <source>F&amp;ile System:</source>
-        <translation>D&amp;atotečni sistem:</translation>
+        <translation>Sú&amp;borový Systém:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="118"/>
         <source>&amp;Mount Point:</source>
-        <translation>&amp;Priklopna točka:</translation>
+        <translation>Bo&amp;d pripojenia:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="135"/>
@@ -790,7 +774,7 @@ Izpis:
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="194"/>
         <source>Si&amp;ze:</source>
-        <translation>Ve&amp;likost</translation>
+        <translation>Veľ&amp;kosť:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="204"/>
@@ -800,12 +784,12 @@ Izpis:
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="85"/>
         <source>Logical</source>
-        <translation>Logičen</translation>
+        <translation>Logická</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="90"/>
         <source>Primary</source>
-        <translation>Primaren</translation>
+        <translation>Primárna</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="107"/>
@@ -818,32 +802,32 @@ Izpis:
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="47"/>
         <source>Create partition (file system: %1, size: %2 MB) on %3.</source>
-        <translation>Ustvari razdelek (datotečni sistem: %1, velikost %2 MB) na %3.</translation>
+        <translation>Vytvoriť partíciu (súb. systém: %1, vekosť: %2 MB) z %3.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="60"/>
         <source>The installer failed to create partition on disk &apos;%1&apos;.</source>
-        <translation>Namestilniku ni uspelo ustvariti razdelka na disku &apos;%1&apos;.</translation>
+        <translation>Inštalátor zlyhal pri vytvorení partície na disku &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="69"/>
         <source>Could not open device &apos;%1&apos;.</source>
-        <translation>Ni mogoče odpreti naprave &apos;%1&apos;.</translation>
+        <translation>Nedá sa otvoriť zariadenie &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="79"/>
         <source>Could not open partition table.</source>
-        <translation>Ni mogoče odpreti razpredelnice razdelkov.</translation>
+        <translation>Nedá sa otvoriť tabuľka partícii.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="103"/>
         <source>The installer failed to create file system on partition %1.</source>
-        <translation>Namestilniku ni uspelo ustvariti datotečnega sistema na razdelku %1.</translation>
+        <translation>Inštalátor zlyhal pri vytvorení partície na disku %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="111"/>
         <source>The installer failed to update partition table on disk &apos;%1&apos;.</source>
-        <translation>Namestilniku ni uspelo posodobiti razpredelnice razdelkov na disku &apos;%1&apos;.</translation>
+        <translation>Inštalátor zlyhal pri aktualizácii partície na disku &apos;%1&apos;.</translation>
     </message>
 </context>
 <context>
@@ -851,27 +835,27 @@ Izpis:
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="20"/>
         <source>Create Partition Table</source>
-        <translation>Ustvari razpredelnico razdelkov</translation>
+        <translation>Vytvoriť tabuľku partícií</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="39"/>
         <source>Creating a new partition table will delete all existing data on the disk.</source>
-        <translation>Ustvarjanje nove razpredelnice razdelkov bo izbrisalo vse obstoječe podatke na disku.</translation>
+        <translation>Vytvorením novej tabuľky partícií sa vymažú všetky data na disku.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="65"/>
         <source>What kind of partition table do you want to create?</source>
-        <translation>Kakšna vrsta razpredelnice razdelkov naj se ustvari?</translation>
+        <translation>Aký typ tabuľky partícií si prajete vytvoriť?</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="72"/>
         <source>Master Boot Record (MBR)</source>
-        <translation>Master Boot Record (MBR)</translation>
+        <translation>Hlavný Bootovací Záznam (MBR)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="82"/>
         <source>GUID Partition Table (GPT)</source>
-        <translation>GUID Razpredelnica razdelkov (GPT)</translation>
+        <translation>GUID Tabuľka Partícií (GPT)</translation>
     </message>
 </context>
 <context>
@@ -879,17 +863,17 @@ Izpis:
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="47"/>
         <source>Create partition table</source>
-        <translation>Ustvari razpredelnico razdelkov</translation>
+        <translation>Vytvoriť tabuľku partícií</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="54"/>
         <source>The installer failed to create a partition table on %1.</source>
-        <translation>Namestilniku ni uspelo ustvariti razpredelnice razdelkov na %1.</translation>
+        <translation>Inštalátor zlyhal pri vytvorení tabuľky partícií %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="62"/>
         <source>Could not open device %1.</source>
-        <translation>Naprave %1 ni mogoče odpreti.</translation>
+        <translation>Nedá sa otvoriť zariadenie %1.</translation>
     </message>
 </context>
 <context>
@@ -897,7 +881,7 @@ Izpis:
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/createpartitiontablewidgetbase.ui" line="20"/>
         <source>Choose the type of partition table you want to create:</source>
-        <translation>Izberite vrsto razpredelnice razdelkov, ki naj bo ustvarjena:</translation>
+        <translation>Zvoľte si, aký typ tabuľky partícií sa vytvorí:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/createpartitiontablewidgetbase.ui" line="29"/>
@@ -912,12 +896,12 @@ Izpis:
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/createpartitiontablewidgetbase.ui" line="66"/>
         <source>(icon)</source>
-        <translation>(ikona)</translation>
+        <translation>(icon)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/createpartitiontablewidgetbase.ui" line="79"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; This will destroy all data on the device!</source>
-        <translation>&lt;b&gt;Opozorilo:&lt;/b&gt; To bo uničilo vse podatke na napravi!</translation>
+        <translation>&lt;b&gt;Varovanie:&lt;/b&gt; Toto vymaže všetky dáta na vašom zariadení!</translation>
     </message>
 </context>
 <context>
@@ -925,57 +909,57 @@ Izpis:
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="51"/>
         <source>Create user %1</source>
-        <translation>Ustvari uporabnika %1</translation>
+        <translation>Vytvoriť používateľa %1</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="67"/>
         <source>Sudoers dir is not writable.</source>
-        <translation>Mapa sudoers ni zapisljiva.</translation>
+        <translation>Sudoers adresár nie je zapisovateľný.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="71"/>
         <source>Cannot create sudoers file for writing.</source>
-        <translation>Ni mogoče ustvariti datoteke sudoers za pisanje.</translation>
+        <translation>Nedá sa vytvoriť sudoers súbor na zápis.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="79"/>
         <source>Cannot chmod sudoers file.</source>
-        <translation>Na datoteki sudoers ni mogoče izvesti opravila chmod.</translation>
+        <translation>Nedá sa zmeniť sudoers súbor.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="85"/>
         <source>Cannot open groups file for reading.</source>
-        <translation>Datoteke skupin ni bilo mogoče odpreti za branje.</translation>
+        <translation>Nedá sa otvoriť skupina súborov na čítanie.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="123"/>
         <source>Cannot create user %1.</source>
-        <translation>Ni mogoče ustvariti uporabnika %1.</translation>
+        <translation>Nedá sa vytvoriť používateľ %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="125"/>
         <source>useradd terminated with error code %1.</source>
-        <translation>useradd se je prekinil s kodo napake %1.</translation>
+        <translation>useradd ukončený s chybovým kódom %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="130"/>
         <source>Cannot set full name for user %1.</source>
-        <translation>Ni mogoče nastaviti polnega imena za uporabnika %1.</translation>
+        <translation>Nedá sa nastaviť plné meno pre používateľa %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="132"/>
         <source>chfn terminated with error code %1.</source>
-        <translation>chfn se je prekinil s kodo napake %1.</translation>
+        <translation>chfn ukončený s chybovým kódom %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="141"/>
         <source>Cannot set home directory ownership for user %1.</source>
-        <translation>Ni mogoče nastaviti lastništva domače mape za uporabnika %1.</translation>
+        <translation>Nedá sa nastaviť vlastný home adresár pre používateľa %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="143"/>
         <source>chown terminated with error code %1.</source>
-        <translation>chown se je prekinil s kodo napake %1.</translation>
+        <translation>chown ukončený s chybovým kódom %1.</translation>
     </message>
 </context>
 <context>
@@ -983,12 +967,12 @@ Izpis:
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/decryptluksdialogwidgetbase.ui" line="22"/>
         <source>&amp;Name:</source>
-        <translation>&amp;Ime:</translation>
+        <translation>Me&amp;no:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/decryptluksdialogwidgetbase.ui" line="35"/>
         <source>&amp;Passphrase:</source>
-        <translation>&amp;Geslo:</translation>
+        <translation>Fráza &amp;hesla:</translation>
     </message>
 </context>
 <context>
@@ -996,27 +980,27 @@ Izpis:
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="41"/>
         <source>Delete partition %1</source>
-        <translation>Izbriši razdelek %1</translation>
+        <translation>Vymazať partíciu %1</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="48"/>
         <source>The installer failed to delete partition %1.</source>
-        <translation>Namestilniku ni uspelo izbrisati razdelka %1.</translation>
+        <translation>Inštalátor zlyhal pri vymazaní partície %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="54"/>
         <source>Partition (%1) and device (%2) do not match.</source>
-        <translation>Razdelek (%1) in naprava (%2) si ne ustrezata.</translation>
+        <translation>Partícia (%1) a zariadenie (%2) nesúhlasí.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="66"/>
         <source>Could not open device %1.</source>
-        <translation>Ni mogoče odpreti naprave %1.</translation>
+        <translation>Nedá sa otvoriť zariadenie %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="75"/>
         <source>Could not open partition table.</source>
-        <translation>Ni mogoče odpreti razpredelnice razdelkov.</translation>
+        <translation>Nedá sa otvoriť tabuľka partícii.</translation>
     </message>
 </context>
 <context>
@@ -1032,62 +1016,62 @@ Izpis:
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="58"/>
         <source>Partition table:</source>
-        <translation>Razpredelnica razdelkov:</translation>
+        <translation>Tabuľka partícií:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="77"/>
         <source>Cylinder alignment</source>
-        <translation>Poravnanje cilindrov</translation>
+        <translation>Zarovnanie cylindra</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="84"/>
         <source>Sector based alignment</source>
-        <translation>Poravnanje po sektorjih</translation>
+        <translation>Zarovnanie založené na sektore</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="113"/>
         <source>Capacity:</source>
-        <translation>Velikost:</translation>
+        <translation>Kapacita:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="130"/>
         <source>Total sectors:</source>
-        <translation>Vsi sektorji:</translation>
+        <translation>Celkovo sektory:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="160"/>
         <source>Cylinders/Heads/Sectors:</source>
-        <translation>Cilindri/glave/sektorji:</translation>
+        <translation>Cylindre/Hlavy/Sektory:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="183"/>
         <source>Logical sector size:</source>
-        <translation>Velikost logičnega sektorja:</translation>
+        <translation>Logická veľkosť sektora:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="200"/>
         <source>Physical sector size:</source>
-        <translation>Velikost fizičnega sektorja:</translation>
+        <translation>Fyzická veľkosť sektora:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="217"/>
         <source>Cylinder size:</source>
-        <translation>Velikost cilindra:</translation>
+        <translation>Veľkosť cylindra:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="241"/>
         <source>Primaries/Max:</source>
-        <translation>Primaries/Max:</translation>
+        <translation>Primárne/Max:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="265"/>
         <source>SMART status:</source>
-        <translation>Stanje SMART:</translation>
+        <translation>SMART stav:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="303"/>
         <source>More...</source>
-        <translation>Več ...</translation>
+        <translation>Viac...</translation>
     </message>
 </context>
 <context>
@@ -1095,32 +1079,32 @@ Izpis:
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="20"/>
         <source>Edit Existing Partition</source>
-        <translation>Uredi obstoječi razdelek</translation>
+        <translation>Zmeniť Existujúcu Partíciu</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="50"/>
         <source>Content:</source>
-        <translation>Vsebina:</translation>
+        <translation>Obsah:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="60"/>
         <source>Keep</source>
-        <translation>Ohrani</translation>
+        <translation>Zachovať</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="70"/>
         <source>Format</source>
-        <translation>Formatiraj</translation>
+        <translation>Formátovať</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="83"/>
         <source>Warning: Formatting the partition will erase all existing data.</source>
-        <translation>Opozorilo: Formatiranje razdelka bo izbrisalo vse obstoječe podatke.</translation>
+        <translation>Varovanie: Formátovaním partície sa vymažú všetky dáta.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="93"/>
         <source>&amp;Mount Point:</source>
-        <translation>&amp;Priklopna točka:</translation>
+        <translation>Bod pripoje&amp;nia:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="110"/>
@@ -1155,7 +1139,7 @@ Izpis:
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="143"/>
         <source>Size:</source>
-        <translation>Velikost:</translation>
+        <translation>Veľkosť:</translation>
     </message>
 </context>
 <context>
@@ -1163,12 +1147,12 @@ Izpis:
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountoptionsdialogwidgetbase.ui" line="14"/>
         <source>Edit Mount Options</source>
-        <translation>Uredi možnosti priklopa</translation>
+        <translation>Zmeniť nastavania pripojení</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountoptionsdialogwidgetbase.ui" line="20"/>
         <source>Edit the mount options for this file system:</source>
-        <translation>Uredi možnosti priklopa za ta datotečni sistem:</translation>
+        <translation>Zmeniť nastavenia pripojení pre súborový systém:</translation>
     </message>
 </context>
 <context>
@@ -1176,97 +1160,97 @@ Izpis:
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="17"/>
         <source>Path:</source>
-        <translation>Pot:</translation>
+        <translation>Cesta:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="46"/>
         <source>Select...</source>
-        <translation>Izberi ...</translation>
+        <translation>Výber...</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="53"/>
         <source>Type:</source>
-        <translation>Vrsta:</translation>
+        <translation>Typ:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="63"/>
         <source>Options:</source>
-        <translation>Možnosti:</translation>
+        <translation>Nastavenia:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="73"/>
         <source>Read-only</source>
-        <translation>Samo za branje</translation>
+        <translation>Iba-čítať</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="80"/>
         <source>Users can mount and unmount</source>
-        <translation>Uporabniki lahko priklopijo in odklopijo</translation>
+        <translation>Používatelia môžu pripojiť a odpojiť</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="87"/>
         <source>No automatic mount</source>
-        <translation>Ni samodejnega priklopa</translation>
+        <translation>Bez automatického pripojenia</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="94"/>
         <source>No update of file access times</source>
-        <translation>Ni posodobitve časa dostopa do datotek</translation>
+        <translation>Bez aktualizácie prístupu k súborom</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="101"/>
         <source>Synchronous access</source>
-        <translation>Sočasni dostop</translation>
+        <translation>Synchrónný prístup</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="108"/>
         <source>No update of directory access times</source>
-        <translation>Ni posodobitve časa dostopa do map</translation>
+        <translation>Bez aktualizácie prístupu k adresárom</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="115"/>
         <source>No binary execution</source>
-        <translation>Brez zagona binarnih datotek</translation>
+        <translation>Bez spustenia súborov</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="122"/>
         <source>Update access times relative to modification</source>
-        <translation type="unfinished"/>
+        <translation>Aktualizácia prístupu relatívna k zmene</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="142"/>
         <source>More...</source>
-        <translation type="unfinished"/>
+        <translation>Viac...</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="149"/>
         <source>Dump Frequency:</source>
-        <translation type="unfinished"/>
+        <translation>Frekvencia výpisu:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="178"/>
         <source>Pass Number:</source>
-        <translation type="unfinished"/>
+        <translation>Počet prechodov:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="285"/>
         <source>Device Node</source>
-        <translation type="unfinished"/>
+        <translation>Uzol zariadenia</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="295"/>
         <source>UUID</source>
-        <translation type="unfinished"/>
+        <translation>UUID</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="302"/>
         <source>Label</source>
-        <translation type="unfinished"/>
+        <translation>Popis</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="309"/>
         <source>Identify by:</source>
-        <translation type="unfinished"/>
+        <translation>Identifikovať podľa:</translation>
     </message>
 </context>
 <context>
@@ -1274,17 +1258,17 @@ Izpis:
     <message>
         <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="47"/>
         <source>Select drive:</source>
-        <translation type="unfinished"/>
+        <translation>Zvoliť disk:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="202"/>
         <source>Before:</source>
-        <translation type="unfinished"/>
+        <translation>Predtým:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="207"/>
         <source>After:</source>
-        <translation type="unfinished"/>
+        <translation>Potom:</translation>
     </message>
 </context>
 <context>
@@ -1298,73 +1282,73 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="65"/>
         <source>File System</source>
-        <translation type="unfinished"/>
+        <translation>Súborový Systém</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="70"/>
         <source>Create</source>
-        <translation type="unfinished"/>
+        <translation>Vytvoriť</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="75"/>
         <source>Grow</source>
-        <translation type="unfinished"/>
+        <translation>Zväčsiť</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="80"/>
         <source>Shrink</source>
-        <translation type="unfinished"/>
+        <translation>Zmenšiť</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="85"/>
         <source>Move</source>
-        <translation type="unfinished"/>
+        <translation>Presunúť</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="90"/>
         <source>Copy</source>
-        <translation type="unfinished"/>
+        <translation>Kopírovať</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="95"/>
         <source>Check</source>
-        <translation type="unfinished"/>
+        <translation>Kontrolovať</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="100"/>
         <source>Read Label</source>
-        <translation type="unfinished"/>
+        <translation>Čítať Popis</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="105"/>
         <source>Write Label</source>
-        <translation type="unfinished"/>
+        <translation>Zapísať Popis</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="110"/>
         <source>Read Usage</source>
-        <translation type="unfinished"/>
+        <translation>Čítať Použitie</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="115"/>
         <source>Backup</source>
-        <translation type="unfinished"/>
+        <translation>Záloha</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="120"/>
         <source>Restore</source>
-        <translation type="unfinished"/>
+        <translation>Obnova</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="125"/>
         <source>Support Tools</source>
-        <translation type="unfinished"/>
+        <translation>Nástroje Podpory</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="135"/>
         <source>Rescan Support</source>
         <comment>@action:button</comment>
-        <translation type="unfinished"/>
+        <translation>Preskenuj Podporu</translation>
     </message>
 </context>
 <context>
@@ -1372,12 +1356,12 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="75"/>
         <source>Set partition information</source>
-        <translation type="unfinished"/>
+        <translation>Nastaviť informácie o partícii</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="85"/>
         <source>Failed to find path for boot loader</source>
-        <translation type="unfinished"/>
+        <translation>Zlyhalo hľadanie cesty pre boot loader</translation>
     </message>
 </context>
 <context>
@@ -1426,7 +1410,7 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/greeting/GreetingViewStep.cpp" line="41"/>
         <source>Welcome</source>
-        <translation type="unfinished"/>
+        <translation>Vitajte</translation>
     </message>
 </context>
 <context>
@@ -1434,12 +1418,12 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/keyboard/KeyboardPage.cpp" line="181"/>
         <source>Set keyboard model to %1.&lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Nastavenie modelu klávesnice na %1.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/KeyboardPage.cpp" line="183"/>
         <source>Set keyboard layout to %1/%2.</source>
-        <translation type="unfinished"/>
+        <translation>Nastavenie rozloženia klávesnice na %1/%2.</translation>
     </message>
 </context>
 <context>
@@ -1447,7 +1431,7 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/keyboard/KeyboardViewStep.cpp" line="45"/>
         <source>Keyboard</source>
-        <translation type="unfinished"/>
+        <translation>Klávesnica</translation>
     </message>
 </context>
 <context>
@@ -1455,17 +1439,17 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="46"/>
         <source>Region:</source>
-        <translation type="unfinished"/>
+        <translation>Región:</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="56"/>
         <source>Zone:</source>
-        <translation type="unfinished"/>
+        <translation>Zóna:</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="176"/>
         <source>Set timezone to %1/%2.&lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Nastavenie čas. zóny na %1/%2.&lt;br/&gt;</translation>
     </message>
 </context>
 <context>
@@ -1473,12 +1457,12 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/locale/LocaleViewStep.cpp" line="42"/>
         <source>Loading location data...</source>
-        <translation type="unfinished"/>
+        <translation>Nahrávanie dát o mieste...</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LocaleViewStep.cpp" line="74"/>
         <source>Location</source>
-        <translation type="unfinished"/>
+        <translation>Miesto</translation>
     </message>
 </context>
 <context>
@@ -1487,13 +1471,13 @@ Some file systems need external tools to be installed for them to be supported. 
         <location filename="../src/modules/partition/partitionmanager/src/gui/mainwindowbase.ui" line="14"/>
         <source>KDE Partition Manager</source>
         <comment>@title:window</comment>
-        <translation type="unfinished"/>
+        <translation>KDE Manažér Partícií</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/mainwindowbase.ui" line="24"/>
         <source>Devices</source>
         <comment>@title:window</comment>
-        <translation type="unfinished"/>
+        <translation>Zariadenia</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/mainwindowbase.ui" line="38"/>
@@ -1505,13 +1489,13 @@ Some file systems need external tools to be installed for them to be supported. 
         <location filename="../src/modules/partition/partitionmanager/src/gui/mainwindowbase.ui" line="49"/>
         <source>Information</source>
         <comment>@title:window</comment>
-        <translation type="unfinished"/>
+        <translation>Informácie</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/mainwindowbase.ui" line="63"/>
         <source>Log Output</source>
         <comment>@title:window</comment>
-        <translation type="unfinished"/>
+        <translation>Výpis zapisovania</translation>
     </message>
 </context>
 <context>
@@ -1568,17 +1552,17 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/keyboard/KeyboardPage.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"/>
+        <translation>Forma</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/KeyboardPage.ui" line="70"/>
         <source>Keyboard Model:</source>
-        <translation type="unfinished"/>
+        <translation>Model Klávesnice:</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/KeyboardPage.ui" line="131"/>
         <source>Type here to test your keyboard</source>
-        <translation type="unfinished"/>
+        <translation>Napíšte niečo na otestovanie vašej klávesnice</translation>
     </message>
 </context>
 <context>
@@ -1586,17 +1570,17 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"/>
+        <translation>Forma</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="33"/>
         <source>What is your name?</source>
-        <translation type="unfinished"/>
+        <translation>Aké je Vaše meno?</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="111"/>
         <source>What name do you want to use to log in?</source>
-        <translation type="unfinished"/>
+        <translation>Aké meno si prajete použiť pri prihlásení?</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="191"/>
@@ -1604,7 +1588,7 @@ Some file systems need external tools to be installed for them to be supported. 
         <location filename="../src/modules/users/page_usersetup.ui" line="425"/>
         <location filename="../src/modules/users/page_usersetup.ui" line="553"/>
         <source>font-weight: normal</source>
-        <translation type="unfinished"/>
+        <translation>font-weight: normal</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="194"/>
@@ -1614,7 +1598,7 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="217"/>
         <source>Choose a password to keep your account safe.</source>
-        <translation type="unfinished"/>
+        <translation>Zvoľte si heslo pre zachovanie vášho účtu v bezpečí.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="322"/>
@@ -1644,12 +1628,12 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="596"/>
         <source>Log in automatically</source>
-        <translation type="unfinished"/>
+        <translation>Pripojiť sa automaticky</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="606"/>
         <source>Require my password to log in</source>
-        <translation type="unfinished"/>
+        <translation>Požadovať moje heslo pri prihlásení</translation>
     </message>
 </context>
 <context>
@@ -1658,91 +1642,91 @@ Some file systems need external tools to be installed for them to be supported. 
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="49"/>
         <source>File system:</source>
         <comment>@label:listbox</comment>
-        <translation type="unfinished"/>
+        <translation>Súborový systém:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="65"/>
         <source>Label:</source>
         <comment>@label</comment>
-        <translation type="unfinished"/>
+        <translation>Popis:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="82"/>
         <source>This file system does not support setting a label.</source>
         <comment>@label</comment>
-        <translation type="unfinished"/>
+        <translation>Tento súborový systém nepodporuje nastavenia popisu.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="92"/>
         <source>Recreate existing file system</source>
         <comment>@action:button</comment>
-        <translation type="unfinished"/>
+        <translation>Znovu vytvoriť existujúci súborový systém</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="106"/>
         <source>Mount point:</source>
         <comment>@label</comment>
-        <translation type="unfinished"/>
+        <translation>Bod pripojenia:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="123"/>
         <source>Partition type:</source>
         <comment>@label</comment>
-        <translation type="unfinished"/>
+        <translation>Typ partície:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="140"/>
         <source>Status:</source>
         <comment>@label</comment>
-        <translation type="unfinished"/>
+        <translation>Stav:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="157"/>
         <source>UUID:</source>
         <comment>@label</comment>
-        <translation type="unfinished"/>
+        <translation>UUID:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="187"/>
         <source>Size:</source>
         <comment>@label</comment>
-        <translation type="unfinished"/>
+        <translation>Veľkosť:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="210"/>
         <source>Available:</source>
         <comment>@label partition capacity available</comment>
-        <translation type="unfinished"/>
+        <translation>Dostupné:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="227"/>
         <source>Used:</source>
         <comment>@label partition capacity used</comment>
-        <translation type="unfinished"/>
+        <translation>Používané:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="251"/>
         <source>First sector:</source>
         <comment>@label</comment>
-        <translation type="unfinished"/>
+        <translation>Prvý sektor:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="268"/>
         <source>Last sector:</source>
         <comment>@label</comment>
-        <translation type="unfinished"/>
+        <translation>Posledný sektor:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="285"/>
         <source>Number of sectors:</source>
         <comment>@label</comment>
-        <translation type="unfinished"/>
+        <translation>Počet sektorov:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="309"/>
         <source>Flags:</source>
         <comment>@label</comment>
-        <translation type="unfinished"/>
+        <translation>Značky:</translation>
     </message>
 </context>
 <context>
@@ -1751,67 +1735,67 @@ Some file systems need external tools to be installed for them to be supported. 
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="14"/>
         <source>KDE Partition Manager</source>
         <comment>@title:window</comment>
-        <translation type="unfinished"/>
+        <translation>KDE Manažér Partícií</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="70"/>
         <source>Partition</source>
-        <translation type="unfinished"/>
+        <translation>Partícia</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="75"/>
         <source>Type</source>
-        <translation type="unfinished"/>
+        <translation>Typ</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="80"/>
         <source>Mount Point</source>
-        <translation type="unfinished"/>
+        <translation>Bod Pripojenia</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="85"/>
         <source>Label</source>
-        <translation type="unfinished"/>
+        <translation>Popis</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="90"/>
         <source>UUID</source>
-        <translation type="unfinished"/>
+        <translation>UUID</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="95"/>
         <source>Size</source>
-        <translation type="unfinished"/>
+        <translation>Veľkosť</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="100"/>
         <source>Used</source>
-        <translation type="unfinished"/>
+        <translation>Používané</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="105"/>
         <source>Available</source>
-        <translation type="unfinished"/>
+        <translation>Dostupné</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="110"/>
         <source>First Sector</source>
-        <translation type="unfinished"/>
+        <translation>Prvý Sektor</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="115"/>
         <source>Last Sector</source>
-        <translation type="unfinished"/>
+        <translation>Posledný Sektor</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="120"/>
         <source>Number of Sectors</source>
-        <translation type="unfinished"/>
+        <translation>Počet Sektorov</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="125"/>
         <source>Flags</source>
-        <translation type="unfinished"/>
+        <translation>Značky</translation>
     </message>
 </context>
 <context>
@@ -1819,32 +1803,32 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="132"/>
         <source>Free Space</source>
-        <translation type="unfinished"/>
+        <translation>Voľní Miesto</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="136"/>
         <source>New partition</source>
-        <translation type="unfinished"/>
+        <translation>Nová Partícia</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="175"/>
         <source>Name</source>
-        <translation type="unfinished"/>
+        <translation>Meno</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="177"/>
         <source>File System</source>
-        <translation type="unfinished"/>
+        <translation>Súborový Systém</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="179"/>
         <source>Mount Point</source>
-        <translation type="unfinished"/>
+        <translation>Bod Pripojenia</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="181"/>
         <source>Size</source>
-        <translation type="unfinished"/>
+        <translation>Veľkosť</translation>
     </message>
 </context>
 <context>
@@ -1852,47 +1836,47 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"/>
+        <translation>Forma</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="22"/>
         <source>&amp;Disk:</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Disk:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="51"/>
         <source>&amp;Revert All Changes</source>
-        <translation type="unfinished"/>
+        <translation>V&amp;rátiť Všetky Zmeny</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="84"/>
         <source>New Partition &amp;Table</source>
-        <translation type="unfinished"/>
+        <translation>Nová &amp;Tabuľka Partícií</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="104"/>
         <source>&amp;Create</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Vytvoriť</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="111"/>
         <source>&amp;Edit</source>
-        <translation type="unfinished"/>
+        <translation>Zm&amp;eniť</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="118"/>
         <source>&amp;Delete</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Vymazať</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="145"/>
         <source>&amp;Install boot loader on:</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Inštalovať boot loader na:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="125"/>
         <source>Are you sure you want to create a new partition table on %1?</source>
-        <translation type="unfinished"/>
+        <translation>Ste si istý, že chcete vytvoriť novú tabuľku partícií na %1?</translation>
     </message>
 </context>
 <context>
@@ -1900,22 +1884,22 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="60"/>
         <source>Gathering system information...</source>
-        <translation type="unfinished"/>
+        <translation>Zbieranie systémových informácií...</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="149"/>
         <source>Partitions</source>
-        <translation type="unfinished"/>
+        <translation>Partície</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="177"/>
         <source>Before:</source>
-        <translation type="unfinished"/>
+        <translation>Predtým:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="182"/>
         <source>After:</source>
-        <translation type="unfinished"/>
+        <translation>Potom:</translation>
     </message>
 </context>
 <context>
@@ -1923,19 +1907,21 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/prepare/PreparePage.cpp" line="36"/>
         <source>For best results, please ensure that this computer:</source>
-        <translation type="unfinished"/>
+        <translation>Pre najlepšie výsledky, prosím zabezpečte toto pre počítač:</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PreparePage.cpp" line="91"/>
         <source>This computer does not satisfy the minimum requirements for installing %1.
 Installation cannot continue.</source>
-        <translation type="unfinished"/>
+        <translation>Tento počítač nespĺňa minimálne požiadavky na inštaláciu %1.
+Inštalácia nemôže pokračovať.</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PreparePage.cpp" line="102"/>
         <source>This computer does not satisfy some of the recommended requirements for installing %1.
 Installation can continue, but some features might be disabled.</source>
-        <translation type="unfinished"/>
+        <translation>Tento počítač nespĺňa niektoré odporúčané požiadavky na inštaláciu %1.
+Inštalácia môže pokračovať, ale niektoré vylepšenia budú vypnuté.</translation>
     </message>
 </context>
 <context>
@@ -1943,32 +1929,32 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="50"/>
         <source>Gathering system information...</source>
-        <translation type="unfinished"/>
+        <translation>Zbieranie systémových informácií...</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="88"/>
         <source>has at least %1 GB available drive space</source>
-        <translation type="unfinished"/>
+        <translation>máte aspoň %1 GB dostupného priestoru na disku</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="96"/>
         <source>has at least %1 GB working memory</source>
-        <translation type="unfinished"/>
+        <translation>máte aspoň %1 GB pracovnej pamäti</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="104"/>
         <source>is plugged in to a power source</source>
-        <translation type="unfinished"/>
+        <translation>je zapnutý v sieťovej zásuvke</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="111"/>
         <source>is connected to the Internet</source>
-        <translation type="unfinished"/>
+        <translation>je pripojený na Internet</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="152"/>
         <source>Prepare</source>
-        <translation type="unfinished"/>
+        <translation>Priprav</translation>
     </message>
 </context>
 <context>
@@ -1976,12 +1962,12 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/calamares/progresstree/ProgressTreeModel.cpp" line="136"/>
         <source>Prepare</source>
-        <translation type="unfinished"/>
+        <translation>Priprav</translation>
     </message>
     <message>
         <location filename="../src/calamares/progresstree/ProgressTreeModel.cpp" line="145"/>
         <source>Finish</source>
-        <translation type="unfinished"/>
+        <translation>Dokončenie</translation>
     </message>
 </context>
 <context>
@@ -1989,13 +1975,13 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/keyboard/keyboardwidget/keyboardglobal.cpp" line="82"/>
         <source>Default Keyboard Model</source>
-        <translation type="unfinished"/>
+        <translation>Východzí Model Klávesnice</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/keyboardwidget/keyboardglobal.cpp" line="127"/>
         <location filename="../src/modules/keyboard/keyboardwidget/keyboardglobal.cpp" line="163"/>
         <source>Default</source>
-        <translation type="unfinished"/>
+        <translation>Východzí</translation>
     </message>
 </context>
 <context>
@@ -2003,117 +1989,117 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="20"/>
         <source>KDE Release Builder</source>
-        <translation type="unfinished"/>
+        <translation>KDE Release Builder</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="32"/>
         <source>Application</source>
-        <translation type="unfinished"/>
+        <translation>Aplikácia</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="38"/>
         <source>Name:</source>
-        <translation type="unfinished"/>
+        <translation>Meno:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="48"/>
         <source>&amp;Version:</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Verzia:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="93"/>
         <source>Repository and Revision</source>
-        <translation type="unfinished"/>
+        <translation>Repozitár a Revízia</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="99"/>
         <source>&amp;Checkout From:</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Kontrola Z:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="119"/>
         <source>trunk</source>
-        <translation type="unfinished"/>
+        <translation>kmeň</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="124"/>
         <source>branches</source>
-        <translation type="unfinished"/>
+        <translation>vetvy</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="129"/>
         <source>tags</source>
-        <translation type="unfinished"/>
+        <translation>štítky</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="137"/>
         <source>Ta&amp;g/Branch:</source>
-        <translation type="unfinished"/>
+        <translation>Štítok/V&amp;etva:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="163"/>
         <source>&amp;SVN Access:</source>
-        <translation type="unfinished"/>
+        <translation>&amp;SVN Pristup:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="183"/>
         <source>anonsvn</source>
-        <translation type="unfinished"/>
+        <translation>anonsvn</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="188"/>
         <source>https</source>
-        <translation type="unfinished"/>
+        <translation>https</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="193"/>
         <source>svn+ssh</source>
-        <translation type="unfinished"/>
+        <translation>svn+ssh</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="201"/>
         <source>&amp;User:</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Používateľ:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="236"/>
         <source>Options</source>
-        <translation type="unfinished"/>
+        <translation>Nastavenia</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="242"/>
         <source>Get &amp;Documentation</source>
-        <translation type="unfinished"/>
+        <translation>Získať &amp;Dokumentáciu</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="252"/>
         <source>Get &amp;Translations</source>
-        <translation type="unfinished"/>
+        <translation>Získať &amp;Preklady</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="262"/>
         <source>C&amp;reate Tag</source>
-        <translation type="unfinished"/>
+        <translation>Vytvo&amp;riť Štítok</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="271"/>
         <source>S&amp;kip translations below completion:</source>
-        <translation type="unfinished"/>
+        <translation>Zruš&amp;iť dokončenie prekladov dole:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="306"/>
         <source> %</source>
-        <translation type="unfinished"/>
+        <translation> %</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="324"/>
         <source>Create Tar&amp;ball</source>
-        <translation type="unfinished"/>
+        <translation>Vytvoriť Tar&amp;ball</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="334"/>
         <source>Apply &amp;fixes</source>
-        <translation type="unfinished"/>
+        <translation>Aplikovať &amp;opravy</translation>
     </message>
 </context>
 <context>
@@ -2121,17 +2107,17 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="75"/>
         <source>Resize file system on partition %1.</source>
-        <translation type="unfinished"/>
+        <translation>Zmeniť veľkosť súborový systém na partícii %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="90"/>
         <source>Parted failed to resize filesystem.</source>
-        <translation type="unfinished"/>
+        <translation>Zlyhala časť zmeny veľkosti súborového systému.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="100"/>
         <source>Failed to resize filesystem.</source>
-        <translation type="unfinished"/>
+        <translation>Zlyhala zmena veľkosti súborového systému.</translation>
     </message>
 </context>
 <context>
@@ -2139,18 +2125,18 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="186"/>
         <source>Resize partition %1.</source>
-        <translation type="unfinished"/>
+        <translation>Zmeniť veľkosť partície %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="208"/>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="266"/>
         <source>The installer failed to resize partition %1 on disk &apos;%2&apos;.</source>
-        <translation type="unfinished"/>
+        <translation>Inštalátor zlyhal pri zmene veľkosti partície %1 na disku &apos;%2&apos;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="213"/>
         <source>Could not open device &apos;%1&apos;.</source>
-        <translation type="unfinished"/>
+        <translation>Nedá sa otvoriť zariadenie &apos;%1&apos;.</translation>
     </message>
 </context>
 <context>
@@ -2158,13 +2144,13 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/users/SetHostNameJob.cpp" line="36"/>
         <source>Set hostname %1</source>
-        <translation type="unfinished"/>
+        <translation>Nastaviť hosťovské meno %1</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetHostNameJob.cpp" line="46"/>
         <location filename="../src/modules/users/SetHostNameJob.cpp" line="53"/>
         <source>Internal Error</source>
-        <translation type="unfinished"/>
+        <translation>Vnútorná chyba</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetHostNameJob.cpp" line="60"/>
@@ -2247,18 +2233,18 @@ Installation can continue, but some features might be disabled.</source>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedetailswidgetbase.ui" line="62"/>
         <source>First sector:</source>
         <comment>@label:listbox</comment>
-        <translation type="unfinished"/>
+        <translation>Prvý sektor:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedetailswidgetbase.ui" line="97"/>
         <source>Last sector:</source>
         <comment>@label:listbox</comment>
-        <translation type="unfinished"/>
+        <translation>Posledný sektor:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedetailswidgetbase.ui" line="120"/>
         <source>Align partition</source>
-        <translation type="unfinished"/>
+        <translation>Zarovnať partíciu</translation>
     </message>
 </context>
 <context>
@@ -2267,34 +2253,34 @@ Installation can continue, but some features might be disabled.</source>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="55"/>
         <source>Partition type:</source>
         <comment>@label:listbox</comment>
-        <translation type="unfinished"/>
+        <translation>Typ partície:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="70"/>
         <source>Primary</source>
-        <translation type="unfinished"/>
+        <translation>Primárna</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="77"/>
         <source>Extended</source>
-        <translation type="unfinished"/>
+        <translation>Rozšírená</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="84"/>
         <source>Logical</source>
-        <translation type="unfinished"/>
+        <translation>Logická</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="99"/>
         <source>File system:</source>
         <comment>@label:listbox</comment>
-        <translation type="unfinished"/>
+        <translation>Súborový systém:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="115"/>
         <source>Label:</source>
         <comment>@label</comment>
-        <translation type="unfinished"/>
+        <translation>Popis:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="134"/>
@@ -2306,31 +2292,31 @@ Installation can continue, but some features might be disabled.</source>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="152"/>
         <source>Minimum size:</source>
         <comment>@label</comment>
-        <translation type="unfinished"/>
+        <translation>Minimálna veľkosť:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="175"/>
         <source>Maximum size:</source>
         <comment>@label</comment>
-        <translation type="unfinished"/>
+        <translation>Maximálna veľkosť:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="198"/>
         <source>Free space before:</source>
         <comment>@label:listbox</comment>
-        <translation type="unfinished"/>
+        <translation>Voľné Miesto predtým:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="233"/>
         <source>Size:</source>
         <comment>@label:listbox</comment>
-        <translation type="unfinished"/>
+        <translation>Veľkosť:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="262"/>
         <source>Free space after:</source>
         <comment>@label:listbox</comment>
-        <translation type="unfinished"/>
+        <translation>Voľné Miesto potom:</translation>
     </message>
 </context>
 <context>
@@ -2338,102 +2324,102 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="23"/>
         <source>SMART status:</source>
-        <translation type="unfinished"/>
+        <translation>SMART stav:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="63"/>
         <source>Model:</source>
-        <translation type="unfinished"/>
+        <translation>Model:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="92"/>
         <source>Serial number:</source>
-        <translation type="unfinished"/>
+        <translation>Sériové číslo:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="121"/>
         <source>Firmware revision:</source>
-        <translation type="unfinished"/>
+        <translation>Firmware revízia:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="150"/>
         <source>Temperature:</source>
-        <translation type="unfinished"/>
+        <translation>Teplota:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="179"/>
         <source>Bad sectors:</source>
-        <translation type="unfinished"/>
+        <translation>Zlé sektory:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="208"/>
         <source>Powered on for:</source>
-        <translation type="unfinished"/>
+        <translation>Postavené na:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="237"/>
         <source>Power cycles:</source>
-        <translation type="unfinished"/>
+        <translation>Počet cyklov:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="289"/>
         <source>Id</source>
-        <translation type="unfinished"/>
+        <translation>Id</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="294"/>
         <source>Attribute</source>
-        <translation type="unfinished"/>
+        <translation>Atribút</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="299"/>
         <source>Failure Type</source>
-        <translation type="unfinished"/>
+        <translation>Typ zlyhania</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="304"/>
         <source>Update Type</source>
-        <translation type="unfinished"/>
+        <translation>Typ aktualizácie</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="309"/>
         <source>Worst</source>
-        <translation type="unfinished"/>
+        <translation>Najhorší</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="314"/>
         <source>Current</source>
-        <translation type="unfinished"/>
+        <translation>Aktuálny</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="319"/>
         <source>Threshold</source>
-        <translation type="unfinished"/>
+        <translation>Prah</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="324"/>
         <source>Raw</source>
-        <translation type="unfinished"/>
+        <translation>Surový</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="329"/>
         <source>Assessment</source>
-        <translation type="unfinished"/>
+        <translation>Posúdenie</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="334"/>
         <source>Value</source>
-        <translation type="unfinished"/>
+        <translation>Hodnota</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="385"/>
         <source>Overall assessment:</source>
-        <translation type="unfinished"/>
+        <translation>Celkové posúdenie:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="414"/>
         <source>Self tests:</source>
-        <translation type="unfinished"/>
+        <translation>Vlastné testy:</translation>
     </message>
 </context>
 <context>
@@ -2441,7 +2427,7 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/summary/SummaryViewStep.cpp" line="41"/>
         <source>Summary</source>
-        <translation type="unfinished"/>
+        <translation>Celkovo</translation>
     </message>
 </context>
 <context>
@@ -2450,24 +2436,24 @@ Installation can continue, but some features might be disabled.</source>
         <location filename="../src/modules/partition/partitionmanager/src/gui/treelogbase.ui" line="54"/>
         <source>Sev.</source>
         <comment>@title:column Severity of a log entry / log level. Text must be very short.</comment>
-        <translation type="unfinished"/>
+        <translation>Sev.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/treelogbase.ui" line="57"/>
         <source>Severity</source>
-        <translation type="unfinished"/>
+        <translation>Závažnosť</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/treelogbase.ui" line="62"/>
         <source>Time</source>
         <comment>@title:column a time stamp of a log entry</comment>
-        <translation type="unfinished"/>
+        <translation>Čas</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/treelogbase.ui" line="67"/>
         <source>Message</source>
         <comment>@title:column the text message of a log entry</comment>
-        <translation type="unfinished"/>
+        <translation>Správa</translation>
     </message>
 </context>
 <context>
@@ -2496,7 +2482,7 @@ Installation can continue, but some features might be disabled.</source>
         <location filename="../src/modules/users/UsersPage.cpp" line="312"/>
         <location filename="../src/modules/users/UsersPage.cpp" line="345"/>
         <source>Your passwords do not match!</source>
-        <translation type="unfinished"/>
+        <translation>Vaše heslo nesúhlasí!</translation>
     </message>
 </context>
 <context>
@@ -2504,7 +2490,7 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/users/UsersViewStep.cpp" line="46"/>
         <source>Users</source>
-        <translation type="unfinished"/>
+        <translation>Používatelia</translation>
     </message>
 </context>
 </TS>
