@@ -45,9 +45,9 @@ def run():
     distro_settings = [
         ('auroraerc', '.config/'),
         ('kwinrc', '.config/'),
-        ('plasma-org.kde.plasma-desktop-appletsrc', '.config/'),
+        ('plasma-org.kde.plasma.desktop-appletsrc', '.config/'),
         ('bookmarks.xml', '.local/share/konqueror/'),
-        ('favoriteapps.xml', 'local/share/applications'),
+        ('favoriteapps.xml', '.local/share/applications/'),
         ('kdeglobals', '.config/'),
         ('kscreenlockerrc', '.config/'),
         ('kickoffrc', '.config/'),
