@@ -48,6 +48,12 @@ def get_uuid():
             return partition["uuid"]
     return ""
 
+def get_swap():
+    for partition in partitions:
+        if partition["fs"] == "linuxswap":
+            swap = partition["uuid"]
+        else:
+            swap = ""
 
 def create_conf(uuid, conf_path):
     distribution = libcalamares.job.configuration["distribution"]
@@ -58,7 +64,7 @@ def create_conf(uuid, conf_path):
         'title   %s GNU/Linux, with Linux core repo kernel\n' % distribution,
         'linux   /vmlinuz-linux\n',
         'initrd  /initramfs-linux.img\n',
-        'options root=UUID=%s quiet rw\n' % uuid,
+        'options root=UUID=%s quiet resume=%s rw\n' % (uuid, swap),
     ]
 
     with open(conf_path, 'w') as f:
