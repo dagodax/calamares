@@ -72,6 +72,23 @@ def create_conf(uuid, conf_path):
             f.write(l)
     f.close()
 
+def create_fallback(uuid, fallback_path):
+    distribution = libcalamares.job.configuration["distribution"]
+    lines = [
+        '## This is just an exmaple config file.\n',
+        '## Please edit the paths and kernel parameters according to your system.\n',
+        '\n',
+        'title   %s GNU/Linux, with Linux fallback kernel\n' % distribution,
+        'linux   /vmlinuz-linux\n',
+        'initrd  /initramfs-linux-fallback.img\n',
+        'options root=UUID=%s quiet resume=%s rw\n' % (uuid, swap),
+    ]
+
+    with open(fallback_path, 'w') as f:
+        for l in lines:
+            f.write(l)
+    f.close()
+
 
 def create_loader(loader_path):
     distribution = libcalamares.job.configuration["distribution"]
@@ -94,6 +111,8 @@ def install_bootloader(boot_loader, fw_type):
         distribution = libcalamares.job.configuration["distribution"]
         conf_path = os.path.join(
             install_path, "boot", "loader", "entries", "%s.conf" % distribution)
+        fallback_path = os.path.join(
+            install_path, "boot", "loader", "entries", "%s-fallback.conf" % distribution)
         loader_path = os.path.join(
             install_path, "boot", "loader", "loader.conf")
         partitions = libcalamares.globalstorage.value("partitions")
@@ -108,6 +127,7 @@ def install_bootloader(boot_loader, fw_type):
         subprocess.call(
             ["gummiboot", "--path=%s/boot" % install_path, "install"])
         create_conf(uuid, conf_path)
+        create_fallback(uuid, fallback_path)
         create_loader(loader_path)
     else:
         install_path = boot_loader["installPath"]
