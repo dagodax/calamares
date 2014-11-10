@@ -2,7 +2,6 @@
 # encoding: utf-8
 # === This file is part of Calamares - <http://github.com/calamares> ===
 #
-#   Copyright 2014, Philip Müller <philm@manjaro.org>
 #   Copyright 2014, Anke Boersma <demm@kaosx.us>
 #
 #   Calamares is free software: you can redistribute it and/or modify
@@ -25,12 +24,15 @@ import libcalamares
 
 
 def run():
-    """ Setup locale """
+    """ Create locale and keymap """
 
-    # Generate locales
     keyboard_layout = libcalamares.globalstorage.value("keyboardLayout")
+    print(keyboard_layout)
+    keyboard_variant = libcalamares.globalstorage.value("keyboardVariant")
+    print(keyboard_variant)
 
     us = '#en_US'
+    # locale = libcalamares.globalstorage.value("localeSetting")
     locale = 'en_US.UTF-8'
 
     install_path = libcalamares.globalstorage.value("rootMountPoint")
@@ -65,5 +67,20 @@ def run():
     vconsole_conf_path = os.path.join(install_path, "etc/vconsole.conf")
     with open(vconsole_conf_path, "w") as vconsole_conf:
         vconsole_conf.write('KEYMAP=%s\n' % keyboard_layout)
+    
+    # Write  Xorg keyboard.conf
+    xorg_conf_xkb_path = os.path.join(
+                   install_path, "etc", "X11", "xorg.conf.d", "10-keyboard.conf")
+    with open(xorg_conf_xkb_path, "w") as xorg_conf_xkb:
+        xorg_conf_xkb.write("# Read and parsed by systemd-localed. Better not\n")
+        xorg_conf_xkb.write('# edit this file manually too freely.\n')
+        xorg_conf_xkb.write('Section "InputClass"\n')
+        xorg_conf_xkb.write('        Identifier             "system-keyboard"\n')
+        xorg_conf_xkb.write('        MatchIsKeyboard        "on"\n')
+        xorg_conf_xkb.write('        Option "XkbLayout"     "%s"\n' % keyboard_layout)
+        if keyboard_variant != '':
+            xorg_conf_xkb.write('        Option "XkbVariant"    "%s"\n' % keyboard_variant)
+        xorg_conf_xkb.write('EndSection\n')
+        print("10-keyboard.conf written.")
 
     return None

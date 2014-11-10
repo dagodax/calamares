@@ -1,5 +1,5 @@
 ---
 type:       "job"
-name:       "localegen"
+name:       "keymap_locale"
 interface:  "python"
 script:     "main.py"
