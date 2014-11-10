@@ -40,7 +40,7 @@ def run():
     if os.path.exists("%s/usr/bin/calamares" % install_path):
         print('Removing installer packages')
         libcalamares.utils.chroot_call(
-            ['pacman', '-Rns', '--noconfirm', 'calamares'])
+            ['pacman', '-Rns', '--noconfirm', 'calamares', 'keyboardctl'])
 
     # Remove welcome
     if os.path.exists("%s/usr/bin/welcome" % install_path):
@@ -62,7 +62,7 @@ def run():
 
     # Remove KDE l10n
     # TODO: get this_locale
-    #this_locale = self.settings.get("language_code")[:2]
+    #this_locale = libcalamares.globalstorage.value("language_code")[:2]
     this_locale = 'us'
     list_of_pkgs = []
 

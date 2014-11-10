@@ -70,7 +70,7 @@ def run():
     
     # Write  Xorg keyboard.conf
     xkb_path = os.path.join(
-                   install_path, "etc", "X11", "xorg.conf.d", "10-keyboard.conf")
+              install_path, "etc", "X11", "xorg.conf.d", "10-keyboard.conf")
     with open(xkb_path, "w") as xkb:
         xkb.write("# Read and parsed by systemd-localed. Better not\n")
         xkb.write('# edit this file manually too freely.\n')

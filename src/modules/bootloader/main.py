@@ -57,13 +57,15 @@ def get_swap():
 
 def create_conf(uuid, conf_path):
     distribution = libcalamares.job.configuration["distribution"]
+    kernel = libcalamares.job.configuration["kernel"]
+    img = libcalamares.job.configuration["img"]
     lines = [
         '## This is just an exmaple config file.\n',
         '## Please edit the paths and kernel parameters according to your system.\n',
         '\n',
         'title   %s GNU/Linux, with Linux core repo kernel\n' % distribution,
-        'linux   /vmlinuz-linux\n',
-        'initrd  /initramfs-linux.img\n',
+        'linux   %s\n' % kernel,
+        'initrd  %s\n' % img,
         'options root=UUID=%s quiet resume=%s rw\n' % (uuid, swap),
     ]
 
@@ -74,13 +76,15 @@ def create_conf(uuid, conf_path):
 
 def create_fallback(uuid, fallback_path):
     distribution = libcalamares.job.configuration["distribution"]
+    kernel = libcalamares.job.configuration["kernel"]
+    fb_img = libcalamares.job.configuration["fallback"]
     lines = [
         '## This is just an exmaple config file.\n',
         '## Please edit the paths and kernel parameters according to your system.\n',
         '\n',
         'title   %s GNU/Linux, with Linux fallback kernel\n' % distribution,
-        'linux   /vmlinuz-linux\n',
-        'initrd  /initramfs-linux-fallback.img\n',
+        'linux   %s\n' % kernel,
+        'initrd  %s\n' % fb_img,
         'options root=UUID=%s quiet resume=%s rw\n' % (uuid, swap),
     ]
 
