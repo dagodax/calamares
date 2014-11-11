@@ -35,6 +35,9 @@ def detect_firmware_type():
         fw_type = 'efi'
     else:
         fw_type = 'bios'
+        
+    libcalamares.globalstorage.insert("firmwareType", fw_type)
+    libcalamares.utils.debug("Firmware type: {!s}".format(fw_type))
 
 
 def get_uuid():
@@ -48,17 +51,16 @@ def get_uuid():
             return partition["uuid"]
     return ""
 
-def get_swap():
+def create_conf(uuid, conf_path):
+    distribution = libcalamares.job.configuration["distribution"]
+    kernel = libcalamares.job.configuration["kernel"]
+    img = libcalamares.job.configuration["img"]
+    partitions = libcalamares.globalstorage.value("partitions")
     for partition in partitions:
         if partition["fs"] == "linuxswap":
             swap = partition["uuid"]
         else:
             swap = ""
-
-def create_conf(uuid, conf_path):
-    distribution = libcalamares.job.configuration["distribution"]
-    kernel = libcalamares.job.configuration["kernel"]
-    img = libcalamares.job.configuration["img"]
     lines = [
         '## This is just an exmaple config file.\n',
         '## Please edit the paths and kernel parameters according to your system.\n',
@@ -78,6 +80,12 @@ def create_fallback(uuid, fallback_path):
     distribution = libcalamares.job.configuration["distribution"]
     kernel = libcalamares.job.configuration["kernel"]
     fb_img = libcalamares.job.configuration["fallback"]
+    partitions = libcalamares.globalstorage.value("partitions")
+    for partition in partitions:
+        if partition["fs"] == "linuxswap":
+            swap = partition["uuid"]
+        else:
+            swap = ""
     lines = [
         '## This is just an exmaple config file.\n',
         '## Please edit the paths and kernel parameters according to your system.\n',
