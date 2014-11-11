@@ -24,7 +24,7 @@ import libcalamares
 
 
 def run():
-    """ Create locale and keymap """
+    """ Create locale """
 
     keyboard_layout = libcalamares.globalstorage.value("keyboardLayout")
     print(keyboard_layout)
@@ -63,24 +63,24 @@ def run():
     with open(environment_path, "w") as environment:
         environment.write('LANG=%s\n' % locale)
 
-    # Set /etc/vconsole.conf
-    vconsole_conf_path = os.path.join(install_path, "etc/vconsole.conf")
-    with open(vconsole_conf_path, "w") as vconsole_conf:
-        vconsole_conf.write('KEYMAP=%s\n' % keyboard_layout)
+    ## Set /etc/vconsole.conf
+    #vconsole_conf_path = os.path.join(install_path, "etc/vconsole.conf")
+    #with open(vconsole_conf_path, "w") as vconsole_conf:
+    #    vconsole_conf.write('KEYMAP=%s\n' % keyboard_layout)
     
-    # Write  Xorg keyboard.conf
-    xkb_path = os.path.join(
-              install_path, "etc", "X11", "xorg.conf.d", "10-keyboard.conf")
-    with open(xkb_path, "w") as xkb:
-        xkb.write("# Read and parsed by systemd-localed. Better not\n")
-        xkb.write('# edit this file manually too freely.\n')
-        xkb.write('Section "InputClass"\n')
-        xkb.write('        Identifier             "system-keyboard"\n')
-        xkb.write('        MatchIsKeyboard        "on"\n')
-        xkb.write('        Option "XkbLayout"     "%s"\n' % keyboard_layout)
-        if keyboard_variant != '':
-            xkb.write('        Option "XkbVariant"    "%s"\n' % keyboard_variant)
-        xkb.write('EndSection\n')
-        print("10-keyboard.conf written.")
+    ## Write  Xorg keyboard.conf
+    #xkb_path = os.path.join(
+    #          install_path, "etc", "X11", "xorg.conf.d", "10-keyboard.conf")
+    #with open(xkb_path, "w") as xkb:
+    #    xkb.write("# Read and parsed by systemd-localed. Better not\n")
+    #    xkb.write('# edit this file manually too freely.\n')
+    #    xkb.write('Section "InputClass"\n')
+    #    xkb.write('        Identifier             "system-keyboard"\n')
+    #    xkb.write('        MatchIsKeyboard        "on"\n')
+    #    xkb.write('        Option "XkbLayout"     "%s"\n' % keyboard_layout)
+    #    if keyboard_variant != '':
+    #        xkb.write('        Option "XkbVariant"    "%s"\n' % keyboard_variant)
+    #    xkb.write('EndSection\n')
+    #    print("10-keyboard.conf written.")
 
     return None
