@@ -26,35 +26,35 @@ import libcalamares
 def run():
     """ Create locale """
 
-    keyboard_layout = libcalamares.globalstorage.value("keyboardLayout")
-    print(keyboard_layout)
-    keyboard_variant = libcalamares.globalstorage.value("keyboardVariant")
-    print(keyboard_variant)
-
     us = '#en_US'
     # locale = libcalamares.globalstorage.value("localeSetting")
     locale = 'en_US.UTF-8'
 
     install_path = libcalamares.globalstorage.value("rootMountPoint")
-    shutil.copy2('%s/etc/locale.gen.bak' %
+    
+    # run locale-gen if detected
+    if os.path.exists('/etc/locale.gen'):
+        shutil.copy2('%s/etc/locale.gen.bak' %
                  (install_path), '%s/etc/locale.gen' % (install_path))
 
-    text = []
-    with open("%s/etc/locale.gen" % install_path, "r") as gen:
-        text = gen.readlines()
+        text = []
+        with open("%s/etc/locale.gen" % install_path, "r") as gen:
+            text = gen.readlines()
 
-    # always enable en_US
-    with open("%s/etc/locale.gen" % install_path, "w") as gen:
-        for line in text:
-            if us in line and line[0] == "#":
-                # uncomment line
-                line = line[1:]
-            if locale in line and line[0] == "#":
-                # uncomment line
-                line = line[1:]
-            gen.write(line)
+        # always enable en_US
+        with open("%s/etc/locale.gen" % install_path, "w") as gen:
+            for line in text:
+                if us in line and line[0] == "#":
+                    # uncomment line
+                    line = line[1:]
+                if locale in line and line[0] == "#":
+                    # uncomment line
+                    line = line[1:]
+                gen.write(line)
 
-    libcalamares.utils.chroot_call(['locale-gen'])
+        libcalamares.utils.chroot_call(['locale-gen'])
+        print('locale.gen done')
+    
     locale_conf_path = os.path.join(install_path, "etc/locale.conf")
     with open(locale_conf_path, "w") as locale_conf:
         locale_conf.write('LANG=%s\n' % locale)
@@ -62,25 +62,5 @@ def run():
     environment_path = os.path.join(install_path, "etc/environment")
     with open(environment_path, "w") as environment:
         environment.write('LANG=%s\n' % locale)
-
-    ## Set /etc/vconsole.conf
-    #vconsole_conf_path = os.path.join(install_path, "etc/vconsole.conf")
-    #with open(vconsole_conf_path, "w") as vconsole_conf:
-    #    vconsole_conf.write('KEYMAP=%s\n' % keyboard_layout)
-    
-    ## Write  Xorg keyboard.conf
-    #xkb_path = os.path.join(
-    #          install_path, "etc", "X11", "xorg.conf.d", "10-keyboard.conf")
-    #with open(xkb_path, "w") as xkb:
-    #    xkb.write("# Read and parsed by systemd-localed. Better not\n")
-    #    xkb.write('# edit this file manually too freely.\n')
-    #    xkb.write('Section "InputClass"\n')
-    #    xkb.write('        Identifier             "system-keyboard"\n')
-    #    xkb.write('        MatchIsKeyboard        "on"\n')
-    #    xkb.write('        Option "XkbLayout"     "%s"\n' % keyboard_layout)
-    #    if keyboard_variant != '':
-    #        xkb.write('        Option "XkbVariant"    "%s"\n' % keyboard_variant)
-    #    xkb.write('EndSection\n')
-    #    print("10-keyboard.conf written.")
 
     return None
