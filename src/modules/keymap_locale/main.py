@@ -31,11 +31,11 @@ def run():
     locale = 'en_US.UTF-8'
 
     install_path = libcalamares.globalstorage.value("rootMountPoint")
-    
+
     # run locale-gen if detected
     if os.path.exists('/etc/locale.gen'):
         shutil.copy2('%s/etc/locale.gen.bak' %
-                 (install_path), '%s/etc/locale.gen' % (install_path))
+                     (install_path), '%s/etc/locale.gen' % (install_path))
 
         text = []
         with open("%s/etc/locale.gen" % install_path, "r") as gen:
@@ -54,7 +54,7 @@ def run():
 
         libcalamares.utils.chroot_call(['locale-gen'])
         print('locale.gen done')
-    
+
     locale_conf_path = os.path.join(install_path, "etc/locale.conf")
     with open(locale_conf_path, "w") as locale_conf:
         locale_conf.write('LANG=%s\n' % locale)
