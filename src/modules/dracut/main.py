@@ -19,11 +19,12 @@
 #   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
 
 import libcalamares
-from libcalamares.utils import check_chroot_call
+from libcalamares.utils import chroot_call
 
 def run_dracut():
-    check_chroot_call(['dracut', '-f'])
+    return chroot_call(['dracut', '-f'])
 
 def run():
-    run_dracut()
-    return None
+    returnCode = run_dracut()
+    if returnCode != 0:
+        return ("Failed to run dracut on the target", "The exit code was {}".format(returnCode))
