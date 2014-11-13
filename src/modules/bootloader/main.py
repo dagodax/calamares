@@ -35,7 +35,7 @@ def detect_firmware_type():
         fw_type = 'efi'
     else:
         fw_type = 'bios'
-
+        
     libcalamares.globalstorage.insert("firmwareType", fw_type)
     libcalamares.utils.debug("Firmware type: {!s}".format(fw_type))
 
@@ -50,7 +50,6 @@ def get_uuid():
             print(partition["uuid"])
             return partition["uuid"]
     return ""
-
 
 def create_conf(uuid, conf_path):
     distribution = libcalamares.job.configuration["distribution"]
@@ -76,7 +75,6 @@ def create_conf(uuid, conf_path):
         for l in lines:
             f.write(l)
     f.close()
-
 
 def create_fallback(uuid, fallback_path):
     distribution = libcalamares.job.configuration["distribution"]
@@ -138,7 +136,7 @@ def install_bootloader(boot_loader, fw_type):
                 device = boot_device[:-1]
                 print(device)
         subprocess.call(['sgdisk', '--typecode=%s:EF00 %s' % (boot_p, device)])
-        libcalamares.utils.chroot_call(
+        subprocess.call(
             ["gummiboot", "--path=%s/boot" % install_path, "install"])
         create_conf(uuid, conf_path)
         create_fallback(uuid, fallback_path)
