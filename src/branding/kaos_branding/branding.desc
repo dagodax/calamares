@@ -2,13 +2,13 @@
 componentName:  kaos_branding
 
 strings:
-    productName:        KaOS
-    shortProductname:   KaOS
-    version:            2014.11
-    shortVersion:       KaOS
-    versionedName:      KaOS 2014.11
-    shortVersionedName: KaOS 2014.11
-    bootloaderEntryName:KaOS
+    productName:         KaOS
+    shortProductname:    KaOS
+    version:             2014.11
+    shortVersion:        KaOS
+    versionedName:       KaOS 2014.11
+    shortVersionedName:  KaOS 2014.11
+    bootloaderEntryName: KaOS
 
 images:
     productLogo:        "squid.png"
