@@ -31,15 +31,17 @@ menu_entries = []
 def read_grub():
     global menu_entries
     grub_path = os.path.join(install_path, 'boot', 'grub', 'grub.cfg')
-    with open(grub_path, 'r)' as f:
+    o = False
+    with open(grub_path, 'r') as f:
         for l in f:
-            if 'menuentry' in l:
+            if l.strip()[:9] == 'menuentry' and l[-2] == '{':
+                o = True
                 e = {}
                 i1 = l.find("'") + 1
                 i2 = l.find("'", i1)
                 e["title"] = l[i1:i2]
                 i = e["title"].find(' ')
-                if i <= 0:
+                if i > 0:
                     e["name"] = e["title"][:i]
                 else:
                     e["name"] = e["title"]
@@ -47,13 +49,14 @@ def read_grub():
                 l = l.lstrip()[5:].lstrip()
                 i = l.find(' ')
                 e["linux"] = l[:i]
-                e["options"] = l[i+1:]
+                e["options"] = l[i+1:].rstrip('\n')
             elif l.lstrip()[:6] == 'initrd':
-                e["initrd"] = l.lstrip()[6:].strip()
-            elif '}' in l:
+                e["initrd"] = l.lstrip()[6:].strip().rstrip('\n')
+            elif '}' in l and o:
+                o = False
                 menu_entries.append(e)
                 break
-    f.close()
+    f.close() 
  
 # Write the menu entry .conf  
 def write_conf(e):
