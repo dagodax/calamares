@@ -135,6 +135,13 @@ LocaleViewStep::jobs() const
 
 
 void
+LocaleViewStep::onActivate()
+{
+    m_actualWidget->onActivate();
+}
+
+
+void
 LocaleViewStep::onLeave()
 {
     m_jobs.clear();
@@ -144,7 +151,6 @@ LocaleViewStep::onLeave()
 
     Calamares::JobQueue::instance()->globalStorage()->insert( "lcLocale",
                                                               m_actualWidget->lcLocale() );
-    cDebug() << "GlobalStorage inserted lcLocale:" << m_actualWidget->lcLocale();
 }
 
 
