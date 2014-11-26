@@ -29,7 +29,7 @@ install_path = libcalamares.globalstorage.value("rootMountPoint")
 devices = []
 distributions = ['linux_os']
 osprober = []
-blkid = []
+lsblk = []
  
 # Create title
 def run_osprober():
@@ -54,11 +54,11 @@ def get_title(device):
     return 'no title found'
 
 # Set kernel lines
-def run_blkid():
-    p = subprocess.Popen('blkid',
+def run_lsblk():
+    p = subprocess.Popen('lsblk -o KNAME,FSTYPE',
                          shell=True, stdout=subprocess.PIPE)
-    global blkid
-    blkid = p.stdout.read().decode().split('\n')
+    global lsblk
+    lsblk = p.stdout.read().decode().split('\n')
       
 def get_kernel(mountpoint):
     os.chdir(mountpoint)
@@ -68,7 +68,7 @@ def get_kernel(mountpoint):
 
 # options root entry  
 def get_uuid(device):
-    p = subprocess.Popen('sudo blkid -s UUID -o value %s' % device,
+    p = subprocess.Popen('blkid -s UUID -o value %s' % device,
                          shell=True, stdout=subprocess.PIPE)
     return p.stdout.read().decode().rstrip('\n') 
 
