@@ -29,7 +29,8 @@ install_path = libcalamares.globalstorage.value("rootMountPoint")
 devices = []
 distributions = ['linux_os']
 osprober = []
-lsblk = []
+blkid = []
+boot = []
  
 # Create title
 def run_osprober():
@@ -54,17 +55,28 @@ def get_title(device):
     return 'no title found'
 
 # Set kernel lines
-def run_lsblk():
-    p = subprocess.Popen('lsblk -o KNAME,FSTYPE',
+def run_blkid():
+    p = subprocess.Popen('blkid -t TYPE=vfat',
                          shell=True, stdout=subprocess.PIPE)
-    global lsblk
-    lsblk = p.stdout.read().decode().split('\n')
+    global blkid
+    global boot
+    blkid = p.stdout.read().decode()
+    boot = blkid[:9]
+    partitions = libcalamares.globalstorage.value("partitions")
+        for partition in partitions:
+            if partition["mountPoint"] == "/boot":
+                print(partition["device"])
+                boot_device = partition["device"]
+    if boot != boot_device
+        subprocess.call(['mkdir', '/mount'])
+        subprocess.call(['mount', '%s', '/mount', % boot])
       
 def get_kernel(mountpoint):
     os.chdir(mountpoint)
     kernels = [ file for file in glob.glob('*.img') if not 'fallback' in file ]
     kernels.extend [ file for file in glob.glob('*vmlinuz*') ]
     return kernels
+    subprocess.call(['umount', '/mount'])
 
 # options root entry  
 def get_uuid(device):
