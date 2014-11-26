@@ -61,7 +61,7 @@ def run():
             ['pacman', '-R', '--noconfirm', 'init-live'])
 
     # Remove KDE l10n
-    this_locale = libcalamares.globalstorage.value("localeSetting")[:2]
+    this_locale = libcalamares.globalstorage.value("lcLocale")[:2]
     #this_locale = 'us'
     list_of_pkgs = []
 
