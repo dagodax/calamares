@@ -23,6 +23,7 @@ from libcalamares.utils import check_chroot_call
  
 import subprocess
 import os
+import glob
  
 install_path = libcalamares.globalstorage.value("rootMountPoint")
 devices = []
@@ -30,6 +31,7 @@ distributions = ['linux_os']
 osprober = []
 blkid = []
  
+# Create title
 def run_osprober():
     p = subprocess.Popen('sudo os-prober',
                          shell=True, stdout=subprocess.PIPE)
@@ -44,11 +46,6 @@ def run_osprober():
             devices.append(o[0])
             break
  
-def get_uuid(device):
-    p = subprocess.Popen('sudo blkid -s UUID -o value %s' % device,
-                         shell=True, stdout=subprocess.PIPE)
-    return p.stdout.read().decode().rstrip('\n')
- 
 def get_title(device):
     for l in osprober:
         print('search title...')
@@ -56,21 +53,26 @@ def get_title(device):
             return l
     return 'no title found'
 
+# Set kernel lines
 def run_blkid():
     p = subprocess.Popen('blkid',
                          shell=True, stdout=subprocess.PIPE)
     global blkid
     blkid = p.stdout.read().decode().split('\n')
-    for l in blkid:
-      o = l.split(':')
       
-
 def get_kernel(mountpoint):
     os.chdir(mountpoint)
     kernels = [ file for file in glob.glob('*.img') if not 'fallback' in file ]
     kernels.extend [ file for file in glob.glob('*vmlinuz*') ]
     return kernels
- 
+
+# options root entry  
+def get_uuid(device):
+    p = subprocess.Popen('sudo blkid -s UUID -o value %s' % device,
+                         shell=True, stdout=subprocess.PIPE)
+    return p.stdout.read().decode().rstrip('\n') 
+
+# Write the menu entry .conf  
 def write_conf(device, distribution):
     uuid = get_uuid(device)
     print(uuid)
