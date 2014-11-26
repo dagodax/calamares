@@ -28,6 +28,7 @@ install_path = libcalamares.globalstorage.value("rootMountPoint")
 devices = []
 distributions = ['linux_os']
 osprober = []
+blkid = []
  
 def run_osprober():
     p = subprocess.Popen('sudo os-prober',
@@ -54,6 +55,21 @@ def get_title(device):
         if device in l:
             return l
     return 'no title found'
+
+def run_blkid():
+    p = subprocess.Popen('blkid',
+                         shell=True, stdout=subprocess.PIPE)
+    global blkid
+    blkid = p.stdout.read().decode().split('\n')
+    for l in blkid:
+      o = l.split(':')
+      
+
+def get_kernel(mountpoint):
+    os.chdir(mountpoint)
+    kernels = [ file for file in glob.glob('*.img') if not 'fallback' in file ]
+    kernels.extend [ file for file in glob.glob('*vmlinuz*') ]
+    return kernels
  
 def write_conf(device, distribution):
     uuid = get_uuid(device)
@@ -66,7 +82,7 @@ def write_conf(device, distribution):
             '## Please edit the paths and kernel parameters according to your system.\n',
             '\n',
             'title   %s\n' % title,
-            'linux   /vmlinuz-linux\n',
+            'linux   /%s\n', % kernel
             'initrd  /initramfs-linux.img\n',
             'options root=UUID=%s quiet rw\n' % uuid,
         ]
