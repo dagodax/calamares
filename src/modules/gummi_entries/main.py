@@ -26,76 +26,58 @@ import os
 import glob
  
 install_path = libcalamares.globalstorage.value("rootMountPoint")
-devices = []
-distributions = ['linux_os']
-osprober = []
-blkid = []
-boot = []
+menu_entries = []
  
-# Create title
-def run_osprober():
-    p = subprocess.Popen('sudo os-prober',
-                         shell=True, stdout=subprocess.PIPE)
-    global osprober
-    global devices
-    osprober = p.stdout.read().decode().split('\n')
-    for l in osprober:
-        if not l:
-            continue
-        o = l.split(':')
-        if o[-1] == 'linux':
-            devices.append(o[0])
-            break
+def read_grub():
+    global menu_entries
+    grub_path = os.path.join(install_path, 'boot', 'grub', 'grub.cfg')
+    with open(grub_path, 'r)' as f:
+        for l in f:
+            if 'menuentry' in l:
+                e = {}
+                i1 = l.find("'") + 1
+                i2 = l.find("'", i1)
+                e["title"] = l[i1:i2]
+                i = e["title"].find(' ')
+                if i <= 0:
+                    e["name"] = e["title"][:i]
+                else:
+                    e["name"] = e["title"]
+            elif l.lstrip()[:5] == 'linux':
+                l = l.lstrip()[5:].lstrip()
+                i = l.find(' ')
+                e["linux"] = l[:i]
+                e["options"] = l[i+1:]
+            elif l.lstrip()[:6] == 'initrd':
+                e["initrd"] = l.lstrip()[6:].strip()
+            elif '}' in l:
+                menu_entries.append(e)
+                break
+    f.close()
  
-def get_title(device):
-    for l in osprober:
-        print('search title...')
-        if device in l:
-            return l
-    return 'no title found'
-
-# Set kernel lines     
-def get_kernel(efi_boot):
-    efi_boot = libcalamares.globalstorage.value("bootLoader")
-    kernels = [ file for file in glob.glob('*.img') if not 'fallback' in file ]
-    kernels.extend [ file for file in glob.glob('*vmlinuz*') ]
-    return kernels
-
-# options root entry  
-def get_uuid(device):
-    p = subprocess.Popen('blkid -s UUID -o value %s' % device,
-                         shell=True, stdout=subprocess.PIPE)
-    return p.stdout.read().decode().rstrip('\n') 
-
 # Write the menu entry .conf  
-def write_conf(device, distribution):
-    uuid = get_uuid(device)
-    print(uuid)
-    title = get_title(device)
-    print(title)
- 
+def write_conf(e):
     lines = [
             '## This is just an example config file.\n',
             '## Please edit the paths and kernel parameters according to your system.\n',
             '\n',
-            'title   %s\n' % title,
-            'linux   /%s\n', % kernel
-            'initrd  /initramfs-linux.img\n',
-            'options root=UUID=%s quiet rw\n' % uuid,
+            'title   %s\n' % e["title"],
+            'linux   %s\n' % e["linux"],
+            'initrd  %s\n' % e["initrd"],
+            'options %s\n' % e["options"],
         ]
- 
-    path = os.path.join(install_path, "boot", "loader", "entries", "%s.conf" % distribution)
+    path = os.path.join(install_path, "boot", "loader", "entries", "%s.conf" % e["title"])
     with open(path, 'w') as f:
         for l in lines:
             f.write(l)
     f.close()
  
-def main():
+def run():
     fw_type = libcalamares.globalstorage.value("firmwareType")
     if fw_type == 'efi':
-        run_osprober()
-        print(osprober)
-        for i, device in enumerate(devices):
-            write_conf(device, distributions[i])
+        read_grub()
+        print(menu_entries)
+        for e in menu_entries:
+            write_conf(e)
  
-main()
+run()
