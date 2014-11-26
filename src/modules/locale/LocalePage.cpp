@@ -30,6 +30,7 @@
 #include <QComboBox>
 #include <QLabel>
 #include <QPushButton>
+#include <QProcess>
 
 
 LocalePage::LocalePage( QWidget* parent )
@@ -153,7 +154,7 @@ LocalePage::LocalePage( QWidget* parent )
              !dlg->selectedLCLocale().isEmpty() )
         {
             m_selectedLocale = dlg->selectedLCLocale();
-            m_localeLabel->setText( tr( "The system encoding is set to %1." )
+            m_localeLabel->setText( tr( "The system locale is set to %1." )
                                     .arg( prettyLCLocale( m_selectedLocale ) ) );
         }
 
@@ -164,7 +165,7 @@ LocalePage::LocalePage( QWidget* parent )
         m_regionLabel->setText( tr( "Region:" ) );
         m_zoneLabel->setText( tr( "Zone:" ) );
 
-        m_localeLabel->setText( tr( "The system encoding is set to %1." )
+        m_localeLabel->setText( tr( "The system locale is set to %1." )
                                 .arg( prettyLCLocale( lcLocale() ) ) );
 
         m_localeChangeButton->setText( tr( "&Change..." ) );
@@ -226,12 +227,22 @@ LocalePage::init( const QString& initialRegion,
     // Fill in meaningful locale/charset lines from locale.gen
     m_localeGenLines.clear();
     QFile localeGen( localeGenPath );
-    if ( !localeGen.open( QIODevice::ReadOnly | QIODevice::Text ) )
+    QByteArray ba;
+    if ( localeGen.open( QIODevice::ReadOnly | QIODevice::Text ) )
     {
-        cDebug() << "ERROR: Cannot open file" << localeGenPath << ".";
-        return;
+        ba = localeGen.readAll();
+        localeGen.close();
     }
-    QByteArray ba = localeGen.readAll();
+    else
+    {
+        cDebug() << "Cannot open file" << localeGenPath
+                 << ". Assuming the supported languages are already built into "
+                    "the locale archive.";
+        QProcess localeA;
+        localeA.start( "locale", QStringList() << "-a" );
+        localeA.waitForFinished();
+        ba = localeA.readAllStandardOutput();
+    }
     foreach ( QByteArray line, ba.split( '\n' ) )
     {
         if ( line.startsWith( "# " ) || line.simplified() == "#" )
@@ -287,10 +298,11 @@ LocalePage::guessLCLocale()
     if ( m_localeGenLines.isEmpty() )
         return "en_US.UTF-8 UTF-8";
 
+    QString myLanguage = myLocale.name().split( '_' ).first();
     QStringList linesForLanguage;
     foreach ( QString line, m_localeGenLines )
     {
-        if ( line.startsWith( myLocale.name().left( 2 ) ) )
+        if ( line.startsWith( myLanguage ) )
             linesForLanguage.append( line );
     }
 
@@ -312,10 +324,10 @@ LocalePage::guessLCLocale()
     }
 
     // FIXME: use reverse geocoding to guess the country
+    QString prefix = myLocale.name();
     QStringList linesForLanguageAndCountry;
     foreach ( QString line, linesForLanguage )
     {
-        QString prefix = myLocale.name();
         if ( line.startsWith( prefix ) )
             linesForLanguageAndCountry.append( line );
     }
