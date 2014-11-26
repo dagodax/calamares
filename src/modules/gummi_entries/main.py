@@ -54,29 +54,12 @@ def get_title(device):
             return l
     return 'no title found'
 
-# Set kernel lines
-def run_blkid():
-    p = subprocess.Popen('blkid -t TYPE=vfat',
-                         shell=True, stdout=subprocess.PIPE)
-    global blkid
-    global boot
-    blkid = p.stdout.read().decode()
-    boot = blkid[:9]
-    partitions = libcalamares.globalstorage.value("partitions")
-        for partition in partitions:
-            if partition["mountPoint"] == "/boot":
-                print(partition["device"])
-                boot_device = partition["device"]
-    if boot != boot_device
-        subprocess.call(['mkdir', '/mount'])
-        subprocess.call(['mount', '%s', '/mount', % boot])
-      
-def get_kernel(mountpoint):
-    os.chdir(mountpoint)
+# Set kernel lines     
+def get_kernel(efi_boot):
+    efi_boot = libcalamares.globalstorage.value("bootLoader")
     kernels = [ file for file in glob.glob('*.img') if not 'fallback' in file ]
     kernels.extend [ file for file in glob.glob('*vmlinuz*') ]
     return kernels
-    subprocess.call(['umount', '/mount'])
 
 # options root entry  
 def get_uuid(device):
