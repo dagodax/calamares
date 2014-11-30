@@ -1,0 +1,6 @@
+---
+type:       "job"
+name:       "kdm_sddm"
+interface:  "python"
+requires:   []
+script:     "main.py"
