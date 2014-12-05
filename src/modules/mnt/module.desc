@@ -1,0 +1,5 @@
+---
+type:       "job"
+name:       "mnt"
+interface:  "python"
+script:     "main.py"
