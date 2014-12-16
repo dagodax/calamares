@@ -4,10 +4,10 @@ componentName:  kaos_branding
 strings:
     productName:         KaOS
     shortProductname:    KaOS
-    version:             2014.11
+    version:             2014.12
     shortVersion:        KaOS
-    versionedName:       KaOS 2014.11
-    shortVersionedName:  KaOS 2014.11
+    versionedName:       KaOS 2014.12
+    shortVersionedName:  KaOS 2014.12
     bootloaderEntryName: KaOS
 
 images:
