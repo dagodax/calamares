@@ -35,6 +35,7 @@ def run():
         '.config',
         '.local/share/applications/',
         '.local/share/konqueror',
+        '.local/share/konsole',
         '.config/autostart'
     ]
     for d in common_dirs:
@@ -55,9 +56,11 @@ def run():
         ('mimeapps.list', '.local/share/applications/'),
         ('xdg-user-dirs-update.desktop', '.config/autostart/'),
         ('octopi-notifier.desktop', '.config/autostart/'),
-        ('katerc', '.config/')
-        ('plasmarc', '.config/')
-        ('plasmashellrc', '.config/')
+        ('katerc', '.config/'),
+        ('plasmarc', '.config/'),
+        ('plasmashellrc', '.config/'),
+        ('Linux.colorscheme', '.local/share/konsole/'),
+        ('Shell.profile', '.local/share/konsole/')
     ]
 
     for f,  d in distro_settings:
