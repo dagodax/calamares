@@ -56,6 +56,8 @@ def run():
         ('xdg-user-dirs-update.desktop', '.config/autostart/'),
         ('octopi-notifier.desktop', '.config/autostart/'),
         ('katerc', '.config/')
+        ('plasmarc', '.config/')
+        ('plasmashellrc', '.config/')
     ]
 
     for f,  d in distro_settings:
