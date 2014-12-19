@@ -37,7 +37,7 @@ def read_grub():
             if l.strip()[:9] == 'menuentry' and l[-2] == '{':
                 o = True
                 e = {}
-                e["title"] = l[11:17]
+                e["title"] = l[11:18]
             elif l.lstrip()[:5] == 'linux':
                 l = l.lstrip()[5:].lstrip()
                 i = l.find(' ')
