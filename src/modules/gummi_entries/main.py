@@ -30,7 +30,19 @@ menu_entries = []
  
 def read_grub():
     global menu_entries
-    grub_path = os.path.join(install_path, 'boot', 'grub', 'grub.cfg')
+    grub_path = ""
+    if os.path.exists('%s/boot/grub/grub.cfg' % install_path):
+        grub_path = os.path.join(install_path, 'boot', 'grub', 'grub.cfg')
+    elif os.path.exists('%s/boot/grub2/grub.cfg' % install_path):
+        grub_path = os.path.join(install_path, 'boot', 'grub2', 'grub.cfg')
+    elif os.path.exists('%s/boot/efi/grub/grub.cfg' % install_path):
+        grub_path = os.path.join(install_path, 'boot', 'efi', 'grub', 'grub.cfg')
+    elif os.path.exists('%s/boot/efi/grub2/grub.cfg' % install_path):
+        grub_path = os.path.join(install_path, 'boot', 'efi', 'grub2', 'grub.cfg')
+    elif os.path.exists('%s/boot/efi/EFI/fedora/grub.cfg' % install_path):
+        grub_path = os.path.join(install_path, 'boot', 'efi', 'EFI', 'fedora', 'grub.cfg')
+    if not grub_path:
+        return
     o = False
     with open(grub_path, 'r') as f:
         for l in f:
