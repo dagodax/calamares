@@ -47,14 +47,14 @@ def read_grub():
             if l.strip()[:9] == 'menuentry' and l[-2] == '{':
                 o = True
                 e = {}
-                e["title"] = l[11:18]
+                e["title"] = l[11:19]
             elif l.lstrip()[:5] == 'linux':
-                l = l.lstrip()[5:].lstrip()
+                l = l.lstrip()[12:].lstrip()
                 i = l.find(' ')
                 e["linux"] = l[:i]
                 e["options"] = l[i+1:].rstrip('\n')
             elif l.lstrip()[:6] == 'initrd':
-                e["initrd"] = l.lstrip()[6:].strip().rstrip('\n')
+                e["initrd"] = l.lstrip()[13:].strip().rstrip('\n')
             elif '}' in l and o:
                 o = False
                 menu_entries.append(e)
