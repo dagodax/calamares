@@ -39,8 +39,6 @@ def read_grub():
         grub_path = os.path.join(install_path, 'boot', 'efi', 'grub', 'grub.cfg')
     elif os.path.exists('%s/boot/efi/grub2/grub.cfg' % install_path):
         grub_path = os.path.join(install_path, 'boot', 'efi', 'grub2', 'grub.cfg')
-    elif os.path.exists('%s/boot/efi/EFI/fedora/grub.cfg' % install_path):
-        grub_path = os.path.join(install_path, 'boot', 'efi', 'EFI', 'fedora', 'grub.cfg')
     if not grub_path:
         return
     o = False
