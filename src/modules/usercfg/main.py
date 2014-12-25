@@ -115,12 +115,13 @@ def run():
     libcalamares.utils.chroot_call(
         ['setcap', 'cap_net_raw=ep', '/usr/bin/ping6'])
 
-    # set hostname static, until upstream creates the var
-    #hostname = 'kaos'
-    #hostname_path = os.path.join(install_path, "etc/hostname")
-    #with open(hostname_path, "w") as hostname_file:
-    #    hostname_file.write(hostname)
-    #hostname_file.close()
+    # setup alsa volume levels, alsa blacklist for the pc speaker
+    print('setup alsa config')
+    files_to_copy = ['/etc/asound.state', '/etc/modprobe.d/alsa_blacklist.conf',
+                     '/etc/modprobe.d/realtek_blacklist.conf']
+    for f in files_to_copy:
+        if os.path.exists(f):
+            shutil.copy2(f, os.path.join(install_path))
 
     print('configure users settings done')
 

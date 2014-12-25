@@ -91,6 +91,14 @@ def run():
     
     # set pacman.conf for kf5 needed repos
     shutil.copy2('/etc/skel/pacman.conf', '%s/etc/pacman.conf' % install_path)
+    
+    # setup alsa volume levels, alsa blacklist for the pc speaker, blacklist for broken realtek nics
+    print('setup alsa config')
+    files_to_copy = ['/etc/asound.state', '/etc/modprobe.d/alsa_blacklist.conf',
+                     '/etc/modprobe.d/realtek_blacklist.conf']
+    for f in files_to_copy:
+        if os.path.exists(f):
+            shutil.copy2(f, os.path.join(install_path))
 
     print('configure users settings done')
 
