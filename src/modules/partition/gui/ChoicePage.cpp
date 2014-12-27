@@ -240,7 +240,7 @@ ChoicePage::init( PartitionCoreModule* core, const OsproberEntryList& osproberEn
         somethingElseButton->setText( tr( "<b>Something else</b><br/>"
                                           "You can create or resize partitions yourself, or choose "
                                           "multiple partitions for %1."
-+                                         "  Use this option for UEFI installs, having a <b>fat32 512Mb /boot partition"
++                                         "  Use this option for UEFI installs, having a GPT partitio table and <b>fat32 512Mb /boot partition"
 +                                         " is a must for UEFI installs</b>, either use an existing without formatting or create one." )
                                         .arg( Calamares::Branding::instance()->
                                               string( Calamares::Branding::ShortVersionedName ) ) );
