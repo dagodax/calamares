@@ -442,6 +442,10 @@ Output:
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="240"/>
+        <source>&lt;b&gt;Something else&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a GPT partitio table and &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="240"/>
         <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="213"/>
         <source>&lt;b&gt;Something else&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
