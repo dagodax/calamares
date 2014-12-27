@@ -84,7 +84,11 @@ GreetingPage::GreetingPage( QWidget* parent )
     CALAMARES_RETRANSLATE(
         ui->mainText->setText( tr( "<h1>Welcome to the %1 installer.</h1><br/>"
                              "This program will ask you some questions and "
-                             "set up %2 on your computer." )
+                             "set up %2 on your computer." 
+                             " Remember, this installer is in Beta stage.<br/>"
+                             "Not implemented yet is closing the installer automatically,<br/>"
+                             "showing a slideshow during the install or setting the locale.<br/>" 
+                             "For <b>GPT partioning on BIOS</b> systems and other instructions, read <a href=\"http://kaosx.us/download/\">Known Issues</a>" )
                          .arg( Calamares::Branding::instance()->
                                string( Calamares::Branding::VersionedName ) )
                          .arg( Calamares::Branding::instance()->
