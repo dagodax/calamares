@@ -1,66 +1,58 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="da" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="es_AR" version="2.1">
 <context>
     <name>AlongsidePage</name>
     <message>
-        <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="54"/>
+        <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="67"/>
         <source>Choose partition to shrink:</source>
-        <translation>Vælg partitionen der skal krympes:</translation>
+        <translation>Selecciona la partición a reducir:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="63"/>
+        <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="68"/>
         <source>Allocate drive space by dragging the divider below:</source>
-        <translation>Fordel disk plads ved at trække fordeleren nedenunder:</translation>
+        <translation>Asignar espacio en el disco arrastrando el separador de abajo:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="161"/>
+        <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="167"/>
         <source>With this operation, the partition &lt;b&gt;%1&lt;/b&gt; which contains %4 will be shrunk to %2MB and a new %3MB partition will be created for %5.</source>
-        <translation>Med denne handling, vil partitionen &lt;b&gt;%1&lt;/b&gt; der indeholder %4 blive krympet til %2MB og en ny partition på %3MB vil blive lavet til %5.</translation>
+        <translation>Tras esto la partición &lt;b&gt;%1&lt;/b&gt; que contiene %4 será reducida a %2MB y la nueva partición de %3MB será creada para %5.</translation>
     </message>
 </context>
 <context>
     <name>ApplyProgressDetailsWidgetBase</name>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdetailswidgetbase.ui" line="37"/>
         <source>Save</source>
-        <translation>Gem</translation>
+        <translation type="vanished">Guardar</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdetailswidgetbase.ui" line="44"/>
         <source>Open in External Browser</source>
-        <translation>Åbn i Extern Browser</translation>
+        <translation type="vanished">Abrir en navegador externo</translation>
     </message>
 </context>
 <context>
     <name>ApplyProgressDialogWidgetBase</name>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="33"/>
         <source>Operations and Jobs</source>
-        <translation>Handlinger og Jobs</translation>
+        <translation type="vanished">Operaciones y Trabajos</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="38"/>
         <source>Time Elapsed</source>
-        <translation>Tid Gået</translation>
+        <translation type="vanished">Tiempo transcurrido</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="64"/>
         <source>Total Time: 00:00:00</source>
-        <translation>Total Tid: 00:00:00</translation>
+        <translation type="vanished">Tiempo Total: 00:00:00</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="81"/>
         <source>Operation: %p%</source>
-        <translation>Handling: %p%</translation>
+        <translation type="vanished">Operación: %p%</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="91"/>
         <source>Status</source>
-        <translation>Status</translation>
+        <translation type="vanished">Estado</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="107"/>
         <source>Total: %p%</source>
-        <translation>Total: %p%</translation>
+        <translation type="vanished">Total: %p%</translation>
     </message>
 </context>
 <context>
@@ -68,7 +60,7 @@
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="20"/>
         <source>Installer</source>
-        <translation>Installationsprogram</translation>
+        <translation>Instalador</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="168"/>
@@ -81,17 +73,17 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Velkommen&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Bienvenida&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="198"/>
         <source>Location</source>
-        <translation>Lokation</translation>
+        <translation>Ubicación</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="224"/>
         <source>License Approval</source>
-        <translation>Licens Godkendelse</translation>
+        <translation>Aprobación de licencia</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="257"/>
@@ -104,12 +96,12 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Installation&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;instalación&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="287"/>
         <source>Install System</source>
-        <translation>Installér System</translation>
+        <translation>Instalar Sistema</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="320"/>
@@ -122,37 +114,37 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Konfiguration&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Configuración&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="331"/>
         <source>Reboot</source>
-        <translation>Genstart</translation>
+        <translation>Reiniciar</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="410"/>
         <source>Language</source>
-        <translation>Sprog</translation>
+        <translation>Idioma</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="443"/>
         <source>User Info</source>
-        <translation>Bruger Information</translation>
+        <translation>Información del usuario</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="469"/>
         <source>Summary</source>
-        <translation>Resumé</translation>
+        <translation>Resumen</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="514"/>
         <source>Keyboard</source>
-        <translation>Tastatur</translation>
+        <translation>Teclado</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="521"/>
         <source>Disk Setup</source>
-        <translation>Disk Indstilling</translation>
+        <translation>Disco de instalación</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="528"/>
@@ -165,7 +157,7 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Forberedelse&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Preparación&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
@@ -173,17 +165,17 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="57"/>
         <source>Master Boot Record of %1</source>
-        <translation>Master Boot Record af %1</translation>
+        <translation>Master Boot Record de %1</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="71"/>
         <source>Boot Partition</source>
-        <translation>Boot Partition</translation>
+        <translation>Partición de Arranque</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="76"/>
         <source>System Partition</source>
-        <translation>System Partition</translation>
+        <translation>Partición del Sistema</translation>
     </message>
 </context>
 <context>
@@ -191,15 +183,19 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamaresui/InstallationViewStep.cpp" line="47"/>
         <source>Install</source>
-        <translation>Installér</translation>
+        <translation>Instalar</translation>
     </message>
 </context>
 <context>
     <name>Calamares::JobThread</name>
     <message>
-        <location filename="../src/libcalamares/JobQueue.cpp" line="88"/>
         <source>Done</source>
-        <translation>Færdig</translation>
+        <translation type="vanished">Hecho</translation>
+    </message>
+    <message>
+        <location filename="../src/libcalamares/JobQueue.cpp" line="88"/>
+        <source>The install finished succesfully, click the quit button to return to live mode and reboot from there into your newly installed system</source>
+        <translation>La instalación finalizó satisfactoriamente, haga clic en el botón salir para volver al modo live y reiniciar desde ahí en su nuevo sistema instalado.</translation>
     </message>
 </context>
 <context>
@@ -207,68 +203,68 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="51"/>
         <source>Run command %1</source>
-        <translation>Kør kommando %1</translation>
+        <translation>Comando a ejecutar %1</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="77"/>
         <source>External command crashed</source>
-        <translation>Extern kommando fejlede</translation>
+        <translation>El comando externo ha fallado</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="78"/>
         <source>Command %1 crashed.
 Output:
 %2</source>
-        <translation>Kommando %1 fejlede.
-Udskrift:
-%2</translation>
+        <translation>El comando %1 ha fallado.
+
+Salida: %2</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="83"/>
         <source>External command failed to start</source>
-        <translation>Extern kommando fejlede i at starte</translation>
+        <translation>El comando externo no ha podido iniciarse</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="84"/>
         <source>Command %1 failed to start.</source>
-        <translation>Kommando %1 fejlede i at starte.</translation>
+        <translation>El comando %1 no se pudo iniciar.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="88"/>
         <source>Internal error when starting command</source>
-        <translation>Intern fejl ved start af kommando</translation>
+        <translation>Error interno al iniciar el comando</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="89"/>
         <source>Bad parameters for process job call.</source>
-        <translation>Dårlige parametre til process job kald.</translation>
+        <translation>Parámetros erróneos para el trabajo en proceso.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="92"/>
         <source>External command failed to finish</source>
-        <translation>Extern kommando fejlede i at færdiggøre</translation>
+        <translation>El comando externo falló al finalizar</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="93"/>
         <source>Command %1 failed to finish in %2s.
 Output:
 %3</source>
-        <translation>Kommando %1 fejlede i at færdiggøre efter %2s.
-Udskrift:
+        <translation>El comando %1 falló al finalizar en %2s.
+Salida:
 %3</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="99"/>
         <source>External command finished with errors</source>
-        <translation>Extern kommando blev færdiggjort uden fejl</translation>
+        <translation>El comando externo finalizó con errores</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="100"/>
         <source>Command %1 finished with exit code %2.
 Output:
 %3</source>
-        <translation>Kommando %1 blev færdiggjort med exit kode %2.
-Udskrift:
+        <translation>El comando %1 finalizó con el código de salida %2.
+Salida:
 %3</translation>
     </message>
 </context>
@@ -277,32 +273,32 @@ Udskrift:
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="234"/>
         <source>Run script %1</source>
-        <translation>Kør script %1</translation>
+        <translation>Ejecutando script %1</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="249"/>
         <source>Bad working directory path</source>
-        <translation>Dårlig arbejdsmappe sti</translation>
+        <translation>Error en la ruta del directorio de trabajo</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="250"/>
         <source>Working directory %1 for python job %2 is not readable.</source>
-        <translation>Arbejdsmappe %1 for python job %2 er ikke læsbar.</translation>
+        <translation>El directorio de trabajo %1 para el script de python %2 no se puede leer.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="260"/>
         <source>Bad main script file</source>
-        <translation>Dårlig hoved script fil</translation>
+        <translation>Script principal erróneo</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="261"/>
         <source>Main script file %1 for python job %2 is not readable.</source>
-        <translation>Hoved script fil %1 for python job %2 er ikke læsbar.</translation>
+        <translation>El script principal %1 del proceso python %2 no es accesible.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="305"/>
         <source>Boost.Python error in job &quot;%1&quot;.</source>
-        <translation>Boost.Python fejl i job &quot;%1&quot;.</translation>
+        <translation>Error Boost.Python en el proceso &quot;%1&quot;.</translation>
     </message>
 </context>
 <context>
@@ -310,50 +306,50 @@ Udskrift:
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="55"/>
         <source>&amp;Back</source>
-        <translation>&amp;Tilbage</translation>
+        <translation>&amp;Atrás </translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="56"/>
         <source>&amp;Next</source>
-        <translation>&amp;Næste</translation>
+        <translation>&amp;Siguiente</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="57"/>
         <source>&amp;Quit</source>
-        <translation>&amp;Opgiv</translation>
-    </message>
-    <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="137"/>
-        <source>Error</source>
-        <translation>Fejl</translation>
+        <translation>&amp;Salir</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="138"/>
+        <source>Error</source>
+        <translation>Error</translation>
+    </message>
+    <message>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="139"/>
         <source>Installation Failed</source>
-        <translation>Installation Fejlede</translation>
+        <translation>Error en la Instalación</translation>
     </message>
 </context>
 <context>
     <name>CalamaresPython::Helper</name>
     <message>
-        <location filename="../src/libcalamares/PythonHelper.cpp" line="228"/>
+        <location filename="../src/libcalamares/PythonHelper.cpp" line="234"/>
         <source>Unknown exception type</source>
-        <translation>Ukendt undtagelsestype</translation>
+        <translation>Excepción desconocida</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonHelper.cpp" line="241"/>
+        <location filename="../src/libcalamares/PythonHelper.cpp" line="247"/>
         <source>unparseable Python error</source>
-        <translation>Utilgængelig Python-fejl</translation>
+        <translation>error unparseable Python</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonHelper.cpp" line="257"/>
+        <location filename="../src/libcalamares/PythonHelper.cpp" line="263"/>
         <source>unparseable Python traceback</source>
-        <translation>Utilgængeligt Python-traceback</translation>
+        <translation>rastreo de Python unparseable</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonHelper.cpp" line="261"/>
+        <location filename="../src/libcalamares/PythonHelper.cpp" line="267"/>
         <source>Unfetchable Python error.</source>
-        <translation>Uhentbar Python fejl.</translation>
+        <translation>Error de Python Unfetchable.</translation>
     </message>
 </context>
 <context>
@@ -361,7 +357,7 @@ Udskrift:
     <message>
         <location filename="../src/calamares/CalamaresWindow.cpp" line="40"/>
         <source>%1 Installer</source>
-        <translation>%1 Installationsprogram</translation>
+        <translation>%1 Instalador</translation>
     </message>
 </context>
 <context>
@@ -369,360 +365,421 @@ Udskrift:
     <message>
         <location filename="../src/modules/partition/jobs/CheckFileSystemJob.cpp" line="34"/>
         <source>Checking file system on partition %1.</source>
-        <translation>Tjekker filsystem på partition %1.</translation>
+        <translation>Verificando sistema de archivos en la partición %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CheckFileSystemJob.cpp" line="50"/>
         <source>The file system check on partition %1 failed.</source>
-        <translation>Filsystem tjekket på partition %1 fejlede.</translation>
+        <translation>La verificación del sistema de archivos en la partición %1 ha fallado.</translation>
     </message>
 </context>
 <context>
     <name>ChoicePage</name>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="105"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="115"/>
+        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="115"/>
+        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="115"/>
+        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="107"/>
         <source>This computer currently does not seem to have an operating system on it. What would you like to do?</source>
-        <translation>Denne computer ser ikke ud til at have et styresystem. Hvad vil du gerne gøre?</translation>
+        <translation>Este equipo no parece tener un sistema operativo instalado. ¿Qué le gustaría hacer?</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="108"/>
-        <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your programs, documents, photos, music, and any other files.</source>
-        <translation>&lt;b&gt;Slet disk og installér %1&lt;/b&gt;&lt;br/&gt;&lt;font color =&quot;red&quot;&gt;Advarsel: &lt;/font&gt;Dette vil slette alle dine programmer, dokumenter, billeder, musik og alle andre filer.</translation>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="118"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="175"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="217"/>
+        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="118"/>
+        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="175"/>
+        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="217"/>
+        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="110"/>
+        <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
+        <translation>&lt;b&gt;Borrar disco e instalar %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Advertencia: &lt;/font&gt;Esto borrará todos sus programas, documentos, fotos, música y cualquier otro archivo.&lt;b&gt;No utilizable para instalaciones UEFI&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="122"/>
-        <source>This computer currently has %1 on it. What would you like to do?</source>
-        <translation>Denne computer indeholder %1 lige nu. Hvad vil du gerne gøre?</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="126"/>
-        <source>&lt;b&gt;Install %2 alongside %1&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.</source>
-        <translation>&lt;b&gt;Installér %2 ved siden af %1&lt;/b&gt;&lt;br/&gt;Dokumenter, musik og andre personlige filer vil blive bibeholdt. Du kan vælge det styresystem du vil, hver gang computeren starter.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="134"/>
-        <source>&lt;b&gt;Replace %1 with %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files.</source>
-        <translation>&lt;b&gt;Erstat %1 med %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Advarsel: &lt;/font&gt;Dette vil slette hele disken og slette alle dine %1 programmer, dokumenter, billeder, musik og alle andre filer.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="144"/>
-        <source>This computer already has an operating system on it. What would you like to do?</source>
-        <translation>Denne computer har allerede et styresystem installeret. Hvad vil du gerne gøre?</translation>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="139"/>
+        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="139"/>
+        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="130"/>
+        <source>&lt;b&gt;Install %2 alongside %1&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
+        <translation>&lt;b&gt;Instalar %2 junto a %1&lt;/b&gt;&lt;br/&gt;Documentos, música y otros archivos personales se mantendrán. Puede elegir que sistema operativo quiere iniciar cada vez que arranque. &lt;b&gt;ADVERTENCIA: no es una opción para instalaciones UEFI&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="147"/>
-        <source>&lt;b&gt;Install %1 alongside your current operating system&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.</source>
-        <translation>&lt;b&gt;Installér %1 ved siden af dit nuværende styresystem&lt;/b&gt;&lt;br/&gt;Dokumenter, musik, og andre personlige filer vil blive bibeholdt. Du kan vælge dit styresystem hver gang computeren starter.</translation>
+        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="147"/>
+        <source>&lt;b&gt;Erase entire disk with %1 and install %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
+        <translation>&lt;b&gt;Borrar el disco entero con %1 e instalar %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Advertencia: &lt;/font&gt;Esto borrará todo el disco y todo sus programas, documentos, fotos, música y cualquier otro archivo de %1. &lt;b&gt;No utilizable para instalaciones UEFI&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="154"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="188"/>
-        <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your Windows 7 programs, documents, photos, music, and any other files.</source>
-        <translation>&lt;b&gt;Slet disk og installér %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Advarsel: &lt;/font&gt;Dette vil slette alle dine Windows 7 programmer, dokumenter, billeder, musik og alle andre filer.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="178"/>
-        <source>This computer currently has multiple operating systems on it. What would you like to do?</source>
-        <translation>Denne computer har allerede flere styresystemer installeret. Hvad vil du gerne gøre?</translation>
-    </message>
-    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="155"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="181"/>
-        <source>&lt;b&gt;Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.</source>
-        <translation>&lt;b&gt;Installér %1 ved siden af dine nuværende styresystemer&lt;/b&gt;&lt;br/&gt;Dokumenter, musik og andre personlige filer vil blive bibeholdt. Du kan vælge dit styresystem hver gang computeren starter.</translation>
+        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="155"/>
+        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="181"/>
+        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="155"/>
+        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="181"/>
+        <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all files on the selected partition. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
+        <translation>&lt;b&gt;Instalar %1 en una partición existente&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Advertencia: &lt;/font&gt;Esto borrará todos los archivos en la partición seleccionada. &lt;b&gt;No utilizable para instalaciones UEFI&lt;/b&gt; </translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="203"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="168"/>
+        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="168"/>
+        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="153"/>
+        <source>&lt;b&gt;Install %1 alongside your current operating system&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
+        <translation>&lt;b&gt;Instalar %1 junto a su actual sistema operativo&lt;/b&gt;&lt;br/&gt;Los documentos, música y otros archivos personales se mantendrán. Puede elegir con que sistema operativo quiere iniciar cada vez que arranque.&lt;b&gt;ADVERTENCIA: no es una optición para instalaciones UEFI&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="210"/>
+        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="210"/>
+        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="189"/>
+        <source>&lt;b&gt;Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
+        <translation>&lt;b&gt;
+Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="223"/>
+        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="223"/>
+        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="223"/>
+        <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all files on the selected partition. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
+        <translation>&lt;b&gt;Instalar %1 en una partición existente&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Advertencia: &lt;/font&gt;Esto borrará todos los archivos en la partición seleccionada. &lt;b&gt;No utilizable para instalaciones UEFI&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="240"/>
+        <source>&lt;b&gt;Something else&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a GPT partitio table and &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
+        <translation>&lt;b&gt;Por otro lado&lt;/b&gt;&lt;br/&gt;Puede crear o redimensionar las particiones Ud. mismo, o elegir múltiples particiones para %1. Use esta opción para instalaciones UEFI, es necesario tener una tabla de partición GPT y &lt;b&gt;una partición /boot en fat32 de 512Mb para instalaciones UEFI&lt;/b&gt;, o bien utilizar una existente sin formato o crear una.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="240"/>
+        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="213"/>
+        <source>&lt;b&gt;Something else&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
+        <translation>&lt;b&gt;Por otro lado&lt;/b&gt;&lt;br/&gt;Puede crear o redimensionar las particiones Ud. mismo, o elegir múltiples particiones para %1. Use esta opción para instalaciones UEFI, es necesario tener una tabla de partición GPT y &lt;b&gt;una partición /boot en fat32 de 512Mb para instalaciones UEFI&lt;/b&gt;, o bien utilizar una existente sin formato o crear una.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="118"/>
+        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="175"/>
+        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="217"/>
+        <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your programs, documents, photos, music, and any other files.</source>
+        <translation>&lt;b&gt;Eliminar disco e instalar %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Atención: &lt;/font&gt; Se eliminará todo el contenido del disco.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="135"/>
+        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="135"/>
+        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="135"/>
+        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="126"/>
+        <source>This computer currently has %1 on it. What would you like to do?</source>
+        <translation>Este equipo tiene %1 instalado. ¿Qué le gustaría hacer?</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="139"/>
+        <source>&lt;b&gt;Install %2 alongside %1&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.</source>
+        <translation>&lt;b&gt;Instalar %2 junto con %1&lt;/b&gt;&lt;br/&gt;Los documentos, música y otros archivos personales seguirán intactos. Podrás seleccionar qué sistema operativo se iniciará al inicio del equipo.</translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;Replace %1 with %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files.</source>
+        <translation type="vanished">&lt;b&gt;Reemplazar %1 por %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Atención: &lt;/font&gt;Se eliminará todo el contenido almacenado en el disco; todo el software y archivos de %1 serán eliminados.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="165"/>
+        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="165"/>
+        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="165"/>
+        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="150"/>
+        <source>This computer already has an operating system on it. What would you like to do?</source>
+        <translation>Este equipo ya tiene un sistema operativo instalado. ¿Qué le gustaría hacer?</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="168"/>
+        <source>&lt;b&gt;Install %1 alongside your current operating system&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.</source>
+        <translation>&lt;b&gt;Instalar %1 junto con el actual sistema operativo&lt;/b&gt;&lt;br/&gt;Los documentos, música y otros archivos personales se mantendrán intactos. Podrás seleccionar qué sistema operativo se iniciará al inicio del equipo.</translation>
+    </message>
+    <message>
+        <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your Windows 7 programs, documents, photos, music, and any other files.</source>
+        <translation type="vanished">&lt;b&gt;Eliminar disco e instalar %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Atención: &lt;/font&gt;Se eliminará todo el software y archivos de Microsoft Windows 7.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="207"/>
+        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="207"/>
+        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="207"/>
+        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="186"/>
+        <source>This computer currently has multiple operating systems on it. What would you like to do?</source>
+        <translation>Este equipo tiene varios sistemas operativos instalados. ¿Qué le gustaría hacer?</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="147"/>
+        <source>&lt;b&gt;Erase entire disk with %1 and install %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files.</source>
+        <translation>&lt;b&gt;Borra todo el disco con %1 e instala %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Advertencia: &lt;/font&gt;Esto borrará del disco todos los programas, documentos, fotos, música y cualquier archivo que tenga en %1.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="210"/>
+        <source>&lt;b&gt;Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.</source>
+        <translation>&lt;b&gt;Instalar %1 junto con los demás sistemas disponibles en este equipo&lt;/b&gt;&lt;br/&gt;Los documentos, música y otros archivos personales seguirán intactos. Podrás seleccionar qué sistema operativo se iniciará al inicio del equipo.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="240"/>
         <source>&lt;b&gt;Something else&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.</source>
-        <translation>&lt;b&gt;Noget andet&lt;/b&gt;&lt;br/&gt;Du kan selv oprette og justere partitioner, eller vælge flere partitioner til %1.</translation>
+        <translation>&lt;b&gt;Además&lt;/b&gt;&lt;br/&gt;Usted mismo puede crear o redimensionar particiones o elegir varias particiones para %1</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="138"/>
+        <source>&lt;b&gt;Replace %1 with %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
+        <translation>&lt;b&gt;Remplazar %1 con %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Advertencia: &lt;/font&gt;Esto borrará del disco todos los programas, documentos, fotos, música y cualquier archivo que tenga en %1. &lt;b&gt;No utilizable para instalaciones UEFI&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="160"/>
+        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="196"/>
+        <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your Windows 7 programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
+        <translation>&lt;b&gt;Borrar disco e instalar %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Advertencia: &lt;/font&gt;Esto borrará todos los programas, documentos, fotos, música y cualquier otro archivo de su Windows 7. &lt;b&gt;No utilizable para instalaciones UEFI&lt;/b&gt;</translation>
+    </message>
+</context>
+<context>
+    <name>ClearMountsJob</name>
+    <message>
+        <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="40"/>
+        <source>Clear mounts for partitioning operations on %1</source>
+        <translation>Limpiar montajes para operaciones de particionado en %1</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="62"/>
+        <source>Cannot umount partition %1</source>
+        <translation>No se puede desmontar la partición %1</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="64"/>
+        <source>Cannot proceed with partitioning operations because some partitions are still mounted.</source>
+        <translation>No se puede proceder con las operaciones de particionado porque algunas particiones aún están montadas.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="70"/>
+        <source>Cleared all mounts for %1</source>
+        <translation>Limpiados todos los montajes para %1</translation>
     </message>
 </context>
 <context>
     <name>ConfigurePageAdvanced</name>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="23"/>
         <source>Permissions</source>
-        <translation>Rettigheder</translation>
+        <translation type="vanished">Permisos</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="35"/>
         <source>Allow applying operations without administrator privileges</source>
-        <translation>Tillad at gennemføre handlinger uden administrator rettigheder</translation>
+        <translation type="vanished">Permitir aplicar las operaciones sin tener privilegios de administrador</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="51"/>
         <source>Backend</source>
-        <translation>Backend</translation>
+        <translation type="vanished">Backend</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="57"/>
         <source>Active backend:</source>
-        <translation>Aktiv backend:</translation>
+        <translation type="vanished">Backend activo:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="79"/>
         <source>Units</source>
-        <translation>Enheder</translation>
+        <translation type="vanished">Unidades</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="85"/>
         <source>Preferred unit:</source>
-        <translation>Foretrukket enhed:</translation>
+        <translation type="vanished">Unidad preferida:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="96"/>
         <source>Byte</source>
-        <translation>Byte</translation>
+        <translation type="vanished">Byte</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="101"/>
         <source>KiB</source>
-        <translation>KiB</translation>
+        <translation type="vanished">KiB</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="106"/>
         <source>MiB</source>
-        <translation>MiB</translation>
+        <translation type="vanished">MiB</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="111"/>
         <source>GiB</source>
-        <translation>GiB</translation>
+        <translation type="vanished">GiB</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="116"/>
         <source>TiB</source>
-        <translation>TiB</translation>
+        <translation type="vanished">TiB</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="121"/>
         <source>PiB</source>
-        <translation>PiB</translation>
+        <translation type="vanished">PiB</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="126"/>
         <source>EiB</source>
-        <translation>EiB</translation>
+        <translation type="vanished">EiB</translation>
     </message>
 </context>
 <context>
     <name>ConfigurePageFileSystemColors</name>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="23"/>
         <source>File Systems</source>
-        <translation>Filsystem</translation>
+        <translation type="vanished">Sistemas de archivos</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="29"/>
         <source>luks:</source>
-        <translation>luks:</translation>
+        <translation type="vanished">luks:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="45"/>
         <source>ntfs:</source>
-        <translation>ntfs:</translation>
+        <translation type="vanished">ntfs:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="58"/>
         <source>ext2:</source>
-        <translation>ext2:</translation>
+        <translation type="vanished">ext2:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="87"/>
         <source>ext3:</source>
-        <translation>ext3:</translation>
+        <translation type="vanished">ext3:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="116"/>
         <source>ext4:</source>
-        <translation>ext4:</translation>
+        <translation type="vanished">ext4:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="132"/>
         <source>btrfs:</source>
-        <translation>btrfs:</translation>
+        <translation type="vanished">btrfs:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="174"/>
         <source>linuxswap:</source>
-        <translation>linuxswap:</translation>
+        <translation type="vanished">linuxswap:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="190"/>
         <source>fat16:</source>
-        <translation>fat16:</translation>
+        <translation type="vanished">fat16:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="219"/>
         <source>fat32:</source>
-        <translation>fat32:</translation>
+        <translation type="vanished">fat32:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="248"/>
         <source>zfs:</source>
-        <translation>zfs:</translation>
+        <translation type="vanished">ZFS:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="264"/>
         <source>reiserfs:</source>
-        <translation>reiserfs:</translation>
+        <translation type="vanished">reiserfs:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="293"/>
         <source>reiser4:</source>
-        <translation>reiser4:</translation>
+        <translation type="vanished">reiser4:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="322"/>
         <source>hpfs:</source>
-        <translation>hpfs:</translation>
+        <translation type="vanished">hpfs:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="338"/>
         <source>jfs</source>
-        <translation>jfs</translation>
+        <translation type="vanished">jfs</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="367"/>
         <source>hfs:</source>
-        <translation>hfs:</translation>
+        <translation type="vanished">hfs:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="396"/>
         <source>hfsplus:</source>
-        <translation>hfsplus:</translation>
+        <translation type="vanished">hfsplus:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="412"/>
         <source>ufs:</source>
-        <translation>ufs:</translation>
+        <translation type="vanished">ufs:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="441"/>
         <source>xfs:</source>
-        <translation>xfs:</translation>
+        <translation type="vanished">XFS:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="470"/>
         <source>ocfs2:</source>
-        <translation>ocfs2:</translation>
+        <translation type="vanished">ocfs2:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="489"/>
         <source>extended:</source>
-        <translation>udvidet:</translation>
+        <translation type="vanished">Extendida:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="518"/>
         <source>unformatted:</source>
-        <translation>uformateret:</translation>
+        <translation type="vanished">Sin formato:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="547"/>
         <source>unknown:</source>
-        <translation>ukendt:</translation>
+        <translation type="vanished">Desconocido:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="570"/>
         <source>exfat:</source>
-        <translation>exfat:</translation>
+        <translation type="vanished">exfat:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="583"/>
         <source>nilfs2:</source>
-        <translation>nilfs2:</translation>
+        <translation type="vanished">nilfs2:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="622"/>
         <source>lvm2 pv:</source>
-        <translation>lvm2 pv:</translation>
+        <translation type="vanished">lvm2 pv:</translation>
     </message>
 </context>
 <context>
     <name>ConfigurePageGeneral</name>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="23"/>
         <source>Partition Alignment</source>
-        <translation>Partition Justering</translation>
+        <translation type="vanished">Alineamiento de particiones</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="29"/>
         <source>Use cylinder based alignment (Windows XP compatible)</source>
-        <translation>Brug cylinder baseret justering (Windows XP kompatibel)</translation>
+        <translation type="vanished">Usar alineamiento por cilindros (compatible con Microsoft Windows XP)</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="42"/>
         <source>Sector alignment:</source>
-        <translation>Sektor justering:</translation>
+        <translation type="vanished">Alineamiento de los sectores:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="55"/>
         <source> sectors</source>
-        <translation>sektorer</translation>
+        <translation type="vanished">sectores</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="71"/>
         <source>Align partitions per default</source>
-        <translation>Justér partitioner som standard</translation>
+        <translation type="vanished">Alinear particiones por defecto</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="90"/>
         <source>Logging</source>
-        <translation>Logføring</translation>
+        <translation type="vanished">Logging</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="96"/>
         <source>Hide messages below:</source>
-        <translation>Skjul nedenstående beskeder:</translation>
+        <translation type="vanished">Ocultar los siguiente mensajes:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="107"/>
         <source>Debug</source>
-        <translation>Fejlfinde</translation>
+        <translation type="vanished">Depurar</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="112"/>
         <source>Information</source>
-        <translation>Information</translation>
+        <translation type="vanished">Información</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="117"/>
         <source>Warning</source>
-        <translation>Advarsel</translation>
+        <translation type="vanished">Advertencia</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="122"/>
         <source>Error</source>
-        <translation>Fejl</translation>
+        <translation type="vanished">Error</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="139"/>
         <source>File Systems</source>
-        <translation>Filsystemer</translation>
+        <translation type="vanished">Sistemas de archivos</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="145"/>
         <source>Default file system:</source>
-        <translation>Standard filsystem:</translation>
+        <translation type="vanished">Sistema de archivos por defecto:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="167"/>
         <source>Shredding</source>
-        <translation>Markulering</translation>
+        <translation type="vanished">Triturar</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="173"/>
         <source>Overwrite with:</source>
-        <translation>Overskriv med:</translation>
+        <translation type="vanished">Sobreescribir con:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="180"/>
         <source>Random data</source>
-        <translation>Tilfældig data</translation>
+        <translation type="vanished">Datos aleatorios</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="190"/>
         <source>Zeros</source>
-        <translation>Nuller</translation>
+        <translation type="vanished">Ceros</translation>
     </message>
 </context>
 <context>
@@ -730,32 +787,32 @@ Udskrift:
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="14"/>
         <source>Create a Partition</source>
-        <translation>Opret en partition</translation>
+        <translation>Crear partición</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="38"/>
         <source>Partition &amp;Type:</source>
-        <translation>Partition &amp;Type:</translation>
+        <translation>&amp;Tipo de partición:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="50"/>
         <source>&amp;Primary</source>
-        <translation>&amp;Primær</translation>
+        <translation>&amp;Primaria</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="60"/>
         <source>E&amp;xtended</source>
-        <translation>&amp;Udvidet</translation>
+        <translation>E&amp;xtendida</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="89"/>
         <source>F&amp;ile System:</source>
-        <translation>&amp;Filsystem:</translation>
+        <translation>S&amp;istema de archivo:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="118"/>
         <source>&amp;Mount Point:</source>
-        <translation>&amp;Bindingspunkt:</translation>
+        <translation>Punto de &amp;montaje:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="135"/>
@@ -790,7 +847,7 @@ Udskrift:
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="194"/>
         <source>Si&amp;ze:</source>
-        <translation>&amp;Størrelse:</translation>
+        <translation>&amp;Tamaño:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="204"/>
@@ -800,12 +857,12 @@ Udskrift:
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="85"/>
         <source>Logical</source>
-        <translation>Logisk</translation>
+        <translation>Lógica</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="90"/>
         <source>Primary</source>
-        <translation>Primær</translation>
+        <translation>Primaria</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="107"/>
@@ -818,32 +875,32 @@ Udskrift:
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="47"/>
         <source>Create partition (file system: %1, size: %2 MB) on %3.</source>
-        <translation>Opret partition (filsystem: %1, størrelse: %2 MB) på %3.</translation>
+        <translation>Crear partición (sistema de archivos: %1, tamaño: %2 MB) on %3.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="60"/>
         <source>The installer failed to create partition on disk &apos;%1&apos;.</source>
-        <translation>Installationsprogrammet fejlede i at oprette partition på disk &apos;%1&apos;.</translation>
+        <translation>El instalador fallo al crear la partición en el disco &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="69"/>
         <source>Could not open device &apos;%1&apos;.</source>
-        <translation>Kunne ikke åbne enhed &apos;%1&apos;.</translation>
+        <translation>No se puede abrir el dispositivo &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="79"/>
         <source>Could not open partition table.</source>
-        <translation>Kunne ikke åbne partitionstabel.</translation>
+        <translation>No se puede abrir la tabla de partición.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="103"/>
         <source>The installer failed to create file system on partition %1.</source>
-        <translation>Installationsprogrammet fejlede i at oprette filsystem på partition %1.</translation>
+        <translation>El instalador fallo al crear el sistema de archivos en la partición %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="111"/>
         <source>The installer failed to update partition table on disk &apos;%1&apos;.</source>
-        <translation>Installationsprogrammet fejlede i at opdatere partitionstabel på disk &apos;%1&apos;.</translation>
+        <translation>El instalador fallo al actualizar la tabla de partición sobre el disco &apos;%1&apos;.</translation>
     </message>
 </context>
 <context>
@@ -851,27 +908,27 @@ Udskrift:
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="20"/>
         <source>Create Partition Table</source>
-        <translation>Opret partitionstabel</translation>
+        <translation>Crear Tabla de Particiones</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="39"/>
         <source>Creating a new partition table will delete all existing data on the disk.</source>
-        <translation>Hvis du opretter en ny partitionstabel vil det slette alle data på disken.</translation>
+        <translation>Crear una nueva tabla de particiones borrara todos los datos existentes en el disco.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="65"/>
         <source>What kind of partition table do you want to create?</source>
-        <translation>Hvilken slags partitionstabel vil du oprette?</translation>
+        <translation>¿Qué tipo de tabla de particiones desea crear?</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="72"/>
         <source>Master Boot Record (MBR)</source>
-        <translation>Master Boot Record (MBR)</translation>
+        <translation>Registro de arranque principal (MBR)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="82"/>
         <source>GUID Partition Table (GPT)</source>
-        <translation>GUID Partition Table (GPT)</translation>
+        <translation>Tabla de Particiones GUID (GPT)</translation>
     </message>
 </context>
 <context>
@@ -879,45 +936,40 @@ Udskrift:
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="47"/>
         <source>Create partition table</source>
-        <translation>Opret partitionstabel</translation>
+        <translation>Crear tabla de particiones</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="54"/>
         <source>The installer failed to create a partition table on %1.</source>
-        <translation>Installationsprogrammet fejlede i at oprette en partitionstabel på %1.</translation>
+        <translation>El instalador fallo al crear la tabla de partición en %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="62"/>
         <source>Could not open device %1.</source>
-        <translation>Kunne ikke åbne enhed %1.</translation>
+        <translation>No se puede abrir el dispositivo %1.</translation>
     </message>
 </context>
 <context>
     <name>CreatePartitionTableWidgetBase</name>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/createpartitiontablewidgetbase.ui" line="20"/>
         <source>Choose the type of partition table you want to create:</source>
-        <translation>Vælg hvilken type partitionstabel du vil oprette:</translation>
+        <translation type="vanished">Elija el tipo de tabla de particiones que desea crear:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/createpartitiontablewidgetbase.ui" line="29"/>
         <source>GPT</source>
-        <translation>GPT</translation>
+        <translation type="vanished">GPT</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/createpartitiontablewidgetbase.ui" line="39"/>
         <source>MS-Dos</source>
-        <translation>MS-DOS</translation>
+        <translation type="vanished">MS-DOS</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/createpartitiontablewidgetbase.ui" line="66"/>
         <source>(icon)</source>
-        <translation>(ikon)</translation>
+        <translation type="vanished">(icono)</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/createpartitiontablewidgetbase.ui" line="79"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; This will destroy all data on the device!</source>
-        <translation>&lt;b&gt;Advarsel&lt;/b&gt; Dette vil ødelægge alt data på enheden!</translation>
+        <translation type="vanished">&lt;b&gt;Atención:&lt;/b&gt; ¡Esto eliminará todos los datos del dispositivo!</translation>
     </message>
 </context>
 <context>
@@ -925,70 +977,68 @@ Udskrift:
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="51"/>
         <source>Create user %1</source>
-        <translation>Opret bruger %1</translation>
+        <translation>Crear usuario %1</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="67"/>
         <source>Sudoers dir is not writable.</source>
-        <translation>Sudoernes mappe er ikke skrivbar.</translation>
+        <translation>El directorio de sudoers no dispone de permisos de escritura.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="71"/>
         <source>Cannot create sudoers file for writing.</source>
-        <translation>Kan ikke oprette sudoer fil til skrivning.</translation>
+        <translation>No es posible crear el archivo de escritura para sudoers.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="79"/>
         <source>Cannot chmod sudoers file.</source>
-        <translation>Kan ikke chmod sudoer filen.</translation>
+        <translation>No es posible modificar los permisos de sudoers.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="85"/>
         <source>Cannot open groups file for reading.</source>
-        <translation>Kan ikke åbne gruppernes fil til læsning.</translation>
+        <translation>No es posible abrir el archivo de grupos del sistema.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="123"/>
         <source>Cannot create user %1.</source>
-        <translation>Kan ikke oprette bruger %1.</translation>
+        <translation>No se puede crear el usuario %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="125"/>
         <source>useradd terminated with error code %1.</source>
-        <translation>useradd stoppet med fejl kode %1.</translation>
+        <translation>useradd terminó con código de error %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="130"/>
         <source>Cannot set full name for user %1.</source>
-        <translation>Kan ikke indstille fuld navn for bruger %1.</translation>
+        <translation>No se puede asignar el nombre completo al usuario %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="132"/>
         <source>chfn terminated with error code %1.</source>
-        <translation>chfn stoppet med fejl kode %1.</translation>
+        <translation>chfn terminó con código de error %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="141"/>
         <source>Cannot set home directory ownership for user %1.</source>
-        <translation>Kan ikke indstille hjemmemappe ejerskab for bruger %1.</translation>
+        <translation>No se puede dar la propiedad del directorio home al usuario %1</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="143"/>
         <source>chown terminated with error code %1.</source>
-        <translation>chown stoppet med fejl kode %1.</translation>
+        <translation>chown terminó con código de error %1.</translation>
     </message>
 </context>
 <context>
     <name>DecryptLuksDialogWidgetBase</name>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/decryptluksdialogwidgetbase.ui" line="22"/>
         <source>&amp;Name:</source>
-        <translation>&amp;Navn:</translation>
+        <translation type="vanished">&amp;Nombre:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/decryptluksdialogwidgetbase.ui" line="35"/>
         <source>&amp;Passphrase:</source>
-        <translation>&amp;Kodesætning:</translation>
+        <translation type="vanished">&amp;Contraseña:</translation>
     </message>
 </context>
 <context>
@@ -996,27 +1046,27 @@ Udskrift:
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="41"/>
         <source>Delete partition %1</source>
-        <translation>Slet partition %1</translation>
+        <translation>Eliminar partición %1</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="48"/>
         <source>The installer failed to delete partition %1.</source>
-        <translation>Installationsprogrammet fejlede ved sletning af partition %1.</translation>
+        <translation>El instalador falló al eliminar la partición %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="54"/>
         <source>Partition (%1) and device (%2) do not match.</source>
-        <translation>Partition (%1) og enhed (%2) matcher ikke.</translation>
+        <translation>La partición (%1) y el dispositivo (%2) no coinciden.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="66"/>
         <source>Could not open device %1.</source>
-        <translation>Kunne ikke åbne enhed %1.</translation>
+        <translation>No se puede abrir el dispositivo %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="75"/>
         <source>Could not open partition table.</source>
-        <translation>Kunne ikke åbne partitionstabel.</translation>
+        <translation>No se pudo abrir la tabla de particiones.</translation>
     </message>
 </context>
 <context>
@@ -1030,64 +1080,52 @@ Udskrift:
 <context>
     <name>DevicePropsWidgetBase</name>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="58"/>
         <source>Partition table:</source>
-        <translation>Partitionstabel:</translation>
+        <translation type="vanished">Tabla de particiones:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="77"/>
         <source>Cylinder alignment</source>
-        <translation>Cylinder justering</translation>
+        <translation type="vanished">Alineamiento de cilindros</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="84"/>
         <source>Sector based alignment</source>
-        <translation>Saktorbaseret justering</translation>
+        <translation type="vanished">Alineamiento de sectores</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="113"/>
         <source>Capacity:</source>
-        <translation>Kapacitet:</translation>
+        <translation type="vanished">Capacidad:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="130"/>
         <source>Total sectors:</source>
-        <translation>Total Sektorer:</translation>
+        <translation type="vanished">Total de sectores:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="160"/>
         <source>Cylinders/Heads/Sectors:</source>
-        <translation>Cylindere/Hoveder/Sektorer:</translation>
+        <translation type="vanished">Cilindros/Cabezales/Sectores:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="183"/>
         <source>Logical sector size:</source>
-        <translation>Logisk sektor størrelse:</translation>
+        <translation type="vanished">Tamaño de sector lógico:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="200"/>
         <source>Physical sector size:</source>
-        <translation>Fysisk sektor størrelse:</translation>
+        <translation type="vanished">Tamaño de sector físico:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="217"/>
         <source>Cylinder size:</source>
-        <translation>Cylinder størrelse:</translation>
+        <translation type="vanished">Tamaño de cilindro:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="241"/>
         <source>Primaries/Max:</source>
-        <translation>Primære/Max:</translation>
+        <translation type="vanished">Primarias/Máx:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="265"/>
         <source>SMART status:</source>
-        <translation>SMART status:</translation>
+        <translation type="vanished">Estado de SMART:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="303"/>
         <source>More...</source>
-        <translation>Mere...</translation>
+        <translation type="vanished">Más...</translation>
     </message>
 </context>
 <context>
@@ -1095,32 +1133,32 @@ Udskrift:
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="20"/>
         <source>Edit Existing Partition</source>
-        <translation>Rediger Eksisterende Partition</translation>
+        <translation>Editar Partición Existente</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="50"/>
         <source>Content:</source>
-        <translation>Indhold:</translation>
+        <translation>Contenido:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="60"/>
         <source>Keep</source>
-        <translation>Behold</translation>
+        <translation>Mantener</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="70"/>
         <source>Format</source>
-        <translation>Formater</translation>
+        <translation>Formato</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="83"/>
         <source>Warning: Formatting the partition will erase all existing data.</source>
-        <translation>Advarsel: Formatering af partitionen vil slette alle eksisterende data.</translation>
+        <translation>Advertencia: Formatear la partición borrará todos los datos existentes.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="93"/>
         <source>&amp;Mount Point:</source>
-        <translation>&amp;Forbindingspunkt:</translation>
+        <translation>Punto de &amp;montaje:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="110"/>
@@ -1155,217 +1193,181 @@ Udskrift:
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="143"/>
         <source>Size:</source>
-        <translation>Størrelse:</translation>
+        <translation>Tamaño:</translation>
     </message>
 </context>
 <context>
     <name>EditMountOptionsDialogWidgetBase</name>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountoptionsdialogwidgetbase.ui" line="14"/>
         <source>Edit Mount Options</source>
-        <translation>Rediger Forbindingsmuligheder</translation>
+        <translation type="vanished">Editar opciones de montaje</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountoptionsdialogwidgetbase.ui" line="20"/>
         <source>Edit the mount options for this file system:</source>
-        <translation>Rediger forbindelsesesmulighederne for dette filsystem:</translation>
+        <translation type="vanished">Editar las opciones de montaje para este sistema de archivos:</translation>
     </message>
 </context>
 <context>
     <name>EditMountPointDialogWidgetBase</name>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="17"/>
         <source>Path:</source>
-        <translation>Sti:</translation>
+        <translation type="vanished">Ruta:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="46"/>
         <source>Select...</source>
-        <translation>Vælg...</translation>
+        <translation type="vanished">Seleccionar...</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="53"/>
         <source>Type:</source>
-        <translation>Type:</translation>
+        <translation type="vanished">Tipo:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="63"/>
         <source>Options:</source>
-        <translation>Muligheder:</translation>
+        <translation type="vanished">Opciones:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="73"/>
         <source>Read-only</source>
-        <translation>Skrivelåst</translation>
+        <translation type="vanished">Solo lectura</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="80"/>
         <source>Users can mount and unmount</source>
-        <translation>Brugere kan forbinde og afbinde</translation>
+        <translation type="vanished">Usuarios pueden montar y desmontar</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="87"/>
         <source>No automatic mount</source>
-        <translation>Ingen automatisk forbinding</translation>
+        <translation type="vanished">Montaje no automático</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="94"/>
         <source>No update of file access times</source>
-        <translation>Ingen opdatering af fil tilgang tider</translation>
+        <translation type="vanished">No actualizar fecha y hora de acceso a archivos</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="101"/>
         <source>Synchronous access</source>
-        <translation>Synkron adgang</translation>
+        <translation type="vanished">Acceso sincrónico</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="108"/>
         <source>No update of directory access times</source>
-        <translation>Ingen opdatering af mappe tilgang tider</translation>
+        <translation type="vanished">No actualizar fecha y hora de acceso a directorios</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="115"/>
         <source>No binary execution</source>
-        <translation>Ingen binær eksekvering</translation>
+        <translation type="vanished">Sin ejecución binaria</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="122"/>
         <source>Update access times relative to modification</source>
-        <translation>Opdater tilgangstider relativ til modifikation</translation>
+        <translation type="vanished">Tiempo de actualización de acceso relativo a modificaciones</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="142"/>
         <source>More...</source>
-        <translation>More...</translation>
+        <translation type="vanished">Más...</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="149"/>
         <source>Dump Frequency:</source>
-        <translation>Dump Interval:</translation>
+        <translation type="vanished">Frecuencia de volcado:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="178"/>
         <source>Pass Number:</source>
-        <translation>Gennemgang Nummer:</translation>
+        <translation type="vanished">Número de pase:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="285"/>
         <source>Device Node</source>
-        <translation>Enhedsnode:</translation>
+        <translation type="vanished">Nodo de dispositivo</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="295"/>
         <source>UUID</source>
-        <translation>UUID</translation>
+        <translation type="vanished">UUID</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="302"/>
         <source>Label</source>
-        <translation>Etiket</translation>
+        <translation type="vanished">Etiqueta</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="309"/>
         <source>Identify by:</source>
-        <translation>Identificér ved:</translation>
+        <translation type="vanished">Identificado como:</translation>
     </message>
 </context>
 <context>
     <name>EraseDiskPage</name>
     <message>
-        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="47"/>
+        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="50"/>
         <source>Select drive:</source>
-        <translation>Vælg drev:</translation>
+        <translation>Seleccionar disco de almacenamiento:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="202"/>
+        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="204"/>
         <source>Before:</source>
-        <translation>Før:</translation>
+        <translation>Antes:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="207"/>
+        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="209"/>
         <source>After:</source>
-        <translation>Efter:</translation>
+        <translation>Despúes:</translation>
     </message>
 </context>
 <context>
     <name>FileSystemSupportDialogWidgetBase</name>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="17"/>
         <source>This table shows which file systems are supported and which specific operations can be performed on them.
 Some file systems need external tools to be installed for them to be supported. But not all operations can be performed on all file systems, even if all required tools are installed. Please see the documentation for details. </source>
-        <translation>Denne tabel viser hvilke filsystemer der er supporteret og hvilke specifikke handlinger der kan udøves på dem.
-Nogle filsystemer kræver at eksterne værktøjer skal installeres for at være supporteret. Vær venlig at læse dokumentationen for detaljer.</translation>
+        <translation type="vanished">Esta tabla muestra cuales sistemas de archivos están soportados y qué operaciones específicas pueden llevarse a cabo sobre ellos.
+Algunos sistemas de archivos requieren de la instalación de herramientas externas para ser soportados. No todas las operaciones pueden realizarse sobre todos los sistemas de archivos, incluso si todas las herramientas requeridas están instaladas. Por favor, vea la documentación para conocer más detalles.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="65"/>
         <source>File System</source>
-        <translation>Filsystem</translation>
+        <translation type="vanished">Sistema de archivos</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="70"/>
         <source>Create</source>
-        <translation>Opret</translation>
+        <translation type="vanished">Crear</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="75"/>
         <source>Grow</source>
-        <translation>Voks</translation>
+        <translation type="vanished">Aumentar</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="80"/>
         <source>Shrink</source>
-        <translation>Skrumpe</translation>
+        <translation type="vanished">Reducir</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="85"/>
         <source>Move</source>
-        <translation>Flyt</translation>
+        <translation type="vanished">Mover</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="90"/>
         <source>Copy</source>
-        <translation>Kopiér</translation>
+        <translation type="vanished">Copiar</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="95"/>
         <source>Check</source>
-        <translation>Tjek</translation>
+        <translation type="vanished">Comprobar</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="100"/>
         <source>Read Label</source>
-        <translation>Læs Etiket</translation>
+        <translation type="vanished">Leer etiqueta</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="105"/>
         <source>Write Label</source>
-        <translation>Skriv Etiket</translation>
+        <translation type="vanished">Escribir etiqueta</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="110"/>
         <source>Read Usage</source>
-        <translation>Læs Forbrug</translation>
+        <translation type="vanished">Uso de lectura</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="115"/>
         <source>Backup</source>
-        <translation>Sikkerhedskopiér</translation>
+        <translation type="vanished">Respaldo</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="120"/>
         <source>Restore</source>
-        <translation>Genopret</translation>
+        <translation type="vanished">Restaurar</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="125"/>
         <source>Support Tools</source>
-        <translation>Support Værktøjer</translation>
+        <translation type="vanished">Herramientas soportadas</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="135"/>
         <source>Rescan Support</source>
         <comment>@action:button</comment>
-        <translation>Genskan Support</translation>
+        <translation type="vanished">Reescanear soporte</translation>
     </message>
 </context>
 <context>
@@ -1373,12 +1375,12 @@ Nogle filsystemer kræver at eksterne værktøjer skal installeres for at være 
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="75"/>
         <source>Set partition information</source>
-        <translation>Indstil partitionsinformation</translation>
+        <translation>Establecer la información de la partición</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="85"/>
         <source>Failed to find path for boot loader</source>
-        <translation>Fejlede i at finde sti til boot loaderen</translation>
+        <translation>No se pudo encontrar la ruta al cargador de arranque</translation>
     </message>
 </context>
 <context>
@@ -1386,40 +1388,64 @@ Nogle filsystemer kræver at eksterne værktøjer skal installeres for at være 
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="47"/>
         <source>Format partition %1 (file system: %2, size: %3 MB) on %4.</source>
-        <translation>Formater partition %1 (filsystem: %2, størrelse: %3 MB) på %4.</translation>
+        <translation>Formatear la partición %1 (sistema de archivos: %2, tamaño: %3 MB) en %4</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="59"/>
         <source>The installer failed to format partition %1 on disk &apos;%2&apos;.</source>
-        <translation>Installationsprogrammet fejlede i at formatere partition %1 på disk &apos;%2&apos;.</translation>
+        <translation>El instalador falló al formatear la partición %1 del disco &apos;%2&apos;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="67"/>
         <source>Could not open device &apos;%1&apos;.</source>
-        <translation>Kunne ikke åbne enhed &apos;%1&apos;.</translation>
+        <translation>No se pudo abrir el dispositivo &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="76"/>
         <source>Could not open partition table.</source>
-        <translation>Kunne ikke åbne partitionstabel.</translation>
+        <translation>No se pudo abrir la tabla de particiones.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="84"/>
         <source>The installer failed to create file system on partition %1.</source>
-        <translation>Installationsprogrammet fejlede i at oprette filsystem på partition %1.</translation>
+        <translation>El instalador falló al crear el sistema de archivos en la partición %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="92"/>
         <source>The installer failed to update partition table on disk &apos;%1&apos;.</source>
-        <translation>Installationsprogrammet fejlede i at opdatere partitionstabel på disk &apos;%1&apos;.</translation>
+        <translation>El instalador falló al actualizar la tabla de particiones del disco &apos;%1&apos;.</translation>
     </message>
 </context>
 <context>
     <name>GreetingPage</name>
     <message>
-        <location filename="../src/modules/greeting/GreetingPage.cpp" line="33"/>
         <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer.</source>
-        <translation>&lt;h1&gt;Velkommen til %1 installationsprogrammet.&lt;/h1&gt;&lt;br/&gt;Dette program vil stille dig nogle spørgsmål og sætte %2 op på din computer.</translation>
+        <translation type="vanished">&lt;h1&gt;Bienvenido al instalador %1.&lt;/h1&gt;&lt;br/&gt;Este programa le hará algunas preguntas y configurará %2 en su computadora.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/greeting/GreetingPage.ui" line="14"/>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/greeting/GreetingPage.ui" line="102"/>
+        <source>&amp;About</source>
+        <translation>&amp;Acerca</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/greeting/GreetingPage.cpp" line="85"/>
+        <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is in Beta stage.&lt;br/&gt;Not implemented yet is closing the installer automatically,&lt;br/&gt;showing a slideshow during the install or setting the locale.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Known Issues&lt;/a&gt;</source>
+        <translation>&lt;h1&gt;Bienvenido al instalador de %1.&lt;/h1&gt;&lt;br/&gt;Este programa le hará algunas preguntas y configurará %2 en su computadora. Recuerde, este instalador está en estado Beta.&lt;br/&gt;Todavía no se implementó el cierre automático del instalador,&lt;br/&gt;las diapositivas durante la instalación o el ajuste de la configuración regional.&lt;br/&gt;Para &lt;b&gt;particionado GPT en sistemas BIOS&lt;/b&gt; y otras instrucciones, lea &lt;a href=&quot;http://kaosx.us/es/download/&quot;&gt;Problemas conocidos&lt;/a&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/greeting/GreetingPage.cpp" line="106"/>
+        <source>About %1 installer</source>
+        <translation>Acerca del instalador de %1</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/greeting/GreetingPage.cpp" line="108"/>
+        <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technologies for a better world.</source>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Gracias a: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; el desarrollo es patrocinado por &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - tecnologías para un mundo mejor.</translation>
     </message>
 </context>
 <context>
@@ -1427,92 +1453,111 @@ Nogle filsystemer kræver at eksterne værktøjer skal installeres for at være 
     <message>
         <location filename="../src/modules/greeting/GreetingViewStep.cpp" line="41"/>
         <source>Welcome</source>
-        <translation>Velkommen</translation>
+        <translation>Bienvenido</translation>
     </message>
 </context>
 <context>
     <name>KeyboardPage</name>
     <message>
-        <location filename="../src/modules/keyboard/KeyboardPage.cpp" line="181"/>
+        <location filename="../src/modules/keyboard/KeyboardPage.cpp" line="200"/>
         <source>Set keyboard model to %1.&lt;br/&gt;</source>
-        <translation>Indstil tastatur model til %1.&lt;br/&gt;</translation>
+        <translation>Establecer el modelo de teclado a %1.&lt;br/&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/keyboard/KeyboardPage.cpp" line="183"/>
+        <location filename="../src/modules/keyboard/KeyboardPage.cpp" line="202"/>
         <source>Set keyboard layout to %1/%2.</source>
-        <translation>Indstil tastatur layout til %1/%2.</translation>
+        <translation>Configurar el layout del teclado a %1/%2.</translation>
     </message>
 </context>
 <context>
     <name>KeyboardViewStep</name>
     <message>
-        <location filename="../src/modules/keyboard/KeyboardViewStep.cpp" line="45"/>
+        <location filename="../src/modules/keyboard/KeyboardViewStep.cpp" line="48"/>
         <source>Keyboard</source>
-        <translation>Tastatur</translation>
+        <translation>Teclado</translation>
+    </message>
+</context>
+<context>
+    <name>LCLocaleDialog</name>
+    <message>
+        <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="33"/>
+        <source>System locale setting</source>
+        <translation>Configuración regional del sistema</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="40"/>
+        <source>The system locale setting affects the language and character set for some command line user interface elements.&lt;br/&gt;The current setting is &lt;b&gt;%1&lt;/b&gt;.</source>
+        <translation>La configuración regional del sistema afecta el idioma y el juego de caracteres para algunos elementos de la interfaz en linea de comandos.&lt;/br&gt;La configuración actual es &lt;b&gt;%1&lt;/b&gt;.</translation>
     </message>
 </context>
 <context>
     <name>LocalePage</name>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="46"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="157"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="168"/>
+        <source>The system locale is set to %1.</source>
+        <translation>La configuración regional del sistema está ajustada en %1</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="165"/>
         <source>Region:</source>
-        <translation>Region:</translation>
+        <translation>Región:</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="56"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="166"/>
         <source>Zone:</source>
-        <translation>Zone:</translation>
+        <translation>Zona:</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="176"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="171"/>
+        <source>&amp;Change...</source>
+        <translation>&amp;Cambiar...</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="265"/>
         <source>Set timezone to %1/%2.&lt;br/&gt;</source>
-        <translation>Indstil tidszone til %1/%2.&lt;br/&gt;</translation>
+        <translation>Configurar zona horaria a %1/%2.&lt;br/&gt;</translation>
     </message>
 </context>
 <context>
     <name>LocaleViewStep</name>
     <message>
-        <location filename="../src/modules/locale/LocaleViewStep.cpp" line="42"/>
+        <location filename="../src/modules/locale/LocaleViewStep.cpp" line="45"/>
         <source>Loading location data...</source>
-        <translation>Loader lokationsdata...</translation>
+        <translation>Detectando ubicación...</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/LocaleViewStep.cpp" line="74"/>
+        <location filename="../src/modules/locale/LocaleViewStep.cpp" line="79"/>
         <source>Location</source>
-        <translation>Lokation</translation>
+        <translation>Ubicación</translation>
     </message>
 </context>
 <context>
     <name>MainWindowBase</name>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/mainwindowbase.ui" line="14"/>
         <source>KDE Partition Manager</source>
         <comment>@title:window</comment>
-        <translation>KDE Partitionsmanager</translation>
+        <translation type="vanished">Gestor de particiones de KDE</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/mainwindowbase.ui" line="24"/>
         <source>Devices</source>
         <comment>@title:window</comment>
-        <translation>Enheder</translation>
+        <translation type="vanished">Dispositivos</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/mainwindowbase.ui" line="38"/>
         <source>Pending Operations</source>
         <comment>@title:window</comment>
-        <translation>Ventende Handlinger</translation>
+        <translation type="vanished">Operaciones pendientes</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/mainwindowbase.ui" line="49"/>
         <source>Information</source>
         <comment>@title:window</comment>
-        <translation>Information</translation>
+        <translation type="vanished">Información</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/mainwindowbase.ui" line="63"/>
         <source>Log Output</source>
         <comment>@title:window</comment>
-        <translation>Før log over udskrift</translation>
+        <translation type="vanished">Log de Salida</translation>
     </message>
 </context>
 <context>
@@ -1520,48 +1565,48 @@ Nogle filsystemer kræver at eksterne værktøjer skal installeres for at være 
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="66"/>
         <source>Move file system of partition %1.</source>
-        <translation>Flyt filsystem af partition %1.</translation>
+        <translation>Mover el sistema de archivos de la partición %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="80"/>
         <source>Could not open file system on partition %1 for moving.</source>
-        <translation>Kunne ikke åbne filsystem på partition %1 til flytning.</translation>
+        <translation>No se puede abrir el sistema de archivos de la partición %1 para moverlo. </translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="86"/>
         <source>Could not create target for moving file system on partition %1.</source>
-        <translation>Kunne ikke oprette destination til flytning af filsystem på partition %1.</translation>
+        <translation>No se puede crear el destino para mover el sistema de archivos a la partición %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="95"/>
         <source>Moving of partition %1 failed, changes have been rolled back.</source>
-        <translation>Flytning af partition %1 fejlede, ændringer er tilbageført.</translation>
+        <translation>Error al mover la partición %1. Los cambios han sido revertidos.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="101"/>
         <source>Moving of partition %1 failed. Roll back of the changes have failed.</source>
-        <translation>Flytning af partition %1 fejlede. Tilbageføring af ændringer fejlede.</translation>
+        <translation>Error al mover la partición %1. No se ha podido recuperar la situación inicial.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="113"/>
         <source>Updating boot sector after the moving of partition %1 failed.</source>
-        <translation>Opdaterer boot sektor efter flytning af partition %1 fejlede.</translation>
+        <translation>Error al actualizar el sector de arranque después de mover la partición %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="127"/>
         <source>The logical sector sizes in the source and target for copying are not the same. This is currently unsupported.</source>
-        <translation>De logiske sektor størrelser for kilden og destination af kopiering er ikke den samme. Dette er ligenu ikke supporteret.</translation>
+        <translation>El tamaño de los sectores lógicos de origen y destino de la copia no son iguales. Este tipo de operación no está soportada.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="200"/>
         <source>Source and target for copying do not overlap: Rollback is not required.</source>
-        <translation>Kilde og destination for kopiering overlapper ikke: Tilebageføring ikke krævet.</translation>
+        <translation>El origen y el destino no se superponen: No hace falta deshacer los cambios.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="224"/>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="232"/>
         <source>Could not open device %1 to rollback copying.</source>
-        <translation>Kunne ikke åbne enhed %1 til at tilbageføre kopiering.</translation>
+        <translation>No se puede abrir el dispositivo %1 para deshacer la copia.</translation>
     </message>
 </context>
 <context>
@@ -1569,17 +1614,17 @@ Nogle filsystemer kræver at eksterne værktøjer skal installeres for at være 
     <message>
         <location filename="../src/modules/keyboard/KeyboardPage.ui" line="14"/>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Formulario</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/KeyboardPage.ui" line="70"/>
         <source>Keyboard Model:</source>
-        <translation>Tastatur Model:</translation>
+        <translation>Modelo de teclado:</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/KeyboardPage.ui" line="131"/>
         <source>Type here to test your keyboard</source>
-        <translation>Skriv her for at teste dit tastatur</translation>
+        <translation>Escriba aquí para comprobar su teclado</translation>
     </message>
 </context>
 <context>
@@ -1587,17 +1632,17 @@ Nogle filsystemer kræver at eksterne værktøjer skal installeres for at være 
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="14"/>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Formulario</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="33"/>
         <source>What is your name?</source>
-        <translation>Hvad er dit navn?</translation>
+        <translation>Nombre</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="111"/>
         <source>What name do you want to use to log in?</source>
-        <translation>Hvilket navn vil du bruge til at logge ind?</translation>
+        <translation>¿Qué nombre desea usar para ingresar?</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="191"/>
@@ -1605,214 +1650,186 @@ Nogle filsystemer kræver at eksterne værktøjer skal installeres for at være 
         <location filename="../src/modules/users/page_usersetup.ui" line="425"/>
         <location filename="../src/modules/users/page_usersetup.ui" line="553"/>
         <source>font-weight: normal</source>
-        <translation>font-vægt: normal</translation>
+        <translation>tamaño de la fuente: normal</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="194"/>
         <source>&lt;small&gt;If more than one person will use this computer, you can set up multiple accounts after installation.&lt;/small&gt;</source>
-        <translation>&lt;small&gt;Hvis mere end én person vil bruge denne computer, kan du indstille flere konti efter installationen.&lt;/small&gt;</translation>
+        <translation>&lt;small&gt;Si este equipo es usado por varios usuarios, podrá configurar varias cuentas tras finalizar la instalación.&lt;/small&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="217"/>
         <source>Choose a password to keep your account safe.</source>
-        <translation>Vælg en adgangskode for at beskytte din konto.</translation>
+        <translation>Elija una contraseña para mantener su cuenta segura.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="322"/>
         <source>&lt;small&gt;Enter the same password twice, so that it can be checked for typing errors. A good password will contain a mixture of letters, numbers and punctuation, should be at least eight characters long, and should be changed at regular intervals.&lt;/small&gt;</source>
-        <translation>&lt;small&gt;Skriv kodeordet to gange, så det kan blive tjekket for skrivefejl. Et godt kodeord vil indeholde et mix af bogstaver, tal og specialtegn, være mindst 8 cifre langt og bør skiftes jævnligt.&lt;/small&gt;</translation>
+        <translation>&lt;small&gt;Ingrese la misma contraseña dos veces para poder revisar los errores al escribir. Una buena contraseña debe contener una mezcla entre letras, números y puntuación, deberá contener al menos ocho caracteres de longitud, y ser cambiada con regularidad.&lt;/small&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="345"/>
         <source>What is the name of this computer?</source>
-        <translation>Hvad er navnet på denne computer?</translation>
+        <translation>Nombre del equipo</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="428"/>
         <source>&lt;small&gt;This name will be used if you make the computer visible to others on a network.&lt;/small&gt;</source>
-        <translation>&lt;small&gt;Dette navn vil blive brugt, hvis du gør computeren synlig for andre på netværket.&lt;/small&gt;</translation>
+        <translation>&lt;small&gt;Este nombre será utilizado si hace este equipo visible para otros en una red.&lt;/small&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="451"/>
         <source>Choose a password for the administrator account.</source>
-        <translation>Vælg et kodeord til administrator kontoen.</translation>
+        <translation>Elegir una contraseña para la cuenta de administrador.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="556"/>
         <source>&lt;small&gt;Enter the same password twice, so that it can be checked for typing errors.&lt;/small&gt;</source>
-        <translation>&lt;small&gt;Skriv kodeordet to gange, så det kan blive tjekket for skrivefejl.&lt;/small&gt;</translation>
+        <translation>&lt;small&gt;Escriba dos veces la contraseña para que se puede verificar en caso de errores al escribir.&lt;/small&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="596"/>
         <source>Log in automatically</source>
-        <translation>Automatisk logind</translation>
+        <translation>Iniciar sesión automáticamente</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="606"/>
         <source>Require my password to log in</source>
-        <translation>Kræv mit kodeord for at logge ind</translation>
+        <translation>Requerir contraseña para ingresar</translation>
     </message>
 </context>
 <context>
     <name>PartPropsWidgetBase</name>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="49"/>
         <source>File system:</source>
         <comment>@label:listbox</comment>
-        <translation>Filsystem:</translation>
+        <translation type="vanished">Sistema de archivos:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="65"/>
         <source>Label:</source>
         <comment>@label</comment>
-        <translation>Etiket:</translation>
+        <translation type="vanished">Etiqueta:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="82"/>
         <source>This file system does not support setting a label.</source>
         <comment>@label</comment>
-        <translation>Dette filsystem supportere ikke at indstille etiket.</translation>
+        <translation type="vanished">El sistema de archivos no soporta etiquetas.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="92"/>
         <source>Recreate existing file system</source>
         <comment>@action:button</comment>
-        <translation>Genskab eksisterende filsystem</translation>
+        <translation type="vanished">Volver a crear el sistema de archivos existente</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="106"/>
         <source>Mount point:</source>
         <comment>@label</comment>
-        <translation>Forbindelsespunkt:</translation>
+        <translation type="vanished">Punto de montaje:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="123"/>
         <source>Partition type:</source>
         <comment>@label</comment>
-        <translation>Partitionstype:</translation>
+        <translation type="vanished">Tipo de partición:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="140"/>
         <source>Status:</source>
         <comment>@label</comment>
-        <translation>Status:</translation>
+        <translation type="vanished">Estado:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="157"/>
         <source>UUID:</source>
         <comment>@label</comment>
-        <translation>UUID:</translation>
+        <translation type="vanished">UUID:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="187"/>
         <source>Size:</source>
         <comment>@label</comment>
-        <translation>Størrelse:</translation>
+        <translation type="vanished">Tamaño:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="210"/>
         <source>Available:</source>
         <comment>@label partition capacity available</comment>
-        <translation>Tilgængelig:</translation>
+        <translation type="vanished">Disponible:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="227"/>
         <source>Used:</source>
         <comment>@label partition capacity used</comment>
-        <translation>Brugt:</translation>
+        <translation type="vanished">Usado:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="251"/>
         <source>First sector:</source>
         <comment>@label</comment>
-        <translation>Første sektor:</translation>
+        <translation type="vanished">Primer sector:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="268"/>
         <source>Last sector:</source>
         <comment>@label</comment>
-        <translation>Sidste sektor:</translation>
+        <translation type="vanished">Último sector:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="285"/>
         <source>Number of sectors:</source>
         <comment>@label</comment>
-        <translation>Antal af sektorer:</translation>
+        <translation type="vanished">Número de sectores:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="309"/>
         <source>Flags:</source>
         <comment>@label</comment>
-        <translation>Flag:</translation>
+        <translation type="vanished">Banderas:</translation>
     </message>
 </context>
 <context>
     <name>PartitionManagerWidgetBase</name>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="14"/>
         <source>KDE Partition Manager</source>
         <comment>@title:window</comment>
-        <translation>KDE Partitionsmanager</translation>
+        <translation type="vanished">Gestor de particiones de KDE</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="70"/>
         <source>Partition</source>
-        <translation>Partition</translation>
+        <translation type="vanished">Partición</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="75"/>
         <source>Type</source>
-        <translation>Type</translation>
+        <translation type="vanished">Tipo</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="80"/>
         <source>Mount Point</source>
-        <translation>Forbindelsespunkt</translation>
+        <translation type="vanished">Punto de montaje</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="85"/>
         <source>Label</source>
-        <translation>Etiket</translation>
+        <translation type="vanished">Etiqueta</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="90"/>
         <source>UUID</source>
-        <translation>UUID</translation>
+        <translation type="vanished">UUID</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="95"/>
         <source>Size</source>
-        <translation>Størrelse</translation>
+        <translation type="vanished">Tamaño</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="100"/>
         <source>Used</source>
-        <translation>Brugt</translation>
+        <translation type="vanished">Usado</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="105"/>
         <source>Available</source>
-        <translation>Tilgængelig</translation>
+        <translation type="vanished">Disponible</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="110"/>
         <source>First Sector</source>
-        <translation>Første Sektor</translation>
+        <translation type="vanished">Primer Sector</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="115"/>
         <source>Last Sector</source>
-        <translation>Sidste Sektor</translation>
+        <translation type="vanished">Último Sector</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="120"/>
         <source>Number of Sectors</source>
-        <translation>Antal Sektorer</translation>
+        <translation type="vanished">Número de sectores</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="125"/>
         <source>Flags</source>
-        <translation>Flag</translation>
+        <translation type="vanished">Banderas</translation>
     </message>
 </context>
 <context>
@@ -1820,32 +1837,32 @@ Nogle filsystemer kræver at eksterne værktøjer skal installeres for at være 
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="132"/>
         <source>Free Space</source>
-        <translation>Fri Plads</translation>
+        <translation>Espacio libre</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="136"/>
         <source>New partition</source>
-        <translation>Ny partition</translation>
+        <translation>Partición nueva</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="175"/>
         <source>Name</source>
-        <translation>Navn</translation>
+        <translation>Nombre</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="177"/>
         <source>File System</source>
-        <translation>Filsystem</translation>
+        <translation>Sistema de archivos</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="179"/>
         <source>Mount Point</source>
-        <translation>Forbindelsespunkt</translation>
+        <translation>Punto de montaje</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="181"/>
         <source>Size</source>
-        <translation>Størrelse</translation>
+        <translation>Tamaño</translation>
     </message>
 </context>
 <context>
@@ -1853,125 +1870,125 @@ Nogle filsystemer kræver at eksterne værktøjer skal installeres for at være 
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="14"/>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Formulario</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="22"/>
         <source>&amp;Disk:</source>
-        <translation>&amp;Disk:</translation>
+        <translation>&amp;Disco</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="51"/>
         <source>&amp;Revert All Changes</source>
-        <translation>&amp;Tilbagefør Alle Ændringer</translation>
+        <translation>&amp;Deshacer todos los cambios</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="84"/>
         <source>New Partition &amp;Table</source>
-        <translation>Ny Partitionstabel</translation>
+        <translation>Nueva &amp;tabla de particiones</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="104"/>
         <source>&amp;Create</source>
-        <translation>&amp;Opret</translation>
+        <translation>&amp;Crear</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="111"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Redigér</translation>
+        <translation>&amp;Editar</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="118"/>
         <source>&amp;Delete</source>
-        <translation>&amp;Slet</translation>
+        <translation>&amp;Borrar</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="145"/>
         <source>&amp;Install boot loader on:</source>
-        <translation>&amp;Installér boot loaderen på:</translation>
+        <translation>&amp;Instalar el cargador de arranque en:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="125"/>
+        <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="129"/>
         <source>Are you sure you want to create a new partition table on %1?</source>
-        <translation>Er du sikker på at du vil oprette en ny partitionstabel på %1?</translation>
+        <translation>¿Está seguro de querer crear una nueva tabla de particiones en %1?</translation>
     </message>
 </context>
 <context>
     <name>PartitionViewStep</name>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="60"/>
+        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="66"/>
         <source>Gathering system information...</source>
-        <translation>Samler system information...</translation>
+        <translation>Obteniendo información del sistema...</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="149"/>
+        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="160"/>
         <source>Partitions</source>
-        <translation>Partitioner</translation>
+        <translation>Particiones</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="177"/>
+        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="188"/>
         <source>Before:</source>
-        <translation>Før:</translation>
+        <translation>Antes:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="182"/>
+        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="193"/>
         <source>After:</source>
-        <translation>Efter:</translation>
+        <translation>Después:</translation>
     </message>
 </context>
 <context>
     <name>PreparePage</name>
     <message>
-        <location filename="../src/modules/prepare/PreparePage.cpp" line="36"/>
+        <location filename="../src/modules/prepare/PreparePage.cpp" line="39"/>
         <source>For best results, please ensure that this computer:</source>
-        <translation>For de bedste resultater, forsikrer dig at computeren:</translation>
+        <translation>Para obtener mejores resultados, verifique que este equipo:</translation>
     </message>
     <message>
-        <location filename="../src/modules/prepare/PreparePage.cpp" line="91"/>
+        <location filename="../src/modules/prepare/PreparePage.cpp" line="96"/>
         <source>This computer does not satisfy the minimum requirements for installing %1.
 Installation cannot continue.</source>
-        <translation>Denne computer overholder ikke minimumskravene for at installere %1.
-Installation kan ikke fortsætte.</translation>
+        <translation>Este equipo no satisface los requisitos mínimos de instalación %1.
+La instalación no puede continuar.</translation>
     </message>
     <message>
-        <location filename="../src/modules/prepare/PreparePage.cpp" line="102"/>
+        <location filename="../src/modules/prepare/PreparePage.cpp" line="109"/>
         <source>This computer does not satisfy some of the recommended requirements for installing %1.
 Installation can continue, but some features might be disabled.</source>
-        <translation>Denne computer overholder ikke alle anbefalede krav for at installere %1.
-Installation kan fortsætte, men nogle features kan være deaktiveret.</translation>
+        <translation>Este equipo no cumple alguno de los requisitos recomendados de la instalación %1.
+La instalación puede continuar pero algunas características podrían no estar disponibles.</translation>
     </message>
 </context>
 <context>
     <name>PrepareViewStep</name>
     <message>
-        <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="50"/>
+        <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="54"/>
         <source>Gathering system information...</source>
-        <translation>Samler system information...</translation>
+        <translation>Obteniendo información del sistema...</translation>
     </message>
     <message>
-        <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="88"/>
+        <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="91"/>
         <source>has at least %1 GB available drive space</source>
-        <translation>har mindst %1 GB fri harddisk plads</translation>
+        <translation>tiene al menos %1 GB de espacio de unidad disponible</translation>
     </message>
     <message>
-        <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="96"/>
+        <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="99"/>
         <source>has at least %1 GB working memory</source>
-        <translation>har mindst %1 GB hukkommelse</translation>
+        <translation>tiene al menos %1 GB de memoria para trabajar</translation>
     </message>
     <message>
-        <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="104"/>
+        <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="107"/>
         <source>is plugged in to a power source</source>
-        <translation>er tilsluttet strømkilde</translation>
+        <translation>está conectado a una fuente de energía</translation>
     </message>
     <message>
-        <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="111"/>
+        <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="114"/>
         <source>is connected to the Internet</source>
-        <translation>er forbundet til internettet</translation>
+        <translation>está conectado a Internet</translation>
     </message>
     <message>
-        <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="152"/>
+        <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="158"/>
         <source>Prepare</source>
-        <translation>Forbered</translation>
+        <translation>Preparar</translation>
     </message>
 </context>
 <context>
@@ -1979,12 +1996,12 @@ Installation kan fortsætte, men nogle features kan være deaktiveret.</translat
     <message>
         <location filename="../src/calamares/progresstree/ProgressTreeModel.cpp" line="136"/>
         <source>Prepare</source>
-        <translation>Forbered</translation>
+        <translation>Preparar</translation>
     </message>
     <message>
         <location filename="../src/calamares/progresstree/ProgressTreeModel.cpp" line="145"/>
         <source>Finish</source>
-        <translation>Færdiggør</translation>
+        <translation>Finalizar</translation>
     </message>
 </context>
 <context>
@@ -1992,131 +2009,171 @@ Installation kan fortsætte, men nogle features kan være deaktiveret.</translat
     <message>
         <location filename="../src/modules/keyboard/keyboardwidget/keyboardglobal.cpp" line="82"/>
         <source>Default Keyboard Model</source>
-        <translation>Standard Tastatur Model</translation>
+        <translation>Modelo de teclado por defecto</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/keyboardwidget/keyboardglobal.cpp" line="127"/>
         <location filename="../src/modules/keyboard/keyboardwidget/keyboardglobal.cpp" line="163"/>
         <source>Default</source>
-        <translation>Standard</translation>
+        <translation>Por defecto</translation>
     </message>
 </context>
 <context>
     <name>ReleaseDialog</name>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="20"/>
         <source>KDE Release Builder</source>
-        <translation>KDE Release Bygger</translation>
+        <translation type="vanished">KDE Release Builder</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="32"/>
         <source>Application</source>
-        <translation>Program</translation>
+        <translation type="vanished">Aplicación</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="38"/>
         <source>Name:</source>
-        <translation>Navn:</translation>
+        <translation type="vanished">Nombre:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="48"/>
         <source>&amp;Version:</source>
-        <translation>&amp;Version:</translation>
+        <translation type="vanished">&amp;Versión:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="93"/>
         <source>Repository and Revision</source>
-        <translation>Repositorie og Revision</translation>
+        <translation type="vanished">Repositorio y Revisión</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="99"/>
         <source>&amp;Checkout From:</source>
-        <translation>&amp;Tjek ud fra:</translation>
+        <translation type="vanished">Formulario de &amp;comprobación:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="119"/>
         <source>trunk</source>
-        <translation>trunk</translation>
+        <translation type="vanished">trunk</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="124"/>
         <source>branches</source>
-        <translation>branches</translation>
+        <translation type="vanished">branches</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="129"/>
         <source>tags</source>
-        <translation>tags</translation>
+        <translation type="vanished">etiquetas</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="137"/>
         <source>Ta&amp;g/Branch:</source>
-        <translation>Ta&amp;g/Branch</translation>
+        <translation type="vanished">Ta&amp;g/Branch:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="163"/>
         <source>&amp;SVN Access:</source>
-        <translation>&amp;SVN Access:</translation>
+        <translation type="vanished">&amp;Acceso SVN:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="183"/>
         <source>anonsvn</source>
-        <translation>anonsvn</translation>
+        <translation type="vanished">anonsvn</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="188"/>
         <source>https</source>
-        <translation>https</translation>
+        <translation type="vanished">https</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="193"/>
         <source>svn+ssh</source>
-        <translation>svn+ssh</translation>
+        <translation type="vanished">svn+ssh</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="201"/>
         <source>&amp;User:</source>
-        <translation>&amp;Bruger:</translation>
+        <translation type="vanished">&amp;Usuario:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="236"/>
         <source>Options</source>
-        <translation>Muligheder</translation>
+        <translation type="vanished">Opciones</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="242"/>
         <source>Get &amp;Documentation</source>
-        <translation>Få &amp;Dokumentation</translation>
+        <translation type="vanished">Obtener &amp;Documentación</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="252"/>
         <source>Get &amp;Translations</source>
-        <translation>Få &amp;Oversættelser</translation>
+        <translation type="vanished">Obtener &amp;Traducciones</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="262"/>
         <source>C&amp;reate Tag</source>
-        <translation>&amp;Opret Tag</translation>
+        <translation type="vanished">C&amp;rear etiqueta</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="271"/>
         <source>S&amp;kip translations below completion:</source>
-        <translation>&amp;Spring over oversættelser under færdiggørelse:</translation>
+        <translation type="vanished">O&amp;mitir traducciones tras finalizar:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="306"/>
         <source> %</source>
-        <translation>%</translation>
+        <translation type="vanished">%</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="324"/>
         <source>Create Tar&amp;ball</source>
-        <translation>Opret Tar&amp;ball</translation>
+        <translation type="vanished">Crear Tar&amp;ball</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="334"/>
         <source>Apply &amp;fixes</source>
-        <translation>Anvend &amp;rettelser</translation>
+        <translation type="vanished">Aplicar &amp;cambios</translation>
+    </message>
+</context>
+<context>
+    <name>ReplacePage</name>
+    <message>
+        <location filename="../src/modules/partition/gui/ReplacePage.ui" line="14"/>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ReplacePage.ui" line="22"/>
+        <source>&amp;Disk:</source>
+        <translation>&amp;Disco:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="109"/>
+        <source>Select where to install %1.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;this will delete all files on the selected partition.</source>
+        <translation>Selecciones donde instalar %1.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Advertencia: &lt;/font&gt;Esto borrará todos los archivos en la partición seleccionada.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="136"/>
+        <source>The selected item does not appear to be a valid partition.</source>
+        <translation>El ítem seleccionado no parece ser una partición válida.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="144"/>
+        <source>%1 cannot be installed on empty space. Please select an existing partition.</source>
+        <translation>%1 no puede instalarse en un espacio vacío. Por favor seleccione una partición existente.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="155"/>
+        <source>%1 cannot be installed on an extended partition. Please select an existing primary or logical partition.</source>
+        <translation>%1 no puede instalarse en una partición extendida. Por favor seleccione una partición primaria o una partición lógica.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="166"/>
+        <source>%1 cannot be installed on this partition.</source>
+        <translation>%1 no puede instalarse en esta partición.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="173"/>
+        <source>Data partition (%1)</source>
+        <translation>Partición de datos (%1)</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="190"/>
+        <source>Unknown system partition (%1)</source>
+        <translation>Sistema de particiones desconocido (%1)</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="195"/>
+        <source>%1 system partition (%2)</source>
+        <translation>%1 partición del sistema (%2)</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="206"/>
+        <source>&lt;b&gt;%4&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;The partition %1 is too small for %2. Please select a partition with capacity at least %3 GiB.</source>
+        <translation>&lt;b&gt;%4&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;La partición %1 es demasiado chica para %2. Por favor seleccione una partición con al menos %3 Gb de capacidad.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="220"/>
+        <source>&lt;b&gt;%3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;%1 will be installed on %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;all data on partition%2 will be lost.</source>
+        <translation>&lt;b&gt;%3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;%1 se instalará en %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Advertencia: &lt;/font&gt;todos los datos en la partición %2 se perderán.</translation>
     </message>
 </context>
 <context>
@@ -2124,17 +2181,17 @@ Installation kan fortsætte, men nogle features kan være deaktiveret.</translat
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="75"/>
         <source>Resize file system on partition %1.</source>
-        <translation>Ændre størrelse af filsystem på partition %1.</translation>
+        <translation>Redimensionar el sistema de archivos de la partición %1. </translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="90"/>
         <source>Parted failed to resize filesystem.</source>
-        <translation>Parted fejlede i at ændre størrelse på filsystem.</translation>
+        <translation>Parted ha fallado al redimensionar el sistema de archivos.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="100"/>
         <source>Failed to resize filesystem.</source>
-        <translation>Fejlede i at ændre størrelse på filsystem.</translation>
+        <translation>Fallo al redimensionar el sistema de archivos.</translation>
     </message>
 </context>
 <context>
@@ -2142,18 +2199,18 @@ Installation kan fortsætte, men nogle features kan være deaktiveret.</translat
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="186"/>
         <source>Resize partition %1.</source>
-        <translation>Ændre størrelse på partition %1.</translation>
+        <translation>Redimensionar partición %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="208"/>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="266"/>
         <source>The installer failed to resize partition %1 on disk &apos;%2&apos;.</source>
-        <translation>Installationsprogrammet fejlede i at ændre størrelse på partition %1 på disk &apos;%2&apos;.</translation>
+        <translation>El instalador ha fallado a la hora de reducir la partición %1 en el disco &apos;%2&apos;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="213"/>
         <source>Could not open device &apos;%1&apos;.</source>
-        <translation>Kunne ikke åbne enhed &apos;%1&apos;.</translation>
+        <translation>No se pudo abrir el dispositivo &apos;%1&apos;.</translation>
     </message>
 </context>
 <context>
@@ -2161,18 +2218,43 @@ Installation kan fortsætte, men nogle features kan være deaktiveret.</translat
     <message>
         <location filename="../src/modules/users/SetHostNameJob.cpp" line="36"/>
         <source>Set hostname %1</source>
-        <translation>Indstil værtsnavn %1</translation>
+        <translation>Hostname: %1</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetHostNameJob.cpp" line="46"/>
         <location filename="../src/modules/users/SetHostNameJob.cpp" line="53"/>
         <source>Internal Error</source>
-        <translation>Intern Fejl</translation>
+        <translation>Error interno</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetHostNameJob.cpp" line="60"/>
+        <location filename="../src/modules/users/SetHostNameJob.cpp" line="71"/>
         <source>Cannot write hostname to target system</source>
-        <translation>Kan ikke skrive værtsnavn til mål system</translation>
+        <translation>No es posible escribir el hostname en el sistema de destino</translation>
+    </message>
+</context>
+<context>
+    <name>SetKeyboardLayoutJob</name>
+    <message>
+        <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="57"/>
+        <source>Set keyboard model to %1, layout to %2-%3</source>
+        <translation>Ajuste el modelo del teclado para %1, distribución para %2-%3</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="277"/>
+        <source>Failed to write keyboard configuration for the virtual console.</source>
+        <translation>Fallo al escribir la configuración del teclado para la consola virtual.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="278"/>
+        <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="282"/>
+        <source>Failed to write to %1</source>
+        <translation>Fallo para escribir en %1</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="281"/>
+        <source>Failed to write keyboard configuration for X11.</source>
+        <translation>Fallo al escribir la configuración del teclado para X11.</translation>
     </message>
 </context>
 <context>
@@ -2180,12 +2262,12 @@ Installation kan fortsætte, men nogle features kan være deaktiveret.</translat
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="143"/>
         <source>Update geometry of partition %1.</source>
-        <translation>Opdatér geometri af partition %1.</translation>
+        <translation>Actualizar la geometría de la partición %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="155"/>
         <source>Failed to change the geometry of the partition.</source>
-        <translation>Fejlede i at ændre geometri af partitionen.</translation>
+        <translation>Fallo al cambiar la geometría de la partición.</translation>
     </message>
 </context>
 <context>
@@ -2193,27 +2275,27 @@ Installation kan fortsætte, men nogle features kan være deaktiveret.</translat
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="42"/>
         <source>Set password for user %1</source>
-        <translation>Indstil kodeord for bruger %1</translation>
+        <translation>Definir contraseña para el usuario %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="52"/>
         <source>Bad destination system path.</source>
-        <translation>Dårlig destination systemsti.</translation>
+        <translation>Destino erróneo del sistema.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="53"/>
         <source>rootMountPoint is %1</source>
-        <translation>rodMonteringsPunkt er %1</translation>
+        <translation>El punto de montaje de la raíz es %1</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="62"/>
         <source>Cannot set password for user %1.</source>
-        <translation>Kan ikke indstille kodeord for bruger %1.</translation>
+        <translation>No se puede definir contraseña para el usuario %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="64"/>
         <source>usermod terminated with error code %1.</source>
-        <translation>usermod stoppede med fejl kode %1.</translation>
+        <translation>usermod ha terminado con el código de error %1</translation>
     </message>
 </context>
 <context>
@@ -2221,222 +2303,187 @@ Installation kan fortsætte, men nogle features kan være deaktiveret.</translat
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="41"/>
         <source>Set timezone to %1/%2</source>
-        <translation>Indstil tidszone til %1/%2</translation>
+        <translation>Configurar uso horario a %1/%2</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="56"/>
         <source>Cannot access selected timezone path.</source>
-        <translation>Kan ikke tilgå den valgte tidszone sti.</translation>
+        <translation>No se puede acceder a la ruta de la zona horaria.</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="57"/>
         <source>Bad path: %1</source>
-        <translation>Dårlig sti: %1</translation>
+        <translation>Ruta errónea: %1</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="69"/>
         <source>Cannot set timezone.</source>
-        <translation>Kan ikke indstille tidszone.</translation>
+        <translation>No se puede definir la zona horaria</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="70"/>
         <source>Link creation failed, target: %1; link name: %2</source>
-        <translation>Link oprettelse fejlede, mål: %1; link navn: %2</translation>
+        <translation>Fallo al crear el enlace, destino: %1; nombre del enlace: %2</translation>
     </message>
 </context>
 <context>
     <name>SizeDetailsWidgetBase</name>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/sizedetailswidgetbase.ui" line="62"/>
         <source>First sector:</source>
         <comment>@label:listbox</comment>
-        <translation>Første sektor:</translation>
+        <translation type="vanished">Primer sector:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/sizedetailswidgetbase.ui" line="97"/>
         <source>Last sector:</source>
         <comment>@label:listbox</comment>
-        <translation>Sidste sektor:</translation>
+        <translation type="vanished">Último sector:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/sizedetailswidgetbase.ui" line="120"/>
         <source>Align partition</source>
-        <translation>Justér partition</translation>
+        <translation type="vanished">Alinear partición</translation>
     </message>
 </context>
 <context>
     <name>SizeDialogWidgetBase</name>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="55"/>
         <source>Partition type:</source>
         <comment>@label:listbox</comment>
-        <translation>Partitionstype:</translation>
+        <translation type="vanished">Tipo de partición:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="70"/>
         <source>Primary</source>
-        <translation>Primær</translation>
+        <translation type="vanished">Primaria</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="77"/>
         <source>Extended</source>
-        <translation>Udvidet</translation>
+        <translation type="vanished">Extendida</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="84"/>
         <source>Logical</source>
-        <translation>Logisk</translation>
+        <translation type="vanished">Lógica</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="99"/>
         <source>File system:</source>
         <comment>@label:listbox</comment>
-        <translation>Filsystem:</translation>
+        <translation type="vanished">Sistema de archivos:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="115"/>
         <source>Label:</source>
         <comment>@label</comment>
-        <translation>Etiket:</translation>
+        <translation type="vanished">Etiqueta:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="134"/>
         <source>This file system does not support setting a label.</source>
         <comment>@label</comment>
-        <translation>Dette filsystem supporterer ikke at indstille etiket.</translation>
+        <translation type="vanished">Este sistema de archivos no soporta la etiqueta asignada.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="152"/>
         <source>Minimum size:</source>
         <comment>@label</comment>
-        <translation>Minimum størrelse:</translation>
+        <translation type="vanished">Tamaño mínimo:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="175"/>
         <source>Maximum size:</source>
         <comment>@label</comment>
-        <translation>Maximum størrelse:</translation>
+        <translation type="vanished">Tamaño máximo:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="198"/>
         <source>Free space before:</source>
         <comment>@label:listbox</comment>
-        <translation>Fri plads før:</translation>
+        <translation type="vanished">Espacio libre antes:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="233"/>
         <source>Size:</source>
         <comment>@label:listbox</comment>
-        <translation>Størrelse:</translation>
+        <translation type="vanished">Tamaño:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="262"/>
         <source>Free space after:</source>
         <comment>@label:listbox</comment>
-        <translation>Fri plads efter:</translation>
+        <translation type="vanished">Espacio libre después:</translation>
     </message>
 </context>
 <context>
     <name>SmartDialogWidgetBase</name>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="23"/>
         <source>SMART status:</source>
-        <translation>SMART status:</translation>
+        <translation type="vanished">Estado de SMART:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="63"/>
         <source>Model:</source>
-        <translation>Model:</translation>
+        <translation type="vanished">Modelo:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="92"/>
         <source>Serial number:</source>
-        <translation>Serie nummer:</translation>
+        <translation type="vanished">Número de serie:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="121"/>
         <source>Firmware revision:</source>
-        <translation>Firmware revision:</translation>
+        <translation type="vanished">Revisión de Firmware:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="150"/>
         <source>Temperature:</source>
-        <translation>Temperatur:</translation>
+        <translation type="vanished">Temperatura</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="179"/>
         <source>Bad sectors:</source>
-        <translation>Dårlige sektorer:</translation>
+        <translation type="vanished">Sectores malos:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="208"/>
         <source>Powered on for:</source>
-        <translation>Strøm på for:</translation>
+        <translation type="vanished">Encendido hace:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="237"/>
         <source>Power cycles:</source>
-        <translation>Strøm cyklus:</translation>
+        <translation type="vanished">Ciclos de energía:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="289"/>
         <source>Id</source>
-        <translation>Id</translation>
+        <translation type="vanished">Id</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="294"/>
         <source>Attribute</source>
-        <translation>Attribut</translation>
+        <translation type="vanished">Atributo</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="299"/>
         <source>Failure Type</source>
-        <translation>Fejl Type</translation>
+        <translation type="vanished">Tipo de fallo</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="304"/>
         <source>Update Type</source>
-        <translation>Opdateringstype</translation>
+        <translation type="vanished">Tipo de actualización</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="309"/>
         <source>Worst</source>
-        <translation>Værste</translation>
+        <translation type="vanished">Peor</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="314"/>
         <source>Current</source>
-        <translation>Nuværende</translation>
+        <translation type="vanished">Corriente</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="319"/>
         <source>Threshold</source>
-        <translation>Tærskel</translation>
+        <translation type="vanished">Umbral</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="324"/>
         <source>Raw</source>
-        <translation>Rå</translation>
+        <translation type="vanished">Raw</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="329"/>
         <source>Assessment</source>
-        <translation>Vurdering</translation>
+        <translation type="vanished">Tasación</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="334"/>
         <source>Value</source>
-        <translation>Værdi</translation>
+        <translation type="vanished">Valor</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="385"/>
         <source>Overall assessment:</source>
-        <translation>Samlet vurdering:</translation>
+        <translation type="vanished">Evaluación general</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="414"/>
         <source>Self tests:</source>
-        <translation>Selvtests:</translation>
+        <translation type="vanished">Auto test:</translation>
     </message>
 </context>
 <context>
@@ -2444,62 +2491,58 @@ Installation kan fortsætte, men nogle features kan være deaktiveret.</translat
     <message>
         <location filename="../src/modules/summary/SummaryViewStep.cpp" line="41"/>
         <source>Summary</source>
-        <translation>Opsummering</translation>
+        <translation>Resumen</translation>
     </message>
 </context>
 <context>
     <name>TreeLogBase</name>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/treelogbase.ui" line="54"/>
         <source>Sev.</source>
         <comment>@title:column Severity of a log entry / log level. Text must be very short.</comment>
-        <translation>Sev.</translation>
+        <translation type="vanished">Sev.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/treelogbase.ui" line="57"/>
         <source>Severity</source>
-        <translation>Betydning</translation>
+        <translation type="vanished">Severidad</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/treelogbase.ui" line="62"/>
         <source>Time</source>
         <comment>@title:column a time stamp of a log entry</comment>
-        <translation>Tid</translation>
+        <translation type="vanished">Hora</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/partitionmanager/src/gui/treelogbase.ui" line="67"/>
         <source>Message</source>
         <comment>@title:column the text message of a log entry</comment>
-        <translation>Besked</translation>
+        <translation type="vanished">Mensaje</translation>
     </message>
 </context>
 <context>
     <name>UsersPage</name>
     <message>
-        <location filename="../src/modules/users/UsersPage.cpp" line="226"/>
+        <location filename="../src/modules/users/UsersPage.cpp" line="236"/>
         <source>Your username contains an invalid character &apos;%1&apos;</source>
-        <translation>Dit brugernavn indeholder ugyldige karakterer &apos;%1&apos;</translation>
+        <translation>Su nombre de usuario contiene un carácter no válido &apos;%1&apos; </translation>
     </message>
     <message>
-        <location filename="../src/modules/users/UsersPage.cpp" line="230"/>
+        <location filename="../src/modules/users/UsersPage.cpp" line="240"/>
         <source>Your username contains invalid characters!</source>
-        <translation>Dit brugernavn indeholder ugyldige karakterer!</translation>
+        <translation>¡Su nombre de usuario contiene caracteres no válidos!</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/UsersPage.cpp" line="277"/>
+        <location filename="../src/modules/users/UsersPage.cpp" line="287"/>
         <source>Your hostname contains an invalid character &apos;%1&apos;</source>
-        <translation>Dit værtsnavn indeholder ugyldige karakterer &apos;%1&apos;</translation>
+        <translation>Su hostname contiene un carácter erróneo: &apos;%1&apos;</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/UsersPage.cpp" line="281"/>
+        <location filename="../src/modules/users/UsersPage.cpp" line="291"/>
         <source>Your hostname contains invalid characters!</source>
-        <translation>Dit værtsnavn indeholder ugyldige karakterer!</translation>
+        <translation>¡Su hostname contiene caracteres no válidos!</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/UsersPage.cpp" line="312"/>
-        <location filename="../src/modules/users/UsersPage.cpp" line="345"/>
+        <location filename="../src/modules/users/UsersPage.cpp" line="322"/>
+        <location filename="../src/modules/users/UsersPage.cpp" line="355"/>
         <source>Your passwords do not match!</source>
-        <translation>Dine kodeord er ikke ens!</translation>
+        <translation>¡Sus contraseñas no coinciden!</translation>
     </message>
 </context>
 <context>
@@ -2507,7 +2550,7 @@ Installation kan fortsætte, men nogle features kan være deaktiveret.</translat
     <message>
         <location filename="../src/modules/users/UsersViewStep.cpp" line="46"/>
         <source>Users</source>
-        <translation>Brugere</translation>
+        <translation>Usuarios</translation>
     </message>
 </context>
 </TS>
