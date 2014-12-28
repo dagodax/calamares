@@ -32,7 +32,7 @@
     <name>ApplyProgressDialogWidgetBase</name>
     <message>
         <source>Operations and Jobs</source>
-        <translation type="vanished">Tareas y trabajos</translation>
+        <translation type="vanished">Operaciones y trabajos</translation>
     </message>
     <message>
         <source>Time Elapsed</source>
@@ -195,7 +195,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamares/JobQueue.cpp" line="88"/>
         <source>The install finished succesfully, click the quit button to return to live mode and reboot from there into your newly installed system</source>
-        <translation type="unfinished"/>
+        <translation>La instalación ha terminado con éxito, haga click en el botón Salir para volver al modo live y reiniciar desde allí en su sistema recién instalado</translation>
     </message>
 </context>
 <context>
@@ -392,20 +392,20 @@ Salida:
         <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="217"/>
         <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="110"/>
         <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Borrar el disco e instalar %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Advertencia: &lt;/font&gt;Esta operación va a borrar todos tus programas, documentos, fotos, música y cualquier otro archivo.&lt;b&gt;No es adecuado para instalaciones UEFI&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="139"/>
         <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="139"/>
         <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="130"/>
         <source>&lt;b&gt;Install %2 alongside %1&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Instalar %2 junto a %1&lt;/b&gt;&lt;br/&gt;Sus documentos, música y el resto de archivos personales se van a conservar. Puedes elegir cualquiera de los sistemas operativos cada vez que arranques el ordenador.&lt;b&gt;Advertencia: No es adecuado para instalaciones UEFI&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="147"/>
         <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="147"/>
         <source>&lt;b&gt;Erase entire disk with %1 and install %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Borrar el disco entero con %1 e instalar %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Advertencia: &lt;/font&gt;Esta operación va a borrar todos tus %1 programas, documentos, fotos, música y cualquier otro archivo.&lt;b&gt;No es adecuado para instalaciones UEFI&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="155"/>
@@ -415,39 +415,40 @@ Salida:
         <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="155"/>
         <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="181"/>
         <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all files on the selected partition. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Instalar %1 en una partición existente&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Advertencia: &lt;/font&gt;Esto eliminará todos los archivos en la partición seleccionada. &lt;b&gt;No es adecuado para instalaciones UEFI&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="168"/>
         <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="168"/>
         <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="153"/>
         <source>&lt;b&gt;Install %1 alongside your current operating system&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Instalar % 1 junto a su sistema operativo actual&lt;/b&gt;&lt;br/&gt;Sus documentos, música y otros archivos personales se mantendrán. Usted puede elegir el sistema operativo que desee cada vez que inicie el equipo. &lt;b&gt;Advertencia: No es adecuado para instalaciones UEFI&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="210"/>
         <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="210"/>
         <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="189"/>
         <source>&lt;b&gt;Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Instalar % 1 junto a sus sistemas operativos actuales&lt;/b&gt;
+&lt;br/&gt;Sus documentos, música y otros archivos personales se mantendrán. Usted puede elegir el sistema operativo que desee cada vez que inicie el equipo. &lt;b&gt;Advertencia: No es adecuado para instalaciones UEFI&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="223"/>
         <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="223"/>
         <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="223"/>
         <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all files on the selected partition. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Instalar %1 en una partición existente&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Advertencia: &lt;/font&gt;Esto eliminará todos los archivos en la partición seleccionada. &lt;b&gt;No es adecuado para instalaciones UEFI&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="240"/>
         <source>&lt;b&gt;Something else&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a GPT partitio table and &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Además&lt;/b&gt;&lt;br/&gt;Puede crear o cambiar el tamaño de las particiones, o elegir varias particiones para % 1. Utilice esta opción para instalaciones UEFI, debe tener una tabla de particiones GPT y &lt;b&gt;una partición para /boot de 512Mb en FAT32, es necesario para instalaciones UEFI&lt;/b&gt;,o bien utilizar una existente sin formato o crear una.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="240"/>
         <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="213"/>
         <source>&lt;b&gt;Something else&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Además&lt;/b&gt;&lt;br/&gt;Puede crear o cambiar el tamaño de las particiones, o elegir varias particiones para % 1. Utilice esta opción para instalaciones UEFI, debe tener una tabla de particiones GPT y &lt;b&gt;una partición para /boot de 512Mb en FAT32, es necesario para instalaciones UEFI&lt;/b&gt;,o bien utilizar una existente sin formato o crear una.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="118"/>
@@ -467,7 +468,7 @@ Salida:
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="139"/>
         <source>&lt;b&gt;Install %2 alongside %1&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.</source>
-        <translation>&lt;b&gt;Instalar %2 junto a %1&lt;/b&gt;&lt;br/&gt;Los documentos, musica y el resto de ficheros se van a conservar. Puedes elegir cualquiera de los sistemas operativos cada vez que arranques el ordenador.</translation>
+        <translation>&lt;b&gt;Instalar %2 junto a %1&lt;/b&gt;&lt;br/&gt;Sus documentos, música y el resto de ficheros se van a conservar. Puedes elegir cualquiera de los sistemas operativos cada vez que arranques el ordenador.</translation>
     </message>
     <message>
         <source>&lt;b&gt;Replace %1 with %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files.</source>
@@ -484,11 +485,11 @@ Salida:
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="168"/>
         <source>&lt;b&gt;Install %1 alongside your current operating system&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.</source>
-        <translation>&lt;b&gt;Instalar %1 junto a tu sistema operativo actual&lt;/b&gt;&lt;br/&gt;Los documentos, musica y el resto de ficheros se van a conservar. Puedes elegir cualquiera de los sistemas operativos cada vez que arranques el ordenador.</translation>
+        <translation>&lt;b&gt;Instalar %1 junto a tu sistema operativo actual&lt;/b&gt;&lt;br/&gt;Sus documentos, música y el resto de ficheros se van a conservar. Puedes elegir cualquiera de los sistemas operativos cada vez que arranques el ordenador.</translation>
     </message>
     <message>
         <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your Windows 7 programs, documents, photos, music, and any other files.</source>
-        <translation type="vanished">&lt;b&gt;Borrar el disco e instalar %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Aviso: &lt;/font&gt;Esta operación va a borrar todos tus programas, documentos, fotos, música y cualquier otro fichero de Windows 7.</translation>
+        <translation type="vanished">&lt;b&gt;Borrar el disco e instalar %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Advertencia: &lt;/font&gt;Esta operación va a borrar todos tus programas, documentos, fotos, música y cualquier otro archivo de Windows 7.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="207"/>
@@ -501,12 +502,12 @@ Salida:
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="147"/>
         <source>&lt;b&gt;Erase entire disk with %1 and install %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Borrar el disco entero con %1 e instalar %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Advertencia: &lt;/font&gt;Esta operación va a borrar todos tus %1 programas, documentos, fotos, música y cualquier otro archivo.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="210"/>
         <source>&lt;b&gt;Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.</source>
-        <translation>&lt;b&gt;Instalar %1 junto al resto de sistemas operativos&lt;/b&gt;&lt;br/&gt;Los documentos, musica y el resto de ficheros se van a conservar. Puedes elegir cualquiera de los sistemas operativos cada vez que arranques el ordenador.</translation>
+        <translation>&lt;b&gt;Instalar %1 junto al resto de sistemas operativos&lt;/b&gt;&lt;br/&gt;Sus documentos, música y el resto de ficheros se van a conservar. Puedes elegir cualquiera de los sistemas operativos cada vez que arranques el ordenador.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="240"/>
@@ -516,13 +517,13 @@ Salida:
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="138"/>
         <source>&lt;b&gt;Replace %1 with %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Reemplazar %1 con %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Advertencia: &lt;/font&gt;Esta operación va a borrar todos tus %1 programas, documentos, fotos, música y cualquier otro archivo.&lt;b&gt;No es adecuado para instalaciones UEFI&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="160"/>
         <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="196"/>
         <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your Windows 7 programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Borrar el disco e instalar %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Advertencia: &lt;/font&gt;Esto eliminará todos los programas de Windows 7, documentos, fotos, música y otros archivos.&lt;b&gt;No es adecuado para instalaciones UEFI&lt;/b&gt;</translation>
     </message>
 </context>
 <context>
@@ -530,22 +531,22 @@ Salida:
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="40"/>
         <source>Clear mounts for partitioning operations on %1</source>
-        <translation type="unfinished"/>
+        <translation>Limpiar montajes para las operaciones de particionado %1</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="62"/>
         <source>Cannot umount partition %1</source>
-        <translation type="unfinished"/>
+        <translation>No se puede desmontar la partición %1</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="64"/>
         <source>Cannot proceed with partitioning operations because some partitions are still mounted.</source>
-        <translation type="unfinished"/>
+        <translation>No se puede continuar con las operaciones de particionado porque todavía están montadas algunas particiones.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="70"/>
         <source>Cleared all mounts for %1</source>
-        <translation type="unfinished"/>
+        <translation>Limpiando todos los montajes para %1</translation>
     </message>
 </context>
 <context>
@@ -607,7 +608,7 @@ Salida:
     <name>ConfigurePageFileSystemColors</name>
     <message>
         <source>File Systems</source>
-        <translation type="vanished">Sistemas de ficheros</translation>
+        <translation type="vanished">Sistemas de archivos</translation>
     </message>
     <message>
         <source>luks:</source>
@@ -750,7 +751,7 @@ Salida:
     </message>
     <message>
         <source>Warning</source>
-        <translation type="vanished">Aviso</translation>
+        <translation type="vanished">Advertencia</translation>
     </message>
     <message>
         <source>Error</source>
@@ -758,11 +759,11 @@ Salida:
     </message>
     <message>
         <source>File Systems</source>
-        <translation type="vanished">Sistemas de ficheros</translation>
+        <translation type="vanished">Sistemas de archivos</translation>
     </message>
     <message>
         <source>Default file system:</source>
-        <translation type="vanished">Sistema de ficheros por defecto:</translation>
+        <translation type="vanished">Sistema de archivos por defecto:</translation>
     </message>
     <message>
         <source>Shredding</source>
@@ -806,12 +807,12 @@ Salida:
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="89"/>
         <source>F&amp;ile System:</source>
-        <translation>S&amp;istema de ficheros:</translation>
+        <translation>S&amp;istema de archivos:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="118"/>
         <source>&amp;Mount Point:</source>
-        <translation>Punto de &amp;montaje:</translation>
+        <translation>&amp;Punto de montaje:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="135"/>
@@ -856,7 +857,7 @@ Salida:
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="85"/>
         <source>Logical</source>
-        <translation>Logica</translation>
+        <translation>Lógica</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="90"/>
@@ -874,7 +875,7 @@ Salida:
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="47"/>
         <source>Create partition (file system: %1, size: %2 MB) on %3.</source>
-        <translation>Crear partición (sistema de ficheros: %1, tamaño: % 2MB) en %3.</translation>
+        <translation>Crear partición (sistema de archivos: %1, tamaño: % 2MB) en %3.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="60"/>
@@ -894,7 +895,7 @@ Salida:
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="103"/>
         <source>The installer failed to create file system on partition %1.</source>
-        <translation>El instalador no ha podido crear el sistema de ficheros en la partición %1.</translation>
+        <translation>El instalador no ha podido crear el sistema de archivos en la partición %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="111"/>
@@ -927,7 +928,7 @@ Salida:
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="82"/>
         <source>GUID Partition Table (GPT)</source>
-        <translation>GUID de la tabla de particiones (GPT)</translation>
+        <translation>GUID tabla de particiones (GPT)</translation>
     </message>
 </context>
 <context>
@@ -968,7 +969,7 @@ Salida:
     </message>
     <message>
         <source>&lt;b&gt;Warning:&lt;/b&gt; This will destroy all data on the device!</source>
-        <translation type="vanished">&lt;b&gt;Aviso:&lt;/b&gt;¡Esto va a borrar todos los datos del dispositivo!</translation>
+        <translation type="vanished">&lt;b&gt;Advertencia:&lt;/b&gt;¡Esto va a borrar todos los datos del dispositivo!</translation>
     </message>
 </context>
 <context>
@@ -976,7 +977,7 @@ Salida:
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="51"/>
         <source>Create user %1</source>
-        <translation>Crear el usuario %1</translation>
+        <translation>Crear usuario %1</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="67"/>
@@ -986,17 +987,17 @@ Salida:
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="71"/>
         <source>Cannot create sudoers file for writing.</source>
-        <translation>No se puede crear el archivo sudoers como de escritura.</translation>
+        <translation>No se puede crear el archivo sudoers para escribir.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="79"/>
         <source>Cannot chmod sudoers file.</source>
-        <translation>No se puede ejecutar chmod sobre el fichero de sudoers.</translation>
+        <translation>No se puede ejecutar chmod sobre el archivo sudoers.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="85"/>
         <source>Cannot open groups file for reading.</source>
-        <translation>No se puede abrir para leer el fichero groups.</translation>
+        <translation>No se puede abrir para leer el archivo groups.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="123"/>
@@ -1050,12 +1051,12 @@ Salida:
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="48"/>
         <source>The installer failed to delete partition %1.</source>
-        <translation>El instalado no ha podido borrar la partición %1.</translation>
+        <translation>El instalador no ha podido borrar la partición %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="54"/>
         <source>Partition (%1) and device (%2) do not match.</source>
-        <translation>La partición (%1) y el dispositvo (%2) no concuerdan.</translation>
+        <translation>La partición (%1) y el dispositivo (%2) no coinciden.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="66"/>
@@ -1152,7 +1153,7 @@ Salida:
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="83"/>
         <source>Warning: Formatting the partition will erase all existing data.</source>
-        <translation>Aviso: Al formatear la partición se borrarán todos los datos.</translation>
+        <translation>Advertencia: Al formatear la partición se borrarán todos los datos.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="93"/>
@@ -1238,7 +1239,7 @@ Salida:
     </message>
     <message>
         <source>No update of file access times</source>
-        <translation type="vanished">No actualizar la fecha de acceso del fichero</translation>
+        <translation type="vanished">No actualizar los tiempos de acceso del archivo</translation>
     </message>
     <message>
         <source>Synchronous access</source>
@@ -1246,7 +1247,7 @@ Salida:
     </message>
     <message>
         <source>No update of directory access times</source>
-        <translation type="vanished">No actualizar la fecha de acceso del directorio</translation>
+        <translation type="vanished">No actualizar lo tiempos de acceso del directorio</translation>
     </message>
     <message>
         <source>No binary execution</source>
@@ -1254,7 +1255,7 @@ Salida:
     </message>
     <message>
         <source>Update access times relative to modification</source>
-        <translation type="vanished">Actualizar la fecha de acceso con relación a la modificación</translation>
+        <translation type="vanished">Actualizar los tiempos de acceso con relación a la modificación</translation>
     </message>
     <message>
         <source>More...</source>
@@ -1270,7 +1271,7 @@ Salida:
     </message>
     <message>
         <source>Device Node</source>
-        <translation type="vanished">Dispositivo nodo</translation>
+        <translation type="vanished">Dispositivo Nodo</translation>
     </message>
     <message>
         <source>UUID</source>
@@ -1308,12 +1309,12 @@ Salida:
     <message>
         <source>This table shows which file systems are supported and which specific operations can be performed on them.
 Some file systems need external tools to be installed for them to be supported. But not all operations can be performed on all file systems, even if all required tools are installed. Please see the documentation for details. </source>
-        <translation type="vanished">Esta tabla muestra que sistema de ficheros son soportados y que operaciones se admiten.
-Algunos sistemas de ficheros necesitan instalar herramientas externas para ser soportados. No todas las operaciones se pueden ejecutar sobre todos los sistemas de ficheros. Por favor consulta la documentación para ver los detalles.</translation>
+        <translation type="vanished">Esta tabla muestra que sistema de archivos son soportados y que operaciones se admiten.
+Algunos sistemas de archivos necesitan instalar herramientas externas para ser soportados. No todas las operaciones se pueden ejecutar sobre todos los sistemas de archivos. Por favor consulta la documentación para ver los detalles.</translation>
     </message>
     <message>
         <source>File System</source>
-        <translation type="vanished">Sistema de ficheros</translation>
+        <translation type="vanished">Sistema de archivos</translation>
     </message>
     <message>
         <source>Create</source>
@@ -1387,7 +1388,7 @@ Algunos sistemas de ficheros necesitan instalar herramientas externas para ser s
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="47"/>
         <source>Format partition %1 (file system: %2, size: %3 MB) on %4.</source>
-        <translation>Formatear partición %1 (sistema de ficheros: %2, tamaño: %3 MB) en %4.</translation>
+        <translation>Formatear partición %1 (sistema de archivos: %2, tamaño: %3 MB) en %4.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="59"/>
@@ -1407,7 +1408,7 @@ Algunos sistemas de ficheros necesitan instalar herramientas externas para ser s
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="84"/>
         <source>The installer failed to create file system on partition %1.</source>
-        <translation>El instalador no ha podido crear el sistema de ficheros en la partición %1.</translation>
+        <translation>El instalador no ha podido crear el sistema de archivos en la partición %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="92"/>
@@ -1419,32 +1420,32 @@ Algunos sistemas de ficheros necesitan instalar herramientas externas para ser s
     <name>GreetingPage</name>
     <message>
         <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer.</source>
-        <translation type="vanished">&lt;h1&gt;Bienvenido al instalador de %1.&lt;/h1&gt;&lt;br/&gt;El programa te hará algunas preguntas y configurará %2 en tu ordenador.</translation>
+        <translation type="vanished">&lt;h1&gt;Bienvenido al instalador de %1.&lt;/h1&gt;&lt;br/&gt;El programa te hará algunas preguntas y configurará %2 tu ordenador.</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"/>
+        <translation>Forma</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="102"/>
         <source>&amp;About</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Acerca de</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="85"/>
         <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is in Beta stage.&lt;br/&gt;Not implemented yet is closing the installer automatically,&lt;br/&gt;showing a slideshow during the install or setting the locale.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Known Issues&lt;/a&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Bienvenido al %1 instalador.&lt;/h1&gt;&lt;br/&gt;Este programa le hará algunas preguntas para hacer configuraciones %2 en su equipo. Recuerde, este instalador se encuentra en fase Beta.&lt;br/&gt;El programa de instalación podría cerrarse automáticamente mostrando una presentación durante la instalación o configuración de la configuración regional.&lt;br&gt;Para&lt;b&gt; sistemas de particionado GPT en BIOS&lt;/b&gt; y otras instrucciones, lean &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Problemas Conocidos&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="106"/>
         <source>About %1 installer</source>
-        <translation type="unfinished"/>
+        <translation>Acerca de %1 instalador</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="108"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technologies for a better world.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; desarrollo patrocinado por &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - tecnologías para un mundo mejor.</translation>
     </message>
 </context>
 <context>
@@ -1481,12 +1482,12 @@ Algunos sistemas de ficheros necesitan instalar herramientas externas para ser s
     <message>
         <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="33"/>
         <source>System locale setting</source>
-        <translation type="unfinished"/>
+        <translation>Configuración regional del sistema</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="40"/>
         <source>The system locale setting affects the language and character set for some command line user interface elements.&lt;br/&gt;The current setting is &lt;b&gt;%1&lt;/b&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>La configuración regional del sistema afecta al idioma y juego de caracteres para algunos elementos de línea de comandos.&lt;br/&gt;La configuración actual es&lt;b&gt;%1&lt;/b&gt;.</translation>
     </message>
 </context>
 <context>
@@ -1495,7 +1496,7 @@ Algunos sistemas de ficheros necesitan instalar herramientas externas para ser s
         <location filename="../src/modules/locale/LocalePage.cpp" line="157"/>
         <location filename="../src/modules/locale/LocalePage.cpp" line="168"/>
         <source>The system locale is set to %1.</source>
-        <translation type="unfinished"/>
+        <translation>El sistema de configuración regional se establece en 1%.</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="165"/>
@@ -1510,7 +1511,7 @@ Algunos sistemas de ficheros necesitan instalar herramientas externas para ser s
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="171"/>
         <source>&amp;Change...</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Cambiar...</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="265"/>
@@ -1564,17 +1565,17 @@ Algunos sistemas de ficheros necesitan instalar herramientas externas para ser s
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="66"/>
         <source>Move file system of partition %1.</source>
-        <translation>Mover el sistema de ficheros de la partición %1.</translation>
+        <translation>Mover el sistema de archivos de la partición %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="80"/>
         <source>Could not open file system on partition %1 for moving.</source>
-        <translation>No se puede abrir para mover el sistema de ficheros de la partición %1.</translation>
+        <translation>No se puede abrir para mover el sistema de archivos de la partición %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="86"/>
         <source>Could not create target for moving file system on partition %1.</source>
-        <translation>No se puede crear el destino para mover el sistema de ficheros en la partición %1.</translation>
+        <translation>No se puede crear el destino para mover el sistema de archivos en la partición %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="95"/>
@@ -1636,7 +1637,7 @@ Algunos sistemas de ficheros necesitan instalar herramientas externas para ser s
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="33"/>
         <source>What is your name?</source>
-        <translation>¿Cómo te llamas?</translation>
+        <translation>¿Cuál es tu nombre?</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="111"/>
@@ -1702,7 +1703,7 @@ Algunos sistemas de ficheros necesitan instalar herramientas externas para ser s
     <message>
         <source>File system:</source>
         <comment>@label:listbox</comment>
-        <translation type="vanished">Sistema de ficheros:</translation>
+        <translation type="vanished">Sistema de archivos:</translation>
     </message>
     <message>
         <source>Label:</source>
@@ -1712,12 +1713,12 @@ Algunos sistemas de ficheros necesitan instalar herramientas externas para ser s
     <message>
         <source>This file system does not support setting a label.</source>
         <comment>@label</comment>
-        <translation type="vanished">El sistema de ficheros no permite poner etiquetas.</translation>
+        <translation type="vanished">El sistema de archivos no permite poner etiquetas.</translation>
     </message>
     <message>
         <source>Recreate existing file system</source>
         <comment>@action:button</comment>
-        <translation type="vanished">Recrear un sistema de ficheros existente</translation>
+        <translation type="vanished">Recrear un sistema de archivos existente</translation>
     </message>
     <message>
         <source>Mount point:</source>
@@ -1828,7 +1829,7 @@ Algunos sistemas de ficheros necesitan instalar herramientas externas para ser s
     </message>
     <message>
         <source>Flags</source>
-        <translation type="vanished">Marca</translation>
+        <translation type="vanished">Marcas</translation>
     </message>
 </context>
 <context>
@@ -1836,7 +1837,7 @@ Algunos sistemas de ficheros necesitan instalar herramientas externas para ser s
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="132"/>
         <source>Free Space</source>
-        <translation>Espacio sin usar</translation>
+        <translation>Espacio libre</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="136"/>
@@ -1851,7 +1852,7 @@ Algunos sistemas de ficheros necesitan instalar herramientas externas para ser s
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="177"/>
         <source>File System</source>
-        <translation>Sistema de ficheros</translation>
+        <translation>Sistema de archivos</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="179"/>
@@ -1940,13 +1941,13 @@ Algunos sistemas de ficheros necesitan instalar herramientas externas para ser s
     <message>
         <location filename="../src/modules/prepare/PreparePage.cpp" line="39"/>
         <source>For best results, please ensure that this computer:</source>
-        <translation>Para un mejor resultado asegurate que este ordenador:</translation>
+        <translation>Para un mejor resultado asegúrate que este ordenador:</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PreparePage.cpp" line="96"/>
         <source>This computer does not satisfy the minimum requirements for installing %1.
 Installation cannot continue.</source>
-        <translation>El ordenador no cumple con los requisitos mínimos para la instalación &amp;1.
+        <translation>Este ordenador no cumple con los requisitos mínimos para la instalación &amp;1.
 No se puede continuar con la instalación.</translation>
     </message>
     <message>
@@ -1954,7 +1955,7 @@ No se puede continuar con la instalación.</translation>
         <source>This computer does not satisfy some of the recommended requirements for installing %1.
 Installation can continue, but some features might be disabled.</source>
         <translation>El ordenador no cumple con alguno de los requisitos recomendados para la instalación &amp;1.
-Se puede continuar con la instalación pero algunas de las características pueden no estás disponibles.</translation>
+Se puede continuar con la instalación pero algunas de las características pueden no estar disponibles.</translation>
     </message>
 </context>
 <context>
@@ -1967,12 +1968,12 @@ Se puede continuar con la instalación pero algunas de las características pued
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="91"/>
         <source>has at least %1 GB available drive space</source>
-        <translation>Tenga disponibles por lo menos %1 GB libres</translation>
+        <translation>Tenga disponible al menos menos %1 GB de espacio libre</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="99"/>
         <source>has at least %1 GB working memory</source>
-        <translation>Tenga disponibles por lo menos %1 GB de memoria</translation>
+        <translation>Tenga disponible al menos %1 GB de memoria</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="107"/>
@@ -1982,7 +1983,7 @@ Se puede continuar con la instalación pero algunas de las características pued
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="114"/>
         <source>is connected to the Internet</source>
-        <translation>esté conectado a internet</translation>
+        <translation>está conectado a internet</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="158"/>
@@ -2085,11 +2086,11 @@ Se puede continuar con la instalación pero algunas de las características pued
     </message>
     <message>
         <source>Get &amp;Documentation</source>
-        <translation type="vanished">Obtener &amp;documentación</translation>
+        <translation type="vanished">Obtener &amp;Documentación</translation>
     </message>
     <message>
         <source>Get &amp;Translations</source>
-        <translation type="vanished">Obtener &amp;traducciones</translation>
+        <translation type="vanished">Obtener &amp;Traducciones</translation>
     </message>
     <message>
         <source>C&amp;reate Tag</source>
@@ -2109,7 +2110,7 @@ Se puede continuar con la instalación pero algunas de las características pued
     </message>
     <message>
         <source>Apply &amp;fixes</source>
-        <translation type="vanished">Aplicar correcciones</translation>
+        <translation type="vanished">Aplicar &amp;correcciones</translation>
     </message>
 </context>
 <context>
@@ -2117,62 +2118,62 @@ Se puede continuar con la instalación pero algunas de las características pued
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"/>
+        <translation>Forma</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.ui" line="22"/>
         <source>&amp;Disk:</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Disco:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="109"/>
         <source>Select where to install %1.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;this will delete all files on the selected partition.</source>
-        <translation type="unfinished"/>
+        <translation>Seleccionar dónde instalar %1.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Advertencia: &lt;/font&gt;esto borrará todos los archivos en la partición seleccionada.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="136"/>
         <source>The selected item does not appear to be a valid partition.</source>
-        <translation type="unfinished"/>
+        <translation>El elemento seleccionado no parece ser una partición válida.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="144"/>
         <source>%1 cannot be installed on empty space. Please select an existing partition.</source>
-        <translation type="unfinished"/>
+        <translation>%1 no se puede instalar en el espacio vacío. Por favor, seleccione una partición existente.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="155"/>
         <source>%1 cannot be installed on an extended partition. Please select an existing primary or logical partition.</source>
-        <translation type="unfinished"/>
+        <translation>%1 no se puede instalar en una partición extendida. Por favor, seleccione una partición primaria o lógica existente.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="166"/>
         <source>%1 cannot be installed on this partition.</source>
-        <translation type="unfinished"/>
+        <translation>%1 no se puede instalar en esta partición.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="173"/>
         <source>Data partition (%1)</source>
-        <translation type="unfinished"/>
+        <translation>Partición de Datos (%1)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="190"/>
         <source>Unknown system partition (%1)</source>
-        <translation type="unfinished"/>
+        <translation>Sistema de partición desconocido (%1)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="195"/>
         <source>%1 system partition (%2)</source>
-        <translation type="unfinished"/>
+        <translation>%1 partición del sistema (%2)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="206"/>
         <source>&lt;b&gt;%4&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;The partition %1 is too small for %2. Please select a partition with capacity at least %3 GiB.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;%4&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;La partición % 1 es demasiado pequeña para % 2. Por favor, seleccione una partición con capacidad de al menos %3 GiB.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="220"/>
         <source>&lt;b&gt;%3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;%1 will be installed on %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;all data on partition%2 will be lost.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;%3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;%1 se instalará en %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Advertencia: &lt;/font&gt;todos los datos en la partición %2 se perderán.</translation>
     </message>
 </context>
 <context>
@@ -2180,17 +2181,17 @@ Se puede continuar con la instalación pero algunas de las características pued
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="75"/>
         <source>Resize file system on partition %1.</source>
-        <translation>Redimensionar el sistema de ficheros de la partición %1</translation>
+        <translation>Redimensionar el sistema de archivos de la partición %1</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="90"/>
         <source>Parted failed to resize filesystem.</source>
-        <translation>Parted no ha podido redimensionar el sistema de ficheros.</translation>
+        <translation>Parted no ha podido redimensionar el sistema de archivos.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="100"/>
         <source>Failed to resize filesystem.</source>
-        <translation>No se ha podido redimensionar el sistema de ficheros.</translation>
+        <translation>No se ha podido redimensionar el sistema de archivos.</translation>
     </message>
 </context>
 <context>
@@ -2237,23 +2238,23 @@ Se puede continuar con la instalación pero algunas de las características pued
     <message>
         <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="57"/>
         <source>Set keyboard model to %1, layout to %2-%3</source>
-        <translation type="unfinished"/>
+        <translation>Establecer el modelo de teclado a % 1, la disposición a %2-%3</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="277"/>
         <source>Failed to write keyboard configuration for the virtual console.</source>
-        <translation type="unfinished"/>
+        <translation>Error al escribir configuración del teclado para la consola virtual.</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="278"/>
         <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="282"/>
         <source>Failed to write to %1</source>
-        <translation type="unfinished"/>
+        <translation>Error al escribir en % 1</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="281"/>
         <source>Failed to write keyboard configuration for X11.</source>
-        <translation type="unfinished"/>
+        <translation>Error al escribir la configuración del teclado para X11.</translation>
     </message>
 </context>
 <context>
@@ -2364,7 +2365,7 @@ Se puede continuar con la instalación pero algunas de las características pued
     <message>
         <source>File system:</source>
         <comment>@label:listbox</comment>
-        <translation type="vanished">Sistema de ficheros:</translation>
+        <translation type="vanished">Sistema de archivos:</translation>
     </message>
     <message>
         <source>Label:</source>
@@ -2374,7 +2375,7 @@ Se puede continuar con la instalación pero algunas de las características pued
     <message>
         <source>This file system does not support setting a label.</source>
         <comment>@label</comment>
-        <translation type="vanished">El sistema de ficheros no permite poner etiquetas.</translation>
+        <translation type="vanished">El sistema de archivos no permite poner etiquetas.</translation>
     </message>
     <message>
         <source>Minimum size:</source>
@@ -2470,7 +2471,7 @@ Se puede continuar con la instalación pero algunas de las características pued
     </message>
     <message>
         <source>Assessment</source>
-        <translation type="vanished">Valor</translation>
+        <translation type="vanished">Valoración</translation>
     </message>
     <message>
         <source>Value</source>
@@ -2482,7 +2483,7 @@ Se puede continuar con la instalación pero algunas de las características pued
     </message>
     <message>
         <source>Self tests:</source>
-        <translation type="vanished">Autocomprobaciones:</translation>
+        <translation type="vanished">Auto comprobaciones:</translation>
     </message>
 </context>
 <context>
