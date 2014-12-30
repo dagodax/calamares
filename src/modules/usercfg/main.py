@@ -115,20 +115,6 @@ def run():
     libcalamares.utils.chroot_call(
         ['setcap', 'cap_net_raw=ep', '/usr/bin/ping6'])
 
-    # setup alsa volume levels, alsa blacklist for the pc speaker, blacklist
-    # for broken realtek nics
-    print('setup alsa config')
-    libcalamares.utils.chroot_call(
-        ['/usr/bin/mkdir', '-p', '%s/etc/modprobe.d' % install_path])
-    if os.path.exists('/etc/asound.state'):
-        shutil.copy2('/etc/asound.state', '%s/etc/asound.state' % install_path)
-    if os.path.exists('/etc/modprobe.d/alsa_blacklist.conf'):
-        shutil.copy2('/etc/modprobe.d/alsa_blacklist.conf',
-                     '%s/etc/modprobe.d/alsa_blacklist.conf' % install_path)
-    if os.path.exists('/etc/modprobe.d/realtek_blacklist.conf'):
-        shutil.copy2('/etc/modprobe.d/realtek_blacklist.conf',
-                     '%s/etc/modprobe.d/realtek_blacklist.conf' % install_path)
-
     print('configure users settings done')
 
     return None

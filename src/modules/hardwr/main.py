@@ -2,8 +2,7 @@
 # encoding: utf-8
 # === This file is part of Calamares - <http://github.com/calamares> ===
 #
-#   Copyright 2014, Philip Müller <philm@manjaro.org>
-#   Copyright 2014, Teo Mrnjavac <teo@kde.org>
+#   Copyright 2014, Anke Boersma <demm@kaosx.us>
 #
 #   Calamares is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -22,9 +21,15 @@ import subprocess
 import shutil
 
 import libcalamares
+from libcalamares.utils import check_chroot_call
 
 
 def run():
+    """ Run mkinitcpio """
+    
+    kernel = libcalamares.job.configuration['kernel']
+    check_chroot_call(['mkinitcpio', '-p', kernel])
+
     """ Set hardware clock """
 
     root_mount_point = libcalamares.globalstorage.value("rootMountPoint")
@@ -35,5 +40,21 @@ def run():
                "hwclock terminated with exit code {}.".format(e.returncode)
 
     shutil.copy2("/etc/adjtime", "%s/etc/" % root_mount_point)
+    
+    """ Set Alsa """
+    
+    # setup alsa volume levels, alsa blacklist for the pc speaker, blacklist
+    # for broken realtek nics
+    print('setup alsa config')
+    libcalamares.utils.chroot_call(
+        ['/usr/bin/mkdir', '-p', '%s/etc/modprobe.d' % install_path])
+    if os.path.exists('/etc/asound.state'):
+        shutil.copy2('/etc/asound.state', '%s/etc/asound.state' % install_path)
+    if os.path.exists('/etc/modprobe.d/alsa_blacklist.conf'):
+        shutil.copy2('/etc/modprobe.d/alsa_blacklist.conf',
+                     '%s/etc/modprobe.d/alsa_blacklist.conf' % install_path)
+    if os.path.exists('/etc/modprobe.d/realtek_blacklist.conf'):
+        shutil.copy2('/etc/modprobe.d/realtek_blacklist.conf',
+                     '%s/etc/modprobe.d/realtek_blacklist.conf' % install_path)
 
     return None

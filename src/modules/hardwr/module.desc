@@ -1,5 +1,5 @@
 ---
 type:       "job"
-name:       "initramfs"
+name:       "hardwr"
 interface:  "python"
 script:     "main.py"
