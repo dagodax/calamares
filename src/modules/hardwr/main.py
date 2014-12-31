@@ -17,6 +17,7 @@
 #   You should have received a copy of the GNU General Public License
 #   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
 
+import os
 import subprocess
 import shutil
 
@@ -46,6 +47,7 @@ def run():
     # setup alsa volume levels, alsa blacklist for the pc speaker, blacklist
     # for broken realtek nics
     print('setup alsa config')
+    install_path = libcalamares.globalstorage.value("rootMountPoint")
     libcalamares.utils.chroot_call(
         ['/usr/bin/mkdir', '-p', '%s/etc/modprobe.d' % install_path])
     if os.path.exists('/etc/asound.state'):
