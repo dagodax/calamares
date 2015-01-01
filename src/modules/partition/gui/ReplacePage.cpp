@@ -108,7 +108,7 @@ ReplacePage::onPartitionSelected()
         updateStatus( CalamaresUtils::Partitions,
                       tr( "Select where to install %1.<br/>"
                           "<font color=\"red\">Warning: </font>this will delete all files "
-                          "on the selected partition." )
+                          "on the selected partition. <font color=\"red\">Do not use for UEFI </font>" )
                           .arg( Calamares::Branding::instance()->
                                 string( Calamares::Branding::VersionedName ) ) );
         setNextEnabled( false );

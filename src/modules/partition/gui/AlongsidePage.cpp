@@ -166,7 +166,8 @@ AlongsidePage::init( PartitionCoreModule* core , const OsproberEntryList& osprob
     {
         m_sizeLabel->setText( tr( "With this operation, the partition <b>%1</b> which contains "
                                   "%4 will be shrunk "
-                                  "to %2MB and a new %3MB partition will be created for %5." )
+                                  "to %2MB and a new %3MB partition will be created for %5."
+                                  " <font color=\"red\">Do not use for UEFI. </font>")
                               .arg( path )
                               .arg( size / ( 1024 * 1024 ) )
                               .arg( sizeNext / ( 1024 * 1024 ) )
