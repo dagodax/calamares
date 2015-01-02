@@ -13,46 +13,8 @@
     </message>
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="167"/>
-        <source>With this operation, the partition &lt;b&gt;%1&lt;/b&gt; which contains %4 will be shrunk to %2MB and a new %3MB partition will be created for %5.</source>
-        <translation>Bu işlem ile &lt;b&gt;%1&lt;/b&gt; bölümü içeren %4 %2MB küçültülecek ve yeni bölüm %3MB oluşturulacak %5 için.</translation>
-    </message>
-</context>
-<context>
-    <name>ApplyProgressDetailsWidgetBase</name>
-    <message>
-        <source>Save</source>
-        <translation type="vanished">Kaydet</translation>
-    </message>
-    <message>
-        <source>Open in External Browser</source>
-        <translation type="vanished">Harici bir Tarayıcıda Aç</translation>
-    </message>
-</context>
-<context>
-    <name>ApplyProgressDialogWidgetBase</name>
-    <message>
-        <source>Operations and Jobs</source>
-        <translation type="vanished">İşlemler ve Çalışmalar</translation>
-    </message>
-    <message>
-        <source>Time Elapsed</source>
-        <translation type="vanished">Geçen Zaman</translation>
-    </message>
-    <message>
-        <source>Total Time: 00:00:00</source>
-        <translation type="vanished">Toplam Zaman: 00:00:00</translation>
-    </message>
-    <message>
-        <source>Operation: %p%</source>
-        <translation type="vanished">İşlem: %p%</translation>
-    </message>
-    <message>
-        <source>Status</source>
-        <translation type="vanished">Durum</translation>
-    </message>
-    <message>
-        <source>Total: %p%</source>
-        <translation type="vanished">Toplam: %p%</translation>
+        <source>With this operation, the partition &lt;b&gt;%1&lt;/b&gt; which contains %4 will be shrunk to %2MB and a new %3MB partition will be created for %5. &lt;font color=&quot;red&quot;&gt;Do not use for UEFI. &lt;/font&gt;</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -188,10 +150,6 @@ p, li { white-space: pre-wrap; }
 </context>
 <context>
     <name>Calamares::JobThread</name>
-    <message>
-        <source>Done</source>
-        <translation type="vanished">Sistem kurulumu tamamlandı, kurulum aracından çıkabilirsiniz.</translation>
-    </message>
     <message>
         <location filename="../src/libcalamares/JobQueue.cpp" line="88"/>
         <source>The install finished succesfully, click the quit button to return to live mode and reboot from there into your newly installed system</source>
@@ -377,9 +335,6 @@ Output:
     <name>ChoicePage</name>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="115"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="115"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="115"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="107"/>
         <source>This computer currently does not seem to have an operating system on it. What would you like to do?</source>
         <translation>Bu bilgisayar şu anda başka bir işletim sistemine sahip gibi görünmüyor. Ne yapmak istersiniz?</translation>
     </message>
@@ -387,141 +342,58 @@ Output:
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="118"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="175"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="217"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="118"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="175"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="217"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="110"/>
         <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="135"/>
+        <source>This computer currently has %1 on it. What would you like to do?</source>
+        <translation>Bu bilgisayar üzerinde %1 kuruludur. Ne yapmak istersiniz?</translation>
+    </message>
+    <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="139"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="139"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="130"/>
         <source>&lt;b&gt;Install %2 alongside %1&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="147"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="147"/>
         <source>&lt;b&gt;Erase entire disk with %1 and install %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="155"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="181"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="155"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="181"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="155"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="181"/>
         <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all files on the selected partition. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
         <translation type="unfinished"/>
     </message>
     <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="165"/>
+        <source>This computer already has an operating system on it. What would you like to do?</source>
+        <translation>Bu bilgisayarda zaten bir işletim sistemi var. Ne yapmak istersiniz?</translation>
+    </message>
+    <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="168"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="168"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="153"/>
         <source>&lt;b&gt;Install %1 alongside your current operating system&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="207"/>
+        <source>This computer currently has multiple operating systems on it. What would you like to do?</source>
+        <translation>Bu bilgisayarda birden fazla işletim sistemi var. Ne yapmak istersiniz?</translation>
+    </message>
+    <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="210"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="210"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="189"/>
         <source>&lt;b&gt;Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="223"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="223"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="223"/>
         <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all files on the selected partition. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="240"/>
-        <source>&lt;b&gt;Something else&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a GPT partitio table and &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="240"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="213"/>
-        <source>&lt;b&gt;Something else&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="118"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="175"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="217"/>
-        <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your programs, documents, photos, music, and any other files.</source>
-        <translation>&lt;b&gt;Diski sil ve %1 yükle&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Uyarı: &lt;/font&gt;Bu işlem ile programlarınız, belgeleriniz, fotoğraflarınız, medyalarınız ve diğer tüm dosyalarınız silinecek.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="135"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="135"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="135"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="126"/>
-        <source>This computer currently has %1 on it. What would you like to do?</source>
-        <translation>Bu bilgisayar üzerinde %1 kuruludur. Ne yapmak istersiniz?</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="139"/>
-        <source>&lt;b&gt;Install %2 alongside %1&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.</source>
-        <translation>&lt;b&gt;%1 yanına %2 yükle&lt;/b&gt;&lt;br/&gt;Belgeler, müzik ve diğer kişisel dosyalar korunacaktır. Bilgisayarınız başlatılırken istediğiniz işletim sistemini seçebilirsiniz.</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Replace %1 with %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files.</source>
-        <translation type="vanished">&lt;b&gt;%2 ile %1 üzerine biçimleyip kur&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Uyarı: &lt;/font&gt;Tüm diskiniz temizlenecek %1 program, belgeler, fotoğraflar, müzik ve tüm diğer dosyalar silinecek.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="165"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="165"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="165"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="150"/>
-        <source>This computer already has an operating system on it. What would you like to do?</source>
-        <translation>Bu bilgisayarda zaten bir işletim sistemi var. Ne yapmak istersiniz?</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="168"/>
-        <source>&lt;b&gt;Install %1 alongside your current operating system&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.</source>
-        <translation>&lt;b&gt;Diğer işletim sisteminin yanına %1 yükle&lt;/b&gt;&lt;br/&gt;Belgeler, müzik ve diğer kişisel dosyalar korunacaktır. Bilgisayarınız başlatılırken istediğiniz işletim sistemini seçebilirsiniz.</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your Windows 7 programs, documents, photos, music, and any other files.</source>
-        <translation type="vanished">&lt;b&gt;Diski sil ve %1 yükle&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Uyarı: &lt;/font&gt;Şunlar dosyalar silinecek: Windows 7 programları, belgeleri, fotoğrafları, müzik, ve diğer tüm dosyalar.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="207"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="207"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="207"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="186"/>
-        <source>This computer currently has multiple operating systems on it. What would you like to do?</source>
-        <translation>Bu bilgisayarda birden fazla işletim sistemi var. Ne yapmak istersiniz?</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="147"/>
-        <source>&lt;b&gt;Erase entire disk with %1 and install %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="210"/>
-        <source>&lt;b&gt;Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.</source>
-        <translation>&lt;b&gt;Diğer işletim sistemlerinin yanına %1 yükle&lt;/b&gt;&lt;br/&gt;Belgeler, müzik ve diğer kişisel dosyalar korunacaktır. Bilgisayarınız başlatılırken istediğiniz işletim sistemini seçebilirsiniz.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="240"/>
-        <source>&lt;b&gt;Something else&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.</source>
-        <translation>&lt;b&gt;Gelişmiş Kurulum Seçenekleri&lt;/b&gt;&lt;br/&gt;%1 için birden fazla bölüm oluşturabilirsiniz ya da yeniden boyutlandırabilirsiniz.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="138"/>
-        <source>&lt;b&gt;Replace %1 with %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="160"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="196"/>
-        <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your Windows 7 programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
+        <source>&lt;b&gt;Something else&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a GPT partition table and &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -546,239 +418,6 @@ Output:
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="70"/>
         <source>Cleared all mounts for %1</source>
         <translation type="unfinished"/>
-    </message>
-</context>
-<context>
-    <name>ConfigurePageAdvanced</name>
-    <message>
-        <source>Permissions</source>
-        <translation type="vanished">İzinler</translation>
-    </message>
-    <message>
-        <source>Allow applying operations without administrator privileges</source>
-        <translation type="vanished">Yönetici izinleri olmadan işlemleriniz uygulanamaz</translation>
-    </message>
-    <message>
-        <source>Backend</source>
-        <translation type="vanished">Yedekle</translation>
-    </message>
-    <message>
-        <source>Active backend:</source>
-        <translation type="vanished">Yedekleme aktif:</translation>
-    </message>
-    <message>
-        <source>Units</source>
-        <translation type="vanished">Birimler</translation>
-    </message>
-    <message>
-        <source>Preferred unit:</source>
-        <translation type="vanished">Tercih edilen birim:</translation>
-    </message>
-    <message>
-        <source>Byte</source>
-        <translation type="vanished">Byte</translation>
-    </message>
-    <message>
-        <source>KiB</source>
-        <translation type="vanished">KB</translation>
-    </message>
-    <message>
-        <source>MiB</source>
-        <translation type="vanished">MB</translation>
-    </message>
-    <message>
-        <source>GiB</source>
-        <translation type="vanished">GB</translation>
-    </message>
-    <message>
-        <source>TiB</source>
-        <translation type="vanished">TB</translation>
-    </message>
-    <message>
-        <source>PiB</source>
-        <translation type="vanished">PB</translation>
-    </message>
-    <message>
-        <source>EiB</source>
-        <translation type="vanished">EB</translation>
-    </message>
-</context>
-<context>
-    <name>ConfigurePageFileSystemColors</name>
-    <message>
-        <source>File Systems</source>
-        <translation type="vanished">Dosya Sistemleri</translation>
-    </message>
-    <message>
-        <source>luks:</source>
-        <translation type="vanished">luks:</translation>
-    </message>
-    <message>
-        <source>ntfs:</source>
-        <translation type="vanished">ntfs:</translation>
-    </message>
-    <message>
-        <source>ext2:</source>
-        <translation type="vanished">ext2:</translation>
-    </message>
-    <message>
-        <source>ext3:</source>
-        <translation type="vanished">ext3:</translation>
-    </message>
-    <message>
-        <source>ext4:</source>
-        <translation type="vanished">ext4:</translation>
-    </message>
-    <message>
-        <source>btrfs:</source>
-        <translation type="vanished">btrfs:</translation>
-    </message>
-    <message>
-        <source>linuxswap:</source>
-        <translation type="vanished">linuxswap:</translation>
-    </message>
-    <message>
-        <source>fat16:</source>
-        <translation type="vanished">fat16:</translation>
-    </message>
-    <message>
-        <source>fat32:</source>
-        <translation type="vanished">fat32:</translation>
-    </message>
-    <message>
-        <source>zfs:</source>
-        <translation type="vanished">zfs:</translation>
-    </message>
-    <message>
-        <source>reiserfs:</source>
-        <translation type="vanished">reiserfs:</translation>
-    </message>
-    <message>
-        <source>reiser4:</source>
-        <translation type="vanished">reiser4:</translation>
-    </message>
-    <message>
-        <source>hpfs:</source>
-        <translation type="vanished">hpfs:</translation>
-    </message>
-    <message>
-        <source>jfs</source>
-        <translation type="vanished">jfs</translation>
-    </message>
-    <message>
-        <source>hfs:</source>
-        <translation type="vanished">hfs:</translation>
-    </message>
-    <message>
-        <source>hfsplus:</source>
-        <translation type="vanished">hfsplus:</translation>
-    </message>
-    <message>
-        <source>ufs:</source>
-        <translation type="vanished">ufs:</translation>
-    </message>
-    <message>
-        <source>xfs:</source>
-        <translation type="vanished">xfs:</translation>
-    </message>
-    <message>
-        <source>ocfs2:</source>
-        <translation type="vanished">ocfs2:</translation>
-    </message>
-    <message>
-        <source>extended:</source>
-        <translation type="vanished">uzatılmış:</translation>
-    </message>
-    <message>
-        <source>unformatted:</source>
-        <translation type="vanished">biçimlenmemiş:</translation>
-    </message>
-    <message>
-        <source>unknown:</source>
-        <translation type="vanished">bilinmeyen:</translation>
-    </message>
-    <message>
-        <source>exfat:</source>
-        <translation type="vanished">exfat:</translation>
-    </message>
-    <message>
-        <source>nilfs2:</source>
-        <translation type="vanished">nilfs2:</translation>
-    </message>
-    <message>
-        <source>lvm2 pv:</source>
-        <translation type="vanished">lvm2 pv:</translation>
-    </message>
-</context>
-<context>
-    <name>ConfigurePageGeneral</name>
-    <message>
-        <source>Partition Alignment</source>
-        <translation type="vanished">Bölüm Eşitleme</translation>
-    </message>
-    <message>
-        <source>Use cylinder based alignment (Windows XP compatible)</source>
-        <translation type="vanished">Disk tabanlı eşitleme kullanın (Windows XP uyumlu)</translation>
-    </message>
-    <message>
-        <source>Sector alignment:</source>
-        <translation type="vanished">Sektör eşitleme:</translation>
-    </message>
-    <message>
-        <source> sectors</source>
-        <translation type="vanished">sektörler</translation>
-    </message>
-    <message>
-        <source>Align partitions per default</source>
-        <translation type="vanished">Bölümleri varsayılan olarak eşitle</translation>
-    </message>
-    <message>
-        <source>Logging</source>
-        <translation type="vanished">Log tutma</translation>
-    </message>
-    <message>
-        <source>Hide messages below:</source>
-        <translation type="vanished">Aşağıdaki mesajları gizle:</translation>
-    </message>
-    <message>
-        <source>Debug</source>
-        <translation type="vanished">Hata Ayıklama</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation type="vanished">Bilgilendirme</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation type="vanished">Uyarı</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation type="vanished">Hata</translation>
-    </message>
-    <message>
-        <source>File Systems</source>
-        <translation type="vanished">Dosya Sistemleri</translation>
-    </message>
-    <message>
-        <source>Default file system:</source>
-        <translation type="vanished">Varsayılan dosya sistemi:</translation>
-    </message>
-    <message>
-        <source>Shredding</source>
-        <translation type="vanished">Parçalanma</translation>
-    </message>
-    <message>
-        <source>Overwrite with:</source>
-        <translation type="vanished">Üzerine yaz:</translation>
-    </message>
-    <message>
-        <source>Random data</source>
-        <translation type="vanished">Rastgele  veri</translation>
-    </message>
-    <message>
-        <source>Zeros</source>
-        <translation type="vanished">Sıfır Noktası</translation>
     </message>
 </context>
 <context>
@@ -949,29 +588,6 @@ Output:
     </message>
 </context>
 <context>
-    <name>CreatePartitionTableWidgetBase</name>
-    <message>
-        <source>Choose the type of partition table you want to create:</source>
-        <translation type="vanished">Bölüm tablosu türünü seçip oluşturmak istermisiniz:</translation>
-    </message>
-    <message>
-        <source>GPT</source>
-        <translation type="vanished">GPT</translation>
-    </message>
-    <message>
-        <source>MS-Dos</source>
-        <translation type="vanished">MS-Dos</translation>
-    </message>
-    <message>
-        <source>(icon)</source>
-        <translation type="vanished">(icon)</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Warning:&lt;/b&gt; This will destroy all data on the device!</source>
-        <translation type="vanished">&lt;b&gt;Uyarı:&lt;/b&gt; Bu işlem aygıttaki tüm verileri yok edecektir!</translation>
-    </message>
-</context>
-<context>
     <name>CreateUserJob</name>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="51"/>
@@ -1030,17 +646,6 @@ Output:
     </message>
 </context>
 <context>
-    <name>DecryptLuksDialogWidgetBase</name>
-    <message>
-        <source>&amp;Name:</source>
-        <translation type="vanished">&amp;İsim:</translation>
-    </message>
-    <message>
-        <source>&amp;Passphrase:</source>
-        <translation type="vanished">&amp;Parolası:</translation>
-    </message>
-</context>
-<context>
     <name>DeletePartitionJob</name>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="41"/>
@@ -1074,57 +679,6 @@ Output:
         <location filename="../src/modules/partition/core/DeviceModel.cpp" line="79"/>
         <source>%1 - %2 (%3)</source>
         <translation>%1 - %2 (%3)</translation>
-    </message>
-</context>
-<context>
-    <name>DevicePropsWidgetBase</name>
-    <message>
-        <source>Partition table:</source>
-        <translation type="vanished">Bölüm tablosu:</translation>
-    </message>
-    <message>
-        <source>Cylinder alignment</source>
-        <translation type="vanished">Disk eşitleme</translation>
-    </message>
-    <message>
-        <source>Sector based alignment</source>
-        <translation type="vanished">Sektör tabanlı eşiştleme</translation>
-    </message>
-    <message>
-        <source>Capacity:</source>
-        <translation type="vanished">Kapasite:</translation>
-    </message>
-    <message>
-        <source>Total sectors:</source>
-        <translation type="vanished">Toplam Sektör:</translation>
-    </message>
-    <message>
-        <source>Cylinders/Heads/Sectors:</source>
-        <translation type="vanished">Cylinders/Heads/Sectors:</translation>
-    </message>
-    <message>
-        <source>Logical sector size:</source>
-        <translation type="vanished">Mantıksal sektör boyutu:</translation>
-    </message>
-    <message>
-        <source>Physical sector size:</source>
-        <translation type="vanished">Fiziksel sektör boyutu:</translation>
-    </message>
-    <message>
-        <source>Cylinder size:</source>
-        <translation type="vanished">Disk boyutu:</translation>
-    </message>
-    <message>
-        <source>Primaries/Max:</source>
-        <translation type="vanished">Birincil/Max:</translation>
-    </message>
-    <message>
-        <source>SMART status:</source>
-        <translation type="vanished">SMART durumu:</translation>
-    </message>
-    <message>
-        <source>More...</source>
-        <translation type="vanished">Dahası...</translation>
     </message>
 </context>
 <context>
@@ -1196,96 +750,6 @@ Output:
     </message>
 </context>
 <context>
-    <name>EditMountOptionsDialogWidgetBase</name>
-    <message>
-        <source>Edit Mount Options</source>
-        <translation type="vanished">Bağlama Seçeneklerini Düzenle</translation>
-    </message>
-    <message>
-        <source>Edit the mount options for this file system:</source>
-        <translation type="vanished">Dosya sistemi için bağlama noktasını düzenle:</translation>
-    </message>
-</context>
-<context>
-    <name>EditMountPointDialogWidgetBase</name>
-    <message>
-        <source>Path:</source>
-        <translation type="vanished">Yol:</translation>
-    </message>
-    <message>
-        <source>Select...</source>
-        <translation type="vanished">Seç...</translation>
-    </message>
-    <message>
-        <source>Type:</source>
-        <translation type="vanished">Tip:</translation>
-    </message>
-    <message>
-        <source>Options:</source>
-        <translation type="vanished">Seçenekler:</translation>
-    </message>
-    <message>
-        <source>Read-only</source>
-        <translation type="vanished">Sadece-okunabilir</translation>
-    </message>
-    <message>
-        <source>Users can mount and unmount</source>
-        <translation type="vanished">Kullanıcılar bağlayabilir ve ayırabilir</translation>
-    </message>
-    <message>
-        <source>No automatic mount</source>
-        <translation type="vanished">Otomatik olarak bağlamasın</translation>
-    </message>
-    <message>
-        <source>No update of file access times</source>
-        <translation type="vanished">Dosya erişim zamanı güncellenmedi</translation>
-    </message>
-    <message>
-        <source>Synchronous access</source>
-        <translation type="vanished">Eşzamanlı erişim</translation>
-    </message>
-    <message>
-        <source>No update of directory access times</source>
-        <translation type="vanished">Dizin erişim zamanı güncellenmedi</translation>
-    </message>
-    <message>
-        <source>No binary execution</source>
-        <translation type="vanished">İkili uygulama yok</translation>
-    </message>
-    <message>
-        <source>Update access times relative to modification</source>
-        <translation type="vanished">Modifikasyonları göreceli güncelleme zamanı</translation>
-    </message>
-    <message>
-        <source>More...</source>
-        <translation type="vanished">Dahası...</translation>
-    </message>
-    <message>
-        <source>Dump Frequency:</source>
-        <translation type="vanished">Frekans Dökümü:</translation>
-    </message>
-    <message>
-        <source>Pass Number:</source>
-        <translation type="vanished">Numara gir:</translation>
-    </message>
-    <message>
-        <source>Device Node</source>
-        <translation type="vanished">Aygıt Düğümü</translation>
-    </message>
-    <message>
-        <source>UUID</source>
-        <translation type="vanished">UUID</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation type="vanished">Etiket</translation>
-    </message>
-    <message>
-        <source>Identify by:</source>
-        <translation type="vanished">Kimlik:</translation>
-    </message>
-</context>
-<context>
     <name>EraseDiskPage</name>
     <message>
         <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="50"/>
@@ -1301,72 +765,6 @@ Output:
         <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="209"/>
         <source>After:</source>
         <translation>Sonra:</translation>
-    </message>
-</context>
-<context>
-    <name>FileSystemSupportDialogWidgetBase</name>
-    <message>
-        <source>This table shows which file systems are supported and which specific operations can be performed on them.
-Some file systems need external tools to be installed for them to be supported. But not all operations can be performed on all file systems, even if all required tools are installed. Please see the documentation for details. </source>
-        <translation type="vanished">Bu tablo desteklenen dosya sistemlerini ve onlarla hangi işlemlerin yapılacağını gösterir.
-Bazı dosya sistemlerinin desteklenmesi ve düzenlenmesi için ek uygulamalar gerekebilir. Fakat tüm uygulamalar yüklü olsa bile bazı işlemlerin desteklenmemesi söz konusudur.  Ayrıntılar için belgelere bakın lütfen.</translation>
-    </message>
-    <message>
-        <source>File System</source>
-        <translation type="vanished">Dosya Sistemi</translation>
-    </message>
-    <message>
-        <source>Create</source>
-        <translation type="vanished">Oluştur</translation>
-    </message>
-    <message>
-        <source>Grow</source>
-        <translation type="vanished">Büyüt</translation>
-    </message>
-    <message>
-        <source>Shrink</source>
-        <translation type="vanished">Küçült</translation>
-    </message>
-    <message>
-        <source>Move</source>
-        <translation type="vanished">Taşı</translation>
-    </message>
-    <message>
-        <source>Copy</source>
-        <translation type="vanished">Kopyala</translation>
-    </message>
-    <message>
-        <source>Check</source>
-        <translation type="vanished">Kontrol</translation>
-    </message>
-    <message>
-        <source>Read Label</source>
-        <translation type="vanished">Etiketi Oku</translation>
-    </message>
-    <message>
-        <source>Write Label</source>
-        <translation type="vanished">Etiketi Yaz</translation>
-    </message>
-    <message>
-        <source>Read Usage</source>
-        <translation type="vanished">Kullanımı Oku</translation>
-    </message>
-    <message>
-        <source>Backup</source>
-        <translation type="vanished">Yedekle</translation>
-    </message>
-    <message>
-        <source>Restore</source>
-        <translation type="vanished">Onar</translation>
-    </message>
-    <message>
-        <source>Support Tools</source>
-        <translation type="vanished">Yardımcı Araçlar</translation>
-    </message>
-    <message>
-        <source>Rescan Support</source>
-        <comment>@action:button</comment>
-        <translation type="vanished">Yeniden Destek Ara</translation>
     </message>
 </context>
 <context>
@@ -1417,10 +815,6 @@ Bazı dosya sistemlerinin desteklenmesi ve düzenlenmesi için ek uygulamalar ge
 </context>
 <context>
     <name>GreetingPage</name>
-    <message>
-        <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer.</source>
-        <translation type="vanished">&lt;h1&gt;%1 Sistem Yükleyiciye Hoşgeldiniz.&lt;/h1&gt;&lt;br/&gt;Bu program size bazı sorular soracak ve bilgisayarınıza %2 kuracak.</translation>
-    </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="14"/>
         <source>Form</source>
@@ -1529,34 +923,6 @@ Bazı dosya sistemlerinin desteklenmesi ve düzenlenmesi için ek uygulamalar ge
         <location filename="../src/modules/locale/LocaleViewStep.cpp" line="79"/>
         <source>Location</source>
         <translation>Sistem Yereli</translation>
-    </message>
-</context>
-<context>
-    <name>MainWindowBase</name>
-    <message>
-        <source>KDE Partition Manager</source>
-        <comment>@title:window</comment>
-        <translation type="vanished">KDE Bölümleme Yönetimi</translation>
-    </message>
-    <message>
-        <source>Devices</source>
-        <comment>@title:window</comment>
-        <translation type="vanished">Aygıtlar</translation>
-    </message>
-    <message>
-        <source>Pending Operations</source>
-        <comment>@title:window</comment>
-        <translation type="vanished">Bekleyen İşlemler</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <comment>@title:window</comment>
-        <translation type="vanished">Bilgilendirme</translation>
-    </message>
-    <message>
-        <source>Log Output</source>
-        <comment>@title:window</comment>
-        <translation type="vanished">Log Çıktısı</translation>
     </message>
 </context>
 <context>
@@ -1695,140 +1061,6 @@ Bazı dosya sistemlerinin desteklenmesi ve düzenlenmesi için ek uygulamalar ge
         <location filename="../src/modules/users/page_usersetup.ui" line="606"/>
         <source>Require my password to log in</source>
         <translation>Giriş için şifre gerekli</translation>
-    </message>
-</context>
-<context>
-    <name>PartPropsWidgetBase</name>
-    <message>
-        <source>File system:</source>
-        <comment>@label:listbox</comment>
-        <translation type="vanished">Dosya sistemi:</translation>
-    </message>
-    <message>
-        <source>Label:</source>
-        <comment>@label</comment>
-        <translation type="vanished">Etiket:</translation>
-    </message>
-    <message>
-        <source>This file system does not support setting a label.</source>
-        <comment>@label</comment>
-        <translation type="vanished">Bu dosya sistemi etiket ayarını desteklemiyor.</translation>
-    </message>
-    <message>
-        <source>Recreate existing file system</source>
-        <comment>@action:button</comment>
-        <translation type="vanished">Varolan dosya sistemini yeniden oluştur</translation>
-    </message>
-    <message>
-        <source>Mount point:</source>
-        <comment>@label</comment>
-        <translation type="vanished">Bağlama noktası:</translation>
-    </message>
-    <message>
-        <source>Partition type:</source>
-        <comment>@label</comment>
-        <translation type="vanished">Bölüm tipi:</translation>
-    </message>
-    <message>
-        <source>Status:</source>
-        <comment>@label</comment>
-        <translation type="vanished">Durum:</translation>
-    </message>
-    <message>
-        <source>UUID:</source>
-        <comment>@label</comment>
-        <translation type="vanished">UUID:</translation>
-    </message>
-    <message>
-        <source>Size:</source>
-        <comment>@label</comment>
-        <translation type="vanished">Boyut:</translation>
-    </message>
-    <message>
-        <source>Available:</source>
-        <comment>@label partition capacity available</comment>
-        <translation type="vanished">Kullanılabilir:</translation>
-    </message>
-    <message>
-        <source>Used:</source>
-        <comment>@label partition capacity used</comment>
-        <translation type="vanished">Kullanılmış:</translation>
-    </message>
-    <message>
-        <source>First sector:</source>
-        <comment>@label</comment>
-        <translation type="vanished">İlk sektör:</translation>
-    </message>
-    <message>
-        <source>Last sector:</source>
-        <comment>@label</comment>
-        <translation type="vanished">Son sektör:</translation>
-    </message>
-    <message>
-        <source>Number of sectors:</source>
-        <comment>@label</comment>
-        <translation type="vanished">Sektör numarası:</translation>
-    </message>
-    <message>
-        <source>Flags:</source>
-        <comment>@label</comment>
-        <translation type="vanished">Bayraklar:</translation>
-    </message>
-</context>
-<context>
-    <name>PartitionManagerWidgetBase</name>
-    <message>
-        <source>KDE Partition Manager</source>
-        <comment>@title:window</comment>
-        <translation type="vanished">KDE Bölümleme Yönetimi</translation>
-    </message>
-    <message>
-        <source>Partition</source>
-        <translation type="vanished">Bölüm</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation type="vanished">Tip</translation>
-    </message>
-    <message>
-        <source>Mount Point</source>
-        <translation type="vanished">Bağlama Noktası</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation type="vanished">Etiket</translation>
-    </message>
-    <message>
-        <source>UUID</source>
-        <translation type="vanished">UUID</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation type="vanished">Boyut</translation>
-    </message>
-    <message>
-        <source>Used</source>
-        <translation type="vanished">Kullanılmış</translation>
-    </message>
-    <message>
-        <source>Available</source>
-        <translation type="vanished">Kullanılabilir</translation>
-    </message>
-    <message>
-        <source>First Sector</source>
-        <translation type="vanished">İlk Sektör</translation>
-    </message>
-    <message>
-        <source>Last Sector</source>
-        <translation type="vanished">Son Sektör</translation>
-    </message>
-    <message>
-        <source>Number of Sectors</source>
-        <translation type="vanished">Sektör Numarası</translation>
-    </message>
-    <message>
-        <source>Flags</source>
-        <translation type="vanished">Bayraklar</translation>
     </message>
 </context>
 <context>
@@ -2018,101 +1250,6 @@ Kuruluma devam edebilirsiniz fakat bazı özellikler devre dışı kalabilir.</t
     </message>
 </context>
 <context>
-    <name>ReleaseDialog</name>
-    <message>
-        <source>KDE Release Builder</source>
-        <translation type="vanished">KDE Sürüm İnşası</translation>
-    </message>
-    <message>
-        <source>Application</source>
-        <translation type="vanished">Uygulama</translation>
-    </message>
-    <message>
-        <source>Name:</source>
-        <translation type="vanished">İsim:</translation>
-    </message>
-    <message>
-        <source>&amp;Version:</source>
-        <translation type="vanished">&amp;Versiyon:</translation>
-    </message>
-    <message>
-        <source>Repository and Revision</source>
-        <translation type="vanished">Depo ve revizyon</translation>
-    </message>
-    <message>
-        <source>&amp;Checkout From:</source>
-        <translation type="vanished">&amp;Kontrol ediliyor:</translation>
-    </message>
-    <message>
-        <source>trunk</source>
-        <translation type="vanished">gövde</translation>
-    </message>
-    <message>
-        <source>branches</source>
-        <translation type="vanished">dallar</translation>
-    </message>
-    <message>
-        <source>tags</source>
-        <translation type="vanished">etiketler</translation>
-    </message>
-    <message>
-        <source>Ta&amp;g/Branch:</source>
-        <translation type="vanished">Eti&amp;ket/Dal:</translation>
-    </message>
-    <message>
-        <source>&amp;SVN Access:</source>
-        <translation type="vanished">&amp;SVN Erişim:</translation>
-    </message>
-    <message>
-        <source>anonsvn</source>
-        <translation type="vanished">anonsvn</translation>
-    </message>
-    <message>
-        <source>https</source>
-        <translation type="vanished">https</translation>
-    </message>
-    <message>
-        <source>svn+ssh</source>
-        <translation type="vanished">svn+ssh</translation>
-    </message>
-    <message>
-        <source>&amp;User:</source>
-        <translation type="vanished">&amp;Kullanıcı:</translation>
-    </message>
-    <message>
-        <source>Options</source>
-        <translation type="vanished">Seçenekler</translation>
-    </message>
-    <message>
-        <source>Get &amp;Documentation</source>
-        <translation type="vanished">&amp;Belgelendirmeleri Al</translation>
-    </message>
-    <message>
-        <source>Get &amp;Translations</source>
-        <translation type="vanished">%Çevirileri Al</translation>
-    </message>
-    <message>
-        <source>C&amp;reate Tag</source>
-        <translation type="vanished">E&amp;tiket Oluştur</translation>
-    </message>
-    <message>
-        <source>S&amp;kip translations below completion:</source>
-        <translation type="vanished">A&amp;şağıdaki çevirileri atla:</translation>
-    </message>
-    <message>
-        <source> %</source>
-        <translation type="vanished"> %</translation>
-    </message>
-    <message>
-        <source>Create Tar&amp;ball</source>
-        <translation type="vanished">Oluştur Tar&amp;ball</translation>
-    </message>
-    <message>
-        <source>Apply &amp;fixes</source>
-        <translation type="vanished">&amp;Düzeltmeleri uygula</translation>
-    </message>
-</context>
-<context>
     <name>ReplacePage</name>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.ui" line="14"/>
@@ -2126,7 +1263,7 @@ Kuruluma devam edebilirsiniz fakat bazı özellikler devre dışı kalabilir.</t
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="109"/>
-        <source>Select where to install %1.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;this will delete all files on the selected partition.</source>
+        <source>Select where to install %1.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;this will delete all files on the selected partition. &lt;font color=&quot;red&quot;&gt;Do not use for UEFI &lt;/font&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2326,193 +1463,11 @@ Kuruluma devam edebilirsiniz fakat bazı özellikler devre dışı kalabilir.</t
     </message>
 </context>
 <context>
-    <name>SizeDetailsWidgetBase</name>
-    <message>
-        <source>First sector:</source>
-        <comment>@label:listbox</comment>
-        <translation type="vanished">İlk sektör:</translation>
-    </message>
-    <message>
-        <source>Last sector:</source>
-        <comment>@label:listbox</comment>
-        <translation type="vanished">Son sektör:</translation>
-    </message>
-    <message>
-        <source>Align partition</source>
-        <translation type="vanished">Bölüm eşitleme</translation>
-    </message>
-</context>
-<context>
-    <name>SizeDialogWidgetBase</name>
-    <message>
-        <source>Partition type:</source>
-        <comment>@label:listbox</comment>
-        <translation type="vanished">Bölüm tipi:</translation>
-    </message>
-    <message>
-        <source>Primary</source>
-        <translation type="vanished">Birincil</translation>
-    </message>
-    <message>
-        <source>Extended</source>
-        <translation type="vanished">Uzatılmış</translation>
-    </message>
-    <message>
-        <source>Logical</source>
-        <translation type="vanished">Mantıksal</translation>
-    </message>
-    <message>
-        <source>File system:</source>
-        <comment>@label:listbox</comment>
-        <translation type="vanished">Dosya sistemi</translation>
-    </message>
-    <message>
-        <source>Label:</source>
-        <comment>@label</comment>
-        <translation type="vanished">Etiket:</translation>
-    </message>
-    <message>
-        <source>This file system does not support setting a label.</source>
-        <comment>@label</comment>
-        <translation type="vanished">Bu dosya sistemi etiket ayarını desteklemiyor.</translation>
-    </message>
-    <message>
-        <source>Minimum size:</source>
-        <comment>@label</comment>
-        <translation type="vanished">Minimum boyut:</translation>
-    </message>
-    <message>
-        <source>Maximum size:</source>
-        <comment>@label</comment>
-        <translation type="vanished">Azami boyut:</translation>
-    </message>
-    <message>
-        <source>Free space before:</source>
-        <comment>@label:listbox</comment>
-        <translation type="vanished">Boş alan öncesi:</translation>
-    </message>
-    <message>
-        <source>Size:</source>
-        <comment>@label:listbox</comment>
-        <translation type="vanished">Boyut:</translation>
-    </message>
-    <message>
-        <source>Free space after:</source>
-        <comment>@label:listbox</comment>
-        <translation type="vanished">Boş alan sonrası:</translation>
-    </message>
-</context>
-<context>
-    <name>SmartDialogWidgetBase</name>
-    <message>
-        <source>SMART status:</source>
-        <translation type="vanished">SMART durum:</translation>
-    </message>
-    <message>
-        <source>Model:</source>
-        <translation type="vanished">Model:</translation>
-    </message>
-    <message>
-        <source>Serial number:</source>
-        <translation type="vanished">Seri Numarası:</translation>
-    </message>
-    <message>
-        <source>Firmware revision:</source>
-        <translation type="vanished">Yazılım revizyonu:</translation>
-    </message>
-    <message>
-        <source>Temperature:</source>
-        <translation type="vanished">Sıcaklık:</translation>
-    </message>
-    <message>
-        <source>Bad sectors:</source>
-        <translation type="vanished">Bozuk sektörler:</translation>
-    </message>
-    <message>
-        <source>Powered on for:</source>
-        <translation type="vanished">Güç açık:</translation>
-    </message>
-    <message>
-        <source>Power cycles:</source>
-        <translation type="vanished">Güç Çevrimleri:</translation>
-    </message>
-    <message>
-        <source>Id</source>
-        <translation type="vanished">Kullanıcı</translation>
-    </message>
-    <message>
-        <source>Attribute</source>
-        <translation type="vanished">Özellikler</translation>
-    </message>
-    <message>
-        <source>Failure Type</source>
-        <translation type="vanished">Arıza Tipi</translation>
-    </message>
-    <message>
-        <source>Update Type</source>
-        <translation type="vanished">Güncelleme Tipi</translation>
-    </message>
-    <message>
-        <source>Worst</source>
-        <translation type="vanished">En Kötü</translation>
-    </message>
-    <message>
-        <source>Current</source>
-        <translation type="vanished">Geçerli</translation>
-    </message>
-    <message>
-        <source>Threshold</source>
-        <translation type="vanished">Eşik</translation>
-    </message>
-    <message>
-        <source>Raw</source>
-        <translation type="vanished">Ham</translation>
-    </message>
-    <message>
-        <source>Assessment</source>
-        <translation type="vanished">Değerlendirme</translation>
-    </message>
-    <message>
-        <source>Value</source>
-        <translation type="vanished">Değer</translation>
-    </message>
-    <message>
-        <source>Overall assessment:</source>
-        <translation type="vanished">Genel değerlendirme:</translation>
-    </message>
-    <message>
-        <source>Self tests:</source>
-        <translation type="vanished">Testler:</translation>
-    </message>
-</context>
-<context>
     <name>SummaryViewStep</name>
     <message>
         <location filename="../src/modules/summary/SummaryViewStep.cpp" line="41"/>
         <source>Summary</source>
         <translation>Özet:</translation>
-    </message>
-</context>
-<context>
-    <name>TreeLogBase</name>
-    <message>
-        <source>Sev.</source>
-        <comment>@title:column Severity of a log entry / log level. Text must be very short.</comment>
-        <translation type="vanished">Sev.</translation>
-    </message>
-    <message>
-        <source>Severity</source>
-        <translation type="vanished">Ağırlık</translation>
-    </message>
-    <message>
-        <source>Time</source>
-        <comment>@title:column a time stamp of a log entry</comment>
-        <translation type="vanished">Zaman</translation>
-    </message>
-    <message>
-        <source>Message</source>
-        <comment>@title:column the text message of a log entry</comment>
-        <translation type="vanished">Mesaj</translation>
     </message>
 </context>
 <context>

@@ -13,46 +13,8 @@
     </message>
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="167"/>
-        <source>With this operation, the partition &lt;b&gt;%1&lt;/b&gt; which contains %4 will be shrunk to %2MB and a new %3MB partition will be created for %5.</source>
-        <translation>Этим действием, раздел &lt;b&gt;%1&lt;/b&gt;, который содержит %4 будет уменьшен на %2 MB и будет создан новый раздел в %3 MB для %5.</translation>
-    </message>
-</context>
-<context>
-    <name>ApplyProgressDetailsWidgetBase</name>
-    <message>
-        <source>Save</source>
-        <translation type="vanished">Сохранить</translation>
-    </message>
-    <message>
-        <source>Open in External Browser</source>
-        <translation type="vanished">Открыть во внешнем браузере</translation>
-    </message>
-</context>
-<context>
-    <name>ApplyProgressDialogWidgetBase</name>
-    <message>
-        <source>Operations and Jobs</source>
-        <translation type="vanished">Действия и Задачи</translation>
-    </message>
-    <message>
-        <source>Time Elapsed</source>
-        <translation type="vanished">Времени прошло</translation>
-    </message>
-    <message>
-        <source>Total Time: 00:00:00</source>
-        <translation type="vanished">Общее время: 00:00:00</translation>
-    </message>
-    <message>
-        <source>Operation: %p%</source>
-        <translation type="vanished">Действие: %p%</translation>
-    </message>
-    <message>
-        <source>Status</source>
-        <translation type="vanished">Статус</translation>
-    </message>
-    <message>
-        <source>Total: %p%</source>
-        <translation type="vanished">Всего: %p%</translation>
+        <source>With this operation, the partition &lt;b&gt;%1&lt;/b&gt; which contains %4 will be shrunk to %2MB and a new %3MB partition will be created for %5. &lt;font color=&quot;red&quot;&gt;Do not use for UEFI. &lt;/font&gt;</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -188,10 +150,6 @@ p, li { white-space: pre-wrap; }
 </context>
 <context>
     <name>Calamares::JobThread</name>
-    <message>
-        <source>Done</source>
-        <translation type="vanished">Готово</translation>
-    </message>
     <message>
         <location filename="../src/libcalamares/JobQueue.cpp" line="88"/>
         <source>The install finished succesfully, click the quit button to return to live mode and reboot from there into your newly installed system</source>
@@ -377,9 +335,6 @@ Output:
     <name>ChoicePage</name>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="115"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="115"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="115"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="107"/>
         <source>This computer currently does not seem to have an operating system on it. What would you like to do?</source>
         <translation>Похоже этот компьютер не содержит операционных систем. Как Вы желаете поступить?</translation>
     </message>
@@ -387,141 +342,58 @@ Output:
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="118"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="175"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="217"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="118"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="175"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="217"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="110"/>
         <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="135"/>
+        <source>This computer currently has %1 on it. What would you like to do?</source>
+        <translation>На этом компьютере обнаружен %1. Как Вы желаете поступить?</translation>
+    </message>
+    <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="139"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="139"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="130"/>
         <source>&lt;b&gt;Install %2 alongside %1&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="147"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="147"/>
         <source>&lt;b&gt;Erase entire disk with %1 and install %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="155"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="181"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="155"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="181"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="155"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="181"/>
         <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all files on the selected partition. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
         <translation type="unfinished"/>
     </message>
     <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="165"/>
+        <source>This computer already has an operating system on it. What would you like to do?</source>
+        <translation>На компьютере уже установлена операционная система. Как Вы желаете поступить?</translation>
+    </message>
+    <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="168"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="168"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="153"/>
         <source>&lt;b&gt;Install %1 alongside your current operating system&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="207"/>
+        <source>This computer currently has multiple operating systems on it. What would you like to do?</source>
+        <translation>На этом компьютере обнаружено несколько операционных систем. Как Вы желаете поступить?</translation>
+    </message>
+    <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="210"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="210"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="189"/>
         <source>&lt;b&gt;Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="223"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="223"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="223"/>
         <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all files on the selected partition. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="240"/>
-        <source>&lt;b&gt;Something else&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a GPT partitio table and &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="240"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="213"/>
-        <source>&lt;b&gt;Something else&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="118"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="175"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="217"/>
-        <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your programs, documents, photos, music, and any other files.</source>
-        <translation>&lt;b&gt;Очистить диск и установить %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Внимание: &lt;/font&gt;Это удалит все ваши приложения, документы, фотографии, музыку и любые другие файлы.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="135"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="135"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="135"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="126"/>
-        <source>This computer currently has %1 on it. What would you like to do?</source>
-        <translation>На этом компьютере обнаружен %1. Как Вы желаете поступить?</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="139"/>
-        <source>&lt;b&gt;Install %2 alongside %1&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.</source>
-        <translation>&lt;b&gt;Установить %2 сохранив %1&lt;/b&gt;&lt;br/&gt;Документы, музыка и другие личные файлы не будут затронуты. Вы сможете выбирать операционную систему в момент старта компьютера.</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Replace %1 with %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files.</source>
-        <translation type="vanished">&lt;b&gt;Заменить %1 на %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Внимание: &lt;/font&gt;Это уничтожит содержимое всего диска, включая все принадлежащие %1 программы, документы, музыку, фотографии и любые другие файлы.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="165"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="165"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="165"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="150"/>
-        <source>This computer already has an operating system on it. What would you like to do?</source>
-        <translation>На компьютере уже установлена операционная система. Как Вы желаете поступить?</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="168"/>
-        <source>&lt;b&gt;Install %1 alongside your current operating system&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.</source>
-        <translation>&lt;b&gt;Установить %1 не трогая существующую операционную систему&lt;/b&gt;&lt;br/&gt;Документы, музыка и прочие личные файлы не будут затронуты. Вы сможете выбирать операционную систему в момент старта компьютера.</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your Windows 7 programs, documents, photos, music, and any other files.</source>
-        <translation type="vanished">&lt;b&gt;Очистить диск и установить %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Внимание: &lt;/font&gt;Это уничтожит все программы, документы, фотографии и любые другие файлы Windows 7.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="207"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="207"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_c.cpp" line="207"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="186"/>
-        <source>This computer currently has multiple operating systems on it. What would you like to do?</source>
-        <translation>На этом компьютере обнаружено несколько операционных систем. Как Вы желаете поступить?</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="147"/>
-        <source>&lt;b&gt;Erase entire disk with %1 and install %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="210"/>
-        <source>&lt;b&gt;Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.</source>
-        <translation>&lt;b&gt;Установить %1 вместе с другими операционными системами&lt;/b&gt;&lt;br/&gt;Документы, музыка и прочие личные файлы не будут затронуты. Вы сможете выбирать операционную систему в момент старта компьютера.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage_alongnew.cpp" line="240"/>
-        <source>&lt;b&gt;Something else&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.</source>
-        <translation>&lt;b&gt;Ручной режим&lt;/b&gt;&lt;br/&gt;Вы сможете создавать или менять размер разделов сами, или выбрать несколько разделов для %1.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="138"/>
-        <source>&lt;b&gt;Replace %1 with %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="160"/>
-        <location filename="../src/modules/partition/gui/ChoicePage_new.cpp" line="196"/>
-        <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your Windows 7 programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
+        <source>&lt;b&gt;Something else&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a GPT partition table and &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -546,239 +418,6 @@ Output:
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="70"/>
         <source>Cleared all mounts for %1</source>
         <translation type="unfinished"/>
-    </message>
-</context>
-<context>
-    <name>ConfigurePageAdvanced</name>
-    <message>
-        <source>Permissions</source>
-        <translation type="vanished">Права</translation>
-    </message>
-    <message>
-        <source>Allow applying operations without administrator privileges</source>
-        <translation type="vanished">Разрешить выполнение действий без запроса административных полномочий</translation>
-    </message>
-    <message>
-        <source>Backend</source>
-        <translation type="vanished">Бэкенд</translation>
-    </message>
-    <message>
-        <source>Active backend:</source>
-        <translation type="vanished">Активый бэкенд:</translation>
-    </message>
-    <message>
-        <source>Units</source>
-        <translation type="vanished">Единицы</translation>
-    </message>
-    <message>
-        <source>Preferred unit:</source>
-        <translation type="vanished">Предпочитаемые единицы:</translation>
-    </message>
-    <message>
-        <source>Byte</source>
-        <translation type="vanished">Байт(ы)</translation>
-    </message>
-    <message>
-        <source>KiB</source>
-        <translation type="vanished">КиБ</translation>
-    </message>
-    <message>
-        <source>MiB</source>
-        <translation type="vanished">МиБ</translation>
-    </message>
-    <message>
-        <source>GiB</source>
-        <translation type="vanished">ГиБ</translation>
-    </message>
-    <message>
-        <source>TiB</source>
-        <translation type="vanished">ТиБ</translation>
-    </message>
-    <message>
-        <source>PiB</source>
-        <translation type="vanished">ПиБ</translation>
-    </message>
-    <message>
-        <source>EiB</source>
-        <translation type="vanished">ЭиБ</translation>
-    </message>
-</context>
-<context>
-    <name>ConfigurePageFileSystemColors</name>
-    <message>
-        <source>File Systems</source>
-        <translation type="vanished">Файловые системы</translation>
-    </message>
-    <message>
-        <source>luks:</source>
-        <translation type="vanished">luks:</translation>
-    </message>
-    <message>
-        <source>ntfs:</source>
-        <translation type="vanished">ntfs:</translation>
-    </message>
-    <message>
-        <source>ext2:</source>
-        <translation type="vanished">ext2:</translation>
-    </message>
-    <message>
-        <source>ext3:</source>
-        <translation type="vanished">ext3:</translation>
-    </message>
-    <message>
-        <source>ext4:</source>
-        <translation type="vanished">ext4:</translation>
-    </message>
-    <message>
-        <source>btrfs:</source>
-        <translation type="vanished">btrfs:</translation>
-    </message>
-    <message>
-        <source>linuxswap:</source>
-        <translation type="vanished">linuxswap:</translation>
-    </message>
-    <message>
-        <source>fat16:</source>
-        <translation type="vanished">fat16:</translation>
-    </message>
-    <message>
-        <source>fat32:</source>
-        <translation type="vanished">fat32:</translation>
-    </message>
-    <message>
-        <source>zfs:</source>
-        <translation type="vanished">zfs:</translation>
-    </message>
-    <message>
-        <source>reiserfs:</source>
-        <translation type="vanished">reiserfs:</translation>
-    </message>
-    <message>
-        <source>reiser4:</source>
-        <translation type="vanished">reiser4:</translation>
-    </message>
-    <message>
-        <source>hpfs:</source>
-        <translation type="vanished">hpfs:</translation>
-    </message>
-    <message>
-        <source>jfs</source>
-        <translation type="vanished">jfs:</translation>
-    </message>
-    <message>
-        <source>hfs:</source>
-        <translation type="vanished">hfs:</translation>
-    </message>
-    <message>
-        <source>hfsplus:</source>
-        <translation type="vanished">hfsplus:</translation>
-    </message>
-    <message>
-        <source>ufs:</source>
-        <translation type="vanished">ufs:</translation>
-    </message>
-    <message>
-        <source>xfs:</source>
-        <translation type="vanished">xfs:</translation>
-    </message>
-    <message>
-        <source>ocfs2:</source>
-        <translation type="vanished">ocfs2:</translation>
-    </message>
-    <message>
-        <source>extended:</source>
-        <translation type="vanished">расширенный:</translation>
-    </message>
-    <message>
-        <source>unformatted:</source>
-        <translation type="vanished">неформатированный:</translation>
-    </message>
-    <message>
-        <source>unknown:</source>
-        <translation type="vanished">неизвестный:</translation>
-    </message>
-    <message>
-        <source>exfat:</source>
-        <translation type="vanished">exfat:</translation>
-    </message>
-    <message>
-        <source>nilfs2:</source>
-        <translation type="vanished">nilfs2:</translation>
-    </message>
-    <message>
-        <source>lvm2 pv:</source>
-        <translation type="vanished">lvm2 pv:</translation>
-    </message>
-</context>
-<context>
-    <name>ConfigurePageGeneral</name>
-    <message>
-        <source>Partition Alignment</source>
-        <translation type="vanished">Выравнивание разделов</translation>
-    </message>
-    <message>
-        <source>Use cylinder based alignment (Windows XP compatible)</source>
-        <translation type="vanished">Использовать выравнивание по цилиндрам (совместимо с Windows XP)</translation>
-    </message>
-    <message>
-        <source>Sector alignment:</source>
-        <translation type="vanished">Выравнивание секторов:</translation>
-    </message>
-    <message>
-        <source> sectors</source>
-        <translation type="vanished">сектора</translation>
-    </message>
-    <message>
-        <source>Align partitions per default</source>
-        <translation type="vanished">Выравнивать разделы по умолчанию</translation>
-    </message>
-    <message>
-        <source>Logging</source>
-        <translation type="vanished">Протоколирование</translation>
-    </message>
-    <message>
-        <source>Hide messages below:</source>
-        <translation type="vanished">Спрятать сообщения внизу:</translation>
-    </message>
-    <message>
-        <source>Debug</source>
-        <translation type="vanished">Отладка</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <translation type="vanished">Информация</translation>
-    </message>
-    <message>
-        <source>Warning</source>
-        <translation type="vanished">Предупреждение</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation type="vanished">Ошибка</translation>
-    </message>
-    <message>
-        <source>File Systems</source>
-        <translation type="vanished">Файловые системы</translation>
-    </message>
-    <message>
-        <source>Default file system:</source>
-        <translation type="vanished">Файловая система по умолчанию</translation>
-    </message>
-    <message>
-        <source>Shredding</source>
-        <translation type="vanished">Уничтожение</translation>
-    </message>
-    <message>
-        <source>Overwrite with:</source>
-        <translation type="vanished">Перезаписать:</translation>
-    </message>
-    <message>
-        <source>Random data</source>
-        <translation type="vanished">Произвольные данные</translation>
-    </message>
-    <message>
-        <source>Zeros</source>
-        <translation type="vanished">Ноли</translation>
     </message>
 </context>
 <context>
@@ -949,29 +588,6 @@ Output:
     </message>
 </context>
 <context>
-    <name>CreatePartitionTableWidgetBase</name>
-    <message>
-        <source>Choose the type of partition table you want to create:</source>
-        <translation type="vanished">Выберите тип таблицы разделов для создания:</translation>
-    </message>
-    <message>
-        <source>GPT</source>
-        <translation type="vanished">GPT</translation>
-    </message>
-    <message>
-        <source>MS-Dos</source>
-        <translation type="vanished">MS-DOS</translation>
-    </message>
-    <message>
-        <source>(icon)</source>
-        <translation type="vanished">(icon)</translation>
-    </message>
-    <message>
-        <source>&lt;b&gt;Warning:&lt;/b&gt; This will destroy all data on the device!</source>
-        <translation type="vanished">&lt;b&gt;Внимание:&lt;/b&gt;Это уничтожит все данные на устройстве!</translation>
-    </message>
-</context>
-<context>
     <name>CreateUserJob</name>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="51"/>
@@ -1030,17 +646,6 @@ Output:
     </message>
 </context>
 <context>
-    <name>DecryptLuksDialogWidgetBase</name>
-    <message>
-        <source>&amp;Name:</source>
-        <translation type="vanished">&amp;Имя:</translation>
-    </message>
-    <message>
-        <source>&amp;Passphrase:</source>
-        <translation type="vanished">&amp;Пароль:</translation>
-    </message>
-</context>
-<context>
     <name>DeletePartitionJob</name>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="41"/>
@@ -1074,57 +679,6 @@ Output:
         <location filename="../src/modules/partition/core/DeviceModel.cpp" line="79"/>
         <source>%1 - %2 (%3)</source>
         <translation>%1 - %2 (%3)</translation>
-    </message>
-</context>
-<context>
-    <name>DevicePropsWidgetBase</name>
-    <message>
-        <source>Partition table:</source>
-        <translation type="vanished">Таблица разделов:</translation>
-    </message>
-    <message>
-        <source>Cylinder alignment</source>
-        <translation type="vanished">Выравнивание цилиндров</translation>
-    </message>
-    <message>
-        <source>Sector based alignment</source>
-        <translation type="vanished">Выравнивание основанное на секторах</translation>
-    </message>
-    <message>
-        <source>Capacity:</source>
-        <translation type="vanished">Размер:</translation>
-    </message>
-    <message>
-        <source>Total sectors:</source>
-        <translation type="vanished">Всего секторов:</translation>
-    </message>
-    <message>
-        <source>Cylinders/Heads/Sectors:</source>
-        <translation type="vanished">Цилиндров/Головок/Секторов:</translation>
-    </message>
-    <message>
-        <source>Logical sector size:</source>
-        <translation type="vanished">Логический размер сектора:</translation>
-    </message>
-    <message>
-        <source>Physical sector size:</source>
-        <translation type="vanished">Физический размер сектора:</translation>
-    </message>
-    <message>
-        <source>Cylinder size:</source>
-        <translation type="vanished">Размер цилиндра:</translation>
-    </message>
-    <message>
-        <source>Primaries/Max:</source>
-        <translation type="vanished">Основной/Макс:</translation>
-    </message>
-    <message>
-        <source>SMART status:</source>
-        <translation type="vanished">Статус SMART:</translation>
-    </message>
-    <message>
-        <source>More...</source>
-        <translation type="vanished">Больше...</translation>
     </message>
 </context>
 <context>
@@ -1196,96 +750,6 @@ Output:
     </message>
 </context>
 <context>
-    <name>EditMountOptionsDialogWidgetBase</name>
-    <message>
-        <source>Edit Mount Options</source>
-        <translation type="vanished">Править опции монтирования</translation>
-    </message>
-    <message>
-        <source>Edit the mount options for this file system:</source>
-        <translation type="vanished">Править опции монтирования для этой файловой системы:</translation>
-    </message>
-</context>
-<context>
-    <name>EditMountPointDialogWidgetBase</name>
-    <message>
-        <source>Path:</source>
-        <translation type="vanished">Путь:</translation>
-    </message>
-    <message>
-        <source>Select...</source>
-        <translation type="vanished">Выбрать...</translation>
-    </message>
-    <message>
-        <source>Type:</source>
-        <translation type="vanished">Тип:</translation>
-    </message>
-    <message>
-        <source>Options:</source>
-        <translation type="vanished">Опции:</translation>
-    </message>
-    <message>
-        <source>Read-only</source>
-        <translation type="vanished">Только для чтения</translation>
-    </message>
-    <message>
-        <source>Users can mount and unmount</source>
-        <translation type="vanished">Пользователям разрешается монтировать и отмонтировать</translation>
-    </message>
-    <message>
-        <source>No automatic mount</source>
-        <translation type="vanished">Не монтировать автоматически</translation>
-    </message>
-    <message>
-        <source>No update of file access times</source>
-        <translation type="vanished">Не обновлять время доступа к файлам</translation>
-    </message>
-    <message>
-        <source>Synchronous access</source>
-        <translation type="vanished">Синхронный доступ</translation>
-    </message>
-    <message>
-        <source>No update of directory access times</source>
-        <translation type="vanished">Не обновлять время доступа к директориям</translation>
-    </message>
-    <message>
-        <source>No binary execution</source>
-        <translation type="vanished">Не разрешать запуск бинарных файлов</translation>
-    </message>
-    <message>
-        <source>Update access times relative to modification</source>
-        <translation type="vanished">Обновлять время доступа в момент изменений</translation>
-    </message>
-    <message>
-        <source>More...</source>
-        <translation type="vanished">Больше...</translation>
-    </message>
-    <message>
-        <source>Dump Frequency:</source>
-        <translation type="vanished">Частота дампов:</translation>
-    </message>
-    <message>
-        <source>Pass Number:</source>
-        <translation type="vanished">Порядок проверки:</translation>
-    </message>
-    <message>
-        <source>Device Node</source>
-        <translation type="vanished">Узел устройства:</translation>
-    </message>
-    <message>
-        <source>UUID</source>
-        <translation type="vanished">UUID</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation type="vanished">Метка</translation>
-    </message>
-    <message>
-        <source>Identify by:</source>
-        <translation type="vanished">Определять по:</translation>
-    </message>
-</context>
-<context>
     <name>EraseDiskPage</name>
     <message>
         <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="50"/>
@@ -1301,72 +765,6 @@ Output:
         <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="209"/>
         <source>After:</source>
         <translation>После:</translation>
-    </message>
-</context>
-<context>
-    <name>FileSystemSupportDialogWidgetBase</name>
-    <message>
-        <source>This table shows which file systems are supported and which specific operations can be performed on them.
-Some file systems need external tools to be installed for them to be supported. But not all operations can be performed on all file systems, even if all required tools are installed. Please see the documentation for details. </source>
-        <translation type="vanished">Эта таблица показывает какие файловые системы поддерживаются и какие особые операции могут быть с ними проведены.
-Некоторые файловые системы требуют внешних програм для поддержки. Не все операции поддерживаются всеми файловыми системами, даже если все програмы присутствуют. Пожалуйста, обратитесь к документации за пояснениями.</translation>
-    </message>
-    <message>
-        <source>File System</source>
-        <translation type="vanished">Файловая система</translation>
-    </message>
-    <message>
-        <source>Create</source>
-        <translation type="vanished">Создать</translation>
-    </message>
-    <message>
-        <source>Grow</source>
-        <translation type="vanished">Увеличить</translation>
-    </message>
-    <message>
-        <source>Shrink</source>
-        <translation type="vanished">Уменьшить</translation>
-    </message>
-    <message>
-        <source>Move</source>
-        <translation type="vanished">Переместить</translation>
-    </message>
-    <message>
-        <source>Copy</source>
-        <translation type="vanished">Копировать</translation>
-    </message>
-    <message>
-        <source>Check</source>
-        <translation type="vanished">Проверить</translation>
-    </message>
-    <message>
-        <source>Read Label</source>
-        <translation type="vanished">Прочитать метку</translation>
-    </message>
-    <message>
-        <source>Write Label</source>
-        <translation type="vanished">Записать метку</translation>
-    </message>
-    <message>
-        <source>Read Usage</source>
-        <translation type="vanished">Опросить доступное место</translation>
-    </message>
-    <message>
-        <source>Backup</source>
-        <translation type="vanished">Резервная копия</translation>
-    </message>
-    <message>
-        <source>Restore</source>
-        <translation type="vanished">Восстановить</translation>
-    </message>
-    <message>
-        <source>Support Tools</source>
-        <translation type="vanished">Инструменты поддержки</translation>
-    </message>
-    <message>
-        <source>Rescan Support</source>
-        <comment>@action:button</comment>
-        <translation type="vanished">Пересканировать поддержку</translation>
     </message>
 </context>
 <context>
@@ -1417,10 +815,6 @@ Some file systems need external tools to be installed for them to be supported. 
 </context>
 <context>
     <name>GreetingPage</name>
-    <message>
-        <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer.</source>
-        <translation type="vanished">&lt;h1&gt;Добро пожаловать в установщик %1.&lt;/h1&gt;&lt;br/&gt;Эта программа поможет установить %2 на этом компьютере, задав Вам несколько вопросов.</translation>
-    </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="14"/>
         <source>Form</source>
@@ -1529,34 +923,6 @@ Some file systems need external tools to be installed for them to be supported. 
         <location filename="../src/modules/locale/LocaleViewStep.cpp" line="79"/>
         <source>Location</source>
         <translation>Местоположение</translation>
-    </message>
-</context>
-<context>
-    <name>MainWindowBase</name>
-    <message>
-        <source>KDE Partition Manager</source>
-        <comment>@title:window</comment>
-        <translation type="vanished">Редактор Разделов KDE</translation>
-    </message>
-    <message>
-        <source>Devices</source>
-        <comment>@title:window</comment>
-        <translation type="vanished">Устройства</translation>
-    </message>
-    <message>
-        <source>Pending Operations</source>
-        <comment>@title:window</comment>
-        <translation type="vanished">Операции для выполнения</translation>
-    </message>
-    <message>
-        <source>Information</source>
-        <comment>@title:window</comment>
-        <translation type="vanished">Информация</translation>
-    </message>
-    <message>
-        <source>Log Output</source>
-        <comment>@title:window</comment>
-        <translation type="vanished">Протокол</translation>
     </message>
 </context>
 <context>
@@ -1695,140 +1061,6 @@ Some file systems need external tools to be installed for them to be supported. 
         <location filename="../src/modules/users/page_usersetup.ui" line="606"/>
         <source>Require my password to log in</source>
         <translation>Требовать пароль для входа</translation>
-    </message>
-</context>
-<context>
-    <name>PartPropsWidgetBase</name>
-    <message>
-        <source>File system:</source>
-        <comment>@label:listbox</comment>
-        <translation type="vanished">Файловая система:</translation>
-    </message>
-    <message>
-        <source>Label:</source>
-        <comment>@label</comment>
-        <translation type="vanished">Метка:</translation>
-    </message>
-    <message>
-        <source>This file system does not support setting a label.</source>
-        <comment>@label</comment>
-        <translation type="vanished">Эта файловая система не поддерживает установку меток.</translation>
-    </message>
-    <message>
-        <source>Recreate existing file system</source>
-        <comment>@action:button</comment>
-        <translation type="vanished">Пересоздать существующую файловую систему</translation>
-    </message>
-    <message>
-        <source>Mount point:</source>
-        <comment>@label</comment>
-        <translation type="vanished">Точка монтирования:</translation>
-    </message>
-    <message>
-        <source>Partition type:</source>
-        <comment>@label</comment>
-        <translation type="vanished">Тип раздела:</translation>
-    </message>
-    <message>
-        <source>Status:</source>
-        <comment>@label</comment>
-        <translation type="vanished">Статус:</translation>
-    </message>
-    <message>
-        <source>UUID:</source>
-        <comment>@label</comment>
-        <translation type="vanished">UUID:</translation>
-    </message>
-    <message>
-        <source>Size:</source>
-        <comment>@label</comment>
-        <translation type="vanished">Размер:</translation>
-    </message>
-    <message>
-        <source>Available:</source>
-        <comment>@label partition capacity available</comment>
-        <translation type="vanished">Доступно:</translation>
-    </message>
-    <message>
-        <source>Used:</source>
-        <comment>@label partition capacity used</comment>
-        <translation type="vanished">Использовано:</translation>
-    </message>
-    <message>
-        <source>First sector:</source>
-        <comment>@label</comment>
-        <translation type="vanished">Первый сектор:</translation>
-    </message>
-    <message>
-        <source>Last sector:</source>
-        <comment>@label</comment>
-        <translation type="vanished">Последний сектор:</translation>
-    </message>
-    <message>
-        <source>Number of sectors:</source>
-        <comment>@label</comment>
-        <translation type="vanished">Количество секторов:</translation>
-    </message>
-    <message>
-        <source>Flags:</source>
-        <comment>@label</comment>
-        <translation type="vanished">Флаги:</translation>
-    </message>
-</context>
-<context>
-    <name>PartitionManagerWidgetBase</name>
-    <message>
-        <source>KDE Partition Manager</source>
-        <comment>@title:window</comment>
-        <translation type="vanished">Редактор Разделов KDE</translation>
-    </message>
-    <message>
-        <source>Partition</source>
-        <translation type="vanished">Раздел</translation>
-    </message>
-    <message>
-        <source>Type</source>
-        <translation type="vanished">Тип</translation>
-    </message>
-    <message>
-        <source>Mount Point</source>
-        <translation type="vanished">Точка монтирования</translation>
-    </message>
-    <message>
-        <source>Label</source>
-        <translation type="vanished">Метка</translation>
-    </message>
-    <message>
-        <source>UUID</source>
-        <translation type="vanished">UUID</translation>
-    </message>
-    <message>
-        <source>Size</source>
-        <translation type="vanished">Размер</translation>
-    </message>
-    <message>
-        <source>Used</source>
-        <translation type="vanished">Использовано</translation>
-    </message>
-    <message>
-        <source>Available</source>
-        <translation type="vanished">Доступно</translation>
-    </message>
-    <message>
-        <source>First Sector</source>
-        <translation type="vanished">Первый сектор</translation>
-    </message>
-    <message>
-        <source>Last Sector</source>
-        <translation type="vanished">Последний сектор</translation>
-    </message>
-    <message>
-        <source>Number of Sectors</source>
-        <translation type="vanished">Количество секторов</translation>
-    </message>
-    <message>
-        <source>Flags</source>
-        <translation type="vanished">Флаги</translation>
     </message>
 </context>
 <context>
@@ -2018,101 +1250,6 @@ Installation can continue, but some features might be disabled.</source>
     </message>
 </context>
 <context>
-    <name>ReleaseDialog</name>
-    <message>
-        <source>KDE Release Builder</source>
-        <translation type="vanished">KDE Release Builder</translation>
-    </message>
-    <message>
-        <source>Application</source>
-        <translation type="vanished">Приложение</translation>
-    </message>
-    <message>
-        <source>Name:</source>
-        <translation type="vanished">Имя:</translation>
-    </message>
-    <message>
-        <source>&amp;Version:</source>
-        <translation type="vanished">&amp;Версия:</translation>
-    </message>
-    <message>
-        <source>Repository and Revision</source>
-        <translation type="vanished">Репозиторий и ревизия:</translation>
-    </message>
-    <message>
-        <source>&amp;Checkout From:</source>
-        <translation type="vanished">&amp;Источник checkout:</translation>
-    </message>
-    <message>
-        <source>trunk</source>
-        <translation type="vanished">раздел</translation>
-    </message>
-    <message>
-        <source>branches</source>
-        <translation type="vanished">ветки</translation>
-    </message>
-    <message>
-        <source>tags</source>
-        <translation type="vanished">тэги</translation>
-    </message>
-    <message>
-        <source>Ta&amp;g/Branch:</source>
-        <translation type="vanished">Т&amp;эг/Ветвь:</translation>
-    </message>
-    <message>
-        <source>&amp;SVN Access:</source>
-        <translation type="vanished">&amp;SVN доступ:</translation>
-    </message>
-    <message>
-        <source>anonsvn</source>
-        <translation type="vanished">anonsvn</translation>
-    </message>
-    <message>
-        <source>https</source>
-        <translation type="vanished">https</translation>
-    </message>
-    <message>
-        <source>svn+ssh</source>
-        <translation type="vanished">svn+ssh</translation>
-    </message>
-    <message>
-        <source>&amp;User:</source>
-        <translation type="vanished">&amp;Пользователь:</translation>
-    </message>
-    <message>
-        <source>Options</source>
-        <translation type="vanished">Опции</translation>
-    </message>
-    <message>
-        <source>Get &amp;Documentation</source>
-        <translation type="vanished">Получить &amp;документацию</translation>
-    </message>
-    <message>
-        <source>Get &amp;Translations</source>
-        <translation type="vanished">Получить п&amp;ереводы</translation>
-    </message>
-    <message>
-        <source>C&amp;reate Tag</source>
-        <translation type="vanished">&amp;Создать тэг</translation>
-    </message>
-    <message>
-        <source>S&amp;kip translations below completion:</source>
-        <translation type="vanished">П&amp;ропустить незавершенные переводы:</translation>
-    </message>
-    <message>
-        <source> %</source>
-        <translation type="vanished">%</translation>
-    </message>
-    <message>
-        <source>Create Tar&amp;ball</source>
-        <translation type="vanished">Со&amp;здать Tarball</translation>
-    </message>
-    <message>
-        <source>Apply &amp;fixes</source>
-        <translation type="vanished">Применить п&amp;атчи</translation>
-    </message>
-</context>
-<context>
     <name>ReplacePage</name>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.ui" line="14"/>
@@ -2126,7 +1263,7 @@ Installation can continue, but some features might be disabled.</source>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="109"/>
-        <source>Select where to install %1.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;this will delete all files on the selected partition.</source>
+        <source>Select where to install %1.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;this will delete all files on the selected partition. &lt;font color=&quot;red&quot;&gt;Do not use for UEFI &lt;/font&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2326,193 +1463,11 @@ Installation can continue, but some features might be disabled.</source>
     </message>
 </context>
 <context>
-    <name>SizeDetailsWidgetBase</name>
-    <message>
-        <source>First sector:</source>
-        <comment>@label:listbox</comment>
-        <translation type="vanished">Первый сектор:</translation>
-    </message>
-    <message>
-        <source>Last sector:</source>
-        <comment>@label:listbox</comment>
-        <translation type="vanished">Последний сектор:</translation>
-    </message>
-    <message>
-        <source>Align partition</source>
-        <translation type="vanished">Выравнивание разделов</translation>
-    </message>
-</context>
-<context>
-    <name>SizeDialogWidgetBase</name>
-    <message>
-        <source>Partition type:</source>
-        <comment>@label:listbox</comment>
-        <translation type="vanished">Тип раздела:</translation>
-    </message>
-    <message>
-        <source>Primary</source>
-        <translation type="vanished">Основной</translation>
-    </message>
-    <message>
-        <source>Extended</source>
-        <translation type="vanished">Расширенный</translation>
-    </message>
-    <message>
-        <source>Logical</source>
-        <translation type="vanished">Логический</translation>
-    </message>
-    <message>
-        <source>File system:</source>
-        <comment>@label:listbox</comment>
-        <translation type="vanished">Файловая система:</translation>
-    </message>
-    <message>
-        <source>Label:</source>
-        <comment>@label</comment>
-        <translation type="vanished">Метка:</translation>
-    </message>
-    <message>
-        <source>This file system does not support setting a label.</source>
-        <comment>@label</comment>
-        <translation type="vanished">Эта файловая система не поддерживает установку меток.</translation>
-    </message>
-    <message>
-        <source>Minimum size:</source>
-        <comment>@label</comment>
-        <translation type="vanished">Минимальный размер:</translation>
-    </message>
-    <message>
-        <source>Maximum size:</source>
-        <comment>@label</comment>
-        <translation type="vanished">Максимальный размер:</translation>
-    </message>
-    <message>
-        <source>Free space before:</source>
-        <comment>@label:listbox</comment>
-        <translation type="vanished">Доступное место до:</translation>
-    </message>
-    <message>
-        <source>Size:</source>
-        <comment>@label:listbox</comment>
-        <translation type="vanished">Размер:</translation>
-    </message>
-    <message>
-        <source>Free space after:</source>
-        <comment>@label:listbox</comment>
-        <translation type="vanished">Свободное место после:</translation>
-    </message>
-</context>
-<context>
-    <name>SmartDialogWidgetBase</name>
-    <message>
-        <source>SMART status:</source>
-        <translation type="vanished">Статус SMART:</translation>
-    </message>
-    <message>
-        <source>Model:</source>
-        <translation type="vanished">Модель:</translation>
-    </message>
-    <message>
-        <source>Serial number:</source>
-        <translation type="vanished">Серийный номер:</translation>
-    </message>
-    <message>
-        <source>Firmware revision:</source>
-        <translation type="vanished">Версия прошивки:</translation>
-    </message>
-    <message>
-        <source>Temperature:</source>
-        <translation type="vanished">Температура:</translation>
-    </message>
-    <message>
-        <source>Bad sectors:</source>
-        <translation type="vanished">Испорченные сектора:</translation>
-    </message>
-    <message>
-        <source>Powered on for:</source>
-        <translation type="vanished">Работает в течении:</translation>
-    </message>
-    <message>
-        <source>Power cycles:</source>
-        <translation type="vanished">Рабочих циклов:</translation>
-    </message>
-    <message>
-        <source>Id</source>
-        <translation type="vanished">Id</translation>
-    </message>
-    <message>
-        <source>Attribute</source>
-        <translation type="vanished">Свойства</translation>
-    </message>
-    <message>
-        <source>Failure Type</source>
-        <translation type="vanished">Тип сбоя</translation>
-    </message>
-    <message>
-        <source>Update Type</source>
-        <translation type="vanished">Тип Обновления</translation>
-    </message>
-    <message>
-        <source>Worst</source>
-        <translation type="vanished">Худший</translation>
-    </message>
-    <message>
-        <source>Current</source>
-        <translation type="vanished">Текущий</translation>
-    </message>
-    <message>
-        <source>Threshold</source>
-        <translation type="vanished">Порог</translation>
-    </message>
-    <message>
-        <source>Raw</source>
-        <translation type="vanished">Как есть</translation>
-    </message>
-    <message>
-        <source>Assessment</source>
-        <translation type="vanished">Оценка</translation>
-    </message>
-    <message>
-        <source>Value</source>
-        <translation type="vanished">Значение</translation>
-    </message>
-    <message>
-        <source>Overall assessment:</source>
-        <translation type="vanished">Общая оценка:</translation>
-    </message>
-    <message>
-        <source>Self tests:</source>
-        <translation type="vanished">Самодиагностика:</translation>
-    </message>
-</context>
-<context>
     <name>SummaryViewStep</name>
     <message>
         <location filename="../src/modules/summary/SummaryViewStep.cpp" line="41"/>
         <source>Summary</source>
         <translation>Итог</translation>
-    </message>
-</context>
-<context>
-    <name>TreeLogBase</name>
-    <message>
-        <source>Sev.</source>
-        <comment>@title:column Severity of a log entry / log level. Text must be very short.</comment>
-        <translation type="vanished">Важ.</translation>
-    </message>
-    <message>
-        <source>Severity</source>
-        <translation type="vanished">Важность</translation>
-    </message>
-    <message>
-        <source>Time</source>
-        <comment>@title:column a time stamp of a log entry</comment>
-        <translation type="vanished">Время</translation>
-    </message>
-    <message>
-        <source>Message</source>
-        <comment>@title:column the text message of a log entry</comment>
-        <translation type="vanished">Сообщение</translation>
     </message>
 </context>
 <context>
