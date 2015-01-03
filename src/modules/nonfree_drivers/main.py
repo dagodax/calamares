@@ -37,15 +37,6 @@ def run():
         with misc.raised_privileges():
             os.remove(db_lock)
 
-    # setup alsa volume levels, alsa blacklist for the pc speaker,
-    # blacklist for broken realtek nics
-    print('setup alsa config')
-    files_to_copy = ['/etc/asound.state', '/etc/modprobe.d/alsa_blacklist.conf',
-                     '/etc/modprobe.d/realtek_blacklist.conf']
-    for f in files_to_copy:
-        if os.path.exists(f):
-            shutil.copy2(f, os.path.join(install_path))
-
     # setup proprietary drivers, if detected
     print('setup proprietary drivers')
     if os.path.exists('/tmp/nvidia'):
