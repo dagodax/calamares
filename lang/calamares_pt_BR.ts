@@ -14,7 +14,53 @@
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="167"/>
         <source>With this operation, the partition &lt;b&gt;%1&lt;/b&gt; which contains %4 will be shrunk to %2MB and a new %3MB partition will be created for %5. &lt;font color=&quot;red&quot;&gt;Do not use for UEFI. &lt;/font&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Com esta operação, a partição &lt;b&gt;%1&lt;/b&gt; que contém %4 será encolhida para %2MB e uma nova partição de %3MB será criada para %5. &lt;font color=&quot;red&quot;&gt;Não usar para UEFI. &lt;/font&gt;</translation>
+    </message>
+</context>
+<context>
+    <name>ApplyProgressDetailsWidgetBase</name>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdetailswidgetbase.ui" line="37"/>
+        <source>Save</source>
+        <translation>Salvar</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdetailswidgetbase.ui" line="44"/>
+        <source>Open in External Browser</source>
+        <translation>Abrir em um Navegador externo</translation>
+    </message>
+</context>
+<context>
+    <name>ApplyProgressDialogWidgetBase</name>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="33"/>
+        <source>Operations and Jobs</source>
+        <translation>Operações e Tarefas</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="38"/>
+        <source>Time Elapsed</source>
+        <translation>Tempo transcorrido</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="64"/>
+        <source>Total Time: 00:00:00</source>
+        <translation>Tempo Total: 00:00:00</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="81"/>
+        <source>Operation: %p%</source>
+        <translation>Operação: %p%</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="91"/>
+        <source>Status</source>
+        <translation>Estado</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="107"/>
+        <source>Total: %p%</source>
+        <translation>Total: %p%</translation>
     </message>
 </context>
 <context>
@@ -394,7 +440,7 @@ Saída:
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="240"/>
         <source>&lt;b&gt;Something else&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a GPT partition table and &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Outra opção&lt;/b&gt;&lt;br/&gt;Você pode criar ou redimensionar partições você mesmo, ou escolher múltiplas partições para %1.  Use esta opção para instalações UEFI, ter uma tabela de partições GPT e uma partição /boot &lt;b&gt;fat32 512Mb é mandatório para instalações UEFI&lt;/b&gt;, ou use uma partição existente sem formatação, ou crie uma.</translation>
     </message>
 </context>
 <context>
@@ -418,6 +464,295 @@ Saída:
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="70"/>
         <source>Cleared all mounts for %1</source>
         <translation>Limpo todas as montagens para %1</translation>
+    </message>
+</context>
+<context>
+    <name>ConfigurePageAdvanced</name>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="23"/>
+        <source>Permissions</source>
+        <translation>Permissões</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="35"/>
+        <source>Allow applying operations without administrator privileges</source>
+        <translation>Permitir aplicar operações sem privilégios de administrador</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="51"/>
+        <source>Backend</source>
+        <translation>Back-end</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="57"/>
+        <source>Active backend:</source>
+        <translation>Back-end ativo:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="79"/>
+        <source>Units</source>
+        <translation>Unidades</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="85"/>
+        <source>Preferred unit:</source>
+        <translation>Unidade preferida:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="96"/>
+        <source>Byte</source>
+        <translation>Byte</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="101"/>
+        <source>KiB</source>
+        <translation>KB</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="106"/>
+        <source>MiB</source>
+        <translation>MB</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="111"/>
+        <source>GiB</source>
+        <translation>GB</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="116"/>
+        <source>TiB</source>
+        <translation>TB</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="121"/>
+        <source>PiB</source>
+        <translation>PB</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="126"/>
+        <source>EiB</source>
+        <translation>EB</translation>
+    </message>
+</context>
+<context>
+    <name>ConfigurePageFileSystemColors</name>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="23"/>
+        <source>File Systems</source>
+        <translation>Sistemas de arquivos</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="29"/>
+        <source>luks:</source>
+        <translation>luks:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="45"/>
+        <source>ntfs:</source>
+        <translation>ntfs:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="58"/>
+        <source>ext2:</source>
+        <translation>ext2:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="87"/>
+        <source>ext3:</source>
+        <translation>ext3:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="116"/>
+        <source>ext4:</source>
+        <translation>ext4:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="132"/>
+        <source>btrfs:</source>
+        <translation>btrfs:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="174"/>
+        <source>linuxswap:</source>
+        <translation>linuxswap:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="190"/>
+        <source>fat16:</source>
+        <translation>fat16:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="219"/>
+        <source>fat32:</source>
+        <translation>fat32:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="248"/>
+        <source>zfs:</source>
+        <translation>zfs:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="264"/>
+        <source>reiserfs:</source>
+        <translation>reiserfs:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="293"/>
+        <source>reiser4:</source>
+        <translation>reiser4:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="322"/>
+        <source>hpfs:</source>
+        <translation>hpfs:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="338"/>
+        <source>jfs</source>
+        <translation>jfs</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="367"/>
+        <source>hfs:</source>
+        <translation>hfs:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="396"/>
+        <source>hfsplus:</source>
+        <translation>hfsplus:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="412"/>
+        <source>ufs:</source>
+        <translation>ufs:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="441"/>
+        <source>xfs:</source>
+        <translation>xfs:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="470"/>
+        <source>ocfs2:</source>
+        <translation>ocfs2:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="489"/>
+        <source>extended:</source>
+        <translation>estendida:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="518"/>
+        <source>unformatted:</source>
+        <translation>não formatado:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="547"/>
+        <source>unknown:</source>
+        <translation>desconhecido:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="570"/>
+        <source>exfat:</source>
+        <translation>exfat:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="583"/>
+        <source>nilfs2:</source>
+        <translation>nilfs2:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="622"/>
+        <source>lvm2 pv:</source>
+        <translation>lvm2 pv:</translation>
+    </message>
+</context>
+<context>
+    <name>ConfigurePageGeneral</name>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="23"/>
+        <source>Partition Alignment</source>
+        <translation>Alinhamento de partição</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="29"/>
+        <source>Use cylinder based alignment (Windows XP compatible)</source>
+        <translation>Use o alinhamento baseado em cilindro (compatível com Windows XP)</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="42"/>
+        <source>Sector alignment:</source>
+        <translation>Alinhamento de setor:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="55"/>
+        <source> sectors</source>
+        <translation>setores</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="71"/>
+        <source>Align partitions per default</source>
+        <translation>Alinhe partições por padrão</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="90"/>
+        <source>Logging</source>
+        <translation>Entrando</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="96"/>
+        <source>Hide messages below:</source>
+        <translation>Esconder mensagens abaixo:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="107"/>
+        <source>Debug</source>
+        <translation>Depuração</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="112"/>
+        <source>Information</source>
+        <translation>Informação</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="117"/>
+        <source>Warning</source>
+        <translation>Atenção</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="122"/>
+        <source>Error</source>
+        <translation>Erro</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="139"/>
+        <source>File Systems</source>
+        <translation>Sistemas de arquivos</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="145"/>
+        <source>Default file system:</source>
+        <translation>Sistema de arquivos padrão:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="167"/>
+        <source>Shredding</source>
+        <translation>Apagando</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="173"/>
+        <source>Overwrite with:</source>
+        <translation>Sobrescrever com:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="180"/>
+        <source>Random data</source>
+        <translation>Dados aleatórios</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="190"/>
+        <source>Zeros</source>
+        <translation>Zeros</translation>
     </message>
 </context>
 <context>
@@ -588,6 +923,34 @@ Saída:
     </message>
 </context>
 <context>
+    <name>CreatePartitionTableWidgetBase</name>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/createpartitiontablewidgetbase.ui" line="20"/>
+        <source>Choose the type of partition table you want to create:</source>
+        <translation>Escolha o tipo de tabela de partições que deseja criar:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/createpartitiontablewidgetbase.ui" line="29"/>
+        <source>GPT</source>
+        <translation>GPT</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/createpartitiontablewidgetbase.ui" line="39"/>
+        <source>MS-Dos</source>
+        <translation>MS-Dos</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/createpartitiontablewidgetbase.ui" line="66"/>
+        <source>(icon)</source>
+        <translation>(ícone)</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/createpartitiontablewidgetbase.ui" line="79"/>
+        <source>&lt;b&gt;Warning:&lt;/b&gt; This will destroy all data on the device!</source>
+        <translation>&lt;b&gt;Atenção:&lt;/b&gt; Isso apagará todos os dados no dispositivo!</translation>
+    </message>
+</context>
+<context>
     <name>CreateUserJob</name>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="51"/>
@@ -646,6 +1009,19 @@ Saída:
     </message>
 </context>
 <context>
+    <name>DecryptLuksDialogWidgetBase</name>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/decryptluksdialogwidgetbase.ui" line="22"/>
+        <source>&amp;Name:</source>
+        <translation>&amp;Nome:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/decryptluksdialogwidgetbase.ui" line="35"/>
+        <source>&amp;Passphrase:</source>
+        <translation>Senha:</translation>
+    </message>
+</context>
+<context>
     <name>DeletePartitionJob</name>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="41"/>
@@ -679,6 +1055,69 @@ Saída:
         <location filename="../src/modules/partition/core/DeviceModel.cpp" line="79"/>
         <source>%1 - %2 (%3)</source>
         <translation>%1 - %2 (%3)</translation>
+    </message>
+</context>
+<context>
+    <name>DevicePropsWidgetBase</name>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="58"/>
+        <source>Partition table:</source>
+        <translation>Tabela de partições:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="77"/>
+        <source>Cylinder alignment</source>
+        <translation>Arredondar para o tamanho do cilindro</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="84"/>
+        <source>Sector based alignment</source>
+        <translation>Arredondar para o tamanho do setor</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="113"/>
+        <source>Capacity:</source>
+        <translation>Capacidade:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="130"/>
+        <source>Total sectors:</source>
+        <translation>Total de setores:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="160"/>
+        <source>Cylinders/Heads/Sectors:</source>
+        <translation>Cilindros/Cabeças/Setores:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="183"/>
+        <source>Logical sector size:</source>
+        <translation>Tamanho do setor lógico:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="200"/>
+        <source>Physical sector size:</source>
+        <translation>Tamanho do setor físico:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="217"/>
+        <source>Cylinder size:</source>
+        <translation>Tamanho do cilindro:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="241"/>
+        <source>Primaries/Max:</source>
+        <translation>Primários/Máx:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="265"/>
+        <source>SMART status:</source>
+        <translation>Estado (SMART):</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="303"/>
+        <source>More...</source>
+        <translation>Mais...</translation>
     </message>
 </context>
 <context>
@@ -750,6 +1189,117 @@ Saída:
     </message>
 </context>
 <context>
+    <name>EditMountOptionsDialogWidgetBase</name>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountoptionsdialogwidgetbase.ui" line="14"/>
+        <source>Edit Mount Options</source>
+        <translation>Editar Opções de Montagem</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountoptionsdialogwidgetbase.ui" line="20"/>
+        <source>Edit the mount options for this file system:</source>
+        <translation>Editar opções de montagem para este sistema de arquivos:</translation>
+    </message>
+</context>
+<context>
+    <name>EditMountPointDialogWidgetBase</name>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="17"/>
+        <source>Path:</source>
+        <translation>Caminho:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="46"/>
+        <source>Select...</source>
+        <translation>Selecione...</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="53"/>
+        <source>Type:</source>
+        <translation>Tipo:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="63"/>
+        <source>Options:</source>
+        <translation>Opções:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="73"/>
+        <source>Read-only</source>
+        <translation>Somente leitura</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="80"/>
+        <source>Users can mount and unmount</source>
+        <translation>Os usuários podem montar e desmontar</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="87"/>
+        <source>No automatic mount</source>
+        <translation>Sem montagem automática</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="94"/>
+        <source>No update of file access times</source>
+        <translation>Sem atualização nos tempos de acesso do arquivo</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="101"/>
+        <source>Synchronous access</source>
+        <translation>Acesso síncrono</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="108"/>
+        <source>No update of directory access times</source>
+        <translation>Sem atualização nos tempos de acesso do diretório</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="115"/>
+        <source>No binary execution</source>
+        <translation>Sem execução binária</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="122"/>
+        <source>Update access times relative to modification</source>
+        <translation>Atualiza os tempos de acesso relativo à modificações</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="142"/>
+        <source>More...</source>
+        <translation>Mais...</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="149"/>
+        <source>Dump Frequency:</source>
+        <translation>Frequência de Esvaziamento:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="178"/>
+        <source>Pass Number:</source>
+        <translation>Senha:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="285"/>
+        <source>Device Node</source>
+        <translation>Nódulo do dispositivo</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="295"/>
+        <source>UUID</source>
+        <translation>UUID</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="302"/>
+        <source>Label</source>
+        <translation>Rótulo</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="309"/>
+        <source>Identify by:</source>
+        <translation>Identificar por:</translation>
+    </message>
+</context>
+<context>
     <name>EraseDiskPage</name>
     <message>
         <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="50"/>
@@ -765,6 +1315,87 @@ Saída:
         <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="209"/>
         <source>After:</source>
         <translation>Depois:</translation>
+    </message>
+</context>
+<context>
+    <name>FileSystemSupportDialogWidgetBase</name>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="17"/>
+        <source>This table shows which file systems are supported and which specific operations can be performed on them.
+Some file systems need external tools to be installed for them to be supported. But not all operations can be performed on all file systems, even if all required tools are installed. Please see the documentation for details. </source>
+        <translation>Esta tabela mostra os sistemas de arquivos suportados e as operações possíveis de serem executadas.
+Alguns sistemas de arquivos necessitam de ferramentas externas para serem suportados. Contudo, mesmo com todas as ferramentas instaladas, nem todas as operações podem ser realizadas em todos os sistemas de arquivo. Consulte a documentação para maiores informações.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="65"/>
+        <source>File System</source>
+        <translation>Sistema de arquivos</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="70"/>
+        <source>Create</source>
+        <translation>Criar</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="75"/>
+        <source>Grow</source>
+        <translation>Aumentar</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="80"/>
+        <source>Shrink</source>
+        <translation>Diminuir</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="85"/>
+        <source>Move</source>
+        <translation>Mover</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="90"/>
+        <source>Copy</source>
+        <translation>Copiar</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="95"/>
+        <source>Check</source>
+        <translation>Verificar</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="100"/>
+        <source>Read Label</source>
+        <translation>Ler Rótulo</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="105"/>
+        <source>Write Label</source>
+        <translation>Gravar Rótulo</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="110"/>
+        <source>Read Usage</source>
+        <translation>Verificar o Uso</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="115"/>
+        <source>Backup</source>
+        <translation>Cópia de segurança</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="120"/>
+        <source>Restore</source>
+        <translation>Restaurar</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="125"/>
+        <source>Support Tools</source>
+        <translation>Ferramentas Auxiliares</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="135"/>
+        <source>Rescan Support</source>
+        <comment>@action:button</comment>
+        <translation>Suporte para Novo Exame</translation>
     </message>
 </context>
 <context>
@@ -926,6 +1557,39 @@ Saída:
     </message>
 </context>
 <context>
+    <name>MainWindowBase</name>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/mainwindowbase.ui" line="14"/>
+        <source>KDE Partition Manager</source>
+        <comment>@title:window</comment>
+        <translation>Gerenciador de partições do KDE</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/mainwindowbase.ui" line="24"/>
+        <source>Devices</source>
+        <comment>@title:window</comment>
+        <translation>Dispositivos</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/mainwindowbase.ui" line="38"/>
+        <source>Pending Operations</source>
+        <comment>@title:window</comment>
+        <translation>Operações pendentes</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/mainwindowbase.ui" line="49"/>
+        <source>Information</source>
+        <comment>@title:window</comment>
+        <translation>Informação</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/mainwindowbase.ui" line="63"/>
+        <source>Log Output</source>
+        <comment>@title:window</comment>
+        <translation>Log de saída</translation>
+    </message>
+</context>
+<context>
     <name>MoveFileSystemJob</name>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="66"/>
@@ -1061,6 +1725,168 @@ Saída:
         <location filename="../src/modules/users/page_usersetup.ui" line="606"/>
         <source>Require my password to log in</source>
         <translation>Exigir minha senha para entrar</translation>
+    </message>
+</context>
+<context>
+    <name>PartPropsWidgetBase</name>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="49"/>
+        <source>File system:</source>
+        <comment>@label:listbox</comment>
+        <translation>Sistema de arquivos:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="65"/>
+        <source>Label:</source>
+        <comment>@label</comment>
+        <translation>Rótulo:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="82"/>
+        <source>This file system does not support setting a label.</source>
+        <comment>@label</comment>
+        <translation>Este sistema de arquivos não suporta etiquetas.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="92"/>
+        <source>Recreate existing file system</source>
+        <comment>@action:button</comment>
+        <translation>Recriando sistema de arquivos existente</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="106"/>
+        <source>Mount point:</source>
+        <comment>@label</comment>
+        <translation>Ponto de montagem:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="123"/>
+        <source>Partition type:</source>
+        <comment>@label</comment>
+        <translation>Tipo de partição:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="140"/>
+        <source>Status:</source>
+        <comment>@label</comment>
+        <translation>Estado:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="157"/>
+        <source>UUID:</source>
+        <comment>@label</comment>
+        <translation>UUID:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="187"/>
+        <source>Size:</source>
+        <comment>@label</comment>
+        <translation>Tamanho:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="210"/>
+        <source>Available:</source>
+        <comment>@label partition capacity available</comment>
+        <translation>Disponível:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="227"/>
+        <source>Used:</source>
+        <comment>@label partition capacity used</comment>
+        <translation>Usado:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="251"/>
+        <source>First sector:</source>
+        <comment>@label</comment>
+        <translation>Primeiro setor:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="268"/>
+        <source>Last sector:</source>
+        <comment>@label</comment>
+        <translation>Último setor:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="285"/>
+        <source>Number of sectors:</source>
+        <comment>@label</comment>
+        <translation>Número de setores:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="309"/>
+        <source>Flags:</source>
+        <comment>@label</comment>
+        <translation>Flags:</translation>
+    </message>
+</context>
+<context>
+    <name>PartitionManagerWidgetBase</name>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="14"/>
+        <source>KDE Partition Manager</source>
+        <comment>@title:window</comment>
+        <translation>Gerenciador de partições do KDE</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="70"/>
+        <source>Partition</source>
+        <translation>Partição</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="75"/>
+        <source>Type</source>
+        <translation>Digite</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="80"/>
+        <source>Mount Point</source>
+        <translation>Ponto de montagem</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="85"/>
+        <source>Label</source>
+        <translation>Rótulo</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="90"/>
+        <source>UUID</source>
+        <translation>UUID</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="95"/>
+        <source>Size</source>
+        <translation>Tamanho</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="100"/>
+        <source>Used</source>
+        <translation>Usado</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="105"/>
+        <source>Available</source>
+        <translation>Disponível</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="110"/>
+        <source>First Sector</source>
+        <translation>Primeiro setor</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="115"/>
+        <source>Last Sector</source>
+        <translation>Último setor</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="120"/>
+        <source>Number of Sectors</source>
+        <translation>Número de setores</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="125"/>
+        <source>Flags</source>
+        <translation>Flags</translation>
     </message>
 </context>
 <context>
@@ -1250,6 +2076,124 @@ A instalação pode continuar, mas alguns recursos podem ser desativados.</trans
     </message>
 </context>
 <context>
+    <name>ReleaseDialog</name>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="20"/>
+        <source>KDE Release Builder</source>
+        <translation>KDE Release Builder</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="32"/>
+        <source>Application</source>
+        <translation>Aplicação</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="38"/>
+        <source>Name:</source>
+        <translation>Nome:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="48"/>
+        <source>&amp;Version:</source>
+        <translation>&amp;Versão:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="93"/>
+        <source>Repository and Revision</source>
+        <translation>Repositório e Revisão</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="99"/>
+        <source>&amp;Checkout From:</source>
+        <translation>Verificar de:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="119"/>
+        <source>trunk</source>
+        <translation>tronco</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="124"/>
+        <source>branches</source>
+        <translation>ramificações</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="129"/>
+        <source>tags</source>
+        <translation>etiquetas</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="137"/>
+        <source>Ta&amp;g/Branch:</source>
+        <translation>Etiqueta/Ramificação</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="163"/>
+        <source>&amp;SVN Access:</source>
+        <translation>Acesso &amp;SVN:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="183"/>
+        <source>anonsvn</source>
+        <translation>anonsvn</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="188"/>
+        <source>https</source>
+        <translation>https</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="193"/>
+        <source>svn+ssh</source>
+        <translation>svn+ssh</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="201"/>
+        <source>&amp;User:</source>
+        <translation>&amp;Usuário:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="236"/>
+        <source>Options</source>
+        <translation>Opções</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="242"/>
+        <source>Get &amp;Documentation</source>
+        <translation>Obter &amp;Documentação</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="252"/>
+        <source>Get &amp;Translations</source>
+        <translation>Obter &amp;Traduções</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="262"/>
+        <source>C&amp;reate Tag</source>
+        <translation>C&amp;riar Etiqueta</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="271"/>
+        <source>S&amp;kip translations below completion:</source>
+        <translation>Pular traduções incompletas:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="306"/>
+        <source> %</source>
+        <translation>%</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="324"/>
+        <source>Create Tar&amp;ball</source>
+        <translation>Criar Tar&amp;ball</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="334"/>
+        <source>Apply &amp;fixes</source>
+        <translation>Aplicar &amp;correções</translation>
+    </message>
+</context>
+<context>
     <name>ReplacePage</name>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.ui" line="14"/>
@@ -1264,7 +2208,7 @@ A instalação pode continuar, mas alguns recursos podem ser desativados.</trans
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="109"/>
         <source>Select where to install %1.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;this will delete all files on the selected partition. &lt;font color=&quot;red&quot;&gt;Do not use for UEFI &lt;/font&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Selecione onde instalar %1.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Atenção: &lt;/font&gt;isto irá apagar todos os arquivos na partição selecionada. &lt;font color=&quot;red&quot;&gt;Não usar para UEFI. &lt;/font&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="136"/>
@@ -1463,11 +2407,232 @@ A instalação pode continuar, mas alguns recursos podem ser desativados.</trans
     </message>
 </context>
 <context>
+    <name>SizeDetailsWidgetBase</name>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/sizedetailswidgetbase.ui" line="62"/>
+        <source>First sector:</source>
+        <comment>@label:listbox</comment>
+        <translation>Primeiro setor:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/sizedetailswidgetbase.ui" line="97"/>
+        <source>Last sector:</source>
+        <comment>@label:listbox</comment>
+        <translation>Último setor:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/sizedetailswidgetbase.ui" line="120"/>
+        <source>Align partition</source>
+        <translation>Alinhar partição</translation>
+    </message>
+</context>
+<context>
+    <name>SizeDialogWidgetBase</name>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="55"/>
+        <source>Partition type:</source>
+        <comment>@label:listbox</comment>
+        <translation>Tipo de partição:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="70"/>
+        <source>Primary</source>
+        <translation>Primário</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="77"/>
+        <source>Extended</source>
+        <translation>Estendida </translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="84"/>
+        <source>Logical</source>
+        <translation>Lógico</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="99"/>
+        <source>File system:</source>
+        <comment>@label:listbox</comment>
+        <translation>Sistema de arquivos:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="115"/>
+        <source>Label:</source>
+        <comment>@label</comment>
+        <translation>Rótulo:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="134"/>
+        <source>This file system does not support setting a label.</source>
+        <comment>@label</comment>
+        <translation>Este sistema de arquivos não suporta etiquetas.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="152"/>
+        <source>Minimum size:</source>
+        <comment>@label</comment>
+        <translation>Tamanho mínimo:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="175"/>
+        <source>Maximum size:</source>
+        <comment>@label</comment>
+        <translation>Tamanho máximo:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="198"/>
+        <source>Free space before:</source>
+        <comment>@label:listbox</comment>
+        <translation>Espaço livre anterior:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="233"/>
+        <source>Size:</source>
+        <comment>@label:listbox</comment>
+        <translation>Tamanho:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="262"/>
+        <source>Free space after:</source>
+        <comment>@label:listbox</comment>
+        <translation>Espaço livre posterior:</translation>
+    </message>
+</context>
+<context>
+    <name>SmartDialogWidgetBase</name>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="23"/>
+        <source>SMART status:</source>
+        <translation>Estado (SMART):</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="63"/>
+        <source>Model:</source>
+        <translation>Modelo:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="92"/>
+        <source>Serial number:</source>
+        <translation>Número de Série:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="121"/>
+        <source>Firmware revision:</source>
+        <translation>Revisão de Firmware:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="150"/>
+        <source>Temperature:</source>
+        <translation>Temperatura:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="179"/>
+        <source>Bad sectors:</source>
+        <translation>Setores ruins:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="208"/>
+        <source>Powered on for:</source>
+        <translation>Ligado há:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="237"/>
+        <source>Power cycles:</source>
+        <translation>Ciclos de potência:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="289"/>
+        <source>Id</source>
+        <translation>Id</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="294"/>
+        <source>Attribute</source>
+        <translation>Atributo</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="299"/>
+        <source>Failure Type</source>
+        <translation>Tipo de falha</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="304"/>
+        <source>Update Type</source>
+        <translation>Tipo de atualização</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="309"/>
+        <source>Worst</source>
+        <translation>Pior</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="314"/>
+        <source>Current</source>
+        <translation>Atual</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="319"/>
+        <source>Threshold</source>
+        <translation>Limite</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="324"/>
+        <source>Raw</source>
+        <translation>Não tratado</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="329"/>
+        <source>Assessment</source>
+        <translation>Avaliação</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="334"/>
+        <source>Value</source>
+        <translation>Valor</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="385"/>
+        <source>Overall assessment:</source>
+        <translation>Avaliação geral:</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="414"/>
+        <source>Self tests:</source>
+        <translation>Auto-testes:</translation>
+    </message>
+</context>
+<context>
     <name>SummaryViewStep</name>
     <message>
         <location filename="../src/modules/summary/SummaryViewStep.cpp" line="41"/>
         <source>Summary</source>
         <translation>Resumo</translation>
+    </message>
+</context>
+<context>
+    <name>TreeLogBase</name>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/treelogbase.ui" line="54"/>
+        <source>Sev.</source>
+        <comment>@title:column Severity of a log entry / log level. Text must be very short.</comment>
+        <translation>Sev.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/treelogbase.ui" line="57"/>
+        <source>Severity</source>
+        <translation>Severidade</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/treelogbase.ui" line="62"/>
+        <source>Time</source>
+        <comment>@title:column a time stamp of a log entry</comment>
+        <translation>Tempo</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/partitionmanager/src/gui/treelogbase.ui" line="67"/>
+        <source>Message</source>
+        <comment>@title:column the text message of a log entry</comment>
+        <translation>Mensagem</translation>
     </message>
 </context>
 <context>
