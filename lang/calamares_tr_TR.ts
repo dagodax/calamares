@@ -14,7 +14,7 @@
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="167"/>
         <source>With this operation, the partition &lt;b&gt;%1&lt;/b&gt; which contains %4 will be shrunk to %2MB and a new %3MB partition will be created for %5. &lt;font color=&quot;red&quot;&gt;Do not use for UEFI. &lt;/font&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Bu işlem ile &lt;b&gt;%1&lt;/b&gt; bölümü içeren %4 %2MB küçültülecek ve yeni bölüm %3MB oluşturulacak %5 için. &lt;font color=&quot;red&quot;&gt;UEFI için kullanmayın. &lt;/font&gt;</translation>
     </message>
 </context>
 <context>
@@ -199,7 +199,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamares/JobQueue.cpp" line="88"/>
         <source>The install finished succesfully, click the quit button to return to live mode and reboot from there into your newly installed system</source>
-        <translation type="unfinished"/>
+        <translation>Sistem yüklemesi tamamlandı. Çıkış butonuna tıklayıp bu pencereyi kapattıktan sonra çalışan sistemi kullanmaya devam edebilir ya da yeniden başlatarak kurduğunuz sistemi kullanmaya başlayabilirsiniz</translation>
     </message>
 </context>
 <context>
@@ -389,7 +389,7 @@ Output:
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="175"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="217"/>
         <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Diski sil ve %1 yükle&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Uyarı: &lt;/font&gt;Bu işlem ile programlarınız, belgeleriniz, fotoğraflarınız, medyalarınız ve diğer tüm dosyalarınız silinecek. &lt;b&gt;UEFI yüklemesi için uygun değil&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="135"/>
@@ -399,18 +399,18 @@ Output:
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="139"/>
         <source>&lt;b&gt;Install %2 alongside %1&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;%1 yanına %2 yükle&lt;/b&gt;&lt;br/&gt;Belgeler, müzik ve diğer kişisel dosyalar korunacaktır. Bilgisayarınız başlatılırken istediğiniz işletim sistemini seçebilirsiniz. &lt;b&gt;UYARI: Bu seçenek UEFI yüklemesi için değil&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="147"/>
         <source>&lt;b&gt;Erase entire disk with %1 and install %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;%2 ile %1 üzerine biçimleyip kur&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Uyarı: &lt;/font&gt;Tüm diskiniz temizlenecek %1 program, belgeler, fotoğraflar, müzik ve tüm diğer dosyalar silinecek. &lt;b&gt;UEFI yüklemesi için uygun değil&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="155"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="181"/>
         <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all files on the selected partition. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Hazır bir disk bölümüne %1 yükleyin&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Uyarı: &lt;/font&gt;Bu işlem seçili disk bölümündeki tüm dosyaları silecek. &lt;b&gt;UEFI yüklemesi için uygun değil&lt;/b&gt; </translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="165"/>
@@ -420,7 +420,7 @@ Output:
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="168"/>
         <source>&lt;b&gt;Install %1 alongside your current operating system&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Diğer işletim sisteminin yanına %1 yükle&lt;/b&gt;&lt;br/&gt;Belgeler, müzik ve diğer kişisel dosyalar korunacaktır. Bilgisayarınız başlatılırken istediğiniz işletim sistemini seçebilirsiniz. &lt;b&gt;UYARI: Bu seçenek UEFI yüklemesi için değildir&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="207"/>
@@ -430,17 +430,17 @@ Output:
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="210"/>
         <source>&lt;b&gt;Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Diğer işletim sisteminin yanına %1 yükle&lt;/b&gt;&lt;br/&gt;Belgeler, müzik ve diğer kişisel dosyalar korunacaktır. Bilgisayarınız başlatılırken istediğiniz işletim sistemini seçebilirsiniz. &lt;b&gt;UYARI: Bu seçenek UEFI yüklemesi için değildir&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="223"/>
         <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all files on the selected partition. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Hazır bir disk bölümüne %1 yükleyin&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Uyarı: &lt;/font&gt;Bu işlem seçili disk bölümündeki tüm dosyaları silecek. &lt;b&gt;UEFI yüklemesi için uygun değil&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="240"/>
         <source>&lt;b&gt;Something else&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a GPT partition table and &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Gelişmiş Kurulum Seçenekleri&lt;/b&gt;&lt;br/&gt;%1 için birden fazla bölüm oluşturabilirsiniz ya da yeniden boyutlandırabilirsiniz. UEFI yüklemesi için bu seçeneği kullanmalısınız. UEFI yükleme yapacaksanız ve GPT disk tablosuna sahipseniz &lt;b&gt;fat32 512Mb /boot disk bölümü oluşturmak zorundasınız.</translation>
     </message>
 </context>
 <context>
@@ -448,22 +448,22 @@ Output:
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="40"/>
         <source>Clear mounts for partitioning operations on %1</source>
-        <translation type="unfinished"/>
+        <translation>%1 üzerinde bölümleme işlemleri yapmak için bağlı diskleri ayırın</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="62"/>
         <source>Cannot umount partition %1</source>
-        <translation type="unfinished"/>
+        <translation>%1 disk bölümü ayırma işlemi başarısız</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="64"/>
         <source>Cannot proceed with partitioning operations because some partitions are still mounted.</source>
-        <translation type="unfinished"/>
+        <translation>Bölümleme işlemleri devam edemiyor çünkü bazı disk bölümleri halen bağlı.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="70"/>
         <source>Cleared all mounts for %1</source>
-        <translation type="unfinished"/>
+        <translation>%1 için bağlı tüm diskler ayrıldı</translation>
     </message>
 </context>
 <context>
@@ -1459,17 +1459,17 @@ Bazı dosya sistemlerinin desteklenmesi ve düzenlenmesi için ek uygulamalar ge
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="85"/>
         <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is in Beta stage.&lt;br/&gt;Not implemented yet is closing the installer automatically,&lt;br/&gt;showing a slideshow during the install or setting the locale.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Known Issues&lt;/a&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;%1 Sistem Yükleyiciye Hoşgeldiniz.&lt;/h1&gt;&lt;br/&gt;Bu program size bazı sorular soracak ve bilgisayarınıza %2 kuracak. Bu yükleyicinin beta aşamada olduğunu aklınızda bulundurun.&lt;br/&gt;Yükleme esnasında kapanırsa,&lt;br/&gt;yükleme ve yerel ayar slaytları gösterilirken kapanabilir&lt;br/&gt;&lt;b&gt;GPT bölümlemeleri, BIOS ayarlamaları için&lt;/b&gt; şu başlığı okuyabilirsiniz, &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Bilinen Hatalar&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="106"/>
         <source>About %1 installer</source>
-        <translation type="unfinished"/>
+        <translation>%1 sistem yükleyici hakkında</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="108"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technologies for a better world.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Telif Hakları 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Teşekkürler: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; gelişim sponsoru &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - daha iyi bir dünya için teknoloji.</translation>
     </message>
 </context>
 <context>
@@ -1506,12 +1506,12 @@ Bazı dosya sistemlerinin desteklenmesi ve düzenlenmesi için ek uygulamalar ge
     <message>
         <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="33"/>
         <source>System locale setting</source>
-        <translation type="unfinished"/>
+        <translation>Sistem yerel ayarları</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="40"/>
         <source>The system locale setting affects the language and character set for some command line user interface elements.&lt;br/&gt;The current setting is &lt;b&gt;%1&lt;/b&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Sistem yerel ayarları, dilleri, karakter setlerini, bazı komut işlemlerini ve birtakım gereçlerin ve uygulamaların durumunu ve ya görünümünü etkiler.&lt;br/&gt; &lt;b&gt;%1&lt;/b&gt; geçerli ayardır.</translation>
     </message>
 </context>
 <context>
@@ -1520,7 +1520,7 @@ Bazı dosya sistemlerinin desteklenmesi ve düzenlenmesi için ek uygulamalar ge
         <location filename="../src/modules/locale/LocalePage.cpp" line="157"/>
         <location filename="../src/modules/locale/LocalePage.cpp" line="168"/>
         <source>The system locale is set to %1.</source>
-        <translation type="unfinished"/>
+        <translation>Sistem yereli %1 olarak ayarlandı.</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="165"/>
@@ -1535,7 +1535,7 @@ Bazı dosya sistemlerinin desteklenmesi ve düzenlenmesi için ek uygulamalar ge
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="171"/>
         <source>&amp;Change...</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Değiştir...</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="265"/>
@@ -2208,52 +2208,52 @@ Kuruluma devam edebilirsiniz fakat bazı özellikler devre dışı kalabilir.</t
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="109"/>
         <source>Select where to install %1.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;this will delete all files on the selected partition. &lt;font color=&quot;red&quot;&gt;Do not use for UEFI &lt;/font&gt;</source>
-        <translation type="unfinished"/>
+        <translation>%1 yükleme yerini seçiniz.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Uyarı: &lt;/font&gt;Bu işlem tüm dosyalarınızı seçili disk bölümünden silecek. &lt;font color=&quot;red&quot;&gt;UEFI için kullanmayın &lt;/font&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="136"/>
         <source>The selected item does not appear to be a valid partition.</source>
-        <translation type="unfinished"/>
+        <translation>Seçili öğe geçerli bir disk bölümü olarak görünmüyor.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="144"/>
         <source>%1 cannot be installed on empty space. Please select an existing partition.</source>
-        <translation type="unfinished"/>
+        <translation>%1 boş alan üzerine kurulu olamaz. Lütfen varolan bir disk bölümü seçin.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="155"/>
         <source>%1 cannot be installed on an extended partition. Please select an existing primary or logical partition.</source>
-        <translation type="unfinished"/>
+        <translation>%1 boş uzatılmış bir disk bölümü üzerine kurulu olamaz. Lütfen birincil ve ya mantıksal bir disk bölümü seçin.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="166"/>
         <source>%1 cannot be installed on this partition.</source>
-        <translation type="unfinished"/>
+        <translation>%1 disk bölümü üzerine yüklenemedi.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="173"/>
         <source>Data partition (%1)</source>
-        <translation type="unfinished"/>
+        <translation>(%1) Disk bölümü verisi</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="190"/>
         <source>Unknown system partition (%1)</source>
-        <translation type="unfinished"/>
+        <translation>(%1) Tanımlanamayan disk bölüm sistemi</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="195"/>
         <source>%1 system partition (%2)</source>
-        <translation type="unfinished"/>
+        <translation>%1 disk bölümü sistemi (%2)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="206"/>
         <source>&lt;b&gt;%4&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;The partition %1 is too small for %2. Please select a partition with capacity at least %3 GiB.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;%4&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Disk bölümü %2 için %1 daha küçük. Lütfen %3 GiB kapasiteli bir disk bölümü seçin.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="220"/>
         <source>&lt;b&gt;%3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;%1 will be installed on %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;all data on partition%2 will be lost.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;%3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;%2 üzerine %1 yüklendi.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Uyarı: &lt;/font&gt;partition%2 üzerindeki tüm veriler kaybolacak.</translation>
     </message>
 </context>
 <context>
@@ -2318,23 +2318,23 @@ Kuruluma devam edebilirsiniz fakat bazı özellikler devre dışı kalabilir.</t
     <message>
         <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="57"/>
         <source>Set keyboard model to %1, layout to %2-%3</source>
-        <translation type="unfinished"/>
+        <translation>%1 Klavye düzeni olarak seçildi, alt türevleri ise %2-%3</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="277"/>
         <source>Failed to write keyboard configuration for the virtual console.</source>
-        <translation type="unfinished"/>
+        <translation>Uçbirim için klavye yapılandırması başarısız oldu.</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="278"/>
         <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="282"/>
         <source>Failed to write to %1</source>
-        <translation type="unfinished"/>
+        <translation>%1 için yazma başarısız oldu</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="281"/>
         <source>Failed to write keyboard configuration for X11.</source>
-        <translation type="unfinished"/>
+        <translation>X11 için klavye yapılandırması başarısız oldu.</translation>
     </message>
 </context>
 <context>
