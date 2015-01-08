@@ -57,8 +57,11 @@ def run():
         ('xdg-user-dirs-update.desktop', '.config/autostart/'),
         ('octopi-notifier.desktop', '.config/autostart/'),
         ('katerc', '.config/'),
+        ('ksplashrc', '.config/'),
         ('plasmarc', '.config/'),
         ('plasmashellrc', '.config/'),
+        ('rekonqrc', '.config/'),
+        ('startupconfigkeys', '.config/'),
         ('Linux.colorscheme', '.local/share/konsole/'),
         ('Shell.profile', '.local/share/konsole/')
     ]
