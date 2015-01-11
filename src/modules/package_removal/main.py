@@ -65,6 +65,7 @@ def run():
     #this_locale = 'us'
     list_of_pkgs = []
 
+    print(libcalamares.globalstorage.value("lcLocale"))
     print(this_locale)
 
     p = subprocess.Popen("pacman -Q | grep -i kde-l10n | awk '{print $1}'",
