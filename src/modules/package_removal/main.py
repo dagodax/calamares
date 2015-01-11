@@ -81,12 +81,12 @@ def run():
     # Print the pkgs that do not have the locale 'this_locale' for future
     # removal!
     for pkg in list_of_pkgs:
-        if pkg[9:] != this_locale:
+        if pkg[9:11] != this_locale:
             print(pkg)
 
     # Remove the pkgs that do not have the locale 'this_locale'
     for pkg in list_of_pkgs:
-        if pkg[9:] != this_locale:
+        if pkg[9:11] != this_locale:
             print('Removing KDE l10n packages')
             libcalamares.utils.chroot_call(
                 ['pacman', '-Rddn', '--noconfirm', '%s' % (pkg)])
@@ -108,12 +108,12 @@ def run():
     # Print the pkgs that do not have the locale 'this_locale' for future
     # removal!
     for pkg in list_of_pkgs:
-        if pkg[14:] != this_locale:
+        if pkg[14:16] != this_locale:
             print(pkg)
 
     # Remove the pkgs that do not have the locale 'this_locale'
     for pkg in list_of_pkgs:
-        if pkg[14:] != this_locale:
+        if pkg[14:16] != this_locale:
             print('Removing Calligra l10n packages')
             libcalamares.utils.chroot_call(
                 ['pacman', '-Rddn', '--noconfirm', '%s' % (pkg)])
