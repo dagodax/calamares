@@ -62,7 +62,7 @@ def run():
         ('plasmarc', '.config/'),
         ('plasmashellrc', '.config/'),
         ('rekonqrc', '.config/'),
-        ('startupconf', '.config/'),
+        ('startupconfig', '.config/'),
         ('startupconfigkeys', '.config/'),
         ('Linux.colorscheme', '.local/share/konsole/'),
         ('Shell.profile', '.local/share/konsole/')
