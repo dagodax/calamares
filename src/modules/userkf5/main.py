@@ -51,6 +51,7 @@ def run():
         ('favoriteapps.xml', '.local/share/applications/'),
         ('kdeglobals', '.config/'),
         ('kscreenlockerrc', '.config/'),
+        ('ksplashrc', '.config/'),
         ('kickoffrc', '.config/'),
         ('.bashrc', ''),
         ('mimeapps.list', '.local/share/applications/'),
@@ -61,6 +62,7 @@ def run():
         ('plasmarc', '.config/'),
         ('plasmashellrc', '.config/'),
         ('rekonqrc', '.config/'),
+        ('startupconf', '.config/'),
         ('startupconfigkeys', '.config/'),
         ('Linux.colorscheme', '.local/share/konsole/'),
         ('Shell.profile', '.local/share/konsole/')
