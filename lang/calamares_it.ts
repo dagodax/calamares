@@ -1,20 +1,20 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="es_AR" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="it" version="2.1">
 <context>
     <name>AlongsidePage</name>
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="67"/>
         <source>Choose partition to shrink:</source>
-        <translation>Selecciona la partición a reducir:</translation>
+        <translation>Scegli la partizione da ridimensionare:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="68"/>
         <source>Allocate drive space by dragging the divider below:</source>
-        <translation>Asignar espacio en el disco arrastrando el separador de abajo:</translation>
+        <translation>Assegna spazio su disco trascinando il separatore sottostante:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="167"/>
         <source>With this operation, the partition &lt;b&gt;%1&lt;/b&gt; which contains %4 will be shrunk to %2MB and a new %3MB partition will be created for %5. &lt;font color=&quot;red&quot;&gt;Do not use for UEFI. &lt;/font&gt;</source>
-        <translation>Con esta operación, la partición &lt;b&gt;%1&lt;/b&gt; que contiene %4 se reducirá a %2MB y se creará una nueva partición de %3MB para %5. &lt;font color=&quot;red&quot;&gt;No usar para UEFI. &lt;/font&gt;</translation>
+        <translation>La partizione &lt;b&gt;%1&lt;/b&gt; che contiene %4 sarà ridotta a %2MB e una nuova %3MB partizione sarà creata per %5. &lt;font color=&quot;red&quot;&gt;Non utilizzabile con sistemi UEFI. &lt;/font&gt;</translation>
     </message>
 </context>
 <context>
@@ -22,12 +22,12 @@
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdetailswidgetbase.ui" line="37"/>
         <source>Save</source>
-        <translation>Guardar</translation>
+        <translation>Salva</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdetailswidgetbase.ui" line="44"/>
         <source>Open in External Browser</source>
-        <translation>Abrir en navegador externo</translation>
+        <translation>Apri in un browser esterno</translation>
     </message>
 </context>
 <context>
@@ -35,32 +35,32 @@
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="33"/>
         <source>Operations and Jobs</source>
-        <translation>Operaciones y Trabajos</translation>
+        <translation>Operazioni e attività</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="38"/>
         <source>Time Elapsed</source>
-        <translation>Tiempo transcurrido</translation>
+        <translation>Tempo trascorso</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="64"/>
         <source>Total Time: 00:00:00</source>
-        <translation>Tiempo Total: 00:00:00</translation>
+        <translation>Tempo complessivo: 00:00:00</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="81"/>
         <source>Operation: %p%</source>
-        <translation>Operación: %p%</translation>
+        <translation>Operazione: %p%</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="91"/>
         <source>Status</source>
-        <translation>Estado</translation>
+        <translation>Stato</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="107"/>
         <source>Total: %p%</source>
-        <translation>Total: %p%</translation>
+        <translation>Totale: %p%</translation>
     </message>
 </context>
 <context>
@@ -68,7 +68,7 @@
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="20"/>
         <source>Installer</source>
-        <translation>Instalador</translation>
+        <translation>Programma di installazione</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="168"/>
@@ -81,17 +81,17 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Bienvenido&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Benvenuto&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="198"/>
         <source>Location</source>
-        <translation>Ubicación</translation>
+        <translation>Posizione</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="224"/>
         <source>License Approval</source>
-        <translation>Aprobación de licencia</translation>
+        <translation>Approvazione della licenza</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="257"/>
@@ -104,12 +104,12 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Instalación&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Installazione&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="287"/>
         <source>Install System</source>
-        <translation>Instalar Sistema</translation>
+        <translation>Installa il Sistema</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="320"/>
@@ -122,37 +122,37 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Configuración&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Configurazione&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="331"/>
         <source>Reboot</source>
-        <translation>Reiniciar</translation>
+        <translation>Riavvia</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="410"/>
         <source>Language</source>
-        <translation>Idioma</translation>
+        <translation>Lingua</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="443"/>
         <source>User Info</source>
-        <translation>Información del usuario</translation>
+        <translation>Informazioni Utente</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="469"/>
         <source>Summary</source>
-        <translation>Resumen</translation>
+        <translation>Riepilogo</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="514"/>
         <source>Keyboard</source>
-        <translation>Teclado</translation>
+        <translation>Tastiera</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="521"/>
         <source>Disk Setup</source>
-        <translation>Disco de instalación</translation>
+        <translation>Configurazione del disco</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="528"/>
@@ -165,7 +165,7 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Preparación&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Preparazione&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
@@ -173,17 +173,17 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="57"/>
         <source>Master Boot Record of %1</source>
-        <translation>Master Boot Record de %1</translation>
+        <translation>Master Boot Record di %1</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="71"/>
         <source>Boot Partition</source>
-        <translation>Partición de Arranque</translation>
+        <translation>Partizione di avvio</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="76"/>
         <source>System Partition</source>
-        <translation>Partición del Sistema</translation>
+        <translation>Partizione di sistema</translation>
     </message>
 </context>
 <context>
@@ -191,7 +191,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamaresui/InstallationViewStep.cpp" line="47"/>
         <source>Install</source>
-        <translation>Instalar</translation>
+        <translation>Installa</translation>
     </message>
 </context>
 <context>
@@ -199,7 +199,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamares/JobQueue.cpp" line="88"/>
         <source>The install finished succesfully, click the quit button to return to live mode and reboot from there into your newly installed system</source>
-        <translation>La instalación finalizó satisfactoriamente, haga clic en el botón salir para volver al modo live y reiniciar desde ahí en su nuevo sistema instalado.</translation>
+        <translation>L&apos;installazione è terminata con successo, clicca sul pulsante Fine per tornare alla sessione Live e far ripartire il PC.</translation>
     </message>
 </context>
 <context>
@@ -207,68 +207,68 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="51"/>
         <source>Run command %1</source>
-        <translation>Comando a ejecutar %1</translation>
+        <translation>Esegui il comando %1</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="77"/>
         <source>External command crashed</source>
-        <translation>El comando externo ha fallado</translation>
+        <translation>Il comando esterno si è arrestato improvvisamente</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="78"/>
         <source>Command %1 crashed.
 Output:
 %2</source>
-        <translation>El comando %1 ha fallado.
-
-Salida: %2</translation>
+        <translation>Il comando %1 si è arrestato improvvisamente.
+Output:
+%2</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="83"/>
         <source>External command failed to start</source>
-        <translation>El comando externo no ha podido iniciarse</translation>
+        <translation>Il comando esterno non si è avviato</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="84"/>
         <source>Command %1 failed to start.</source>
-        <translation>El comando %1 no se pudo iniciar.</translation>
+        <translation>Il comando %1 non si è avviato</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="88"/>
         <source>Internal error when starting command</source>
-        <translation>Error interno al iniciar el comando</translation>
+        <translation>Errore interno all&apos;avvio del comando</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="89"/>
         <source>Bad parameters for process job call.</source>
-        <translation>Parámetros erróneos para el trabajo en proceso.</translation>
+        <translation>Parametri errati per elaborare l&apos;attività richiesta</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="92"/>
         <source>External command failed to finish</source>
-        <translation>El comando externo falló al finalizar</translation>
+        <translation>Il comando esterno non è stato portato a termine</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="93"/>
         <source>Command %1 failed to finish in %2s.
 Output:
 %3</source>
-        <translation>El comando %1 falló al finalizar en %2s.
-Salida:
+        <translation>Il comando %1 non è stato portato a termine in %2s.
+Output:
 %3</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="99"/>
         <source>External command finished with errors</source>
-        <translation>El comando externo finalizó con errores</translation>
+        <translation>Il comando esterno è terminato con errori</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="100"/>
         <source>Command %1 finished with exit code %2.
 Output:
 %3</source>
-        <translation>El comando %1 finalizó con el código de salida %2.
-Salida:
+        <translation>Il comando %1 è terminato con codice di uscita %2.
+Output:
 %3</translation>
     </message>
 </context>
@@ -277,32 +277,32 @@ Salida:
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="234"/>
         <source>Run script %1</source>
-        <translation>Ejecutando script %1</translation>
+        <translation>Avvia lo script %1</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="249"/>
         <source>Bad working directory path</source>
-        <translation>Error en la ruta del directorio de trabajo</translation>
+        <translation>Il percorso della cartella corrente non è corretto</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="250"/>
         <source>Working directory %1 for python job %2 is not readable.</source>
-        <translation>El directorio de trabajo %1 para el script de python %2 no se puede leer.</translation>
+        <translation>La cartella corrente %1 per l&apos;attività di Python %2 non è accessibile.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="260"/>
         <source>Bad main script file</source>
-        <translation>Script principal erróneo</translation>
+        <translation>File dello script principale non valido</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="261"/>
         <source>Main script file %1 for python job %2 is not readable.</source>
-        <translation>El script principal %1 del proceso python %2 no es accesible.</translation>
+        <translation>Il file principale dello script %1 per l&apos;attività di python %2 non è accessibile.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="305"/>
         <source>Boost.Python error in job &quot;%1&quot;.</source>
-        <translation>Error Boost.Python en el proceso &quot;%1&quot;.</translation>
+        <translation>Errore da Boost.Python nell&apos;operazione &quot;%1&quot;.</translation>
     </message>
 </context>
 <context>
@@ -310,27 +310,27 @@ Salida:
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="55"/>
         <source>&amp;Back</source>
-        <translation>&amp;Atrás </translation>
+        <translation>&amp;Indietro</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="56"/>
         <source>&amp;Next</source>
-        <translation>&amp;Siguiente</translation>
+        <translation>&amp;Avanti</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="57"/>
         <source>&amp;Quit</source>
-        <translation>&amp;Salir</translation>
+        <translation>&amp;Esci</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="138"/>
         <source>Error</source>
-        <translation>Error</translation>
+        <translation>Errore</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="139"/>
         <source>Installation Failed</source>
-        <translation>Error en la Instalación</translation>
+        <translation>Installazione non riuscita</translation>
     </message>
 </context>
 <context>
@@ -338,22 +338,22 @@ Salida:
     <message>
         <location filename="../src/libcalamares/PythonHelper.cpp" line="234"/>
         <source>Unknown exception type</source>
-        <translation>Excepción desconocida</translation>
+        <translation>Tipo di eccezione sconosciuto</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonHelper.cpp" line="247"/>
         <source>unparseable Python error</source>
-        <translation>error unparseable Python</translation>
+        <translation>Errore Python non definibile</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonHelper.cpp" line="263"/>
         <source>unparseable Python traceback</source>
-        <translation>rastreo de Python unparseable</translation>
+        <translation>Traceback Python non definibile</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonHelper.cpp" line="267"/>
         <source>Unfetchable Python error.</source>
-        <translation>Error de Python Unfetchable.</translation>
+        <translation>Errore di Python non definibile.</translation>
     </message>
 </context>
 <context>
@@ -361,7 +361,7 @@ Salida:
     <message>
         <location filename="../src/calamares/CalamaresWindow.cpp" line="40"/>
         <source>%1 Installer</source>
-        <translation>%1 Instalador</translation>
+        <translation>%1 Programma di installazione</translation>
     </message>
 </context>
 <context>
@@ -369,12 +369,12 @@ Salida:
     <message>
         <location filename="../src/modules/partition/jobs/CheckFileSystemJob.cpp" line="34"/>
         <source>Checking file system on partition %1.</source>
-        <translation>Verificando sistema de archivos en la partición %1.</translation>
+        <translation>Controllo del file system sulla partizione %1</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CheckFileSystemJob.cpp" line="50"/>
         <source>The file system check on partition %1 failed.</source>
-        <translation>La verificación del sistema de archivos en la partición %1 ha fallado.</translation>
+        <translation>Il controllo del file system sulla partizione %1 non è riuscito.</translation>
     </message>
 </context>
 <context>
@@ -382,66 +382,65 @@ Salida:
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="115"/>
         <source>This computer currently does not seem to have an operating system on it. What would you like to do?</source>
-        <translation>Este equipo no parece tener un sistema operativo instalado. ¿Qué le gustaría hacer?</translation>
+        <translation>Questo computer sembra non avere un sistema operativo installato. Cosa vuoi fare?</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="118"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="175"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="217"/>
         <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Borrar disco e instalar %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Advertencia: &lt;/font&gt;Esto borrará todos sus programas, documentos, fotos, música y cualquier otro archivo.&lt;b&gt;No utilizable para instalaciones UEFI&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Cancella il disco e installa %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Attenzione: &lt;/font&gt;Saranno eliminati tutti i programmi, documenti, foto, musica e ogni altro file. &lt;b&gt;Non supporta sistemi UEFI&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="135"/>
         <source>This computer currently has %1 on it. What would you like to do?</source>
-        <translation>Este equipo tiene %1 instalado. ¿Qué le gustaría hacer?</translation>
+        <translation>Su questo computer è installato %1. Cosa vuoi fare?</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="139"/>
         <source>&lt;b&gt;Install %2 alongside %1&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Instalar %2 junto a %1&lt;/b&gt;&lt;br/&gt;Documentos, música y otros archivos personales se mantendrán. Puede elegir que sistema operativo quiere iniciar cada vez que arranque. &lt;b&gt;ADVERTENCIA: no es una opción para instalaciones UEFI&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Installa %2 accanto %1&lt;/b&gt;&lt;br/&gt;Documenti, musica a ogni altro file personale sarà mantenuto. Inoltre sarà possibile scegliere il sistema operativo con cui avviare il PC.  &lt;b&gt;Attenzione: quest&apos;opzione non è attivabile su sistemi UEFI&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="147"/>
         <source>&lt;b&gt;Erase entire disk with %1 and install %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Borrar el disco entero con %1 e instalar %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Advertencia: &lt;/font&gt;Esto borrará todo el disco y todo sus programas, documentos, fotos, música y cualquier otro archivo de %1. &lt;b&gt;No utilizable para instalaciones UEFI&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Cancella l&apos;intero disco con %1 e installa %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Attenzione: &lt;/font&gt;Questo cancellerà l&apos;intero disco e tutti i tuoi %1 programmi, documenti, foto, musica e ogni altro file. &lt;b&gt;Non utilizzabile su sistemi UEFI&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="155"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="181"/>
         <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all files on the selected partition. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
-        <translation>&lt;b&gt;Instalar %1 en una partición existente&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Advertencia: &lt;/font&gt;Esto borrará todos los archivos en la partición seleccionada. &lt;b&gt;No utilizable para instalaciones UEFI&lt;/b&gt; </translation>
+        <translation>&lt;b&gt;Installazione di %1 su un&apos;esistente partizione&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Attenzione: &lt;/font&gt;Saranno eliminati tutti i file contenuti nella patizione selezionata. &lt;b&gt;Non utilizzabile con sistemi UEFI&lt;/b&gt; </translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="165"/>
         <source>This computer already has an operating system on it. What would you like to do?</source>
-        <translation>Este equipo ya tiene un sistema operativo instalado. ¿Qué le gustaría hacer?</translation>
+        <translation>Su questo computer è già installato un sistema operativo. Cosa vuoi fare?</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="168"/>
         <source>&lt;b&gt;Install %1 alongside your current operating system&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Instalar %1 junto a su actual sistema operativo&lt;/b&gt;&lt;br/&gt;Los documentos, música y otros archivos personales se mantendrán. Puede elegir con que sistema operativo quiere iniciar cada vez que arranque.&lt;b&gt;ADVERTENCIA: no es una optición para instalaciones UEFI&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Installazione di %1 accanto al vostro attuale sistema operativo&lt;/b&gt;&lt;br/&gt;Documenti, musica e gli altri file personali saranno mantenuti. Potrai scegliere con quale sistema operativo far avviare il computer.  &lt;b&gt;ATTENZIONE: Non è una funzionalità utilizzabile su sistemi UEFI&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="207"/>
         <source>This computer currently has multiple operating systems on it. What would you like to do?</source>
-        <translation>Este equipo tiene varios sistemas operativos instalados. ¿Qué le gustaría hacer?</translation>
+        <translation>Su questo computer sono installati più sistemi operativi. Cosa vuoi fare?</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="210"/>
         <source>&lt;b&gt;Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;
-Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Installazione di %1 accanto al vostro attuale sistema operativo&lt;/b&gt;&lt;br/&gt;Documenti, musica e gli altri file personali saranno mantenuti. Potrai scegliere con quale sistema operativo far avviare il computer.  &lt;b&gt;ATTENZIONE: Non è una funzionalità utilizzabile su sistemi UEFI&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="223"/>
         <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all files on the selected partition. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Instalar %1 en una partición existente&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Advertencia: &lt;/font&gt;Esto borrará todos los archivos en la partición seleccionada. &lt;b&gt;No utilizable para instalaciones UEFI&lt;/b&gt;</translation>
+        <translation>&lt;b&gt;Installazione di %1 su una partizione esistente&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Attenzione: &lt;/font&gt;Saranno eliminati tutti i file contenuti nella partizione selezionata. &lt;b&gt;Non utilizzabile su sistemi UEFI&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="240"/>
         <source>&lt;b&gt;Something else&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a GPT partition table and &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
-        <translation>&lt;b&gt;Por otro lado&lt;/b&gt;&lt;br/&gt;Puede crear o redimensionar las particiones Ud. mismo, o elegir múltiples particiones para %1. Use esta opción para instalaciones UEFI, es necesario tener una tabla de partición GPT y &lt;b&gt;una partición /boot en fat32 de 512Mb para instalaciones UEFI&lt;/b&gt;, o bien utilizar una existente sin formato o crear una.</translation>
+        <translation>&lt;b&gt;Inoltre&lt;/b&gt;&lt;br/&gt;è possibile creare o ridimensionare le partizioni per %1.  Funzionalità utilizzabile su sistemi UEFI con GPT partition table e una partizione &lt;b&gt;FAT32 512Mb /boot obbligatorio in caso di installazione di sistemi UEFI&lt;/b&gt;, o utilizzare una partizione esistente senza formattare o crearne una.</translation>
     </message>
 </context>
 <context>
@@ -449,22 +448,22 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="40"/>
         <source>Clear mounts for partitioning operations on %1</source>
-        <translation>Limpiar montajes para operaciones de particionado en %1</translation>
+        <translation>smontaggio dei punti di mount per le operazioni di partizionamento su %1</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="62"/>
         <source>Cannot umount partition %1</source>
-        <translation>No se puede desmontar la partición %1</translation>
+        <translation>Non è possibile smontare la partizione %1</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="64"/>
         <source>Cannot proceed with partitioning operations because some partitions are still mounted.</source>
-        <translation>No se puede proceder con las operaciones de particionado porque algunas particiones aún están montadas.</translation>
+        <translation>Non è possibile procedere con le operazioni di partizionamento a causa di partizioni ancora montate</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="70"/>
         <source>Cleared all mounts for %1</source>
-        <translation>Limpiados todos los montajes para %1</translation>
+        <translation>smontaggio di tutti i punti di mount per %1</translation>
     </message>
 </context>
 <context>
@@ -472,12 +471,12 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="23"/>
         <source>Permissions</source>
-        <translation>Permisos</translation>
+        <translation>Permessi</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="35"/>
         <source>Allow applying operations without administrator privileges</source>
-        <translation>Permitir aplicar las operaciones sin tener privilegios de administrador</translation>
+        <translation>Permetti la conferma di operazioni senza privilegi da amministratore</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="51"/>
@@ -487,17 +486,17 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="57"/>
         <source>Active backend:</source>
-        <translation>Backend activo:</translation>
+        <translation>Backend attivo:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="79"/>
         <source>Units</source>
-        <translation>Unidades</translation>
+        <translation>Unità</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="85"/>
         <source>Preferred unit:</source>
-        <translation>Unidad preferida:</translation>
+        <translation>Unità preferita:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="96"/>
@@ -507,32 +506,32 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="101"/>
         <source>KiB</source>
-        <translation>KiB</translation>
+        <translation>KB</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="106"/>
         <source>MiB</source>
-        <translation>MiB</translation>
+        <translation>MB</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="111"/>
         <source>GiB</source>
-        <translation>GiB</translation>
+        <translation>GB</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="116"/>
         <source>TiB</source>
-        <translation>TiB</translation>
+        <translation>TB</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="121"/>
         <source>PiB</source>
-        <translation>PiB</translation>
+        <translation>PB</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="126"/>
         <source>EiB</source>
-        <translation>EiB</translation>
+        <translation>EB</translation>
     </message>
 </context>
 <context>
@@ -540,7 +539,7 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="23"/>
         <source>File Systems</source>
-        <translation>Sistemas de archivos</translation>
+        <translation>File System</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="29"/>
@@ -590,7 +589,7 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="248"/>
         <source>zfs:</source>
-        <translation>ZFS:</translation>
+        <translation>zfs:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="264"/>
@@ -630,7 +629,7 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="441"/>
         <source>xfs:</source>
-        <translation>XFS:</translation>
+        <translation>xfs:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="470"/>
@@ -640,17 +639,17 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="489"/>
         <source>extended:</source>
-        <translation>Extendida:</translation>
+        <translation>estesa:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="518"/>
         <source>unformatted:</source>
-        <translation>Sin formato:</translation>
+        <translation>non formattata:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="547"/>
         <source>unknown:</source>
-        <translation>Desconocido:</translation>
+        <translation>sconosciuta:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="570"/>
@@ -673,87 +672,87 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="23"/>
         <source>Partition Alignment</source>
-        <translation>Alineamiento de particiones</translation>
+        <translation>Allineamento partizione:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="29"/>
         <source>Use cylinder based alignment (Windows XP compatible)</source>
-        <translation>Usar alineamiento por cilindros (compatible con Microsoft Windows XP)</translation>
+        <translation>Usa allineamento basato sui cilindri (compatibile con Windows XP)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="42"/>
         <source>Sector alignment:</source>
-        <translation>Alineamiento de los sectores:</translation>
+        <translation>Allineamento di settore:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="55"/>
         <source> sectors</source>
-        <translation>sectores</translation>
+        <translation>settori</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="71"/>
         <source>Align partitions per default</source>
-        <translation>Alinear particiones por defecto</translation>
+        <translation>Allinea le partizioni come impostazione predefinita</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="90"/>
         <source>Logging</source>
-        <translation>Logging</translation>
+        <translation>Registrazione</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="96"/>
         <source>Hide messages below:</source>
-        <translation>Ocultar los siguiente mensajes:</translation>
+        <translation>Nascondi messaggi sottostanti:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="107"/>
         <source>Debug</source>
-        <translation>Depurar</translation>
+        <translation>Debug</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="112"/>
         <source>Information</source>
-        <translation>Información</translation>
+        <translation>Informazione</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="117"/>
         <source>Warning</source>
-        <translation>Advertencia</translation>
+        <translation>Avviso</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="122"/>
         <source>Error</source>
-        <translation>Error</translation>
+        <translation>Errore</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="139"/>
         <source>File Systems</source>
-        <translation>Sistemas de archivos</translation>
+        <translation>File System</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="145"/>
         <source>Default file system:</source>
-        <translation>Sistema de archivos por defecto:</translation>
+        <translation>File system di default:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="167"/>
         <source>Shredding</source>
-        <translation>Triturar</translation>
+        <translation>Distruzione in corso</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="173"/>
         <source>Overwrite with:</source>
-        <translation>Sobreescribir con:</translation>
+        <translation>Sovrascrivi con:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="180"/>
         <source>Random data</source>
-        <translation>Datos aleatorios</translation>
+        <translation>Dati casuali</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="190"/>
         <source>Zeros</source>
-        <translation>Ceros</translation>
+        <translation>Zeri</translation>
     </message>
 </context>
 <context>
@@ -761,12 +760,12 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="14"/>
         <source>Create a Partition</source>
-        <translation>Crear partición</translation>
+        <translation>Crea una partizione</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="38"/>
         <source>Partition &amp;Type:</source>
-        <translation>&amp;Tipo de partición:</translation>
+        <translation>&amp;Tipo di partizione:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="50"/>
@@ -776,17 +775,17 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="60"/>
         <source>E&amp;xtended</source>
-        <translation>E&amp;xtendida</translation>
+        <translation>E&amp;stesa</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="89"/>
         <source>F&amp;ile System:</source>
-        <translation>S&amp;istema de archivo:</translation>
+        <translation>F&amp;ile system:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="118"/>
         <source>&amp;Mount Point:</source>
-        <translation>Punto de &amp;montaje:</translation>
+        <translation>Punto di &amp;mount:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="135"/>
@@ -821,17 +820,17 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="194"/>
         <source>Si&amp;ze:</source>
-        <translation>&amp;Tamaño:</translation>
+        <translation>&amp;Dimensione:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="204"/>
         <source> MB</source>
-        <translation>MB</translation>
+        <translation> MB</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="85"/>
         <source>Logical</source>
-        <translation>Lógica</translation>
+        <translation>Logica</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="90"/>
@@ -849,32 +848,32 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="47"/>
         <source>Create partition (file system: %1, size: %2 MB) on %3.</source>
-        <translation>Crear partición (sistema de archivos: %1, tamaño: %2 MB) on %3.</translation>
+        <translation>Crea partizione (file system: %1, dimensione: %2 MB) su %3.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="60"/>
         <source>The installer failed to create partition on disk &apos;%1&apos;.</source>
-        <translation>El instalador fallo al crear la partición en el disco &apos;%1&apos;.</translation>
+        <translation>Il programma di installazione non è riuscito a creare la partizione sul disco &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="69"/>
         <source>Could not open device &apos;%1&apos;.</source>
-        <translation>No se puede abrir el dispositivo &apos;%1&apos;.</translation>
+        <translation>Impossibile aprire il disco &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="79"/>
         <source>Could not open partition table.</source>
-        <translation>No se puede abrir la tabla de partición.</translation>
+        <translation>Impossibile aprire la tabella delle partizioni.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="103"/>
         <source>The installer failed to create file system on partition %1.</source>
-        <translation>El instalador fallo al crear el sistema de archivos en la partición %1.</translation>
+        <translation>Il programma di installazione non è riuscito a creare il file system nella partizione %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="111"/>
         <source>The installer failed to update partition table on disk &apos;%1&apos;.</source>
-        <translation>El instalador fallo al actualizar la tabla de partición sobre el disco &apos;%1&apos;.</translation>
+        <translation>Il programma di installazione non è riuscito ad aggiornare la tabella delle partizioni sul disco &apos;%1&apos;</translation>
     </message>
 </context>
 <context>
@@ -882,27 +881,27 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="20"/>
         <source>Create Partition Table</source>
-        <translation>Crear Tabla de Particiones</translation>
+        <translation>Crea tabella delle partizioni</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="39"/>
         <source>Creating a new partition table will delete all existing data on the disk.</source>
-        <translation>Crear una nueva tabla de particiones borrara todos los datos existentes en el disco.</translation>
+        <translation>La creazione di una nuova tabella delle partizioni cancellerà tutti i dati esistenti sul disco.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="65"/>
         <source>What kind of partition table do you want to create?</source>
-        <translation>¿Qué tipo de tabla de particiones desea crear?</translation>
+        <translation>Che tipo di tabella delle partizioni vuoi creare?</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="72"/>
         <source>Master Boot Record (MBR)</source>
-        <translation>Registro de arranque principal (MBR)</translation>
+        <translation>Master Boot Record (MBR)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="82"/>
         <source>GUID Partition Table (GPT)</source>
-        <translation>Tabla de Particiones GUID (GPT)</translation>
+        <translation>Tavola delle Partizioni GUID (GPT)</translation>
     </message>
 </context>
 <context>
@@ -910,17 +909,17 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="47"/>
         <source>Create partition table</source>
-        <translation>Crear tabla de particiones</translation>
+        <translation>Crea tabella delle partizioni</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="54"/>
         <source>The installer failed to create a partition table on %1.</source>
-        <translation>El instalador fallo al crear la tabla de partición en %1.</translation>
+        <translation>Il programma di installazione non è riuscito a creare una tabella delle partizioni su %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="62"/>
         <source>Could not open device %1.</source>
-        <translation>No se puede abrir el dispositivo %1.</translation>
+        <translation>Impossibile aprire il dispositivo %1.</translation>
     </message>
 </context>
 <context>
@@ -928,7 +927,7 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/createpartitiontablewidgetbase.ui" line="20"/>
         <source>Choose the type of partition table you want to create:</source>
-        <translation>Elija el tipo de tabla de particiones que desea crear:</translation>
+        <translation>Scegli il tipo di tabella delle partizioni da creare:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/createpartitiontablewidgetbase.ui" line="29"/>
@@ -938,17 +937,17 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/createpartitiontablewidgetbase.ui" line="39"/>
         <source>MS-Dos</source>
-        <translation>MS-DOS</translation>
+        <translation>MS-Dos</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/createpartitiontablewidgetbase.ui" line="66"/>
         <source>(icon)</source>
-        <translation>(icono)</translation>
+        <translation>(icona)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/createpartitiontablewidgetbase.ui" line="79"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; This will destroy all data on the device!</source>
-        <translation>&lt;b&gt;Atención:&lt;/b&gt; ¡Esto eliminará todos los datos del dispositivo!</translation>
+        <translation>&lt;b&gt;Attenzione:&lt;/b&gt; Questo distruggerà tutti i dati sul dispositivo!</translation>
     </message>
 </context>
 <context>
@@ -956,57 +955,57 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="51"/>
         <source>Create user %1</source>
-        <translation>Crear usuario %1</translation>
+        <translation>Crea l&apos;utente %1</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="67"/>
         <source>Sudoers dir is not writable.</source>
-        <translation>El directorio de sudoers no dispone de permisos de escritura.</translation>
+        <translation>La cartella sudoers non è scrivibile.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="71"/>
         <source>Cannot create sudoers file for writing.</source>
-        <translation>No es posible crear el archivo de escritura para sudoers.</translation>
+        <translation>Impossibile creare il file sudoers in scrittura.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="79"/>
         <source>Cannot chmod sudoers file.</source>
-        <translation>No es posible modificar los permisos de sudoers.</translation>
+        <translation>Impossibile eseguire chmod sul file sudoers.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="85"/>
         <source>Cannot open groups file for reading.</source>
-        <translation>No es posible abrir el archivo de grupos del sistema.</translation>
+        <translation>Impossibile aprire il file groups in lettura.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="123"/>
         <source>Cannot create user %1.</source>
-        <translation>No se puede crear el usuario %1.</translation>
+        <translation>Impossibile creare l&apos;utente %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="125"/>
         <source>useradd terminated with error code %1.</source>
-        <translation>useradd terminó con código de error %1.</translation>
+        <translation>useradd si è chiuso con codice di errore %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="130"/>
         <source>Cannot set full name for user %1.</source>
-        <translation>No se puede asignar el nombre completo al usuario %1.</translation>
+        <translation>Impossibile impostare il nome completo per l&apos;utente %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="132"/>
         <source>chfn terminated with error code %1.</source>
-        <translation>chfn terminó con código de error %1.</translation>
+        <translation>chfn si è chiuso con codice di errore %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="141"/>
         <source>Cannot set home directory ownership for user %1.</source>
-        <translation>No se puede dar la propiedad del directorio home al usuario %1</translation>
+        <translation>Impossibile impostare i diritti sulla cartella home per l&apos;utente %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="143"/>
         <source>chown terminated with error code %1.</source>
-        <translation>chown terminó con código de error %1.</translation>
+        <translation>chown si è chiuso con codice di errore %1.</translation>
     </message>
 </context>
 <context>
@@ -1014,12 +1013,12 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/decryptluksdialogwidgetbase.ui" line="22"/>
         <source>&amp;Name:</source>
-        <translation>&amp;Nombre:</translation>
+        <translation>&amp;Nome:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/decryptluksdialogwidgetbase.ui" line="35"/>
         <source>&amp;Passphrase:</source>
-        <translation>&amp;Contraseña:</translation>
+        <translation>&amp;Frase di accesso:</translation>
     </message>
 </context>
 <context>
@@ -1027,27 +1026,27 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="41"/>
         <source>Delete partition %1</source>
-        <translation>Eliminar partición %1</translation>
+        <translation>Cancella la partizione %1</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="48"/>
         <source>The installer failed to delete partition %1.</source>
-        <translation>El instalador falló al eliminar la partición %1.</translation>
+        <translation>Il programma di installazione non è riuscito a cancellare la partizione %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="54"/>
         <source>Partition (%1) and device (%2) do not match.</source>
-        <translation>La partición (%1) y el dispositivo (%2) no coinciden.</translation>
+        <translation>La partizione (%1) ed il dispositivo (%2) non corrispondono.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="66"/>
         <source>Could not open device %1.</source>
-        <translation>No se puede abrir el dispositivo %1.</translation>
+        <translation>Impossibile aprire il dispositivo %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="75"/>
         <source>Could not open partition table.</source>
-        <translation>No se pudo abrir la tabla de particiones.</translation>
+        <translation>Impossibile aprire la tabella delle partizioni.</translation>
     </message>
 </context>
 <context>
@@ -1063,62 +1062,62 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="58"/>
         <source>Partition table:</source>
-        <translation>Tabla de particiones:</translation>
+        <translation>Tabella delle partizioni:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="77"/>
         <source>Cylinder alignment</source>
-        <translation>Alineamiento de cilindros</translation>
+        <translation>Allineamento del cilindro</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="84"/>
         <source>Sector based alignment</source>
-        <translation>Alineamiento de sectores</translation>
+        <translation>Allineamento al settore</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="113"/>
         <source>Capacity:</source>
-        <translation>Capacidad:</translation>
+        <translation>Capacità:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="130"/>
         <source>Total sectors:</source>
-        <translation>Total de sectores:</translation>
+        <translation>Settori totali:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="160"/>
         <source>Cylinders/Heads/Sectors:</source>
-        <translation>Cilindros/Cabezales/Sectores:</translation>
+        <translation>Cilindri/Testine/Settori:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="183"/>
         <source>Logical sector size:</source>
-        <translation>Tamaño de sector lógico:</translation>
+        <translation>Dimensione del settore logico:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="200"/>
         <source>Physical sector size:</source>
-        <translation>Tamaño de sector físico:</translation>
+        <translation>Dimensione del settore fisico:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="217"/>
         <source>Cylinder size:</source>
-        <translation>Tamaño de cilindro:</translation>
+        <translation>Dimensioni del cilindro:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="241"/>
         <source>Primaries/Max:</source>
-        <translation>Primarias/Máx:</translation>
+        <translation>Primarie/Max:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="265"/>
         <source>SMART status:</source>
-        <translation>Estado de SMART:</translation>
+        <translation>Stato SMART:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="303"/>
         <source>More...</source>
-        <translation>Más...</translation>
+        <translation>Altro...</translation>
     </message>
 </context>
 <context>
@@ -1126,32 +1125,32 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="20"/>
         <source>Edit Existing Partition</source>
-        <translation>Editar Partición Existente</translation>
+        <translation>Modifica la partizione esistente</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="50"/>
         <source>Content:</source>
-        <translation>Contenido:</translation>
+        <translation>Contenuto:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="60"/>
         <source>Keep</source>
-        <translation>Mantener</translation>
+        <translation>Mantieni</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="70"/>
         <source>Format</source>
-        <translation>Formato</translation>
+        <translation>Formatta</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="83"/>
         <source>Warning: Formatting the partition will erase all existing data.</source>
-        <translation>Advertencia: Formatear la partición borrará todos los datos existentes.</translation>
+        <translation>Attenzione: la formattazione della partizione cancellerà tutti i dati!</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="93"/>
         <source>&amp;Mount Point:</source>
-        <translation>Punto de &amp;montaje:</translation>
+        <translation>Punto di &amp;Mount:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="110"/>
@@ -1186,7 +1185,7 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="143"/>
         <source>Size:</source>
-        <translation>Tamaño:</translation>
+        <translation>Dimensioni:</translation>
     </message>
 </context>
 <context>
@@ -1194,12 +1193,12 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountoptionsdialogwidgetbase.ui" line="14"/>
         <source>Edit Mount Options</source>
-        <translation>Editar opciones de montaje</translation>
+        <translation>Cambia le opzioni di mount</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountoptionsdialogwidgetbase.ui" line="20"/>
         <source>Edit the mount options for this file system:</source>
-        <translation>Editar las opciones de montaje para este sistema de archivos:</translation>
+        <translation>Cambia le opzioni di mount per questo file system:</translation>
     </message>
 </context>
 <context>
@@ -1207,12 +1206,12 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="17"/>
         <source>Path:</source>
-        <translation>Ruta:</translation>
+        <translation>Percorso:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="46"/>
         <source>Select...</source>
-        <translation>Seleccionar...</translation>
+        <translation>Seleziona...</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="53"/>
@@ -1222,67 +1221,67 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="63"/>
         <source>Options:</source>
-        <translation>Opciones:</translation>
+        <translation>Opzioni:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="73"/>
         <source>Read-only</source>
-        <translation>Solo lectura</translation>
+        <translation>Sola lettura</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="80"/>
         <source>Users can mount and unmount</source>
-        <translation>Usuarios pueden montar y desmontar</translation>
+        <translation>Gli utenti possono effettuare mount e unmount</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="87"/>
         <source>No automatic mount</source>
-        <translation>Montaje no automático</translation>
+        <translation>Nessun mount automatico</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="94"/>
         <source>No update of file access times</source>
-        <translation>No actualizar fecha y hora de acceso a archivos</translation>
+        <translation>Nessun aggiornamento degli orari di accesso ai file</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="101"/>
         <source>Synchronous access</source>
-        <translation>Acceso sincrónico</translation>
+        <translation>Accesso sincrono</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="108"/>
         <source>No update of directory access times</source>
-        <translation>No actualizar fecha y hora de acceso a directorios</translation>
+        <translation>Nessun aggiornamento degli orari di accesso alle cartelle</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="115"/>
         <source>No binary execution</source>
-        <translation>Sin ejecución binaria</translation>
+        <translation>Nessuna esecuzione di file esenguibili</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="122"/>
         <source>Update access times relative to modification</source>
-        <translation>Tiempo de actualización de acceso relativo a modificaciones</translation>
+        <translation>Aggiorna gli orari di accesso relativi alle modifiche</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="142"/>
         <source>More...</source>
-        <translation>Más...</translation>
+        <translation>Altro...</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="149"/>
         <source>Dump Frequency:</source>
-        <translation>Frecuencia de volcado:</translation>
+        <translation>Frequenza dei dump:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="178"/>
         <source>Pass Number:</source>
-        <translation>Número de pase:</translation>
+        <translation>Numero pass:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="285"/>
         <source>Device Node</source>
-        <translation>Nodo de dispositivo</translation>
+        <translation>Nodo di dispositivo</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="295"/>
@@ -1292,12 +1291,12 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="302"/>
         <source>Label</source>
-        <translation>Etiqueta</translation>
+        <translation>Etichetta</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="309"/>
         <source>Identify by:</source>
-        <translation>Identificado como:</translation>
+        <translation>Identifica con:</translation>
     </message>
 </context>
 <context>
@@ -1305,17 +1304,17 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
     <message>
         <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="50"/>
         <source>Select drive:</source>
-        <translation>Seleccionar disco de almacenamiento:</translation>
+        <translation>Seleziona il disco:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="204"/>
         <source>Before:</source>
-        <translation>Antes:</translation>
+        <translation>Prima:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="209"/>
         <source>After:</source>
-        <translation>Despúes:</translation>
+        <translation>Dopo:</translation>
     </message>
 </context>
 <context>
@@ -1324,79 +1323,79 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="17"/>
         <source>This table shows which file systems are supported and which specific operations can be performed on them.
 Some file systems need external tools to be installed for them to be supported. But not all operations can be performed on all file systems, even if all required tools are installed. Please see the documentation for details. </source>
-        <translation>Esta tabla muestra cuales sistemas de archivos están soportados y qué operaciones específicas pueden llevarse a cabo sobre ellos.
-Algunos sistemas de archivos requieren de la instalación de herramientas externas para ser soportados. No todas las operaciones pueden realizarse sobre todos los sistemas de archivos, incluso si todas las herramientas requeridas están instaladas. Por favor, vea la documentación para conocer más detalles.</translation>
+        <translation>Questa tabella mostra quali file system sono supportati e quali operazioni possono essere effettuate su di essi.
+Alcuni file system necessitano l&apos;installazione di strumenti esterni per essere supportati. Non tutte le operazioni possono essere effettuate su tutti i file system nonostante siano stati installati gli strumenti richiesti. Per ulteriori dettagli, consultare la documentazione.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="65"/>
         <source>File System</source>
-        <translation>Sistema de archivos</translation>
+        <translation>File System</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="70"/>
         <source>Create</source>
-        <translation>Crear</translation>
+        <translation>Crea</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="75"/>
         <source>Grow</source>
-        <translation>Aumentar</translation>
+        <translation>Aumenta</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="80"/>
         <source>Shrink</source>
-        <translation>Reducir</translation>
+        <translation>Riduci</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="85"/>
         <source>Move</source>
-        <translation>Mover</translation>
+        <translation>Sposta</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="90"/>
         <source>Copy</source>
-        <translation>Copiar</translation>
+        <translation>Copia</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="95"/>
         <source>Check</source>
-        <translation>Comprobar</translation>
+        <translation>Controlla</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="100"/>
         <source>Read Label</source>
-        <translation>Leer etiqueta</translation>
+        <translation>Leggi etichetta</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="105"/>
         <source>Write Label</source>
-        <translation>Escribir etiqueta</translation>
+        <translation>Scrivi etichetta</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="110"/>
         <source>Read Usage</source>
-        <translation>Uso de lectura</translation>
+        <translation>Uso in lettura</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="115"/>
         <source>Backup</source>
-        <translation>Respaldo</translation>
+        <translation>Backup</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="120"/>
         <source>Restore</source>
-        <translation>Restaurar</translation>
+        <translation>Ripristino</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="125"/>
         <source>Support Tools</source>
-        <translation>Herramientas soportadas</translation>
+        <translation>Strumenti di supporto</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="135"/>
         <source>Rescan Support</source>
         <comment>@action:button</comment>
-        <translation>Reescanear soporte</translation>
+        <translation>Ricontrolla supporto</translation>
     </message>
 </context>
 <context>
@@ -1404,12 +1403,12 @@ Algunos sistemas de archivos requieren de la instalación de herramientas extern
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="75"/>
         <source>Set partition information</source>
-        <translation>Establecer la información de la partición</translation>
+        <translation>Imposta informazioni partizione</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="85"/>
         <source>Failed to find path for boot loader</source>
-        <translation>No se pudo encontrar la ruta al cargador de arranque</translation>
+        <translation>Impossibile trovare il percorso per il boot loader</translation>
     </message>
 </context>
 <context>
@@ -1417,32 +1416,32 @@ Algunos sistemas de archivos requieren de la instalación de herramientas extern
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="47"/>
         <source>Format partition %1 (file system: %2, size: %3 MB) on %4.</source>
-        <translation>Formatear la partición %1 (sistema de archivos: %2, tamaño: %3 MB) en %4</translation>
+        <translation>Formatta partizione %1 (file system: %2, dimensioni: %3 MB) su %4</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="59"/>
         <source>The installer failed to format partition %1 on disk &apos;%2&apos;.</source>
-        <translation>El instalador falló al formatear la partición %1 del disco &apos;%2&apos;.</translation>
+        <translation>Il programma di installazione non è riuscito a formattare la partizione %1 sul disco &apos;%2&apos;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="67"/>
         <source>Could not open device &apos;%1&apos;.</source>
-        <translation>No se pudo abrir el dispositivo &apos;%1&apos;.</translation>
+        <translation>Impossibile aprire il dispositivo &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="76"/>
         <source>Could not open partition table.</source>
-        <translation>No se pudo abrir la tabla de particiones.</translation>
+        <translation>Impossibile aprire la tabella delle partizioni.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="84"/>
         <source>The installer failed to create file system on partition %1.</source>
-        <translation>El instalador falló al crear el sistema de archivos en la partición %1.</translation>
+        <translation>Il programma di installazione non è riuscito a creare il file system sulla partizione %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="92"/>
         <source>The installer failed to update partition table on disk &apos;%1&apos;.</source>
-        <translation>El instalador falló al actualizar la tabla de particiones del disco &apos;%1&apos;.</translation>
+        <translation>Il programma di installazione non è riuscito ad aggiornare la tabella delle partizioni sul disco &apos;%1&apos;.</translation>
     </message>
 </context>
 <context>
@@ -1450,27 +1449,27 @@ Algunos sistemas de archivos requieren de la instalación de herramientas extern
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="14"/>
         <source>Form</source>
-        <translation>Formulario</translation>
+        <translation>Form</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="102"/>
         <source>&amp;About</source>
-        <translation>&amp;Acerca</translation>
+        <translation>%About</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="85"/>
         <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is in Beta stage.&lt;br/&gt;Not implemented yet is closing the installer automatically,&lt;br/&gt;showing a slideshow during the install or setting the locale.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Known Issues&lt;/a&gt;</source>
-        <translation>&lt;h1&gt;Bienvenido al instalador de %1.&lt;/h1&gt;&lt;br/&gt;Este programa le hará algunas preguntas y configurará %2 en su computadora. Recuerde, este instalador está en estado Beta.&lt;br/&gt;Todavía no se implementó el cierre automático del instalador,&lt;br/&gt;las diapositivas durante la instalación o el ajuste de la configuración regional.&lt;br/&gt;Para &lt;b&gt;particionado GPT en sistemas BIOS&lt;/b&gt; y otras instrucciones, lea &lt;a href=&quot;http://kaosx.us/es/download/&quot;&gt;Problemas conocidos&lt;/a&gt;</translation>
+        <translation>&lt;h1&gt;Benvenuto alla procedura di installazione di %1.&lt;/h1&gt;&lt;br/&gt;Saranno chieste alcune domande relative alla configurazione di %2 sul vostro computer. Ricorda che questa procedura di installzione è ancora in una fase di sviluppo beta.&lt;br/&gt;Non sono stati ancora implementati: la chiusura automatica del programma,&lt;br/&gt;il modulo di slideshow durante l&apos;installazione.&lt;br/&gt;In caso di &lt;b&gt;partizioni GPT su sistemi BIOS&lt;/b&gt; e altre raccomandazioni, fare riferimento a &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Known Issues&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="106"/>
         <source>About %1 installer</source>
-        <translation>Acerca del instalador de %1</translation>
+        <translation>Riguardo %1 installer</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="108"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technologies for a better world.</source>
-        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Gracias a: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; el desarrollo es patrocinado por &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - tecnologías para un mundo mejor.</translation>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Grazie a: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; Sviluppo sponsorizzato da&lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technologies for a better world.</translation>
     </message>
 </context>
 <context>
@@ -1478,7 +1477,7 @@ Algunos sistemas de archivos requieren de la instalación de herramientas extern
     <message>
         <location filename="../src/modules/greeting/GreetingViewStep.cpp" line="41"/>
         <source>Welcome</source>
-        <translation>Bienvenido</translation>
+        <translation>Benvenuto</translation>
     </message>
 </context>
 <context>
@@ -1486,12 +1485,12 @@ Algunos sistemas de archivos requieren de la instalación de herramientas extern
     <message>
         <location filename="../src/modules/keyboard/KeyboardPage.cpp" line="200"/>
         <source>Set keyboard model to %1.&lt;br/&gt;</source>
-        <translation>Establecer el modelo de teclado a %1.&lt;br/&gt;</translation>
+        <translation>Imposta il modello di tastiera a %1.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/KeyboardPage.cpp" line="202"/>
         <source>Set keyboard layout to %1/%2.</source>
-        <translation>Configurar el layout del teclado a %1/%2.</translation>
+        <translation>Imposta il layout della tastiera a %1%2.</translation>
     </message>
 </context>
 <context>
@@ -1499,7 +1498,7 @@ Algunos sistemas de archivos requieren de la instalación de herramientas extern
     <message>
         <location filename="../src/modules/keyboard/KeyboardViewStep.cpp" line="48"/>
         <source>Keyboard</source>
-        <translation>Teclado</translation>
+        <translation>Tastiera</translation>
     </message>
 </context>
 <context>
@@ -1507,12 +1506,12 @@ Algunos sistemas de archivos requieren de la instalación de herramientas extern
     <message>
         <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="33"/>
         <source>System locale setting</source>
-        <translation>Configuración regional del sistema</translation>
+        <translation>Partizione di sistema</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="40"/>
         <source>The system locale setting affects the language and character set for some command line user interface elements.&lt;br/&gt;The current setting is &lt;b&gt;%1&lt;/b&gt;.</source>
-        <translation>La configuración regional del sistema afecta el idioma y el juego de caracteres para algunos elementos de la interfaz en linea de comandos.&lt;/br&gt;La configuración actual es &lt;b&gt;%1&lt;/b&gt;.</translation>
+        <translation>La configurazione di &quot;system locale&quot; permette di impostare la lingua e il set di caratteri utilizzati dai componenti del sistema operativo.&lt;br/&gt;L&apos;attuale impostazione è &lt;b&gt;%1&lt;/b&gt;.</translation>
     </message>
 </context>
 <context>
@@ -1521,12 +1520,12 @@ Algunos sistemas de archivos requieren de la instalación de herramientas extern
         <location filename="../src/modules/locale/LocalePage.cpp" line="157"/>
         <location filename="../src/modules/locale/LocalePage.cpp" line="168"/>
         <source>The system locale is set to %1.</source>
-        <translation>La configuración regional del sistema está ajustada en %1</translation>
+        <translation>Il system locale è impostato su %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="165"/>
         <source>Region:</source>
-        <translation>Región:</translation>
+        <translation>Area:</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="166"/>
@@ -1536,12 +1535,12 @@ Algunos sistemas de archivos requieren de la instalación de herramientas extern
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="171"/>
         <source>&amp;Change...</source>
-        <translation>&amp;Cambiar...</translation>
+        <translation>Modifica...</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="265"/>
         <source>Set timezone to %1/%2.&lt;br/&gt;</source>
-        <translation>Configurar zona horaria a %1/%2.&lt;br/&gt;</translation>
+        <translation>Imposta il fuso orario a %1%2.&lt;br/&gt;</translation>
     </message>
 </context>
 <context>
@@ -1549,12 +1548,12 @@ Algunos sistemas de archivos requieren de la instalación de herramientas extern
     <message>
         <location filename="../src/modules/locale/LocaleViewStep.cpp" line="45"/>
         <source>Loading location data...</source>
-        <translation>Detectando ubicación...</translation>
+        <translation>Caricamento dei dati di posizione...</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LocaleViewStep.cpp" line="79"/>
         <source>Location</source>
-        <translation>Ubicación</translation>
+        <translation>Posizione</translation>
     </message>
 </context>
 <context>
@@ -1563,31 +1562,31 @@ Algunos sistemas de archivos requieren de la instalación de herramientas extern
         <location filename="../src/modules/partition/partitionmanager/src/gui/mainwindowbase.ui" line="14"/>
         <source>KDE Partition Manager</source>
         <comment>@title:window</comment>
-        <translation>Gestor de particiones de KDE</translation>
+        <translation>Gestore delle partizioni di KDE</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/mainwindowbase.ui" line="24"/>
         <source>Devices</source>
         <comment>@title:window</comment>
-        <translation>Dispositivos</translation>
+        <translation>Dispositivi</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/mainwindowbase.ui" line="38"/>
         <source>Pending Operations</source>
         <comment>@title:window</comment>
-        <translation>Operaciones pendientes</translation>
+        <translation>Operazioni in attesa</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/mainwindowbase.ui" line="49"/>
         <source>Information</source>
         <comment>@title:window</comment>
-        <translation>Información</translation>
+        <translation>Informazione</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/mainwindowbase.ui" line="63"/>
         <source>Log Output</source>
         <comment>@title:window</comment>
-        <translation>Log de Salida</translation>
+        <translation>Registra l&apos;output</translation>
     </message>
 </context>
 <context>
@@ -1595,48 +1594,48 @@ Algunos sistemas de archivos requieren de la instalación de herramientas extern
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="66"/>
         <source>Move file system of partition %1.</source>
-        <translation>Mover el sistema de archivos de la partición %1.</translation>
+        <translation>Sposta il file system della partizione %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="80"/>
         <source>Could not open file system on partition %1 for moving.</source>
-        <translation>No se puede abrir el sistema de archivos de la partición %1 para moverlo. </translation>
+        <translation>Impossibile aprire il file system della partizione %1 per lo spostamento.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="86"/>
         <source>Could not create target for moving file system on partition %1.</source>
-        <translation>No se puede crear el destino para mover el sistema de archivos a la partición %1.</translation>
+        <translation>Impossibile creare la destinazione per lo spostamento del file system sulla partizione %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="95"/>
         <source>Moving of partition %1 failed, changes have been rolled back.</source>
-        <translation>Error al mover la partición %1. Los cambios han sido revertidos.</translation>
+        <translation>Lo spostamento della partizione %1 non è andato a buon fine, i cambiamenti sono stati annullati.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="101"/>
         <source>Moving of partition %1 failed. Roll back of the changes have failed.</source>
-        <translation>Error al mover la partición %1. No se ha podido recuperar la situación inicial.</translation>
+        <translation>Lo spostamento della partizione %1 non è andato a buon fine. L&apos;annullamento dei cambiamenti non è andato a buon fine.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="113"/>
         <source>Updating boot sector after the moving of partition %1 failed.</source>
-        <translation>Error al actualizar el sector de arranque después de mover la partición %1.</translation>
+        <translation>L&apos;aggiornamento del settore di avvio eseguito dopo lo spostamento della partizione %1 non è andato a buon fine.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="127"/>
         <source>The logical sector sizes in the source and target for copying are not the same. This is currently unsupported.</source>
-        <translation>El tamaño de los sectores lógicos de origen y destino de la copia no son iguales. Este tipo de operación no está soportada.</translation>
+        <translation>Le dimensioni dei settori logici dell&apos;origine e della destinazione non  uguali per la copia. Attualmente ciò non è supportato.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="200"/>
         <source>Source and target for copying do not overlap: Rollback is not required.</source>
-        <translation>El origen y el destino no se superponen: No hace falta deshacer los cambios.</translation>
+        <translation>Origine e destinazione per la copia non coincidono: non è necessario annullare i cambiamenti.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="224"/>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="232"/>
         <source>Could not open device %1 to rollback copying.</source>
-        <translation>No se puede abrir el dispositivo %1 para deshacer la copia.</translation>
+        <translation>Impossibile aprire il dispositivo %1 per annullare la copia.</translation>
     </message>
 </context>
 <context>
@@ -1644,17 +1643,17 @@ Algunos sistemas de archivos requieren de la instalación de herramientas extern
     <message>
         <location filename="../src/modules/keyboard/KeyboardPage.ui" line="14"/>
         <source>Form</source>
-        <translation>Formulario</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/KeyboardPage.ui" line="70"/>
         <source>Keyboard Model:</source>
-        <translation>Modelo de teclado:</translation>
+        <translation>Modello della tastiera:</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/KeyboardPage.ui" line="131"/>
         <source>Type here to test your keyboard</source>
-        <translation>Escriba aquí para comprobar su teclado</translation>
+        <translation>Digita qui per provare la tastiera</translation>
     </message>
 </context>
 <context>
@@ -1662,17 +1661,17 @@ Algunos sistemas de archivos requieren de la instalación de herramientas extern
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="14"/>
         <source>Form</source>
-        <translation>Formulario</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="33"/>
         <source>What is your name?</source>
-        <translation>Nombre</translation>
+        <translation>Qual&apos;è il tuo nome?</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="111"/>
         <source>What name do you want to use to log in?</source>
-        <translation>¿Qué nombre desea usar para ingresar?</translation>
+        <translation>Che nome vuoi usare per autenticarti?</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="191"/>
@@ -1680,52 +1679,52 @@ Algunos sistemas de archivos requieren de la instalación de herramientas extern
         <location filename="../src/modules/users/page_usersetup.ui" line="425"/>
         <location filename="../src/modules/users/page_usersetup.ui" line="553"/>
         <source>font-weight: normal</source>
-        <translation>tamaño de la fuente: normal</translation>
+        <translation>Dimensione font: normale</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="194"/>
         <source>&lt;small&gt;If more than one person will use this computer, you can set up multiple accounts after installation.&lt;/small&gt;</source>
-        <translation>&lt;small&gt;Si este equipo es usado por varios usuarios, podrá configurar varias cuentas tras finalizar la instalación.&lt;/small&gt;</translation>
+        <translation>&lt;small&gt;Se più utenti useranno questo computer, puoi impostare altri account dopo l&apos;installazione.&lt;/small&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="217"/>
         <source>Choose a password to keep your account safe.</source>
-        <translation>Elija una contraseña para mantener su cuenta segura.</translation>
+        <translation>Scegli una password per rendere sicuro il tuo account.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="322"/>
         <source>&lt;small&gt;Enter the same password twice, so that it can be checked for typing errors. A good password will contain a mixture of letters, numbers and punctuation, should be at least eight characters long, and should be changed at regular intervals.&lt;/small&gt;</source>
-        <translation>&lt;small&gt;Ingrese la misma contraseña dos veces para poder revisar los errores al escribir. Una buena contraseña debe contener una mezcla entre letras, números y puntuación, deberá contener al menos ocho caracteres de longitud, y ser cambiada con regularidad.&lt;/small&gt;</translation>
+        <translation>&lt;small&gt;Inserisci la password due volte per controllare eventuali errori di battitura. Una buona password contiene lettere, numeri e segni di punteggiatura. Deve essere lunga almeno otto caratteri e dovrebbe essere cambiata a intervalli regolari.&lt;/small&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="345"/>
         <source>What is the name of this computer?</source>
-        <translation>Nombre del equipo</translation>
+        <translation>Qual è il nome di questo computer?</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="428"/>
         <source>&lt;small&gt;This name will be used if you make the computer visible to others on a network.&lt;/small&gt;</source>
-        <translation>&lt;small&gt;Este nombre será utilizado si hace este equipo visible para otros en una red.&lt;/small&gt;</translation>
+        <translation>&lt;small&gt;Questo nome sarà usato se rendi visibile il computer ad altre persone in una rete.&lt;/small&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="451"/>
         <source>Choose a password for the administrator account.</source>
-        <translation>Elegir una contraseña para la cuenta de administrador.</translation>
+        <translation>Scegli una password per l&apos;account dell&apos;amministratore.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="556"/>
         <source>&lt;small&gt;Enter the same password twice, so that it can be checked for typing errors.&lt;/small&gt;</source>
-        <translation>&lt;small&gt;Escriba dos veces la contraseña para que se puede verificar en caso de errores al escribir.&lt;/small&gt;</translation>
+        <translation>&lt;small&gt;Inserisci la password due volte per controllare eventuali errori di battitura.&lt;/small&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="596"/>
         <source>Log in automatically</source>
-        <translation>Iniciar sesión automáticamente</translation>
+        <translation>Accedi automaticamente</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="606"/>
         <source>Require my password to log in</source>
-        <translation>Requerir contraseña para ingresar</translation>
+        <translation>Richiedi la password per accedere</translation>
     </message>
 </context>
 <context>
@@ -1734,43 +1733,43 @@ Algunos sistemas de archivos requieren de la instalación de herramientas extern
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="49"/>
         <source>File system:</source>
         <comment>@label:listbox</comment>
-        <translation>Sistema de archivos:</translation>
+        <translation>File system:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="65"/>
         <source>Label:</source>
         <comment>@label</comment>
-        <translation>Etiqueta:</translation>
+        <translation>Etichetta:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="82"/>
         <source>This file system does not support setting a label.</source>
         <comment>@label</comment>
-        <translation>Este sistema de archivos no soporta la etiqueta asignada.</translation>
+        <translation>Questo file system non supporta l&apos;assegnazione di un&apos;etichetta.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="92"/>
         <source>Recreate existing file system</source>
         <comment>@action:button</comment>
-        <translation>Volver a crear el sistema de archivos existente</translation>
+        <translation>Ricrea un file system esistente</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="106"/>
         <source>Mount point:</source>
         <comment>@label</comment>
-        <translation>Punto de montaje</translation>
+        <translation>Punto di mount:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="123"/>
         <source>Partition type:</source>
         <comment>@label</comment>
-        <translation>Tipo de partición:</translation>
+        <translation>Tipo partizione:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="140"/>
         <source>Status:</source>
         <comment>@label</comment>
-        <translation>Estado:</translation>
+        <translation>Stato:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="157"/>
@@ -1782,43 +1781,43 @@ Algunos sistemas de archivos requieren de la instalación de herramientas extern
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="187"/>
         <source>Size:</source>
         <comment>@label</comment>
-        <translation>Tamaño:</translation>
+        <translation>Dimensione:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="210"/>
         <source>Available:</source>
         <comment>@label partition capacity available</comment>
-        <translation>Disponible:</translation>
+        <translation>Disponibile:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="227"/>
         <source>Used:</source>
         <comment>@label partition capacity used</comment>
-        <translation>Usado:</translation>
+        <translation>In uso:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="251"/>
         <source>First sector:</source>
         <comment>@label</comment>
-        <translation>Primer sector:</translation>
+        <translation>Primo settore:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="268"/>
         <source>Last sector:</source>
         <comment>@label</comment>
-        <translation>Último sector:</translation>
+        <translation>Ultimo settore:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="285"/>
         <source>Number of sectors:</source>
         <comment>@label</comment>
-        <translation>Número de sectores:</translation>
+        <translation>Numero di settori:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="309"/>
         <source>Flags:</source>
         <comment>@label</comment>
-        <translation>Banderas:</translation>
+        <translation>Flag:</translation>
     </message>
 </context>
 <context>
@@ -1827,12 +1826,12 @@ Algunos sistemas de archivos requieren de la instalación de herramientas extern
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="14"/>
         <source>KDE Partition Manager</source>
         <comment>@title:window</comment>
-        <translation>Gestor de particiones de KDE</translation>
+        <translation>Gestore delle partizioni di KDE</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="70"/>
         <source>Partition</source>
-        <translation> Partición</translation>
+        <translation>Partizione</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="75"/>
@@ -1842,12 +1841,12 @@ Algunos sistemas de archivos requieren de la instalación de herramientas extern
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="80"/>
         <source>Mount Point</source>
-        <translation>Punto de montaje</translation>
+        <translation>Punto di mount</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="85"/>
         <source>Label</source>
-        <translation>Etiqueta</translation>
+        <translation>Etichetta</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="90"/>
@@ -1857,37 +1856,37 @@ Algunos sistemas de archivos requieren de la instalación de herramientas extern
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="95"/>
         <source>Size</source>
-        <translation>Tamaño</translation>
+        <translation>Dimensione</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="100"/>
         <source>Used</source>
-        <translation>Usado</translation>
+        <translation>Usato</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="105"/>
         <source>Available</source>
-        <translation>Disponible</translation>
+        <translation>Disponibile</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="110"/>
         <source>First Sector</source>
-        <translation>Primer Sector</translation>
+        <translation>Primo settore</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="115"/>
         <source>Last Sector</source>
-        <translation>Último Sector</translation>
+        <translation>Ultimo settore</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="120"/>
         <source>Number of Sectors</source>
-        <translation>Número de sectores</translation>
+        <translation>Numero di settori</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="125"/>
         <source>Flags</source>
-        <translation>Marcas</translation>
+        <translation>Contrassegni</translation>
     </message>
 </context>
 <context>
@@ -1895,32 +1894,32 @@ Algunos sistemas de archivos requieren de la instalación de herramientas extern
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="132"/>
         <source>Free Space</source>
-        <translation>Espacio libre</translation>
+        <translation>Spazio disponibile</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="136"/>
         <source>New partition</source>
-        <translation>Partición nueva</translation>
+        <translation>Nuova partizione</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="175"/>
         <source>Name</source>
-        <translation>Nombre</translation>
+        <translation>Nome</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="177"/>
         <source>File System</source>
-        <translation>Sistema de archivos</translation>
+        <translation>File System</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="179"/>
         <source>Mount Point</source>
-        <translation>Punto de montaje</translation>
+        <translation>Punto di mount</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="181"/>
         <source>Size</source>
-        <translation>Tamaño</translation>
+        <translation>Dimensione</translation>
     </message>
 </context>
 <context>
@@ -1928,47 +1927,47 @@ Algunos sistemas de archivos requieren de la instalación de herramientas extern
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="14"/>
         <source>Form</source>
-        <translation>Formulario</translation>
+        <translation>Modulo</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="22"/>
         <source>&amp;Disk:</source>
-        <translation>&amp;Disco</translation>
+        <translation>&amp;Disco:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="51"/>
         <source>&amp;Revert All Changes</source>
-        <translation>&amp;Deshacer todos los cambios</translation>
+        <translation>&amp;Annulla tutte le modifiche</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="84"/>
         <source>New Partition &amp;Table</source>
-        <translation>Nueva &amp;tabla de particiones</translation>
+        <translation>Nuova &amp;Tabella delle partizioni</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="104"/>
         <source>&amp;Create</source>
-        <translation>&amp;Crear</translation>
+        <translation>&amp;Crea</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="111"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Editar</translation>
+        <translation>&amp;Modifica</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="118"/>
         <source>&amp;Delete</source>
-        <translation>&amp;Borrar</translation>
+        <translation>&amp;Cancella</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="145"/>
         <source>&amp;Install boot loader on:</source>
-        <translation>&amp;Instalar el cargador de arranque en:</translation>
+        <translation>&amp;Installa il boot loader su:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="129"/>
         <source>Are you sure you want to create a new partition table on %1?</source>
-        <translation>¿Está seguro de querer crear una nueva tabla de particiones en %1?</translation>
+        <translation>Sei sicuro di voler creare una nuova tabella delle partizioni su %1?</translation>
     </message>
 </context>
 <context>
@@ -1976,22 +1975,22 @@ Algunos sistemas de archivos requieren de la instalación de herramientas extern
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="66"/>
         <source>Gathering system information...</source>
-        <translation>Obteniendo información del sistema...</translation>
+        <translation>Raccolta delle informazioni di sistema...</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="160"/>
         <source>Partitions</source>
-        <translation>Particiones</translation>
+        <translation>Partizioni</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="188"/>
         <source>Before:</source>
-        <translation>Antes:</translation>
+        <translation>Prima:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="193"/>
         <source>After:</source>
-        <translation>Después:</translation>
+        <translation>Dopo:</translation>
     </message>
 </context>
 <context>
@@ -1999,21 +1998,20 @@ Algunos sistemas de archivos requieren de la instalación de herramientas extern
     <message>
         <location filename="../src/modules/prepare/PreparePage.cpp" line="39"/>
         <source>For best results, please ensure that this computer:</source>
-        <translation>Para obtener mejores resultados, verifique que este equipo:</translation>
+        <translation>Per ottenere prestazioni ottimali, assicurarsi che questo computer:</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PreparePage.cpp" line="96"/>
         <source>This computer does not satisfy the minimum requirements for installing %1.
 Installation cannot continue.</source>
-        <translation>Este equipo no satisface los requisitos mínimos de instalación %1.
-La instalación no puede continuar.</translation>
+        <translation>Questo computer non soddisfa i requisiti minimi per l&apos;installazione di %1. 
+L&apos;installazione non può continuare.</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PreparePage.cpp" line="109"/>
         <source>This computer does not satisfy some of the recommended requirements for installing %1.
 Installation can continue, but some features might be disabled.</source>
-        <translation>Este equipo no cumple alguno de los requisitos recomendados de la instalación %1.
-La instalación puede continuar pero algunas características podrían no estar disponibles.</translation>
+        <translation>Questo computer non soddisfa alcuni requisiti raccomandati per l&apos;installazione di %1. L&apos;installazione può continuare ma alcune funzionalità potrebbero essere disattivate.</translation>
     </message>
 </context>
 <context>
@@ -2021,32 +2019,32 @@ La instalación puede continuar pero algunas características podrían no estar 
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="54"/>
         <source>Gathering system information...</source>
-        <translation>Obteniendo información del sistema...</translation>
+        <translation>Raccolta informazioni sul sistema...</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="91"/>
         <source>has at least %1 GB available drive space</source>
-        <translation>tiene al menos %1 GB de espacio de unidad disponible</translation>
+        <translation>ha almeno %1 GB di spazio libero</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="99"/>
         <source>has at least %1 GB working memory</source>
-        <translation>tiene al menos %1 GB de memoria para trabajar</translation>
+        <translation>ha almeno %1 GB di memoria</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="107"/>
         <source>is plugged in to a power source</source>
-        <translation>está conectado a una fuente de energía</translation>
+        <translation>è collegato a una presa di alimentazione</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="114"/>
         <source>is connected to the Internet</source>
-        <translation>está conectado a Internet</translation>
+        <translation>è connesso a Internet</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="158"/>
         <source>Prepare</source>
-        <translation>Preparar</translation>
+        <translation>Prepara</translation>
     </message>
 </context>
 <context>
@@ -2054,12 +2052,12 @@ La instalación puede continuar pero algunas características podrían no estar 
     <message>
         <location filename="../src/calamares/progresstree/ProgressTreeModel.cpp" line="136"/>
         <source>Prepare</source>
-        <translation>Preparar</translation>
+        <translation>Prepara</translation>
     </message>
     <message>
         <location filename="../src/calamares/progresstree/ProgressTreeModel.cpp" line="145"/>
         <source>Finish</source>
-        <translation>Finalizar</translation>
+        <translation>Termina</translation>
     </message>
 </context>
 <context>
@@ -2067,13 +2065,13 @@ La instalación puede continuar pero algunas características podrían no estar 
     <message>
         <location filename="../src/modules/keyboard/keyboardwidget/keyboardglobal.cpp" line="82"/>
         <source>Default Keyboard Model</source>
-        <translation>Modelo de teclado por defecto</translation>
+        <translation>Modello tastiera di default</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/keyboardwidget/keyboardglobal.cpp" line="127"/>
         <location filename="../src/modules/keyboard/keyboardwidget/keyboardglobal.cpp" line="163"/>
         <source>Default</source>
-        <translation>Por defecto</translation>
+        <translation>Default</translation>
     </message>
 </context>
 <context>
@@ -2081,32 +2079,32 @@ La instalación puede continuar pero algunas características podrían no estar 
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="20"/>
         <source>KDE Release Builder</source>
-        <translation>KDE Release Builder</translation>
+        <translation>Builder di rilascio per KDE</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="32"/>
         <source>Application</source>
-        <translation>Aplicación</translation>
+        <translation>Applicazione</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="38"/>
         <source>Name:</source>
-        <translation>Nombre:</translation>
+        <translation>Nome:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="48"/>
         <source>&amp;Version:</source>
-        <translation>&amp;Versión:</translation>
+        <translation>&amp;Versione:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="93"/>
         <source>Repository and Revision</source>
-        <translation>Repositorio y Revisión</translation>
+        <translation>Repository e Revisione</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="99"/>
         <source>&amp;Checkout From:</source>
-        <translation>Formulario de &amp;comprobación:</translation>
+        <translation>&amp;Checkout da:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="119"/>
@@ -2121,7 +2119,7 @@ La instalación puede continuar pero algunas características podrían no estar 
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="129"/>
         <source>tags</source>
-        <translation>etiquetas</translation>
+        <translation>tags</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="137"/>
@@ -2131,7 +2129,7 @@ La instalación puede continuar pero algunas características podrían no estar 
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="163"/>
         <source>&amp;SVN Access:</source>
-        <translation>&amp;Acceso SVN:</translation>
+        <translation>Accesso &amp;SVN:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="183"/>
@@ -2151,32 +2149,32 @@ La instalación puede continuar pero algunas características podrían no estar 
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="201"/>
         <source>&amp;User:</source>
-        <translation>&amp;Usuario:</translation>
+        <translation>&amp;Utente:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="236"/>
         <source>Options</source>
-        <translation>Opciones</translation>
+        <translation>Opzioni</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="242"/>
         <source>Get &amp;Documentation</source>
-        <translation>Obtener &amp;Documentación</translation>
+        <translation>Ottieni &amp;Documentazione</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="252"/>
         <source>Get &amp;Translations</source>
-        <translation>Obtener &amp;Traducciones</translation>
+        <translation>Ottieni &amp;Traduzioni</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="262"/>
         <source>C&amp;reate Tag</source>
-        <translation>C&amp;rear etiqueta</translation>
+        <translation>C&amp;rea Tag</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="271"/>
         <source>S&amp;kip translations below completion:</source>
-        <translation>O&amp;mitir traducciones tras finalizar:</translation>
+        <translation>S&amp;alta le traduzioni dopo il completamento</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="306"/>
@@ -2186,12 +2184,12 @@ La instalación puede continuar pero algunas características podrían no estar 
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="324"/>
         <source>Create Tar&amp;ball</source>
-        <translation>Crear Tar&amp;ball</translation>
+        <translation>Crea Tar&amp;ball</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="334"/>
         <source>Apply &amp;fixes</source>
-        <translation>Aplicar &amp;cambios</translation>
+        <translation>Applica le &amp;correzioni</translation>
     </message>
 </context>
 <context>
@@ -2199,7 +2197,7 @@ La instalación puede continuar pero algunas características podrían no estar 
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.ui" line="14"/>
         <source>Form</source>
-        <translation>Formulario</translation>
+        <translation>Form</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.ui" line="22"/>
@@ -2209,52 +2207,52 @@ La instalación puede continuar pero algunas características podrían no estar 
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="109"/>
         <source>Select where to install %1.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;this will delete all files on the selected partition. &lt;font color=&quot;red&quot;&gt;Do not use for UEFI &lt;/font&gt;</source>
-        <translation>Selecciones donde instalar %1.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Advertencia: &lt;/font&gt;Esto borrará todos los archivos en la partición seleccionada. &lt;font color=&quot;red&quot;&gt;No utilizable para instalaciones UEFI&lt;/font&gt;</translation>
+        <translation>Selezionare dove effettuare l&apos;installazione %1.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Attenzione: &lt;/font&gt;saranno eliminati tutti i file contenuti sulla partizione selezionata. &lt;font color=&quot;red&quot;&gt;Non utilizzare con sistemi UEFI &lt;/font&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="136"/>
         <source>The selected item does not appear to be a valid partition.</source>
-        <translation>El ítem seleccionado no parece ser una partición válida.</translation>
+        <translation>Quanto selezionata non sembra una partizione valida.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="144"/>
         <source>%1 cannot be installed on empty space. Please select an existing partition.</source>
-        <translation>%1 no puede instalarse en un espacio vacío. Por favor seleccione una partición existente.</translation>
+        <translation>%1 non può essere installato su uno spazio disco vuoto. Selezionare una partizione esistente.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="155"/>
         <source>%1 cannot be installed on an extended partition. Please select an existing primary or logical partition.</source>
-        <translation>%1 no puede instalarse en una partición extendida. Por favor seleccione una partición primaria o una partición lógica.</translation>
+        <translation>%1 non può essere installato su una partizione estesa. Selezionare una partizione esistente primaria o logica.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="166"/>
         <source>%1 cannot be installed on this partition.</source>
-        <translation>%1 no puede instalarse en esta partición.</translation>
+        <translation>%1 non può essere installato su questa partizione.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="173"/>
         <source>Data partition (%1)</source>
-        <translation>Partición de datos (%1)</translation>
+        <translation>Partizione Dati (%1)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="190"/>
         <source>Unknown system partition (%1)</source>
-        <translation>Sistema de particiones desconocido (%1)</translation>
+        <translation>Partizione di sistema sconosciuta (%1)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="195"/>
         <source>%1 system partition (%2)</source>
-        <translation>%1 partición del sistema (%2)</translation>
+        <translation>%1 Partizione di Sistema (%2)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="206"/>
         <source>&lt;b&gt;%4&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;The partition %1 is too small for %2. Please select a partition with capacity at least %3 GiB.</source>
-        <translation>&lt;b&gt;%4&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;La partición %1 es demasiado chica para %2. Por favor seleccione una partición con al menos %3 Gb de capacidad.</translation>
+        <translation>&lt;b&gt;%4&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;La partizione  %1 è troppo piccola per %2. Selezionare una partizione di ampiezza non inferiore a %3 GiB.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="220"/>
         <source>&lt;b&gt;%3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;%1 will be installed on %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;all data on partition%2 will be lost.</source>
-        <translation>&lt;b&gt;%3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;%1 se instalará en %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Advertencia: &lt;/font&gt;todos los datos en la partición %2 se perderán.</translation>
+        <translation>&lt;b&gt;%3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;%1 sarà installto su %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Attenzione: &lt;/font&gt;Tutti i dati contenuti sulla partizione%2 saranno eliminati.</translation>
     </message>
 </context>
 <context>
@@ -2262,17 +2260,17 @@ La instalación puede continuar pero algunas características podrían no estar 
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="75"/>
         <source>Resize file system on partition %1.</source>
-        <translation>Redimensionar el sistema de archivos de la partición %1. </translation>
+        <translation>Ridimensiona il file system sulla partizione %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="90"/>
         <source>Parted failed to resize filesystem.</source>
-        <translation>Parted ha fallado al redimensionar el sistema de archivos.</translation>
+        <translation>Parted non è riuscito a ridimensionare il filesystem.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="100"/>
         <source>Failed to resize filesystem.</source>
-        <translation>Fallo al redimensionar el sistema de archivos.</translation>
+        <translation>Impossibile ridimensionare il filesystem.</translation>
     </message>
 </context>
 <context>
@@ -2280,18 +2278,18 @@ La instalación puede continuar pero algunas características podrían no estar 
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="186"/>
         <source>Resize partition %1.</source>
-        <translation>Redimensionar partición %1.</translation>
+        <translation>Ridimensiona partizione %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="208"/>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="266"/>
         <source>The installer failed to resize partition %1 on disk &apos;%2&apos;.</source>
-        <translation>El instalador ha fallado a la hora de reducir la partición %1 en el disco &apos;%2&apos;.</translation>
+        <translation>Il programma di installazione non è riuscito a ridimensionare la partizione %1 sul disco &apos;%2&apos;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="213"/>
         <source>Could not open device &apos;%1&apos;.</source>
-        <translation>No se pudo abrir el dispositivo &apos;%1&apos;.</translation>
+        <translation>Non riesco ad aprire il dispositivo &apos;%1&apos;.</translation>
     </message>
 </context>
 <context>
@@ -2299,19 +2297,19 @@ La instalación puede continuar pero algunas características podrían no estar 
     <message>
         <location filename="../src/modules/users/SetHostNameJob.cpp" line="36"/>
         <source>Set hostname %1</source>
-        <translation>Hostname: %1</translation>
+        <translation>Imposta hostname %1</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetHostNameJob.cpp" line="46"/>
         <location filename="../src/modules/users/SetHostNameJob.cpp" line="53"/>
         <source>Internal Error</source>
-        <translation>Error interno</translation>
+        <translation>Errore interno</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetHostNameJob.cpp" line="60"/>
         <location filename="../src/modules/users/SetHostNameJob.cpp" line="71"/>
         <source>Cannot write hostname to target system</source>
-        <translation>No es posible escribir el hostname en el sistema de destino</translation>
+        <translation>Impossibile scrivere l&apos;hostname nel sistema di destinazione</translation>
     </message>
 </context>
 <context>
@@ -2319,23 +2317,23 @@ La instalación puede continuar pero algunas características podrían no estar 
     <message>
         <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="57"/>
         <source>Set keyboard model to %1, layout to %2-%3</source>
-        <translation>Ajuste el modelo del teclado para %1, distribución para %2-%3</translation>
+        <translation>Impostazione del modello di tastiera da %1, a %2-%3</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="277"/>
         <source>Failed to write keyboard configuration for the virtual console.</source>
-        <translation>Fallo al escribir la configuración del teclado para la consola virtual.</translation>
+        <translation>Non è possibile impostare la configurazione della tastiera per la virtual console.</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="278"/>
         <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="282"/>
         <source>Failed to write to %1</source>
-        <translation>Fallo para escribir en %1</translation>
+        <translation>Non è possibile scrivere su  %1</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="281"/>
         <source>Failed to write keyboard configuration for X11.</source>
-        <translation>Fallo al escribir la configuración del teclado para X11.</translation>
+        <translation>Non è possibile scrivere la configurazione della tastiera per X11.</translation>
     </message>
 </context>
 <context>
@@ -2343,12 +2341,12 @@ La instalación puede continuar pero algunas características podrían no estar 
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="143"/>
         <source>Update geometry of partition %1.</source>
-        <translation>Actualizar la geometría de la partición %1.</translation>
+        <translation>Aggiorna la geometria della partizione %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="155"/>
         <source>Failed to change the geometry of the partition.</source>
-        <translation>Fallo al cambiar la geometría de la partición.</translation>
+        <translation>Impossibile modificare la geometria della partizione.</translation>
     </message>
 </context>
 <context>
@@ -2356,27 +2354,27 @@ La instalación puede continuar pero algunas características podrían no estar 
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="42"/>
         <source>Set password for user %1</source>
-        <translation>Definir contraseña para el usuario %1.</translation>
+        <translation>Imposta la password per l&apos;utente %1</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="52"/>
         <source>Bad destination system path.</source>
-        <translation>Destino erróneo del sistema.</translation>
+        <translation>Percorso di destinazione del sistema errato.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="53"/>
         <source>rootMountPoint is %1</source>
-        <translation>El punto de montaje de la raíz es %1</translation>
+        <translation>punto di mount per root è %1</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="62"/>
         <source>Cannot set password for user %1.</source>
-        <translation>No se puede definir contraseña para el usuario %1.</translation>
+        <translation>Impossibile impostare la password per l&apos;utente %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="64"/>
         <source>usermod terminated with error code %1.</source>
-        <translation>usermod ha terminado con el código de error %1</translation>
+        <translation>usermod si è chiuso con codice di errore %1.</translation>
     </message>
 </context>
 <context>
@@ -2384,27 +2382,27 @@ La instalación puede continuar pero algunas características podrían no estar 
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="41"/>
         <source>Set timezone to %1/%2</source>
-        <translation>Configurar uso horario a %1/%2</translation>
+        <translation>Imposta il fuso orario su %1%2</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="56"/>
         <source>Cannot access selected timezone path.</source>
-        <translation>No se puede acceder a la ruta de la zona horaria.</translation>
+        <translation>Impossibile accedere al percorso della timezone selezionata.</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="57"/>
         <source>Bad path: %1</source>
-        <translation>Ruta errónea: %1</translation>
+        <translation>Percorso errato: %1</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="69"/>
         <source>Cannot set timezone.</source>
-        <translation>No se puede definir la zona horaria</translation>
+        <translation>Impossibile impostare il fuso orario.</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="70"/>
         <source>Link creation failed, target: %1; link name: %2</source>
-        <translation>Fallo al crear el enlace, destino: %1; nombre del enlace: %2</translation>
+        <translation>Creazione del collegamento non riuscita, destinazione: %1; nome collegamento: %2</translation>
     </message>
 </context>
 <context>
@@ -2413,18 +2411,18 @@ La instalación puede continuar pero algunas características podrían no estar 
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedetailswidgetbase.ui" line="62"/>
         <source>First sector:</source>
         <comment>@label:listbox</comment>
-        <translation>Primer sector:</translation>
+        <translation>Primo settore:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedetailswidgetbase.ui" line="97"/>
         <source>Last sector:</source>
         <comment>@label:listbox</comment>
-        <translation>Último sector:</translation>
+        <translation>Ultimo settore:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedetailswidgetbase.ui" line="120"/>
         <source>Align partition</source>
-        <translation>Alinear partición</translation>
+        <translation>Allinea partizione</translation>
     </message>
 </context>
 <context>
@@ -2433,70 +2431,70 @@ La instalación puede continuar pero algunas características podrían no estar 
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="55"/>
         <source>Partition type:</source>
         <comment>@label:listbox</comment>
-        <translation>Tipo de partición:</translation>
+        <translation>Tipo partizione:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="70"/>
         <source>Primary</source>
-        <translation>Primaria</translation>
+        <translation>Principale</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="77"/>
         <source>Extended</source>
-        <translation>Extendido</translation>
+        <translation>Esteso</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="84"/>
         <source>Logical</source>
-        <translation>Lógica</translation>
+        <translation>Logica</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="99"/>
         <source>File system:</source>
         <comment>@label:listbox</comment>
-        <translation>Sistema de archivos:</translation>
+        <translation>File system:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="115"/>
         <source>Label:</source>
         <comment>@label</comment>
-        <translation>Etiqueta:</translation>
+        <translation>Etichetta:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="134"/>
         <source>This file system does not support setting a label.</source>
         <comment>@label</comment>
-        <translation>Este sistema de archivos no soporta la etiqueta asignada.</translation>
+        <translation>Questo file system non supporta l&apos;assegnazione di un&apos;etichetta.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="152"/>
         <source>Minimum size:</source>
         <comment>@label</comment>
-        <translation>Tamaño mínimo:</translation>
+        <translation>Dimensioni minime:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="175"/>
         <source>Maximum size:</source>
         <comment>@label</comment>
-        <translation>Tamaño máximo:</translation>
+        <translation>Dimensioni massime:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="198"/>
         <source>Free space before:</source>
         <comment>@label:listbox</comment>
-        <translation>Espacio libre antes:</translation>
+        <translation>Spazio libero precedente:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="233"/>
         <source>Size:</source>
         <comment>@label:listbox</comment>
-        <translation>Tamaño:</translation>
+        <translation>Dimensione:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="262"/>
         <source>Free space after:</source>
         <comment>@label:listbox</comment>
-        <translation>Espacio libre después:</translation>
+        <translation>Spazio libero seguente:</translation>
     </message>
 </context>
 <context>
@@ -2504,42 +2502,42 @@ La instalación puede continuar pero algunas características podrían no estar 
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="23"/>
         <source>SMART status:</source>
-        <translation>Estado de SMART:</translation>
+        <translation>Stato SMART:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="63"/>
         <source>Model:</source>
-        <translation>Modelo:</translation>
+        <translation>Modello:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="92"/>
         <source>Serial number:</source>
-        <translation>Número de serie:</translation>
+        <translation>Numero di serie:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="121"/>
         <source>Firmware revision:</source>
-        <translation>Revisión de Firmware:</translation>
+        <translation>Versione del firmware:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="150"/>
         <source>Temperature:</source>
-        <translation>Temperatura</translation>
+        <translation>Temperatura:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="179"/>
         <source>Bad sectors:</source>
-        <translation>Sectores malos:</translation>
+        <translation>Settori difettosi:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="208"/>
         <source>Powered on for:</source>
-        <translation>Encendido hace:</translation>
+        <translation>Acceso per:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="237"/>
         <source>Power cycles:</source>
-        <translation>Ciclos de energía:</translation>
+        <translation>Ricariche:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="289"/>
@@ -2549,32 +2547,32 @@ La instalación puede continuar pero algunas características podrían no estar 
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="294"/>
         <source>Attribute</source>
-        <translation>Atributo</translation>
+        <translation>Attributo</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="299"/>
         <source>Failure Type</source>
-        <translation>Tipo de fallo</translation>
+        <translation>Tipo di guasto</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="304"/>
         <source>Update Type</source>
-        <translation>Tipo de actualización</translation>
+        <translation>Tipo di aggiornamento</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="309"/>
         <source>Worst</source>
-        <translation>Peor</translation>
+        <translation>Peggiore</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="314"/>
         <source>Current</source>
-        <translation>Corriente</translation>
+        <translation>Attuale</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="319"/>
         <source>Threshold</source>
-        <translation>Umbral</translation>
+        <translation>Soglia</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="324"/>
@@ -2584,22 +2582,22 @@ La instalación puede continuar pero algunas características podrían no estar 
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="329"/>
         <source>Assessment</source>
-        <translation>Tasación</translation>
+        <translation>Valutazione</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="334"/>
         <source>Value</source>
-        <translation>Valor</translation>
+        <translation>Valore</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="385"/>
         <source>Overall assessment:</source>
-        <translation>Evaluación general</translation>
+        <translation>Valutazione complessiva</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="414"/>
         <source>Self tests:</source>
-        <translation>Auto test:</translation>
+        <translation>Test automatici:</translation>
     </message>
 </context>
 <context>
@@ -2607,7 +2605,7 @@ La instalación puede continuar pero algunas características podrían no estar 
     <message>
         <location filename="../src/modules/summary/SummaryViewStep.cpp" line="41"/>
         <source>Summary</source>
-        <translation>Resumen</translation>
+        <translation>Riepilogo</translation>
     </message>
 </context>
 <context>
@@ -2616,24 +2614,24 @@ La instalación puede continuar pero algunas características podrían no estar 
         <location filename="../src/modules/partition/partitionmanager/src/gui/treelogbase.ui" line="54"/>
         <source>Sev.</source>
         <comment>@title:column Severity of a log entry / log level. Text must be very short.</comment>
-        <translation>Sev.</translation>
+        <translation>Vari</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/treelogbase.ui" line="57"/>
         <source>Severity</source>
-        <translation>Severidad</translation>
+        <translation>Gravità</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/treelogbase.ui" line="62"/>
         <source>Time</source>
         <comment>@title:column a time stamp of a log entry</comment>
-        <translation>Hora</translation>
+        <translation>Ora</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/treelogbase.ui" line="67"/>
         <source>Message</source>
         <comment>@title:column the text message of a log entry</comment>
-        <translation>Mensaje</translation>
+        <translation>Messaggio</translation>
     </message>
 </context>
 <context>
@@ -2641,28 +2639,28 @@ La instalación puede continuar pero algunas características podrían no estar 
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="236"/>
         <source>Your username contains an invalid character &apos;%1&apos;</source>
-        <translation>Su nombre de usuario contiene un carácter no válido &apos;%1&apos; </translation>
+        <translation>Il tuo nome utente contiene un simbolo non valido: &apos;%1&apos;</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="240"/>
         <source>Your username contains invalid characters!</source>
-        <translation>¡Su nombre de usuario contiene caracteres no válidos!</translation>
+        <translation>Il tuo nome utente contiene simboli non validi!</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="287"/>
         <source>Your hostname contains an invalid character &apos;%1&apos;</source>
-        <translation>Su hostname contiene un carácter erróneo: &apos;%1&apos;</translation>
+        <translation>Il tuo hostname contiene un simbolo non valido &apos;%1&apos;</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="291"/>
         <source>Your hostname contains invalid characters!</source>
-        <translation>¡Su hostname contiene caracteres no válidos!</translation>
+        <translation>Il tuo hostname contiene simboli non validi!</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="322"/>
         <location filename="../src/modules/users/UsersPage.cpp" line="355"/>
         <source>Your passwords do not match!</source>
-        <translation>¡Sus contraseñas no coinciden!</translation>
+        <translation>Le tue password non corrispondono!</translation>
     </message>
 </context>
 <context>
@@ -2670,7 +2668,7 @@ La instalación puede continuar pero algunas características podrían no estar 
     <message>
         <location filename="../src/modules/users/UsersViewStep.cpp" line="46"/>
         <source>Users</source>
-        <translation>Usuarios</translation>
+        <translation>Utenti</translation>
     </message>
 </context>
 </TS>
