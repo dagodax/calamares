@@ -25,7 +25,7 @@ Presentation
 
     Timer {
         interval: 5000
-        running: false
+        running: true
         repeat: true
         onTriggered: presentation.goToNextSlide()
     }
@@ -43,7 +43,7 @@ Presentation
             anchors.horizontalCenter: background.horizontalCenter
             anchors.top: background.bottom
             text: "This is a first trial for a QML slideshow.<br/>"+
-                  "Just three slides during this test, if all works as should <br/>"+
+                  "Just four slides during this test, if all works as should <br/>"+
                   "a full slideshow will follow.<br/>"+
                   "You can follow the installation of KaOS,<br/>"+
                   "the first 30 % will take the longest, since that copies the full ISO."
@@ -56,9 +56,9 @@ Presentation
     Slide {
 
         Image {
-            id: background
-            source: "slide1.png"
-            width: 200; height: 200
+            id: background1
+            source: "1.png"
+            width: 600; height: 212
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
         }
@@ -79,9 +79,20 @@ Presentation
     Slide {
 
         Image {
-            id: background
-            source: "slide2.png"
-            width: 200; height: 200
+            id: background2
+            source: "3.png"
+            width: 600; height: 212
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
+        }
+    }
+    
+    Slide {
+
+        Image {
+            id: background4
+            source: "4.png"
+            width: 600; height: 212
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
         }
