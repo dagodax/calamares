@@ -36,7 +36,9 @@ def run():
         '.local/share/applications/',
         '.local/share/konqueror',
         '.local/share/konsole',
-        '.config/autostart'
+        '.config/autostart',
+        '.config/plasma-workspace/env',
+        '.kde4/share/config'
     ]
     for d in common_dirs:
         libcalamares.utils.chroot_call(
@@ -50,6 +52,7 @@ def run():
         ('bookmarks.xml', '.local/share/konqueror/'),
         ('favoriteapps.xml', '.local/share/applications/'),
         ('kdeglobals', '.config/'),
+        ('kdeglobals', '.kde4/share/config/'),
         ('kscreenlockerrc', '.config/'),
         ('ksplashrc', '.config/'),
         ('kickoffrc', '.config/'),
@@ -57,6 +60,7 @@ def run():
         ('mimeapps.list', '.local/share/applications/'),
         ('xdg-user-dirs-update.desktop', '.config/autostart/'),
         ('octopi-notifier.desktop', '.config/autostart/'),
+        ('libre.sh', '.config/plasma-workspace/env/'),
         ('katerc', '.config/'),
         ('ksplashrc', '.config/'),
         ('plasmarc', '.config/'),
