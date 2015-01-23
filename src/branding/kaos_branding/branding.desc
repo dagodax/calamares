@@ -11,8 +11,7 @@ strings:
     bootloaderEntryName: KaOS
 
 images:
-    productLogo:        "squid.png"
-    productIcon:        "kaos.png"
+    productLogo:         "squid.png"
+    productIcon:         "kaos.png"
 
-slideshow:
-    - "slide.png"
+slideshow:               "show.qml"
