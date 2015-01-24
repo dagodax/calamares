@@ -25,7 +25,7 @@ Presentation
 
     Timer {
         interval: 5000
-        running: true
+        running: false
         repeat: true
         onTriggered: presentation.goToNextSlide()
     }
@@ -34,21 +34,21 @@ Presentation
 
         Image {
             id: background
-            source: "squid.png"
-            width: 200; height: 200
+            source: "1.png"
+            width: 640; height: 226
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
         }
         Text {
             anchors.horizontalCenter: background.horizontalCenter
             anchors.top: background.bottom
-            text: "This is a first trial for a QML slideshow.<br/>"+
-                  "Just four slides during this test, if all works as should <br/>"+
-                  "a full slideshow will follow.<br/>"+
-                  "You can follow the installation of KaOS,<br/>"+
-                  "the first 30 % will take the longest, since that copies the full ISO."
+            text: "Here the actual install of KaOS will start.<br/>"+
+                  "Use the left mouse button to go to the next slide, right for previous.<br/>"+
+                  "After creating your chosen disk setup in the first 10 % <br/>"+
+                  "the full copying of the ISO will take the longest of this install phase <br/>"+
+                  "and will run until approximatley 30%.<br/>"
             wrapMode: Text.WordWrap
-            width: root.width
+            width: 600
             horizontalAlignment: Text.Center
         }
     }
@@ -57,21 +57,20 @@ Presentation
 
         Image {
             id: background1
-            source: "1.png"
-            width: 600; height: 212
+            source: "2.png"
+            width: 640; height: 226
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
         }
         Text {
-            anchors.horizontalCenter: background.horizontalCenter
-            anchors.top: background.bottom
-            text: "After the copying some 25 post-install modules will run.<br/>"+
+            anchors.horizontalCenter: background1.horizontalCenter
+            anchors.top: background1.bottom
+            text: "After the ISO is copied some 25 post-install modules will run.<br/>"+
                   "This includes setting user specific options, <br/>"+
-                  "removing Live Session specific packages<br/>"+
-                  "and adjusting hardware setup.<br/>"+
-                  "Once the install is finished click the Done button to close the installer."
+                  "removing Live Session only packages<br/>"+
+                  "and adjusting hardware setup.<br/>"
             wrapMode: Text.WordWrap
-            width: root.width
+            width: 600
             horizontalAlignment: Text.Center
         }
     }
@@ -81,9 +80,38 @@ Presentation
         Image {
             id: background2
             source: "3.png"
-            width: 600; height: 212
+            width: 640; height: 226
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
+        }
+        Text {
+            anchors.horizontalCenter: background2.horizontalCenter
+            anchors.top: background2.bottom
+            text: "The default Office Suite is Calligra.<br/>"+
+                  "LibreOffice is available in the repositories. <br/>"+
+            wrapMode: Text.WordWrap
+            width: 600
+            horizontalAlignment: Text.Center
+        }
+    }
+    
+    Slide {
+
+        Image {
+            id: background3
+            source: "4.png"
+            width: 640; height: 226
+            fillMode: Image.PreserveAspectFit
+            anchors.centerIn: parent
+        }
+        Text {
+            anchors.horizontalCenter: background3.horizontalCenter
+            anchors.top: background3.bottom
+            text: "Qt/KDE specific internet applications include the Qupzilla web-browser <br/>"+
+                  "and kde-telepathy for chat and Instant Messaging. <br/>"+
+            wrapMode: Text.WordWrap
+            width: 600
+            horizontalAlignment: Text.Center
         }
     }
     
@@ -91,10 +119,18 @@ Presentation
 
         Image {
             id: background4
-            source: "4.png"
-            width: 600; height: 212
+            source: "5.png"
+            width: 640; height: 226
             fillMode: Image.PreserveAspectFit
             anchors.centerIn: parent
+        }
+        Text {
+            anchors.horizontalCenter: background4.horizontalCenter
+            anchors.top: background4.bottom
+            text: "Once the install is finished click the Done button to close the installer."
+            wrapMode: Text.WordWrap
+            width: 600
+            horizontalAlignment: Text.Center
         }
     }
 }
