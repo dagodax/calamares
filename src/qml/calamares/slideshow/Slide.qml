@@ -180,7 +180,7 @@ Item {
                     id: space
                     width: dot.width * 2
                     height: 1
-                    color: "#fff2f2f2"
+                    color: "#00ffffff"
                 }
 
                 Text {

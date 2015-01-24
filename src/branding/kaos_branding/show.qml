@@ -43,7 +43,7 @@ Presentation
             anchors.horizontalCenter: background.horizontalCenter
             anchors.top: background.bottom
             text: "Here the actual install of KaOS will start.<br/>"+
-                  "Use the left mouse button to go to the next slide, right for previous.<br/>"+
+                  "Use the left <b>mouse button</b> to go to the next slide, right for previous.<br/>"+
                   "After creating your chosen disk setup in the first 10 % <br/>"+
                   "the full copying of the ISO will take the longest of this install phase <br/>"+
                   "and will run until approximatley 30%.<br/>"
@@ -88,7 +88,7 @@ Presentation
             anchors.horizontalCenter: background2.horizontalCenter
             anchors.top: background2.bottom
             text: "The default Office Suite is Calligra.<br/>"+
-                  "LibreOffice is available in the repositories. <br/>"+
+                  "LibreOffice is available in the repositories. <br/>"
             wrapMode: Text.WordWrap
             width: 600
             horizontalAlignment: Text.Center
@@ -108,7 +108,7 @@ Presentation
             anchors.horizontalCenter: background3.horizontalCenter
             anchors.top: background3.bottom
             text: "Qt/KDE specific internet applications include the Qupzilla web-browser <br/>"+
-                  "and kde-telepathy for chat and Instant Messaging. <br/>"+
+                  "and kde-telepathy for chat and Instant Messaging. <br/>"
             wrapMode: Text.WordWrap
             width: 600
             horizontalAlignment: Text.Center
