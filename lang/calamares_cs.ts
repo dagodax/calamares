@@ -1,20 +1,20 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="nl_NL" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="cs" version="2.1">
 <context>
     <name>AlongsidePage</name>
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="67"/>
         <source>Choose partition to shrink:</source>
-        <translation>Kies een partitie om te verkleinen:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="68"/>
         <source>Allocate drive space by dragging the divider below:</source>
-        <translation>Reserveer schijfruimte door de verdelers hieronder te verslepen:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="167"/>
         <source>With this operation, the partition &lt;b&gt;%1&lt;/b&gt; which contains %4 will be shrunk to %2MB and a new %3MB partition will be created for %5. &lt;font color=&quot;red&quot;&gt;Do not use for UEFI. &lt;/font&gt;</source>
-        <translation>Na deze actie zal partitie &lt;b&gt;%1&lt;/b&gt;, die %4 bevat, verkleind zijn tot %2MB en zal een nieuwe partitie van %3MB aangemaakt worden voor %5.&lt;font color=&quot;red&quot;&gt;Niet voor UEFI gebruiken. &lt;/font&gt;</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -22,12 +22,12 @@
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdetailswidgetbase.ui" line="37"/>
         <source>Save</source>
-        <translation>Opslaan</translation>
+        <translation>Uložit</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdetailswidgetbase.ui" line="44"/>
         <source>Open in External Browser</source>
-        <translation>Openen in een externe browser</translation>
+        <translation>Otevřít ve vnějším prohlížeči</translation>
     </message>
 </context>
 <context>
@@ -35,32 +35,32 @@
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="33"/>
         <source>Operations and Jobs</source>
-        <translation>Acties en Taken</translation>
+        <translation>Operace a úkoly</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="38"/>
         <source>Time Elapsed</source>
-        <translation>Verstreken tijd</translation>
+        <translation>Uplynulý čas</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="64"/>
         <source>Total Time: 00:00:00</source>
-        <translation>Totale tijd: 00:00:00</translation>
+        <translation>Celkový čas: 00:00:00</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="81"/>
         <source>Operation: %p%</source>
-        <translation>Actie: %p%</translation>
+        <translation>Operace: %p%</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="91"/>
         <source>Status</source>
-        <translation>Status</translation>
+        <translation>Stav</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="107"/>
         <source>Total: %p%</source>
-        <translation>Totaal: %p%</translation>
+        <translation>Celkem: %p%</translation>
     </message>
 </context>
 <context>
@@ -68,7 +68,7 @@
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="20"/>
         <source>Installer</source>
-        <translation>Installatieprogramma</translation>
+        <translation>Instalátor</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="168"/>
@@ -81,17 +81,17 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Welkom&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Vítejte&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="198"/>
         <source>Location</source>
-        <translation>Locatie</translation>
+        <translation>Poloha</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="224"/>
         <source>License Approval</source>
-        <translation>Goedkeuring van de licentie</translation>
+        <translation>Souhlas s licencí</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="257"/>
@@ -104,12 +104,12 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Installatie&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Instalace&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="287"/>
         <source>Install System</source>
-        <translation>Installeer systeem</translation>
+        <translation>Nainstalovat systém</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="320"/>
@@ -122,37 +122,37 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Configuratie&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Nastavení&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="331"/>
         <source>Reboot</source>
-        <translation>Herstarten</translation>
+        <translation>Restartovat</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="410"/>
         <source>Language</source>
-        <translation>Taal</translation>
+        <translation>Jazyk</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="443"/>
         <source>User Info</source>
-        <translation>Gebruikersinformatie</translation>
+        <translation>Informace o uživateli</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="469"/>
         <source>Summary</source>
-        <translation>Samenvatting</translation>
+        <translation>Shrnutí</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="514"/>
         <source>Keyboard</source>
-        <translation>Toetsenbord</translation>
+        <translation>Klávesnice</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="521"/>
         <source>Disk Setup</source>
-        <translation>Schijf indelen</translation>
+        <translation>Nastavení disku</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="528"/>
@@ -165,7 +165,7 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Voorbereiding&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Příprava&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
@@ -173,17 +173,17 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="57"/>
         <source>Master Boot Record of %1</source>
-        <translation>Master Boot Record van %1</translation>
+        <translation>Master Boot Record %1</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="71"/>
         <source>Boot Partition</source>
-        <translation>Bootpartitie</translation>
+        <translation>Zaváděcí oddíl</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="76"/>
         <source>System Partition</source>
-        <translation>Systeempartitie</translation>
+        <translation>Systémový oddíl</translation>
     </message>
 </context>
 <context>
@@ -191,7 +191,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamaresui/InstallationViewStep.cpp" line="75"/>
         <source>Install</source>
-        <translation>Installeer</translation>
+        <translation>Nainstalovat</translation>
     </message>
 </context>
 <context>
@@ -199,7 +199,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamares/JobQueue.cpp" line="88"/>
         <source>Click the Quit button to return to live mode and reboot from there into your newly installed system</source>
-        <translation>Klik de aflsuiten knop om terug te keren naar de Live mode and hestart van daar in uw nieuw geinstalleerde system</translation>
+        <translation>Klepněte na tlačítko Ukončit pro návrat do živého režimu a odtamtud proveďte restart do vašeho nově naunstalovaného systému</translation>
     </message>
 </context>
 <context>
@@ -207,68 +207,68 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="51"/>
         <source>Run command %1</source>
-        <translation>%1 uitvoeren</translation>
+        <translation>Spustit příkaz %1</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="77"/>
         <source>External command crashed</source>
-        <translation>Externe opdracht is gecrashed</translation>
+        <translation>Vnější příkaz spadl</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="78"/>
         <source>Command %1 crashed.
 Output:
 %2</source>
-        <translation>Opdracht %1 is gecrashed.
-Output:
+        <translation>Příkaz %1 spadl
+Výstup:
 %2</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="83"/>
         <source>External command failed to start</source>
-        <translation>Externe opdracht starten mislukt</translation>
+        <translation>Vnější příkaz se nepodařilo spustit</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="84"/>
         <source>Command %1 failed to start.</source>
-        <translation>Opdracht %1 starten mislukt.</translation>
+        <translation>Příkaz %1 se nepodařilo spustit.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="88"/>
         <source>Internal error when starting command</source>
-        <translation>Interne fout bij starten opdracht</translation>
+        <translation>Vnitřní chyba při spouštění příkazu</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="89"/>
         <source>Bad parameters for process job call.</source>
-        <translation>Onjuiste parameters voor procestaak</translation>
+        <translation>Špatné parametry pro volání úlohy procesu.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="92"/>
         <source>External command failed to finish</source>
-        <translation>Externe opdracht voltooiing mislukt</translation>
+        <translation>Vnější příkaz se nepodařilo dokončit</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="93"/>
         <source>Command %1 failed to finish in %2s.
 Output:
 %3</source>
-        <translation>Opdracht %1 mislukt voor voltooiing in %2s.
-Uitvoer:
+        <translation>Příkaz %1 se nepodařilo dokončit za %2s.
+Výstup:
 %3</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="99"/>
         <source>External command finished with errors</source>
-        <translation>Externe opdracht voltooid met fouten</translation>
+        <translation>Vnější příkaz skončil s chybami</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="100"/>
         <source>Command %1 finished with exit code %2.
 Output:
 %3</source>
-        <translation>Opdracht %1 voltooid met exit code %2.
-Uitvoer:
+        <translation>Příkaz %1 sskončil s hodnotou %2.
+Výstup:
 %3</translation>
     </message>
 </context>
@@ -277,32 +277,32 @@ Uitvoer:
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="234"/>
         <source>Run script %1</source>
-        <translation>Start script %1</translation>
+        <translation>Spustit skript %1</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="249"/>
         <source>Bad working directory path</source>
-        <translation>Ongeldig pad voor huidige map </translation>
+        <translation>Neplatná cesta k pracovnímu adresáři</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="250"/>
         <source>Working directory %1 for python job %2 is not readable.</source>
-        <translation>Werkmap %1 voor python taak %2 onleesbaar.</translation>
+        <translation>Pracovní adresář %1 pro pythonovskou úlohu %2 není čitelný.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="260"/>
         <source>Bad main script file</source>
-        <translation>Onjuist hoofdscriptbestand</translation>
+        <translation>Špatný soubor s hlavním skriptem</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="261"/>
         <source>Main script file %1 for python job %2 is not readable.</source>
-        <translation>Hoofdscriptbestand %1 voor python taak %2 onleesbaar.</translation>
+        <translation>Soubor s hlavním skriptem %1 pro pythonovskou úlohu %2 není čitelný.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="305"/>
         <source>Boost.Python error in job &quot;%1&quot;.</source>
-        <translation>Boost.Python fout in taak &quot;%1&quot;.</translation>
+        <translation>Chyba Boost.Python v úloze &quot;%1&quot;.</translation>
     </message>
 </context>
 <context>
@@ -310,27 +310,27 @@ Uitvoer:
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="55"/>
         <source>&amp;Back</source>
-        <translation>&amp;Terug</translation>
+        <translation>&amp;Zpět</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="56"/>
         <source>&amp;Next</source>
-        <translation>&amp;Volgende</translation>
+        <translation>&amp;Další</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="57"/>
         <source>&amp;Quit</source>
-        <translation>&amp;Afsluiten</translation>
+        <translation>&amp;Ukončit</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="138"/>
         <source>Error</source>
-        <translation>Fout</translation>
+        <translation>Chyba</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="139"/>
         <source>Installation Failed</source>
-        <translation>Installatie Mislukt</translation>
+        <translation>Instalace se nezdařila</translation>
     </message>
 </context>
 <context>
@@ -338,22 +338,22 @@ Uitvoer:
     <message>
         <location filename="../src/libcalamares/PythonHelper.cpp" line="234"/>
         <source>Unknown exception type</source>
-        <translation>Onbekend uitzonderingstype</translation>
+        <translation>Neznámý typ výjimky</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonHelper.cpp" line="247"/>
         <source>unparseable Python error</source>
-        <translation>onuitvoerbare Python fout</translation>
+        <translation>Nezpracovatelná chyba Pythonu</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonHelper.cpp" line="263"/>
         <source>unparseable Python traceback</source>
-        <translation>onuitvoerbare Python traceback</translation>
+        <translation>Nezpracovatelné vyznačení Pythonu</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonHelper.cpp" line="267"/>
         <source>Unfetchable Python error.</source>
-        <translation>Onbekende Python fout.</translation>
+        <translation>Nezapočitatelná chaby Pythonu.</translation>
     </message>
 </context>
 <context>
@@ -361,7 +361,7 @@ Uitvoer:
     <message>
         <location filename="../src/calamares/CalamaresWindow.cpp" line="40"/>
         <source>%1 Installer</source>
-        <translation>%1 Installatieprogramma</translation>
+        <translation>Instalátor %1</translation>
     </message>
 </context>
 <context>
@@ -369,12 +369,12 @@ Uitvoer:
     <message>
         <location filename="../src/modules/partition/jobs/CheckFileSystemJob.cpp" line="34"/>
         <source>Checking file system on partition %1.</source>
-        <translation>Controleren van het bestandssysteem op partitie %1.</translation>
+        <translation>Ověřování souborového systému na diskovém oddílu %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CheckFileSystemJob.cpp" line="50"/>
         <source>The file system check on partition %1 failed.</source>
-        <translation>Controle van bestandssysteem partitie %1 mislukt.</translation>
+        <translation>Ověření souborového systému na diskovém oddílu %1 se nezdařilo.</translation>
     </message>
 </context>
 <context>
@@ -382,65 +382,65 @@ Uitvoer:
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="115"/>
         <source>This computer currently does not seem to have an operating system on it. What would you like to do?</source>
-        <translation>Deze computer lijkt geen besturingssysteem te bevatten. Wat wil je doen?</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="118"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="175"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="217"/>
         <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Wis schijf en installeer %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Opgelet: &lt;/font&gt;Dit zal alle programma&apos;s, documenten, foto&apos;s, muziek en alle andere bestanden wissen. &lt;b&gt; Niet geschikt voor UEFI installaties&lt;/b&gt;</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="135"/>
         <source>This computer currently has %1 on it. What would you like to do?</source>
-        <translation>Deze computer bevat momenteel %1. Wat wil je doen?</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="139"/>
         <source>&lt;b&gt;Install %2 alongside %1&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Installeer %2 naast %1&lt;/b&gt;&lt;br\&gt;Documenten, muziek en andere persoonlijke bestanden zullen bewaard blijven. Telkens als de computer opstart kun je kiezen welk besturingssysteem je wilt gebruiken.  &lt;b&gt; WAARSCHUWING:  niet een optie voor UEFI installaties&lt;/b&gt;</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="147"/>
         <source>&lt;b&gt;Erase entire disk with %1 and install %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Vervang %1 door %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Opgelet: &lt;/font&gt;Dit zal de volledige schijf wissen, en dus ook alle %1 programma&apos;s, documenten, foto&apos;s, muziek en andere bestanden.  &lt;b&gt;Niet geschikt voor UEFI installaties&lt;/b&gt;</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="155"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="181"/>
         <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all files on the selected partition. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
-        <translation>&lt;b&gt;Installeer %1 op een bestaande partitie&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Waarschuwing: &lt;/font&gt;Dit zal alle bestanden op de geselecteerde partitie wissen.. &lt;b&gt;Niet geschikt voor UEFI installaties&lt;/b&gt; </translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="165"/>
         <source>This computer already has an operating system on it. What would you like to do?</source>
-        <translation>Deze computer bevat reeds een besturingssysteem. Wat wil je doen?</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="168"/>
         <source>&lt;b&gt;Install %1 alongside your current operating system&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Installeer %1 naast je huidige besturingssysteem&lt;/b&gt;&lt;br/&gt;Documenten, muziek en andere persoonlijke bestanden zullen bewaard blijven. Telkens de computer opstart kan je kiezen welk besturingssysteem je wil gebruiken.  &lt;b&gt;WAARSCUWING: geen optie voor UEFI installaties&lt;/b&gt;</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="207"/>
         <source>This computer currently has multiple operating systems on it. What would you like to do?</source>
-        <translation>Deze computer bevat meerdere besturingssystemen.  Wat wil je doen?</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="210"/>
         <source>&lt;b&gt;Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Installeer %1 naast de huidige besturingssystemen&lt;/b&gt;&lt;br/&gt;Documenten, muziek en andere persoonlijke bestanden zullen bewaard blijven. Telkens de computer opstart kan je kiezen welk besturingssysteem je wil gebruiken.  &lt;b&gt;WAARSCHUWING: geen optie voor UEFI installaties&lt;/b&gt;</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="223"/>
         <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all files on the selected partition. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Installeer %1 op een bestaande partitie&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Opgelet: &lt;/font&gt;Dit zal alle bestanden op de geselecteerde partitie wissen.. &lt;b&gt;Niet geschikt voor UEFI installaties&lt;/b&gt; </translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="240"/>
         <source>&lt;b&gt;Something else&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a GPT partition table and &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
-        <translation>&lt;b&gt;Something else&lt;/b&gt;&lt;br/&gt;Je kunt partities zelf creeren of aanpassen, of kies meerdere partities voor %1.  Kies deze opties for UEFI installaties, het hebben van een GPT partitietabel en &lt;b&gt;fat32 512Mb /boot partitie is een must voor UEFI installaties&lt;/b&gt;, ofwel gebruik maken van een bestaande, zonder formatteren of creeer.</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -448,22 +448,22 @@ Uitvoer:
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="40"/>
         <source>Clear mounts for partitioning operations on %1</source>
-        <translation>Wis mounts voor partitionering operaties op %1</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="62"/>
         <source>Cannot umount partition %1</source>
-        <translation>Kan niet umounten partitie %1</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="64"/>
         <source>Cannot proceed with partitioning operations because some partitions are still mounted.</source>
-        <translation>Kan niet doorgaan met partitioneren omdat sommige partities nog zijn gemonteerd.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="70"/>
         <source>Cleared all mounts for %1</source>
-        <translation>Ontruimd alle mounts voor %1</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -471,32 +471,32 @@ Uitvoer:
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="23"/>
         <source>Permissions</source>
-        <translation>Bestandsrechten</translation>
+        <translation>Oprávnění</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="35"/>
         <source>Allow applying operations without administrator privileges</source>
-        <translation>Sta toe om acties zonder administratorrechten uit te voeren</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="51"/>
         <source>Backend</source>
-        <translation>Backend</translation>
+        <translation>Podpůrná vrstva</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="57"/>
         <source>Active backend:</source>
-        <translation>Actieve backend:</translation>
+        <translation>Činná odpůrná vrstva:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="79"/>
         <source>Units</source>
-        <translation>Eenheden</translation>
+        <translation>Jednotky</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="85"/>
         <source>Preferred unit:</source>
-        <translation>Voorkeurseenheid:</translation>
+        <translation>Upřednostňovaná jednotka:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="96"/>
@@ -539,7 +539,7 @@ Uitvoer:
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="23"/>
         <source>File Systems</source>
-        <translation>Bestandssystemen</translation>
+        <translation>Souborové systémy</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="29"/>
@@ -554,7 +554,7 @@ Uitvoer:
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="58"/>
         <source>ext2:</source>
-        <translation>ext2</translation>
+        <translation>ext2:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="87"/>
@@ -609,7 +609,7 @@ Uitvoer:
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="338"/>
         <source>jfs</source>
-        <translation>jfs:</translation>
+        <translation>jfs</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="367"/>
@@ -639,17 +639,17 @@ Uitvoer:
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="489"/>
         <source>extended:</source>
-        <translation>uitgebreid:</translation>
+        <translation>rozšířený:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="518"/>
         <source>unformatted:</source>
-        <translation>ongeformatteerd:</translation>
+        <translation>neformátovaný:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="547"/>
         <source>unknown:</source>
-        <translation>onbekend:</translation>
+        <translation>neznámý:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagefilesystemcolors.ui" line="570"/>
@@ -672,87 +672,87 @@ Uitvoer:
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="23"/>
         <source>Partition Alignment</source>
-        <translation>Partitie Uitlijning</translation>
+        <translation>Zarovnání oddílu</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="29"/>
         <source>Use cylinder based alignment (Windows XP compatible)</source>
-        <translation>Gebruik cilindergebaseerde uitlijning (compatibel met Windows XP)</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="42"/>
         <source>Sector alignment:</source>
-        <translation>Sector uitlijning:</translation>
+        <translation>Zarovnání sektoru:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="55"/>
         <source> sectors</source>
-        <translation>sectoren</translation>
+        <translation> sektory</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="71"/>
         <source>Align partitions per default</source>
-        <translation>Partities altijd uitlijnen</translation>
+        <translation>Zarovnat oddíly ve výchozím nastavení</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="90"/>
         <source>Logging</source>
-        <translation>Logging</translation>
+        <translation>Záznam</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="96"/>
         <source>Hide messages below:</source>
-        <translation>Verberg onderstaande berichten:</translation>
+        <translation>Skrýt zprávy níže:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="107"/>
         <source>Debug</source>
-        <translation>Fouten opsporen</translation>
+        <translation>Ladění</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="112"/>
         <source>Information</source>
-        <translation>Informatie</translation>
+        <translation>Informace</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="117"/>
         <source>Warning</source>
-        <translation>Waarschuwing</translation>
+        <translation>Varování</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="122"/>
         <source>Error</source>
-        <translation>Fout</translation>
+        <translation>Chyba</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="139"/>
         <source>File Systems</source>
-        <translation>Bestandssystemen</translation>
+        <translation>Souborové systémy</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="145"/>
         <source>Default file system:</source>
-        <translation>Standaard bestandssysteem:</translation>
+        <translation>Výchozí souborový systém:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="167"/>
         <source>Shredding</source>
-        <translation>Veilig wissen</translation>
+        <translation>Probíhá změna velikosti</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="173"/>
         <source>Overwrite with:</source>
-        <translation>Overschrijven met:</translation>
+        <translation>Přepsat:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="180"/>
         <source>Random data</source>
-        <translation>Willekeurige gegevens</translation>
+        <translation>Náhodná data</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="190"/>
         <source>Zeros</source>
-        <translation>Nullen</translation>
+        <translation>Nuly</translation>
     </message>
 </context>
 <context>
@@ -760,32 +760,32 @@ Uitvoer:
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="14"/>
         <source>Create a Partition</source>
-        <translation>Maak partitie</translation>
+        <translation>Vytvořit oddíl</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="38"/>
         <source>Partition &amp;Type:</source>
-        <translation>Partitie&amp;type:</translation>
+        <translation>Typ &amp;oddílu:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="50"/>
         <source>&amp;Primary</source>
-        <translation>&amp;Primair</translation>
+        <translation>&amp;Hlavní</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="60"/>
         <source>E&amp;xtended</source>
-        <translation>&amp;Uitgebreid</translation>
+        <translation>&amp;Rozšířený</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="89"/>
         <source>F&amp;ile System:</source>
-        <translation>&amp;Bestandssysteem:</translation>
+        <translation>&amp;Souborový systém:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="118"/>
         <source>&amp;Mount Point:</source>
-        <translation>Aan&amp;koppelpunt</translation>
+        <translation>&amp;Přípojný bod:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="135"/>
@@ -820,22 +820,22 @@ Uitvoer:
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="194"/>
         <source>Si&amp;ze:</source>
-        <translation>&amp;Grootte:</translation>
+        <translation>V&amp;elikost:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="204"/>
         <source> MB</source>
-        <translation>MB</translation>
+        <translation> MB</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="85"/>
         <source>Logical</source>
-        <translation>Logisch</translation>
+        <translation>Logický</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="90"/>
         <source>Primary</source>
-        <translation>Primair</translation>
+        <translation>Hlavní</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="107"/>
@@ -848,32 +848,32 @@ Uitvoer:
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="47"/>
         <source>Create partition (file system: %1, size: %2 MB) on %3.</source>
-        <translation>Maak partitie (bestands systeem: %1, omvang: %2 MB) op %3.</translation>
+        <translation>Vytvořit oddíl (souborový systém: %1, velikost: %2 MB) na %3.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="60"/>
         <source>The installer failed to create partition on disk &apos;%1&apos;.</source>
-        <translation>Het installatieprogramma kon geen partitie aanmaken op schijf &apos;%1&apos;.</translation>
+        <translation>Instalátoru se nepodařilo vytvořit oddíl na disku &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="69"/>
         <source>Could not open device &apos;%1&apos;.</source>
-        <translation>Kan apparaat %1 niet openen.</translation>
+        <translation>Nepodařilo se otevřít zařízení &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="79"/>
         <source>Could not open partition table.</source>
-        <translation>Kon partitietabel niet open</translation>
+        <translation>Nepodařilo se otevřít tabulku oddílů.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="103"/>
         <source>The installer failed to create file system on partition %1.</source>
-        <translation>Het installatieprogramma kon geen bestandssysteem aanmaken op partitie %1.</translation>
+        <translation>Instalátoru se nepodařilo vytvořit souborový systém na disku &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="111"/>
         <source>The installer failed to update partition table on disk &apos;%1&apos;.</source>
-        <translation>Het installatieprogramma kon de partitietabel op schijf &apos;%1&apos; niet bijwerken .</translation>
+        <translation>Instalátoru se nepodařilo aktualizovat oddíl na disku &apos;%1&apos;.</translation>
     </message>
 </context>
 <context>
@@ -881,17 +881,17 @@ Uitvoer:
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="20"/>
         <source>Create Partition Table</source>
-        <translation>Maak Partitietabel</translation>
+        <translation>Vytvořit tabulku oddílů</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="39"/>
         <source>Creating a new partition table will delete all existing data on the disk.</source>
-        <translation>Een nieuwe partitietabel aanmaken zal alle bestaande gegevens op de schijf wissen.</translation>
+        <translation>Vytvoření nové tabulky oddílů smaže všechna stávající data na disku.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="65"/>
         <source>What kind of partition table do you want to create?</source>
-        <translation>Welk type partitietabel wens je aan te maken?</translation>
+        <translation>Jaký druh tabulky oddílů chcete vytvořit?</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="72"/>
@@ -901,7 +901,7 @@ Uitvoer:
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="82"/>
         <source>GUID Partition Table (GPT)</source>
-        <translation>GUID Partitietabel (GPT)</translation>
+        <translation>Tabulku oddílů GUID (GPT)</translation>
     </message>
 </context>
 <context>
@@ -909,17 +909,17 @@ Uitvoer:
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="47"/>
         <source>Create partition table</source>
-        <translation>Maak partitietabel</translation>
+        <translation>Vytvořit tabulku oddílů</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="54"/>
         <source>The installer failed to create a partition table on %1.</source>
-        <translation>Het installatieprogramma kon geen partitietabel aanmaken op %1.</translation>
+        <translation>Instalátoru se nepodařilo vytvořit tabulku oddílů na disku &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="62"/>
         <source>Could not open device %1.</source>
-        <translation>Kon apparaat %1 niet openen.</translation>
+        <translation>Nepodařilo se otevřít zařízení %1.</translation>
     </message>
 </context>
 <context>
@@ -927,7 +927,7 @@ Uitvoer:
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/createpartitiontablewidgetbase.ui" line="20"/>
         <source>Choose the type of partition table you want to create:</source>
-        <translation>Kies het type partitietabel dat je wenst aan te maken:</translation>
+        <translation>Vyberte typ tabulky oddílů, který chcete vytvořit:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/createpartitiontablewidgetbase.ui" line="29"/>
@@ -937,17 +937,17 @@ Uitvoer:
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/createpartitiontablewidgetbase.ui" line="39"/>
         <source>MS-Dos</source>
-        <translation>MS-DOS</translation>
+        <translation>MS-Dos</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/createpartitiontablewidgetbase.ui" line="66"/>
         <source>(icon)</source>
-        <translation>(icoon)</translation>
+        <translation>(ikona)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/createpartitiontablewidgetbase.ui" line="79"/>
         <source>&lt;b&gt;Warning:&lt;/b&gt; This will destroy all data on the device!</source>
-        <translation>&lt;b&gt;Waarschuwing:&lt;/b&gt; Dit zal alle gegevens op het apparaat vernietigen!</translation>
+        <translation>&lt;b&gt;Varování:&lt;/b&gt; Tímto budou všechna data na disku smazána!</translation>
     </message>
 </context>
 <context>
@@ -955,57 +955,57 @@ Uitvoer:
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="51"/>
         <source>Create user %1</source>
-        <translation>Maak gebruiker %1</translation>
+        <translation>Vytvořit uživatele %1</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="67"/>
         <source>Sudoers dir is not writable.</source>
-        <translation>Sudoers map is niet schrijfbaar.</translation>
+        <translation>Adresář správce (oprávnění root - su) není zapisovatelný.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="71"/>
         <source>Cannot create sudoers file for writing.</source>
-        <translation>Kan het bestand sudoers niet aanmaken.</translation>
+        <translation>Nelze vytvořit soubor správce (su) pro zápis.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="79"/>
         <source>Cannot chmod sudoers file.</source>
-        <translation>chmod sudoers gefaald.</translation>
+        <translation>Nelze spustit chmod na souboru správce (su).</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="85"/>
         <source>Cannot open groups file for reading.</source>
-        <translation>Kan het bestand groups niet lezen.</translation>
+        <translation>Nelze otevřít soubor se skupinami pro čtení.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="123"/>
         <source>Cannot create user %1.</source>
-        <translation>Kan gebruiker %1 niet aanmaken.</translation>
+        <translation>Nelze vytvořit uživatele %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="125"/>
         <source>useradd terminated with error code %1.</source>
-        <translation>useradd is gestopt met foutcode %1.</translation>
+        <translation>useradd je ukončen s kódem chyby %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="130"/>
         <source>Cannot set full name for user %1.</source>
-        <translation>Kan de volledige naam voor gebruiker %1 niet instellen.</translation>
+        <translation>Nelze nastavit celé jméno pro uživatele %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="132"/>
         <source>chfn terminated with error code %1.</source>
-        <translation>chfn is gestopt met foutcode %1.</translation>
+        <translation>chfn je ukončen s kódem chyby %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="141"/>
         <source>Cannot set home directory ownership for user %1.</source>
-        <translation>Kan eigendomsrecht gebruikersmap niet instellen voor gebruiker %1.</translation>
+        <translation>Nelze nastavit vlastnictví domovského adresáře pro uživatele %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="143"/>
         <source>chown terminated with error code %1.</source>
-        <translation>chown is gestopt met foutcode %1.</translation>
+        <translation>chown je ukončen s kódem chyby %1.</translation>
     </message>
 </context>
 <context>
@@ -1013,12 +1013,12 @@ Uitvoer:
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/decryptluksdialogwidgetbase.ui" line="22"/>
         <source>&amp;Name:</source>
-        <translation>&amp;Naam:</translation>
+        <translation>&amp;Název:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/decryptluksdialogwidgetbase.ui" line="35"/>
         <source>&amp;Passphrase:</source>
-        <translation>&amp;Wachtwoordzin:</translation>
+        <translation>&amp;Heslo:</translation>
     </message>
 </context>
 <context>
@@ -1026,27 +1026,27 @@ Uitvoer:
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="41"/>
         <source>Delete partition %1</source>
-        <translation>Verwijder partitie %1</translation>
+        <translation>Smazat oddíl %1</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="48"/>
         <source>The installer failed to delete partition %1.</source>
-        <translation>Het installatieprogramma kon partitie %1 niet verwijderen.</translation>
+        <translation>Instalátoru se nepodařilo smazat oddíl %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="54"/>
         <source>Partition (%1) and device (%2) do not match.</source>
-        <translation>Partitie (%1) en apparaat (%2) komen niet overeen.</translation>
+        <translation>Oddíl (%1) a zařízení (%2) se neshodují.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="66"/>
         <source>Could not open device %1.</source>
-        <translation>Kon apparaat %1 niet openen.</translation>
+        <translation>Nepodařilo se otevřít zařízení %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="75"/>
         <source>Could not open partition table.</source>
-        <translation>Kon de partitietabel niet openen.</translation>
+        <translation>Nepodařilo se otevřít tabulku oddílů.</translation>
     </message>
 </context>
 <context>
@@ -1062,62 +1062,62 @@ Uitvoer:
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="58"/>
         <source>Partition table:</source>
-        <translation>Partitietabel:</translation>
+        <translation>Tabulka oddílů:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="77"/>
         <source>Cylinder alignment</source>
-        <translation>Cilinderuitlijning</translation>
+        <translation>Zarovnání cylindru</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="84"/>
         <source>Sector based alignment</source>
-        <translation>Sectoruitlijning</translation>
+        <translation>Zarovnání založené na sektoru</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="113"/>
         <source>Capacity:</source>
-        <translation>Capaciteit:</translation>
+        <translation>Kapacita:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="130"/>
         <source>Total sectors:</source>
-        <translation>Totaal aantal sectoren:</translation>
+        <translation>Celkem sektorů:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="160"/>
         <source>Cylinders/Heads/Sectors:</source>
-        <translation>Cilinders / Koppen / Sectoren:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="183"/>
         <source>Logical sector size:</source>
-        <translation>Logische sectorgrootte:</translation>
+        <translation>Logická velikost sektoru:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="200"/>
         <source>Physical sector size:</source>
-        <translation>Fysieke sectorgrootte:</translation>
+        <translation>Fyzická velikost sektoru:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="217"/>
         <source>Cylinder size:</source>
-        <translation>Cilindergrootte:</translation>
+        <translation>Velikost cylindru:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="241"/>
         <source>Primaries/Max:</source>
-        <translation>Primaire partities/Max:</translation>
+        <translation>Hlavní/Max:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="265"/>
         <source>SMART status:</source>
-        <translation>SMART status:</translation>
+        <translation>Stav SMART:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="303"/>
         <source>More...</source>
-        <translation>Meer...</translation>
+        <translation>Více...</translation>
     </message>
 </context>
 <context>
@@ -1125,32 +1125,32 @@ Uitvoer:
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="20"/>
         <source>Edit Existing Partition</source>
-        <translation>Bestaande Partitie Aanpassen</translation>
+        <translation>Upravit stávající oddíl</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="50"/>
         <source>Content:</source>
-        <translation>Inhoud:</translation>
+        <translation>Obsah:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="60"/>
         <source>Keep</source>
-        <translation>Behouden</translation>
+        <translation>Zachovat</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="70"/>
         <source>Format</source>
-        <translation>Formatteren</translation>
+        <translation>Formátovat</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="83"/>
         <source>Warning: Formatting the partition will erase all existing data.</source>
-        <translation>Opgelet: Een partitie formatteren zal alle bestaande gegevens wissen.</translation>
+        <translation>Varování: Formátování oddílu smaže všechna stávající data na disku.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="93"/>
         <source>&amp;Mount Point:</source>
-        <translation>Aan&amp;koppelpunt:</translation>
+        <translation>&amp;Přípojný bod:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="110"/>
@@ -1185,7 +1185,7 @@ Uitvoer:
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="143"/>
         <source>Size:</source>
-        <translation>Grootte:</translation>
+        <translation>Velikost:</translation>
     </message>
 </context>
 <context>
@@ -1193,12 +1193,12 @@ Uitvoer:
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountoptionsdialogwidgetbase.ui" line="14"/>
         <source>Edit Mount Options</source>
-        <translation>Wijzig Aankoppelopties</translation>
+        <translation>Upravit přípojné body</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountoptionsdialogwidgetbase.ui" line="20"/>
         <source>Edit the mount options for this file system:</source>
-        <translation>Wijzig de aankoppelopties voor dit bestandssysteem:</translation>
+        <translation>Upravit volby pro připojení pro tento souborový systém:</translation>
     </message>
 </context>
 <context>
@@ -1206,82 +1206,82 @@ Uitvoer:
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="17"/>
         <source>Path:</source>
-        <translation>Pad:</translation>
+        <translation>Cesta:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="46"/>
         <source>Select...</source>
-        <translation>Selecteer...</translation>
+        <translation>Vybrat...</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="53"/>
         <source>Type:</source>
-        <translation>Type:</translation>
+        <translation>Typ:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="63"/>
         <source>Options:</source>
-        <translation>Opties:</translation>
+        <translation>Volby:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="73"/>
         <source>Read-only</source>
-        <translation>Alleen-lezen</translation>
+        <translation>Pouze číst</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="80"/>
         <source>Users can mount and unmount</source>
-        <translation>Gebruikers kunnen aan- en afkoppelen</translation>
+        <translation>Uživatelé se mohou připojit a odpojit</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="87"/>
         <source>No automatic mount</source>
-        <translation>Niet automatisch aankoppelen</translation>
+        <translation>Žádné automatické připojení</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="94"/>
         <source>No update of file access times</source>
-        <translation>Geen update van de bestandtoegangstijden</translation>
+        <translation>Žádná aktualizace časů přístupů k souborům</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="101"/>
         <source>Synchronous access</source>
-        <translation>Synchrone toegang</translation>
+        <translation>Souběžný přístup</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="108"/>
         <source>No update of directory access times</source>
-        <translation>Geen update van de maptoegangstijden</translation>
+        <translation>Žádná aktualizace časů přístupů k adresářům</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="115"/>
         <source>No binary execution</source>
-        <translation>Geen programma&apos;s uitvoeren</translation>
+        <translation>Žádné spouštění spustitelných souborů</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="122"/>
         <source>Update access times relative to modification</source>
-        <translation>Toegangstijden relatief aan de wijzigingen bijwerken</translation>
+        <translation>Aktualizovat časy přístupů podle změn</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="142"/>
         <source>More...</source>
-        <translation>Meer...</translation>
+        <translation>Více...</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="149"/>
         <source>Dump Frequency:</source>
-        <translation>Dump frequentie:</translation>
+        <translation>Rychlost vyprazdňování:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="178"/>
         <source>Pass Number:</source>
-        <translation>Pass Nummer:</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="285"/>
         <source>Device Node</source>
-        <translation>Apparaat knooppunt</translation>
+        <translation>Uzel zařízení</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="295"/>
@@ -1291,12 +1291,12 @@ Uitvoer:
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="302"/>
         <source>Label</source>
-        <translation>Label</translation>
+        <translation>Štítek</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="309"/>
         <source>Identify by:</source>
-        <translation>Identificeer door:</translation>
+        <translation>Rozpoznat:</translation>
     </message>
 </context>
 <context>
@@ -1304,17 +1304,17 @@ Uitvoer:
     <message>
         <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="50"/>
         <source>Select drive:</source>
-        <translation>Selecteer schijf:</translation>
+        <translation>Vybrat disk:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="204"/>
         <source>Before:</source>
-        <translation>Voor:</translation>
+        <translation>Před:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="209"/>
         <source>After:</source>
-        <translation>Na:</translation>
+        <translation>Po:</translation>
     </message>
 </context>
 <context>
@@ -1323,79 +1323,78 @@ Uitvoer:
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="17"/>
         <source>This table shows which file systems are supported and which specific operations can be performed on them.
 Some file systems need external tools to be installed for them to be supported. But not all operations can be performed on all file systems, even if all required tools are installed. Please see the documentation for details. </source>
-        <translation>Deze tabel toont welke bestandssystemen ondersteund worden en welke specifieke acties op de bestandssystemen uitgevoerd kunnen worden.
-Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd worden om ondersteund te worden.  Niet alle acties kunnen echter worden uitgevoerd op alle bestandsystemen, zelfs niet als alle hulpprogramma&apos;s geïnstalleerd zijn.  Raadpleeg de documentatie voor details.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="65"/>
         <source>File System</source>
-        <translation>Bestandssysteem</translation>
+        <translation>Souborový systém</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="70"/>
         <source>Create</source>
-        <translation>Maken</translation>
+        <translation>Vytvořit</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="75"/>
         <source>Grow</source>
-        <translation>Vergroten</translation>
+        <translation>Zvětšit</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="80"/>
         <source>Shrink</source>
-        <translation>Verkleinen</translation>
+        <translation>Zmenšit</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="85"/>
         <source>Move</source>
-        <translation>Verplaatsen</translation>
+        <translation>Posunout</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="90"/>
         <source>Copy</source>
-        <translation>Kopiëren</translation>
+        <translation>Kopírovat</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="95"/>
         <source>Check</source>
-        <translation>Controleren</translation>
+        <translation>Ověřit</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="100"/>
         <source>Read Label</source>
-        <translation>Lees Label</translation>
+        <translation>Číst štítek</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="105"/>
         <source>Write Label</source>
-        <translation>Schrijf Label</translation>
+        <translation>Zapsat štítek</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="110"/>
         <source>Read Usage</source>
-        <translation>Lees gebruik</translation>
+        <translation>Číst použití</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="115"/>
         <source>Backup</source>
-        <translation>Backup</translation>
+        <translation>Zálohovat</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="120"/>
         <source>Restore</source>
-        <translation>Herstellen</translation>
+        <translation>Obnovit</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="125"/>
         <source>Support Tools</source>
-        <translation>Ondersteuningsgereedschappen</translation>
+        <translation>Nástroje podpory</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="135"/>
         <source>Rescan Support</source>
         <comment>@action:button</comment>
-        <translation>Herscan ondersteuning</translation>
+        <translation>Prohlédnout podporu znovu</translation>
     </message>
 </context>
 <context>
@@ -1403,12 +1402,12 @@ Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd wo
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="75"/>
         <source>Set partition information</source>
-        <translation>Instellen partitie-informatie</translation>
+        <translation>Nastavit informace o oddílu</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="85"/>
         <source>Failed to find path for boot loader</source>
-        <translation>Kan geen pad voor bootloader vinden</translation>
+        <translation>Nepodařilo se najít cestu pro zavaděč</translation>
     </message>
 </context>
 <context>
@@ -1416,32 +1415,32 @@ Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd wo
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="47"/>
         <source>Format partition %1 (file system: %2, size: %3 MB) on %4.</source>
-        <translation>Formateer partitie %1 (bestandssysteem: %2, grootte: %3 MB) op %4.</translation>
+        <translation>Formátovat oddíl %1 (souborový systém: %2, velikost: %3 MB) na %4.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="59"/>
         <source>The installer failed to format partition %1 on disk &apos;%2&apos;.</source>
-        <translation>Installatieprogramma heeft gefaald om partitie %1 te formateren op schijf %2.</translation>
+        <translation>Instalátoru se nepodařilo zormátovat oddíl %1 na disku &apos;%2&apos;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="67"/>
         <source>Could not open device &apos;%1&apos;.</source>
-        <translation>Kan apparaat &apos;%1&apos; niet openen.</translation>
+        <translation>Nepodařilo se otevřít zařízení &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="76"/>
         <source>Could not open partition table.</source>
-        <translation>Kan de partitietabel niet openen.</translation>
+        <translation>Nepodařilo se otevřít tabulku oddílů.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="84"/>
         <source>The installer failed to create file system on partition %1.</source>
-        <translation>Installatieprogramma heeft gefaald om een bestandsysteem te creëren op partitie %1.</translation>
+        <translation>Instalátoru se nepodařilo vytvořit souborový systém na disku %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="92"/>
         <source>The installer failed to update partition table on disk &apos;%1&apos;.</source>
-        <translation>Installatieprogramma heeft gefaald om de partitietabel bij te werken op schijf &apos;%1&apos;.</translation>
+        <translation>Instalátoru se nepodařilo aktualizovat tabulku oddílů na disku &apos;%1&apos;.</translation>
     </message>
 </context>
 <context>
@@ -1449,27 +1448,27 @@ Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd wo
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="14"/>
         <source>Form</source>
-        <translation>Formulier</translation>
+        <translation>Formulář</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="102"/>
         <source>&amp;About</source>
-        <translation>&amp;Informatie</translation>
+        <translation>O &amp;programu</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="117"/>
         <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is in Beta stage.&lt;br/&gt;Not implemented yet is closing the installer automatically and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Known Issues&lt;/a&gt;</source>
-        <translation>&lt;h1&gt;Welkom bij het %1 installeerprogramma.&lt;/h1&gt;&lt;br/&gt;Dit programma stelt je enkele vragen en zal %2 instellen op je computer. Onthou, dit installeerprogramma is in Beta stadium.&lt;br/&gt;Nog niet geimplementeerd is sluiten van het installeerrprogramma automatisch en&lt;br/&gt;het gebruiken van een van de automatische schijfindeling opties.&lt;br/&gt;Voor &lt;b&gt;GPT schijfindeling op BIOS&lt;/b&gt; systemen en andere instructies, lees &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Bekende Problemen&lt;/a&gt;</translation>
+        <translation>&lt;h1&gt;Vítejte v instalátoru %1.&lt;/h1&gt;&lt;br/&gt;Tento program vám položí několik otázek a nastaví %2 na vašem počítači. Pamatujte na to, že tento instalátor je ve stavu bety.&lt;br/&gt;&quot;Neprovedeno&quot; zavře automaticky instalátor a br/&gt;za použití jedné z automatických voleb rozdělení oddílů pro instalace UEFI.&lt;br/&gt;Pro &lt;b&gt;rozdělení oddílů GPT v BIOSu&lt;/b&gt; systems a jiné instrukce čtěte &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Známé potíže&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="138"/>
         <source>About %1 installer</source>
-        <translation>Informatie %1 installeer programma</translation>
+        <translation>O instalátoru %1</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="140"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technologies for a better world.</source>
-        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Met dank aan: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini en Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; ontwikkeling wordt gesponsored door &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technieken voor een betere wereld.</translation>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;pro %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Autorské právo 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Poděkování: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini a Rohan Garg.&lt;br/&gt;&lt;br/&gt;Vývoj &lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; je sponzorován &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technologie pro lepší svět.</translation>
     </message>
 </context>
 <context>
@@ -1477,7 +1476,7 @@ Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd wo
     <message>
         <location filename="../src/modules/greeting/GreetingViewStep.cpp" line="41"/>
         <source>Welcome</source>
-        <translation>Welkom</translation>
+        <translation>Vítejte</translation>
     </message>
 </context>
 <context>
@@ -1485,12 +1484,12 @@ Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd wo
     <message>
         <location filename="../src/modules/keyboard/KeyboardPage.cpp" line="200"/>
         <source>Set keyboard model to %1.&lt;br/&gt;</source>
-        <translation>Instellen toetsenbord model naar %1.&lt;br/&gt;</translation>
+        <translation>Nastavit model klávesnice na %1.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/KeyboardPage.cpp" line="202"/>
         <source>Set keyboard layout to %1/%2.</source>
-        <translation>Instellen toetsenbord lay-out naar %1/%2.</translation>
+        <translation>Nastavit rozvržení klávesnice na %1/%2.</translation>
     </message>
 </context>
 <context>
@@ -1498,7 +1497,7 @@ Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd wo
     <message>
         <location filename="../src/modules/keyboard/KeyboardViewStep.cpp" line="48"/>
         <source>Keyboard</source>
-        <translation>Toetsenbord</translation>
+        <translation>Klávesnice</translation>
     </message>
 </context>
 <context>
@@ -1506,12 +1505,12 @@ Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd wo
     <message>
         <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="33"/>
         <source>System locale setting</source>
-        <translation>Systeem locale instelling</translation>
+        <translation>Nastavení jazyka systému</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="40"/>
         <source>The system locale setting affects the language and character set for some command line user interface elements.&lt;br/&gt;The current setting is &lt;b&gt;%1&lt;/b&gt;.</source>
-        <translation>De instelling systeem locale heeft invloed op de taal en tekenset voor sommige command line interface-elementen.&lt;br/&gt;De huidige instelling is &lt;b&gt;%1&lt;/b&gt;.</translation>
+        <translation>Nastavení jazyka systému ovlivní jazyk a znakovou sadu u některých prvků uživatelského rozhraní pro příkazový řádek.&lt;br/&gt;Nynější nastavení je &lt;b&gt;%1&lt;/b&gt;.</translation>
     </message>
 </context>
 <context>
@@ -1520,27 +1519,27 @@ Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd wo
         <location filename="../src/modules/locale/LocalePage.cpp" line="157"/>
         <location filename="../src/modules/locale/LocalePage.cpp" line="168"/>
         <source>The system locale is set to %1.</source>
-        <translation>Het systeem landinstellingen is ingesteld op %1</translation>
+        <translation>Jazyk systém je nastaven na %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="165"/>
         <source>Region:</source>
-        <translation>Regio:</translation>
+        <translation>Oblast:</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="166"/>
         <source>Zone:</source>
-        <translation>Zone:</translation>
+        <translation>Pásmo:</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="171"/>
         <source>&amp;Change...</source>
-        <translation>&amp;Wijzig...</translation>
+        <translation>&amp;Změnit...</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="265"/>
         <source>Set timezone to %1/%2.&lt;br/&gt;</source>
-        <translation>Instellen tijdzone naar %1/%2.&lt;br/&gt;</translation>
+        <translation>Nastavit časové pásmo na %1/%2.&lt;br/&gt;</translation>
     </message>
 </context>
 <context>
@@ -1548,12 +1547,12 @@ Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd wo
     <message>
         <location filename="../src/modules/locale/LocaleViewStep.cpp" line="45"/>
         <source>Loading location data...</source>
-        <translation>Laden van plaatsgegevens...</translation>
+        <translation>Nahrávají se polohová data...</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LocaleViewStep.cpp" line="79"/>
         <source>Location</source>
-        <translation>Plaats</translation>
+        <translation>Poloha</translation>
     </message>
 </context>
 <context>
@@ -1562,31 +1561,31 @@ Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd wo
         <location filename="../src/modules/partition/partitionmanager/src/gui/mainwindowbase.ui" line="14"/>
         <source>KDE Partition Manager</source>
         <comment>@title:window</comment>
-        <translation>KDE Partitie Manager</translation>
+        <translation>Správce oddílů KDE</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/mainwindowbase.ui" line="24"/>
         <source>Devices</source>
         <comment>@title:window</comment>
-        <translation>Apparaten</translation>
+        <translation>Zařízení</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/mainwindowbase.ui" line="38"/>
         <source>Pending Operations</source>
         <comment>@title:window</comment>
-        <translation>Uit te voeren handelingen</translation>
+        <translation>Zařazené operace</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/mainwindowbase.ui" line="49"/>
         <source>Information</source>
         <comment>@title:window</comment>
-        <translation>Informatie</translation>
+        <translation>Informace</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/mainwindowbase.ui" line="63"/>
         <source>Log Output</source>
         <comment>@title:window</comment>
-        <translation>Log uitvoer</translation>
+        <translation>Výstup záznamu</translation>
     </message>
 </context>
 <context>
@@ -1594,48 +1593,48 @@ Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd wo
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="66"/>
         <source>Move file system of partition %1.</source>
-        <translation>Verplaatsen van bestandssysteem van partitie %1.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="80"/>
         <source>Could not open file system on partition %1 for moving.</source>
-        <translation>Kan het bestandssysteem van partitie %1 niet openen voor verplaatsing.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="86"/>
         <source>Could not create target for moving file system on partition %1.</source>
-        <translation>Kan het doel voor verplaatsen bestandssysteem op partitie %1 niet creëren.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="95"/>
         <source>Moving of partition %1 failed, changes have been rolled back.</source>
-        <translation>Verplaatsen van partitie %1 heeft gefaald. De veranderingen zijn teruggedraaid.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="101"/>
         <source>Moving of partition %1 failed. Roll back of the changes have failed.</source>
-        <translation>Verplaatsen van partitie %1 heeft gefaald. Het terugdraaien van de veranderingen heeft gefaald.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="113"/>
         <source>Updating boot sector after the moving of partition %1 failed.</source>
-        <translation>Updaten bootsector na het verplaatsen van partitie %1 is mislukt.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="127"/>
         <source>The logical sector sizes in the source and target for copying are not the same. This is currently unsupported.</source>
-        <translation>De logische sector afmetingen in de bron en doel voor kopiëren zijn niet hetzelfde. Dit is op dit moment niet ondersteund.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="200"/>
         <source>Source and target for copying do not overlap: Rollback is not required.</source>
-        <translation>Bron en doel voor het kopiëren overlappen niet: Terugdraaien is niet vereist.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="224"/>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="232"/>
         <source>Could not open device %1 to rollback copying.</source>
-        <translation>Kan apparaat %1 niet openen om het kopiëren terug te draaien.</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -1643,17 +1642,17 @@ Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd wo
     <message>
         <location filename="../src/modules/keyboard/KeyboardPage.ui" line="14"/>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Formulář</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/KeyboardPage.ui" line="70"/>
         <source>Keyboard Model:</source>
-        <translation>Toetsenbord model:</translation>
+        <translation>Model klávesnice:</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/KeyboardPage.ui" line="131"/>
         <source>Type here to test your keyboard</source>
-        <translation>Typ hier om uw toetsenbord te testen</translation>
+        <translation>Zde pište pro vyzkoušení vaší klávesnice</translation>
     </message>
 </context>
 <context>
@@ -1661,17 +1660,17 @@ Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd wo
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="14"/>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Formulář</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="33"/>
         <source>What is your name?</source>
-        <translation>Wat is uw naam?</translation>
+        <translation>Jak se jmenujete?</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="111"/>
         <source>What name do you want to use to log in?</source>
-        <translation>Welke naam wilt u gebruiken om in te loggen?</translation>
+        <translation>Jaké jméno chcete používat při přihlašování?</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="191"/>
@@ -1679,52 +1678,52 @@ Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd wo
         <location filename="../src/modules/users/page_usersetup.ui" line="425"/>
         <location filename="../src/modules/users/page_usersetup.ui" line="553"/>
         <source>font-weight: normal</source>
-        <translation>Gewicht lettertype: normaal</translation>
+        <translation>Písmo: normální</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="194"/>
         <source>&lt;small&gt;If more than one person will use this computer, you can set up multiple accounts after installation.&lt;/small&gt;</source>
-        <translation>&lt;small&gt;Indien meer dan één persoon deze computer gebruikt, kunt u meerdere accounts na de installatie instellen.&lt;/ small&gt;</translation>
+        <translation>&lt;small&gt;Pokud bude tento počítač používat více než jedna osoba, můžete více účtů nastavit po dokončení instalace.&lt;/small&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="217"/>
         <source>Choose a password to keep your account safe.</source>
-        <translation>Kies een wachtwoord om uw account veilig te houden.</translation>
+        <translation>Zvolte heslo pro uchování vašeho účtu v bezpečí.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="322"/>
         <source>&lt;small&gt;Enter the same password twice, so that it can be checked for typing errors. A good password will contain a mixture of letters, numbers and punctuation, should be at least eight characters long, and should be changed at regular intervals.&lt;/small&gt;</source>
-        <translation>&lt;small&gt;Voer hetzelfde wachtwoord twee keer in, zodat het gecontroleerd kan worden op typefouten. Een goed wachtwoord bevat een combinatie van letters, cijfers en leestekens, is ten minste acht tekens lang en moet regelmatig worden gewijzigd.&lt;/ small&gt;</translation>
+        <translation>&lt;small&gt;Zadejte totéž heslo dvakrát, aby mohlo proběhnout jeho ověření na chyby při psaní. Dobré heslo je směsí písmen, čísel a interpunkce, má být alespoň osm znaků dlouhé, a mělo by se pravidelně měnit.&lt;/small&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="345"/>
         <source>What is the name of this computer?</source>
-        <translation>Wat is de naam van deze computer?</translation>
+        <translation>Jaký je název tohoto počítače?</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="428"/>
         <source>&lt;small&gt;This name will be used if you make the computer visible to others on a network.&lt;/small&gt;</source>
-        <translation>&lt;small&gt;Deze naam zal worden gebruikt als u de computer zichtbaar maakt voor anderen op een netwerk.&lt;/ small&gt;</translation>
+        <translation>&lt;small&gt;Tento název se použije, jestliže počítač zviditelníte pro ostatní v síti.&lt;/small&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="451"/>
         <source>Choose a password for the administrator account.</source>
-        <translation>Kies een wachtwoord voor het administrator account.</translation>
+        <translation>Zvolte heslo pro účet správce.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="556"/>
         <source>&lt;small&gt;Enter the same password twice, so that it can be checked for typing errors.&lt;/small&gt;</source>
-        <translation>&lt;small&gt;Voer hetzelfde wachtwoord twee keer in, zodat het gecontroleerd kan worden op typefouten.&lt;/ small&gt;</translation>
+        <translation>&lt;small&gt;Zadejte totéž heslo dvakrát, aby mohlo proběhnout jeho ověření na chyby při psaní.&lt;/small&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="596"/>
         <source>Log in automatically</source>
-        <translation>Log automatisch in</translation>
+        <translation>Přihlásit se automaticky</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="606"/>
         <source>Require my password to log in</source>
-        <translation>Vereis mijn wachtwoord om in te loggen</translation>
+        <translation>Vyžadovat při přihlašování heslo</translation>
     </message>
 </context>
 <context>
@@ -1733,43 +1732,43 @@ Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd wo
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="49"/>
         <source>File system:</source>
         <comment>@label:listbox</comment>
-        <translation>Bestandssysteem:</translation>
+        <translation>Souborový systém:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="65"/>
         <source>Label:</source>
         <comment>@label</comment>
-        <translation>Label:</translation>
+        <translation>Štítek:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="82"/>
         <source>This file system does not support setting a label.</source>
         <comment>@label</comment>
-        <translation>Dit bestandssysteem ondersteunt het configureren van een label niet.</translation>
+        <translation>Tento souborový systém nepodporuje nastavení štítku.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="92"/>
         <source>Recreate existing file system</source>
         <comment>@action:button</comment>
-        <translation>Recreëer bestaand bestandssysteem</translation>
+        <translation>Vytvořit stávající souborový systém znovu</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="106"/>
         <source>Mount point:</source>
         <comment>@label</comment>
-        <translation>Aankoppelpunt:</translation>
+        <translation>Přípojný bod:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="123"/>
         <source>Partition type:</source>
         <comment>@label</comment>
-        <translation>Partitie type:</translation>
+        <translation>Typ oddílu:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="140"/>
         <source>Status:</source>
         <comment>@label</comment>
-        <translation>Status:</translation>
+        <translation>Stav:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="157"/>
@@ -1781,43 +1780,43 @@ Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd wo
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="187"/>
         <source>Size:</source>
         <comment>@label</comment>
-        <translation>Grootte:</translation>
+        <translation>Velikost:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="210"/>
         <source>Available:</source>
         <comment>@label partition capacity available</comment>
-        <translation>Beschikbaar:</translation>
+        <translation>Dostupné:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="227"/>
         <source>Used:</source>
         <comment>@label partition capacity used</comment>
-        <translation>Gebruikt:</translation>
+        <translation>Použito:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="251"/>
         <source>First sector:</source>
         <comment>@label</comment>
-        <translation>Eerste sector:</translation>
+        <translation>První sektor:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="268"/>
         <source>Last sector:</source>
         <comment>@label</comment>
-        <translation>Laatste sector:</translation>
+        <translation>Poslední sektor:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="285"/>
         <source>Number of sectors:</source>
         <comment>@label</comment>
-        <translation>Aantal sectoren</translation>
+        <translation>Počet sektorů:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="309"/>
         <source>Flags:</source>
         <comment>@label</comment>
-        <translation>Parameters:</translation>
+        <translation>Příznaky:</translation>
     </message>
 </context>
 <context>
@@ -1826,27 +1825,27 @@ Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd wo
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="14"/>
         <source>KDE Partition Manager</source>
         <comment>@title:window</comment>
-        <translation>KDE Partitie Manager</translation>
+        <translation>Správce oddílů KDE</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="70"/>
         <source>Partition</source>
-        <translation>Partitie</translation>
+        <translation>Oddíl</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="75"/>
         <source>Type</source>
-        <translation>Type</translation>
+        <translation>Typ</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="80"/>
         <source>Mount Point</source>
-        <translation>Aankoppelpunt</translation>
+        <translation>Přípojný bod</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="85"/>
         <source>Label</source>
-        <translation>Label</translation>
+        <translation>Štítek</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="90"/>
@@ -1856,37 +1855,37 @@ Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd wo
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="95"/>
         <source>Size</source>
-        <translation>Grootte</translation>
+        <translation>Velikost</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="100"/>
         <source>Used</source>
-        <translation>Gebruikt</translation>
+        <translation>Použito</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="105"/>
         <source>Available</source>
-        <translation>Beschikbaar</translation>
+        <translation>Dostupné</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="110"/>
         <source>First Sector</source>
-        <translation>Eerste sector</translation>
+        <translation>První sektor</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="115"/>
         <source>Last Sector</source>
-        <translation>Laatste sector</translation>
+        <translation>Poslední sektor</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="120"/>
         <source>Number of Sectors</source>
-        <translation>Aantal sectoren</translation>
+        <translation>Počet sektorů</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="125"/>
         <source>Flags</source>
-        <translation>Parameters</translation>
+        <translation>Příznaky</translation>
     </message>
 </context>
 <context>
@@ -1894,32 +1893,32 @@ Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd wo
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="132"/>
         <source>Free Space</source>
-        <translation>Vrije ruimte</translation>
+        <translation>Volné místo</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="136"/>
         <source>New partition</source>
-        <translation>Nieuwe partitie</translation>
+        <translation>Nový oddíl</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="175"/>
         <source>Name</source>
-        <translation>Naam</translation>
+        <translation>Název</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="177"/>
         <source>File System</source>
-        <translation>Bestandssysteem</translation>
+        <translation>Souborový systém</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="179"/>
         <source>Mount Point</source>
-        <translation>Aankoppelpunt</translation>
+        <translation>Přípojný bod</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="181"/>
         <source>Size</source>
-        <translation>Grootte</translation>
+        <translation>Velikost</translation>
     </message>
 </context>
 <context>
@@ -1927,47 +1926,47 @@ Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd wo
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="14"/>
         <source>Form</source>
-        <translation>Form</translation>
+        <translation>Formulář</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="22"/>
         <source>&amp;Disk:</source>
-        <translation>&amp;Schijf:</translation>
+        <translation>&amp;Disk:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="51"/>
         <source>&amp;Revert All Changes</source>
-        <translation>Alle wijzigingen &amp;ongedaan maken</translation>
+        <translation>&amp;Vrátit všechny změny</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="84"/>
         <source>New Partition &amp;Table</source>
-        <translation>Nieuwe partitie&amp;tabel</translation>
+        <translation>Nová &amp;tabulka oddílů</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="104"/>
         <source>&amp;Create</source>
-        <translation>&amp;Maak</translation>
+        <translation>&amp;Vytvořit</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="111"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Bewerken</translation>
+        <translation>&amp;Upravit</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="118"/>
         <source>&amp;Delete</source>
-        <translation>&amp;Verwijderen</translation>
+        <translation>&amp;Smazat</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="145"/>
         <source>&amp;Install boot loader on:</source>
-        <translation>&amp;Installeer de boot loader op:</translation>
+        <translation>&amp;Instalovat zavaděč na:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="129"/>
         <source>Are you sure you want to create a new partition table on %1?</source>
-        <translation>Weet u zeker dat u een nieuwe partitie tabel wilt aanleggen op %1?</translation>
+        <translation>Opravdu chcete vytvořit novou tabulku oddílů na %1?</translation>
     </message>
 </context>
 <context>
@@ -1975,22 +1974,22 @@ Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd wo
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="66"/>
         <source>Gathering system information...</source>
-        <translation>Informatie verzamelen over het systeem...</translation>
+        <translation>Sbírají se informace o oddílu...</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="160"/>
         <source>Partitions</source>
-        <translation>Partities</translation>
+        <translation>Oddíly</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="188"/>
         <source>Before:</source>
-        <translation>Voor:</translation>
+        <translation>Před:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="193"/>
         <source>After:</source>
-        <translation>Na:</translation>
+        <translation>Po:</translation>
     </message>
 </context>
 <context>
@@ -1998,21 +1997,19 @@ Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd wo
     <message>
         <location filename="../src/modules/prepare/PreparePage.cpp" line="39"/>
         <source>For best results, please ensure that this computer:</source>
-        <translation>Voor het beste resultaat, zorgt u er a.u.b. voor dat deze computer:</translation>
+        <translation>Pro nejlepší výsledky zajistěte, prosím, aby tento počítač:</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PreparePage.cpp" line="96"/>
         <source>This computer does not satisfy the minimum requirements for installing %1.
 Installation cannot continue.</source>
-        <translation>Deze computer voldoet niet aan de minimale vereisten voor het installeren van % 1.
-De installatie kan niet worden voortgezet.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/prepare/PreparePage.cpp" line="109"/>
         <source>This computer does not satisfy some of the recommended requirements for installing %1.
 Installation can continue, but some features might be disabled.</source>
-        <translation>Deze computer voldoet niet aan alle aanbevolen vereisten voor het installeren van %1.
-De installatie kan doorgaan, maar sommige functies kunnen worden uitgeschakeld.</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -2020,33 +2017,32 @@ De installatie kan doorgaan, maar sommige functies kunnen worden uitgeschakeld.<
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="54"/>
         <source>Gathering system information...</source>
-        <translation>Informatie verzamelen over het systeem...</translation>
+        <translation>Sbírají se informace o oddílu...</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="91"/>
         <source>has at least %1 GB available drive space</source>
-        <translation>over ten minste %1 GB vrije schijfruimte beschikt</translation>
+        <translation>má alespoň %1 GB dostupného místa na disku</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="99"/>
         <source>has at least %1 GB working memory</source>
-        <translation>over ten minste 1% GB werkgeheugen beschikt</translation>
+        <translation>má alespoň %1 GB pracovní paměti</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="107"/>
         <source>is plugged in to a power source</source>
-        <translation>is aangesloten op een stroombron</translation>
+        <translation>je připojen ke zdroji energie</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="114"/>
         <source>is connected to the Internet</source>
-        <translation>
-is verbonden met het internet</translation>
+        <translation>je připojen k internetu</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="158"/>
         <source>Prepare</source>
-        <translation>Voorbereiden</translation>
+        <translation>Připravit</translation>
     </message>
 </context>
 <context>
@@ -2054,12 +2050,12 @@ is verbonden met het internet</translation>
     <message>
         <location filename="../src/calamares/progresstree/ProgressTreeModel.cpp" line="136"/>
         <source>Prepare</source>
-        <translation>Voorbereiden</translation>
+        <translation>Připravit</translation>
     </message>
     <message>
         <location filename="../src/calamares/progresstree/ProgressTreeModel.cpp" line="145"/>
         <source>Finish</source>
-        <translation>Klaar</translation>
+        <translation>Skončit</translation>
     </message>
 </context>
 <context>
@@ -2067,13 +2063,13 @@ is verbonden met het internet</translation>
     <message>
         <location filename="../src/modules/keyboard/keyboardwidget/keyboardglobal.cpp" line="82"/>
         <source>Default Keyboard Model</source>
-        <translation>Standaard toetsenbord model</translation>
+        <translation>Výchozí model klávesnice</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/keyboardwidget/keyboardglobal.cpp" line="127"/>
         <location filename="../src/modules/keyboard/keyboardwidget/keyboardglobal.cpp" line="163"/>
         <source>Default</source>
-        <translation>Standaard</translation>
+        <translation>Výchozí</translation>
     </message>
 </context>
 <context>
@@ -2081,57 +2077,57 @@ is verbonden met het internet</translation>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="20"/>
         <source>KDE Release Builder</source>
-        <translation>KDE Release Builder</translation>
+        <translation>Sestavovatel vydání KDE</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="32"/>
         <source>Application</source>
-        <translation>Programma</translation>
+        <translation>Program</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="38"/>
         <source>Name:</source>
-        <translation>Naam:</translation>
+        <translation>Název:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="48"/>
         <source>&amp;Version:</source>
-        <translation>&amp;Versie:</translation>
+        <translation>&amp;Verze:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="93"/>
         <source>Repository and Revision</source>
-        <translation>Repository and Revisie</translation>
+        <translation>Skladiště a revize</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="99"/>
         <source>&amp;Checkout From:</source>
-        <translation>&amp;Uitchecken van:</translation>
+        <translation>&amp;Stáhnout z:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="119"/>
         <source>trunk</source>
-        <translation>Hoofdbestand</translation>
+        <translation>trunk</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="124"/>
         <source>branches</source>
-        <translation>takken</translation>
+        <translation>branches</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="129"/>
         <source>tags</source>
-        <translation>labels</translation>
+        <translation>tags</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="137"/>
         <source>Ta&amp;g/Branch:</source>
-        <translation>&amp;Label/Tak:</translation>
+        <translation>Ta&amp;g/Branch:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="163"/>
         <source>&amp;SVN Access:</source>
-        <translation>&amp;SVN toegang:</translation>
+        <translation>Přístup S&amp;VN:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="183"/>
@@ -2151,47 +2147,47 @@ is verbonden met het internet</translation>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="201"/>
         <source>&amp;User:</source>
-        <translation>&amp;Gebruiker:</translation>
+        <translation>&amp;Uživatel:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="236"/>
         <source>Options</source>
-        <translation>Opties</translation>
+        <translation>Volby</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="242"/>
         <source>Get &amp;Documentation</source>
-        <translation>Verkrijg &amp; Documentatie</translation>
+        <translation>Získat &amp;dokumentaci</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="252"/>
         <source>Get &amp;Translations</source>
-        <translation>Verkrijg &amp; Vertalingen</translation>
+        <translation>Získat &amp;překlady</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="262"/>
         <source>C&amp;reate Tag</source>
-        <translation>C&amp;reëer label</translation>
+        <translation>&amp;Vytvořit značku</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="271"/>
         <source>S&amp;kip translations below completion:</source>
-        <translation>S&amp;la vertalingen over onder voltooiing:</translation>
+        <translation>Pře&amp;skočit neúplné překlady:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="306"/>
         <source> %</source>
-        <translation>%</translation>
+        <translation> %</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="324"/>
         <source>Create Tar&amp;ball</source>
-        <translation>Creëer Tar&amp;archief</translation>
+        <translation>Vytvořit &amp;archiv tar</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="334"/>
         <source>Apply &amp;fixes</source>
-        <translation>Pas &amp;verbeteringen toe</translation>
+        <translation>Použít &amp;opravy</translation>
     </message>
 </context>
 <context>
@@ -2199,62 +2195,62 @@ is verbonden met het internet</translation>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.ui" line="14"/>
         <source>Form</source>
-        <translation>Formulier</translation>
+        <translation>Formulář</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.ui" line="22"/>
         <source>&amp;Disk:</source>
-        <translation>&amp;Schijf:</translation>
+        <translation>&amp;Disk:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="109"/>
         <source>Select where to install %1.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;this will delete all files on the selected partition. &lt;font color=&quot;red&quot;&gt;Do not use for UEFI &lt;/font&gt;</source>
-        <translation>Selecteer waar te installeer %1.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Waarshuwing: &lt;/font&gt;Dit zal alle bestanden op de geselecteerde partitie wissen. &lt;font color=&quot;red&quot;&gt;Niet geschikt voor UEFI installaties &lt;/font&gt;</translation>
+        <translation>Vyberte, kam se má nainstalovat %1.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Varování: &lt;/font&gt;Tímto bude vše na vybraném oddíle smazáno. &lt;font color=&quot;red&quot;&gt;Nepoužívat pro UEFI &lt;/font&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="136"/>
         <source>The selected item does not appear to be a valid partition.</source>
-        <translation>Het geselecteerde item lijkt geen geldige partitie zijn.</translation>
+        <translation>Zdá se, že vybraná položka není platný oddíl.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="144"/>
         <source>%1 cannot be installed on empty space. Please select an existing partition.</source>
-        <translation>%1 kan niet geinstalleerd worden op een lege ruimte. Selecteer aub een bestaande partitie.</translation>
+        <translation>%1 nelze nainstalovat na prázdné místo. Vyberte, prosím, existující oddíl.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="155"/>
         <source>%1 cannot be installed on an extended partition. Please select an existing primary or logical partition.</source>
-        <translation>%1 kan niet op extended partitie worden geïnstalleerd. Selecteer een bestaande primaire of logische partitie.</translation>
+        <translation>%1 nelze nainstalovat na rozšířený oddíl. Vyberte, prosím, existující hlavní nebo logický oddíl.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="166"/>
         <source>%1 cannot be installed on this partition.</source>
-        <translation>%1 kan niet geinstalleerd worden op deze partitie.</translation>
+        <translation>%1 nelze nainstalovat na tento oddíl.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="173"/>
         <source>Data partition (%1)</source>
-        <translation>Data partitie (%1)</translation>
+        <translation>Oddíl s daty (%1)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="190"/>
         <source>Unknown system partition (%1)</source>
-        <translation>Onbekende systeempartitie(%1)</translation>
+        <translation>Neznámý systémový oddíl (%1)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="195"/>
         <source>%1 system partition (%2)</source>
-        <translation>%1 systempartitie (%2)</translation>
+        <translation>Systémový oddíl %1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="206"/>
         <source>&lt;b&gt;%4&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;The partition %1 is too small for %2. Please select a partition with capacity at least %3 GiB.</source>
-        <translation>&lt;b&gt;%4&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;De partitie %1 is te klein voor %2. Selecteer aub een partitie met een capaciteit van minimaal %3 GiB.</translation>
+        <translation>&lt;b&gt;%4&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Oddíl %1 je pro %2 příliš malý. Vyberte, prosím, oddíl s kapacitou alespoň %3 GiB.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="220"/>
         <source>&lt;b&gt;%3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;%1 will be installed on %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;all data on partition%2 will be lost.</source>
-        <translation>&lt;b&gt;%3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;%1 zal worden geinstallerd op %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Opgelet: &lt;/font&gt;alle data op partitie%2 zal verloren worden.</translation>
+        <translation>&lt;b&gt;%3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;%1 bude nainstalován na %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Varování: &lt;/font&gt;Všchna data na oddílu %2 budou ztracena.</translation>
     </message>
 </context>
 <context>
@@ -2262,17 +2258,17 @@ is verbonden met het internet</translation>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="75"/>
         <source>Resize file system on partition %1.</source>
-        <translation>Pas grootte bestandssysteem aan op partitie %1.</translation>
+        <translation>Změnit velikost souborového systému na oddílu %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="90"/>
         <source>Parted failed to resize filesystem.</source>
-        <translation>Parted heeft gefaald de grootte van het bestandssysteem aan te passen.</translation>
+        <translation>Parted se velikost souborového systému změnit nepodařilo.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="100"/>
         <source>Failed to resize filesystem.</source>
-        <translation>Het aanpassen van de bestandsysteem grootte heeft gefaald.</translation>
+        <translation>Nepodařilo se změnit velikost souborového systému.</translation>
     </message>
 </context>
 <context>
@@ -2280,18 +2276,18 @@ is verbonden met het internet</translation>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="186"/>
         <source>Resize partition %1.</source>
-        <translation>Pas de grootte van partitie %1 aan.</translation>
+        <translation>Změnit velikost oddílu %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="208"/>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="266"/>
         <source>The installer failed to resize partition %1 on disk &apos;%2&apos;.</source>
-        <translation>Installatieprogramma heeft gefaald in het aanpassen van de grootte van partitie %1 op schrijf %2.</translation>
+        <translation>Instalátoru se nepodařilo změnit velikost oddílu %1 na disku &apos;%2&apos;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="213"/>
         <source>Could not open device &apos;%1&apos;.</source>
-        <translation>Kan apparaat &apos;%1&apos; niet openen.</translation>
+        <translation>Nepodařilo se otevřít zařízení &apos;%1&apos;.</translation>
     </message>
 </context>
 <context>
@@ -2299,19 +2295,19 @@ is verbonden met het internet</translation>
     <message>
         <location filename="../src/modules/users/SetHostNameJob.cpp" line="36"/>
         <source>Set hostname %1</source>
-        <translation>Instellen hostname %1</translation>
+        <translation>Nastavit jméno hostitele %1</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetHostNameJob.cpp" line="46"/>
         <location filename="../src/modules/users/SetHostNameJob.cpp" line="53"/>
         <source>Internal Error</source>
-        <translation>Interne fout</translation>
+        <translation>Vnitřní chyba</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetHostNameJob.cpp" line="60"/>
         <location filename="../src/modules/users/SetHostNameJob.cpp" line="71"/>
         <source>Cannot write hostname to target system</source>
-        <translation>Kan de hostname niet naar het doelsysteem schrijven</translation>
+        <translation>Nelze zapsat jméno hostitele na cílový systém</translation>
     </message>
 </context>
 <context>
@@ -2319,23 +2315,23 @@ is verbonden met het internet</translation>
     <message>
         <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="57"/>
         <source>Set keyboard model to %1, layout to %2-%3</source>
-        <translation>Stel toetsenbord model in naar %1, indeling naar %2-%3</translation>
+        <translation>Nastavit model klávesnice na %1, rozvržení na %2-%3</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="277"/>
         <source>Failed to write keyboard configuration for the virtual console.</source>
-        <translation>Het schrijven van de toetsenbord configuratie voor de virtuele console is mislukt.</translation>
+        <translation>Nastavení klávesnice se nepodařilo zapsat pro virtuální konsoli.</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="278"/>
         <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="282"/>
         <source>Failed to write to %1</source>
-        <translation>Niet in geslaagd om te schrijven naar %1</translation>
+        <translation>Nepodařilo se zapisovat do %1</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="281"/>
         <source>Failed to write keyboard configuration for X11.</source>
-        <translation>Gefaald toetsenbord configuratie voor X11 te schrijven.</translation>
+        <translation>Nepodařilo se zapsat astavení klávesnice pro X11.</translation>
     </message>
 </context>
 <context>
@@ -2343,12 +2339,12 @@ is verbonden met het internet</translation>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="143"/>
         <source>Update geometry of partition %1.</source>
-        <translation>Update Geometrie van partitie %1.</translation>
+        <translation>Aktualizovat uspořádání oddílu %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="155"/>
         <source>Failed to change the geometry of the partition.</source>
-        <translation>Kan de geometrie van de partitie niet wijzigen.</translation>
+        <translation>Nepodařilo se změnit uspořádání oddílu.</translation>
     </message>
 </context>
 <context>
@@ -2356,27 +2352,27 @@ is verbonden met het internet</translation>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="42"/>
         <source>Set password for user %1</source>
-        <translation>Instellen wachtwoord voor gebruiker %1</translation>
+        <translation>Nastavit heslo pro uživatele %1</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="52"/>
         <source>Bad destination system path.</source>
-        <translation>Onjuist bestemmingssysteempad.</translation>
+        <translation>Špatný cíl pro systémovou cestu.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="53"/>
         <source>rootMountPoint is %1</source>
-        <translation>Hoofdaankoppelpunt is %1</translation>
+        <translation>Přípojný bod pro root je %1</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="62"/>
         <source>Cannot set password for user %1.</source>
-        <translation>Kan het wachtwoord niet instellen voor gebruiker %1 </translation>
+        <translation>Nelze nastavit heslo pro uživatele %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="64"/>
         <source>usermod terminated with error code %1.</source>
-        <translation>usermod beëindigd met foutcode %1.</translation>
+        <translation>usermod je ukončen s kódem chyby %1.</translation>
     </message>
 </context>
 <context>
@@ -2384,27 +2380,27 @@ is verbonden met het internet</translation>
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="41"/>
         <source>Set timezone to %1/%2</source>
-        <translation>Instellen tijdzone naar %1/%2</translation>
+        <translation>Nastavit časové pásmo na %1/%2</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="56"/>
         <source>Cannot access selected timezone path.</source>
-        <translation>Kan geen toegang krijgen tot het geselecteerde tijdzone pad.</translation>
+        <translation>Nelze přistoupit k cestě vybraného časového pásma.</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="57"/>
         <source>Bad path: %1</source>
-        <translation>Onjuist pad: %1</translation>
+        <translation>Špatná cesta: %1</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="69"/>
         <source>Cannot set timezone.</source>
-        <translation>Kan de tijdzone niet instellen.</translation>
+        <translation>Nelze nastavit časové pásmo.</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="70"/>
         <source>Link creation failed, target: %1; link name: %2</source>
-        <translation>Link creatie mislukt, doel: %1; koppeling naam: %2</translation>
+        <translation>Nepodařilo se vytvořit odkaz: %1; název odkazu: %2</translation>
     </message>
 </context>
 <context>
@@ -2413,18 +2409,18 @@ is verbonden met het internet</translation>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedetailswidgetbase.ui" line="62"/>
         <source>First sector:</source>
         <comment>@label:listbox</comment>
-        <translation>Eerste sector:</translation>
+        <translation>První sektor:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedetailswidgetbase.ui" line="97"/>
         <source>Last sector:</source>
         <comment>@label:listbox</comment>
-        <translation>Laatste sector:</translation>
+        <translation>Poslední sektor:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedetailswidgetbase.ui" line="120"/>
         <source>Align partition</source>
-        <translation>Partitie uitlijnen</translation>
+        <translation>Zarovnat oddíl</translation>
     </message>
 </context>
 <context>
@@ -2433,70 +2429,70 @@ is verbonden met het internet</translation>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="55"/>
         <source>Partition type:</source>
         <comment>@label:listbox</comment>
-        <translation>Partitie type:</translation>
+        <translation>Typ oddílu:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="70"/>
         <source>Primary</source>
-        <translation>Primair</translation>
+        <translation>Hlavní</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="77"/>
         <source>Extended</source>
-        <translation>Uitgebreid</translation>
+        <translation>Rozšířený</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="84"/>
         <source>Logical</source>
-        <translation>Logisch</translation>
+        <translation>Logický</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="99"/>
         <source>File system:</source>
         <comment>@label:listbox</comment>
-        <translation>Bestandssysteem:</translation>
+        <translation>Souborový systém:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="115"/>
         <source>Label:</source>
         <comment>@label</comment>
-        <translation>Label:</translation>
+        <translation>Štítek:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="134"/>
         <source>This file system does not support setting a label.</source>
         <comment>@label</comment>
-        <translation>Dit bestandssysteem ondersteunt het configureren van een label niet.</translation>
+        <translation>Tento souborový systém nepodporuje nastavení štítku.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="152"/>
         <source>Minimum size:</source>
         <comment>@label</comment>
-        <translation>Minimale grootte:</translation>
+        <translation>Nejmenší velikost:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="175"/>
         <source>Maximum size:</source>
         <comment>@label</comment>
-        <translation>Maximale grootte:</translation>
+        <translation>Největší velikost:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="198"/>
         <source>Free space before:</source>
         <comment>@label:listbox</comment>
-        <translation>Vrije ruimte voor:</translation>
+        <translation>Volné místo před:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="233"/>
         <source>Size:</source>
         <comment>@label:listbox</comment>
-        <translation>Grootte:</translation>
+        <translation>Velikost:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="262"/>
         <source>Free space after:</source>
         <comment>@label:listbox</comment>
-        <translation>Vrije ruimte na:</translation>
+        <translation>Volné místo po:</translation>
     </message>
 </context>
 <context>
@@ -2504,7 +2500,7 @@ is verbonden met het internet</translation>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="23"/>
         <source>SMART status:</source>
-        <translation>SMART status:</translation>
+        <translation>Stav SMART:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="63"/>
@@ -2514,92 +2510,92 @@ is verbonden met het internet</translation>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="92"/>
         <source>Serial number:</source>
-        <translation>Serienummer:</translation>
+        <translation>Sériové číslo:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="121"/>
         <source>Firmware revision:</source>
-        <translation>Firmware revisie:</translation>
+        <translation>Verze firmware:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="150"/>
         <source>Temperature:</source>
-        <translation>Temperatuur:</translation>
+        <translation>Teplota:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="179"/>
         <source>Bad sectors:</source>
-        <translation>Slechte sectoren:</translation>
+        <translation>Špatné sektory:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="208"/>
         <source>Powered on for:</source>
-        <translation>Staat aan sinds:</translation>
+        <translation>Provozováno od:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="237"/>
         <source>Power cycles:</source>
-        <translation>Herstart cycli:</translation>
+        <translation>Provozní cykly:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="289"/>
         <source>Id</source>
-        <translation>Id</translation>
+        <translation>ID</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="294"/>
         <source>Attribute</source>
-        <translation>Attribuut</translation>
+        <translation>Vlastnost</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="299"/>
         <source>Failure Type</source>
-        <translation>Fout Type</translation>
+        <translation>Typ chyby</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="304"/>
         <source>Update Type</source>
-        <translation>Update Type</translation>
+        <translation>Typ aktualizace</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="309"/>
         <source>Worst</source>
-        <translation>Slechtst</translation>
+        <translation>Nejhorší</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="314"/>
         <source>Current</source>
-        <translation>Huidig</translation>
+        <translation>Nynější</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="319"/>
         <source>Threshold</source>
-        <translation>Drempel</translation>
+        <translation>Práh</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="324"/>
         <source>Raw</source>
-        <translation>Ruw</translation>
+        <translation>Hrubý</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="329"/>
         <source>Assessment</source>
-        <translation>Beoordeling</translation>
+        <translation>Vyhodnocení</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="334"/>
         <source>Value</source>
-        <translation>Waarde</translation>
+        <translation>Hodnota</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="385"/>
         <source>Overall assessment:</source>
-        <translation>Eindbeoordeling:</translation>
+        <translation>Celkový odhad:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="414"/>
         <source>Self tests:</source>
-        <translation>Zelftests:</translation>
+        <translation>Automatické zkoušky:</translation>
     </message>
 </context>
 <context>
@@ -2607,7 +2603,7 @@ is verbonden met het internet</translation>
     <message>
         <location filename="../src/modules/summary/SummaryViewStep.cpp" line="41"/>
         <source>Summary</source>
-        <translation>Samenvatting</translation>
+        <translation>Shrnutí</translation>
     </message>
 </context>
 <context>
@@ -2616,24 +2612,24 @@ is verbonden met het internet</translation>
         <location filename="../src/modules/partition/partitionmanager/src/gui/treelogbase.ui" line="54"/>
         <source>Sev.</source>
         <comment>@title:column Severity of a log entry / log level. Text must be very short.</comment>
-        <translation>Ernst</translation>
+        <translation>Přís.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/treelogbase.ui" line="57"/>
         <source>Severity</source>
-        <translation>Ernst</translation>
+        <translation>Přísnost</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/treelogbase.ui" line="62"/>
         <source>Time</source>
         <comment>@title:column a time stamp of a log entry</comment>
-        <translation>Tijd</translation>
+        <translation>Čas</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/treelogbase.ui" line="67"/>
         <source>Message</source>
         <comment>@title:column the text message of a log entry</comment>
-        <translation>Bericht</translation>
+        <translation>Zpráva</translation>
     </message>
 </context>
 <context>
@@ -2641,28 +2637,28 @@ is verbonden met het internet</translation>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="236"/>
         <source>Your username contains an invalid character &apos;%1&apos;</source>
-        <translation>De gebruikersnaam bevat een ongeldig karakter &apos;%1&apos;</translation>
+        <translation>Uživatelské jméno obsahuje neplatný znak &apos;%1&apos;</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="240"/>
         <source>Your username contains invalid characters!</source>
-        <translation>De gebruikersnaam bevat ongeldig karakters!</translation>
+        <translation>Uživatelské jméno obsahuje neplatné znaky!</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="287"/>
         <source>Your hostname contains an invalid character &apos;%1&apos;</source>
-        <translation>De hostname bevat een ongeldig karakter &apos;%1&apos;</translation>
+        <translation>Jméno hostitelského počítače obsahuje neplatný znak &apos;%1&apos;</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="291"/>
         <source>Your hostname contains invalid characters!</source>
-        <translation>De hostname bevat ongeldige karakters!</translation>
+        <translation>Jméno hostitelského počítače obsahuje neplatné znaky!</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="322"/>
         <location filename="../src/modules/users/UsersPage.cpp" line="355"/>
         <source>Your passwords do not match!</source>
-        <translation>De wachtwoorden komen niet overeen!</translation>
+        <translation>Hesla se neshodují!</translation>
     </message>
 </context>
 <context>
@@ -2670,7 +2666,7 @@ is verbonden met het internet</translation>
     <message>
         <location filename="../src/modules/users/UsersViewStep.cpp" line="46"/>
         <source>Users</source>
-        <translation>Gebruikers</translation>
+        <translation>Uživatelé</translation>
     </message>
 </context>
 </TS>

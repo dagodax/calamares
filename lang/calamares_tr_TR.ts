@@ -189,7 +189,7 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>Calamares::InstallationViewStep</name>
     <message>
-        <location filename="../src/libcalamaresui/InstallationViewStep.cpp" line="47"/>
+        <location filename="../src/libcalamaresui/InstallationViewStep.cpp" line="75"/>
         <source>Install</source>
         <translation>Sistem Yüklemesi</translation>
     </message>
@@ -198,8 +198,8 @@ p, li { white-space: pre-wrap; }
     <name>Calamares::JobThread</name>
     <message>
         <location filename="../src/libcalamares/JobQueue.cpp" line="88"/>
-        <source>The install finished succesfully, click the quit button to return to live mode and reboot from there into your newly installed system</source>
-        <translation>Sistem yüklemesi tamamlandı. Çıkış butonuna tıklayıp bu pencereyi kapattıktan sonra çalışan sistemi kullanmaya devam edebilir ya da yeniden başlatarak kurduğunuz sistemi kullanmaya başlayabilirsiniz</translation>
+        <source>Click the Quit button to return to live mode and reboot from there into your newly installed system</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -1457,17 +1457,17 @@ Bazı dosya sistemlerinin desteklenmesi ve düzenlenmesi için ek uygulamalar ge
         <translation>Hakkında</translation>
     </message>
     <message>
-        <location filename="../src/modules/greeting/GreetingPage.cpp" line="85"/>
-        <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is in Beta stage.&lt;br/&gt;Not implemented yet is closing the installer automatically,&lt;br/&gt;showing a slideshow during the install or setting the locale.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Known Issues&lt;/a&gt;</source>
-        <translation>&lt;h1&gt;%1 Sistem Yükleyiciye Hoşgeldiniz.&lt;/h1&gt;&lt;br/&gt;Bu program size bazı sorular soracak ve bilgisayarınıza %2 kuracak. Bu yükleyicinin beta aşamada olduğunu aklınızda bulundurun.&lt;br/&gt;Yükleme esnasında kapanırsa,&lt;br/&gt;yükleme ve yerel ayar slaytları gösterilirken kapanabilir&lt;br/&gt;&lt;b&gt;GPT bölümlemeleri, BIOS ayarlamaları için&lt;/b&gt; şu başlığı okuyabilirsiniz, &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Bilinen Hatalar&lt;/a&gt;</translation>
+        <location filename="../src/modules/greeting/GreetingPage.cpp" line="117"/>
+        <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is in Beta stage.&lt;br/&gt;Not implemented yet is closing the installer automatically and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Known Issues&lt;/a&gt;</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/greeting/GreetingPage.cpp" line="106"/>
+        <location filename="../src/modules/greeting/GreetingPage.cpp" line="138"/>
         <source>About %1 installer</source>
         <translation>%1 sistem yükleyici hakkında</translation>
     </message>
     <message>
-        <location filename="../src/modules/greeting/GreetingPage.cpp" line="108"/>
+        <location filename="../src/modules/greeting/GreetingPage.cpp" line="140"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technologies for a better world.</source>
         <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Telif Hakları 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Teşekkürler: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; gelişim sponsoru &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - daha iyi bir dünya için teknoloji.</translation>
     </message>

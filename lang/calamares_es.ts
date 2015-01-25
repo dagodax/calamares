@@ -189,7 +189,7 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>Calamares::InstallationViewStep</name>
     <message>
-        <location filename="../src/libcalamaresui/InstallationViewStep.cpp" line="47"/>
+        <location filename="../src/libcalamaresui/InstallationViewStep.cpp" line="75"/>
         <source>Install</source>
         <translation>Instalar</translation>
     </message>
@@ -198,8 +198,8 @@ p, li { white-space: pre-wrap; }
     <name>Calamares::JobThread</name>
     <message>
         <location filename="../src/libcalamares/JobQueue.cpp" line="88"/>
-        <source>The install finished succesfully, click the quit button to return to live mode and reboot from there into your newly installed system</source>
-        <translation>La instalación ha terminado con éxito, haga click en el botón Salir para volver al modo live y reiniciar desde allí en su sistema recién instalado</translation>
+        <source>Click the Quit button to return to live mode and reboot from there into your newly installed system</source>
+        <translation>Haga clic en el botón Salir para volver al modo live y reiniciar desde ahí en su sistema recién instalado.</translation>
     </message>
 </context>
 <context>
@@ -1458,17 +1458,17 @@ Algunos sistemas de archivos necesitan instalar herramientas externas para ser s
         <translation>&amp;Acerca de</translation>
     </message>
     <message>
-        <location filename="../src/modules/greeting/GreetingPage.cpp" line="85"/>
-        <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is in Beta stage.&lt;br/&gt;Not implemented yet is closing the installer automatically,&lt;br/&gt;showing a slideshow during the install or setting the locale.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Known Issues&lt;/a&gt;</source>
-        <translation>&lt;h1&gt;Bienvenido al %1 instalador.&lt;/h1&gt;&lt;br/&gt;Este programa le hará algunas preguntas para hacer configuraciones %2 en su equipo. Recuerde, este instalador se encuentra en fase Beta.&lt;br/&gt;El programa de instalación podría cerrarse automáticamente mostrando una presentación durante la instalación o configuración de la configuración regional.&lt;br&gt;Para&lt;b&gt; sistemas de particionado GPT en BIOS&lt;/b&gt; y otras instrucciones, lean &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Problemas Conocidos&lt;/a&gt;</translation>
+        <location filename="../src/modules/greeting/GreetingPage.cpp" line="117"/>
+        <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is in Beta stage.&lt;br/&gt;Not implemented yet is closing the installer automatically and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Known Issues&lt;/a&gt;</source>
+        <translation>&lt;h1&gt;Bienvenido al instalador de %1.&lt;/h1&gt;&lt;br/&gt;Este programa le hará algunas preguntas y a configurará %2 en su computadora. Recuerde, este instalador está en estado Beta.&lt;br/&gt;Todavía no se ha implementado el cierre automático del instalador ni &lt;br/&gt;existe alguna opción de particionado automático para instalaciones UEFI.&lt;br/&gt;Para &lt;b&gt;particionado GPT en sistemas BIOS&lt;/b&gt; y otras instrucciones, lea &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Problemas conocidos.&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/greeting/GreetingPage.cpp" line="106"/>
+        <location filename="../src/modules/greeting/GreetingPage.cpp" line="138"/>
         <source>About %1 installer</source>
         <translation>Acerca de %1 instalador</translation>
     </message>
     <message>
-        <location filename="../src/modules/greeting/GreetingPage.cpp" line="108"/>
+        <location filename="../src/modules/greeting/GreetingPage.cpp" line="140"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technologies for a better world.</source>
         <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; desarrollo patrocinado por &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - tecnologías para un mundo mejor.</translation>
     </message>

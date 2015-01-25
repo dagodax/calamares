@@ -189,7 +189,7 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>Calamares::InstallationViewStep</name>
     <message>
-        <location filename="../src/libcalamaresui/InstallationViewStep.cpp" line="47"/>
+        <location filename="../src/libcalamaresui/InstallationViewStep.cpp" line="75"/>
         <source>Install</source>
         <translation>Installieren</translation>
     </message>
@@ -198,8 +198,8 @@ p, li { white-space: pre-wrap; }
     <name>Calamares::JobThread</name>
     <message>
         <location filename="../src/libcalamares/JobQueue.cpp" line="88"/>
-        <source>The install finished succesfully, click the quit button to return to live mode and reboot from there into your newly installed system</source>
-        <translation>Die Installation verlief erfolgreich, klick auf den &quot;Schließen&quot; Knopf um zurück in den Live-Modus zu kommen und starte von dort aus neu, um in dein neu installiertes System zu kommen. Entferne dein Installationsmedium (USB/DVD), sobald der Live Modus beendet ist, um ein neues starten von diesen Datenträgern zu vermeiden.</translation>
+        <source>Click the Quit button to return to live mode and reboot from there into your newly installed system</source>
+        <translation>Die Installation verlief erfolgreich, klick auf den &quot;Schließen&quot; Knopf um zurück in den Live-Modus zu kommen und starte von dort aus neu, um in dein neu installiertes System zu gelangen. Entferne dein Installationsmedium, sobald der Live Modus beendet ist, um ein neues starten von diesen Datenträgern zu vermeiden.</translation>
     </message>
 </context>
 <context>
@@ -399,18 +399,18 @@ Ausgabe:
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="139"/>
         <source>&lt;b&gt;Install %2 alongside %1&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Installiere %2 neben %1&lt;/b&gt;&lt;br/&gt;Dokumente, Musik und andere persönliche Dateien bleiben erhalten. Sie können bei jedem Start des Computers zwischen den Betriebssystemen wählen. WARNUNG: Gilt noch nicht für UEFI Installationen.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="147"/>
         <source>&lt;b&gt;Erase entire disk with %1 and install %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Ersetze %1 mit %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warnung: &lt;/font&gt;Dies löscht den gesamten Datenträger, alle %1 Programme, Dokumente, Fotos, Musik sowie sämtliche andere Daten und ist noch nicht verwendbar für UEFI Installationen.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="155"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="181"/>
         <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all files on the selected partition. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Lösche den Datenträger und installiere %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warnung: &lt;/font&gt;Alle Programme, Dokumente, Fotos, Musik und sämtliche anderen Dateien werden dabei gelöscht und dies ist noch nicht verfügbar für UEFI Installationen.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="165"/>
@@ -420,7 +420,7 @@ Ausgabe:
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="168"/>
         <source>&lt;b&gt;Install %1 alongside your current operating system&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Installiere %1 neben dem aktuellen Betriebssystem&lt;/b&gt;&lt;br/&gt;Dokumente, Musik und andere persönliche Dateien bleiben erhalten. Sie können bei jedem Start des Computers zwischen den Betriebssystemen wählen. WARNUNG: Die ist noch nicht für UEFI Installationen möglich.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="207"/>
@@ -1457,17 +1457,17 @@ Einige Dateisysteme erfordern die Installation externer Programme, um unterstüt
         <translation>Über KaOS</translation>
     </message>
     <message>
-        <location filename="../src/modules/greeting/GreetingPage.cpp" line="85"/>
-        <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is in Beta stage.&lt;br/&gt;Not implemented yet is closing the installer automatically,&lt;br/&gt;showing a slideshow during the install or setting the locale.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Known Issues&lt;/a&gt;</source>
-        <translation>&lt;h1&gt;Willkommen zum %1 Installationsprogramm. &lt;/h1&gt;&lt;br/&gt;Diese Anwendung wird dir  jetzt ein paar Fragen stellen und %2 auf deinem Computer einrichten. Dieses Installationsprogramm ist in einer Testphase, bitte erinnere dich daran. &lt;br/&gt;Noch nicht implementiert sind die Funktion, diesen Installer selbstständig zu beenden und &lt;br/&gt;eine Diashow während der Installation einzurichten.&lt;br/&gt;Für &lt;b&gt;die GPT Partitionierung in BIOS&lt;/b&gt; Systemen und andere Anleitungen, lies bitte den folgenden Link:, read &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Known Issues&lt;/a&gt;</translation>
+        <location filename="../src/modules/greeting/GreetingPage.cpp" line="117"/>
+        <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is in Beta stage.&lt;br/&gt;Not implemented yet is closing the installer automatically and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Known Issues&lt;/a&gt;</source>
+        <translation>&lt;h1&gt;Willkommen zum %1 Installationsprogramm. &lt;/h1&gt;&lt;br/&gt;Diese Anwendung wird dir jetzt ein paar Fragen stellen und %2 auf deinem Computer einrichten. Sie ist in einer Testphase, bitte melde eventuelle Fehler. &lt;br/&gt;Noch nicht implementiert sind die Funktion, diesen Installer selbstständig zu beenden und &lt;br/&gt;automatische Partitionierung für UEFI Installationen.&lt;br/&gt;Für &lt;b&gt;die GPT Partitionierung in BIOS&lt;/b&gt; Systemen und andere Anleitungen, lies bitte den folgenden Link:, read &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Known Issues&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/greeting/GreetingPage.cpp" line="106"/>
+        <location filename="../src/modules/greeting/GreetingPage.cpp" line="138"/>
         <source>About %1 installer</source>
         <translation>Über das %1 Installationsprogramm</translation>
     </message>
     <message>
-        <location filename="../src/modules/greeting/GreetingPage.cpp" line="108"/>
+        <location filename="../src/modules/greeting/GreetingPage.cpp" line="140"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technologies for a better world.</source>
         <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Dankeschön an: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini und Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; die Entwicklung wird finanziert durch  &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technologies for a better world.</translation>
     </message>
