@@ -199,7 +199,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamares/JobQueue.cpp" line="88"/>
         <source>Click the Quit button to return to live mode and reboot from there into your newly installed system</source>
-        <translation type="unfinished"/>
+        <translation>Pressione o botão Sair para voltar ao modo live e reiniciar o computador no seu novo sistema recém-instalado</translation>
     </message>
 </context>
 <context>
@@ -1459,7 +1459,7 @@ Alguns sistemas de arquivos necessitam de ferramentas externas para serem suport
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="117"/>
         <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is in Beta stage.&lt;br/&gt;Not implemented yet is closing the installer automatically and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Known Issues&lt;/a&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Bem-vindo ao instalador %1.&lt;/h1&gt;&lt;br/&gt;Este programa fará algumas perguntas e configurará %2 no seu computador. Lembre-se, este instalador está em estágio Beta.&lt;br/&gt;Ainda não foi implementado o fechamento automático e nem&lt;br/&gt;o uso das opções de particionamento automatizado para instalações UEFI.&lt;br/&gt;Para &lt;b&gt;particionamento GPT em sistemas BIOS&lt;/b&gt; e outras instruções, leia &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Problemas Conhecidos&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="138"/>
