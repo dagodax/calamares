@@ -57,6 +57,7 @@ def run():
         ('ksplashrc', '.config/'),
         ('kickoffrc', '.config/'),
         ('.bashrc', ''),
+        ('.xinitrc', ''),
         ('mimeapps.list', '.local/share/applications/'),
         ('xdg-user-dirs-update.desktop', '.config/autostart/'),
         ('octopi-notifier.desktop', '.config/autostart/'),
