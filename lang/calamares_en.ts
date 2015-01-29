@@ -299,16 +299,33 @@ Output:
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="57"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="255"/>
+        <source>&amp;Cancel</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="76"/>
+        <source>Cancel installation?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="77"/>
+        <source>Do you really want to cancel the current install process?
+The installer will quit and all changes will be lost.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="227"/>
         <source>&amp;Quit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="138"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="155"/>
         <source>Error</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="139"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="156"/>
         <source>Installation Failed</source>
         <translation type="unfinished"></translation>
     </message>
