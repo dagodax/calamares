@@ -118,7 +118,7 @@ GreetingPage::GreetingPage( QWidget* parent )
                              "This program will ask you some questions and "
                              "set up %2 on your computer." 
                              " Remember, this installer is in Beta stage.<br/>"
-                             "Not implemented yet is closing the installer automatically and<br/>"
+                             "Not implemented yet is LUKS/LVM or RAID and<br/>"
                              "using one of the automated partitioning options for UEFI installs.<br/>" 
                              "For <b>GPT partioning on BIOS</b> systems and other instructions, read <a href=\"http://kaosx.us/download/\">Known Issues</a>" )
                          .arg( Calamares::Branding::instance()->

@@ -127,7 +127,7 @@ Presentation
         Text {
             anchors.horizontalCenter: background4.horizontalCenter
             anchors.top: background4.bottom
-            text: "Once the install is finished click the Done button to close the installer."
+            text: "May using KaOS be a pleasant experience for you."
             wrapMode: Text.WordWrap
             width: 600
             horizontalAlignment: Text.Center
