@@ -85,8 +85,7 @@ private:
         int jobCount = m_jobs.size();
         QString message = m_jobIndex < jobCount
             ? m_jobs.at( m_jobIndex )->prettyName()
-            : tr( "Click the Quit button to return to live mode"
-                  " and reboot from there into your newly installed system" );
+            : tr( "Done" );
 
         qreal percent = ( m_jobIndex + jobPercent ) / qreal( jobCount );
 

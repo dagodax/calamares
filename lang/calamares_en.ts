@@ -184,7 +184,7 @@ p, li { white-space: pre-wrap; }
     <name>Calamares::JobThread</name>
     <message>
         <location filename="../src/libcalamares/JobQueue.cpp" line="88"/>
-        <source>Click the Quit button to return to live mode and reboot from there into your newly installed system</source>
+        <source>Done</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
