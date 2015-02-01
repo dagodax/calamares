@@ -69,8 +69,8 @@ set( CALAMARES_APPLICATION_NAME  "Calamares" )
 set( CALAMARES_DESCRIPTION_SUMMARY "The distribution-independent installer framework" )
 set( CALAMARES_TRANSLATION_LANGUAGES ca cs de en es es_AR fr hr it nl_NL pl pt_BR ru sl sv tr_TR )
 
-set( CALAMARES_VERSION_MAJOR 0 )
-set( CALAMARES_VERSION_MINOR 17 )
+set( CALAMARES_VERSION_MAJOR 1 )
+set( CALAMARES_VERSION_MINOR 0 )
 set( CALAMARES_VERSION_PATCH 0 )
 #set( CALAMARES_VERSION_RC 0 )
 
