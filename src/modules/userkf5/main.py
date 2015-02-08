@@ -38,6 +38,7 @@ def run():
         '.local/share/konsole',
         '.config/autostart',
         '.config/plasma-workspace/env',
+        '.config/qtcurve',
         '.kde4/share/config'
     ]
     for d in common_dirs:
@@ -62,6 +63,7 @@ def run():
         ('xdg-user-dirs-update.desktop', '.config/autostart/'),
         ('octopi-notifier.desktop', '.config/autostart/'),
         ('libre.sh', '.config/plasma-workspace/env/'),
+        ('stylerc', '.config/qtcurve/'),
         ('katerc', '.config/'),
         ('ksplashrc', '.config/'),
         ('plasmarc', '.config/'),
