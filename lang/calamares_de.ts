@@ -458,7 +458,7 @@ Alle bereits getätigten Eingaben werden verschwinden.</translation>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="240"/>
         <source>&lt;b&gt;Something else&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a GPT partition table and &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
-        <translation>&lt;b&gt;Weitere Optionen&lt;/b&gt;&lt;br/&gt;Hier kannst du Partitionen manuell erstellen, ihren Umfang verändern und/oder verschiedene Partitionen für %1 festlegen. Verwende diese Option für UEFI Installationen; Eine GPT Partitionstabelle und eine &lt;b&gt;fat32 512Mb /boot Partition ist hierfür notwendig&lt;/b&gt;, entweder ein vorhandenes ohne Formatierung oder erstellen Sie eine.</translation>
+        <translation>&lt;b&gt;Weitere Optionen&lt;/b&gt;&lt;br/&gt;Hier kannst du Partitionen manuell erstellen, ihren Umfang verändern und/oder verschiedene Partitionen für %1 festlegen. Verwende diese Option für UEFI Installationen; Eine GPT Partitionstabelle und eine &lt;b&gt;fat32 512Mb /boot Partition ist hierfür notwendig&lt;/b&gt;, verwenden sie entweder eine vorhandene ohne Formatierung oder sie erstellen eine.</translation>
     </message>
 </context>
 <context>
