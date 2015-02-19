@@ -283,7 +283,8 @@ PartitionCoreModule::jobs() const
 
     for ( auto info : m_deviceInfos )
     {
-        lst << Calamares::job_ptr( new ClearMountsJob( info->device.data() ) );
+        if ( info->isDirty() )
+            lst << Calamares::job_ptr( new ClearMountsJob( info->device.data() ) );
     }
 
     for ( auto info : m_deviceInfos )
@@ -292,6 +293,16 @@ PartitionCoreModule::jobs() const
         devices << info->device.data();
     }
     lst << Calamares::job_ptr( new FillGlobalStorageJob( devices, m_bootLoaderInstallPath ) );
+
+
+    QStringList jobsDebug;
+    foreach ( auto job, lst )
+    {
+        jobsDebug.append( job->prettyName() );
+    }
+
+    cDebug() << "PartitionCodeModule has been asked for jobs. About to return:"
+             << jobsDebug.join( "\n" );
 
     return lst;
 }
