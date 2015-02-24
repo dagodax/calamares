@@ -19,11 +19,7 @@
 #   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
 
 import libcalamares
-from libcalamares.utils import check_chroot_call
- 
-import subprocess
 import os
-import glob
  
 install_path = libcalamares.globalstorage.value("rootMountPoint")
 menu_entries = []

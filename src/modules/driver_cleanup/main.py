@@ -86,7 +86,7 @@ def run():
 
     print('cleaning up input drivers')
 
-    xorg = open("/var/log/Xorg.0.log").read()
+    xorg = open("/var/log/Xorg.0.log",  errors="surrogateescape").read()
     if 'synaptics' in xorg:
         print('synaptics in use')
     else:
