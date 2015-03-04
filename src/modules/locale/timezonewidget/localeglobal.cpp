@@ -1,6 +1,6 @@
 /* === This file is part of Calamares - <http://github.com/calamares> ===
  *
- *   Copyright 2014, Teo Mrnjavac <teo@kde.org>
+ *   Copyright 2014-2015, Teo Mrnjavac <teo@kde.org>
  *
  *   Originally from the Manjaro Installation Framework
  *   by Roland Singer <roland@manjaro.org>
@@ -22,6 +22,7 @@
 
 #include "localeglobal.h"
 
+#include <QTimeZone>
 
 //###
 //### Private variables
@@ -34,6 +35,23 @@ QHash<QString, QList<LocaleGlobal::Location> > LocaleGlobal::locations;
 //###
 //### Public methods
 //###
+
+
+QString
+LocaleGlobal::Location::pretty( const QString& s )
+{
+    return QString( s ).replace( '_', ' ' ).simplified();
+}
+
+
+QString
+LocaleGlobal::Location::comment() const
+{
+    QTimeZone qtz = QTimeZone( QString( "%1/%2" )
+                                    .arg( region )
+                                    .arg( zone ).toLatin1() );
+    return qtz.comment();
+}
 
 
 void LocaleGlobal::init() {
@@ -131,8 +149,8 @@ void LocaleGlobal::initLocations() {
         if (timezone.size() < 2)
             continue;
 
-        location.region = timezone.first();
-        location.zone = timezone.last();
+        location.region = timezone.takeFirst();
+        location.zone = timezone.join( '/' );
         location.latitude = getRightGeoLocation(list.at(1).mid(0, cooSplitPos));
         location.longitude = getRightGeoLocation(list.at(1).mid(cooSplitPos));
 
@@ -162,3 +180,4 @@ double LocaleGlobal::getRightGeoLocation(QString str) {
 
     return sign * num;
 }
+

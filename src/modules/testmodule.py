@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+#
 # === This file is part of Calamares - <http://github.com/calamares> ===
 #
 #   Copyright 2014, Teo Mrnjavac <teo@kde.org>
@@ -33,6 +35,12 @@ except ImportError:
 
 
 class Job:
+    """
+
+    :param working_path:
+    :param doc:
+    :param cfg_doc:
+    """
 
     def __init__(self, working_path, doc, cfg_doc):
         self.module_name = doc["name"]
@@ -41,10 +49,19 @@ class Job:
         self.configuration = cfg_doc
 
     def setprogress(self, progress):
+        """
+
+        :param progress:
+        """
         print("Job set progress to {}%.".format(progress * 100))
 
 
 def main():
+    """
+
+
+    :return:
+    """
     parser = argparse.ArgumentParser()
     parser.add_argument("moduledir",
                         help="Dir containing the Python module.")

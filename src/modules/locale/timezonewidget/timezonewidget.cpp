@@ -1,6 +1,6 @@
 /* === This file is part of Calamares - <http://github.com/calamares> ===
  *
- *   Copyright 2014, Teo Mrnjavac <teo@kde.org>
+ *   Copyright 2014-2015, Teo Mrnjavac <teo@kde.org>
  *
  *   Originally from the Manjaro Installation Framework
  *   by Roland Singer <roland@manjaro.org>
@@ -22,7 +22,7 @@
 
 #include "timezonewidget.h"
 
-TimeZoneWidget::TimeZoneWidget(QWidget *parent) :
+TimeZoneWidget::TimeZoneWidget(QWidget* parent) :
     QWidget(parent)
 {
     setMouseTracking(false);
@@ -132,7 +132,7 @@ void TimeZoneWidget::paintEvent(QPaintEvent*) {
     painter.drawImage(point.x() - pin.width()/2, point.y() - pin.height()/2, pin);
 
     // Draw text and box
-    const int textWidth = fontMetrics.width(currentLocation.zone);
+    const int textWidth = fontMetrics.width(LocaleGlobal::Location::pretty(currentLocation.zone));
     const int textHeight = fontMetrics.height();
 
     QRect rect = QRect(point.x() - textWidth/2 - 5, point.y() - textHeight - 8, textWidth + 10, textHeight - 2);
@@ -150,14 +150,14 @@ void TimeZoneWidget::paintEvent(QPaintEvent*) {
     painter.setBrush(QColor(40, 40, 40));
     painter.drawRoundedRect(rect, 3, 3);
     painter.setPen(Qt::white);
-    painter.drawText(rect.x() + 5, rect.bottom() - 4, currentLocation.zone);
+    painter.drawText(rect.x() + 5, rect.bottom() - 4, LocaleGlobal::Location::pretty(currentLocation.zone));
 
     painter.end();
 }
 
 
 
-void TimeZoneWidget::mousePressEvent(QMouseEvent *event) {
+void TimeZoneWidget::mousePressEvent(QMouseEvent* event) {
     if (event->button() != Qt::LeftButton)
         return;
 

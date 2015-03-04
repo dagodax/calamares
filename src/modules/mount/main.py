@@ -18,14 +18,17 @@
 #   You should have received a copy of the GNU General Public License
 #   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
 
-import os
-import subprocess
 import tempfile
 
 import libcalamares
 
 
 def mount_partitions(root_mount_point, partitions):
+    """ Pass back mount point and filesystem for each partition.
+
+    :param root_mount_point:
+    :param partitions:
+    """
     for partition in partitions:
         if not partition["mountPoint"]:
             continue
@@ -46,6 +49,10 @@ def mount_partitions(root_mount_point, partitions):
 
 
 def run():
+    """ Define mountpoints.
+
+    :return:
+    """
     root_mount_point = tempfile.mkdtemp(prefix="calamares-root-")
     partitions = libcalamares.globalstorage.value("partitions")
     extra_mounts = libcalamares.job.configuration["extraMounts"]

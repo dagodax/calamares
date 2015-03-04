@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+#
 # === This file is part of Calamares - <http://github.com/calamares> ===
 #
 #   Copyright 2014, Rohan Garg <rohan@kde.org>
+#   Copyright 2015, Philip Müller <philm@manjaro.org>
 #
 #   Calamares is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -19,31 +21,28 @@
 
 import libcalamares
 import os
-import subprocess
-import shutil
 from collections import OrderedDict
 from libcalamares.utils import check_chroot_call
 
+
 def cpuinfo():
-    ''' Return the information in /proc/cpuinfo
-    as a dictionary in the following format:
+    """ Return the information in /proc/cpuinfo as a dictionary in the following format:
+
     cpu_info['proc0']={...}
     cpu_info['proc1']={...}
-
-    '''
-
-    cpuinfo=OrderedDict()
-    procinfo=OrderedDict()
+    """
+    cpuinfo = OrderedDict()
+    procinfo = OrderedDict()
 
     nprocs = 0
     with open('/proc/cpuinfo') as f:
         for line in f:
             if not line.strip():
                 # end of one processor
-                cpuinfo['proc%s' % nprocs] = procinfo
-                nprocs=nprocs+1
+                cpuinfo["proc{!s}".format(nprocs)] = procinfo
+                nprocs += 1
                 # Reset
-                procinfo=OrderedDict()
+                procinfo = OrderedDict()
             else:
                 if len(line.split(':')) == 2:
                     procinfo[line.split(':')[0].strip()] = line.split(':')[1].strip()
@@ -52,25 +51,36 @@ def cpuinfo():
 
     return cpuinfo
 
-def set_mkinitcpio_hooks_and_modules(hooks, modules, root_mount_point):
-    """ Set up mkinitcpio.conf """
 
+def set_mkinitcpio_hooks_and_modules(hooks, modules, root_mount_point):
+    """ Set up mkinitcpio.conf.
+
+    :param hooks:
+    :param modules:
+    :param root_mount_point:
+    """
     with open("/etc/mkinitcpio.conf", "r") as mkinitcpio_file:
         mklins = [x.strip() for x in mkinitcpio_file.readlines()]
 
     for i in range(len(mklins)):
         if mklins[i].startswith("HOOKS"):
-            mklins[i] = 'HOOKS="%s"' % ' '.join(hooks)
+            joined_hooks = ' '.join(hooks)
+            mklins[i] = "HOOKS=\"{!s}\"".format(joined_hooks)
         elif mklins[i].startswith("MODULES"):
-            mklins[i] = 'MODULES="%s"' % ' '.join(modules)
+            joined_modules = ' '.join(modules)
+            mklins[i] = "MODULES=\"{!s}\"".format(joined_modules)
 
     path = os.path.join(root_mount_point, "etc/mkinitcpio.conf")
     with open(path, "w") as mkinitcpio_file:
         mkinitcpio_file.write("\n".join(mklins) + "\n")
 
-def modify_mkinitcpio_conf(partitions, root_mount_point):
-    """ Modifies mkinitcpio.conf """
 
+def modify_mkinitcpio_conf(partitions, root_mount_point):
+    """ Modifies mkinitcpio.conf
+
+    :param partitions:
+    :param root_mount_point:
+    """
     cpu = cpuinfo()
     swap_uuid = ""
     btrfs = ""
@@ -104,6 +114,10 @@ def modify_mkinitcpio_conf(partitions, root_mount_point):
 
 
 def run():
+    """ Calls routine with given parameters to modify '/etc/mkinitcpio.conf'.
+
+    :return:
+    """
     partitions = libcalamares.globalstorage.value("partitions")
     root_mount_point = libcalamares.globalstorage.value("rootMountPoint")
     modify_mkinitcpio_conf(partitions, root_mount_point)
