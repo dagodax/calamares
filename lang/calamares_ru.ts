@@ -9,12 +9,12 @@
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="68"/>
         <source>Allocate drive space by dragging the divider below:</source>
-        <translation>Присвойте место на диске, путем перемещения ползунка снизу: </translation>
+        <translation>Выделите место на диске, перемещая ползунок снизу: </translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="167"/>
         <source>With this operation, the partition &lt;b&gt;%1&lt;/b&gt; which contains %4 will be shrunk to %2MB and a new %3MB partition will be created for %5. &lt;font color=&quot;red&quot;&gt;Do not use for UEFI. &lt;/font&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Этой операцией, раздел &lt;b&gt;%1&lt;/b&gt; содержащий %4 будет уменьшен до %2MB и новый %3MB раздел будет создан для %5. &lt;font color=&quot;red&quot;&gt;Не используйте для UEFI. &lt;/font&gt;</translation>
     </message>
 </context>
 <context>
@@ -35,12 +35,12 @@
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="33"/>
         <source>Operations and Jobs</source>
-        <translation>Действия и Задачи</translation>
+        <translation>Операции и задачи</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="38"/>
         <source>Time Elapsed</source>
-        <translation>Времени прошло</translation>
+        <translation>Прошло времени</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="64"/>
@@ -137,7 +137,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="443"/>
         <source>User Info</source>
-        <translation>Информация о пользователях</translation>
+        <translation>Информация о пользователе</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="469"/>
@@ -199,7 +199,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamares/JobQueue.cpp" line="88"/>
         <source>Done</source>
-        <translation type="unfinished"/>
+        <translation>Готово</translation>
     </message>
 </context>
 <context>
@@ -212,21 +212,21 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="77"/>
         <source>External command crashed</source>
-        <translation>Вызов внешней команды завершился неудачей</translation>
+        <translation>Ошибка внешней команды</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="78"/>
         <source>Command %1 crashed.
 Output:
 %2</source>
-        <translation>Команда %1 завершилась неудачей.
+        <translation>Команда %1 неудачна.
 Вывод:
 %2</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="83"/>
         <source>External command failed to start</source>
-        <translation>Невозможно выполнить внешнюю команду</translation>
+        <translation>Ошибка запуска внешней команды</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="84"/>
@@ -236,7 +236,7 @@ Output:
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="88"/>
         <source>Internal error when starting command</source>
-        <translation>Внутрення ошибка при запуске команды</translation>
+        <translation>Внутрення ошибка запуска команды</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="89"/>
@@ -246,14 +246,14 @@ Output:
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="92"/>
         <source>External command failed to finish</source>
-        <translation>Невозможно завершить внешнюю команду</translation>
+        <translation>Ошибка завершения внешней команды</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="93"/>
         <source>Command %1 failed to finish in %2s.
 Output:
 %3</source>
-        <translation>Команда %1 не могла быть завершена в течении %2 сек.
+        <translation>Команда %1 не завершена в течении %2 сек.
 Вывод:
 %3</translation>
     </message>
@@ -267,7 +267,7 @@ Output:
         <source>Command %1 finished with exit code %2.
 Output:
 %3</source>
-        <translation>Команда %1 завершлась с кодом возврата %2.
+        <translation>Команда %1 завершилась с кодом выхода %2.
 Вывод:
 %3</translation>
     </message>
@@ -287,7 +287,7 @@ Output:
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="250"/>
         <source>Working directory %1 for python job %2 is not readable.</source>
-        <translation>Рабочая директория %1 для задачи python %2 не доступна для чтения.</translation>
+        <translation>Рабочая директория %1 для задачи python %2 не читаема.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="260"/>
@@ -297,7 +297,7 @@ Output:
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="261"/>
         <source>Main script file %1 for python job %2 is not readable.</source>
-        <translation>Главный файл сценария %1 для задачи python %2 не доступен для чтения.</translation>
+        <translation>Главный файл сценария %1 для задачи python %2 не читаем.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="305"/>
@@ -321,18 +321,19 @@ Output:
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="60"/>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="295"/>
         <source>&amp;Cancel</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Отмена</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="79"/>
         <source>Cancel installation?</source>
-        <translation type="unfinished"/>
+        <translation>Отменить установку?</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="80"/>
         <source>Do you really want to cancel the current install process?
 The installer will quit and all changes will be lost.</source>
-        <translation type="unfinished"/>
+        <translation>Вы действительно хотите отменить процесс установки?
+Установщик будет закрыт а все изменения потеряны.</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="265"/>
@@ -347,7 +348,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="177"/>
         <source>Installation Failed</source>
-        <translation>Установка завершилась неудачей</translation>
+        <translation>Установка неудачна</translation>
     </message>
 </context>
 <context>
@@ -360,12 +361,12 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/libcalamares/PythonHelper.cpp" line="247"/>
         <source>unparseable Python error</source>
-        <translation>неподдающаяся обработке ошибка Python</translation>
+        <translation>необрабатываемая ошибка Python</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonHelper.cpp" line="263"/>
         <source>unparseable Python traceback</source>
-        <translation>неподдающийся обработке traceback Python</translation>
+        <translation>необрабатываемый traceback Python</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonHelper.cpp" line="267"/>
@@ -386,12 +387,12 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/jobs/CheckFileSystemJob.cpp" line="34"/>
         <source>Checking file system on partition %1.</source>
-        <translation>Проверка файловой системы на разделе %1.</translation>
+        <translation>Проверка файловой системы раздела %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CheckFileSystemJob.cpp" line="50"/>
         <source>The file system check on partition %1 failed.</source>
-        <translation>Проверка файловой системы на разделе %1 завершилась неудачей.</translation>
+        <translation>Проверка файловой системы на разделе %1 неудачна.</translation>
     </message>
 </context>
 <context>
@@ -399,14 +400,14 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="115"/>
         <source>This computer currently does not seem to have an operating system on it. What would you like to do?</source>
-        <translation>Похоже этот компьютер не содержит операционных систем. Как Вы желаете поступить?</translation>
+        <translation>Похоже этот компьютер не имеет операционных систем. Как Вы желаете поступить?</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="118"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="175"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="217"/>
         <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Стереть диск и установить %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Внимание: &lt;/font&gt;Это приведет к удалению ваших программ, документов, фото, музыки и других файлов. &lt;b&gt;Не подходит для UEFI установок&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="135"/>
@@ -416,48 +417,48 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="139"/>
         <source>&lt;b&gt;Install %2 alongside %1&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Установить %2 рядом %1&lt;/b&gt;&lt;br/&gt;Документы, музыка и личные файлы сохранятся. Вы сможете выбирать желаемую систему при каждом запуске компьютера.  &lt;b&gt;Внимание: не подходит для UEFI установок&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="147"/>
         <source>&lt;b&gt;Erase entire disk with %1 and install %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;СТереть весь диск с %1 и установить %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Внимание: &lt;/font&gt;Это удалит диск и все ваши %1 программы, документоы, фото, музыку и другие файлы. &lt;b&gt;Не подходит для UEFI установок&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="155"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="181"/>
         <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all files on the selected partition. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Установка %1 на имеющийся раздел&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Внимание: &lt;/font&gt;Это удалит все файлы в выбранном разделе. &lt;b&gt;Не подходит для UEFI установок&lt;/b&gt; </translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="165"/>
         <source>This computer already has an operating system on it. What would you like to do?</source>
-        <translation>На компьютере уже установлена операционная система. Как Вы желаете поступить?</translation>
+        <translation>Этот компьютер уже имеет операционную систему. Как Вы желаете поступить?</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="168"/>
         <source>&lt;b&gt;Install %1 alongside your current operating system&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Установка %1 рядом с текущей операционной системой&lt;/b&gt;&lt;br/&gt;Документы, музыка и личные файлы сохранятся. Вы сможете выбирать желаемую систему при каждом запуске компьютера. &lt;b&gt;Внимание: не подходит для UEFI установок&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="207"/>
         <source>This computer currently has multiple operating systems on it. What would you like to do?</source>
-        <translation>На этом компьютере обнаружено несколько операционных систем. Как Вы желаете поступить?</translation>
+        <translation>На этот компьютер имеет несколько операционных систем. Как Вы желаете поступить?</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="210"/>
         <source>&lt;b&gt;Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Установка %1 рядом с текущей операционной системой&lt;/b&gt;&lt;br/&gt;Документы, музыка и личные файлы сохранятся. Вы сможете выбирать желаемую систему при каждом запуске компьютера. &lt;b&gt;Внимание: не подходит для UEFI установок&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="223"/>
         <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all files on the selected partition. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Установка %1 на имеющийся раздел&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Внимание: &lt;/font&gt;Это удалит все файлы в выбранном разделе. &lt;b&gt;Не подходит для UEFI установок&lt;/b&gt; </translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="240"/>
         <source>&lt;b&gt;Something else&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a GPT partition table and &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Другой вариант&lt;/b&gt;&lt;br/&gt;Вы можете создать или изменить разделы, или выбрать несколько разделов для %1. Используйте эту опцию для UEFI установк, имея GPT таблицу разделов и &lt;b&gt;fat32 512Мб /boot раздел необходим для UEFI установок&lt;/b&gt;, либо используйте существующие без без форматирования и создания.</translation>
     </message>
 </context>
 <context>
@@ -465,22 +466,22 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="40"/>
         <source>Clear mounts for partitioning operations on %1</source>
-        <translation type="unfinished"/>
+        <translation>Очистить монтирование для работы с разделами %1</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="62"/>
         <source>Cannot umount partition %1</source>
-        <translation type="unfinished"/>
+        <translation>Нельзя отмонтировать раздел %1</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="64"/>
         <source>Cannot proceed with partitioning operations because some partitions are still mounted.</source>
-        <translation type="unfinished"/>
+        <translation>Невозможно выполнить операции с разделами, потому что некоторые разделы смонтированы.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="70"/>
         <source>Cleared all mounts for %1</source>
-        <translation type="unfinished"/>
+        <translation>Очистить всё смонтированное %1</translation>
     </message>
 </context>
 <context>
@@ -493,7 +494,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="35"/>
         <source>Allow applying operations without administrator privileges</source>
-        <translation>Разрешить выполнение действий без запроса административных полномочий</translation>
+        <translation>Разрешить выполнение действий без прав администратора</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="51"/>
@@ -523,32 +524,32 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="101"/>
         <source>KiB</source>
-        <translation>КиБ</translation>
+        <translation>KiB</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="106"/>
         <source>MiB</source>
-        <translation>МиБ</translation>
+        <translation>MiB</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="111"/>
         <source>GiB</source>
-        <translation>ГиБ</translation>
+        <translation>GiB</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="116"/>
         <source>TiB</source>
-        <translation>ТиБ</translation>
+        <translation>TiB</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="121"/>
         <source>PiB</source>
-        <translation>ПиБ</translation>
+        <translation>PiB</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepageadvanced.ui" line="126"/>
         <source>EiB</source>
-        <translation>ЭиБ</translation>
+        <translation>EiB</translation>
     </message>
 </context>
 <context>
@@ -714,12 +715,12 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="90"/>
         <source>Logging</source>
-        <translation>Протоколирование</translation>
+        <translation>Отчётность</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="96"/>
         <source>Hide messages below:</source>
-        <translation>Спрятать сообщения внизу:</translation>
+        <translation>Скрыть сообщения ниже:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="107"/>
@@ -749,7 +750,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="145"/>
         <source>Default file system:</source>
-        <translation>Файловая система по умолчанию</translation>
+        <translation>Файловая система по умолчанию:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="167"/>
@@ -764,7 +765,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="180"/>
         <source>Random data</source>
-        <translation>Произвольные данные</translation>
+        <translation>Случайные данные</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="190"/>
@@ -782,7 +783,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="38"/>
         <source>Partition &amp;Type:</source>
-        <translation>&amp;Тип раздела:</translation>
+        <translation>Тип &amp; раздела:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="50"/>
@@ -837,12 +838,12 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="194"/>
         <source>Si&amp;ze:</source>
-        <translation>Ра&amp;змер:</translation>
+        <translation>&amp;Размер:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="204"/>
         <source> MB</source>
-        <translation>МБ</translation>
+        <translation>Мб</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="85"/>
@@ -870,7 +871,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="60"/>
         <source>The installer failed to create partition on disk &apos;%1&apos;.</source>
-        <translation>Установщик не смог создать раздел на диске &apos;%1&apos;.</translation>
+        <translation>Установщик не создал раздел на диске &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="69"/>
@@ -880,7 +881,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="79"/>
         <source>Could not open partition table.</source>
-        <translation>Не возможно прочитать таблицу разделов.</translation>
+        <translation>Нельзя прочитать таблицу разделов.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="103"/>
@@ -903,7 +904,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="39"/>
         <source>Creating a new partition table will delete all existing data on the disk.</source>
-        <translation>Создание новой таблицы разделов удалит все существующие данные на диске.</translation>
+        <translation>Создание новой таблицы разделов удалит все имеющиеся данные на диске.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="65"/>
@@ -987,7 +988,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="79"/>
         <source>Cannot chmod sudoers file.</source>
-        <translation>Невозможно применить chmod к файлу sudoers.</translation>
+        <translation>Невозможн chmod файла sudoers.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="85"/>
@@ -1053,7 +1054,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="54"/>
         <source>Partition (%1) and device (%2) do not match.</source>
-        <translation>Раздел (%1) и устройство (%2) не совпадают.</translation>
+        <translation>Раздел (%1) и устройство (%2) не соответствуют.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="66"/>
@@ -1089,7 +1090,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="84"/>
         <source>Sector based alignment</source>
-        <translation>Выравнивание основанное на секторах</translation>
+        <translation>Выравнивание по секторам</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/devicepropswidgetbase.ui" line="113"/>
@@ -1157,17 +1158,17 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="70"/>
         <source>Format</source>
-        <translation>Форматирование</translation>
+        <translation>Форматировать</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="83"/>
         <source>Warning: Formatting the partition will erase all existing data.</source>
-        <translation>Внимание: Форматирование раздела уничтожит все данные.</translation>
+        <translation>Внимание: Форматирование раздела уничтожит все имеющиеся данные.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="93"/>
         <source>&amp;Mount Point:</source>
-        <translation>Точка &amp;монтирования:</translation>
+        <translation>&amp;Точка монтирования:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="110"/>
@@ -1248,7 +1249,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="80"/>
         <source>Users can mount and unmount</source>
-        <translation>Пользователям разрешается монтировать и отмонтировать</translation>
+        <translation>Пользователи могут монтировать и отмонтировать</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="87"/>
@@ -1391,7 +1392,7 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="110"/>
         <source>Read Usage</source>
-        <translation>Опросить доступное место</translation>
+        <translation>Опросить доступность</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="115"/>
@@ -1412,7 +1413,7 @@ Some file systems need external tools to be installed for them to be supported. 
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="135"/>
         <source>Rescan Support</source>
         <comment>@action:button</comment>
-        <translation>Пересканировать поддержку</translation>
+        <translation>Поддержка пересканирования</translation>
     </message>
 </context>
 <context>
@@ -1425,7 +1426,7 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="85"/>
         <source>Failed to find path for boot loader</source>
-        <translation>Невозможно найти путь загрузчика</translation>
+        <translation>Не найден путь для загрузчика</translation>
     </message>
 </context>
 <context>
@@ -1433,17 +1434,17 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/finished/FinishedPage.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"/>
+        <translation>Форма</translation>
     </message>
     <message>
         <location filename="../src/modules/finished/FinishedPage.ui" line="77"/>
         <source>&amp;Restart now</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Перезагрузка</translation>
     </message>
     <message>
         <location filename="../src/modules/finished/FinishedPage.cpp" line="50"/>
         <source>&lt;h1&gt;All done.&lt;/h1&gt;&lt;br/&gt;%1 has been installed on your computer.&lt;br/&gt;You may now restart into your new system, or continue using the %2 Live environment.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Всё готово.&lt;/h1&gt;&lt;br/&gt;%1 был установлен на ваш компьютер.&lt;br/&gt;Теперь Вы можете перезагрузиться в вашу новую систему или продолжить использовать %2 Live.</translation>
     </message>
 </context>
 <context>
@@ -1451,7 +1452,7 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/finished/FinishedViewStep.cpp" line="43"/>
         <source>All done</source>
-        <translation type="unfinished"/>
+        <translation>Всё готово</translation>
     </message>
 </context>
 <context>
@@ -1497,22 +1498,22 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="102"/>
         <source>&amp;About</source>
-        <translation>О программе</translation>
+        <translation>&amp;Описание</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="117"/>
         <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Known Issues&lt;/a&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Добро пожаловать в %1 установщик.&lt;/h1&gt;&lt;br/&gt;Эта программа задаст Вам несколько вопросов и установит %2 на Ваш компьютер. Помните, что этот установщик находится в разработке.&lt;br/&gt;Пока не реализованы LUKS/LVM или RAID, &lt;br/&gt;используйте одну из автоматизированных опций разделов для UEFI установок&lt;br/&gt;Для &lt;b&gt;GPT разделов на BIOS&lt;/b&gt; системах и другие инструкции, читайте href=&quot;http://kaosx.us/download/&quot;&gt;Известные проблемы&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="138"/>
         <source>About %1 installer</source>
-        <translation type="unfinished"/>
+        <translation>Об %1 установщике</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="140"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technologies for a better world.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Правообладатель 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Благодарности: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini и Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; развитие спонсируется &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - технологии для лучшего мира.</translation>
     </message>
 </context>
 <context>
@@ -1528,12 +1529,12 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/keyboard/KeyboardPage.cpp" line="200"/>
         <source>Set keyboard model to %1.&lt;br/&gt;</source>
-        <translation>Установить модель клавиатуры на %1.&lt;br/&gt;</translation>
+        <translation>Установить модель клавиатуры %1.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/KeyboardPage.cpp" line="202"/>
         <source>Set keyboard layout to %1/%2.</source>
-        <translation>Установить раскладку клавиатуры на %1/%2.</translation>
+        <translation>Установить раскладку клавиатуры %1/%2.</translation>
     </message>
 </context>
 <context>
@@ -1549,12 +1550,12 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="33"/>
         <source>System locale setting</source>
-        <translation type="unfinished"/>
+        <translation>Настройка местоположения</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="40"/>
         <source>The system locale setting affects the language and character set for some command line user interface elements.&lt;br/&gt;The current setting is &lt;b&gt;%1&lt;/b&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Настройки языка системы влияют на язык и набор символов для некоторых элементов пользовательского интерфейса командной строки.&lt;br/&gt;Текущие настройки &lt;b&gt;%1&lt;/b&gt;.</translation>
     </message>
 </context>
 <context>
@@ -1563,7 +1564,7 @@ Some file systems need external tools to be installed for them to be supported. 
         <location filename="../src/modules/locale/LocalePage.cpp" line="157"/>
         <location filename="../src/modules/locale/LocalePage.cpp" line="168"/>
         <source>The system locale is set to %1.</source>
-        <translation type="unfinished"/>
+        <translation>Местоположение системы установить %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="165"/>
@@ -1578,7 +1579,7 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="171"/>
         <source>&amp;Change...</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Изменение...</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="265"/>
@@ -1617,7 +1618,7 @@ Some file systems need external tools to be installed for them to be supported. 
         <location filename="../src/modules/partition/partitionmanager/src/gui/mainwindowbase.ui" line="38"/>
         <source>Pending Operations</source>
         <comment>@title:window</comment>
-        <translation>Операции для выполнения</translation>
+        <translation>Запланированные перации</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/mainwindowbase.ui" line="49"/>
@@ -1629,7 +1630,7 @@ Some file systems need external tools to be installed for them to be supported. 
         <location filename="../src/modules/partition/partitionmanager/src/gui/mainwindowbase.ui" line="63"/>
         <source>Log Output</source>
         <comment>@title:window</comment>
-        <translation>Протокол</translation>
+        <translation>Вывод отчёта</translation>
     </message>
 </context>
 <context>
@@ -1652,27 +1653,27 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="95"/>
         <source>Moving of partition %1 failed, changes have been rolled back.</source>
-        <translation>Перемещение раздела %1 завершилось неудачей, все изменения были отменены.</translation>
+        <translation>Перемещение раздела %1 не удалось, все изменения были отменены.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="101"/>
         <source>Moving of partition %1 failed. Roll back of the changes have failed.</source>
-        <translation>Перемещение раздела %1 завершилось неудачей. Попытка отменить изменения также завершилась неудачей.</translation>
+        <translation>Перемещение раздела %1 не удалось. Отмена изменений также неудачна.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="113"/>
         <source>Updating boot sector after the moving of partition %1 failed.</source>
-        <translation>Обновление загрузочного сектора после перемещения раздела %1 завершилось неудачей.</translation>
+        <translation>Обновление загрузочного сектора после перемещения раздела %1 не удалось.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="127"/>
         <source>The logical sector sizes in the source and target for copying are not the same. This is currently unsupported.</source>
-        <translation>Размеры логических секторов на источнике и цели не совпадают. Такое перемещение пока не поддерживается.</translation>
+        <translation>Размеры логических секторов на источнике и цели не совпадают. В данный момент не поддерживается.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="200"/>
         <source>Source and target for copying do not overlap: Rollback is not required.</source>
-        <translation>Источник и цель для копирования не перекрывают друг друга. Создание отката не требуется.</translation>
+        <translation>Источник и цель для копирования не совпадают. Создание отката не требуется.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="224"/>
@@ -1696,7 +1697,7 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/keyboard/KeyboardPage.ui" line="131"/>
         <source>Type here to test your keyboard</source>
-        <translation>Эта область - для тестирования клавиатуры</translation>
+        <translation>Печатайте тут, для проверки вашей клавиатуры</translation>
     </message>
 </context>
 <context>
@@ -1722,7 +1723,7 @@ Some file systems need external tools to be installed for them to be supported. 
         <location filename="../src/modules/users/page_usersetup.ui" line="425"/>
         <location filename="../src/modules/users/page_usersetup.ui" line="553"/>
         <source>font-weight: normal</source>
-        <translation>Гарнитура: обычная</translation>
+        <translation>шрифт: нормальный</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="194"/>
@@ -1788,7 +1789,7 @@ Some file systems need external tools to be installed for them to be supported. 
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="82"/>
         <source>This file system does not support setting a label.</source>
         <comment>@label</comment>
-        <translation>Эта файловая система не поддерживает установку меток.</translation>
+        <translation>Эта файловая система не поддерживает установку метки.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="92"/>
@@ -1854,7 +1855,7 @@ Some file systems need external tools to be installed for them to be supported. 
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="285"/>
         <source>Number of sectors:</source>
         <comment>@label</comment>
-        <translation>Количество секторов:</translation>
+        <translation>Число секторов:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="309"/>
@@ -1937,7 +1938,7 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="132"/>
         <source>Free Space</source>
-        <translation>Доступное место</translation>
+        <translation>Свободное место</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="136"/>
@@ -1985,7 +1986,7 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="84"/>
         <source>New Partition &amp;Table</source>
-        <translation>Новая &amp;таблица разделов</translation>
+        <translation>Новая таблица &amp;разделов</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="104"/>
@@ -2005,7 +2006,7 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="145"/>
         <source>&amp;Install boot loader on:</source>
-        <translation>Уст&amp;ановить загрузчик в:</translation>
+        <translation>&amp;Установить загрузчик на:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="129"/>
@@ -2041,7 +2042,7 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/prepare/PreparePage.cpp" line="39"/>
         <source>For best results, please ensure that this computer:</source>
-        <translation>Для дальнейшего продолжения, пожалуйста проверьте указанные данные:</translation>
+        <translation>Для лучшего результата, убедитесь что этот компьютер:</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PreparePage.cpp" line="96"/>
@@ -2055,7 +2056,7 @@ Installation cannot continue.</source>
         <source>This computer does not satisfy some of the recommended requirements for installing %1.
 Installation can continue, but some features might be disabled.</source>
         <translation>Этот компьютер не удовлетворяет некоторым рекомендуемым требованиям для установки %1.
-Установка может быть продолжена, но некоторые возможности могут быть недоступны.</translation>
+Установка может продолжится, но некоторые возможности могут быть отключены.</translation>
     </message>
 </context>
 <context>
@@ -2078,12 +2079,12 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="107"/>
         <source>is plugged in to a power source</source>
-        <translation>подключено сетевое питание</translation>
+        <translation>подключен к источнику питания</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="114"/>
         <source>is connected to the Internet</source>
-        <translation>подсоединен к интернет</translation>
+        <translation>подключён к интернет</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="158"/>
@@ -2101,7 +2102,7 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/calamares/progresstree/ProgressTreeModel.cpp" line="144"/>
         <source>Install</source>
-        <translation type="unfinished"/>
+        <translation>Установка</translation>
     </message>
     <message>
         <location filename="../src/calamares/progresstree/ProgressTreeModel.cpp" line="150"/>
@@ -2153,17 +2154,17 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="99"/>
         <source>&amp;Checkout From:</source>
-        <translation>&amp;Источник checkout:</translation>
+        <translation>&amp;Контроль из:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="119"/>
         <source>trunk</source>
-        <translation>раздел</translation>
+        <translation>дерево</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="124"/>
         <source>branches</source>
-        <translation>ветки</translation>
+        <translation>ветви</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="129"/>
@@ -2173,7 +2174,7 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="137"/>
         <source>Ta&amp;g/Branch:</source>
-        <translation>Т&amp;эг/Ветвь:</translation>
+        <translation>Ta&amp;g/Ветвь:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="163"/>
@@ -2213,7 +2214,7 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="252"/>
         <source>Get &amp;Translations</source>
-        <translation>Получить п&amp;ереводы</translation>
+        <translation>Получить &amp;переводы</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="262"/>
@@ -2223,7 +2224,7 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="271"/>
         <source>S&amp;kip translations below completion:</source>
-        <translation>П&amp;ропустить незавершенные переводы:</translation>
+        <translation>&amp;Пропустить незавершенные переводы:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="306"/>
@@ -2233,12 +2234,12 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="324"/>
         <source>Create Tar&amp;ball</source>
-        <translation>Со&amp;здать Tarball</translation>
+        <translation>Создать Tar&amp;ball</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="334"/>
         <source>Apply &amp;fixes</source>
-        <translation>Применить п&amp;атчи</translation>
+        <translation>Применить &amp;патчи</translation>
     </message>
 </context>
 <context>
@@ -2256,52 +2257,52 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="109"/>
         <source>Select where to install %1.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;this will delete all files on the selected partition. &lt;font color=&quot;red&quot;&gt;Do not use for UEFI &lt;/font&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Выберите место для установки %1.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Внимание: &lt;/font&gt;это приведет к удалению всех файлов в выбранном разделе. &lt;font color=&quot;red&quot;&gt;Не используйте для UEFI &lt;/font&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="136"/>
         <source>The selected item does not appear to be a valid partition.</source>
-        <translation type="unfinished"/>
+        <translation>Выбранный пункт не появится для верного раздела.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="144"/>
         <source>%1 cannot be installed on empty space. Please select an existing partition.</source>
-        <translation type="unfinished"/>
+        <translation>%1 не может быть установлен на пустое место. Выберите существующий раздел..</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="155"/>
         <source>%1 cannot be installed on an extended partition. Please select an existing primary or logical partition.</source>
-        <translation type="unfinished"/>
+        <translation>%1 не может быть установлен на расширенный раздел. Выберите существующий первичный раздел.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="166"/>
         <source>%1 cannot be installed on this partition.</source>
-        <translation type="unfinished"/>
+        <translation>%1 не может быть установлен на этот раздел.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="173"/>
         <source>Data partition (%1)</source>
-        <translation type="unfinished"/>
+        <translation>Данные раздела (%1)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="190"/>
         <source>Unknown system partition (%1)</source>
-        <translation type="unfinished"/>
+        <translation>Неизвестный системный раздел (%1)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="195"/>
         <source>%1 system partition (%2)</source>
-        <translation type="unfinished"/>
+        <translation>%1 системный раздел (%2)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="206"/>
         <source>&lt;b&gt;%4&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;The partition %1 is too small for %2. Please select a partition with capacity at least %3 GiB.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;%4&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Раздел %1 слишком мал для %2. Выберите раздел объёмом не менее %3 GiB.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="220"/>
         <source>&lt;b&gt;%3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;%1 will be installed on %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;all data on partition%2 will be lost.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;%3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;%1 будет установлен на %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Внимание: &lt;/font&gt;все данные на разделе%2 будут потеряны.</translation>
     </message>
 </context>
 <context>
@@ -2309,7 +2310,7 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="75"/>
         <source>Resize file system on partition %1.</source>
-        <translation>Изменить файловую систему на разделе %1.</translation>
+        <translation>Изменить файловую систему раздела %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="90"/>
@@ -2319,7 +2320,7 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="100"/>
         <source>Failed to resize filesystem.</source>
-        <translation>Ошибка смены размера файловой системы.</translation>
+        <translation>Неудача изменения размера файловой системы.</translation>
     </message>
 </context>
 <context>
@@ -2346,7 +2347,7 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/users/SetHostNameJob.cpp" line="36"/>
         <source>Set hostname %1</source>
-        <translation>Задать имя компьютера в сети %1</translation>
+        <translation>Задать hostname %1</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetHostNameJob.cpp" line="46"/>
@@ -2358,7 +2359,7 @@ Installation can continue, but some features might be disabled.</source>
         <location filename="../src/modules/users/SetHostNameJob.cpp" line="60"/>
         <location filename="../src/modules/users/SetHostNameJob.cpp" line="71"/>
         <source>Cannot write hostname to target system</source>
-        <translation>Не возможно записать имя компьютера в целевую систему</translation>
+        <translation>Не возможно записать hostname в целевую систему</translation>
     </message>
 </context>
 <context>
@@ -2366,23 +2367,23 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="57"/>
         <source>Set keyboard model to %1, layout to %2-%3</source>
-        <translation type="unfinished"/>
+        <translation>Установить модель клавиатуры %1, раскладки %2-%3</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="277"/>
         <source>Failed to write keyboard configuration for the virtual console.</source>
-        <translation type="unfinished"/>
+        <translation>Неудача записи конфигурации клавиатуры для виртуальной консоли.</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="278"/>
         <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="282"/>
         <source>Failed to write to %1</source>
-        <translation type="unfinished"/>
+        <translation>Ошибка чтения %1</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="281"/>
         <source>Failed to write keyboard configuration for X11.</source>
-        <translation type="unfinished"/>
+        <translation>Неудача записи конфигурации клавиатуры для X11.</translation>
     </message>
 </context>
 <context>
@@ -2408,12 +2409,12 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="52"/>
         <source>Bad destination system path.</source>
-        <translation>Неверный путь целевой системы.</translation>
+        <translation>Плохой путь целевой системы.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="53"/>
         <source>rootMountPoint is %1</source>
-        <translation>Точка монтирования корневого раздела %1</translation>
+        <translation>Точка монтирования root %1</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="62"/>
@@ -2423,7 +2424,7 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="64"/>
         <source>usermod terminated with error code %1.</source>
-        <translation>Команда usermod завершилась с кодом ошибки %1.</translation>
+        <translation>Команда usermod прервана с кодом ошибки %1.</translation>
     </message>
 </context>
 <context>
@@ -2441,7 +2442,7 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="57"/>
         <source>Bad path: %1</source>
-        <translation>Неправильный путь: %1</translation>
+        <translation>Плохой путь: %1</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="69"/>
@@ -2513,7 +2514,7 @@ Installation can continue, but some features might be disabled.</source>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="134"/>
         <source>This file system does not support setting a label.</source>
         <comment>@label</comment>
-        <translation>Эта файловая система не поддерживает установку меток.</translation>
+        <translation>Эта файловая система не поддерживает установку метки.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="152"/>
@@ -2531,7 +2532,7 @@ Installation can continue, but some features might be disabled.</source>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="198"/>
         <source>Free space before:</source>
         <comment>@label:listbox</comment>
-        <translation>Доступное место до:</translation>
+        <translation>Свободное место до:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="233"/>
@@ -2576,7 +2577,7 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="179"/>
         <source>Bad sectors:</source>
-        <translation>Испорченные сектора:</translation>
+        <translation>Плохие сектора:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="208"/>
@@ -2596,7 +2597,7 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="294"/>
         <source>Attribute</source>
-        <translation>Свойства</translation>
+        <translation>Атрибут</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/smartdialogwidgetbase.ui" line="299"/>

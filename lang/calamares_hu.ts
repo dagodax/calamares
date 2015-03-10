@@ -173,17 +173,17 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="57"/>
         <source>Master Boot Record of %1</source>
-        <translation>Mester Boot Record - %1</translation>
+        <translation>Mester Boot Rekord - %1</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="71"/>
         <source>Boot Partition</source>
-        <translation>Indító partíció</translation>
+        <translation>Boot partíció</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="76"/>
         <source>System Partition</source>
-        <translation>Rendszer Partíció</translation>
+        <translation>Rendszer partíció</translation>
     </message>
 </context>
 <context>
@@ -191,7 +191,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamaresui/InstallationViewStep.cpp" line="75"/>
         <source>Install</source>
-        <translation>Telepít</translation>
+        <translation>Telepítés</translation>
     </message>
 </context>
 <context>
@@ -219,7 +219,7 @@ p, li { white-space: pre-wrap; }
         <source>Command %1 crashed.
 Output:
 %2</source>
-        <translation>Parancs %1 összeomlott.
+        <translation>%1 parancs összeomlott.
 Kimenet:
 %2</translation>
     </message>
@@ -231,12 +231,12 @@ Kimenet:
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="84"/>
         <source>Command %1 failed to start.</source>
-        <translation>A parancs %1 -et nem sikerült elindítani.</translation>
+        <translation>%1 parancsot nem sikerült elindítani.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="88"/>
         <source>Internal error when starting command</source>
-        <translation>Belső hiba parancs végrehajtásakor</translation>
+        <translation>Belső hiba a parancs végrehajtásakor</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="89"/>
@@ -246,14 +246,14 @@ Kimenet:
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="92"/>
         <source>External command failed to finish</source>
-        <translation>Külső parancs nem fejeződött be</translation>
+        <translation>A külső parancs nem fejeződött be</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="93"/>
         <source>Command %1 failed to finish in %2s.
 Output:
 %3</source>
-        <translation>Parancs %1 nem sikerült befejezni a %2 -ben.
+        <translation>%1 parancsot nem sikerült befejezni a %2 -ben.
 Kimenet:
 %3</translation>
     </message>
@@ -277,7 +277,7 @@ Kimenet:
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="234"/>
         <source>Run script %1</source>
-        <translation>Script futtatása %1</translation>
+        <translation>%1 parancsfájl futtatása</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="249"/>
@@ -310,23 +310,23 @@ Kimenet:
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="58"/>
         <source>&amp;Back</source>
-        <translation>&amp;Vissza</translation>
+        <translation>Vissza</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="59"/>
         <source>&amp;Next</source>
-        <translation>&amp;Következő</translation>
+        <translation>Következő</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="60"/>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="295"/>
         <source>&amp;Cancel</source>
-        <translation>&amp;Mégse</translation>
+        <translation>Mégse</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="79"/>
         <source>Cancel installation?</source>
-        <translation>Abbahagyod a telepítést?</translation>
+        <translation>Felfüggesszük a telepítést?</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="80"/>
@@ -338,7 +338,7 @@ Minden változtatás elveszik, ha kilépsz a telepítőből.</translation>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="265"/>
         <source>&amp;Quit</source>
-        <translation>&amp;Kilépés</translation>
+        <translation>Kilépés</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="176"/>
@@ -790,22 +790,22 @@ A dokumentumai, zenéi és egyéb személyes fájljai megmaradnak. Választhat a
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="50"/>
         <source>&amp;Primary</source>
-        <translation>&amp;Elsődleges</translation>
+        <translation>Elsődleges</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="60"/>
         <source>E&amp;xtended</source>
-        <translation>K&amp;iterjesztett</translation>
+        <translation>Kiterjesztett</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="89"/>
         <source>F&amp;ile System:</source>
-        <translation>F&amp;ájlrendszer:</translation>
+        <translation>Fájlrendszer:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="118"/>
         <source>&amp;Mount Point:</source>
-        <translation>&amp;Csatolási pont:</translation>
+        <translation>Csatolási pont:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="135"/>
@@ -840,7 +840,7 @@ A dokumentumai, zenéi és egyéb személyes fájljai megmaradnak. Választhat a
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="194"/>
         <source>Si&amp;ze:</source>
-        <translation>Mé&amp;ret:</translation>
+        <translation>Méret:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="204"/>
@@ -1033,12 +1033,12 @@ A dokumentumai, zenéi és egyéb személyes fájljai megmaradnak. Választhat a
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/decryptluksdialogwidgetbase.ui" line="22"/>
         <source>&amp;Name:</source>
-        <translation>&amp;Név:</translation>
+        <translation>Név:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/decryptluksdialogwidgetbase.ui" line="35"/>
         <source>&amp;Passphrase:</source>
-        <translation>&amp;Jelszó:</translation>
+        <translation>Jelszó:</translation>
     </message>
 </context>
 <context>
@@ -1170,7 +1170,7 @@ A dokumentumai, zenéi és egyéb személyes fájljai megmaradnak. Választhat a
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="93"/>
         <source>&amp;Mount Point:</source>
-        <translation>&amp;Csatolási pont:</translation>
+        <translation>Csatolási pont:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="110"/>
@@ -1441,7 +1441,7 @@ Néhány fájlrendszernek külső ezközre van szüksége a telepítéshez és t
     <message>
         <location filename="../src/modules/finished/FinishedPage.ui" line="77"/>
         <source>&amp;Restart now</source>
-        <translation>$Újraindítás most</translation>
+        <translation>Újraindítás most</translation>
     </message>
     <message>
         <location filename="../src/modules/finished/FinishedPage.cpp" line="50"/>
@@ -1500,7 +1500,7 @@ Néhány fájlrendszernek külső ezközre van szüksége a telepítéshez és t
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="102"/>
         <source>&amp;About</source>
-        <translation>$Rólam</translation>
+        <translation>Névjegy</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="117"/>
@@ -1515,7 +1515,7 @@ Néhány fájlrendszernek külső ezközre van szüksége a telepítéshez és t
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="140"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technologies for a better world.</source>
-        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Szerzői joggal védett 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Köszönet: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini és Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; a fejlesztés támogatói &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technológiák egy jobb világért. Honosítás: &lt;a href=&quot;http://www.kardiweb.org/&gt;Laszlo Espadas&lt;/a&gt;</translation>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Szerzői joggal védett 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Köszönet: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini és Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; a fejlesztés támogatói &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technológiák egy jobb világért.</translation>
     </message>
 </context>
 <context>
@@ -1581,7 +1581,7 @@ Néhány fájlrendszernek külső ezközre van szüksége a telepítéshez és t
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="171"/>
         <source>&amp;Change...</source>
-        <translation>&amp;Változtat...</translation>
+        <translation>Változtat...</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="265"/>
@@ -1978,37 +1978,37 @@ Néhány fájlrendszernek külső ezközre van szüksége a telepítéshez és t
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="22"/>
         <source>&amp;Disk:</source>
-        <translation>&amp;Lemez:</translation>
+        <translation>Lemez:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="51"/>
         <source>&amp;Revert All Changes</source>
-        <translation>&amp;Módosítások visszavonása</translation>
+        <translation>Módosítások visszavonása</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="84"/>
         <source>New Partition &amp;Table</source>
-        <translation>Új partíciós &amp;tábla</translation>
+        <translation>Új partíciós tábla</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="104"/>
         <source>&amp;Create</source>
-        <translation>&amp;Létrehoz</translation>
+        <translation>Létrehozás</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="111"/>
         <source>&amp;Edit</source>
-        <translation>&amp;Szerkeszt</translation>
+        <translation>Szerkesztés</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="118"/>
         <source>&amp;Delete</source>
-        <translation>&amp;Töröl</translation>
+        <translation>Törlés</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="145"/>
         <source>&amp;Install boot loader on:</source>
-        <translation>&amp;Rendszerbetöltő telepítése ide:</translation>
+        <translation>Rendszerbetöltő telepítése ide:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="129"/>
@@ -2146,7 +2146,7 @@ Telepítés folytatható de néhány tulajdonság valószínűleg nem lesz elér
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="48"/>
         <source>&amp;Version:</source>
-        <translation>&amp;Verzió:</translation>
+        <translation>Verzió:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="93"/>
@@ -2156,7 +2156,7 @@ Telepítés folytatható de néhány tulajdonság valószínűleg nem lesz elér
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="99"/>
         <source>&amp;Checkout From:</source>
-        <translation>&amp;Ellenőrző adatlap:</translation>
+        <translation>Ellenőrző adatlap:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="119"/>
@@ -2176,12 +2176,12 @@ Telepítés folytatható de néhány tulajdonság valószínűleg nem lesz elér
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="137"/>
         <source>Ta&amp;g/Branch:</source>
-        <translation>Cí&amp;mke/Ág:</translation>
+        <translation>Címke/Ág:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="163"/>
         <source>&amp;SVN Access:</source>
-        <translation>&amp;SVN Hozzáférés:</translation>
+        <translation>SVN Hozzáférés:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="183"/>
@@ -2201,7 +2201,7 @@ Telepítés folytatható de néhány tulajdonság valószínűleg nem lesz elér
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="201"/>
         <source>&amp;User:</source>
-        <translation>&amp;Felhasználó:</translation>
+        <translation>Felhasználó:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="236"/>
@@ -2254,7 +2254,7 @@ Telepítés folytatható de néhány tulajdonság valószínűleg nem lesz elér
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.ui" line="22"/>
         <source>&amp;Disk:</source>
-        <translation>&amp;Lemez:</translation>
+        <translation>Lemez:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="109"/>
