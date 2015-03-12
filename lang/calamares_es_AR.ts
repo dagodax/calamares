@@ -187,6 +187,34 @@ p, li { white-space: pre-wrap; }
     </message>
 </context>
 <context>
+    <name>Calamares::DebugWindow</name>
+    <message>
+        <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="14"/>
+        <source>Form</source>
+        <translation>Formulario</translation>
+    </message>
+    <message>
+        <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="24"/>
+        <source>GlobalStorage</source>
+        <translation>AlmacenamientoGlobal</translation>
+    </message>
+    <message>
+        <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="34"/>
+        <source>JobQueue</source>
+        <translation>ColadeTrabajo</translation>
+    </message>
+    <message>
+        <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="44"/>
+        <source>Modules</source>
+        <translation>Módulos</translation>
+    </message>
+    <message>
+        <location filename="../src/libcalamaresui/utils/DebugWindow.cpp" line="95"/>
+        <source>Debug information</source>
+        <translation>Información de depuración</translation>
+    </message>
+</context>
+<context>
     <name>Calamares::InstallationViewStep</name>
     <message>
         <location filename="../src/libcalamaresui/InstallationViewStep.cpp" line="75"/>
@@ -206,16 +234,16 @@ p, li { white-space: pre-wrap; }
     <name>Calamares::ProcessJob</name>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="51"/>
-        <source>Run command %1</source>
-        <translation>Comando a ejecutar %1</translation>
+        <source>Run command %1 %2</source>
+        <translation>Ejecutar comando %1 %2</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/ProcessJob.cpp" line="77"/>
+        <location filename="../src/libcalamares/ProcessJob.cpp" line="79"/>
         <source>External command crashed</source>
         <translation>El comando externo ha fallado</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/ProcessJob.cpp" line="78"/>
+        <location filename="../src/libcalamares/ProcessJob.cpp" line="80"/>
         <source>Command %1 crashed.
 Output:
 %2</source>
@@ -224,32 +252,32 @@ Output:
 Salida: %2</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/ProcessJob.cpp" line="83"/>
+        <location filename="../src/libcalamares/ProcessJob.cpp" line="85"/>
         <source>External command failed to start</source>
         <translation>El comando externo no ha podido iniciarse</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/ProcessJob.cpp" line="84"/>
+        <location filename="../src/libcalamares/ProcessJob.cpp" line="86"/>
         <source>Command %1 failed to start.</source>
         <translation>El comando %1 no se pudo iniciar.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/ProcessJob.cpp" line="88"/>
+        <location filename="../src/libcalamares/ProcessJob.cpp" line="90"/>
         <source>Internal error when starting command</source>
         <translation>Error interno al iniciar el comando</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/ProcessJob.cpp" line="89"/>
+        <location filename="../src/libcalamares/ProcessJob.cpp" line="91"/>
         <source>Bad parameters for process job call.</source>
         <translation>Parámetros erróneos para el trabajo en proceso.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/ProcessJob.cpp" line="92"/>
+        <location filename="../src/libcalamares/ProcessJob.cpp" line="94"/>
         <source>External command failed to finish</source>
         <translation>El comando externo falló al finalizar</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/ProcessJob.cpp" line="93"/>
+        <location filename="../src/libcalamares/ProcessJob.cpp" line="95"/>
         <source>Command %1 failed to finish in %2s.
 Output:
 %3</source>
@@ -258,12 +286,12 @@ Salida:
 %3</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/ProcessJob.cpp" line="99"/>
+        <location filename="../src/libcalamares/ProcessJob.cpp" line="101"/>
         <source>External command finished with errors</source>
         <translation>El comando externo finalizó con errores</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/ProcessJob.cpp" line="100"/>
+        <location filename="../src/libcalamares/ProcessJob.cpp" line="102"/>
         <source>Command %1 finished with exit code %2.
 Output:
 %3</source>
@@ -300,7 +328,7 @@ Salida:
         <translation>El script principal %1 del proceso python %2 no es accesible.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="305"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="306"/>
         <source>Boost.Python error in job &quot;%1&quot;.</source>
         <translation>Error Boost.Python en el proceso &quot;%1&quot;.</translation>
     </message>
@@ -377,9 +405,14 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
 <context>
     <name>CalamaresWindow</name>
     <message>
-        <location filename="../src/calamares/CalamaresWindow.cpp" line="40"/>
+        <location filename="../src/calamares/CalamaresWindow.cpp" line="44"/>
         <source>%1 Installer</source>
         <translation>%1 Instalador</translation>
+    </message>
+    <message>
+        <location filename="../src/calamares/CalamaresWindow.cpp" line="95"/>
+        <source>Show debug information</source>
+        <translation>Mostrar información de depuración</translation>
     </message>
 </context>
 <context>
@@ -403,61 +436,69 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
         <translation>Este equipo no parece tener un sistema operativo instalado. ¿Qué le gustaría hacer?</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="118"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="175"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="217"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="119"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="187"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="234"/>
         <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
         <translation>&lt;b&gt;Borrar disco e instalar %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Advertencia: &lt;/font&gt;Esto borrará todos sus programas, documentos, fotos, música y cualquier otro archivo.&lt;b&gt;No utilizable para instalaciones UEFI&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="135"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="125"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="162"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="193"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="240"/>
+        <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which disk to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
+        <translation>&lt;b&gt;Borrar disco e instalar %1&lt;/b&gt;&lt;br/&gt;Se le ofrecerá la opción de que disco borrar.&lt;b&gt;No utilizable para instalaciones UEFI&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="141"/>
         <source>This computer currently has %1 on it. What would you like to do?</source>
         <translation>Este equipo tiene %1 instalado. ¿Qué le gustaría hacer?</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="139"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="145"/>
         <source>&lt;b&gt;Install %2 alongside %1&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
         <translation>&lt;b&gt;Instalar %2 junto a %1&lt;/b&gt;&lt;br/&gt;Documentos, música y otros archivos personales se mantendrán. Puede elegir que sistema operativo quiere iniciar cada vez que arranque. &lt;b&gt;ADVERTENCIA: no es una opción para instalaciones UEFI&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="147"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="154"/>
         <source>&lt;b&gt;Erase entire disk with %1 and install %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
         <translation>&lt;b&gt;Borrar el disco entero con %1 e instalar %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Advertencia: &lt;/font&gt;Esto borrará todo el disco y todo sus programas, documentos, fotos, música y cualquier otro archivo de %1. &lt;b&gt;No utilizable para instalaciones UEFI&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="155"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="181"/>
-        <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all files on the selected partition. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
-        <translation>&lt;b&gt;Instalar %1 en una partición existente&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Advertencia: &lt;/font&gt;Esto borrará todos los archivos en la partición seleccionada. &lt;b&gt;No utilizable para instalaciones UEFI&lt;/b&gt; </translation>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="167"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="198"/>
+        <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
+        <translation>&lt;b&gt;Borrar disco e instalar %1&lt;/b&gt;&lt;br/&gt;Se le ofrecerá la opción de que disco borrar.&lt;b&gt;No utilizable para instalaciones UEFI&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="165"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="245"/>
+        <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
+        <translation>&lt;b&gt;Instalar %1 en una partición existente&lt;/b&gt;&lt;/br&gt;Se le ofrecerá una opción de que partición borrar.&lt;b&gt;No utilizable para instalaciones UEFI&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="176"/>
         <source>This computer already has an operating system on it. What would you like to do?</source>
         <translation>Este equipo ya tiene un sistema operativo instalado. ¿Qué le gustaría hacer?</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="168"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="179"/>
         <source>&lt;b&gt;Install %1 alongside your current operating system&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
         <translation>&lt;b&gt;Instalar %1 junto a su actual sistema operativo&lt;/b&gt;&lt;br/&gt;Los documentos, música y otros archivos personales se mantendrán. Puede elegir con que sistema operativo quiere iniciar cada vez que arranque.&lt;b&gt;ADVERTENCIA: no es una optición para instalaciones UEFI&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="207"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="223"/>
         <source>This computer currently has multiple operating systems on it. What would you like to do?</source>
         <translation>Este equipo tiene varios sistemas operativos instalados. ¿Qué le gustaría hacer?</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="210"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="226"/>
         <source>&lt;b&gt;Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
         <translation>&lt;b&gt;
 Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="223"/>
-        <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all files on the selected partition. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Instalar %1 en una partición existente&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Advertencia: &lt;/font&gt;Esto borrará todos los archivos en la partición seleccionada. &lt;b&gt;No utilizable para instalaciones UEFI&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="240"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="261"/>
         <source>&lt;b&gt;Something else&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a GPT partition table and &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
         <translation>&lt;b&gt;Por otro lado&lt;/b&gt;&lt;br/&gt;Puede crear o redimensionar las particiones Ud. mismo, o elegir múltiples particiones para %1. Use esta opción para instalaciones UEFI, es necesario tener una tabla de partición GPT y &lt;b&gt;una partición /boot en fat32 de 512Mb para instalaciones UEFI&lt;/b&gt;, o bien utilizar una existente sin formato o crear una.</translation>
     </message>
@@ -465,24 +506,32 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
 <context>
     <name>ClearMountsJob</name>
     <message>
-        <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="40"/>
+        <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="42"/>
         <source>Clear mounts for partitioning operations on %1</source>
         <translation>Limpiar montajes para operaciones de particionado en %1</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="62"/>
-        <source>Cannot umount partition %1</source>
-        <translation>No se puede desmontar la partición %1</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="64"/>
-        <source>Cannot proceed with partitioning operations because some partitions are still mounted.</source>
-        <translation>No se puede proceder con las operaciones de particionado porque algunas particiones aún están montadas.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="70"/>
+        <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="81"/>
         <source>Cleared all mounts for %1</source>
         <translation>Limpiados todos los montajes para %1</translation>
+    </message>
+</context>
+<context>
+    <name>ClearTempMountsJob</name>
+    <message>
+        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="38"/>
+        <source>Clear all temporary mounts.</source>
+        <translation>Limpiar montajes temporales.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="49"/>
+        <source>Cannot get list of temporary mounts.</source>
+        <translation>No se puede obtener la lista de montajes temporales.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="88"/>
+        <source>Cleared all temporary mounts.</source>
+        <translation>Se limpiaron todos los montajes temporales.</translation>
     </message>
 </context>
 <context>
@@ -926,17 +975,17 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
 <context>
     <name>CreatePartitionTableJob</name>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="47"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="48"/>
         <source>Create partition table</source>
         <translation>Crear tabla de particiones</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="54"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="55"/>
         <source>The installer failed to create a partition table on %1.</source>
         <translation>El instalador fallo al crear la tabla de partición en %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="62"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="63"/>
         <source>Could not open device %1.</source>
         <translation>No se puede abrir el dispositivo %1.</translation>
     </message>
@@ -1321,17 +1370,17 @@ Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Document
 <context>
     <name>EraseDiskPage</name>
     <message>
-        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="50"/>
+        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="52"/>
         <source>Select drive:</source>
         <translation>Seleccionar disco de almacenamiento:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="204"/>
+        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="209"/>
         <source>Before:</source>
         <translation>Antes:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="209"/>
+        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="214"/>
         <source>After:</source>
         <translation>Despúes:</translation>
     </message>
@@ -1502,17 +1551,17 @@ Algunos sistemas de archivos requieren de la instalación de herramientas extern
         <translation>&amp;Acerca</translation>
     </message>
     <message>
-        <location filename="../src/modules/greeting/GreetingPage.cpp" line="117"/>
+        <location filename="../src/modules/greeting/GreetingPage.cpp" line="124"/>
         <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Known Issues&lt;/a&gt;</source>
         <translation>&lt;h1&gt;Bienvenido al instalador de %1.&lt;/h1&gt;&lt;br/&gt;Este programa le hará algunas preguntas y configurará %2 en su computadora. Recuerde, este instalador todavía está en sus etapas iniciales.&lt;br/&gt;Aún no se ha implementado soporte a LUKS/LVM o RAID y &lt;br/&gt;tampoco el uso de las opciones de particionado automático para instalaciónes UEFI.&lt;br/&gt;Para &lt;b&gt;particionado GPT en sistemas BIOS&lt;/b&gt; y otras instrucciones, lea &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Problemas conocidos.&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/greeting/GreetingPage.cpp" line="138"/>
+        <location filename="../src/modules/greeting/GreetingPage.cpp" line="145"/>
         <source>About %1 installer</source>
         <translation>Acerca del instalador de %1</translation>
     </message>
     <message>
-        <location filename="../src/modules/greeting/GreetingPage.cpp" line="140"/>
+        <location filename="../src/modules/greeting/GreetingPage.cpp" line="147"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technologies for a better world.</source>
         <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Gracias a: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; el desarrollo es patrocinado por &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - tecnologías para un mundo mejor.</translation>
     </message>
@@ -1562,28 +1611,28 @@ Algunos sistemas de archivos requieren de la instalación de herramientas extern
 <context>
     <name>LocalePage</name>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="157"/>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="168"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="159"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="170"/>
         <source>The system locale is set to %1.</source>
         <translation>La configuración regional del sistema está ajustada en %1</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="165"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="167"/>
         <source>Region:</source>
         <translation>Región:</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="166"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="168"/>
         <source>Zone:</source>
         <translation>Zona:</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="171"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="173"/>
         <source>&amp;Change...</source>
         <translation>&amp;Cambiar...</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="265"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="267"/>
         <source>Set timezone to %1/%2.&lt;br/&gt;</source>
         <translation>Configurar zona horaria a %1/%2.&lt;br/&gt;</translation>
     </message>
@@ -2688,28 +2737,33 @@ La instalación puede continuar pero algunas características podrían no estar 
 <context>
     <name>UsersPage</name>
     <message>
-        <location filename="../src/modules/users/UsersPage.cpp" line="236"/>
-        <source>Your username contains an invalid character &apos;%1&apos;</source>
-        <translation>Su nombre de usuario contiene un carácter no válido &apos;%1&apos; </translation>
+        <location filename="../src/modules/users/UsersPage.cpp" line="233"/>
+        <source>Your username is too long.</source>
+        <translation>Su nombre de usuario es demasiado largo.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/UsersPage.cpp" line="240"/>
-        <source>Your username contains invalid characters!</source>
-        <translation>¡Su nombre de usuario contiene caracteres no válidos!</translation>
+        <location filename="../src/modules/users/UsersPage.cpp" line="243"/>
+        <source>Your username contains invalid characters. Only lowercase letters and numbers are allowed.</source>
+        <translation>Su nombre de usuario tiene caracteres no válidos. Solo se permiten letras en minúscula y números.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="287"/>
-        <source>Your hostname contains an invalid character &apos;%1&apos;</source>
-        <translation>Su hostname contiene un carácter erróneo: &apos;%1&apos;</translation>
+        <source>Your hostname is too short.</source>
+        <translation>Su nombre de host es demasiado corto.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/UsersPage.cpp" line="291"/>
-        <source>Your hostname contains invalid characters!</source>
-        <translation>¡Su hostname contiene caracteres no válidos!</translation>
+        <location filename="../src/modules/users/UsersPage.cpp" line="298"/>
+        <source>Your hostname is too long.</source>
+        <translation>Su nombre de host es demasiado largo.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/UsersPage.cpp" line="322"/>
-        <location filename="../src/modules/users/UsersPage.cpp" line="355"/>
+        <location filename="../src/modules/users/UsersPage.cpp" line="309"/>
+        <source>Your hostname contains invalid characters. Only letters, numbers and dashes are allowed.</source>
+        <translation>Su nombre de host contiene caracteres no válidos. Solo se permiten letras, números y guiones.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/UsersPage.cpp" line="340"/>
+        <location filename="../src/modules/users/UsersPage.cpp" line="373"/>
         <source>Your passwords do not match!</source>
         <translation>¡Sus contraseñas no coinciden!</translation>
     </message>

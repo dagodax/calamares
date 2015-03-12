@@ -187,6 +187,34 @@ p, li { white-space: pre-wrap; }
     </message>
 </context>
 <context>
+    <name>Calamares::DebugWindow</name>
+    <message>
+        <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="14"/>
+        <source>Form</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="24"/>
+        <source>GlobalStorage</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="34"/>
+        <source>JobQueue</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="44"/>
+        <source>Modules</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/libcalamaresui/utils/DebugWindow.cpp" line="95"/>
+        <source>Debug information</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>Calamares::InstallationViewStep</name>
     <message>
         <location filename="../src/libcalamaresui/InstallationViewStep.cpp" line="75"/>
@@ -206,16 +234,16 @@ p, li { white-space: pre-wrap; }
     <name>Calamares::ProcessJob</name>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="51"/>
-        <source>Run command %1</source>
-        <translation>%1 komutu çalışıyor</translation>
+        <source>Run command %1 %2</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/libcalamares/ProcessJob.cpp" line="77"/>
+        <location filename="../src/libcalamares/ProcessJob.cpp" line="79"/>
         <source>External command crashed</source>
         <translation>Komut çöküş bildirdi</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/ProcessJob.cpp" line="78"/>
+        <location filename="../src/libcalamares/ProcessJob.cpp" line="80"/>
         <source>Command %1 crashed.
 Output:
 %2</source>
@@ -224,32 +252,32 @@ Output:
 %2</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/ProcessJob.cpp" line="83"/>
+        <location filename="../src/libcalamares/ProcessJob.cpp" line="85"/>
         <source>External command failed to start</source>
         <translation>Komut çalışmadı başarısız oldu</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/ProcessJob.cpp" line="84"/>
+        <location filename="../src/libcalamares/ProcessJob.cpp" line="86"/>
         <source>Command %1 failed to start.</source>
         <translation>Komut Başlamayamadı. %1</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/ProcessJob.cpp" line="88"/>
+        <location filename="../src/libcalamares/ProcessJob.cpp" line="90"/>
         <source>Internal error when starting command</source>
         <translation>Dahili komut çalışırken hata oluştu</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/ProcessJob.cpp" line="89"/>
+        <location filename="../src/libcalamares/ProcessJob.cpp" line="91"/>
         <source>Bad parameters for process job call.</source>
         <translation>Çalışma adımları başarısız oldu.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/ProcessJob.cpp" line="92"/>
+        <location filename="../src/libcalamares/ProcessJob.cpp" line="94"/>
         <source>External command failed to finish</source>
         <translation>Tamamlama komutu başarısız oldu</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/ProcessJob.cpp" line="93"/>
+        <location filename="../src/libcalamares/ProcessJob.cpp" line="95"/>
         <source>Command %1 failed to finish in %2s.
 Output:
 %3</source>
@@ -258,12 +286,12 @@ Output:
 %3</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/ProcessJob.cpp" line="99"/>
+        <location filename="../src/libcalamares/ProcessJob.cpp" line="101"/>
         <source>External command finished with errors</source>
         <translation>Komut tamamlandı ancak hatalar oluştu</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/ProcessJob.cpp" line="100"/>
+        <location filename="../src/libcalamares/ProcessJob.cpp" line="102"/>
         <source>Command %1 finished with exit code %2.
 Output:
 %3</source>
@@ -300,7 +328,7 @@ Output:
         <translation>%2 python işleri için %1 sorunlu script okunamadı.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="305"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="306"/>
         <source>Boost.Python error in job &quot;%1&quot;.</source>
         <translation>Boost.Python iş hatası &quot;%1&quot;.</translation>
     </message>
@@ -377,9 +405,14 @@ Yükleyiciden çıkınca tüm değişiklikler kaybedilecek.</translation>
 <context>
     <name>CalamaresWindow</name>
     <message>
-        <location filename="../src/calamares/CalamaresWindow.cpp" line="40"/>
+        <location filename="../src/calamares/CalamaresWindow.cpp" line="44"/>
         <source>%1 Installer</source>
         <translation>%1 Yükleniyor</translation>
+    </message>
+    <message>
+        <location filename="../src/calamares/CalamaresWindow.cpp" line="95"/>
+        <source>Show debug information</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -403,60 +436,68 @@ Yükleyiciden çıkınca tüm değişiklikler kaybedilecek.</translation>
         <translation>Bu bilgisayar şu anda başka bir işletim sistemine sahip gibi görünmüyor. Ne yapmak istersiniz?</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="118"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="175"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="217"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="119"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="187"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="234"/>
         <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
         <translation>&lt;b&gt;Diski sil ve %1 yükle&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Uyarı: &lt;/font&gt;Bu işlem ile programlarınız, belgeleriniz, fotoğraflarınız, medyalarınız ve diğer tüm dosyalarınız silinecek. &lt;b&gt;UEFI yüklemesi için uygun değil&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="135"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="125"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="162"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="193"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="240"/>
+        <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which disk to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="141"/>
         <source>This computer currently has %1 on it. What would you like to do?</source>
         <translation>Bu bilgisayar üzerinde %1 kuruludur. Ne yapmak istersiniz?</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="139"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="145"/>
         <source>&lt;b&gt;Install %2 alongside %1&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
         <translation>&lt;b&gt;%1 yanına %2 yükle&lt;/b&gt;&lt;br/&gt;Belgeler, müzik ve diğer kişisel dosyalar korunacaktır. Bilgisayarınız başlatılırken istediğiniz işletim sistemini seçebilirsiniz. &lt;b&gt;UYARI: Bu seçenek UEFI yüklemesi için değil&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="147"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="154"/>
         <source>&lt;b&gt;Erase entire disk with %1 and install %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
         <translation>&lt;b&gt;%2 ile %1 üzerine biçimleyip kur&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Uyarı: &lt;/font&gt;Tüm diskiniz temizlenecek %1 program, belgeler, fotoğraflar, müzik ve tüm diğer dosyalar silinecek. &lt;b&gt;UEFI yüklemesi için uygun değil&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="155"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="181"/>
-        <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all files on the selected partition. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
-        <translation>&lt;b&gt;Hazır bir disk bölümüne %1 yükleyin&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Uyarı: &lt;/font&gt;Bu işlem seçili disk bölümündeki tüm dosyaları silecek. &lt;b&gt;UEFI yüklemesi için uygun değil&lt;/b&gt; </translation>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="167"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="198"/>
+        <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="165"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="245"/>
+        <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="176"/>
         <source>This computer already has an operating system on it. What would you like to do?</source>
         <translation>Bu bilgisayarda zaten bir işletim sistemi var. Ne yapmak istersiniz?</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="168"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="179"/>
         <source>&lt;b&gt;Install %1 alongside your current operating system&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
         <translation>&lt;b&gt;Diğer işletim sisteminin yanına %1 yükle&lt;/b&gt;&lt;br/&gt;Belgeler, müzik ve diğer kişisel dosyalar korunacaktır. Bilgisayarınız başlatılırken istediğiniz işletim sistemini seçebilirsiniz. &lt;b&gt;UYARI: Bu seçenek UEFI yüklemesi için değildir&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="207"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="223"/>
         <source>This computer currently has multiple operating systems on it. What would you like to do?</source>
         <translation>Bu bilgisayarda birden fazla işletim sistemi var. Ne yapmak istersiniz?</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="210"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="226"/>
         <source>&lt;b&gt;Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
         <translation>&lt;b&gt;Diğer işletim sisteminin yanına %1 yükle&lt;/b&gt;&lt;br/&gt;Belgeler, müzik ve diğer kişisel dosyalar korunacaktır. Bilgisayarınız başlatılırken istediğiniz işletim sistemini seçebilirsiniz. &lt;b&gt;UYARI: Bu seçenek UEFI yüklemesi için değildir&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="223"/>
-        <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all files on the selected partition. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Hazır bir disk bölümüne %1 yükleyin&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Uyarı: &lt;/font&gt;Bu işlem seçili disk bölümündeki tüm dosyaları silecek. &lt;b&gt;UEFI yüklemesi için uygun değil&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="240"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="261"/>
         <source>&lt;b&gt;Something else&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a GPT partition table and &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
         <translation>&lt;b&gt;Gelişmiş Kurulum Seçenekleri&lt;/b&gt;&lt;br/&gt;%1 için birden fazla bölüm oluşturabilirsiniz ya da yeniden boyutlandırabilirsiniz. UEFI yüklemesi için bu seçeneği kullanmalısınız. UEFI yükleme yapacaksanız ve GPT disk tablosuna sahipseniz &lt;b&gt;fat32 512Mb /boot disk bölümü oluşturmak zorundasınız.</translation>
     </message>
@@ -464,24 +505,32 @@ Yükleyiciden çıkınca tüm değişiklikler kaybedilecek.</translation>
 <context>
     <name>ClearMountsJob</name>
     <message>
-        <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="40"/>
+        <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="42"/>
         <source>Clear mounts for partitioning operations on %1</source>
         <translation>%1 üzerinde bölümleme işlemleri yapmak için bağlı diskleri ayırın</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="62"/>
-        <source>Cannot umount partition %1</source>
-        <translation>%1 disk bölümü ayırma işlemi başarısız</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="64"/>
-        <source>Cannot proceed with partitioning operations because some partitions are still mounted.</source>
-        <translation>Bölümleme işlemleri devam edemiyor çünkü bazı disk bölümleri halen bağlı.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="70"/>
+        <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="81"/>
         <source>Cleared all mounts for %1</source>
         <translation>%1 için bağlı tüm diskler ayrıldı</translation>
+    </message>
+</context>
+<context>
+    <name>ClearTempMountsJob</name>
+    <message>
+        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="38"/>
+        <source>Clear all temporary mounts.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="49"/>
+        <source>Cannot get list of temporary mounts.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="88"/>
+        <source>Cleared all temporary mounts.</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -925,17 +974,17 @@ Yükleyiciden çıkınca tüm değişiklikler kaybedilecek.</translation>
 <context>
     <name>CreatePartitionTableJob</name>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="47"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="48"/>
         <source>Create partition table</source>
         <translation>Bölüm tablosu oluştur</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="54"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="55"/>
         <source>The installer failed to create a partition table on %1.</source>
         <translation>Yükleyici %1 üzerinde yeni bir bölüm tablosu oluşturamadı.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="62"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="63"/>
         <source>Could not open device %1.</source>
         <translation>%1 aygıtı açılamadı.</translation>
     </message>
@@ -1320,17 +1369,17 @@ Yükleyiciden çıkınca tüm değişiklikler kaybedilecek.</translation>
 <context>
     <name>EraseDiskPage</name>
     <message>
-        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="50"/>
+        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="52"/>
         <source>Select drive:</source>
         <translation>Sürücü seç:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="204"/>
+        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="209"/>
         <source>Before:</source>
         <translation>Önce:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="209"/>
+        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="214"/>
         <source>After:</source>
         <translation>Sonra:</translation>
     </message>
@@ -1501,17 +1550,17 @@ Bazı dosya sistemlerinin desteklenmesi ve düzenlenmesi için ek uygulamalar ge
         <translation>Hakkında</translation>
     </message>
     <message>
-        <location filename="../src/modules/greeting/GreetingPage.cpp" line="117"/>
+        <location filename="../src/modules/greeting/GreetingPage.cpp" line="124"/>
         <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Known Issues&lt;/a&gt;</source>
         <translation>&lt;h1&gt;%1 Sistem Yükleyiciye Hoşgeldiniz.&lt;/h1&gt;&lt;br/&gt;Bu program size bazı sorular soracak ve bilgisayarınıza %2 kuracak. Bu yükleyicinin beta aşamada olduğunu aklınızda bulundurun.&lt;br/&gt;Yükleme esnasında kapanırsa,&lt;br/&gt;yükleme ve yerel ayar slaytları gösterilirken kapanabilir&lt;br/&gt;&lt;b&gt;GPT bölümlemeleri, BIOS ayarlamaları için&lt;/b&gt; şu başlığı okuyabilirsiniz, &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Bilinen Hatalar&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/greeting/GreetingPage.cpp" line="138"/>
+        <location filename="../src/modules/greeting/GreetingPage.cpp" line="145"/>
         <source>About %1 installer</source>
         <translation>%1 sistem yükleyici hakkında</translation>
     </message>
     <message>
-        <location filename="../src/modules/greeting/GreetingPage.cpp" line="140"/>
+        <location filename="../src/modules/greeting/GreetingPage.cpp" line="147"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technologies for a better world.</source>
         <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Telif Hakları 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Teşekkürler: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; gelişim sponsoru &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - daha iyi bir dünya için teknoloji.</translation>
     </message>
@@ -1561,28 +1610,28 @@ Bazı dosya sistemlerinin desteklenmesi ve düzenlenmesi için ek uygulamalar ge
 <context>
     <name>LocalePage</name>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="157"/>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="168"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="159"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="170"/>
         <source>The system locale is set to %1.</source>
         <translation>Sistem yereli %1 olarak ayarlandı.</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="165"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="167"/>
         <source>Region:</source>
         <translation>Bölge:</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="166"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="168"/>
         <source>Zone:</source>
         <translation>Şehir:</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="171"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="173"/>
         <source>&amp;Change...</source>
         <translation>&amp;Değiştir...</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="265"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="267"/>
         <source>Set timezone to %1/%2.&lt;br/&gt;</source>
         <translation>Bölge ve zaman dilimi olarak %1/%2 ayarlandı.&lt;br/&gt;</translation>
     </message>
@@ -2687,28 +2736,33 @@ Kuruluma devam edebilirsiniz fakat bazı özellikler devre dışı kalabilir.</t
 <context>
     <name>UsersPage</name>
     <message>
-        <location filename="../src/modules/users/UsersPage.cpp" line="236"/>
-        <source>Your username contains an invalid character &apos;%1&apos;</source>
-        <translation>&apos;%1&apos; Kullanıcı adı geçersiz karakterler içeriyor</translation>
+        <location filename="../src/modules/users/UsersPage.cpp" line="233"/>
+        <source>Your username is too long.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/users/UsersPage.cpp" line="240"/>
-        <source>Your username contains invalid characters!</source>
-        <translation>Kullanıcı adınız geçersiz karakterler içeriyor!</translation>
+        <location filename="../src/modules/users/UsersPage.cpp" line="243"/>
+        <source>Your username contains invalid characters. Only lowercase letters and numbers are allowed.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="287"/>
-        <source>Your hostname contains an invalid character &apos;%1&apos;</source>
-        <translation>&apos;%1&apos; Sunucu-adı geçersiz karakterler içeriyor</translation>
+        <source>Your hostname is too short.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/users/UsersPage.cpp" line="291"/>
-        <source>Your hostname contains invalid characters!</source>
-        <translation>Sunucu-adı geçersiz karakterler içeriyor!</translation>
+        <location filename="../src/modules/users/UsersPage.cpp" line="298"/>
+        <source>Your hostname is too long.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/users/UsersPage.cpp" line="322"/>
-        <location filename="../src/modules/users/UsersPage.cpp" line="355"/>
+        <location filename="../src/modules/users/UsersPage.cpp" line="309"/>
+        <source>Your hostname contains invalid characters. Only letters, numbers and dashes are allowed.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/users/UsersPage.cpp" line="340"/>
+        <location filename="../src/modules/users/UsersPage.cpp" line="373"/>
         <source>Your passwords do not match!</source>
         <translation>Parolanız eşleşmiyor!</translation>
     </message>
