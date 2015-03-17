@@ -9,6 +9,7 @@ strings:
     versionedName:       KaOS 2015.02
     shortVersionedName:  KaOS 2015.02
     bootloaderEntryName: KaOS
+    productURL:          http://kaosx.us/download/#Known_Issues
 
 images:
     productLogo:         "squid.png"

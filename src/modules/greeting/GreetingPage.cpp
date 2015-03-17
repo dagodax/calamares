@@ -127,11 +127,13 @@ GreetingPage::GreetingPage( QWidget* parent )
                              " Remember, this installer is still in an early stage.<br/>"
                              "Not implemented yet is LUKS/LVM or RAID and<br/>"
                              "using one of the automated partitioning options for UEFI installs.<br/>" 
-                             "For <b>GPT partioning on BIOS</b> systems and other instructions, read <a href=\"http://kaosx.us/download/\">Known Issues</a>" )
+                             "For <b>GPT partioning on BIOS</b> systems and other instructions, read <a href=\"%3\">Known Issues</a>" )
                          .arg( Calamares::Branding::instance()->
                                string( Calamares::Branding::VersionedName ) )
                          .arg( Calamares::Branding::instance()->
-                               string( Calamares::Branding::ProductName ) ) );
+                               string( Calamares::Branding::ProductName ) ) 
+                         .arg( Calamares::Branding::instance()->
+                               string( Calamares::Branding::ProductURL ) ) );
     )
 
     ui->aboutButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::Information,
