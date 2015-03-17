@@ -44,7 +44,8 @@ public:
         VersionedName,
         ShortVersionedName,
         ShortProductName,
-        BootloaderEntryName
+        BootloaderEntryName,
+        productURL
     };
 
     enum ImageEntry : short
