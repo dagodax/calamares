@@ -23,12 +23,17 @@
 
 #include <QColor>
 
+#include "Branding.h"
+
 
 namespace CalamaresStyle {
 
-static const QColor SIDEBAR_BACKGROUND =  "#bdc3c7";
-static const QColor SIDEBAR_TEXT =        "#1F1F1F";
-static const QColor SIDEBAR_TEXT_SELECT = "#3498DB";
+static const QColor SIDEBAR_BACKGROUND =  ( Calamares::Branding::instance()->
+        string( Calamares::Branding::SidebarBackground ) );
+static const QColor SIDEBAR_TEXT =  ( Calamares::Branding::instance()->
+        string( Calamares::Branding::SidebarText ) );
+static const QColor SIDEBAR_TEXT_SELECT = ( Calamares::Branding::instance()->
+        string( Calamares::Branding::SidebarTextSelect ) );
 
 } // namespace CalamaresStyle
 

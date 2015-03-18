@@ -53,7 +53,10 @@ QStringList Branding::s_stringEntryStrings =
     "shortVersionedName",
     "shortProductName",
     "bootloaderEntryName",
-    "productURL"
+    "productURL",
+    "sidebarBackground",
+    "sidebarText",
+    "sidebarTextSelect"
 };
 
 

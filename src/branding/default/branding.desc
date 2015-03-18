@@ -10,6 +10,9 @@ strings:
     shortVersionedName:  Generic 1.0
     bootloaderEntryName: Generic
     productURL:          http://calamares.github.io/
+    sidebarBackground:   #292F34
+    sidebarText:         #FFFFFF
+    sidebarTextSelect:   #292F34
 
 images:
     productLogo:         "squid.png"

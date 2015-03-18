@@ -10,6 +10,9 @@ strings:
     shortVersionedName:  KaOS 2015.02
     bootloaderEntryName: KaOS
     productURL:          http://kaosx.us/download/#Known_Issues
+    sidebarBackground:   #bdc3c7
+    sidebarText:         #1F1F1F
+    sidebarTextSelect:   #3498DB
 
 images:
     productLogo:         "squid.png"
