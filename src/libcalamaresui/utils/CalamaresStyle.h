@@ -23,7 +23,6 @@
 
 #include <QColor>
 
-#include "Branding.h"
 
 namespace CalamaresStyle {
 
