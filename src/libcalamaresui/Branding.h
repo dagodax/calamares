@@ -45,10 +45,7 @@ public:
         ShortVersionedName,
         ShortProductName,
         BootloaderEntryName,
-        ProductURL,
-        SidebarBackground,
-        SidebarText,
-        SidebarTextSelect
+        ProductURL
     };
 
     enum ImageEntry : short
