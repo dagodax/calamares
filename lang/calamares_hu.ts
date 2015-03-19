@@ -191,27 +191,27 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"/>
+        <translation>Adatlap</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="24"/>
         <source>GlobalStorage</source>
-        <translation type="unfinished"/>
+        <translation>Tárolás</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="34"/>
         <source>JobQueue</source>
-        <translation type="unfinished"/>
+        <translation>Feladatok</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="44"/>
         <source>Modules</source>
-        <translation type="unfinished"/>
+        <translation>Modulok</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.cpp" line="95"/>
         <source>Debug information</source>
-        <translation type="unfinished"/>
+        <translation>Hibakeresési információk</translation>
     </message>
 </context>
 <context>
@@ -235,7 +235,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="51"/>
         <source>Run command %1 %2</source>
-        <translation type="unfinished"/>
+        <translation>Parancs futtatása %1 %2</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="79"/>
@@ -412,7 +412,7 @@ Minden változtatás elveszik, ha kilépsz a telepítőből.</translation>
     <message>
         <location filename="../src/calamares/CalamaresWindow.cpp" line="95"/>
         <source>Show debug information</source>
-        <translation type="unfinished"/>
+        <translation>Hibakeresési információk mutatása</translation>
     </message>
 </context>
 <context>
@@ -449,7 +449,8 @@ Ezzel minden program, dokumentum, fotó, zene és minden egyéb fájl törlődni
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="193"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="240"/>
         <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which disk to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;%1 lemez törlés és telepítés&lt;/b&gt;&lt;br/&gt;A törlendő lemez kiválasztható a telepítés előtt.
+&lt;b&gt;Nem alkalmas UEFI telepítésre&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="141"/>
@@ -470,12 +471,12 @@ Ezzel minden program, dokumentum, fotó, zene és minden egyéb fájl törlődni
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="167"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="198"/>
         <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Telepítés %1 létező partícióra&lt;/b&gt;&lt;br/&gt;Törölni kell a partíciót. &lt;b&gt;Nem alkalmas UEFI telepítésre&lt;/b&gt; </translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="245"/>
         <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Telepítés %1 létező partícióra&lt;/b&gt;&lt;br/&gt;Törölni kell a partíciót. &lt;b&gt;Nem alkalmas UEFI telepítésre&lt;/b&gt; </translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="176"/>
@@ -522,17 +523,17 @@ A dokumentumai, zenéi és egyéb személyes fájljai megmaradnak. Választhat a
     <message>
         <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="38"/>
         <source>Clear all temporary mounts.</source>
-        <translation type="unfinished"/>
+        <translation>Minden ideiglenes csatolás törlése.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="49"/>
         <source>Cannot get list of temporary mounts.</source>
-        <translation type="unfinished"/>
+        <translation>Nem lehet lekérni az ideiglenes csatolási listát.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="88"/>
         <source>Cleared all temporary mounts.</source>
-        <translation type="unfinished"/>
+        <translation>Minden ideiglenes csatolás törölve.</translation>
     </message>
 </context>
 <context>
@@ -2740,27 +2741,27 @@ Telepítés folytatható de néhány tulajdonság valószínűleg nem lesz elér
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="233"/>
         <source>Your username is too long.</source>
-        <translation type="unfinished"/>
+        <translation>A felhasználónév túl hosszú.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="243"/>
         <source>Your username contains invalid characters. Only lowercase letters and numbers are allowed.</source>
-        <translation type="unfinished"/>
+        <translation>A felhasználónév érvénytelen karaktereket tartalmaz. Csak kis kezdőbetűk és számok érvényesek.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="287"/>
         <source>Your hostname is too short.</source>
-        <translation type="unfinished"/>
+        <translation>A hálózati név túl rövid.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="298"/>
         <source>Your hostname is too long.</source>
-        <translation type="unfinished"/>
+        <translation>A hálózati név túl hosszú.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="309"/>
         <source>Your hostname contains invalid characters. Only letters, numbers and dashes are allowed.</source>
-        <translation type="unfinished"/>
+        <translation>A hálózati név érvénytelen karaktereket tartalmaz. Csak betűk, számok és kötőjel érvényes.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="340"/>

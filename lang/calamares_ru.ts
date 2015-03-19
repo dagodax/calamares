@@ -191,27 +191,27 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"/>
+        <translation>Форма</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="24"/>
         <source>GlobalStorage</source>
-        <translation type="unfinished"/>
+        <translation>Хранилище</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="34"/>
         <source>JobQueue</source>
-        <translation type="unfinished"/>
+        <translation>Очерёдность</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="44"/>
         <source>Modules</source>
-        <translation type="unfinished"/>
+        <translation>Модули</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.cpp" line="95"/>
         <source>Debug information</source>
-        <translation type="unfinished"/>
+        <translation>Информация отладки</translation>
     </message>
 </context>
 <context>
@@ -235,7 +235,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="51"/>
         <source>Run command %1 %2</source>
-        <translation type="unfinished"/>
+        <translation>Выполнить команду %1 %2</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="79"/>
@@ -412,7 +412,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/calamares/CalamaresWindow.cpp" line="95"/>
         <source>Show debug information</source>
-        <translation type="unfinished"/>
+        <translation>Показать информацию отладки</translation>
     </message>
 </context>
 <context>
@@ -448,7 +448,7 @@ The installer will quit and all changes will be lost.</source>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="193"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="240"/>
         <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which disk to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Стереть диск и установить %1&lt;/b&gt;&lt;br/&gt;Вам будет предложен выбор диска чтобы стереть. &lt;b&gt;Не подходит для UEFI установок&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="141"/>
@@ -469,12 +469,12 @@ The installer will quit and all changes will be lost.</source>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="167"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="198"/>
         <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Установить %1 на имеющийся раздел&lt;/b&gt;&lt;br/&gt;Вам будет предложен выбор раздела для удаления. &lt;b&gt;Не подходит для UEFI установок&lt;/b&gt; </translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="245"/>
         <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Установить %1 на имеющийся раздел&lt;/b&gt;&lt;br/&gt;Вам будет предложен выбор раздела для удаления. &lt;b&gt;Не подходит для UEFI установок&lt;/b&gt; </translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="176"/>
@@ -520,17 +520,17 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="38"/>
         <source>Clear all temporary mounts.</source>
-        <translation type="unfinished"/>
+        <translation>Очистить все временные монтирования.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="49"/>
         <source>Cannot get list of temporary mounts.</source>
-        <translation type="unfinished"/>
+        <translation>Нельзя получить список временного монтирования.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="88"/>
         <source>Cleared all temporary mounts.</source>
-        <translation type="unfinished"/>
+        <translation>Очистить все временные монтирования.</translation>
     </message>
 </context>
 <context>
@@ -2738,27 +2738,27 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="233"/>
         <source>Your username is too long.</source>
-        <translation type="unfinished"/>
+        <translation>Слишком длинное имя пользователя.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="243"/>
         <source>Your username contains invalid characters. Only lowercase letters and numbers are allowed.</source>
-        <translation type="unfinished"/>
+        <translation>Имя пользователя содержит недопустимые символы. Допускаются только строчные буквы и цифры.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="287"/>
         <source>Your hostname is too short.</source>
-        <translation type="unfinished"/>
+        <translation>Слишком короткое имя пользователя.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="298"/>
         <source>Your hostname is too long.</source>
-        <translation type="unfinished"/>
+        <translation>Слишком длинное имя компьютера.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="309"/>
         <source>Your hostname contains invalid characters. Only letters, numbers and dashes are allowed.</source>
-        <translation type="unfinished"/>
+        <translation>Имя компьютера содержит недопустимые символы. Допускаются только буквы и дефис.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="340"/>
