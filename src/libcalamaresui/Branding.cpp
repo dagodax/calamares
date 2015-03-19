@@ -1,6 +1,6 @@
 /* === This file is part of Calamares - <http://github.com/calamares> ===
  *
- *   Copyright 2014, Teo Mrnjavac <teo@kde.org>
+ *   Copyright 2014-2015, Teo Mrnjavac <teo@kde.org>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -53,7 +53,8 @@ QStringList Branding::s_stringEntryStrings =
     "shortVersionedName",
     "shortProductName",
     "bootloaderEntryName",
-    "productURL"
+    "productURL",
+    "urlText"
 };
 
 
@@ -61,6 +62,13 @@ QStringList Branding::s_imageEntryStrings =
 {
     "productLogo",
     "productIcon"
+};
+
+QStringList Branding::s_styleEntryStrings =
+{
+    "sidebarBackground",
+    "sidebarText",
+    "sidebarTextSelect"
 };
 
 
@@ -147,6 +155,15 @@ Branding::Branding( const QString& brandingFilePath,
             }
             else
                 bail( "Syntax error in slideshow sequence." );
+            
+            if ( !doc[ "style" ].IsMap() )
+                bail( "Syntax error in style map." );
+
+            QVariantMap style =
+                CalamaresUtils::yamlMapToVariant( doc[ "style" ] ).toMap();
+            m_style.clear();
+            for ( auto it = style.constBegin(); it != style.constEnd(); ++it )
+                m_style.insert( it.key(), it.value().toString() );
 
         }
         catch ( YAML::Exception& e )
@@ -194,6 +211,13 @@ Branding::string( Branding::StringEntry stringEntry ) const
 
 
 QString
+Branding::styleString( Branding::StyleEntry styleEntry ) const
+{
+    return m_style.value( s_styleEntryStrings.value( styleEntry ) );
+}
+
+
+QString
 Branding::imagePath( Branding::ImageEntry imageEntry ) const
 {
     return m_images.value( s_imageEntryStrings.value( imageEntry ) );
@@ -220,6 +244,7 @@ Branding::slideshowPath() const
 {
     return m_slideshowPath;
 }
+
 
 
 void
