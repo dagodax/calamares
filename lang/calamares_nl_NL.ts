@@ -405,12 +405,12 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
 <context>
     <name>CalamaresWindow</name>
     <message>
-        <location filename="../src/calamares/CalamaresWindow.cpp" line="44"/>
+        <location filename="../src/calamares/CalamaresWindow.cpp" line="43"/>
         <source>%1 Installer</source>
         <translation>%1 Installatieprogramma</translation>
     </message>
     <message>
-        <location filename="../src/calamares/CalamaresWindow.cpp" line="95"/>
+        <location filename="../src/calamares/CalamaresWindow.cpp" line="96"/>
         <source>Show debug information</source>
         <translation type="unfinished"/>
     </message>
@@ -457,8 +457,38 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="145"/>
-        <source>&lt;b&gt;Install %2 alongside %1&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Installeer %2 naast %1&lt;/b&gt;&lt;br\&gt;Documenten, muziek en andere persoonlijke bestanden zullen bewaard blijven. Telkens als de computer opstart kun je kiezen welk besturingssysteem je wilt gebruiken.  &lt;b&gt; WAARSCHUWING:  niet een optie voor UEFI installaties&lt;/b&gt;</translation>
+        <source>&lt;b&gt;Install %2 alongside %1&lt;/b&gt;&lt;br/&gt;The installer will shrink the %1 volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="167"/>
+        <source>&lt;b&gt;Replace a partition with %1&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="179"/>
+        <source>&lt;b&gt;Install %1 alongside your current operating system&lt;/b&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="198"/>
+        <source>&lt;b&gt;Replace a partition with %1&lt;&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="226"/>
+        <source>&lt;b&gt;Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="245"/>
+        <source>&lt;b&gt;Replace a partition with %1&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="261"/>
+        <source>&lt;b&gt;Manual partitioning&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a GPT partition table and &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="154"/>
@@ -466,40 +496,14 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
         <translation>&lt;b&gt;Vervang %1 door %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Opgelet: &lt;/font&gt;Dit zal de volledige schijf wissen, en dus ook alle %1 programma&apos;s, documenten, foto&apos;s, muziek en andere bestanden.  &lt;b&gt;Niet geschikt voor UEFI installaties&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="167"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="198"/>
-        <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="245"/>
-        <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="176"/>
         <source>This computer already has an operating system on it. What would you like to do?</source>
         <translation>Deze computer bevat reeds een besturingssysteem. Wat wil je doen?</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="179"/>
-        <source>&lt;b&gt;Install %1 alongside your current operating system&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Installeer %1 naast je huidige besturingssysteem&lt;/b&gt;&lt;br/&gt;Documenten, muziek en andere persoonlijke bestanden zullen bewaard blijven. Telkens de computer opstart kan je kiezen welk besturingssysteem je wil gebruiken.  &lt;b&gt;WAARSCUWING: geen optie voor UEFI installaties&lt;/b&gt;</translation>
-    </message>
-    <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="223"/>
         <source>This computer currently has multiple operating systems on it. What would you like to do?</source>
         <translation>Deze computer bevat meerdere besturingssystemen.  Wat wil je doen?</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="226"/>
-        <source>&lt;b&gt;Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Installeer %1 naast de huidige besturingssystemen&lt;/b&gt;&lt;br/&gt;Documenten, muziek en andere persoonlijke bestanden zullen bewaard blijven. Telkens de computer opstart kan je kiezen welk besturingssysteem je wil gebruiken.  &lt;b&gt;WAARSCHUWING: geen optie voor UEFI installaties&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="261"/>
-        <source>&lt;b&gt;Something else&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a GPT partition table and &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
-        <translation>&lt;b&gt;Something else&lt;/b&gt;&lt;br/&gt;Je kunt partities zelf creeren of aanpassen, of kies meerdere partities voor %1.  Kies deze opties for UEFI installaties, het hebben van een GPT partitietabel en &lt;b&gt;fat32 512Mb /boot partitie is een must voor UEFI installaties&lt;/b&gt;, ofwel gebruik maken van een bestaande, zonder formatteren of creeer.</translation>
     </message>
 </context>
 <context>
@@ -855,57 +859,27 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
         <translation>Aan&amp;koppelpunt</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="135"/>
-        <source>/</source>
-        <translation>/</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="140"/>
-        <source>/boot</source>
-        <translation>/boot</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="145"/>
-        <source>/home</source>
-        <translation>/home</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="150"/>
-        <source>/opt</source>
-        <translation>/opt</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="155"/>
-        <source>/usr</source>
-        <translation>/usr</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="160"/>
-        <source>/var</source>
-        <translation>/var</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="194"/>
+        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="164"/>
         <source>Si&amp;ze:</source>
         <translation>&amp;Grootte:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="204"/>
+        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="174"/>
         <source> MB</source>
         <translation>MB</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="85"/>
+        <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="95"/>
         <source>Logical</source>
         <translation>Logisch</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="90"/>
+        <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="100"/>
         <source>Primary</source>
         <translation>Primair</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="107"/>
+        <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="117"/>
         <source>GPT</source>
         <translation>GPT</translation>
     </message>
@@ -1220,37 +1194,7 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
         <translation>Aan&amp;koppelpunt:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="110"/>
-        <source>/</source>
-        <translation>/</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="115"/>
-        <source>/boot</source>
-        <translation>/boot</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="120"/>
-        <source>/home</source>
-        <translation>/home</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="125"/>
-        <source>/opt</source>
-        <translation>/opt</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="130"/>
-        <source>/usr</source>
-        <translation>/usr</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="135"/>
-        <source>/var</source>
-        <translation>/var</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="143"/>
+        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="113"/>
         <source>Size:</source>
         <translation>Grootte:</translation>
     </message>
@@ -1369,17 +1313,17 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
 <context>
     <name>EraseDiskPage</name>
     <message>
-        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="52"/>
+        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="53"/>
         <source>Select drive:</source>
         <translation>Selecteer schijf:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="209"/>
+        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="229"/>
         <source>Before:</source>
         <translation>Voor:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="214"/>
+        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="234"/>
         <source>After:</source>
         <translation>Na:</translation>
     </message>
@@ -1551,16 +1495,16 @@ Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd wo
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="124"/>
-        <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Known Issues&lt;/a&gt;</source>
-        <translation>&lt;h1&gt;Welkom bij het %1 installeerprogramma.&lt;/h1&gt;&lt;br/&gt;Dit programma stelt je enkele vragen en zal %2 instellen op je computer. Onthou, dit installeerprogramma is nog in een vroeg stadium.&lt;br/&gt;Nog niet geimplementeerd is LUKS/LVM of RAID en&lt;br/&gt;het gebruiken van een van de automatische schijfindeling opties.&lt;br/&gt;Voor &lt;b&gt;GPT schijfindeling op BIOS&lt;/b&gt; systemen en andere instructies, lees &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Bekende Problemen&lt;/a&gt;</translation>
+        <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read &lt;a href=&quot;%3&quot;&gt;Known Issues&lt;/a&gt;</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/greeting/GreetingPage.cpp" line="145"/>
+        <location filename="../src/modules/greeting/GreetingPage.cpp" line="147"/>
         <source>About %1 installer</source>
         <translation>Informatie %1 installeer programma</translation>
     </message>
     <message>
-        <location filename="../src/modules/greeting/GreetingPage.cpp" line="147"/>
+        <location filename="../src/modules/greeting/GreetingPage.cpp" line="149"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technologies for a better world.</source>
         <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Met dank aan: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini en Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; ontwikkeling wordt gesponsored door &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technieken voor een betere wereld.</translation>
     </message>

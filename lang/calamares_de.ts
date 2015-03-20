@@ -35,12 +35,12 @@
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="33"/>
         <source>Operations and Jobs</source>
-        <translation>Tätigkeiten und Aufgaben</translation>
+        <translation>Aktionen und Aufgaben</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="38"/>
         <source>Time Elapsed</source>
-        <translation>Zeit abgelaufen</translation>
+        <translation>verstrichene Zeit</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="64"/>
@@ -50,7 +50,7 @@
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="81"/>
         <source>Operation: %p%</source>
-        <translation>Arbeitsgang: %p %</translation>
+        <translation>Operation: %p %</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="91"/>
@@ -86,7 +86,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="198"/>
         <source>Location</source>
-        <translation>Standort</translation>
+        <translation>Ort</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="224"/>
@@ -137,7 +137,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="443"/>
         <source>User Info</source>
-        <translation>Informationen über Benutzer</translation>
+        <translation>Benutzer Informationen</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="469"/>
@@ -147,7 +147,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="514"/>
         <source>Keyboard</source>
-        <translation>Tastaturbelegung</translation>
+        <translation>Tastatur</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="521"/>
@@ -183,7 +183,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="76"/>
         <source>System Partition</source>
-        <translation>Systempartition</translation>
+        <translation>System Partition</translation>
     </message>
 </context>
 <context>
@@ -191,27 +191,27 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"/>
+        <translation>Formular</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="24"/>
         <source>GlobalStorage</source>
-        <translation type="unfinished"/>
+        <translation>Hauptspeicher</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="34"/>
         <source>JobQueue</source>
-        <translation type="unfinished"/>
+        <translation>Job Warteschlange</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="44"/>
         <source>Modules</source>
-        <translation type="unfinished"/>
+        <translation>Bausteine</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.cpp" line="95"/>
         <source>Debug information</source>
-        <translation type="unfinished"/>
+        <translation>Debug Information</translation>
     </message>
 </context>
 <context>
@@ -227,7 +227,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamares/JobQueue.cpp" line="88"/>
         <source>Done</source>
-        <translation>Fertig</translation>
+        <translation>Abgeschlossen</translation>
     </message>
 </context>
 <context>
@@ -235,12 +235,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="51"/>
         <source>Run command %1 %2</source>
-        <translation type="unfinished"/>
+        <translation>Befehl  %1 %2 ausführen</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="79"/>
         <source>External command crashed</source>
-        <translation>Ausführung des externen Befehls gescheitert</translation>
+        <translation>Externer Befehl abgestürzt</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="80"/>
@@ -288,14 +288,14 @@ Ausgabe:
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="101"/>
         <source>External command finished with errors</source>
-        <translation>Externer Befehl schloss mit Fehlern ab</translation>
+        <translation>Externer Befehl mit Fehlern abgeschlossen</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="102"/>
         <source>Command %1 finished with exit code %2.
 Output:
 %3</source>
-        <translation>Befehl %1 wurde mit Code %2 beendet.
+        <translation>Befehl %1 mit Ausgabe code %2 beendet.
 Ausgabe:
 %3</translation>
     </message>
@@ -310,7 +310,7 @@ Ausgabe:
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="249"/>
         <source>Bad working directory path</source>
-        <translation>Fehlerhafter Arbeitsverzeichnis-Pfad</translation>
+        <translation>Fehlerhafter Verzeichnis-Pfad</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="250"/>
@@ -338,18 +338,18 @@ Ausgabe:
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="58"/>
         <source>&amp;Back</source>
-        <translation>&amp;Zurück</translation>
+        <translation>&amp;zurück</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="59"/>
         <source>&amp;Next</source>
-        <translation>&amp;Weiter</translation>
+        <translation>&amp;weiter</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="60"/>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="295"/>
         <source>&amp;Cancel</source>
-        <translation>&amp;Abbrechen</translation>
+        <translation>&amp;abbrechen</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="79"/>
@@ -360,13 +360,13 @@ Ausgabe:
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="80"/>
         <source>Do you really want to cancel the current install process?
 The installer will quit and all changes will be lost.</source>
-        <translation>Willst du die Installation wirklich abbrechen ?
-Alle bereits getätigten Eingaben werden verschwinden.</translation>
+        <translation>Wollen Sie die Installation wirklich abbrechen ?
+Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="265"/>
         <source>&amp;Quit</source>
-        <translation>&amp;Beenden</translation>
+        <translation>&amp;beenden</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="176"/>
@@ -384,35 +384,35 @@ Alle bereits getätigten Eingaben werden verschwinden.</translation>
     <message>
         <location filename="../src/libcalamares/PythonHelper.cpp" line="234"/>
         <source>Unknown exception type</source>
-        <translation>Unbekannte Ausnahme</translation>
+        <translation>unbekannter Ausnahme Typ</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonHelper.cpp" line="247"/>
         <source>unparseable Python error</source>
-        <translation>Nicht analysierbarer Python-Fehler</translation>
+        <translation>nicht analysierbarer Python-Fehler</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonHelper.cpp" line="263"/>
         <source>unparseable Python traceback</source>
-        <translation>Nicht analysierbarer Python-Traceback</translation>
+        <translation>nicht analysierbarer Python-Traceback</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonHelper.cpp" line="267"/>
         <source>Unfetchable Python error.</source>
-        <translation>Nicht zuzuordnender Python-Fehler</translation>
+        <translation>nicht zuzuordnender Python-Fehler</translation>
     </message>
 </context>
 <context>
     <name>CalamaresWindow</name>
     <message>
-        <location filename="../src/calamares/CalamaresWindow.cpp" line="44"/>
+        <location filename="../src/calamares/CalamaresWindow.cpp" line="43"/>
         <source>%1 Installer</source>
         <translation>%1 Installationsprogramm</translation>
     </message>
     <message>
-        <location filename="../src/calamares/CalamaresWindow.cpp" line="95"/>
+        <location filename="../src/calamares/CalamaresWindow.cpp" line="96"/>
         <source>Show debug information</source>
-        <translation type="unfinished"/>
+        <translation>zeige debug Information</translation>
     </message>
 </context>
 <context>
@@ -425,7 +425,7 @@ Alle bereits getätigten Eingaben werden verschwinden.</translation>
     <message>
         <location filename="../src/modules/partition/jobs/CheckFileSystemJob.cpp" line="50"/>
         <source>The file system check on partition %1 failed.</source>
-        <translation>Die Überprüfung des Dateisystems auf Partition %1 scheiterte.</translation>
+        <translation>Die Überprüfung des Dateisystems auf Partition %1 ist fehlgeschlagen.</translation>
     </message>
 </context>
 <context>
@@ -440,7 +440,7 @@ Alle bereits getätigten Eingaben werden verschwinden.</translation>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="187"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="234"/>
         <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Lösche den Datenträger und installiere %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warnung: &lt;/font&gt;Alle Programme, Dokumente, Fotos, Musik und sämtliche anderen Dateien werden dabei gelöscht.</translation>
+        <translation>&lt;b&gt;Lösche den Datenträger und installiere %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warnung: &lt;/font&gt;Alle Programme, Dokumente, Fotos, Musik und sämtliche anderen Dateien werden permanent gelöscht.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="125"/>
@@ -448,7 +448,7 @@ Alle bereits getätigten Eingaben werden verschwinden.</translation>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="193"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="240"/>
         <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which disk to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;lösche Datenträger und installiere %1&lt;/b&gt;&lt;br/&gt;Wählen Sie den Datenträgerzum löschen aus &lt;b&gt;nicht geeignet für UEFI Installationen&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="141"/>
@@ -457,8 +457,38 @@ Alle bereits getätigten Eingaben werden verschwinden.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="145"/>
-        <source>&lt;b&gt;Install %2 alongside %1&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Installiere %2 neben %1&lt;/b&gt;&lt;br/&gt;Dokumente, Musik und andere persönliche Dateien bleiben erhalten. Sie können bei jedem Start des Computers zwischen den Betriebssystemen wählen. WARNUNG: Gilt noch nicht für UEFI Installationen.</translation>
+        <source>&lt;b&gt;Install %2 alongside %1&lt;/b&gt;&lt;br/&gt;The installer will shrink the %1 volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
+        <translation>&lt;b&gt;Installiere %2 neben %1&lt;/b&gt;&lt;br/&gt;Das Installationprogramm wird den Datenträger %1 verkleinern um für %2 Speicherplatz freizugeben. Sie können beim Computerstart das zu startende Betriebssystem aus einer Liste auswählen. &lt;b&gt;WARNUNG: nicht geeignet für UEFI Installationen&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="167"/>
+        <source>&lt;b&gt;Replace a partition with %1&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
+        <translation>&lt;b&gt;Ersetze eine Partition mit %1&lt;/b&gt;&lt;br/&gt;Wählen Sie folgend die zu löschende Partition aus. &lt;b&gt;nicht geeignet für UEFI Installationen&lt;/b&gt; </translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="179"/>
+        <source>&lt;b&gt;Install %1 alongside your current operating system&lt;/b&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
+        <translation>&lt;b&gt;Installiere %1 neben dem vorhandenen Betriebssystem&lt;/b&gt;&lt;br/&gt;Das Installationprogramm wird den vorhandenen Datenträger %1 verkleinern um für %2 Speicherplatz freizugeben. Sie können beim Computerstart das zu startende Betriebssystem aus einer Liste auswählen. &lt;b&gt;WARNUNG: nicht geeignet für UEFI Installationen&lt;/b&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="198"/>
+        <source>&lt;b&gt;Replace a partition with %1&lt;&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="226"/>
+        <source>&lt;b&gt;Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="245"/>
+        <source>&lt;b&gt;Replace a partition with %1&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="261"/>
+        <source>&lt;b&gt;Manual partitioning&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a GPT partition table and &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="154"/>
@@ -466,40 +496,14 @@ Alle bereits getätigten Eingaben werden verschwinden.</translation>
         <translation>&lt;b&gt;Ersetze %1 mit %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warnung: &lt;/font&gt;Dies löscht den gesamten Datenträger, alle %1 Programme, Dokumente, Fotos, Musik sowie sämtliche andere Daten und ist noch nicht verwendbar für UEFI Installationen.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="167"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="198"/>
-        <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="245"/>
-        <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="176"/>
         <source>This computer already has an operating system on it. What would you like to do?</source>
         <translation>Auf diesem Computer ist bereits ein Betriebssystem installiert. Was möchten Sie tun?</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="179"/>
-        <source>&lt;b&gt;Install %1 alongside your current operating system&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Installiere %1 neben dem aktuellen Betriebssystem&lt;/b&gt;&lt;br/&gt;Dokumente, Musik und andere persönliche Dateien bleiben erhalten. Sie können bei jedem Start des Computers zwischen den Betriebssystemen wählen. WARNUNG: Die ist noch nicht für UEFI Installationen möglich.</translation>
-    </message>
-    <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="223"/>
         <source>This computer currently has multiple operating systems on it. What would you like to do?</source>
         <translation>Auf diesem Computer sind aktuell mehrere Betriebssysteme installiert. Was möchten Sie tun?</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="226"/>
-        <source>&lt;b&gt;Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Installiere %1 neben dem aktuellen Betriebssystem&lt;/b&gt;&lt;br/&gt;Dokumente, Musik und andere persönliche Dateien bleiben erhalten. Sie können bei jedem Start des Computers zwischen den Betriebssystemen wählen. &lt;b&gt;WARNUNG: Dies funktioniert noch nicht für UEFI Installationen. &lt;/b&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="261"/>
-        <source>&lt;b&gt;Something else&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a GPT partition table and &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
-        <translation>&lt;b&gt;Weitere Optionen&lt;/b&gt;&lt;br/&gt;Hier kannst du Partitionen manuell erstellen, ihren Umfang verändern und/oder verschiedene Partitionen für %1 festlegen. Verwende diese Option für UEFI Installationen; Eine GPT Partitionstabelle und eine &lt;b&gt;fat32 512Mb /boot Partition ist hierfür notwendig&lt;/b&gt;, verwenden sie entweder eine vorhandene ohne Formatierung oder sie erstellen eine.</translation>
     </message>
 </context>
 <context>
@@ -855,57 +859,27 @@ Alle bereits getätigten Eingaben werden verschwinden.</translation>
         <translation>Ein&amp;hängepunkt:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="135"/>
-        <source>/</source>
-        <translation>/</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="140"/>
-        <source>/boot</source>
-        <translation>/boot</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="145"/>
-        <source>/home</source>
-        <translation>/home</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="150"/>
-        <source>/opt</source>
-        <translation>/opt</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="155"/>
-        <source>/usr</source>
-        <translation>/usr</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="160"/>
-        <source>/var</source>
-        <translation>/var</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="194"/>
+        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="164"/>
         <source>Si&amp;ze:</source>
         <translation>Grö&amp;sse:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="204"/>
+        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="174"/>
         <source> MB</source>
         <translation>MB</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="85"/>
+        <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="95"/>
         <source>Logical</source>
         <translation>Logisch</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="90"/>
+        <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="100"/>
         <source>Primary</source>
         <translation>Primär</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="107"/>
+        <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="117"/>
         <source>GPT</source>
         <translation>GPT</translation>
     </message>
@@ -1220,37 +1194,7 @@ Alle bereits getätigten Eingaben werden verschwinden.</translation>
         <translation>Einhängepun&amp;kt:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="110"/>
-        <source>/</source>
-        <translation>/</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="115"/>
-        <source>/boot</source>
-        <translation>/boot</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="120"/>
-        <source>/home</source>
-        <translation>/home</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="125"/>
-        <source>/opt</source>
-        <translation>/opt</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="130"/>
-        <source>/usr</source>
-        <translation>/usr</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="135"/>
-        <source>/var</source>
-        <translation>/var</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="143"/>
+        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="113"/>
         <source>Size:</source>
         <translation>Grösse:</translation>
     </message>
@@ -1369,17 +1313,17 @@ Alle bereits getätigten Eingaben werden verschwinden.</translation>
 <context>
     <name>EraseDiskPage</name>
     <message>
-        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="52"/>
+        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="53"/>
         <source>Select drive:</source>
         <translation>Wähle Laufwerk:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="209"/>
+        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="229"/>
         <source>Before:</source>
         <translation>Davor:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="214"/>
+        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="234"/>
         <source>After:</source>
         <translation>Danach:</translation>
     </message>
@@ -1551,16 +1495,16 @@ Einige Dateisysteme erfordern die Installation externer Programme, um unterstüt
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="124"/>
-        <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Known Issues&lt;/a&gt;</source>
-        <translation>&lt;h1&gt;Willkommen zum %1 Installationsprogramm. &lt;/h1&gt;&lt;br/&gt;Diese Anwendung wird dir jetzt ein paar Fragen stellen und %2 auf deinem Computer einrichten. Sie ist in einer Testphase, bitte melde eventuelle Fehler. &lt;br/&gt;Noch nicht implementiert ist, LUKS/LVM sowie RAID und&lt;br/&gt;automatische Partitionierung für UEFI Installationen.&lt;br/&gt;Für &lt;b&gt;die GPT Partitionierung in BIOS&lt;/b&gt; Systemen und andere Anleitungen, lies bitte den folgenden Link:, read &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Known Issues&lt;/a&gt;</translation>
+        <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read &lt;a href=&quot;%3&quot;&gt;Known Issues&lt;/a&gt;</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/greeting/GreetingPage.cpp" line="145"/>
+        <location filename="../src/modules/greeting/GreetingPage.cpp" line="147"/>
         <source>About %1 installer</source>
         <translation>Über das %1 Installationsprogramm</translation>
     </message>
     <message>
-        <location filename="../src/modules/greeting/GreetingPage.cpp" line="147"/>
+        <location filename="../src/modules/greeting/GreetingPage.cpp" line="149"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technologies for a better world.</source>
         <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Dankeschön an: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini und Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; die Entwicklung wird finanziert durch  &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technologies for a better world.</translation>
     </message>

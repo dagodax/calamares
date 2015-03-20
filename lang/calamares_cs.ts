@@ -191,27 +191,27 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"/>
+        <translation>Formulář</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="24"/>
         <source>GlobalStorage</source>
-        <translation type="unfinished"/>
+        <translation>Úložiště</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="34"/>
         <source>JobQueue</source>
-        <translation type="unfinished"/>
+        <translation>Řada úloh</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="44"/>
         <source>Modules</source>
-        <translation type="unfinished"/>
+        <translation>Moduly</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.cpp" line="95"/>
         <source>Debug information</source>
-        <translation type="unfinished"/>
+        <translation>Informace o ladění</translation>
     </message>
 </context>
 <context>
@@ -235,7 +235,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="51"/>
         <source>Run command %1 %2</source>
-        <translation type="unfinished"/>
+        <translation>Spustit příkaz %1 %2</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="79"/>
@@ -405,14 +405,14 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
 <context>
     <name>CalamaresWindow</name>
     <message>
-        <location filename="../src/calamares/CalamaresWindow.cpp" line="44"/>
+        <location filename="../src/calamares/CalamaresWindow.cpp" line="43"/>
         <source>%1 Installer</source>
         <translation>Instalátor %1</translation>
     </message>
     <message>
-        <location filename="../src/calamares/CalamaresWindow.cpp" line="95"/>
+        <location filename="../src/calamares/CalamaresWindow.cpp" line="96"/>
         <source>Show debug information</source>
-        <translation type="unfinished"/>
+        <translation>Ukázat informace o ladění</translation>
     </message>
 </context>
 <context>
@@ -448,7 +448,7 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="193"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="240"/>
         <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which disk to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Smazat disk a instalovat %1&lt;/b&gt;&lt;br/&gt;Bude vám nabídnuta volba, který disk smazat&lt;b&gt;Není vhodné pro instalace UEFI&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="141"/>
@@ -457,8 +457,38 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="145"/>
-        <source>&lt;b&gt;Install %2 alongside %1&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Instalovat %2 vedle %1&lt;/b&gt;&lt;br /&gt;Dokumenty, hudba a ostatní soubory budou zachovány. Systém budete moci zvolit při zapnutí počítače. &lt;b&gt;VAROVÁNÍ: Není to volba pro instalace UEFI&lt;/b&gt;</translation>
+        <source>&lt;b&gt;Install %2 alongside %1&lt;/b&gt;&lt;br/&gt;The installer will shrink the %1 volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="167"/>
+        <source>&lt;b&gt;Replace a partition with %1&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="179"/>
+        <source>&lt;b&gt;Install %1 alongside your current operating system&lt;/b&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="198"/>
+        <source>&lt;b&gt;Replace a partition with %1&lt;&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="226"/>
+        <source>&lt;b&gt;Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="245"/>
+        <source>&lt;b&gt;Replace a partition with %1&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="261"/>
+        <source>&lt;b&gt;Manual partitioning&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a GPT partition table and &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="154"/>
@@ -466,40 +496,14 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
         <translation>&lt;b&gt;Smazat celý disk s %1 a nainstalovat %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Varování: &lt;/font&gt;Toto vymaže celý disk a smaže všechny %1 programy, dokumenty, fotky, hudbu a ostatní soubory. &lt;b&gt;Není vhodné pro instalace UEFI&lt;/b&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="167"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="198"/>
-        <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="245"/>
-        <source>&lt;b&gt;Install %1 on an existing partition&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="176"/>
         <source>This computer already has an operating system on it. What would you like to do?</source>
         <translation>Na tomto počítači již existuje operační systém. Co si přejete udělat?</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="179"/>
-        <source>&lt;b&gt;Install %1 alongside your current operating system&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Instalovat %1 vedle současného operačního systému&lt;/b&gt;&lt;br/&gt;Dokumenty, hudba a ostatní soubory budou zachovány. Systém budete moci zvolit při zapnutí počítače. &lt;b&gt;VAROVÁNÍ: Není to volba pro instalace UEFI&lt;/b&gt;</translation>
-    </message>
-    <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="223"/>
         <source>This computer currently has multiple operating systems on it. What would you like to do?</source>
         <translation>Na tomto počítači je několik operačních systému. Co si přejete udělat?</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="226"/>
-        <source>&lt;b&gt;Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;Documents, music and other personal files will be kept. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Instalovat %1 vedle současných operačních systémů&lt;/b&gt;&lt;br/&gt;Dokumenty, hudba a ostatní soubory budou zachovány. Systém budete moci zvolit při zapnutí počítače. &lt;b&gt;VAROVÁNÍ: Není to volba pro instalace UEFI&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="261"/>
-        <source>&lt;b&gt;Something else&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a GPT partition table and &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
-        <translation>&lt;b&gt;Něco jiného&lt;/b&gt;&lt;br/&gt;Můžete tvořit oddíly a měnit jejich velikosti, nebo vybrat několik oddílů pro %1. Tuto volbu použijte pro instalace UEFI. Mít tabulku oddílů GPT a &lt;b&gt;fat32 512Mb /boot partition je to, co musíte mít pro instalace UEFI&lt;/b&gt;. Buď použijte nějaký existující bez formátování, nebo jeden vytvořte.</translation>
     </message>
 </context>
 <context>
@@ -520,17 +524,17 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     <message>
         <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="38"/>
         <source>Clear all temporary mounts.</source>
-        <translation type="unfinished"/>
+        <translation>Uklidit všechna dočasná připojení.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="49"/>
         <source>Cannot get list of temporary mounts.</source>
-        <translation type="unfinished"/>
+        <translation>Nelze získat seznam dočasných připojení.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="88"/>
         <source>Cleared all temporary mounts.</source>
-        <translation type="unfinished"/>
+        <translation>Uklizena všechna dočasná připojení.</translation>
     </message>
 </context>
 <context>
@@ -855,57 +859,27 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
         <translation>&amp;Přípojný bod:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="135"/>
-        <source>/</source>
-        <translation>/</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="140"/>
-        <source>/boot</source>
-        <translation>/boot</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="145"/>
-        <source>/home</source>
-        <translation>/home</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="150"/>
-        <source>/opt</source>
-        <translation>/opt</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="155"/>
-        <source>/usr</source>
-        <translation>/usr</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="160"/>
-        <source>/var</source>
-        <translation>/var</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="194"/>
+        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="164"/>
         <source>Si&amp;ze:</source>
         <translation>V&amp;elikost:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="204"/>
+        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="174"/>
         <source> MB</source>
         <translation> MB</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="85"/>
+        <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="95"/>
         <source>Logical</source>
         <translation>Logický</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="90"/>
+        <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="100"/>
         <source>Primary</source>
         <translation>Hlavní</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="107"/>
+        <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="117"/>
         <source>GPT</source>
         <translation>GPT</translation>
     </message>
@@ -1220,37 +1194,7 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
         <translation>&amp;Přípojný bod:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="110"/>
-        <source>/</source>
-        <translation>/</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="115"/>
-        <source>/boot</source>
-        <translation>/boot</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="120"/>
-        <source>/home</source>
-        <translation>/home</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="125"/>
-        <source>/opt</source>
-        <translation>/opt</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="130"/>
-        <source>/usr</source>
-        <translation>/usr</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="135"/>
-        <source>/var</source>
-        <translation>/var</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="143"/>
+        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="113"/>
         <source>Size:</source>
         <translation>Velikost:</translation>
     </message>
@@ -1369,17 +1313,17 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
 <context>
     <name>EraseDiskPage</name>
     <message>
-        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="52"/>
+        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="53"/>
         <source>Select drive:</source>
         <translation>Vybrat disk:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="209"/>
+        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="229"/>
         <source>Before:</source>
         <translation>Před:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="214"/>
+        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="234"/>
         <source>After:</source>
         <translation>Po:</translation>
     </message>
@@ -1551,16 +1495,16 @@ Některé souborové systémy vyžadují instalaci externích nástrojů. Jisté
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="124"/>
-        <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Known Issues&lt;/a&gt;</source>
-        <translation>&lt;h1&gt;Vítejte v instalátoru %1.&lt;/h1&gt;&lt;br/&gt;Tento program vám položí několik otázek a nastaví %2 na vašem počítači. Pamatujte na to, že tento instalátor je v raném stavu vývoje.&lt;br/&gt;&quot;Neprovedeno&quot; je LUKS/LVM nebo RAID br/&gt;za použití jedné z automatických voleb rozdělení oddílů pro instalace UEFI.&lt;br/&gt;Pro &lt;b&gt;rozdělení oddílů GPT v BIOSu&lt;/b&gt; systems a jiné instrukce čtěte &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Známé potíže&lt;/a&gt;</translation>
+        <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read &lt;a href=&quot;%3&quot;&gt;Known Issues&lt;/a&gt;</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/greeting/GreetingPage.cpp" line="145"/>
+        <location filename="../src/modules/greeting/GreetingPage.cpp" line="147"/>
         <source>About %1 installer</source>
         <translation>O instalátoru %1</translation>
     </message>
     <message>
-        <location filename="../src/modules/greeting/GreetingPage.cpp" line="147"/>
+        <location filename="../src/modules/greeting/GreetingPage.cpp" line="149"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technologies for a better world.</source>
         <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;pro %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Autorské právo 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Poděkování: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini a Rohan Garg.&lt;br/&gt;&lt;br/&gt;Vývoj &lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; je sponzorován &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technologie pro lepší svět.</translation>
     </message>
@@ -2738,27 +2682,27 @@ Instalace může pokračovat, ale některé funkce mohou být zakázány.</trans
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="233"/>
         <source>Your username is too long.</source>
-        <translation type="unfinished"/>
+        <translation>Uživatelské jméno je příliš dlouhé.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="243"/>
         <source>Your username contains invalid characters. Only lowercase letters and numbers are allowed.</source>
-        <translation type="unfinished"/>
+        <translation>Uživatelské jméno obsahuje neplatné znaky. Jsou dovolena pouze malá písmena a čísla.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="287"/>
         <source>Your hostname is too short.</source>
-        <translation type="unfinished"/>
+        <translation>Jméno hostitelského počítače je příliš krátké.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="298"/>
         <source>Your hostname is too long.</source>
-        <translation type="unfinished"/>
+        <translation>Jméno hostitelského počítače je příliš dlouhé.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="309"/>
         <source>Your hostname contains invalid characters. Only letters, numbers and dashes are allowed.</source>
-        <translation type="unfinished"/>
+        <translation>Jméno hostitelského počítače obsahuje neplatné znaky. Jsou dovolena pouze písmena, čísla a čárky.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="340"/>
