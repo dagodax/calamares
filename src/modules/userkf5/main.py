@@ -20,6 +20,8 @@
 
 import os
 import shutil
+import re
+import subprocess
 
 import libcalamares
 
@@ -102,7 +104,28 @@ def run():
         ['setcap', 'cap_net_raw=ep', '/usr/bin/ping6'])
 
     # set pacman.conf for kf5 needed repos
-    shutil.copy2('/etc/skel/pacman.conf', '%s/etc/pacman.conf' % install_path)
+    #shutil.copy2('/etc/skel/pacman.conf', '%s/etc/pacman.conf' % install_path)
+    
+    # aquire ISO version for sysinfo call
+    label = ""
+    path = os.path.join(install_path, "etc/KaOS-release")
+    p = subprocess.Popen('blkid', shell=True, stdout=subprocess.PIPE)
+    for line in p.stdout.readlines():
+        s = line.decode('ascii')
+        s = s.rstrip('\n')
+        label +=s
+    
+    print(label)
+    m = re.search("KAOS_\d{8}", label);
+    print (m.group(0))
+    lines = (m.group(0))
+    
+    if os.path.exists(path):
+        with open(path, 'w') as f:
+            for l in lines:
+                f.write(l)
+    f.close()
+    
 
     print('configure users settings done')
 
