@@ -246,7 +246,6 @@ Branding::slideshowPath() const
 }
 
 
-
 void
 Branding::setGlobals( GlobalStorage* globalStorage ) const
 {
