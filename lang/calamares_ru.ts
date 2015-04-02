@@ -458,37 +458,37 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="145"/>
         <source>&lt;b&gt;Install %2 alongside %1&lt;/b&gt;&lt;br/&gt;The installer will shrink the %1 volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;установка %2 рядом с %1&lt;/b&gt;&lt;br/&gt;Установщик уменьшит объём %1 чтобы освободить место для %2. Вы сможете выбирать загружаемую систему при каждом запуске.  &lt;b&gt;ВНИМАНИЕ: вариант не для UEFI установок&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="167"/>
         <source>&lt;b&gt;Replace a partition with %1&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Заменить раздел с %1&lt;/b&gt;&lt;br/&gt;Вам будет предложен выбор раздела для удаления. &lt;b&gt;Не подходит для UEFI установок&lt;/b&gt; </translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="179"/>
         <source>&lt;b&gt;Install %1 alongside your current operating system&lt;/b&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Установить %1 вместе с вашей операционной системой&lt;/b&gt;&lt;br/&gt;Установщик сократит существующий объём, освободив его для %2. Вы сможете выбирать загружаемую систему при каждом запуске.  &lt;b&gt;ВНИМАНИЕ: вариант не для UEFI установок&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="198"/>
         <source>&lt;b&gt;Replace a partition with %1&lt;&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Заменить раздел с %1&lt;&lt;/b&gt;&lt;br/&gt;Вам будет предложен выбор раздела для удаления. &lt;b&gt;Не подходит для UEFI установок&lt;/b&gt; </translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="226"/>
         <source>&lt;b&gt;Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Установить %1 вместе с вашими операционными системами&lt;/b&gt;&lt;br/&gt;Установщик сократит существующий объём, освободив его для %2. Вы сможете выбирать загружаемую систему при каждом запуске.  &lt;b&gt;ВНИМАНИЕ: вариант не для UEFI установок&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="245"/>
         <source>&lt;b&gt;Replace a partition with %1&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Заменить раздел с %1&lt;/b&gt;&lt;br/&gt;Вам будет предложен выбор раздела для удаления. &lt;b&gt;Не подходит для UEFI установок&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="261"/>
         <source>&lt;b&gt;Manual partitioning&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a GPT partition table and &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Ручное создание разделов&lt;/b&gt;&lt;br/&gt;Вы можете создать или изменять разделы, либо выбрать несколько для %1. Используйте эту опцию для UEFIустановк, имея GPT таблицу разделов и &lt;b&gt;fat32 512Mb /boot раздел нужный для UEFI установок&lt;/b&gt;,  используйте имеющиеся не форматируя или создайте новые.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="154"/>
@@ -1496,7 +1496,7 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="124"/>
         <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read &lt;a href=&quot;%3&quot;&gt;Known Issues&lt;/a&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Добро пожаловать в %1 установщик.&lt;/h1&gt;&lt;br/&gt;Эта программа, задав несколько вопросов и установит %2 на ваш компьютер. Помните, установщик находится в разработке.&lt;br/&gt;Пока не реализованы LUKS/LVM или RAID с&lt;br/&gt;использованием авто-создания разделов для UEFI установок.&lt;br/&gt;Для &lt;b&gt;GPT разделов на BIOS&lt;/b&gt; системах и другие инструкции, читайте &lt;a href=&quot;%3&quot;&gt;Known Issues&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="147"/>

@@ -460,37 +460,37 @@ Ezzel minden program, dokumentum, fotó, zene és minden egyéb fájl törlődni
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="145"/>
         <source>&lt;b&gt;Install %2 alongside %1&lt;/b&gt;&lt;br/&gt;The installer will shrink the %1 volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;%2 telepítése a jelenlegi %1 operációs rendszere mellé&lt;/b&gt;&lt;br/&gt;A telepítő helyet szabadít fel %2 számára. A számítógép indításakor kiválasztható, hogy melyik rendszert szeretnénk betölteni. &lt;b&gt;FIGYELMEZTETÉS: nem ajánlott UEFI telepítéshez.&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="167"/>
         <source>&lt;b&gt;Replace a partition with %1&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;A partíció lecserélése a következővel %1&lt;/b&gt;&lt;br/&gt;A partíció kiválasztható a telepítés előtt. &lt;b&gt;Nem ajánlott UEFI telepítéshez.&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="179"/>
         <source>&lt;b&gt;Install %1 alongside your current operating system&lt;/b&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;%1 telepítése a jelenlegi operációs rendszere mellé&lt;/b&gt;&lt;br/&gt;A telepítő helyet szabadít fel %2 számára. A számítógép indításakor kiválasztható, hogy melyik rendszert szeretnénk betölteni. &lt;b&gt;FIGYELMEZTETÉS: nem ajánlott UEFI telepítéshez.&lt;/br&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="198"/>
         <source>&lt;b&gt;Replace a partition with %1&lt;&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;A partíció lecserélése a következővel %1&lt;/b&gt;&lt;br/&gt;A partíció kiválasztható a telepítés előtt. &lt;b&gt;Nem ajánlott UEFI telepítéshez&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="226"/>
         <source>&lt;b&gt;Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;%1 telepítése a jelenlegi operációs rendszere mellé&lt;/b&gt;&lt;br/&gt;A telepítő helyet szabadít fel %2 számára. A számítógép indításakor kiválasztható, hogy melyik rendszert szeretnénk betölteni. &lt;b&gt;FIGYELMEZTETÉS: nem ajánlott UEFI telepítéshez.&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="245"/>
         <source>&lt;b&gt;Replace a partition with %1&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;A partíció lecserélése a következővel %1&lt;/b&gt;&lt;br/&gt;A partíció kiválasztható a telepítés előtt. &lt;b Nem ajánlott UEFI telepítéshez.&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="261"/>
         <source>&lt;b&gt;Manual partitioning&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a GPT partition table and &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Manuális particionálás&lt;/b&gt;&lt;br/&gt;Létrehozhatók vagy átméretezhetők a partíciók, vagy kiválasztatható több partíció %1 számára. Ez a lehetőség UEFI által telepít, amely a GPT partíciós táblát használja és a &lt;b&gt;FAT32 512Mb /boot partíció elengedhetetlen az UEFI telepítőnek&lt;/b&gt;, vagy egy meglévő formázás nélkül, vagy hozzunk létre egyet.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="154"/>
@@ -1498,7 +1498,7 @@ Néhány fájlrendszernek külső ezközre van szüksége a telepítéshez és t
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="124"/>
         <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read &lt;a href=&quot;%3&quot;&gt;Known Issues&lt;/a&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Üdvözlet a %1 telepítőben.&lt;/h1&gt;&lt;br/&gt;Ez a program fel fog tenni néhány kérdést és telepíti a %2 operációs rendszert a számítógépre. Jegyezzük meg, hogy ez a telepítő még kísérleti stádiumban van.&lt;br/&gt;Nem lett még megvalósítva a LUKS/LVM vagy RAID és UEFI automatikus particionálás.&lt;br/&gt; A GPT particionálásról és BIOS beállításokról az &lt;a href=&quot;%3&quot;&gt;Ismert problémák&lt;/a&gt; részben tájékozódhatunk.</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="147"/>

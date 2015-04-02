@@ -458,37 +458,37 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="145"/>
         <source>&lt;b&gt;Install %2 alongside %1&lt;/b&gt;&lt;br/&gt;The installer will shrink the %1 volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Installer %2 à côté de %1&lt;/b&gt;&lt;br/&gt;L’installateur va rétrécir le volume %1 pour laisser de la place pour %2. Vous pouvez choisir quel système d’exploitation lancer à chaque démarrage. &lt;b&gt;ATTENTION : ce n&apos;est pas une option pour les installations UEFI&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="167"/>
         <source>&lt;b&gt;Replace a partition with %1&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Remplacer une partition par %1&lt;/b&gt;&lt;br/&gt;Vous pourrez choisir la partition à écraser.&lt;b&gt;Non disponible pour les installations UEFI&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="179"/>
         <source>&lt;b&gt;Install %1 alongside your current operating system&lt;/b&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Installer %1 à côté de votre système d’exploitation actuel&lt;/b&gt;&lt;br/&gt;L’installateur va rétrécir le volume %1 pour laisser de la place pour %2. Vous pouvez choisir quel système d’exploitation lancer à chaque démarrage. &lt;b&gt;ATTENTION : ce n&apos;est pas une option pour les installations UEFI&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="198"/>
         <source>&lt;b&gt;Replace a partition with %1&lt;&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Remplacer une partition par %1&lt;/b&gt;&lt;br/&gt;Vous pourrez choisir la partition à écraser.&lt;b&gt;Non disponible pour les installations UEFI&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="226"/>
         <source>&lt;b&gt;Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Installer %1 à côté de votre système d’exploitation actuel&lt;/b&gt;&lt;br/&gt;L’installateur va rétrécir le volume %1 pour laisser de la place pour %2. Vous pouvez choisir quel système d’exploitation lancer à chaque démarrage. &lt;b&gt;ATTENTION : ce n&apos;est pas une option pour les installations UEFI&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="245"/>
         <source>&lt;b&gt;Replace a partition with %1&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Remplacer une partition par %1&lt;/b&gt;&lt;br/&gt;Vous pourrez choisir la partition à écraser.&lt;b&gt;Non disponible pour les installations UEFI&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="261"/>
         <source>&lt;b&gt;Manual partitioning&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a GPT partition table and &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Partitionnement manuel&lt;/b&gt;&lt;br/&gt;Vous pouvez créer ou redimensionner les partitions vous-même, ou choisir des partitions multiples pour %1. Utilisez cette option pour les installations UEFI, en ayant une table de partitions GPT et &lt;b&gt;une partition /boot fat32 512Mo est l’idéal pour les installations UEFI&lt;/b&gt;, ou bien pour utiliser une partition existante sans formater ou encore en créer une.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="154"/>
@@ -1496,7 +1496,7 @@ Certains systèmes de fichiers nécessitent l&apos;installation d&apos;outils ex
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="124"/>
         <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read &lt;a href=&quot;%3&quot;&gt;Known Issues&lt;/a&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Bienvenu sur l’installateur %1.&lt;/h1&gt;&lt;br/&gt;Ce programme va vous poser quelques questions et configurer %2 sur votre ordinateur. N’oubliez pas, cet installateur est encore à un stade précoce.&lt;br/&gt;Actuellement, LUKS/LVM ou RAID n’est pas encore implémenté, de même que&lt;br/&gt;l’utilisation d’une des options de partitionnement automatique pour les installations UEFI.&lt;br/&gt;Pour le &lt;b&gt;partitionnement GPT sur des systèmes BIOS&lt;/b&gt; et autres instructions, lisez &lt;a=&quot;%3&quot;&gt;les problèmes connus&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="147"/>
