@@ -10,7 +10,7 @@ strings:
     shortVersionedName:  KaOS 2015.04
     bootloaderEntryName: KaOS
     productUrl:          http://kaosx.us/
-    supportUrl:          http://kaosx.us/knowledge_base
+    supportUrl:          http://kaosx.us/knowledge-base/
     knownIssuesUrl:      http://kaosx.us/download/#Known_Issues
     releaseNotesUrl:     http://kaosx.us/release_notes
 
