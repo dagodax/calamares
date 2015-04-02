@@ -1,6 +1,7 @@
 /* === This file is part of Calamares - <http://github.com/calamares> ===
  *
  *   Copyright 2014-2015, Teo Mrnjavac <teo@kde.org>
+ *   Copyright 2015,      Anke Boersma <demm@kaosx.us>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -27,6 +28,7 @@
 
 #include <QApplication>
 #include <QBoxLayout>
+#include <QDesktopServices>
 #include <QFocusEvent>
 #include <QLabel>
 #include <QListWidget>
@@ -122,20 +124,16 @@ GreetingPage::GreetingPage( QWidget* parent )
 
     CALAMARES_RETRANSLATE(
         ui->mainText->setText( tr( "<h1>Welcome to the %1 installer.</h1><br/>"
-                             "This program will ask you some questions and "
-                             "set up %2 on your computer." 
-                             " Remember, this installer is still in an early stage.<br/>"
-                             "Not implemented yet is LUKS/LVM or RAID and<br/>"
-                             "using one of the automated partitioning options for UEFI installs.<br/>" 
-                             "For <b>GPT partioning on BIOS</b> systems and other instructions, read<a href=\"%3\"> %4 </a>" )
-                         .arg( Calamares::Branding::instance()->
-                               string( Calamares::Branding::VersionedName ) )
-                         .arg( Calamares::Branding::instance()->
-                               string( Calamares::Branding::ProductName ) ) 
-                         .arg( Calamares::Branding::instance()->
-                               string( Calamares::Branding::ProductURL ) )
-                         .arg( Calamares::Branding::instance()->
-                               string( Calamares::Branding::UrlText ) ) );
+                                   "This program will ask you some questions and "
+                                   "set up %2 on your computer." 
+                                   " Remember, this installer is still in an early stage.<br/>"
+                                   "Not implemented yet is LUKS/LVM or RAID and<br/>"
+                                   "using one of the automated partitioning options for UEFI installs.<br/>" 
+                                   "For <b>GPT partioning on BIOS</b> systems and other instructions, read:" )
+                                .arg( Calamares::Branding::instance()->
+                                      string( Calamares::Branding::VersionedName ) )
+                                .arg( Calamares::Branding::instance()->
+                                      string( Calamares::Branding::ProductName ) ) );
     )
 
     ui->aboutButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::Information,
@@ -165,6 +163,67 @@ GreetingPage::GreetingPage( QWidget* parent )
                             .arg( Calamares::Branding::instance()->string(
                                       Calamares::Branding::VersionedName ) ) );
     } );
+}
+
+
+void
+GreetingPage::setUpLinks( bool showSupportUrl,
+                          bool showKnownIssuesUrl,
+                          bool showReleaseNotesUrl )
+{
+    using namespace Calamares;
+    Branding* b = Branding::instance();
+    if ( showSupportUrl && !b->string( Branding::SupportUrl ).isEmpty() )
+    {
+        CALAMARES_RETRANSLATE(
+            ui->supportButton->setText( tr( "%1 support" )
+                                        .arg( b->string( Branding::ShortProductName ) ) );
+        )
+        ui->supportButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::Help,
+                                                                   CalamaresUtils::Original,
+                                                                   2*QSize( CalamaresUtils::defaultFontHeight(),
+                                                                          CalamaresUtils::defaultFontHeight() ) ) );
+        connect( ui->supportButton, &QPushButton::clicked, []
+        {
+            QDesktopServices::openUrl( Branding::instance()->string( Branding::SupportUrl ) );
+        } );
+    }
+    else
+    {
+        ui->supportButton->hide();
+    }
+
+    if ( showKnownIssuesUrl && !b->string( Branding::KnownIssuesUrl ).isEmpty() )
+    {
+        ui->knownIssuesButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::Bugs,
+                                                                       CalamaresUtils::Original,
+                                                                       2*QSize( CalamaresUtils::defaultFontHeight(),
+                                                                              CalamaresUtils::defaultFontHeight() ) ) );
+        connect( ui->knownIssuesButton, &QPushButton::clicked, []
+        {
+            QDesktopServices::openUrl( Branding::instance()->string( Branding::KnownIssuesUrl ) );
+        } );
+    }
+    else
+    {
+        ui->knownIssuesButton->hide();
+    }
+
+    if ( showReleaseNotesUrl && !b->string( Branding::ReleaseNotesUrl ).isEmpty() )
+    {
+        ui->releaseNotesButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::Release,
+                                                                        CalamaresUtils::Original,
+                                                                        2*QSize( CalamaresUtils::defaultFontHeight(),
+                                                                               CalamaresUtils::defaultFontHeight() ) ) );
+        connect( ui->releaseNotesButton, &QPushButton::clicked, []
+        {
+            QDesktopServices::openUrl( Branding::instance()->string( Branding::ReleaseNotesUrl ) );
+        } );
+    }
+    else
+    {
+        ui->releaseNotesButton->hide();
+    }
 }
 
 
