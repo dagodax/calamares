@@ -12,7 +12,7 @@ strings:
     productUrl:          http://kaosx.us/
     supportUrl:          http://kaosx.us/knowledge-base/
     knownIssuesUrl:      http://kaosx.us/download/#Known_Issues
-    releaseNotesUrl:     http://kaosx.us/release_notes
+    releaseNotesUrl:     http://kaosx.us/release-notes
 
 images:
     productLogo:         "squid.png"

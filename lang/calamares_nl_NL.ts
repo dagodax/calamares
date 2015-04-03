@@ -458,37 +458,37 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="145"/>
         <source>&lt;b&gt;Install %2 alongside %1&lt;/b&gt;&lt;br/&gt;The installer will shrink the %1 volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Installeer %2 naast %1&lt;/b&gt;&lt;br\&gt;Het installatie programma zal de %1 volume inkrimpen om ruimte te maken voor %2 . Telkens als de computer opstart kun je kiezen welk besturingssysteem je wilt gebruiken.  &lt;b&gt; WAARSCHUWING:  niet een optie voor UEFI installaties&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="167"/>
         <source>&lt;b&gt;Replace a partition with %1&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Vervang een partitie met % 1&lt;/b&gt;&lt;br/&gt;Er zal een keuze worden aangeboden van welke schijf te wissen. &lt;b&gt; Niet geschikt voor UEFI installaties&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="179"/>
         <source>&lt;b&gt;Install %1 alongside your current operating system&lt;/b&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Installeer %1 naast je huidige besturingssysteem&lt;/b&gt;&lt;br/&gt;Het installatie programma zal een bestaande volume inkrimpen om ruimte te maken voor %2. Telkens als de computer opstart kun je kiezen welk besturingssysteem je wilt gebruiken.  &lt;b&gt;WAARSCUWING: geen optie voor UEFI installaties&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="198"/>
         <source>&lt;b&gt;Replace a partition with %1&lt;&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Vervang een partitie met % 1&lt;/b&gt;&lt;br/&gt;Er zal een keuze worden aangeboden van welke schijf te wissen. &lt;b&gt; Niet geschikt voor UEFI installaties&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="226"/>
         <source>&lt;b&gt;Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Installeer %1 naast  je huidige besturings systemen&lt;/b&gt;&lt;br\&gt;Het installatie programma zal een bestaande volume inkrimpen om ruimte te maken voor %2 . Telkens als de computer opstart kun je kiezen welk besturingssysteem je wilt gebruiken.  &lt;b&gt; WAARSCHUWING:  niet een optie voor UEFI installaties&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="245"/>
         <source>&lt;b&gt;Replace a partition with %1&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Vervang een partitie met % 1&lt;/b&gt;&lt;br/&gt;Er zal een keuze worden aangeboden van welke schijf te wissen. &lt;b&gt; Niet geschikt voor UEFI installaties&lt;/b&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="261"/>
         <source>&lt;b&gt;Manual partitioning&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a GPT partition table and &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;b&gt;Handmatige partitionering&lt;/b&gt;&lt;br/&gt;Je kunt partities zelf creeren of aanpassen, of kies meerdere partities voor %1.  Kies deze opties for UEFI installaties, het hebben van een GPT partitietabel en &lt;b&gt;fat32 512Mb /boot partitie is een must voor UEFI installaties&lt;/b&gt;, ofwel gebruik maken van een bestaande, zonder formatteren of creeer.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="154"/>
@@ -529,7 +529,7 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
     <message>
         <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="49"/>
         <source>Cannot get list of temporary mounts.</source>
-        <translation type="unfinished"/>
+        <translation>Kan lijst van de tijdelijke mounts niet krijgen.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="88"/>
@@ -1511,7 +1511,7 @@ Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd wo
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="126"/>
         <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read:</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Welkom bij het %1 installeerprogramma.&lt;/h1&gt;&lt;br/&gt;Dit programma stelt je enkele vragen en zal %2 instellen op je computer. Onthou, dit installeerprogramma is nog in een vroeg stadium.&lt;br/&gt;Nog niet geimplementeerd is LUKS/LVM of RAID en&lt;br/&gt;het gebruiken van een van de automatische schijfindeling opties.&lt;br/&gt;Voor &lt;b&gt;GPT schijfindeling op BIOS&lt;/b&gt; systemen en andere instructies, lees:</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="147"/>
@@ -1526,7 +1526,7 @@ Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd wo
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="179"/>
         <source>%1 support</source>
-        <translation type="unfinished"/>
+        <translation>%1 support</translation>
     </message>
 </context>
 <context>
