@@ -1491,17 +1491,17 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="104"/>
         <source>&amp;Release notes</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Примечания к выпуску</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="114"/>
         <source>&amp;Known issues</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Известные проблемы</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="124"/>
         <source>&amp;Support</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Поддержка</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="134"/>
@@ -1511,7 +1511,7 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="126"/>
         <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read:</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Добро пожаловать в %1 установщик.&lt;/h1&gt;&lt;br/&gt;Эта программа, задаст несколько вопросов и установит %2 на ваш компьютер. Помните, этот установщик находится в разработке.&lt;br/&gt;Пока не реализованы LUKS/LVM или RAID с&lt;br/&gt;использованием автоматического создания разделов для UEFI установок.&lt;br/&gt;Для &lt;b&gt;GPT разделов на BIOS&lt;/b&gt; системах и другие инструкции, читайте:</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="147"/>
@@ -1526,7 +1526,7 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="179"/>
         <source>%1 support</source>
-        <translation type="unfinished"/>
+        <translation>%1 поддержка</translation>
     </message>
 </context>
 <context>

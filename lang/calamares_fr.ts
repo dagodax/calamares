@@ -1491,17 +1491,17 @@ Certains systèmes de fichiers nécessitent l&apos;installation d&apos;outils ex
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="104"/>
         <source>&amp;Release notes</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Notes de version</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="114"/>
         <source>&amp;Known issues</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Problèmes connus</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="124"/>
         <source>&amp;Support</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Support</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="134"/>
@@ -1511,7 +1511,7 @@ Certains systèmes de fichiers nécessitent l&apos;installation d&apos;outils ex
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="126"/>
         <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read:</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Bienvenu sur l’installateur %1.&lt;/h1&gt;&lt;br/&gt;Ce programme va vous poser quelques questions et configurer %2 sur votre ordinateur. N’oubliez pas, cet installateur est encore à un stade précoce.&lt;br/&gt;Actuellement, LUKS/LVM ou RAID n’est pas encore implémenté, de même que&lt;br/&gt;l’utilisation d’une des options de partitionnement automatique pour les installations UEFI.&lt;br/&gt;Pour le &lt;b&gt;partitionnement GPT sur des systèmes BIOS&lt;/b&gt; et autres instructions, lisez :</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="147"/>
@@ -1526,7 +1526,7 @@ Certains systèmes de fichiers nécessitent l&apos;installation d&apos;outils ex
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="179"/>
         <source>%1 support</source>
-        <translation type="unfinished"/>
+        <translation>%1 supporte</translation>
     </message>
 </context>
 <context>

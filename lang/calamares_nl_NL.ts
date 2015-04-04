@@ -922,7 +922,7 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="20"/>
         <source>Create Partition Table</source>
-        <translation>Maak Partitietabel</translation>
+        <translation>Maak partitietabel</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="39"/>
