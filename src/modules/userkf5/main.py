@@ -59,6 +59,7 @@ def run():
         ('kscreenlockerrc', '.config/'),
         ('ksplashrc', '.config/'),
         ('kickoffrc', '.config/'),
+        ('yakukaerc', '.config/'),
         ('.bashrc', ''),
         ('.xinitrc', ''),
         ('mimeapps.list', '.local/share/applications/'),
