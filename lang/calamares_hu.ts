@@ -9,12 +9,12 @@
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="68"/>
         <source>Allocate drive space by dragging the divider below:</source>
-        <translation>Az alábbi osztósáv húzásával meghatározhatod a lefoglalandó meghajtó területet:</translation>
+        <translation>Az alábbi osztósáv húzásával meghatározható a lefoglalandó meghajtó terület:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="167"/>
         <source>With this operation, the partition &lt;b&gt;%1&lt;/b&gt; which contains %4 will be shrunk to %2MB and a new %3MB partition will be created for %5. &lt;font color=&quot;red&quot;&gt;Do not use for UEFI. &lt;/font&gt;</source>
-        <translation>Ezzel a művelettel, a &lt;b&gt;%1&lt;/b&gt; partíció, ami %4-et tartalmaz, %2MB-ra lesz zsugorítva és egy új %3MB partíció lesz létrehozva %5 számára. &lt;font color=&quot;red&quot;&gt;Ne használjuk: UEFI&lt;/font&gt;</translation>
+        <translation>Ezzel a művelettel, a &lt;b&gt;%1&lt;/b&gt; partíció, ami %4-et tartalmaz, %2MB-ra lesz zsugorítva és egy új %3MB partíció lesz létrehozva %5 számára. &lt;font color=&quot;red&quot;&gt;Nem alkalmas UEFI telepítésre&lt;/font&gt;</translation>
     </message>
 </context>
 <context>
@@ -86,12 +86,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="198"/>
         <source>Location</source>
-        <translation>Hely</translation>
+        <translation>Elhelyezkedés</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="224"/>
         <source>License Approval</source>
-        <translation>Licensz elfogadása</translation>
+        <translation>Licenc elfogadás</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="257"/>
@@ -310,7 +310,7 @@ Kimenet:
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="249"/>
         <source>Bad working directory path</source>
-        <translation>Rossz munkakönyvtár útvonal</translation>
+        <translation>Érvénytelen munkakönyvtár útvonal</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="250"/>
@@ -320,12 +320,12 @@ Kimenet:
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="260"/>
         <source>Bad main script file</source>
-        <translation>Rossz alap script fájl</translation>
+        <translation>Érvénytelen parancsfájl</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="261"/>
         <source>Main script file %1 for python job %2 is not readable.</source>
-        <translation>Alap script fájl %1 a python folyamathoz %2 nem olvasható.</translation>
+        <translation>%1 parancsfájl a python folyamathoz %2 nem olvasható.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="306"/>
@@ -360,8 +360,8 @@ Kimenet:
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="80"/>
         <source>Do you really want to cancel the current install process?
 The installer will quit and all changes will be lost.</source>
-        <translation>Biztos abba szeretnéd hagyni a telepítést?
-Minden változtatás elveszik, ha kilépsz a telepítőből.</translation>
+        <translation>Biztosan megszakítjuk a telepítést?
+Minden változtatás elveszik, ha kilépünk a telepítőből.</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="265"/>
@@ -412,7 +412,7 @@ Minden változtatás elveszik, ha kilépsz a telepítőből.</translation>
     <message>
         <location filename="../src/calamares/CalamaresWindow.cpp" line="96"/>
         <source>Show debug information</source>
-        <translation>Hibakeresési információk mutatása</translation>
+        <translation>Hibakeresési információk</translation>
     </message>
 </context>
 <context>
@@ -433,7 +433,7 @@ Minden változtatás elveszik, ha kilépsz a telepítőből.</translation>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="115"/>
         <source>This computer currently does not seem to have an operating system on it. What would you like to do?</source>
-        <translation>Úgy tűnik, hogy ezen a számítógépen jelenleg nincs másik operációs rendszer. Mit szeretnél tenni?</translation>
+        <translation>Úgy tűnik, hogy ezen a számítógépen jelenleg nincs másik operációs rendszer. Mit tegyünk?</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="119"/>
@@ -455,7 +455,7 @@ Ezzel minden program, dokumentum, fotó, zene és minden egyéb fájl törlődni
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="141"/>
         <source>This computer currently has %1 on it. What would you like to do?</source>
-        <translation>Ezen a számítógépen jelenleg %1 van telepítve. Mit szeretnél tenni?</translation>
+        <translation>Ezen a számítógépen jelenleg %1 van telepítve. Mit tegyünk?</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="145"/>
@@ -500,12 +500,12 @@ Ezzel minden program, dokumentum, fotó, zene és minden egyéb fájl törlődni
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="176"/>
         <source>This computer already has an operating system on it. What would you like to do?</source>
-        <translation>Ezen a számítógépen már van egy operációs rendszer. Mit szeretne tenni?</translation>
+        <translation>Ezen a számítógépen már van egy operációs rendszer. Mit tegyünk?</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="223"/>
         <source>This computer currently has multiple operating systems on it. What would you like to do?</source>
-        <translation>Ezen a számítógépen jelenleg több operációs rendszer is van. Mit szeretne tenni?</translation>
+        <translation>Ezen a számítógépen jelenleg több operációs rendszer is van. Mit tegyünk?</translation>
     </message>
 </context>
 <context>
@@ -745,12 +745,12 @@ Ezzel minden program, dokumentum, fotó, zene és minden egyéb fájl törlődni
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="23"/>
         <source>Partition Alignment</source>
-        <translation>Partíció Elrendezés</translation>
+        <translation>Partíció elrendezés</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="29"/>
         <source>Use cylinder based alignment (Windows XP compatible)</source>
-        <translation>Használjon cilinder alapú elrendezést (Windows XP kompatibilis)</translation>
+        <translation>Cilinder alapú elrendezés használata (Windows XP kompatibilis)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="42"/>
@@ -934,12 +934,12 @@ Ezzel minden program, dokumentum, fotó, zene és minden egyéb fájl törlődni
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="65"/>
         <source>What kind of partition table do you want to create?</source>
-        <translation>Milyen típusú partíciós táblát szeretnél létrehozni?</translation>
+        <translation>Milyen típusú partíciós táblát hozzunk létre?</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="72"/>
         <source>Master Boot Record (MBR)</source>
-        <translation>Master Boot Record (MBR)</translation>
+        <translation>Mester Boot Rekord (MBR)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="82"/>
@@ -970,7 +970,7 @@ Ezzel minden program, dokumentum, fotó, zene és minden egyéb fájl törlődni
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/createpartitiontablewidgetbase.ui" line="20"/>
         <source>Choose the type of partition table you want to create:</source>
-        <translation>Válaszd ki a partíciós tábla típusát amit létre akarsz hozni:</translation>
+        <translation>Válasszuk ki a létrehozandó partíció típusát:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/createpartitiontablewidgetbase.ui" line="29"/>
@@ -1178,7 +1178,7 @@ Ezzel minden program, dokumentum, fotó, zene és minden egyéb fájl törlődni
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="60"/>
         <source>Keep</source>
-        <translation>Megtart</translation>
+        <translation>Megtartás</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="70"/>
@@ -1224,7 +1224,7 @@ Ezzel minden program, dokumentum, fotó, zene és minden egyéb fájl törlődni
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="46"/>
         <source>Select...</source>
-        <translation>Kiválaszt...</translation>
+        <translation>Kiválasztás...</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="53"/>
@@ -1274,12 +1274,12 @@ Ezzel minden program, dokumentum, fotó, zene és minden egyéb fájl törlődni
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="122"/>
         <source>Update access times relative to modification</source>
-        <translation>Frissítse a hozzáférési időket a módosításokhoz képest</translation>
+        <translation>Hozzáférési idő frissítése a módosításokhoz képest</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="142"/>
         <source>More...</source>
-        <translation>Több...</translation>
+        <translation>Bővebb...</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="149"/>
@@ -1317,7 +1317,7 @@ Ezzel minden program, dokumentum, fotó, zene és minden egyéb fájl törlődni
     <message>
         <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="53"/>
         <source>Select drive:</source>
-        <translation>Válassz meghajtót:</translation>
+        <translation>Meghajtó kiválasztás:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="229"/>
@@ -1337,7 +1337,7 @@ Ezzel minden program, dokumentum, fotó, zene és minden egyéb fájl törlődni
         <source>This table shows which file systems are supported and which specific operations can be performed on them.
 Some file systems need external tools to be installed for them to be supported. But not all operations can be performed on all file systems, even if all required tools are installed. Please see the documentation for details. </source>
         <translation>Ez a táblázat megmutatja milyen fájlrendszerek támogatottak és milyen speciális műveletek hajthatók végre rajtuk.
-Néhány fájlrendszernek külső ezközre van szüksége a telepítéshez és támogatáshoz. De nem minden művelet hajtható végre minden egyes fájlrendszeren, akkor sem ha szükséges eszközök telepítve vannak. Kérlek olvasd el a dokumentációt részletekért.</translation>
+Néhány fájlrendszernek külső eszközre van szüksége a telepítéshez és támogatáshoz. De nem minden művelet hajtható végre minden egyes fájlrendszeren, akkor sem ha szükséges eszközök telepítve vannak. Olvassuk el a dokumentációt részletekért.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="65"/>
@@ -1439,7 +1439,7 @@ Néhány fájlrendszernek külső ezközre van szüksége a telepítéshez és t
     <message>
         <location filename="../src/modules/finished/FinishedPage.cpp" line="50"/>
         <source>&lt;h1&gt;All done.&lt;/h1&gt;&lt;br/&gt;%1 has been installed on your computer.&lt;br/&gt;You may now restart into your new system, or continue using the %2 Live environment.</source>
-        <translation>&lt;h1&gt;Sikeres művelet.&lt;/h1&gt;&lt;br/&gt;%1 telepítve lett a számítógépére.&lt;br/&gt;Újraindítás után folytathatod az %2 éles környezetben.</translation>
+        <translation>&lt;h1&gt;Sikeres művelet.&lt;/h1&gt;&lt;br/&gt;%1 telepítve lett a számítógépére.&lt;br/&gt;Újraindítás után folytatható a %2 éles környezetben.</translation>
     </message>
 </context>
 <context>
@@ -1488,22 +1488,22 @@ Néhány fájlrendszernek külső ezközre van szüksége a telepítéshez és t
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="14"/>
         <source>Form</source>
-        <translation>Adatlap</translation>
+        <translation>Űrlap</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="104"/>
         <source>&amp;Release notes</source>
-        <translation type="unfinished"/>
+        <translation>Változásnapló</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="114"/>
         <source>&amp;Known issues</source>
-        <translation type="unfinished"/>
+        <translation>Ismert problémák</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="124"/>
         <source>&amp;Support</source>
-        <translation type="unfinished"/>
+        <translation>Támogatás</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="134"/>
@@ -1513,7 +1513,7 @@ Néhány fájlrendszernek külső ezközre van szüksége a telepítéshez és t
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="126"/>
         <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read:</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Üdvözlet a %1 telepítőben.&lt;/h1&gt;&lt;br/&gt;Ez a program fel fog tenni néhány kérdést és %2 -t telepíti a számítógépre. Ne feledjük, a telepítő még korai fejlesztői stádiumban van.&lt;br/&gt;Nincs még megvalósítva a LUKS/LVM vagy RAID és&lt;br/&gt;UEFI automatikus particionálás.&lt;br/&gt;Bővebben a &lt;b&gt;GPT particionálásról&lt;/b&gt;, BIOS beállításokról:</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="147"/>
@@ -1523,12 +1523,12 @@ Néhány fájlrendszernek külső ezközre van szüksége a telepítéshez és t
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="149"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technologies for a better world.</source>
-        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Szerzői joggal védett 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Köszönet: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini és Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; a fejlesztés támogatói &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technológiák egy jobb világért.</translation>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Köszönet: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini és Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; a fejlesztés támogatói &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technológiák egy jobb világért.</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="179"/>
         <source>%1 support</source>
-        <translation type="unfinished"/>
+        <translation>%1 támogatás</translation>
     </message>
 </context>
 <context>
@@ -1536,7 +1536,7 @@ Néhány fájlrendszernek külső ezközre van szüksége a telepítéshez és t
     <message>
         <location filename="../src/modules/greeting/GreetingViewStep.cpp" line="43"/>
         <source>Welcome</source>
-        <translation>Üdvözöllek</translation>
+        <translation>Üdvözlet</translation>
     </message>
 </context>
 <context>
@@ -1594,7 +1594,7 @@ Néhány fájlrendszernek külső ezközre van szüksége a telepítéshez és t
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="173"/>
         <source>&amp;Change...</source>
-        <translation>Változtat...</translation>
+        <translation>Változtatás...</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="267"/>
@@ -1612,7 +1612,7 @@ Néhány fájlrendszernek külső ezközre van szüksége a telepítéshez és t
     <message>
         <location filename="../src/modules/locale/LocaleViewStep.cpp" line="79"/>
         <source>Location</source>
-        <translation>Hely</translation>
+        <translation>Elhelyezkedés</translation>
     </message>
 </context>
 <context>
@@ -1633,7 +1633,7 @@ Néhány fájlrendszernek külső ezközre van szüksége a telepítéshez és t
         <location filename="../src/modules/partition/partitionmanager/src/gui/mainwindowbase.ui" line="38"/>
         <source>Pending Operations</source>
         <comment>@title:window</comment>
-        <translation>Várakozó Műveletek</translation>
+        <translation>Várakozó műveletek</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/mainwindowbase.ui" line="49"/>
@@ -1702,7 +1702,7 @@ Néhány fájlrendszernek külső ezközre van szüksége a telepítéshez és t
     <message>
         <location filename="../src/modules/keyboard/KeyboardPage.ui" line="14"/>
         <source>Form</source>
-        <translation>Adatlap</translation>
+        <translation>Űrlap</translation>
     </message>
     <message>
         <location filename="../src/modules/keyboard/KeyboardPage.ui" line="70"/>
@@ -1712,7 +1712,7 @@ Néhány fájlrendszernek külső ezközre van szüksége a telepítéshez és t
     <message>
         <location filename="../src/modules/keyboard/KeyboardPage.ui" line="131"/>
         <source>Type here to test your keyboard</source>
-        <translation>Gépelj itt a billentyűzet teszteléséhez</translation>
+        <translation>Gépeljünk ide a billentyűzet teszteléséhez</translation>
     </message>
 </context>
 <context>
@@ -1720,17 +1720,17 @@ Néhány fájlrendszernek külső ezközre van szüksége a telepítéshez és t
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="14"/>
         <source>Form</source>
-        <translation>Adatlap</translation>
+        <translation>Űrlap</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="33"/>
         <source>What is your name?</source>
-        <translation>Mi a neved?</translation>
+        <translation>Teljes név</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="111"/>
         <source>What name do you want to use to log in?</source>
-        <translation>Milyen felhasználónévvel szeretnél bejelentkezni?</translation>
+        <translation>Felhasználónév amellyel a bejelentkezés történik</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="191"/>
@@ -1743,37 +1743,37 @@ Néhány fájlrendszernek külső ezközre van szüksége a telepítéshez és t
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="194"/>
         <source>&lt;small&gt;If more than one person will use this computer, you can set up multiple accounts after installation.&lt;/small&gt;</source>
-        <translation>&lt;small&gt;Ha több mint egy személy használja a számítógépet akkor létrehozhatsz több felhasználói fiókot a telepítés után.&lt;/small&gt;</translation>
+        <translation>&lt;small&gt;Ha több mint egy személy használja a számítógépet akkor létrehozhatunk több felhasználói fiókot a telepítés után.&lt;/small&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="217"/>
         <source>Choose a password to keep your account safe.</source>
-        <translation>Adj meg jelszót a felhasználói fiókod védelmére.</translation>
+        <translation>Jelszó megadása a felhasználói fiók védelmére.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="322"/>
         <source>&lt;small&gt;Enter the same password twice, so that it can be checked for typing errors. A good password will contain a mixture of letters, numbers and punctuation, should be at least eight characters long, and should be changed at regular intervals.&lt;/small&gt;</source>
-        <translation>&lt;small&gt;Írd be a jelszót kétszer így ellenőrizve lesznek a gépelési hibák. A jó jelszó tartalmazzon kis és nagy betűket, számokat és legalább 8 karakter hosszúságú. Ajánlott megváltoztatni rendszeres időközönként.&lt;/small&gt;</translation>
+        <translation>&lt;small&gt;Adjuk meg a jelszót kétszer így ellenőrizve lesznek a gépelési hibák. A jelszó tartalmazzon kis és nagy betűket, számokat és legalább 8 karakter hosszúságú legyen. Ajánlott megváltoztatni rendszeres időközönként.&lt;/small&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="345"/>
         <source>What is the name of this computer?</source>
-        <translation>Mi legyen a számítógép neve?</translation>
+        <translation>Számítógép név</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="428"/>
         <source>&lt;small&gt;This name will be used if you make the computer visible to others on a network.&lt;/small&gt;</source>
-        <translation>&lt;small&gt;Ez a név lesz használva ha a számítógép látható a hálózaton.&lt;/small&gt;</translation>
+        <translation>&lt;small&gt;Ez a név lesz használva ha a számítógépes hálózaton.&lt;/small&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="451"/>
         <source>Choose a password for the administrator account.</source>
-        <translation>Adj meg jelszót az adminisztrátor felhasználói fiókhoz.</translation>
+        <translation>Jelszó megadása az adminisztrátori fiókhoz.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="556"/>
         <source>&lt;small&gt;Enter the same password twice, so that it can be checked for typing errors.&lt;/small&gt;</source>
-        <translation>&lt;small&gt;Írd be a jelszót kétszer így ellenőrizve lesznek a gépelési hibák.&lt;/small&gt;</translation>
+        <translation>&lt;small&gt;Adjuk meg a jelszót kétszer így ellenőrizve lesznek a gépelési hibák.&lt;/small&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="596"/>
@@ -1783,7 +1783,7 @@ Néhány fájlrendszernek külső ezközre van szüksége a telepítéshez és t
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="606"/>
         <source>Require my password to log in</source>
-        <translation>A jelszavam kérése bejelentkezéskor</translation>
+        <translation>Jelszó kérése bejelentkezéskor</translation>
     </message>
 </context>
 <context>
@@ -1810,7 +1810,7 @@ Néhány fájlrendszernek külső ezközre van szüksége a telepítéshez és t
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="92"/>
         <source>Recreate existing file system</source>
         <comment>@action:button</comment>
-        <translation>Meglévő fájlrendszer újra lérehozása</translation>
+        <translation>Meglévő fájlrendszer újra létrehozása</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="106"/>
@@ -1986,7 +1986,7 @@ Néhány fájlrendszernek külső ezközre van szüksége a telepítéshez és t
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="14"/>
         <source>Form</source>
-        <translation>Adatlap</translation>
+        <translation>Űrlap</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="22"/>
@@ -2026,7 +2026,7 @@ Néhány fájlrendszernek külső ezközre van szüksége a telepítéshez és t
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="135"/>
         <source>Are you sure you want to create a new partition table on %1?</source>
-        <translation>Biztos vagy benne, hogy létrehozol egy új partíciós táblát itt %1 ?</translation>
+        <translation>Biztosan létrehozzunk egy új partíciós táblát itt %1 ?</translation>
     </message>
 </context>
 <context>
@@ -2057,7 +2057,7 @@ Néhány fájlrendszernek külső ezközre van szüksége a telepítéshez és t
     <message>
         <location filename="../src/modules/prepare/PreparePage.cpp" line="39"/>
         <source>For best results, please ensure that this computer:</source>
-        <translation>A legjobb eredményért kérlek győződj meg ez a számítógép:</translation>
+        <translation>A legjobb eredmény érdekében győződjünk meg az alábbiakról:</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PreparePage.cpp" line="96"/>
@@ -2084,22 +2084,22 @@ Telepítés folytatható de néhány tulajdonság valószínűleg nem lesz elér
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="91"/>
         <source>has at least %1 GB available drive space</source>
-        <translation>van legalább %1 GB elérhető lemezterület</translation>
+        <translation>Legalább %1 GB lemezterület érhető el</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="99"/>
         <source>has at least %1 GB working memory</source>
-        <translation>van legalább %1 GB elérhető memória</translation>
+        <translation>Legalább %1 GB memória érhető el</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="107"/>
         <source>is plugged in to a power source</source>
-        <translation>csatlakoztatva van külső áramforráshoz</translation>
+        <translation>Csatlakoztatva külső áramforráshoz</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="114"/>
         <source>is connected to the Internet</source>
-        <translation>csatlakozik az internethez</translation>
+        <translation>Csatlakoztatva az internethez</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="158"/>
@@ -2117,12 +2117,12 @@ Telepítés folytatható de néhány tulajdonság valószínűleg nem lesz elér
     <message>
         <location filename="../src/calamares/progresstree/ProgressTreeModel.cpp" line="144"/>
         <source>Install</source>
-        <translation>Telepít</translation>
+        <translation>Telepítés</translation>
     </message>
     <message>
         <location filename="../src/calamares/progresstree/ProgressTreeModel.cpp" line="150"/>
         <source>Finish</source>
-        <translation>Befejezve</translation>
+        <translation>Befejezés</translation>
     </message>
 </context>
 <context>
@@ -2164,17 +2164,17 @@ Telepítés folytatható de néhány tulajdonság valószínűleg nem lesz elér
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="93"/>
         <source>Repository and Revision</source>
-        <translation>Gyűjtemény és Felülvizsgálat</translation>
+        <translation>Tároló és Felülvizsgálat</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="99"/>
         <source>&amp;Checkout From:</source>
-        <translation>Ellenőrző adatlap:</translation>
+        <translation>Ellenőrző űrlap:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="119"/>
         <source>trunk</source>
-        <translation>törzs</translation>
+        <translation>tároló</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/scripts/release/releasedialog.ui" line="124"/>
@@ -2262,7 +2262,7 @@ Telepítés folytatható de néhány tulajdonság valószínűleg nem lesz elér
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.ui" line="14"/>
         <source>Form</source>
-        <translation>Adatlap</translation>
+        <translation>Űrlap</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.ui" line="22"/>
@@ -2272,7 +2272,7 @@ Telepítés folytatható de néhány tulajdonság valószínűleg nem lesz elér
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="109"/>
         <source>Select where to install %1.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;this will delete all files on the selected partition. &lt;font color=&quot;red&quot;&gt;Do not use for UEFI &lt;/font&gt;</source>
-        <translation>Válaszd ki a telepítés helyét %1.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Figyelmeztetés: &lt;/font&gt;minden fájl törölve lesz a kiválasztott partíción&lt;font color=&quot;red&quot;&gt;Ne használjuk: UEFI &lt;/font&gt;</translation>
+        <translation>Válasszuk ki a telepítés helyét %1.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Figyelmeztetés: &lt;/font&gt;minden fájl törölve lesz a kiválasztott partíción&lt;font color=&quot;red&quot;&gt;Nem ajánlott az UEFI használata&lt;/font&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="136"/>
@@ -2282,12 +2282,12 @@ Telepítés folytatható de néhány tulajdonság valószínűleg nem lesz elér
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="144"/>
         <source>%1 cannot be installed on empty space. Please select an existing partition.</source>
-        <translation>%1 nem telepíthető, kérlek válassz egy létező partíciót.</translation>
+        <translation>%1 nem telepíthető, válasszunk ki egy létező partíciót.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="155"/>
         <source>%1 cannot be installed on an extended partition. Please select an existing primary or logical partition.</source>
-        <translation>%1 nem telepíthető a kiterjesztett partícióra. Kérlek, válassz egy létező elsődleges vagy logikai partíciót.</translation>
+        <translation>%1 nem telepíthető a kiterjesztett partícióra. Válasszunk ki egy létező elsődleges vagy logikai partíciót.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="166"/>
@@ -2312,12 +2312,12 @@ Telepítés folytatható de néhány tulajdonság valószínűleg nem lesz elér
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="206"/>
         <source>&lt;b&gt;%4&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;The partition %1 is too small for %2. Please select a partition with capacity at least %3 GiB.</source>
-        <translation>&lt;b&gt;%4&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;A partíció %1 túl kicsi a következőhöz %2. Kérlek, válassz egy legalább %3 GB- os partíciót.</translation>
+        <translation>&lt;b&gt;%4&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;A partíció %1 túl kicsi a következőhöz %2. Válasszunk ki egy legalább %3 GB- os partíciót.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="220"/>
         <source>&lt;b&gt;%3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;%1 will be installed on %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;all data on partition%2 will be lost.</source>
-        <translation>&lt;b&gt;%3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;%1 installálva lesz a következőre: %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Figyelmeztetés: &lt;/font&gt;a partíción %2 minden törölve lesz.</translation>
+        <translation>&lt;b&gt;%3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;%1 telepítve lesz a következőre: %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Figyelmeztetés: &lt;/font&gt;a partíción %2 minden törölve lesz.</translation>
     </message>
 </context>
 <context>
@@ -2330,7 +2330,7 @@ Telepítés folytatható de néhány tulajdonság valószínűleg nem lesz elér
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="90"/>
         <source>Parted failed to resize filesystem.</source>
-        <translation>Parted nem tudta átméretezni a fájlrendszert.</translation>
+        <translation>A partícionáló nem tudta átméretezni a fájlrendszert.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="100"/>
@@ -2424,12 +2424,12 @@ Telepítés folytatható de néhány tulajdonság valószínűleg nem lesz elér
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="52"/>
         <source>Bad destination system path.</source>
-        <translation>Rossz célrendszer elérési út</translation>
+        <translation>Érvénytelen célrendszer elérési út</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="53"/>
         <source>rootMountPoint is %1</source>
-        <translation>rootMountPoint is %1</translation>
+        <translation>rootMountPoint %1</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="62"/>
@@ -2452,12 +2452,12 @@ Telepítés folytatható de néhány tulajdonság valószínűleg nem lesz elér
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="56"/>
         <source>Cannot access selected timezone path.</source>
-        <translation>A választott időzóna útvonal nem hozzáférhető.</translation>
+        <translation>A kiválasztott időzóna útvonal nem hozzáférhető.</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="57"/>
         <source>Bad path: %1</source>
-        <translation>Rossz elérési út: %1</translation>
+        <translation>Érvénytelen elérési út: %1</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="69"/>
@@ -2467,7 +2467,7 @@ Telepítés folytatható de néhány tulajdonság valószínűleg nem lesz elér
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="70"/>
         <source>Link creation failed, target: %1; link name: %2</source>
-        <translation>Link létrehozása nem sikerült: %1, link év: %2</translation>
+        <translation>Hivatkozás létrehozása nem sikerült: %1, hivatkozás név: %2</translation>
     </message>
 </context>
 <context>
