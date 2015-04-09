@@ -40,6 +40,7 @@
 #include "widgets/WaitingWidget.h"
 #include "GlobalStorage.h"
 #include "JobQueue.h"
+#include "Job.h"
 
 // Qt
 #include <QApplication>
@@ -172,26 +173,49 @@ QWidget*
 PartitionViewStep::createSummaryWidget() const
 {
     QWidget* widget = new QWidget;
-    QFormLayout* layout = new QFormLayout( widget );
-    layout->setMargin( 0 );
+    QVBoxLayout* mainLayout = new QVBoxLayout;
+    widget->setLayout( mainLayout );
+    mainLayout->setMargin( 0 );
+    QFormLayout* formLayout = new QFormLayout( widget );
+    const int MARGIN = CalamaresUtils::defaultFontHeight() / 2;
+    formLayout->setContentsMargins( MARGIN, 0, MARGIN, MARGIN );
+    mainLayout->addLayout( formLayout );
 
     QList< PartitionCoreModule::SummaryInfo > list = m_core->createSummaryInfo();
     for ( const auto& info : list )
     {
-        PartitionPreview* preview;
+        QLabel* diskInfoLabel = new QLabel( tr( "Disk <b>%1</b> (%2)" )
+                                            .arg( info.deviceNode )
+                                            .arg( info.deviceName ) );
+        formLayout->addRow( diskInfoLabel );
 
-        layout->addRow( new QLabel( info.deviceName ) );
+        PartitionPreview* preview;
 
         preview = new PartitionPreview;
         preview->setModel( info.partitionModelBefore );
         info.partitionModelBefore->setParent( widget );
-        layout->addRow( tr( "Before:" ), preview );
+        formLayout->addRow( tr( "Before:" ), preview );
 
         preview = new PartitionPreview;
         preview->setModel( info.partitionModelAfter );
         info.partitionModelAfter->setParent( widget );
-        layout->addRow( tr( "After:" ), preview );
+        formLayout->addRow( tr( "After:" ), preview );
     }
+    QLabel* jobsLabel = new QLabel( widget );
+    mainLayout->addWidget( jobsLabel );
+    QStringList jobsLines;
+    foreach ( const Calamares::job_ptr& job, jobs() )
+    {
+        if ( !job->prettyDescription().isEmpty() )
+        jobsLines.append( job->prettyDescription() );
+    }
+    jobsLabel->setText( jobsLines.join( "<br/>" ) );
+    int m = CalamaresUtils::defaultFontHeight() / 2;
+    jobsLabel->setMargin( CalamaresUtils::defaultFontHeight() / 2 );
+    QPalette pal;
+    pal.setColor( QPalette::Background, pal.background().color().lighter( 108 ) );
+    jobsLabel->setAutoFillBackground( true );
+    jobsLabel->setPalette( pal );
     return widget;
 }
 

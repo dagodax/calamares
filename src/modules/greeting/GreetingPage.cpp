@@ -134,6 +134,7 @@ GreetingPage::GreetingPage( QWidget* parent )
                                       string( Calamares::Branding::VersionedName ) )
                                 .arg( Calamares::Branding::instance()->
                                       string( Calamares::Branding::ProductName ) ) );
+        ui->retranslateUi( this );
     )
 
     ui->aboutButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::Information,
