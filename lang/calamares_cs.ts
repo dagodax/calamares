@@ -13,8 +13,8 @@
     </message>
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="167"/>
-        <source>With this operation, the partition &lt;b&gt;%1&lt;/b&gt; which contains %4 will be shrunk to %2MB and a new %3MB partition will be created for %5. &lt;font color=&quot;red&quot;&gt;Do not use for UEFI. &lt;/font&gt;</source>
-        <translation>Oddíl &lt;b&gt;%1&lt;/b&gt; obsahující %4 bude zmenšen na %2MB a nový oddíl o velikosti %3MB bude vytvořen pro %5.</translation>
+        <source>With this operation, the partition &lt;strong&gt;%1&lt;/strong&gt; which contains %4 will be shrunk to %2MB and a new %3MB partition will be created for %5. &lt;font color=&quot;red&quot;&gt;Do not use for UEFI. &lt;/font&gt;</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -336,45 +336,65 @@ Výstup:
 <context>
     <name>Calamares::ViewManager</name>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="64"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="66"/>
         <source>&amp;Back</source>
         <translation>&amp;Zpět</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="65"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="67"/>
         <source>&amp;Next</source>
         <translation>&amp;Další</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="66"/>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="302"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="68"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="330"/>
         <source>&amp;Cancel</source>
         <translation>&amp;Zrušit</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="86"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="88"/>
         <source>Cancel installation?</source>
         <translation>Zrušit instalaci?</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="87"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="89"/>
         <source>Do you really want to cancel the current install process?
 The installer will quit and all changes will be lost.</source>
         <translation>Opravdu chcete ukončit nynější instalační proces?
 Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="272"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="252"/>
+        <source>Continue with setup?</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="253"/>
+        <source>The %1 installer is about to make changes to your disk in order to install %2.&lt;br/&gt;&lt;strong&gt;You will not be able to undo these changes.&lt;/strong&gt;</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="260"/>
+        <source>&amp;Install now</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="261"/>
+        <source>Go &amp;back</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="300"/>
         <source>&amp;Quit</source>
         <translation>&amp;Ukončit</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="183"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="185"/>
         <source>Error</source>
         <translation>Chyba</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="184"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="186"/>
         <source>Installation Failed</source>
         <translation>Instalace se nezdařila</translation>
     </message>
@@ -436,64 +456,39 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
         <translation>Zdá se, že na tomto počítači zatím není žádný operační systém. Co si přejete udělat?</translation>
     </message>
     <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="141"/>
+        <source>This computer currently has %1 on it. What would you like to do?</source>
+        <translation>Na tomto počítači je %1 systémů. Co si přejete udělat?</translation>
+    </message>
+    <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="119"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="187"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="234"/>
-        <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Smazat disk a instalovat %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Varování: &lt;/font&gt;Operace smaže všechny programy, dokumenty, fotky, hudbu a ostatní soubory. &lt;b&gt;Není vhodné pro instalace UEFI&lt;/b&gt;</translation>
+        <source>&lt;strong&gt;Erase disk and install %1&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your programs, documents, photos, music, and any other files. &lt;strong&gt;Not suitable for UEFI installs&lt;/strong&gt;</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="125"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="162"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="193"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="240"/>
-        <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which disk to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Smazat disk a instalovat %1&lt;/b&gt;&lt;br/&gt;Bude vám nabídnuta volba, který disk smazat&lt;b&gt;Není vhodné pro instalace UEFI&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="141"/>
-        <source>This computer currently has %1 on it. What would you like to do?</source>
-        <translation>Na tomto počítači je %1 systémů. Co si přejete udělat?</translation>
+        <source>&lt;strong&gt;Erase disk and install %1&lt;/strong&gt;&lt;br/&gt;You will be offered a choice of which disk to erase. &lt;strong&gt;Not suitable for UEFI installs&lt;/strong&gt;</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="145"/>
-        <source>&lt;b&gt;Install %2 alongside %1&lt;/b&gt;&lt;br/&gt;The installer will shrink the %1 volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="167"/>
-        <source>&lt;b&gt;Replace a partition with %1&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="179"/>
-        <source>&lt;b&gt;Install %1 alongside your current operating system&lt;/b&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="198"/>
-        <source>&lt;b&gt;Replace a partition with %1&lt;&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="226"/>
-        <source>&lt;b&gt;Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="245"/>
-        <source>&lt;b&gt;Replace a partition with %1&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="261"/>
-        <source>&lt;b&gt;Manual partitioning&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a GPT partition table and &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
+        <source>&lt;strong&gt;Install %2 alongside %1&lt;/strong&gt;&lt;br/&gt;The installer will shrink the %1 volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;strong&gt;WARNING: not an option for UEFI installs&lt;/strong&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="154"/>
-        <source>&lt;b&gt;Erase entire disk with %1 and install %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Smazat celý disk s %1 a nainstalovat %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Varování: &lt;/font&gt;Toto vymaže celý disk a smaže všechny %1 programy, dokumenty, fotky, hudbu a ostatní soubory. &lt;b&gt;Není vhodné pro instalace UEFI&lt;/b&gt;</translation>
+        <source>&lt;strong&gt;Erase entire disk with %1 and install %2&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files. &lt;strong&gt;Not suitable for UEFI installs&lt;/strong&gt;</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="167"/>
+        <source>&lt;strong&gt;Replace a partition with %1&lt;/strong&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;strong&gt;Not suitable for UEFI installs&lt;/strong&gt; </source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="176"/>
@@ -501,9 +496,34 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
         <translation>Na tomto počítači již existuje operační systém. Co si přejete udělat?</translation>
     </message>
     <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="179"/>
+        <source>&lt;strong&gt;Install %1 alongside your current operating system&lt;/strong&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;strong&gt;WARNING: not an option for UEFI installs&lt;/strong&gt;</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="198"/>
+        <source>&lt;b&gt;Replace a partition with %1&lt;/strong&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;strong&gt;Not suitable for UEFI installs&lt;/strong&gt; </source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="223"/>
         <source>This computer currently has multiple operating systems on it. What would you like to do?</source>
         <translation>Na tomto počítači je několik operačních systému. Co si přejete udělat?</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="226"/>
+        <source>&lt;strong&gt;Install %1 alongside your current operating systems&lt;/strong&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;strong&gt;WARNING: not an option for UEFI installs&lt;/strong&gt;</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="245"/>
+        <source>&lt;strong&gt;Replace a partition with %1&lt;/strong&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;strong&gt;Not suitable for UEFI installs&lt;/strong&gt;</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="261"/>
+        <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;, either use an existing without formatting or create one.</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -888,32 +908,36 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     <name>CreatePartitionJob</name>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="48"/>
-        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="58"/>
-        <source>Create new &lt;b&gt;%2MB&lt;/b&gt; partition on &lt;b&gt;%3&lt;/b&gt; with file system %1.</source>
+        <source>Create new %2MB partition on %4 (%3) with file system %1.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="71"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="59"/>
+        <source>Create new &lt;strong&gt;%2MB&lt;/strong&gt; partition on &lt;strong&gt;%4&lt;/strong&gt; (%3) with file system &lt;strong&gt;%1&lt;/strong&gt;.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="74"/>
         <source>The installer failed to create partition on disk &apos;%1&apos;.</source>
         <translation>Instalátoru se nepodařilo vytvořit oddíl na disku &apos;%1&apos;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="80"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="83"/>
         <source>Could not open device &apos;%1&apos;.</source>
         <translation>Nepodařilo se otevřít zařízení &apos;%1&apos;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="90"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="93"/>
         <source>Could not open partition table.</source>
         <translation>Nepodařilo se otevřít tabulku oddílů.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="114"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="117"/>
         <source>The installer failed to create file system on partition %1.</source>
         <translation>Instalátoru se nepodařilo vytvořit souborový systém na disku &apos;%1&apos;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="122"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="125"/>
         <source>The installer failed to update partition table on disk &apos;%1&apos;.</source>
         <translation>Instalátoru se nepodařilo aktualizovat oddíl na disku &apos;%1&apos;.</translation>
     </message>
@@ -950,21 +974,21 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     <name>CreatePartitionTableJob</name>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="49"/>
-        <source>Create partition table</source>
-        <translation>Vytvořit tabulku oddílů</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="54"/>
         <source>Create new %1 partition table on %2.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="63"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="56"/>
+        <source>Create new &lt;strong&gt;%1&lt;/strong&gt; partition table on &lt;strong&gt;%2&lt;/strong&gt; (%3).</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="66"/>
         <source>The installer failed to create a partition table on %1.</source>
         <translation>Instalátoru se nepodařilo vytvořit tabulku oddílů na disku &apos;%1&apos;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="71"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="74"/>
         <source>Could not open device %1.</source>
         <translation>Nepodařilo se otevřít zařízení %1.</translation>
     </message>
@@ -1076,27 +1100,27 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="49"/>
-        <source>Delete partition &lt;b&gt;%1&lt;/b&gt;.</source>
+        <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="50"/>
+        <source>Delete partition &lt;strong&gt;%1&lt;/strong&gt;.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="56"/>
+        <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="58"/>
         <source>The installer failed to delete partition %1.</source>
         <translation>Instalátoru se nepodařilo smazat oddíl %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="62"/>
+        <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="64"/>
         <source>Partition (%1) and device (%2) do not match.</source>
         <translation>Oddíl (%1) a zařízení (%2) se neshodují.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="74"/>
+        <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="76"/>
         <source>Could not open device %1.</source>
         <translation>Nepodařilo se otevřít zařízení %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="83"/>
+        <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="85"/>
         <source>Could not open partition table.</source>
         <translation>Nepodařilo se otevřít tabulku oddílů.</translation>
     </message>
@@ -1423,12 +1447,37 @@ Některé souborové systémy vyžadují instalaci externích nástrojů. Jisté
 <context>
     <name>FillGlobalStorageJob</name>
     <message>
-        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="75"/>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="77"/>
         <source>Set partition information</source>
         <translation>Nastavit informace o oddílu</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="85"/>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="100"/>
+        <source>Install %1 on &lt;strong&gt;new&lt;/strong&gt; %2 system partition.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="105"/>
+        <source>Set up &lt;strong&gt;new&lt;/strong&gt; %2 partition with mount point &lt;strong&gt;%1&lt;/strong&gt;.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="113"/>
+        <source>Install %2 on %3 system partition &lt;strong&gt;%1&lt;/strong&gt;.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="119"/>
+        <source>Set up %3 partition &lt;strong&gt;%1&lt;/strong&gt; with mount point &lt;strong&gt;%2&lt;/strong&gt;.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="131"/>
+        <source>Install boot loader on &lt;strong&gt;%1&lt;/strong&gt;.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="144"/>
         <source>Failed to find path for boot loader</source>
         <translation>Nepodařilo se najít cestu pro zavaděč</translation>
     </message>
@@ -1468,31 +1517,31 @@ Některé souborové systémy vyžadují instalaci externích nástrojů. Jisté
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="59"/>
-        <source>Format &lt;b&gt;%3MB&lt;/b&gt; partition &lt;b&gt;%1&lt;/b&gt; with file system &lt;b&gt;%2&lt;/b&gt;.</source>
+        <source>Format &lt;strong&gt;%3MB&lt;/strong&gt; partition &lt;strong&gt;%1&lt;/strong&gt; with file system &lt;strong&gt;%2&lt;/strong&gt;.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="70"/>
+        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="71"/>
         <source>The installer failed to format partition %1 on disk &apos;%2&apos;.</source>
         <translation>Instalátoru se nepodařilo zormátovat oddíl %1 na disku &apos;%2&apos;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="78"/>
+        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="79"/>
         <source>Could not open device &apos;%1&apos;.</source>
         <translation>Nepodařilo se otevřít zařízení &apos;%1&apos;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="87"/>
+        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="88"/>
         <source>Could not open partition table.</source>
         <translation>Nepodařilo se otevřít tabulku oddílů.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="95"/>
+        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="96"/>
         <source>The installer failed to create file system on partition %1.</source>
         <translation>Instalátoru se nepodařilo vytvořit souborový systém na disku %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="103"/>
+        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="104"/>
         <source>The installer failed to update partition table on disk &apos;%1&apos;.</source>
         <translation>Instalátoru se nepodařilo aktualizovat tabulku oddílů na disku &apos;%1&apos;.</translation>
     </message>
@@ -1536,7 +1585,7 @@ Některé souborové systémy vyžadují instalaci externích nástrojů. Jisté
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="150"/>
-        <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technologies for a better world.</source>
+        <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technologies for a better world.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1583,8 +1632,8 @@ Některé souborové systémy vyžadují instalaci externích nástrojů. Jisté
     </message>
     <message>
         <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="40"/>
-        <source>The system locale setting affects the language and character set for some command line user interface elements.&lt;br/&gt;The current setting is &lt;b&gt;%1&lt;/b&gt;.</source>
-        <translation>Nastavení jazyka systému ovlivní jazyk a znakovou sadu u některých prvků uživatelského rozhraní pro příkazový řádek.&lt;br/&gt;Nynější nastavení je &lt;b&gt;%1&lt;/b&gt;.</translation>
+        <source>The system locale setting affects the language and character set for some command line user interface elements.&lt;br/&gt;The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -2057,7 +2106,7 @@ Některé souborové systémy vyžadují instalaci externích nástrojů. Jisté
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="187"/>
-        <source>Disk &lt;b&gt;%1&lt;/b&gt; (%2)</source>
+        <source>Disk &lt;strong&gt;%1&lt;/strong&gt; (%2)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2330,13 +2379,13 @@ Instalace může pokračovat, ale některé funkce mohou být zakázány.</trans
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="206"/>
-        <source>&lt;b&gt;%4&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;The partition %1 is too small for %2. Please select a partition with capacity at least %3 GiB.</source>
-        <translation>&lt;b&gt;%4&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Oddíl %1 je pro %2 příliš malý. Vyberte, prosím, oddíl s kapacitou alespoň %3 GiB.</translation>
+        <source>&lt;strong&gt;%4&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;The partition %1 is too small for %2. Please select a partition with capacity at least %3 GiB.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="220"/>
-        <source>&lt;b&gt;%3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;%1 will be installed on %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;all data on partition%2 will be lost.</source>
-        <translation>&lt;b&gt;%3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;%1 bude nainstalován na %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Varování: &lt;/font&gt;Všchna data na oddílu %2 budou ztracena.</translation>
+        <source>&lt;strong&gt;%3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;%1 will be installed on %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;all data on partition%2 will be lost.</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -2366,17 +2415,17 @@ Instalace může pokračovat, ale některé funkce mohou být zakázány.</trans
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="194"/>
-        <source>Resize &lt;b&gt;%2MB&lt;/b&gt; partition &lt;b&gt;%1&lt;/b&gt; to &lt;b&gt;%3MB&lt;/b&gt;.</source>
+        <source>Resize &lt;strong&gt;%2MB&lt;/strong&gt; partition &lt;strong&gt;%1&lt;/strong&gt; to &lt;strong&gt;%3MB&lt;/strong&gt;.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="219"/>
-        <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="277"/>
+        <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="220"/>
+        <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="278"/>
         <source>The installer failed to resize partition %1 on disk &apos;%2&apos;.</source>
         <translation>Instalátoru se nepodařilo změnit velikost oddílu %1 na disku &apos;%2&apos;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="224"/>
+        <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="225"/>
         <source>Could not open device &apos;%1&apos;.</source>
         <translation>Nepodařilo se otevřít zařízení &apos;%1&apos;.</translation>
     </message>

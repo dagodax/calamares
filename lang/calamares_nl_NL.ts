@@ -13,8 +13,8 @@
     </message>
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="167"/>
-        <source>With this operation, the partition &lt;b&gt;%1&lt;/b&gt; which contains %4 will be shrunk to %2MB and a new %3MB partition will be created for %5. &lt;font color=&quot;red&quot;&gt;Do not use for UEFI. &lt;/font&gt;</source>
-        <translation>Na deze actie zal partitie &lt;b&gt;%1&lt;/b&gt;, die %4 bevat, verkleind zijn tot %2MB en zal een nieuwe partitie van %3MB aangemaakt worden voor %5.&lt;font color=&quot;red&quot;&gt;Niet voor UEFI gebruiken. &lt;/font&gt;</translation>
+        <source>With this operation, the partition &lt;strong&gt;%1&lt;/strong&gt; which contains %4 will be shrunk to %2MB and a new %3MB partition will be created for %5. &lt;font color=&quot;red&quot;&gt;Do not use for UEFI. &lt;/font&gt;</source>
+        <translation>Na deze actie zal partitie &lt;strong&gt;%1&lt;/strong&gt;, die %4 bevat, verkleind zijn tot %2MB en zal een nieuwe partitie van %3MB aangemaakt worden voor %5.&lt;font color=&quot;red&quot;&gt;Niet voor UEFI gebruiken. &lt;/font&gt;</translation>
     </message>
 </context>
 <context>
@@ -336,45 +336,65 @@ Uitvoer:
 <context>
     <name>Calamares::ViewManager</name>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="64"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="66"/>
         <source>&amp;Back</source>
         <translation>&amp;Terug</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="65"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="67"/>
         <source>&amp;Next</source>
         <translation>&amp;Volgende</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="66"/>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="302"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="68"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="330"/>
         <source>&amp;Cancel</source>
         <translation>&amp;Annuleren</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="86"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="88"/>
         <source>Cancel installation?</source>
         <translation>Installatie annuleren?</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="87"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="89"/>
         <source>Do you really want to cancel the current install process?
 The installer will quit and all changes will be lost.</source>
         <translation>Wil je echt de huidige installatie proces annuleren?
 Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="272"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="252"/>
+        <source>Continue with setup?</source>
+        <translation>Doorgaan met setup?</translation>
+    </message>
+    <message>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="253"/>
+        <source>The %1 installer is about to make changes to your disk in order to install %2.&lt;br/&gt;&lt;strong&gt;You will not be able to undo these changes.&lt;/strong&gt;</source>
+        <translation>Het %1 installeer programma zal nu wijzigingen in je schijf maken om% 2 te installeren.&lt;br/&gt;&lt;strong&gt;Je zult niet in staat zijn om deze veranderingen ongedaan te maken. .&lt;/strong&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="260"/>
+        <source>&amp;Install now</source>
+        <translation>&amp;Nu installeren</translation>
+    </message>
+    <message>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="261"/>
+        <source>Go &amp;back</source>
+        <translation>Ga &amp;terug</translation>
+    </message>
+    <message>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="300"/>
         <source>&amp;Quit</source>
         <translation>&amp;Afsluiten</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="183"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="185"/>
         <source>Error</source>
         <translation>Fout</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="184"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="186"/>
         <source>Installation Failed</source>
         <translation>Installatie Mislukt</translation>
     </message>
@@ -436,64 +456,39 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
         <translation>Deze computer lijkt geen besturingssysteem te bevatten. Wat wil je doen?</translation>
     </message>
     <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="141"/>
+        <source>This computer currently has %1 on it. What would you like to do?</source>
+        <translation>Deze computer bevat momenteel %1. Wat wil je doen?</translation>
+    </message>
+    <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="119"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="187"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="234"/>
-        <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Wis schijf en installeer %1&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Opgelet: &lt;/font&gt;Dit zal alle programma&apos;s, documenten, foto&apos;s, muziek en alle andere bestanden wissen. &lt;b&gt; Niet geschikt voor UEFI installaties&lt;/b&gt;</translation>
+        <source>&lt;strong&gt;Erase disk and install %1&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your programs, documents, photos, music, and any other files. &lt;strong&gt;Not suitable for UEFI installs&lt;/strong&gt;</source>
+        <translation>&lt;strong&gt;Wis schijf en installeer %1&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Opgelet: &lt;/font&gt;Dit zal alle programma&apos;s, documenten, foto&apos;s, muziek en alle andere bestanden wissen. &lt;strong&gt; Niet geschikt voor UEFI installaties&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="125"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="162"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="193"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="240"/>
-        <source>&lt;b&gt;Erase disk and install %1&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which disk to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Wis schijf en installeer %1&lt;/b&gt;&lt;br/&gt;Er zal een keuze worden aangeboden van welke schijf te wissen. &lt;b&gt; Niet geschikt voor UEFI installaties&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="141"/>
-        <source>This computer currently has %1 on it. What would you like to do?</source>
-        <translation>Deze computer bevat momenteel %1. Wat wil je doen?</translation>
+        <source>&lt;strong&gt;Erase disk and install %1&lt;/strong&gt;&lt;br/&gt;You will be offered a choice of which disk to erase. &lt;strong&gt;Not suitable for UEFI installs&lt;/strong&gt;</source>
+        <translation>&lt;strong&gt;Wis schijf en installeer %1&lt;/strong&gt;&lt;br/&gt;Er zal een keuze worden aangeboden van welke schijf te wissen. &lt;strong&gt; Niet geschikt voor UEFI installaties&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="145"/>
-        <source>&lt;b&gt;Install %2 alongside %1&lt;/b&gt;&lt;br/&gt;The installer will shrink the %1 volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Installeer %2 naast %1&lt;/b&gt;&lt;br\&gt;Het installatie programma zal de %1 volume inkrimpen om ruimte te maken voor %2 . Telkens als de computer opstart kun je kiezen welk besturingssysteem je wilt gebruiken.  &lt;b&gt; WAARSCHUWING:  niet een optie voor UEFI installaties&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="167"/>
-        <source>&lt;b&gt;Replace a partition with %1&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
-        <translation>&lt;b&gt;Vervang een partitie met % 1&lt;/b&gt;&lt;br/&gt;Er zal een keuze worden aangeboden van welke schijf te wissen. &lt;b&gt; Niet geschikt voor UEFI installaties&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="179"/>
-        <source>&lt;b&gt;Install %1 alongside your current operating system&lt;/b&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Installeer %1 naast je huidige besturingssysteem&lt;/b&gt;&lt;br/&gt;Het installatie programma zal een bestaande volume inkrimpen om ruimte te maken voor %2. Telkens als de computer opstart kun je kiezen welk besturingssysteem je wilt gebruiken.  &lt;b&gt;WAARSCUWING: geen optie voor UEFI installaties&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="198"/>
-        <source>&lt;b&gt;Replace a partition with %1&lt;&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt; </source>
-        <translation>&lt;b&gt;Vervang een partitie met % 1&lt;/b&gt;&lt;br/&gt;Er zal een keuze worden aangeboden van welke schijf te wissen. &lt;b&gt; Niet geschikt voor UEFI installaties&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="226"/>
-        <source>&lt;b&gt;Install %1 alongside your current operating systems&lt;/b&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;b&gt;WARNING: not an option for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Installeer %1 naast  je huidige besturings systemen&lt;/b&gt;&lt;br\&gt;Het installatie programma zal een bestaande volume inkrimpen om ruimte te maken voor %2 . Telkens als de computer opstart kun je kiezen welk besturingssysteem je wilt gebruiken.  &lt;b&gt; WAARSCHUWING:  niet een optie voor UEFI installaties&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="245"/>
-        <source>&lt;b&gt;Replace a partition with %1&lt;/b&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Vervang een partitie met % 1&lt;/b&gt;&lt;br/&gt;Er zal een keuze worden aangeboden van welke schijf te wissen. &lt;b&gt; Niet geschikt voor UEFI installaties&lt;/b&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="261"/>
-        <source>&lt;b&gt;Manual partitioning&lt;/b&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a GPT partition table and &lt;b&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/b&gt;, either use an existing without formatting or create one.</source>
-        <translation>&lt;b&gt;Handmatige partitionering&lt;/b&gt;&lt;br/&gt;Je kunt partities zelf creeren of aanpassen, of kies meerdere partities voor %1.  Kies deze opties for UEFI installaties, het hebben van een GPT partitietabel en &lt;b&gt;fat32 512Mb /boot partitie is een must voor UEFI installaties&lt;/b&gt;, ofwel gebruik maken van een bestaande, zonder formatteren of creeer.</translation>
+        <source>&lt;strong&gt;Install %2 alongside %1&lt;/strong&gt;&lt;br/&gt;The installer will shrink the %1 volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;strong&gt;WARNING: not an option for UEFI installs&lt;/strong&gt;</source>
+        <translation>&lt;strong&gt;Installeer %2 naast %1&lt;/strong&gt;&lt;br\&gt;Het installatie programma zal de %1 volume inkrimpen om ruimte te maken voor %2 . Telkens als de computer opstart kun je kiezen welk besturingssysteem je wilt gebruiken.  &lt;strong&gt; WAARSCHUWING:  niet een optie voor UEFI installaties&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="154"/>
-        <source>&lt;b&gt;Erase entire disk with %1 and install %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files. &lt;b&gt;Not suitable for UEFI installs&lt;/b&gt;</source>
-        <translation>&lt;b&gt;Vervang %1 door %2&lt;/b&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Opgelet: &lt;/font&gt;Dit zal de volledige schijf wissen, en dus ook alle %1 programma&apos;s, documenten, foto&apos;s, muziek en andere bestanden.  &lt;b&gt;Niet geschikt voor UEFI installaties&lt;/b&gt;</translation>
+        <source>&lt;strong&gt;Erase entire disk with %1 and install %2&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files. &lt;strong&gt;Not suitable for UEFI installs&lt;/strong&gt;</source>
+        <translation>&lt;strong&gt;Vervang %1 door %2&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Opgelet: &lt;/font&gt;Dit zal de volledige schijf wissen, en dus ook alle %1 programma&apos;s, documenten, foto&apos;s, muziek en andere bestanden.  &lt;strong&gt;Niet geschikt voor UEFI installaties&lt;/strong&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="167"/>
+        <source>&lt;strong&gt;Replace a partition with %1&lt;/strong&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;strong&gt;Not suitable for UEFI installs&lt;/strong&gt; </source>
+        <translation>&lt;strong&gt;Vervang een partitie met % 1&lt;/strong&gt;&lt;br/&gt;Er zal een keuze worden aangeboden van welke schijf te wissen. &lt;strong&gt; Niet geschikt voor UEFI installaties&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="176"/>
@@ -501,9 +496,34 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
         <translation>Deze computer bevat reeds een besturingssysteem. Wat wil je doen?</translation>
     </message>
     <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="179"/>
+        <source>&lt;strong&gt;Install %1 alongside your current operating system&lt;/strong&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;strong&gt;WARNING: not an option for UEFI installs&lt;/strong&gt;</source>
+        <translation>&lt;strong&gt;Installeer %1 naast je huidige besturingssysteem&lt;/strong&gt;&lt;br/&gt;Het installatie programma zal een bestaande volume inkrimpen om ruimte te maken voor %2. Telkens als de computer opstart kun je kiezen welk besturingssysteem je wilt gebruiken.  &lt;strong&gt;WAARSCUWING: geen optie voor UEFI installaties&lt;/strong&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="198"/>
+        <source>&lt;b&gt;Replace a partition with %1&lt;/strong&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;strong&gt;Not suitable for UEFI installs&lt;/strong&gt; </source>
+        <translation>&lt;strong&gt;Vervang een partitie met % 1&lt;/strong&gt;&lt;br/&gt;Er zal een keuze worden aangeboden van welke schijf te wissen. &lt;strong&gt; Niet geschikt voor UEFI installaties&lt;/strong&gt;</translation>
+    </message>
+    <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="223"/>
         <source>This computer currently has multiple operating systems on it. What would you like to do?</source>
         <translation>Deze computer bevat meerdere besturingssystemen.  Wat wil je doen?</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="226"/>
+        <source>&lt;strong&gt;Install %1 alongside your current operating systems&lt;/strong&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;strong&gt;WARNING: not an option for UEFI installs&lt;/strong&gt;</source>
+        <translation>&lt;strong&gt;Installeer %1 naast  je huidige besturings systemen&lt;/strong&gt;&lt;br\&gt;Het installatie programma zal een bestaande volume inkrimpen om ruimte te maken voor %2 . Telkens als de computer opstart kun je kiezen welk besturingssysteem je wilt gebruiken.  &lt;strong&gt; WAARSCHUWING:  niet een optie voor UEFI installaties&lt;/strong&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="245"/>
+        <source>&lt;strong&gt;Replace a partition with %1&lt;/strong&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;strong&gt;Not suitable for UEFI installs&lt;/strong&gt;</source>
+        <translation>&lt;strong&gt;Vervang een partitie met % 1&lt;/strong&gt;&lt;br/&gt;Er zal een keuze worden aangeboden van welke schijf te wissen. &lt;strong&gt; Niet geschikt voor UEFI installaties&lt;/strong&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="261"/>
+        <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;, either use an existing without formatting or create one.</source>
+        <translation>&lt;strong&gt;Handmatige partitionering&lt;/strong&gt;&lt;br/&gt;Je kunt partities zelf creeren of aanpassen, of kies meerdere partities voor %1.  Kies deze opties for UEFI installaties, het hebben van een GPT partitietabel en &lt;strong&gt;fat32 512Mb /boot partitie is een must voor UEFI installaties&lt;/strong&gt;, ofwel gebruik maken van een bestaande, zonder formatteren of creeer.</translation>
     </message>
 </context>
 <context>
@@ -888,32 +908,36 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
     <name>CreatePartitionJob</name>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="48"/>
-        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="58"/>
-        <source>Create new &lt;b&gt;%2MB&lt;/b&gt; partition on &lt;b&gt;%3&lt;/b&gt; with file system %1.</source>
-        <translation>Maak een nieuwe &lt;b&gt;% 2MB&lt;/ b&gt; partitie op &lt;b&gt;% 3 &lt;/ b&gt; met bestandssysteem% 1.</translation>
+        <source>Create new %2MB partition on %4 (%3) with file system %1.</source>
+        <translation>Maak een nieuwe %2MB partitie oo %4 (%3) met bestandssysteem %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="71"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="59"/>
+        <source>Create new &lt;strong&gt;%2MB&lt;/strong&gt; partition on &lt;strong&gt;%4&lt;/strong&gt; (%3) with file system &lt;strong&gt;%1&lt;/strong&gt;.</source>
+        <translation>Maak een nieuwe &lt;strong&gt;% 2MB&lt;/ strong&gt; partitie op &lt;strong&gt;% 4 &lt;/ strong&gt; (%3) met bestandssysteem &lt;strong&gt;%1&lt;/strong&gt;.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="74"/>
         <source>The installer failed to create partition on disk &apos;%1&apos;.</source>
         <translation>Het installatieprogramma kon geen partitie aanmaken op schijf &apos;%1&apos;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="80"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="83"/>
         <source>Could not open device &apos;%1&apos;.</source>
         <translation>Kan apparaat %1 niet openen.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="90"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="93"/>
         <source>Could not open partition table.</source>
         <translation>Kon partitietabel niet open</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="114"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="117"/>
         <source>The installer failed to create file system on partition %1.</source>
         <translation>Het installatieprogramma kon geen bestandssysteem aanmaken op partitie %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="122"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="125"/>
         <source>The installer failed to update partition table on disk &apos;%1&apos;.</source>
         <translation>Het installatieprogramma kon de partitietabel op schijf &apos;%1&apos; niet bijwerken .</translation>
     </message>
@@ -950,21 +974,21 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
     <name>CreatePartitionTableJob</name>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="49"/>
-        <source>Create partition table</source>
-        <translation>Maak partitietabel</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="54"/>
         <source>Create new %1 partition table on %2.</source>
         <translation>Maak een nieuwe %1 partitietabel op %2.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="63"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="56"/>
+        <source>Create new &lt;strong&gt;%1&lt;/strong&gt; partition table on &lt;strong&gt;%2&lt;/strong&gt; (%3).</source>
+        <translation>Maak een nieuwe &lt;strong&gt;%1&lt;/strong&gt; partitietabel op &lt;strong&gt;%2&lt;/strong&gt; (%3).</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="66"/>
         <source>The installer failed to create a partition table on %1.</source>
         <translation>Het installatieprogramma kon geen partitietabel aanmaken op %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="71"/>
+        <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="74"/>
         <source>Could not open device %1.</source>
         <translation>Kon apparaat %1 niet openen.</translation>
     </message>
@@ -1076,27 +1100,27 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
         <translation>Verwijder partitie %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="49"/>
-        <source>Delete partition &lt;b&gt;%1&lt;/b&gt;.</source>
-        <translation>Verwijder partitie &lt;b&gt;%1&lt;/b&gt;.</translation>
+        <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="50"/>
+        <source>Delete partition &lt;strong&gt;%1&lt;/strong&gt;.</source>
+        <translation>Verwijder partitie &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="56"/>
+        <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="58"/>
         <source>The installer failed to delete partition %1.</source>
         <translation>Het installatieprogramma kon partitie %1 niet verwijderen.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="62"/>
+        <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="64"/>
         <source>Partition (%1) and device (%2) do not match.</source>
         <translation>Partitie (%1) en apparaat (%2) komen niet overeen.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="74"/>
+        <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="76"/>
         <source>Could not open device %1.</source>
         <translation>Kon apparaat %1 niet openen.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="83"/>
+        <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="85"/>
         <source>Could not open partition table.</source>
         <translation>Kon de partitietabel niet openen.</translation>
     </message>
@@ -1423,12 +1447,37 @@ Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd wo
 <context>
     <name>FillGlobalStorageJob</name>
     <message>
-        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="75"/>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="77"/>
         <source>Set partition information</source>
         <translation>Instellen partitie-informatie</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="85"/>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="100"/>
+        <source>Install %1 on &lt;strong&gt;new&lt;/strong&gt; %2 system partition.</source>
+        <translation>Installeer %1 op &lt;strong&gt;nieuw&lt;/strong&gt; %2 systeem partitie.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="105"/>
+        <source>Set up &lt;strong&gt;new&lt;/strong&gt; %2 partition with mount point &lt;strong&gt;%1&lt;/strong&gt;.</source>
+        <translation>Set up &lt;strong&gt;nieuwe&lt;/strong&gt; %2 partitie met aanknopingspunt &lt;strong&gt;%1&lt;/strong&gt;.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="113"/>
+        <source>Install %2 on %3 system partition &lt;strong&gt;%1&lt;/strong&gt;.</source>
+        <translation>Installeer %2 op %3 systeem partitie &lt;strong&gt;%1&lt;/strong&gt;.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="119"/>
+        <source>Set up %3 partition &lt;strong&gt;%1&lt;/strong&gt; with mount point &lt;strong&gt;%2&lt;/strong&gt;.</source>
+        <translation>Set up %3 partitie &lt;strong&gt;%1&lt;/strong&gt; met aanknopingspunt &lt;strong&gt;%2&lt;/strong&gt;.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="131"/>
+        <source>Install boot loader on &lt;strong&gt;%1&lt;/strong&gt;.</source>
+        <translation>Installeer de boot loader op </translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="144"/>
         <source>Failed to find path for boot loader</source>
         <translation>Kan geen pad voor bootloader vinden</translation>
     </message>
@@ -1468,31 +1517,31 @@ Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd wo
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="59"/>
-        <source>Format &lt;b&gt;%3MB&lt;/b&gt; partition &lt;b&gt;%1&lt;/b&gt; with file system &lt;b&gt;%2&lt;/b&gt;.</source>
-        <translation>Formatteer &lt;b&gt;%3MB&lt;/b&gt; partitie &lt;b&gt;%1&lt;/b&gt; met bestandssysteem &lt;b&gt;%2&lt;/b&gt;.</translation>
+        <source>Format &lt;strong&gt;%3MB&lt;/strong&gt; partition &lt;strong&gt;%1&lt;/strong&gt; with file system &lt;strong&gt;%2&lt;/strong&gt;.</source>
+        <translation>Formatteer &lt;strong&gt;%3MB&lt;/strong&gt; partitie &lt;strong&gt;%1&lt;/strong&gt; met bestandssysteem &lt;strong&gt;%2&lt;/strong&gt;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="70"/>
+        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="71"/>
         <source>The installer failed to format partition %1 on disk &apos;%2&apos;.</source>
         <translation>Installatieprogramma heeft gefaald om partitie %1 te formateren op schijf %2.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="78"/>
+        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="79"/>
         <source>Could not open device &apos;%1&apos;.</source>
         <translation>Kan apparaat &apos;%1&apos; niet openen.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="87"/>
+        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="88"/>
         <source>Could not open partition table.</source>
         <translation>Kan de partitietabel niet openen.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="95"/>
+        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="96"/>
         <source>The installer failed to create file system on partition %1.</source>
         <translation>Installatieprogramma heeft gefaald om een bestandsysteem te creëren op partitie %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="103"/>
+        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="104"/>
         <source>The installer failed to update partition table on disk &apos;%1&apos;.</source>
         <translation>Installatieprogramma heeft gefaald om de partitietabel bij te werken op schijf &apos;%1&apos;.</translation>
     </message>
@@ -1536,8 +1585,8 @@ Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd wo
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="150"/>
-        <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technologies for a better world.</source>
-        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;b&gt;%2&lt;br/&gt;for %3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &lt;teo@kde.org&gt;&lt;br/&gt;Met dank aan: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini en Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; ontwikkeling wordt gesponsored door &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technieken voor een betere wereld.</translation>
+        <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technologies for a better world.</source>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&gt;&lt;br/&gt;Met dank aan: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini en Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.github.io/&quot;&gt;Calamares&lt;/a&gt; ontwikkeling wordt gesponsored door &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - technieken voor een betere wereld.</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="180"/>
@@ -1583,8 +1632,8 @@ Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd wo
     </message>
     <message>
         <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="40"/>
-        <source>The system locale setting affects the language and character set for some command line user interface elements.&lt;br/&gt;The current setting is &lt;b&gt;%1&lt;/b&gt;.</source>
-        <translation>De instelling systeem locale heeft invloed op de taal en tekenset voor sommige command line interface-elementen.&lt;br/&gt;De huidige instelling is &lt;b&gt;%1&lt;/b&gt;.</translation>
+        <source>The system locale setting affects the language and character set for some command line user interface elements.&lt;br/&gt;The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
+        <translation>De instelling systeem locale heeft invloed op de taal en tekenset voor sommige command line interface-elementen.&lt;br/&gt;De huidige instelling is &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
 </context>
 <context>
@@ -2057,8 +2106,8 @@ Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd wo
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="187"/>
-        <source>Disk &lt;b&gt;%1&lt;/b&gt; (%2)</source>
-        <translation>Schijf &lt;b&gt;%1&lt;/b&gt; (%2)</translation>
+        <source>Disk &lt;strong&gt;%1&lt;/strong&gt; (%2)</source>
+        <translation>Schijf &lt;strong&gt;%1&lt;/strong&gt; (%2)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="197"/>
@@ -2331,13 +2380,13 @@ is verbonden met het internet</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="206"/>
-        <source>&lt;b&gt;%4&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;The partition %1 is too small for %2. Please select a partition with capacity at least %3 GiB.</source>
-        <translation>&lt;b&gt;%4&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;De partitie %1 is te klein voor %2. Selecteer aub een partitie met een capaciteit van minimaal %3 GiB.</translation>
+        <source>&lt;strong&gt;%4&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;The partition %1 is too small for %2. Please select a partition with capacity at least %3 GiB.</source>
+        <translation>&lt;strong&gt;%4&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;De partitie %1 is te klein voor %2. Selecteer aub een partitie met een capaciteit van minimaal %3 GiB.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="220"/>
-        <source>&lt;b&gt;%3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;%1 will be installed on %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;all data on partition%2 will be lost.</source>
-        <translation>&lt;b&gt;%3&lt;/b&gt;&lt;br/&gt;&lt;br/&gt;%1 zal worden geinstallerd op %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Opgelet: &lt;/font&gt;alle data op partitie%2 zal verloren worden.</translation>
+        <source>&lt;strong&gt;%3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;%1 will be installed on %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;all data on partition%2 will be lost.</source>
+        <translation>&lt;strong&gt;%3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;%1 zal worden geinstallerd op %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Opgelet: &lt;/font&gt;alle data op partitie%2 zal verloren worden.</translation>
     </message>
 </context>
 <context>
@@ -2367,17 +2416,17 @@ is verbonden met het internet</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="194"/>
-        <source>Resize &lt;b&gt;%2MB&lt;/b&gt; partition &lt;b&gt;%1&lt;/b&gt; to &lt;b&gt;%3MB&lt;/b&gt;.</source>
-        <translation>Verander de groote van &lt;b&gt;%2MB&lt;/b&gt; partitie &lt;b&gt;%1&lt;/b&gt; naar &lt;b&gt;%3MB&lt;/b&gt;.</translation>
+        <source>Resize &lt;strong&gt;%2MB&lt;/strong&gt; partition &lt;strong&gt;%1&lt;/strong&gt; to &lt;strong&gt;%3MB&lt;/strong&gt;.</source>
+        <translation>Verander grootte &lt;strong&gt;%2MB&lt;/strong&gt; partitie &lt;strong&gt;%1&lt;/strong&gt; naar &lt;strong&gt;%3MB&lt;/strong&gt;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="219"/>
-        <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="277"/>
+        <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="220"/>
+        <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="278"/>
         <source>The installer failed to resize partition %1 on disk &apos;%2&apos;.</source>
         <translation>Installatieprogramma heeft gefaald in het aanpassen van de grootte van partitie %1 op schrijf %2.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="224"/>
+        <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="225"/>
         <source>Could not open device &apos;%1&apos;.</source>
         <translation>Kan apparaat &apos;%1&apos; niet openen.</translation>
     </message>
