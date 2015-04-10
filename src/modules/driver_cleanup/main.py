@@ -87,14 +87,6 @@ def run():
     print('cleaning up input drivers')
 
     xorg = open("/var/log/Xorg.0.log",  errors="surrogateescape").read()
-    if 'synaptics' in xorg:
-        print('synaptics in use')
-    else:
-        try:
-            libcalamares.utils.chroot_call(['pacman', '-Rncs', '--noconfirm',
-                                            'xf86-input-synaptics'])
-        except Exception as e:
-            pass
     if 'wacom' in xorg:
         print('wacom in use')
     else:
