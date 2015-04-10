@@ -116,14 +116,14 @@ ChoicePage::init( PartitionCoreModule* core, const OsproberEntryList& osproberEn
                                          "What would you like to do?" ) );
 
             if ( core->deviceModel()->rowCount() < 2 )
-                eraseButton->setText( tr( "<b>Erase disk and install %1</b><br/>"
+                eraseButton->setText( tr( "<strong>Erase disk and install %1</strong><br/>"
                                           "<font color=\"red\">Warning: </font>This will delete all of your programs, "
-                                          "documents, photos, music, and any other files. <b>Not suitable for UEFI installs</b>" )
+                                          "documents, photos, music, and any other files. <strong>Not suitable for UEFI installs</strong>" )
                                         .arg( Calamares::Branding::instance()->
                                               string( Calamares::Branding::ShortVersionedName ) ) );
             else
-                eraseButton->setText( tr( "<b>Erase disk and install %1</b><br/>"
-                                          "You will be offered a choice of which disk to erase. <b>Not suitable for UEFI installs</b>" )
+                eraseButton->setText( tr( "<strong>Erase disk and install %1</strong><br/>"
+                                          "You will be offered a choice of which disk to erase. <strong>Not suitable for UEFI installs</strong>" )
                                         .arg( Calamares::Branding::instance()->
                                               string( Calamares::Branding::ShortVersionedName ) ) );
         )
@@ -142,30 +142,30 @@ ChoicePage::init( PartitionCoreModule* core, const OsproberEntryList& osproberEn
                                              "What would you like to do?" )
                                             .arg( osName ) );
 
-                alongsideButton->setText( tr( "<b>Install %2 alongside %1</b><br/>"
+                alongsideButton->setText( tr( "<strong>Install %2 alongside %1</strong><br/>"
                                               "The installer will shrink the %1 volume to make room for %2. "
                                               "You can choose which operating system you want each time the "
-                                              "computer starts up.  <b>WARNING: not an option for UEFI installs</b>" )
+                                              "computer starts up.  <strong>WARNING: not an option for UEFI installs</strong>" )
                                             .arg( osName )
                                             .arg( Calamares::Branding::instance()->
                                                   string( Calamares::Branding::ShortVersionedName ) ) );
 
                 if ( core->deviceModel()->rowCount() < 2 )
-                    eraseButton->setText( tr( "<b>Erase entire disk with %1 and install %2</b><br/>"
+                    eraseButton->setText( tr( "<strong>Erase entire disk with %1 and install %2</strong><br/>"
                                               "<font color=\"red\">Warning: </font>This will erase the whole disk and "
                                               "delete all of your %1 programs, "
-                                              "documents, photos, music, and any other files. <b>Not suitable for UEFI installs</b>" )
+                                              "documents, photos, music, and any other files. <strong>Not suitable for UEFI installs</strong>" )
                                             .arg( osName )
                                             .arg( Calamares::Branding::instance()->
                                                   string( Calamares::Branding::VersionedName ) ) );
                 else
-                    eraseButton->setText( tr( "<b>Erase disk and install %1</b><br/>"
-                                              "You will be offered a choice of which disk to erase. <b>Not suitable for UEFI installs</b>" )
+                    eraseButton->setText( tr( "<strong>Erase disk and install %1</strong><br/>"
+                                              "You will be offered a choice of which disk to erase. <strong>Not suitable for UEFI installs</strong>" )
                                             .arg( Calamares::Branding::instance()->
                                                   string( Calamares::Branding::ShortVersionedName ) ) );
 
-                replaceButton->setText( tr( "<b>Replace a partition with %1</b><br/>"
-                                            "You will be offered a choice of which partition to erase. <b>Not suitable for UEFI installs</b> " )
+                replaceButton->setText( tr( "<strong>Replace a partition with %1</strong><br/>"
+                                            "You will be offered a choice of which partition to erase. <strong>Not suitable for UEFI installs</strong> " )
                                         .arg( Calamares::Branding::instance()->
                                               string( Calamares::Branding::ShortVersionedName ) ) );
             )
@@ -176,27 +176,27 @@ ChoicePage::init( PartitionCoreModule* core, const OsproberEntryList& osproberEn
                 m_messageLabel->setText( tr( "This computer already has an operating system on it. "
                                              "What would you like to do?" ) );
 
-                alongsideButton->setText( tr( "<b>Install %1 alongside your current operating system</b><br/>"
+                alongsideButton->setText( tr( "<strong>Install %1 alongside your current operating system</strong><br/>"
                                               "The installer will shrink an existing volume to make room for %2. "
                                               "You can choose which operating system you want each time the "
-                                              "computer starts up.  <b>WARNING: not an option for UEFI installs</b>" )
+                                              "computer starts up.  <strong>WARNING: not an option for UEFI installs</strong>" )
                                             .arg( Calamares::Branding::instance()->
                                                   string( Calamares::Branding::ShortVersionedName ) ) );
 
                 if ( core->deviceModel()->rowCount() < 2 )
-                    eraseButton->setText( tr( "<b>Erase disk and install %1</b><br/>"
+                    eraseButton->setText( tr( "<strong>Erase disk and install %1</strong><br/>"
                                               "<font color=\"red\">Warning: </font>This will delete all of your programs, "
-                                              "documents, photos, music, and any other files. <b>Not suitable for UEFI installs</b>" )
+                                              "documents, photos, music, and any other files. <strong>Not suitable for UEFI installs</strong>" )
                                             .arg( Calamares::Branding::instance()->
                                                   string( Calamares::Branding::ShortVersionedName ) ) );
                 else
-                    eraseButton->setText( tr( "<b>Erase disk and install %1</b><br/>"
-                                              "You will be offered a choice of which disk to erase. <b>Not suitable for UEFI installs</b>" )
+                    eraseButton->setText( tr( "<strong>Erase disk and install %1</strong><br/>"
+                                              "You will be offered a choice of which disk to erase. <strong>Not suitable for UEFI installs</strong>" )
                                             .arg( Calamares::Branding::instance()->
                                                   string( Calamares::Branding::ShortVersionedName ) ) );
 
-                replaceButton->setText( tr( "<b>Replace a partition with %1<</b><br/>"
-                                            "You will be offered a choice of which partition to erase. <b>Not suitable for UEFI installs</b> " )
+                replaceButton->setText( tr( "<b>Replace a partition with %1</strong><br/>"
+                                            "You will be offered a choice of which partition to erase. <strong>Not suitable for UEFI installs</strong> " )
                                         .arg( Calamares::Branding::instance()->
                                               string( Calamares::Branding::ShortVersionedName ) ) );
             )
@@ -223,27 +223,27 @@ ChoicePage::init( PartitionCoreModule* core, const OsproberEntryList& osproberEn
             m_messageLabel->setText( tr( "This computer currently has multiple operating systems on it. "
                                          "What would you like to do?" ) );
 
-            alongsideButton->setText( tr( "<b>Install %1 alongside your current operating systems</b><br/>"
+            alongsideButton->setText( tr( "<strong>Install %1 alongside your current operating systems</strong><br/>"
                                           "The installer will shrink an existing volume to make room for %2. "
                                           "You can choose which operating system you want each time the "
-                                          "computer starts up.  <b>WARNING: not an option for UEFI installs</b>" )
+                                          "computer starts up.  <strong>WARNING: not an option for UEFI installs</strong>" )
                                         .arg( Calamares::Branding::instance()->
                                               string( Calamares::Branding::ShortVersionedName ) ) );
 
             if ( core->deviceModel()->rowCount() < 2 )
-                eraseButton->setText( tr( "<b>Erase disk and install %1</b><br/>"
+                eraseButton->setText( tr( "<strong>Erase disk and install %1</strong><br/>"
                                           "<font color=\"red\">Warning: </font>This will delete all of your programs, "
-                                          "documents, photos, music, and any other files. <b>Not suitable for UEFI installs</b>" )
+                                          "documents, photos, music, and any other files. <strong>Not suitable for UEFI installs</strong>" )
                                         .arg( Calamares::Branding::instance()->
                                               string( Calamares::Branding::ShortVersionedName ) ) );
             else
-                eraseButton->setText( tr( "<b>Erase disk and install %1</b><br/>"
-                                          "You will be offered a choice of which disk to erase. <b>Not suitable for UEFI installs</b>" )
+                eraseButton->setText( tr( "<strong>Erase disk and install %1</strong><br/>"
+                                          "You will be offered a choice of which disk to erase. <strong>Not suitable for UEFI installs</strong>" )
                                         .arg( Calamares::Branding::instance()->
                                               string( Calamares::Branding::ShortVersionedName ) ) );
 
-            replaceButton->setText( tr( "<b>Replace a partition with %1</b><br/>"
-                                        "You will be offered a choice of which partition to erase. <b>Not suitable for UEFI installs</b>" )
+            replaceButton->setText( tr( "<strong>Replace a partition with %1</strong><br/>"
+                                        "You will be offered a choice of which partition to erase. <strong>Not suitable for UEFI installs</strong>" )
                                     .arg( Calamares::Branding::instance()->
                                           string( Calamares::Branding::ShortVersionedName ) ) );
         )
@@ -258,11 +258,11 @@ ChoicePage::init( PartitionCoreModule* core, const OsproberEntryList& osproberEn
 
     PrettyRadioButton* somethingElseButton = new PrettyRadioButton;
     CALAMARES_RETRANSLATE(
-        somethingElseButton->setText( tr( "<b>Manual partitioning</b><br/>"
+        somethingElseButton->setText( tr( "<strong>Manual partitioning</strong><br/>"
                                           "You can create or resize partitions yourself, or choose "
                                           "multiple partitions for %1."
-                                          "  Use this option for UEFI installs, having a GPT partition table and <b>fat32 512Mb /boot partition"
-                                          " is a must for UEFI installs</b>, either use an existing without formatting or create one." )
+                                          "  Use this option for UEFI installs, having a GPT partition table and <strong>fat32 512Mb /boot partition"
+                                          " is a must for UEFI installs</strong>, either use an existing without formatting or create one." )
                                         .arg( Calamares::Branding::instance()->
                                               string( Calamares::Branding::ShortVersionedName ) ) );
     )
