@@ -3,7 +3,7 @@ componentName:  kaos_branding
 
 strings:
     productName:         KaOS
-    shortProductname:    KaOS
+    shortProductName:    KaOS
     version:             2015.04
     shortVersion:        KaOS
     versionedName:       KaOS 2015.04
