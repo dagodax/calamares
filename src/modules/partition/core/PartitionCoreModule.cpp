@@ -26,7 +26,7 @@
 #include <core/PartitionModel.h>
 #include <core/PMUtils.h>
 #include <jobs/ClearMountsJob.h>
-#include <jobs/ClearTempMountsJob.h>
+//#include <jobs/ClearTempMountsJob.h>
 #include <jobs/CreatePartitionJob.h>
 #include <jobs/CreatePartitionTableJob.h>
 #include <jobs/DeletePartitionJob.h>
@@ -282,7 +282,7 @@ PartitionCoreModule::jobs() const
     QList< Calamares::job_ptr > lst;
     QList< Device* > devices;
 
-    lst << Calamares::job_ptr( new ClearTempMountsJob() );
+    //lst << Calamares::job_ptr( new ClearTempMountsJob() );
 
     for ( auto info : m_deviceInfos )
     {
