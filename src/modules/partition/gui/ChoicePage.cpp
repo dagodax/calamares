@@ -157,7 +157,7 @@ ChoicePage::init( PartitionCoreModule* core, const OsproberEntryList& osproberEn
                                               "documents, photos, music, and any other files. <strong>Not suitable for UEFI installs</strong>" )
                                             .arg( osName )
                                             .arg( Calamares::Branding::instance()->
-                                                  string( Calamares::Branding::VersionedName ) ) );
+                                                  string( Calamares::Branding::ShortVersionedName ) ) );
                 else
                     eraseButton->setText( tr( "<strong>Erase disk and install %1</strong><br/>"
                                               "You will be offered a choice of which disk to erase. <strong>Not suitable for UEFI installs</strong>" )
