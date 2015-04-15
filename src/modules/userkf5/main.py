@@ -68,7 +68,7 @@ def run():
         ('libre.sh', '.config/plasma-workspace/env/'),
         ('stylerc', '.config/qtcurve/'),
         ('katerc', '.config/'),
-        ('ksplashrc', '.config/'),
+        ('kcminputrc', '.config/'),
         ('plasmarc', '.config/'),
         ('plasmashellrc', '.config/'),
         ('rekonqrc', '.config/'),
