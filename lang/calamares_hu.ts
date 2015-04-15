@@ -366,7 +366,7 @@ Minden változtatás elveszik, ha kilépünk a telepítőből.</translation>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="252"/>
         <source>Continue with setup?</source>
-        <translation>Tovább lép a teleptőben ?</translation>
+        <translation>Tovább lépünk a telepítőben?</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="253"/>
@@ -376,12 +376,12 @@ Minden változtatás elveszik, ha kilépünk a telepítőből.</translation>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="260"/>
         <source>&amp;Install now</source>
-        <translation>&amp;Telepítse   most !</translation>
+        <translation>Telepítés most</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="261"/>
         <source>Go &amp;back</source>
-        <translation>&amp;Vissza</translation>
+        <translation>Vissza</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="300"/>
@@ -1097,7 +1097,7 @@ Minden változtatás elveszik, ha kilépünk a telepítőből.</translation>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="42"/>
         <source>Delete partition %1.</source>
-        <translation>Partíció törlés: %1</translation>
+        <translation>Partíció törlés %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="50"/>
