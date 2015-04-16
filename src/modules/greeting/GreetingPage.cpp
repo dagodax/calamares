@@ -157,7 +157,7 @@ GreetingPage::GreetingPage( QWidget* parent )
                                 "<a href=\"http://calamares.io/\">Calamares</a> "
                                 "development is sponsored by <br/>"
                                 "<a href=\"http://www.blue-systems.com/\">Blue Systems</a> - "
-                                "technologies for a better world."
+                                "Liberating Software."
                             )
                             .arg( CALAMARES_APPLICATION_NAME )
                             .arg( CALAMARES_VERSION )
