@@ -142,7 +142,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="469"/>
         <source>Summary</source>
-        <translation>Сажетак</translation>
+        <translation>Резиме</translation>
     </message>
     <message>
         <location filename="../src/calamares/CalamaresWindow.ui" line="514"/>
@@ -465,7 +465,7 @@ The installer will quit and all changes will be lost.</source>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="187"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="234"/>
         <source>&lt;strong&gt;Erase disk and install %1&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your programs, documents, photos, music, and any other files. &lt;strong&gt;Not suitable for UEFI installs&lt;/strong&gt;</source>
-        <translation>&lt;strong&gt;Обриши диск и инсталирај %1&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Упозорење: &lt;/font&gt;Ово ће обрисати све ваше програме, фотографије, музику и све друге фајлове. &lt;strong&gt;Није погодно за УЕФИ инсталације&lt;/strong&gt;</translation>
+        <translation>&lt;strong&gt;Обриши диск и инсталирај %1&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Упозорење: &lt;/font&gt;Ово ће обрисати све ваше програме, фотографије, музику и све друге фајлове.&lt;br/&gt;&lt;strong&gt;Није погодно за УЕФИ инсталације&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="125"/>
@@ -473,22 +473,22 @@ The installer will quit and all changes will be lost.</source>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="193"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="240"/>
         <source>&lt;strong&gt;Erase disk and install %1&lt;/strong&gt;&lt;br/&gt;You will be offered a choice of which disk to erase. &lt;strong&gt;Not suitable for UEFI installs&lt;/strong&gt;</source>
-        <translation>&lt;strong&gt;Обриши диск и инсталирај %1&lt;/strong&gt;&lt;br/&gt;Биће вам понуђен избор диска за брисање. &lt;strong&gt;Није погодно за УЕФИ инсталације&lt;/strong&gt;</translation>
+        <translation>&lt;strong&gt;Обриши диск и инсталирај %1&lt;/strong&gt;&lt;br/&gt;Биће вам понуђен избор диска за брисање.&lt;br/&gt;&lt;strong&gt;Није погодно за УЕФИ инсталације&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="145"/>
         <source>&lt;strong&gt;Install %2 alongside %1&lt;/strong&gt;&lt;br/&gt;The installer will shrink the %1 volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;strong&gt;WARNING: not an option for UEFI installs&lt;/strong&gt;</source>
-        <translation>&lt;strong&gt;Инсталирај %2 поред %1&lt;/strong&gt;&lt;br/&gt;Инсталатер ће скупити %1 партицију да направи места за %2. Моћи ћете да изаберете при сваком укључењу који оперативни систем желите да покренете  &lt;strong&gt;УПОЗОРЕЊЕ: није погодно за УЕФИ инсталације&lt;/strong&gt;</translation>
+        <translation>&lt;strong&gt;Инсталирај %2 поред %1&lt;/strong&gt;&lt;br/&gt;Инсталатер ће скупити %1 партицију да направи места за %2. Моћи ћете да изаберете при сваком укључењу који оперативни систем желите да покренете.&lt;br/&gt;&lt;strong&gt;УПОЗОРЕЊЕ: није погодно за УЕФИ инсталације&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="154"/>
         <source>&lt;strong&gt;Erase entire disk with %1 and install %2&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files. &lt;strong&gt;Not suitable for UEFI installs&lt;/strong&gt;</source>
-        <translation>&lt;strong&gt;Обриши цео диск са %1 и инсталирај %2&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Упозорење: &lt;/font&gt;Ово ће обрисати цео диск и %1 програме, фотографије, музику и све друге фајлове.&lt;strong&gt;Није погодно за УЕФИ инсталације&lt;/strong&gt;</translation>
+        <translation>&lt;strong&gt;Обриши цео диск са %1 и инсталирај %2&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Упозорење: &lt;/font&gt;Ово ће обрисати цео диск и %1 програме, фотографије, музику и све друге фајлове.&lt;br/&gt;&lt;strong&gt;Није погодно за УЕФИ инсталације&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="167"/>
         <source>&lt;strong&gt;Replace a partition with %1&lt;/strong&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;strong&gt;Not suitable for UEFI installs&lt;/strong&gt; </source>
-        <translation>&lt;strong&gt;Замени партицију са %1&lt;/strong&gt;&lt;br/&gt;Биће вам понуђено да изаберете коју партицију обрисати. &lt;strong&gt;Није погодно за УЕФИ инсталације&lt;/strong&gt; </translation>
+        <translation>&lt;strong&gt;Замени партицију са %1&lt;/strong&gt;&lt;br/&gt;Биће вам понуђено да изаберете коју партицију обрисати.&lt;br/&gt;&lt;strong&gt;Није погодно за УЕФИ инсталације&lt;/strong&gt; </translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="176"/>
@@ -498,12 +498,12 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="179"/>
         <source>&lt;strong&gt;Install %1 alongside your current operating system&lt;/strong&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;strong&gt;WARNING: not an option for UEFI installs&lt;/strong&gt;</source>
-        <translation>&lt;strong&gt;Инсталирај %1 поред тренутног оперативног система&lt;/strong&gt;&lt;br/&gt;Инсталатер ће скупити постојећу партицију да направи места за %2. Моћи ћете да изаберете при сваком укључењу који оперативни систем желите да покренете  &lt;strong&gt;УПОЗОРЕЊЕ: није погодно за УЕФИ инсталације&lt;/strong&gt;</translation>
+        <translation>&lt;strong&gt;Инсталирај %1 поред тренутног оперативног система&lt;/strong&gt;&lt;br/&gt;Инсталатер ће скупити постојећу партицију да направи места за %2. Моћи ћете да изаберете при сваком укључењу који оперативни систем желите да покренете.&lt;br/&gt;&lt;strong&gt;УПОЗОРЕЊЕ: није погодно за УЕФИ инсталације&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="198"/>
         <source>&lt;b&gt;Replace a partition with %1&lt;/strong&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;strong&gt;Not suitable for UEFI installs&lt;/strong&gt; </source>
-        <translation>&lt;b&gt;Замени партицију са %1&lt;/strong&gt;&lt;br/&gt;Биће вам понуђено да изаберете коју партицију обрисати. &lt;strong&gt;Није погодно за УЕФИ инсталације&lt;/strong&gt; </translation>
+        <translation>&lt;b&gt;Замени партицију са %1&lt;/strong&gt;&lt;br/&gt;Биће вам понуђено да изаберете коју партицију обрисати.&lt;br/&gt;&lt;strong&gt;Није погодно за УЕФИ инсталације&lt;/strong&gt; </translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="223"/>
@@ -513,12 +513,12 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="226"/>
         <source>&lt;strong&gt;Install %1 alongside your current operating systems&lt;/strong&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;strong&gt;WARNING: not an option for UEFI installs&lt;/strong&gt;</source>
-        <translation>&lt;strong&gt;Инсталирај %1 поред тренутних оперативних система&lt;/strong&gt;&lt;br/&gt;Инсталатер ће скупити постојећу партицију да направи места за %2. Моћи ћете да изаберете при сваком укључењу који оперативни систем желите да покренете  &lt;strong&gt;УПОЗОРЕЊЕ: није погодно за УЕФИ инсталације&lt;/strong&gt;</translation>
+        <translation>&lt;strong&gt;Инсталирај %1 поред тренутних оперативних система&lt;/strong&gt;&lt;br/&gt;Инсталатер ће скупити постојећу партицију да направи места за %2. Моћи ћете да изаберете при сваком укључењу који оперативни систем желите да покренете.&lt;br/&gt;&lt;strong&gt;УПОЗОРЕЊЕ: није погодно за УЕФИ инсталације&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="245"/>
         <source>&lt;strong&gt;Replace a partition with %1&lt;/strong&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;strong&gt;Not suitable for UEFI installs&lt;/strong&gt;</source>
-        <translation>&lt;b&gt;Замени партицију са %1&lt;/strong&gt;&lt;br/&gt;Биће вам понуђено да изаберете коју партицију обрисати. &lt;strong&gt;Није погодно за УЕФИ инсталације&lt;/strong&gt; </translation>
+        <translation>&lt;b&gt;Замени партицију са %1&lt;/strong&gt;&lt;br/&gt;Биће вам понуђено да изаберете коју партицију обрисати.&lt;br/&gt;&lt;strong&gt;Није погодно за УЕФИ инсталације&lt;/strong&gt; </translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="261"/>
@@ -1355,12 +1355,12 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="229"/>
         <source>Before:</source>
-        <translation>Испред:</translation>
+        <translation>Пре:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="234"/>
         <source>After:</source>
-        <translation>Иза:</translation>
+        <translation>После:</translation>
     </message>
 </context>
 <context>
@@ -1576,7 +1576,7 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="126"/>
         <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read:</source>
-        <translation>&lt;h1&gt;Добродошли у %1 инсталатера.&lt;/h1&gt;&lt;br/&gt;Овај програм ће вам поставити пар питања поставити %2 на ваш рачунар. Запамтите, овај програ је још у почетној фази.&lt;br/&gt;Још увек не подржава LUKS/LVM или RAID и&lt;br/&gt; опције аутоматског партиционисања за УЕФИ инсталације.&lt;br/&gt;За &lt;b&gt;ГПТ партиционисање у BIOS-у&lt;/b&gt; и остала упутства погледајте:</translation>
+        <translation>&lt;h1&gt;Добродошли у %1 инсталатера.&lt;/h1&gt;&lt;br/&gt;Овај програм ће вам поставити пар питања инсталирати %2 на ваш рачунар. Запамтите, овај програм је још у почетној фази.&lt;br/&gt;Још увек не подржава ЛУКС/ЛВМ или РАИД и&lt;br/&gt; опције аутоматског партиционисања за УЕФИ инсталације.&lt;br/&gt;За &lt;b&gt;ГПТ партиционисање у БИОС-у&lt;/b&gt; и остала упутства погледајте:</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="148"/>
@@ -1642,7 +1642,7 @@ Some file systems need external tools to be installed for them to be supported. 
         <location filename="../src/modules/locale/LocalePage.cpp" line="159"/>
         <location filename="../src/modules/locale/LocalePage.cpp" line="170"/>
         <source>The system locale is set to %1.</source>
-        <translation>Системски локалитет је %$1</translation>
+        <translation>Системски локалитет је %1</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="167"/>
@@ -2152,12 +2152,12 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="267"/>
         <source>Before:</source>
-        <translation>Испред:</translation>
+        <translation>Пре:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="272"/>
         <source>After:</source>
-        <translation>Иза:</translation>
+        <translation>После:</translation>
     </message>
 </context>
 <context>
@@ -2165,7 +2165,7 @@ Some file systems need external tools to be installed for them to be supported. 
     <message>
         <location filename="../src/modules/prepare/PreparePage.cpp" line="39"/>
         <source>For best results, please ensure that this computer:</source>
-        <translation>За најбоље резултате обезбедите:</translation>
+        <translation>За најбоље резултате обезбедите да рачунар:</translation>
     </message>
     <message>
         <location filename="../src/modules/prepare/PreparePage.cpp" line="96"/>
@@ -2212,7 +2212,7 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="158"/>
         <source>Prepare</source>
-        <translation>Припреми</translation>
+        <translation>Припрема</translation>
     </message>
 </context>
 <context>
@@ -2220,7 +2220,7 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/calamares/progresstree/ProgressTreeModel.cpp" line="138"/>
         <source>Prepare</source>
-        <translation>Припреми</translation>
+        <translation>Припрема</translation>
     </message>
     <message>
         <location filename="../src/calamares/progresstree/ProgressTreeModel.cpp" line="151"/>
@@ -2660,7 +2660,7 @@ Installation can continue, but some features might be disabled.</source>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="198"/>
         <source>Free space before:</source>
         <comment>@label:listbox</comment>
-        <translation>Слободно испред:</translation>
+        <translation>Слободно пре:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="233"/>
@@ -2672,7 +2672,7 @@ Installation can continue, but some features might be disabled.</source>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="262"/>
         <source>Free space after:</source>
         <comment>@label:listbox</comment>
-        <translation>Слободно иза:</translation>
+        <translation>Слободно после:</translation>
     </message>
 </context>
 <context>

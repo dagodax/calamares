@@ -432,7 +432,7 @@ L&apos;instalador colará y perderánse toles camudancies.</translation>
     <message>
         <location filename="../src/calamares/CalamaresWindow.cpp" line="98"/>
         <source>Show debug information</source>
-        <translation type="unfinished"/>
+        <translation>Amosar información de depuración</translation>
     </message>
 </context>
 <context>
@@ -1561,7 +1561,7 @@ Dellos sistemes de ficheros riquen la instalación de ferramientes esternes pa t
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="114"/>
         <source>&amp;Known issues</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Torgues conocíes</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="124"/>
@@ -1576,7 +1576,7 @@ Dellos sistemes de ficheros riquen la instalación de ferramientes esternes pa t
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="126"/>
         <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read:</source>
-        <translation>&lt;h1&gt;Bienllegáu al instalador %1.&lt;/h1&gt;&lt;br/&gt;Esti programa fadráte delles entrugues y configurará %2 nel to ordenador. Recuerda, esti instalador ta entá nuna fas temprana.&lt;br/&gt;Entá nun s&apos;implementó LUKS/LVM o RAID y &lt;br/&gt;l&apos;usu d&apos;unes opciones de particionáu automátiques pa instalaciones UEFI.&lt;br/&gt;Pal &lt;b&gt;particionáu GPT en sistemes BIOS&lt;/b&gt; y otres instrucciones, llei:</translation>
+        <translation>&lt;h1&gt;Bienllegáu al instalador %1.&lt;/h1&gt;&lt;br/&gt;Esti programa fadráte delles entrugues y configurará %2 nel to ordenador.&lt;br/&gt;Recuerda, esti instalador ta entá nuna fas temprana.&lt;br/&gt;Entá nun s&apos;implementó LUKS/LVM o RAID y l&apos;usu d&apos;unes opciones&lt;br/&gt;de particionáu automátiques pa instalaciones UEFI.&lt;br/&gt;Pal &lt;b&gt;particionáu GPT en sistemes BIOS&lt;/b&gt; y otres instrucciones, llei:</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="148"/>
@@ -1633,7 +1633,7 @@ Dellos sistemes de ficheros riquen la instalación de ferramientes esternes pa t
     <message>
         <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="40"/>
         <source>The system locale setting affects the language and character set for some command line user interface elements.&lt;br/&gt;The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Los axustes de locale del sistema afeuten a la llingua y al conxuntu de carauteres afitáu pa dellos elementos de la interfaz d&apos;usuaru de llinia comandos.&lt;br/&gt;L&apos;axuste actual ye &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
 </context>
 <context>
@@ -1642,7 +1642,7 @@ Dellos sistemes de ficheros riquen la instalación de ferramientes esternes pa t
         <location filename="../src/modules/locale/LocalePage.cpp" line="159"/>
         <location filename="../src/modules/locale/LocalePage.cpp" line="170"/>
         <source>The system locale is set to %1.</source>
-        <translation type="unfinished"/>
+        <translation>La locale del sistema afitóse a %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="167"/>
