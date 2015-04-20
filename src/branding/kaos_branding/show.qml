@@ -46,7 +46,7 @@ Presentation
                   "Use the left <b>mouse button</b> to go to the next slide, right for previous.<br/>"+
                   "After creating your chosen disk setup in the first 10 % <br/>"+
                   "the full copying of the ISO will take the longest of this install phase <br/>"+
-                  "and will run until approximatley 30%.<br/>"
+                  "and will run until approximately 30%.<br/>"
             wrapMode: Text.WordWrap
             width: 600
             horizontalAlignment: Text.Center
