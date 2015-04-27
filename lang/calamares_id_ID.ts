@@ -530,12 +530,12 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="42"/>
         <source>Clear mounts for partitioning operations on %1</source>
-        <translation>Bersihkan pengaitan untuk operasi pemartisian pada %1</translation>
+        <translation>Bersihkan mount-mount untuk operasi pemartisian pada %1</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="81"/>
         <source>Cleared all mounts for %1</source>
-        <translation>Semua pengaitan dibersihkan untuk %1</translation>
+        <translation>Semua mount dibersihkan untuk %1</translation>
     </message>
 </context>
 <context>
@@ -543,17 +543,17 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="38"/>
         <source>Clear all temporary mounts.</source>
-        <translation>Bersihkan semua temporer pengaitan.</translation>
+        <translation>Bersihkan semua temporer mount</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="49"/>
         <source>Cannot get list of temporary mounts.</source>
-        <translation>Tidak bisa mendapatkan daftar temporer pengaitan.</translation>
+        <translation>Tidak bisa mendapatkan daftar temporer mount.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="88"/>
         <source>Cleared all temporary mounts.</source>
-        <translation>Semua temporer pengaitan dibersihkan.</translation>
+        <translation>Semua temporer mount dibersihkan.</translation>
     </message>
 </context>
 <context>
@@ -875,7 +875,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="118"/>
         <source>&amp;Mount Point:</source>
-        <translation>&amp;Titik Kait:</translation>
+        <translation>&amp;Mount Poin:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="164"/>
@@ -1205,7 +1205,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="50"/>
         <source>Content:</source>
-        <translation>Berisi:</translation>
+        <translation>Konten:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="60"/>
@@ -1225,7 +1225,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="93"/>
         <source>&amp;Mount Point:</source>
-        <translation>&amp;Titik Kait:</translation>
+        <translation>&amp;Mount Poin:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="113"/>
@@ -1238,12 +1238,12 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountoptionsdialogwidgetbase.ui" line="14"/>
         <source>Edit Mount Options</source>
-        <translation>Sunting Opsi Kait</translation>
+        <translation>Sunting Opsi Mount</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountoptionsdialogwidgetbase.ui" line="20"/>
         <source>Edit the mount options for this file system:</source>
-        <translation>Sunting opsi kait untuk sistem berkas ini:</translation>
+        <translation>Sunting opsi mount untuk sistem berkas ini:</translation>
     </message>
 </context>
 <context>
@@ -1276,12 +1276,12 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="80"/>
         <source>Users can mount and unmount</source>
-        <translation>Pengguna bisa mengaitkan dan menonkaitkan</translation>
+        <translation>Pengguna bisa me-mount dan meng-unmount</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="87"/>
         <source>No automatic mount</source>
-        <translation>Tidak ada pengaitan otomatis</translation>
+        <translation>Tidak ada mount otomatis</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/editmountpointdialogwidgetbase.ui" line="94"/>
@@ -1458,7 +1458,7 @@ Beberapa sistem berkas yang membutuhkan alat eksternal untuk dipasang bagi merek
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="105"/>
         <source>Set up &lt;strong&gt;new&lt;/strong&gt; %2 partition with mount point &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation>Persiapan partisi %2 &lt;strong&gt;baru&lt;/strong&gt; dengan titik kait &lt;strong&gt;%1&lt;/strong&gt;</translation>
+        <translation>Persiapan partisi %2 &lt;strong&gt;baru&lt;/strong&gt; dengan mount poin &lt;strong&gt;%1&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="113"/>
@@ -1468,7 +1468,7 @@ Beberapa sistem berkas yang membutuhkan alat eksternal untuk dipasang bagi merek
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="119"/>
         <source>Set up %3 partition &lt;strong&gt;%1&lt;/strong&gt; with mount point &lt;strong&gt;%2&lt;/strong&gt;.</source>
-        <translation>Persiapan partisi %3 &lt;strong&gt;%1&lt;/strong&gt; dengan titik kait &lt;strong&gt;%2&lt;/strong&gt;.</translation>
+        <translation>Persiapan partisi %3 &lt;strong&gt;%1&lt;/strong&gt; dengan mount poin &lt;strong&gt;%2&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="131"/>
@@ -1878,7 +1878,7 @@ Beberapa sistem berkas yang membutuhkan alat eksternal untuk dipasang bagi merek
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="106"/>
         <source>Mount point:</source>
         <comment>@label</comment>
-        <translation>Titik kait:</translation>
+        <translation>Mount poin:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="123"/>
@@ -1962,7 +1962,7 @@ Beberapa sistem berkas yang membutuhkan alat eksternal untuk dipasang bagi merek
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="80"/>
         <source>Mount Point</source>
-        <translation>Titik Kait</translation>
+        <translation>Mount Poin</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partitionmanagerwidgetbase.ui" line="85"/>
@@ -2035,7 +2035,7 @@ Beberapa sistem berkas yang membutuhkan alat eksternal untuk dipasang bagi merek
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="179"/>
         <source>Mount Point</source>
-        <translation>Titik Kait</translation>
+        <translation>Mount Poin</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="181"/>
@@ -2539,7 +2539,7 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="53"/>
         <source>rootMountPoint is %1</source>
-        <translation>TitikKaitroot adalah %1</translation>
+        <translation>rootMountPoint adalah %1</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="62"/>

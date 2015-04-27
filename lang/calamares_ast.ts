@@ -4,17 +4,17 @@
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="67"/>
         <source>Choose partition to shrink:</source>
-        <translation type="unfinished"/>
+        <translation>Escueyi la partición pa redimensionar:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="68"/>
         <source>Allocate drive space by dragging the divider below:</source>
-        <translation type="unfinished"/>
+        <translation>Agulla l&apos;espaciu del discu arrastrando&apos;l divisor d&apos;embaxo:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="167"/>
         <source>With this operation, the partition &lt;strong&gt;%1&lt;/strong&gt; which contains %4 will be shrunk to %2MB and a new %3MB partition will be created for %5. &lt;font color=&quot;red&quot;&gt;Do not use for UEFI. &lt;/font&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Con esta operación, la partición &lt;strong&gt;%1&lt;/strong&gt; que contien %4 redimiensionaráse a %2MB y crearáse una partición nueva de %3MB pa %5.&lt;font color=&quot;red&quot;&gt;Nun usar pa UEFI. &lt;/font&gt;</translation>
     </message>
 </context>
 <context>
@@ -295,7 +295,7 @@ Salida:
         <source>Command %1 finished with exit code %2.
 Output:
 %3</source>
-        <translation>EL comandu %1 finó col códigu salida %2.
+        <translation>El comandu %1 finó col códigu salida %2.
 Salida:
 %3</translation>
     </message>
@@ -371,7 +371,7 @@ L&apos;instalador colará y perderánse toles camudancies.</translation>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="253"/>
         <source>The %1 installer is about to make changes to your disk in order to install %2.&lt;br/&gt;&lt;strong&gt;You will not be able to undo these changes.&lt;/strong&gt;</source>
-        <translation type="unfinished"/>
+        <translation>L&apos;instalador %1 ta a puntu de facer camudancies al to discu pa instalar %2.&lt;br/&gt;&lt;strong&gt;Nun podrás desfacer estes camudancies.&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="260"/>
@@ -478,7 +478,7 @@ L&apos;instalador colará y perderánse toles camudancies.</translation>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="145"/>
         <source>&lt;strong&gt;Install %2 alongside %1&lt;/strong&gt;&lt;br/&gt;The installer will shrink the %1 volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;strong&gt;WARNING: not an option for UEFI installs&lt;/strong&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Instalar %2 co %1&lt;/strong&gt;&lt;br/&gt;L&apos;instalador redimensionará&apos;l volume %1 pa facer sitiu a %2. Podrás escoyer que sistema operativu aniciar en cada arranque.  &lt;strong&gt;AVISU: nun ye una opción pa instalaciones UEFI&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="154"/>
@@ -498,7 +498,7 @@ L&apos;instalador colará y perderánse toles camudancies.</translation>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="179"/>
         <source>&lt;strong&gt;Install %1 alongside your current operating system&lt;/strong&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;strong&gt;WARNING: not an option for UEFI installs&lt;/strong&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Instalar %1 co&apos;l to sistema operativu actual&lt;/strong&gt;&lt;br/&gt;L&apos;instalador redimensionará un volume esistente pa facer sitiu a %2. Podrás escoyer que sistema operativu aniciar en cada arranque.  &lt;strong&gt;AVISU: nun ye una opción pa instalaciones UEFI&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="198"/>
@@ -513,7 +513,7 @@ L&apos;instalador colará y perderánse toles camudancies.</translation>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="226"/>
         <source>&lt;strong&gt;Install %1 alongside your current operating systems&lt;/strong&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;strong&gt;WARNING: not an option for UEFI installs&lt;/strong&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Instalar %1 co los tos sistemes operativos actuales&lt;/strong&gt;&lt;br/&gt;L&apos;instalador redimensionará un volume esistente pa facer sitiu a %2. Podrás escoyer que sistema operativu aniciar en cada arranque.  &lt;strong&gt;AVISU: nun ye una opción pa instalaciones UEFI&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="245"/>
@@ -833,7 +833,7 @@ L&apos;instalador colará y perderánse toles camudancies.</translation>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="173"/>
         <source>Overwrite with:</source>
-        <translation type="unfinished"/>
+        <translation>Sobrescribir con:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="180"/>
@@ -909,12 +909,12 @@ L&apos;instalador colará y perderánse toles camudancies.</translation>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="48"/>
         <source>Create new %2MB partition on %4 (%3) with file system %1.</source>
-        <translation type="unfinished"/>
+        <translation>Crearáse la partición nueva de %2MB en %4 (%3) col sistema de ficheros %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="59"/>
         <source>Create new &lt;strong&gt;%2MB&lt;/strong&gt; partition on &lt;strong&gt;%4&lt;/strong&gt; (%3) with file system &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Crearáse la partición nueva de &lt;strong&gt;%2MB&lt;/strong&gt; en &lt;strong&gt;%4&lt;/strong&gt; (%3) col sistema de ficheros &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="74"/>
@@ -975,12 +975,12 @@ L&apos;instalador colará y perderánse toles camudancies.</translation>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="49"/>
         <source>Create new %1 partition table on %2.</source>
-        <translation type="unfinished"/>
+        <translation>Crearáse la tabla de particiones nueva %1 en %2.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="56"/>
         <source>Create new &lt;strong&gt;%1&lt;/strong&gt; partition table on &lt;strong&gt;%2&lt;/strong&gt; (%3).</source>
-        <translation type="unfinished"/>
+        <translation>Crearáse la tabla de particiones nueva &lt;strong&gt;%1&lt;/strong&gt; en &lt;strong&gt;%2&lt;/strong&gt; (%3).</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="66"/>
@@ -1350,7 +1350,7 @@ L&apos;instalador colará y perderánse toles camudancies.</translation>
     <message>
         <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="53"/>
         <source>Select drive:</source>
-        <translation>Esbillar preséu:</translation>
+        <translation>Esbillar unidá:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="229"/>
@@ -1454,7 +1454,7 @@ Dellos sistemes de ficheros riquen la instalación de ferramientes esternes pa t
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="100"/>
         <source>Install %1 on &lt;strong&gt;new&lt;/strong&gt; %2 system partition.</source>
-        <translation type="unfinished"/>
+        <translation>Instalaráse %1 na &lt;strong&gt;nueva&lt;/strong&gt; partición del sistema %2</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="105"/>
@@ -1464,7 +1464,7 @@ Dellos sistemes de ficheros riquen la instalación de ferramientes esternes pa t
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="113"/>
         <source>Install %2 on %3 system partition &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Instalaráse %2 na partición del sistema %3 &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="119"/>
@@ -1474,7 +1474,7 @@ Dellos sistemes de ficheros riquen la instalación de ferramientes esternes pa t
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="131"/>
         <source>Install boot loader on &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Instalaráse&apos;l cargador d&apos;arranque en &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="144"/>
@@ -1662,7 +1662,7 @@ Dellos sistemes de ficheros riquen la instalación de ferramientes esternes pa t
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="267"/>
         <source>Set timezone to %1/%2.&lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Afitóse&apos;l fusu horariu a %1/%2.&lt;br/&gt;</translation>
     </message>
 </context>
 <context>
@@ -1806,7 +1806,7 @@ Dellos sistemes de ficheros riquen la instalación de ferramientes esternes pa t
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="194"/>
         <source>&lt;small&gt;If more than one person will use this computer, you can set up multiple accounts after installation.&lt;/small&gt;</source>
-        <translation>&lt;small&gt;Si usen l&apos;ordenador más persones, pues configurar varies cuentes dempués de la instalación.&lt;/small&gt;</translation>
+        <translation>&lt;small&gt;Si usen l&apos;ordenador más persones, pues configurar delles cuentes más dempués de la instalación.&lt;/small&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="217"/>
@@ -2107,7 +2107,7 @@ Dellos sistemes de ficheros riquen la instalación de ferramientes esternes pa t
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="199"/>
         <source>Install %1 &lt;strong&gt;alongside&lt;/strong&gt; another operating system.</source>
-        <translation type="unfinished"/>
+        <translation>Instalaráse %1 &lt;strong&gt;co&lt;/strong&gt; otru sistema operativu.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="204"/>
@@ -2117,7 +2117,7 @@ Dellos sistemes de ficheros riquen la instalación de ferramientes esternes pa t
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="209"/>
         <source>&lt;strong&gt;Replace&lt;/strong&gt; a partition with %1.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Trocaráse&lt;/strong&gt; una partición con %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="214"/>
@@ -2127,7 +2127,7 @@ Dellos sistemes de ficheros riquen la instalación de ferramientes esternes pa t
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="227"/>
         <source>Install %1 &lt;strong&gt;alongside&lt;/strong&gt; another operating system on disk &lt;strong&gt;%2&lt;/strong&gt; (%3).</source>
-        <translation type="unfinished"/>
+        <translation>Instalaráse %1 &lt;strong&gt;co&lt;/strong&gt; otru sistema operativu nel discu &lt;strong&gt;%2&lt;/strong&gt; (%3).</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="234"/>
@@ -2137,7 +2137,7 @@ Dellos sistemes de ficheros riquen la instalación de ferramientes esternes pa t
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="241"/>
         <source>&lt;strong&gt;Replace&lt;/strong&gt; a partition on disk &lt;strong&gt;%2&lt;/strong&gt; (%3) with %1.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Trocaráse&lt;/strong&gt; una partición nel discu &lt;strong&gt;%2&lt;/strong&gt; (%3) con %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="248"/>
@@ -2380,7 +2380,7 @@ La instalación pue siguir, pero delles carauterístiques pudieron deshabilitase
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="109"/>
         <source>Select where to install %1.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;this will delete all files on the selected partition. &lt;font color=&quot;red&quot;&gt;Do not use for UEFI &lt;/font&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Esbilla u quies instalar %1.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Avisu: &lt;/font&gt;esto desaniciará tolos ficheros na partición esbillada. &lt;font color=&quot;red&quot;&gt;Nun usar pa UEFI &lt;/font&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="136"/>
@@ -2420,12 +2420,12 @@ La instalación pue siguir, pero delles carauterístiques pudieron deshabilitase
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="206"/>
         <source>&lt;strong&gt;%4&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;The partition %1 is too small for %2. Please select a partition with capacity at least %3 GiB.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;%4&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;La partición %1 ye perpequeña pa %2. Por favor, esbilla una partición cola capacidá de polo menos %3 GiB.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="220"/>
         <source>&lt;strong&gt;%3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;%1 will be installed on %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;all data on partition%2 will be lost.</source>
-        <translation>&lt;strong&gt;%3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;%1 instalaráse en %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Avisu: &lt;/font&gt;perderánse tolos datos na partición %2 will be lost.</translation>
+        <translation>&lt;strong&gt;%3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;%1 instalaráse en %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Avisu: &lt;/font&gt;perderánse tolos datos na partición %2.</translation>
     </message>
 </context>
 <context>
@@ -2560,7 +2560,7 @@ La instalación pue siguir, pero delles carauterístiques pudieron deshabilitase
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="41"/>
         <source>Set timezone to %1/%2</source>
-        <translation type="unfinished"/>
+        <translation>Afitóse&apos;l fusu horariu a %1/%2</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="56"/>
@@ -2783,7 +2783,7 @@ La instalación pue siguir, pero delles carauterístiques pudieron deshabilitase
     <message>
         <location filename="../src/modules/summary/SummaryPage.cpp" line="42"/>
         <source>This is an overview of what will happen once you start the install procedure.</source>
-        <translation type="unfinished"/>
+        <translation>Esta ye una vista previa de lo qu&apos;asocederá namái qu&apos;anicies el procedimientu d&apos;instalación.</translation>
     </message>
 </context>
 <context>
