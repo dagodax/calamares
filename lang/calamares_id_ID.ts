@@ -464,7 +464,7 @@ The installer will quit and all changes will be lost.</source>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="187"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="234"/>
         <source>&lt;strong&gt;Erase disk and install %1&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your programs, documents, photos, music, and any other files. &lt;strong&gt;Not suitable for UEFI installs&lt;/strong&gt;</source>
-        <translation>&lt;strong&gt;Hapus disk dan pasang %1&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Peringatan: &lt;/font&gt;Ini akan menghapus semua program Anda, dokumen, foto, musik, dan berkas apa pun yang lain. &lt;strong&gt;Tidak cocok untuk memasang UEFI&lt;/strong&gt;</translation>
+        <translation>&lt;strong&gt;Hapus disk dan pasang %1&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Peringatan: &lt;/font&gt;Ini akan menghapus semua program Anda, dokumen, foto, musik, dan berkas apa pun yang lain. &lt;strong&gt;Tidak cocok untuk UEFI installs&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="125"/>
@@ -472,22 +472,22 @@ The installer will quit and all changes will be lost.</source>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="193"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="240"/>
         <source>&lt;strong&gt;Erase disk and install %1&lt;/strong&gt;&lt;br/&gt;You will be offered a choice of which disk to erase. &lt;strong&gt;Not suitable for UEFI installs&lt;/strong&gt;</source>
-        <translation>&lt;strong&gt;Hapus disk dan pasang %1&lt;/strong&gt;&lt;br/&gt;Anda akan ditawarkan untuk memilih disk mana yang akan dihapus. &lt;strong&gt;Tidak cocok untuk memasang UEFI&lt;/strong&gt;</translation>
+        <translation>&lt;strong&gt;Hapus disk dan pasang %1&lt;/strong&gt;&lt;br/&gt;Anda akan ditawarkan untuk memilih disk mana yang akan dihapus. &lt;strong&gt;Tidak cocok untuk UEFI installs&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="145"/>
         <source>&lt;strong&gt;Install %2 alongside %1&lt;/strong&gt;&lt;br/&gt;The installer will shrink the %1 volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;strong&gt;WARNING: not an option for UEFI installs&lt;/strong&gt;</source>
-        <translation>&lt;strong&gt;Pasang %2 di samping %1&lt;/strong&gt;&lt;br/&gt;Pemasang akan mengiris volume %1 untuk membuat ruang pada %2. Anda dapat memilih sistem operasi mana yang Anda inginkan setiap komputer dihidupkan. &lt;strong&gt;PERINGATAN: bukan pilihan untuk memasang UEFI&lt;/strong&gt;</translation>
+        <translation>&lt;strong&gt;Pasang %2 di samping %1&lt;/strong&gt;&lt;br/&gt;Pemasang akan mengiris volume %1 untuk membuat ruang pada %2. Anda dapat memilih sistem operasi mana yang Anda inginkan setiap komputer dihidupkan. &lt;strong&gt;PERINGATAN: bukan pilihan untuk UEFI installs&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="154"/>
         <source>&lt;strong&gt;Erase entire disk with %1 and install %2&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files. &lt;strong&gt;Not suitable for UEFI installs&lt;/strong&gt;</source>
-        <translation>&lt;strong&gt;Hapus entri disk dengan %1 dan pasang %2&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Peringatan: &lt;/font&gt;Ini akan menghapus seluruh disk dan menghapus semua program %1 Anda, dokumen, foto, musik, dan berkas apa pun yang lain. &lt;strong&gt;Tidak cocok untuk memasang UEFI&lt;/strong&gt;</translation>
+        <translation>&lt;strong&gt;Hapus entri disk dengan %1 dan pasang %2&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Peringatan: &lt;/font&gt;Ini akan menghapus seluruh disk dan menghapus semua program %1 Anda, dokumen, foto, musik, dan berkas apa pun yang lain. &lt;strong&gt;Tidak cocok untuk UEFI installs&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="167"/>
         <source>&lt;strong&gt;Replace a partition with %1&lt;/strong&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;strong&gt;Not suitable for UEFI installs&lt;/strong&gt; </source>
-        <translation>&lt;strong&gt;Ganti partisi dengan %1&lt;/strong&gt;&lt;br/&gt;Anda akan ditawarkan untuk memilih disk mana yang akan dihapus. &lt;strong&gt;Tidak cocok untuk memasang UEFI&lt;/strong&gt;</translation>
+        <translation>&lt;strong&gt;Ganti partisi dengan %1&lt;/strong&gt;&lt;br/&gt;Anda akan ditawarkan untuk memilih disk mana yang akan dihapus. &lt;strong&gt;Tidak cocok untuk UEFI installs&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="176"/>
@@ -497,12 +497,12 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="179"/>
         <source>&lt;strong&gt;Install %1 alongside your current operating system&lt;/strong&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;strong&gt;WARNING: not an option for UEFI installs&lt;/strong&gt;</source>
-        <translation>&lt;strong&gt;Pasang %1 di samping sistem operasi Anda sekarang&lt;/strong&gt;&lt;br/&gt;Pemasang akan mengiris volume yang ada untuk membuat ruang pada %2. Anda dapat memilih sistem operasi mana yang Anda inginkan setiap komputer dihidupkan. &lt;strong&gt;PERINGATAN: bukan pilihan untuk memasang UEFI&lt;/strong&gt;</translation>
+        <translation>&lt;strong&gt;Pasang %1 di samping sistem operasi Anda sekarang&lt;/strong&gt;&lt;br/&gt;Pemasang akan mengiris volume yang ada untuk membuat ruang pada %2. Anda dapat memilih sistem operasi mana yang Anda inginkan setiap komputer dihidupkan. &lt;strong&gt;PERINGATAN: bukan pilihan untuk UEFI installs&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="198"/>
         <source>&lt;b&gt;Replace a partition with %1&lt;/strong&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;strong&gt;Not suitable for UEFI installs&lt;/strong&gt; </source>
-        <translation>&lt;b&gt;Ganti partisi dengan %1&lt;/strong&gt;&lt;br/&gt;Anda akan ditawarkan untuk memilih disk mana yang akan dihapus. &lt;strong&gt;Tidak cocok untuk memasang UEFI&lt;/strong&gt;</translation>
+        <translation>&lt;b&gt;Ganti partisi dengan %1&lt;/strong&gt;&lt;br/&gt;Anda akan ditawarkan untuk memilih disk mana yang akan dihapus. &lt;strong&gt;Tidak cocok untuk UEFI installs&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="223"/>
@@ -512,17 +512,17 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="226"/>
         <source>&lt;strong&gt;Install %1 alongside your current operating systems&lt;/strong&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;strong&gt;WARNING: not an option for UEFI installs&lt;/strong&gt;</source>
-        <translation>&lt;strong&gt;Pasang %1 di samping sistem operasi Anda sekarang&lt;/strong&gt;&lt;br/&gt;Pemasang akan mengiris volume yang ada untuk membuat ruang pada %2. Anda dapat memilih sistem operasi mana yang Anda inginkan setiap komputer dihidupkan. &lt;strong&gt;PERINGATAN: bukan pilihan untuk memasang UEFI&lt;/strong&gt;</translation>
+        <translation>&lt;strong&gt;Pasang %1 di samping sistem operasi Anda sekarang&lt;/strong&gt;&lt;br/&gt;Pemasang akan mengiris volume yang ada untuk membuat ruang pada %2. Anda dapat memilih sistem operasi mana yang Anda inginkan setiap komputer dihidupkan. &lt;strong&gt;PERINGATAN: bukan pilihan untuk UEFI installs&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="245"/>
         <source>&lt;strong&gt;Replace a partition with %1&lt;/strong&gt;&lt;br/&gt;You will be offered a choice of which partition to erase. &lt;strong&gt;Not suitable for UEFI installs&lt;/strong&gt;</source>
-        <translation>&lt;strong&gt;Ganti partisi dengan %1&lt;/strong&gt;&lt;br/&gt;Anda akan ditawarkan untuk memilih disk mana yang akan dihapus. &lt;strong&gt;Tidak cocok untuk memasang UEFI&lt;/strong&gt;</translation>
+        <translation>&lt;strong&gt;Ganti partisi dengan %1&lt;/strong&gt;&lt;br/&gt;Anda akan ditawarkan untuk memilih disk mana yang akan dihapus. &lt;strong&gt;Tidak cocok untuk UEFI installs&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="261"/>
         <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Use this option for UEFI installs, having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;, either use an existing without formatting or create one.</source>
-        <translation>&lt;strong&gt;Pemartisian manual&lt;/strong&gt;&lt;br/&gt;Anda dapat membuat atau mengubah ukuran partisi sendiri, atau memilih beberapa partisi untuk %1. Gunakan opsi ini untuk memasang UEFI, memiliki sebuah tabel partisi GPT dan &lt;strong&gt;partisi fat32 512M /boot yang harus untuk memasang UEFI&lt;/strong&gt;, gunakan salah satu yang ada tanpa memformat atau membuatnya.</translation>
+        <translation>&lt;strong&gt;Pemartisian manual&lt;/strong&gt;&lt;br/&gt;Anda dapat membuat atau mengubah ukuran partisi sendiri, atau memilih beberapa partisi untuk %1. Gunakan opsi ini untuk UEFI installs, memiliki sebuah tabel partisi GPT dan &lt;strong&gt;partisi fat32 512M /boot yang harus untuk UEFI installs&lt;/strong&gt;, gunakan salah satu yang ada tanpa memformat atau membuatnya.</translation>
     </message>
 </context>
 <context>
@@ -1575,7 +1575,7 @@ Beberapa sistem berkas yang membutuhkan alat eksternal untuk dipasang bagi merek
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="126"/>
         <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read:</source>
-        <translation>&lt;h1&gt;Selamat datang di pemasang %1.&lt;/h1&gt;&lt;br/&gt;Program ini akan menanyakan beberapa pertanyaan dan menyiapkan %2 pada komputer Anda. Ingat, pemasang ini masih dalam tahap awal.&lt;br/&gt;Belum diimplementasikan LUKS/LVM atau RAID dan&lt;br/&gt;salah satu menggunakan opsi pemartisian otomatis untuk memasang UEFI.&lt;br/&gt;Untuk &lt;b&gt;pemartisian GPT pada sistem BIOS&lt;/b&gt; dan instruksi lainnya, baca:</translation>
+        <translation>&lt;h1&gt;Selamat datang di pemasang %1.&lt;/h1&gt;&lt;br/&gt;Program ini akan menanyakan beberapa pertanyaan dan menyiapkan %2 pada komputer Anda. Ingat, pemasang ini masih dalam tahap awal.&lt;br/&gt;Belum diimplementasikan LUKS/LVM atau RAID dan&lt;br/&gt;salah satu menggunakan opsi pemartisian otomatis untuk UEFI installs.&lt;br/&gt;Untuk &lt;b&gt;pemartisian GPT pada sistem BIOS&lt;/b&gt; dan instruksi lainnya, baca:</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="148"/>

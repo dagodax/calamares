@@ -27,11 +27,12 @@
 
 // Qt
 #include <QColor>
+#include <QMap>
 
 static const int NUM_PARTITION_COLORS = 5;
 static const int NUM_NEW_PARTITION_COLORS = 4;
 //Let's try to use the Breeze palette
-static QColor PARTITION_COLORS[ NUM_PARTITION_COLORS ] =
+static const QColor PARTITION_COLORS[ NUM_PARTITION_COLORS ] =
 {
     "#2980b9", //Dark Plasma Blue
     "#27ae60", //Dark Icon Green
@@ -39,7 +40,7 @@ static QColor PARTITION_COLORS[ NUM_PARTITION_COLORS ] =
     "#3daee9", //Plasma Blue
     "#9b59b6", //Purple
 };
-static QColor NEW_PARTITION_COLORS[ NUM_NEW_PARTITION_COLORS ] =
+static const QColor NEW_PARTITION_COLORS[ NUM_NEW_PARTITION_COLORS ] =
 {
     "#c0392b", //Dark Icon Red
     "#f39c1f", //Dark Icon Yellow
@@ -48,6 +49,8 @@ static QColor NEW_PARTITION_COLORS[ NUM_NEW_PARTITION_COLORS ] =
 };
 static QColor FREE_SPACE_COLOR = "#777777";
 static QColor EXTENDED_COLOR = "#aaaaaa";
+
+static QMap< QString, QColor > s_partitionColorsCache;
 
 
 namespace ColorUtils
@@ -75,6 +78,9 @@ colorForPartition( Partition* partition )
         return FREE_SPACE_COLOR;
     if ( partition->roles().has( PartitionRole::Extended ) )
         return EXTENDED_COLOR;
+    if ( s_partitionColorsCache.contains( partition->partitionPath() ) )
+        return s_partitionColorsCache[ partition->partitionPath() ];
+
     // No partition-specific color needed, pick one from our list, but skip
     // free space: we don't want a partition to change colors if space before
     // it is inserted or removed
@@ -92,31 +98,43 @@ colorForPartition( Partition* partition )
             break;
         if ( !PMUtils::isPartitionFreeSpace( child ) &&
              !child->hasChildren() )
-            ++colorIdx;
-        if ( PMUtils::isPartitionNew( child ) )
-            ++newColorIdx;
+        {
+            if ( PMUtils::isPartitionNew( child ) )
+                ++newColorIdx;
+            else
+                ++colorIdx;
+        }
     }
 
     if ( PMUtils::isPartitionNew( partition ) )
         return NEW_PARTITION_COLORS[ newColorIdx % NUM_NEW_PARTITION_COLORS ];
+
+    s_partitionColorsCache.insert( partition->partitionPath(),
+                                   PARTITION_COLORS[ colorIdx % NUM_PARTITION_COLORS ] );
     return PARTITION_COLORS[ colorIdx % NUM_PARTITION_COLORS ];
 }
+
 
 QColor
 colorForPartitionInFreeSpace( Partition* partition )
 {
-    //FIXME
-    PartitionNode* parent = partition->parent();
-    Q_ASSERT( parent );
-    int colorIdx = 0;
-    for ( auto child : parent->children() )
+    PartitionNode* parent = _findRootForPartition( partition );
+    PartitionTable* table = dynamic_cast< PartitionTable* >( parent );
+    Q_ASSERT( table );
+    int newColorIdx = 0;
+    for ( PartitionIterator it = PartitionIterator::begin( table );
+          it != PartitionIterator::end( table );
+          ++it )
     {
+        Partition* child = *it;
         if ( child == partition )
             break;
-        if ( !PMUtils::isPartitionFreeSpace( child ) )
-            ++colorIdx;
+        if ( !PMUtils::isPartitionFreeSpace( child ) &&
+             !child->hasChildren() &&
+             PMUtils::isPartitionNew( child ) )
+            ++newColorIdx;
     }
-    return PARTITION_COLORS[ colorIdx % NUM_PARTITION_COLORS ];
+    return NEW_PARTITION_COLORS[ newColorIdx % NUM_NEW_PARTITION_COLORS ];
 }
 
 } // namespace
