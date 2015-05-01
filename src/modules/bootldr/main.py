@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # === This file is part of Calamares - <http://github.com/calamares> ===
 #
-#   Copyright 2014, Anke Boersma <demm@kaosx.us>
+#   Copyright 2014-2015, Anke Boersma <demm@kaosx.us>
 #   Copyright 2014, Benjamin Vaudour <benjamin.vaudour@yahoo.fr>
 #
 #   Calamares is free software: you can redistribute it and/or modify
@@ -66,7 +66,7 @@ def create_conf(uuid, conf_path):
         'title   %s GNU/Linux, with Linux core repo kernel\n' % distribution,
         'linux   %s\n' % kernel,
         'initrd  %s\n' % img,
-        'options root=UUID=%s quiet resume=UUID=%s rw\n' % (uuid, swap),
+        'options root=UUID=%s quiet systemd.show_status=0 resume=UUID=%s rw\n' % (uuid, swap),
     ]
 
     with open(conf_path, 'w') as f:
@@ -92,7 +92,7 @@ def create_fallback(uuid, fallback_path):
         'title   %s GNU/Linux, with Linux fallback kernel\n' % distribution,
         'linux   %s\n' % kernel,
         'initrd  %s\n' % fb_img,
-        'options root=UUID=%s quiet resume=UUID=%s rw\n' % (uuid, swap),
+        'options root=UUID=%s quiet systemd.show_status=0 resume=UUID=%s rw\n' % (uuid, swap),
     ]
 
     with open(fallback_path, 'w') as f:

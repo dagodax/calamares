@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # === This file is part of Calamares - <http://github.com/calamares> ===
 #
-# Copyright 2014, Anke Boersma <demm@kaosx.us>
+# Copyright 2014-2015, Anke Boersma <demm@kaosx.us>
 #
 # Calamares is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -36,9 +36,9 @@ def modify_grub_default(partitions, root_mount_point, distributor):
             swap_uuid = partition["uuid"]
 
     if swap_uuid != "":
-        kernel_cmd = 'GRUB_CMDLINE_LINUX_DEFAULT="resume=UUID=%s quiet"' % swap_uuid
+        kernel_cmd = 'GRUB_CMDLINE_LINUX_DEFAULT="resume=UUID=%s quiet systemd.show_status=0"' % swap_uuid
     else:
-        kernel_cmd = 'GRUB_CMDLINE_LINUX_DEFAULT="quiet"'
+        kernel_cmd = 'GRUB_CMDLINE_LINUX_DEFAULT="quiet systemd.show_status=0"'
 
     if not os.path.exists(default_dir):
         os.mkdir(default_dir)
