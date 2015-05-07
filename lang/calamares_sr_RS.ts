@@ -178,12 +178,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="71"/>
         <source>Boot Partition</source>
-        <translation>Бут партиција</translation>
+        <translation>бут партицију</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="76"/>
         <source>System Partition</source>
-        <translation>Системска партиција</translation>
+        <translation>системску партицију</translation>
     </message>
 </context>
 <context>
@@ -2791,7 +2791,7 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/summary/SummaryViewStep.cpp" line="41"/>
         <source>Summary</source>
-        <translation>Сажетак</translation>
+        <translation>Резиме</translation>
     </message>
 </context>
 <context>

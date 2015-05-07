@@ -366,7 +366,7 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="252"/>
         <source>Continue with setup?</source>
-        <translation type="unfinished"/>
+        <translation>Pokračovat v nastavování?</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="253"/>
@@ -376,12 +376,12 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="260"/>
         <source>&amp;Install now</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Instalovat nyní</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="261"/>
         <source>Go &amp;back</source>
-        <translation type="unfinished"/>
+        <translation>Jít &amp;zpět</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="300"/>
@@ -909,12 +909,12 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="48"/>
         <source>Create new %2MB partition on %4 (%3) with file system %1.</source>
-        <translation type="unfinished"/>
+        <translation>Vytvořit nový %2MB diskový oddíl na &gt;%4 (%3) se souborovým systémem %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="59"/>
         <source>Create new &lt;strong&gt;%2MB&lt;/strong&gt; partition on &lt;strong&gt;%4&lt;/strong&gt; (%3) with file system &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Vytvořit nový &lt;strong&gt;%2MB&lt;/strong&gt; diskový oddíl na &lt;strong&gt;%4&lt;/strong&gt; (%3) se souborovým systémem &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="74"/>
@@ -975,7 +975,7 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="49"/>
         <source>Create new %1 partition table on %2.</source>
-        <translation type="unfinished"/>
+        <translation>Vytvořit nový diskový oddíl %1 na %2.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="56"/>
@@ -1097,12 +1097,12 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="42"/>
         <source>Delete partition %1.</source>
-        <translation type="unfinished"/>
+        <translation>Smazat diskový oddíl %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="50"/>
         <source>Delete partition &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Smazat diskový oddíl &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="58"/>
@@ -1459,22 +1459,22 @@ Některé souborové systémy vyžadují instalaci externích nástrojů. Jisté
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="105"/>
         <source>Set up &lt;strong&gt;new&lt;/strong&gt; %2 partition with mount point &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Zřídit &lt;strong&gt;nový&lt;/strong&gt; %2 diskový oddíl s bodem připojení &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="113"/>
         <source>Install %2 on %3 system partition &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Instalovat %2 na %3 systémový diskový oddíl &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="119"/>
         <source>Set up %3 partition &lt;strong&gt;%1&lt;/strong&gt; with mount point &lt;strong&gt;%2&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Zřídit %3 partition &lt;strong&gt;%1&lt;/strong&gt; diskový oddíl s bodem připojení &lt;strong&gt;%2&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="131"/>
         <source>Install boot loader on &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Instalovat samozaváděcí program na &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="144"/>
@@ -1556,17 +1556,17 @@ Některé souborové systémy vyžadují instalaci externích nástrojů. Jisté
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="104"/>
         <source>&amp;Release notes</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Poznámky k vydání</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="114"/>
         <source>&amp;Known issues</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Známé potíže</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="124"/>
         <source>&amp;Support</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Podpora</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="134"/>
@@ -1591,7 +1591,7 @@ Některé souborové systémy vyžadují instalaci externích nástrojů. Jisté
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="180"/>
         <source>%1 support</source>
-        <translation type="unfinished"/>
+        <translation>%1 podpora</translation>
     </message>
 </context>
 <context>
@@ -2107,47 +2107,47 @@ Některé souborové systémy vyžadují instalaci externích nástrojů. Jisté
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="199"/>
         <source>Install %1 &lt;strong&gt;alongside&lt;/strong&gt; another operating system.</source>
-        <translation type="unfinished"/>
+        <translation>Nainstalovat %1 &lt;strong&gt;vedle&lt;/strong&gt; jiného operačního systému.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="204"/>
         <source>&lt;strong&gt;Erase&lt;/strong&gt; disk and install %1.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Vymazat&lt;/strong&gt; disk a instalovat %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="209"/>
         <source>&lt;strong&gt;Replace&lt;/strong&gt; a partition with %1.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Nahradit&lt;/strong&gt; diskový oddíl %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="214"/>
         <source>&lt;strong&gt;Manual&lt;/strong&gt; partitioning.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Ruční&lt;/strong&gt; vytváření diskových oddílů.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="227"/>
         <source>Install %1 &lt;strong&gt;alongside&lt;/strong&gt; another operating system on disk &lt;strong&gt;%2&lt;/strong&gt; (%3).</source>
-        <translation type="unfinished"/>
+        <translation>Nainstalovat %1 &lt;strong&gt;vedle&lt;/strong&gt; jiného operačního systému na disku &lt;strong&gt;%2&lt;/strong&gt; (%3).&lt;strong&gt;%2&lt;/strong&gt; (%3).</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="234"/>
         <source>&lt;strong&gt;Erase&lt;/strong&gt; disk &lt;strong&gt;%2&lt;/strong&gt; (%3) and install %1.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Vymazat&lt;/strong&gt; disk &lt;strong&gt;%2&lt;/strong&gt; (%3) a instalovat %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="241"/>
         <source>&lt;strong&gt;Replace&lt;/strong&gt; a partition on disk &lt;strong&gt;%2&lt;/strong&gt; (%3) with %1.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Nahradit&lt;/strong&gt; diskový oddíl na disku &lt;strong&gt;%2&lt;/strong&gt; (%3) %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="248"/>
         <source>&lt;strong&gt;Manual&lt;/strong&gt; partitioning on disk &lt;strong&gt;%1&lt;/strong&gt; (%2).</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Ruční&lt;/strong&gt; vytváření diskových oddílů na disku &lt;strong&gt;%1&lt;/strong&gt; (%2).</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="256"/>
         <source>Disk &lt;strong&gt;%1&lt;/strong&gt; (%2)</source>
-        <translation type="unfinished"/>
+        <translation>Disk &lt;strong&gt;%1&lt;/strong&gt; (%2)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="267"/>
@@ -2420,12 +2420,12 @@ Instalace může pokračovat, ale některé funkce mohou být zakázány.</trans
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="206"/>
         <source>&lt;strong&gt;%4&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;The partition %1 is too small for %2. Please select a partition with capacity at least %3 GiB.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;%4&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Diskový oddíl %1 je pro %2 příliš malý. Vyberte, prosím, diskový oddíl o velikosti alespoň %3 GiB.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="220"/>
         <source>&lt;strong&gt;%3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;%1 will be installed on %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;all data on partition%2 will be lost.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;%3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;%1 bude nainstalován na %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Varování: &lt;/font&gt;všechna data na diskovém oddílu %2 budou ztracena.</translation>
     </message>
 </context>
 <context>
@@ -2456,7 +2456,7 @@ Instalace může pokračovat, ale některé funkce mohou být zakázány.</trans
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="194"/>
         <source>Resize &lt;strong&gt;%2MB&lt;/strong&gt; partition &lt;strong&gt;%1&lt;/strong&gt; to &lt;strong&gt;%3MB&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Změnit velikost &lt;strong&gt;%2MB&lt;/strong&gt; diskového oddílu &lt;strong&gt;%1&lt;/strong&gt; na &lt;strong&gt;%3MB&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="220"/>
@@ -2783,7 +2783,7 @@ Instalace může pokračovat, ale některé funkce mohou být zakázány.</trans
     <message>
         <location filename="../src/modules/summary/SummaryPage.cpp" line="42"/>
         <source>This is an overview of what will happen once you start the install procedure.</source>
-        <translation type="unfinished"/>
+        <translation>Toto je přehled toho, co se stane, když spustíte postup instalace.</translation>
     </message>
 </context>
 <context>
