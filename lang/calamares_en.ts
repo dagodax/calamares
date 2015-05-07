@@ -203,7 +203,7 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>Calamares::InstallationViewStep</name>
     <message>
-        <location filename="../src/libcalamaresui/InstallationViewStep.cpp" line="75"/>
+        <location filename="../src/libcalamaresui/InstallationViewStep.cpp" line="77"/>
         <source>Install</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1552,22 +1552,22 @@ Some file systems need external tools to be installed for them to be supported. 
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/modules/greeting/GreetingPage.cpp" line="126"/>
+        <location filename="../src/modules/greeting/GreetingPage.cpp" line="134"/>
         <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/modules/greeting/GreetingPage.cpp" line="148"/>
+        <location filename="../src/modules/greeting/GreetingPage.cpp" line="156"/>
         <source>About %1 installer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/modules/greeting/GreetingPage.cpp" line="150"/>
+        <location filename="../src/modules/greeting/GreetingPage.cpp" line="158"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014-2015 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;http://calamares.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/modules/greeting/GreetingPage.cpp" line="180"/>
+        <location filename="../src/modules/greeting/GreetingPage.cpp" line="188"/>
         <source>%1 support</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2835,6 +2835,34 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/users/UsersViewStep.cpp" line="46"/>
         <source>Users</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>show</name>
+    <message>
+        <location filename="../src/branding/kaos_branding/show.qml" line="45"/>
+        <source>Here the actual install of KaOS will start.&lt;br/&gt;Use the left &lt;b&gt;mouse button&lt;/b&gt; to go to the next slide, right for previous.&lt;br/&gt;After creating your chosen disk setup in the first 10 % &lt;br/&gt;the full copying of the ISO will take the longest of this install phase &lt;br/&gt;and will run until approximately 30%.&lt;br/&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/show.qml" line="68"/>
+        <source>After the ISO is copied some 25 post-install modules will run.&lt;br/&gt;This includes setting user specific options, &lt;br/&gt;removing Live Session only packages&lt;br/&gt;and adjusting hardware setup.&lt;br/&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/show.qml" line="90"/>
+        <source>The default Office Suite is Calligra.&lt;br/&gt;LibreOffice is available in the repositories. &lt;br/&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/show.qml" line="110"/>
+        <source>Qt/KDE specific internet applications include the Qupzilla web-browser &lt;br/&gt;and kde-telepathy for chat and Instant Messaging. &lt;br/&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/branding/kaos_branding/show.qml" line="130"/>
+        <source>May using KaOS be a pleasant experience for you.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
