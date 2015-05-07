@@ -42,11 +42,11 @@ Presentation
         Text {
             anchors.horizontalCenter: background.horizontalCenter
             anchors.top: background.bottom
-            text: "Here the actual install of KaOS will start.<br/>"+
+            text: qsTr("Here the actual install of KaOS will start.<br/>"+
                   "Use the left <b>mouse button</b> to go to the next slide, right for previous.<br/>"+
                   "After creating your chosen disk setup in the first 10 % <br/>"+
                   "the full copying of the ISO will take the longest of this install phase <br/>"+
-                  "and will run until approximately 30%.<br/>"
+                  "and will run until approximately 30%.<br/>")
             wrapMode: Text.WordWrap
             width: 600
             horizontalAlignment: Text.Center
@@ -65,10 +65,10 @@ Presentation
         Text {
             anchors.horizontalCenter: background1.horizontalCenter
             anchors.top: background1.bottom
-            text: "After the ISO is copied some 25 post-install modules will run.<br/>"+
+            text: qsTr("After the ISO is copied some 25 post-install modules will run.<br/>"+
                   "This includes setting user specific options, <br/>"+
                   "removing Live Session only packages<br/>"+
-                  "and adjusting hardware setup.<br/>"
+                  "and adjusting hardware setup.<br/>")
             wrapMode: Text.WordWrap
             width: 600
             horizontalAlignment: Text.Center
@@ -87,8 +87,8 @@ Presentation
         Text {
             anchors.horizontalCenter: background2.horizontalCenter
             anchors.top: background2.bottom
-            text: "The default Office Suite is Calligra.<br/>"+
-                  "LibreOffice is available in the repositories. <br/>"
+            text: qsTr("The default Office Suite is Calligra.<br/>"+
+                  "LibreOffice is available in the repositories. <br/>")
             wrapMode: Text.WordWrap
             width: 600
             horizontalAlignment: Text.Center
@@ -107,8 +107,8 @@ Presentation
         Text {
             anchors.horizontalCenter: background3.horizontalCenter
             anchors.top: background3.bottom
-            text: "Qt/KDE specific internet applications include the Qupzilla web-browser <br/>"+
-                  "and kde-telepathy for chat and Instant Messaging. <br/>"
+            text: qsTr("Qt/KDE specific internet applications include the Qupzilla web-browser <br/>"+
+                  "and kde-telepathy for chat and Instant Messaging. <br/>")
             wrapMode: Text.WordWrap
             width: 600
             horizontalAlignment: Text.Center
@@ -127,7 +127,7 @@ Presentation
         Text {
             anchors.horizontalCenter: background4.horizontalCenter
             anchors.top: background4.bottom
-            text: "May using KaOS be a pleasant experience for you."
+            text: qsTr("May using KaOS be a pleasant experience for you.")
             wrapMode: Text.WordWrap
             width: 600
             horizontalAlignment: Text.Center
