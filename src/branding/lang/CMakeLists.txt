@@ -4,4 +4,4 @@ endforeach()
 qt5_add_translation( QM_FILES ${TS_FILES} )
 
 add_custom_target( translations ALL DEPENDS ${QM_FILES} )
-install( FILES ${QM_FILES} DESTINATION share/calamares/branding/kaos_branding/lang )
+install( FILES ${QM_FILES} DESTINATION share/calamares/branding/${COMPONENT_NAME}/lang )
