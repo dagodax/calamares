@@ -2888,7 +2888,7 @@ Telepítés folytatható de néhány tulajdonság valószínűleg nem lesz elér
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="130"/>
         <source>May using KaOS be a pleasant experience for you.</source>
-        <translation type="unfinished"/>
+        <translation>A KaOS használata kellemes élmény lesz a felhasználó számára.</translation>
     </message>
 </context>
 </TS>
