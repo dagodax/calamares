@@ -513,7 +513,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="226"/>
         <source>&lt;strong&gt;Install %1 alongside your current operating systems&lt;/strong&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.  &lt;strong&gt;WARNING: not an option for UEFI installs&lt;/strong&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt; Installiere %1 zusätzlich zu deinem aktuellen Betriebssystem &lt;/strong&gt;&lt;br/&gt; Dieses Installationsprogramm wird Raum schaffen für %2. Du kannst dann bei jedem Start wählen, welches von beiden du verwenden willst.  &lt;strong&gt;WARNUNG: Dies funktioniert noch nicht mit UEFI&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="245"/>

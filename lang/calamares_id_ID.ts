@@ -1627,12 +1627,12 @@ Beberapa sistem berkas yang membutuhkan alat eksternal untuk dipasang bagi merek
     <message>
         <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="33"/>
         <source>System locale setting</source>
-        <translation>Pengaturan lokal sistem</translation>
+        <translation>Setelan lokal sistem</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="40"/>
         <source>The system locale setting affects the language and character set for some command line user interface elements.&lt;br/&gt;The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation>Pengaturan lokal sistem mempengaruhi bahasa dan set karakter untuk unsur-unsur beberapa baris perintah antarmuka pengguna.&lt;br/&gt;Pengaturan saat ini adalah &lt;strong&gt;%1&lt;/strong&gt;.</translation>
+        <translation>Setelan lokal sistem mempengaruhi bahasa dan set karakter untuk unsur-unsur beberapa baris perintah antarmuka pengguna.&lt;br/&gt;Setelan saat ini adalah &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
 </context>
 <context>
@@ -1866,7 +1866,7 @@ Beberapa sistem berkas yang membutuhkan alat eksternal untuk dipasang bagi merek
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="82"/>
         <source>This file system does not support setting a label.</source>
         <comment>@label</comment>
-        <translation>Sistem berkas ini tidak mendukung pengaturan label.</translation>
+        <translation>Sistem berkas ini tidak mendukung setelan label.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/partpropswidgetbase.ui" line="92"/>
@@ -2639,7 +2639,7 @@ Installation can continue, but some features might be disabled.</source>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="134"/>
         <source>This file system does not support setting a label.</source>
         <comment>@label</comment>
-        <translation>Sistem berkas ini tidak mendukung pengaturan label.</translation>
+        <translation>Sistem berkas ini tidak mendukung setelan label.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/sizedialogwidgetbase.ui" line="152"/>
@@ -2869,7 +2869,7 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="68"/>
         <source>After the ISO is copied some 25 post-install modules will run.&lt;br/&gt;This includes setting user specific options, &lt;br/&gt;removing Live Session only packages&lt;br/&gt;and adjusting hardware setup.&lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Setelah ISO tersebut disalin sekira 25 pasca pasang modul akan berjalan.&lt;br/&gt; Ini termasuk pilihan setelan spesifik pengguna,&lt;br/&gt; menghapus paket Sesi Live saja&lt;br/&gt; dan menyesuaikan persiapan perangkat keras.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="90"/>

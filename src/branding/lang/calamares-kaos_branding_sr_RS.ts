@@ -24,7 +24,7 @@
     <message>
         <location filename="../kaos_branding/show.qml" line="130"/>
         <source>May using KaOS be a pleasant experience for you.</source>
-        <translation type="unfinished"/>
+        <translation>Нека вам коришћење КаОС оперативног система буде лепо искуство.</translation>
     </message>
 </context>
 </TS>
