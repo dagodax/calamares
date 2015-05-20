@@ -453,22 +453,22 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="104"/>
         <source>This computer does not satisfy the minimum requirements for installing %1.&lt;br/&gt;Installation cannot continue. &lt;a href=&quot;#details&quot;&gt;Details...&lt;/a&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Este ordenador no cumple con los requisitos mínimos para instalar %1.&lt;br/&gt;La instalación no puede continuar. &lt;a href=&quot;#details&quot;&gt;Detalles...&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="125"/>
         <source>This computer does not satisfy some of the recommended requirements for installing %1.&lt;br/&gt;Installation can continue, but some features might be disabled.</source>
-        <translation type="unfinished"/>
+        <translation>Este ordenador no cumple con algunos de los requerimientos para instalar %1.&lt;br/&gt;La instalación puede continuar, pero algunas características deben ser desactivadas.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="147"/>
         <source>For best results, please ensure that this computer:</source>
-        <translation type="unfinished"/>
+        <translation>Para obtener mejores resultados, por favor asegúrese de que este ordenador:</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="172"/>
         <source>System requirements</source>
-        <translation type="unfinished"/>
+        <translation>Requerimientos del sistema</translation>
     </message>
 </context>
 <context>
@@ -2457,47 +2457,47 @@ Se puede continuar con la instalación pero algunas de las características pued
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="54"/>
         <source>Gathering system information...</source>
-        <translation type="unfinished"/>
+        <translation>Reuniendo información del sistema...</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="91"/>
         <source>has at least %1 GB available drive space</source>
-        <translation type="unfinished"/>
+        <translation>tiene al menos %1 GB de espacio en disco disponible </translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="93"/>
         <source>There is not enough drive space. At least %1 GB is required.</source>
-        <translation type="unfinished"/>
+        <translation>No hay espacio suficiente en disco. Se requiere al menos %1 GB.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="101"/>
         <source>has at least %1 GB working memory</source>
-        <translation type="unfinished"/>
+        <translation>tiene al menos %1 GB de memoria de trabajo</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="103"/>
         <source>The system does not have enough working memory. At least %1 GB is required.</source>
-        <translation type="unfinished"/>
+        <translation>El sistema no tiene suficiente memoria de trabajo. Se requiere al menos %1 GB.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="111"/>
         <source>is plugged in to a power source</source>
-        <translation type="unfinished"/>
+        <translation>está conectado a una fuente de energía</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="112"/>
         <source>The system is not plugged in to a power source.</source>
-        <translation type="unfinished"/>
+        <translation>El sistema no está conectado a una fuente de energía.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="119"/>
         <source>is connected to the Internet</source>
-        <translation type="unfinished"/>
+        <translation>está conectado a internet</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="120"/>
         <source>The system is not connected to the Internet.</source>
-        <translation type="unfinished"/>
+        <translation>El sistema no está conectado a Internet.</translation>
     </message>
 </context>
 <context>
@@ -2939,52 +2939,52 @@ Se puede continuar con la instalación pero algunas de las características pued
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"/>
+        <translation>Formulario</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="104"/>
         <source>&amp;Language:</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Idioma:</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="175"/>
         <source>&amp;Release notes</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Notas de lanzamiento</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="185"/>
         <source>&amp;Known issues</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Problemas conocidos</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="195"/>
         <source>&amp;Support</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Soporte</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="205"/>
         <source>&amp;About</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Acerca de KaOS</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="56"/>
-        <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions see the Known Issues</source>
-        <translation type="unfinished"/>
+        <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer.&lt;br/&gt; Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions see the Known Issues</source>
+        <translation>&lt;h1&gt;Bienvenido al instalador de %1.&lt;/h1&gt;&lt;br/&gt;Este programa le hará algunas preguntas y configurará %2 en su ordenador.&lt;br/&gt; Recuerde, este instalador aún está en su etapa inicial.&lt;br/&gt;Todavía no ha implementado LUKS/LVM o RAID y&lt;br/&gt;el uso de alguna de las opciones de particionamiento automático para instalaciones UEFI.&lt;br/&gt;Para &lt;b&gt;particionamiento GPT en sistemas BIOS&lt;/b&gt; y otras instrucciones vea los Problemas Conocidos</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="79"/>
         <source>About %1 installer</source>
-        <translation type="unfinished"/>
+        <translation>Acerca del instalador %1</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="81"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014-2015 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;http://calamares.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;para %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014-2015 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Gracias a: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini y Rohan Garg.&lt;br/&gt;&lt;br/&gt;El desarrollo de &lt;a href=&quot;http://calamares.io/&quot;&gt;Calamares&lt;/a&gt; está patrocinado por &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="196"/>
         <source>%1 support</source>
-        <translation type="unfinished"/>
+        <translation>%1 soporte</translation>
     </message>
 </context>
 <context>
@@ -2992,7 +2992,7 @@ Se puede continuar con la instalación pero algunas de las características pued
     <message>
         <location filename="../src/modules/welcome/WelcomeViewStep.cpp" line="48"/>
         <source>Welcome</source>
-        <translation type="unfinished"/>
+        <translation>Bienvenido</translation>
     </message>
 </context>
 <context>

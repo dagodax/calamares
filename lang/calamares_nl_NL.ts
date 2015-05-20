@@ -2969,8 +2969,8 @@ is verbonden met het internet</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="56"/>
-        <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions see the Known Issues</source>
-        <translation>&lt;h1&gt;Welkom bij het %1 installeerprogramma.&lt;/h1&gt;&lt;br/&gt;Dit programma stelt je enkele vragen en zal %2 instellen op je computer. Onthou, dit installeerprogramma is nog in een vroeg stadium.&lt;br/&gt;Nog niet geimplementeerd is LUKS/LVM of RAID en&lt;br/&gt;het gebruiken van een van de automatische schijfindeling opties.&lt;br/&gt;Voor &lt;b&gt;GPT schijfindeling op BIOS&lt;/b&gt; systemen en andere instructies zie de Known Issues</translation>
+        <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer.&lt;br/&gt; Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions see the Known Issues</source>
+        <translation>&lt;h1&gt;Welkom bij het %1 installeerprogramma.&lt;/h1&gt;&lt;br/&gt;Dit programma stelt je enkele vragen en zal %2 instellen op je computer.&lt;br/&gt; Onthou, dit installeerprogramma is nog in een vroeg stadium.&lt;br/&gt;Nog niet geimplementeerd is LUKS/LVM of RAID en&lt;br/&gt;het gebruiken van een van de automatische schijfindeling opties.&lt;br/&gt;Voor &lt;b&gt;GPT schijfindeling op BIOS&lt;/b&gt; systemen en andere instructies zie de Bekende Problemen</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="79"/>

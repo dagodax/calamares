@@ -468,7 +468,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="172"/>
         <source>System requirements</source>
-        <translation type="unfinished"/>
+        <translation>Systemanforderungen</translation>
     </message>
 </context>
 <context>
@@ -2943,37 +2943,37 @@ Die Installation wird fortgesetzt, es werden eventuell nicht alle Funktionen ver
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="104"/>
         <source>&amp;Language:</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Sprache:</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="175"/>
         <source>&amp;Release notes</source>
-        <translation type="unfinished"/>
+        <translation>Ve&amp;rsionshinweise</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="185"/>
         <source>&amp;Known issues</source>
-        <translation type="unfinished"/>
+        <translation>Be&amp;kannte Schwierigkeiten:</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="195"/>
         <source>&amp;Support</source>
-        <translation type="unfinished"/>
+        <translation>Unter&amp;stützung</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="205"/>
         <source>&amp;About</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Über</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="56"/>
-        <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions see the Known Issues</source>
+        <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer.&lt;br/&gt; Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions see the Known Issues</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="79"/>
         <source>About %1 installer</source>
-        <translation type="unfinished"/>
+        <translation>Über das %1 Installationsprogramm</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="81"/>
@@ -2983,7 +2983,7 @@ Die Installation wird fortgesetzt, es werden eventuell nicht alle Funktionen ver
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="196"/>
         <source>%1 support</source>
-        <translation type="unfinished"/>
+        <translation>%1 Unterstützung</translation>
     </message>
 </context>
 <context>
@@ -2991,7 +2991,7 @@ Die Installation wird fortgesetzt, es werden eventuell nicht alle Funktionen ver
     <message>
         <location filename="../src/modules/welcome/WelcomeViewStep.cpp" line="48"/>
         <source>Welcome</source>
-        <translation type="unfinished"/>
+        <translation>Willkommen</translation>
     </message>
 </context>
 <context>

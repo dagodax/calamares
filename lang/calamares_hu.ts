@@ -453,22 +453,23 @@ Minden változtatás elveszik, ha kilépünk a telepítőből.</translation>
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="104"/>
         <source>This computer does not satisfy the minimum requirements for installing %1.&lt;br/&gt;Installation cannot continue. &lt;a href=&quot;#details&quot;&gt;Details...&lt;/a&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Ez a számítógép nem felel meg a minimum követelményeknek a %1 telepítéséhez.&lt;br/&gt;
+Telepítés nem folytatható. &lt;a href=&quot;#details&quot;&gt;Részletek...&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="125"/>
         <source>This computer does not satisfy some of the recommended requirements for installing %1.&lt;br/&gt;Installation can continue, but some features might be disabled.</source>
-        <translation type="unfinished"/>
+        <translation>Ez a számítógép nem felel meg a minimum követelményeknek a %1 telepítéséhez.&lt;br/&gt;Telepítés folytatható de néhány tulajdonság valószínűleg nem lesz elérhető.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="147"/>
         <source>For best results, please ensure that this computer:</source>
-        <translation type="unfinished"/>
+        <translation>A legjobb eredményért győződjünk meg, hogy ez a számítógép:</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="172"/>
         <source>System requirements</source>
-        <translation type="unfinished"/>
+        <translation>Rendszer követelmények</translation>
     </message>
 </context>
 <context>
@@ -1610,7 +1611,7 @@ Néhány fájlrendszernek külső eszközre van szüksége a telepítéshez és 
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="158"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014-2015 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;http://calamares.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Minden jog fenntartva 2014-2015 Teo Mrnjavac &lt;teo@kde.org&gt;&lt;br/&gt;;Köszönet: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;http://calamares.io/&quot;&gt;Calamares&lt;/a&gt; fejlesztés támogatói:&lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - szoftver, ami felszabadít.</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="188"/>
@@ -2457,47 +2458,47 @@ Telepítés folytatható de néhány tulajdonság valószínűleg nem lesz elér
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="54"/>
         <source>Gathering system information...</source>
-        <translation type="unfinished"/>
+        <translation>Rendszerinformációk gyűjtése...</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="91"/>
         <source>has at least %1 GB available drive space</source>
-        <translation type="unfinished"/>
+        <translation>Legalább %1 GB lemezterület elérhető</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="93"/>
         <source>There is not enough drive space. At least %1 GB is required.</source>
-        <translation type="unfinished"/>
+        <translation>Elérhető elég lemezterület. Legalább %1GB szükséges.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="101"/>
         <source>has at least %1 GB working memory</source>
-        <translation type="unfinished"/>
+        <translation>Legalább %1 GB elérhető memória</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="103"/>
         <source>The system does not have enough working memory. At least %1 GB is required.</source>
-        <translation type="unfinished"/>
+        <translation>A rendszernek van elég memóriája. Legalább %1 GB szükséges.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="111"/>
         <source>is plugged in to a power source</source>
-        <translation type="unfinished"/>
+        <translation>csatlakoztatva van külső áramforráshoz</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="112"/>
         <source>The system is not plugged in to a power source.</source>
-        <translation type="unfinished"/>
+        <translation>A rendszer nincs csatlakoztatva külső áramforráshoz</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="119"/>
         <source>is connected to the Internet</source>
-        <translation type="unfinished"/>
+        <translation>csatlakozik az internethez</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="120"/>
         <source>The system is not connected to the Internet.</source>
-        <translation type="unfinished"/>
+        <translation>A rendszer nem csatlakozik az internethez.</translation>
     </message>
 </context>
 <context>
@@ -2939,52 +2940,52 @@ Telepítés folytatható de néhány tulajdonság valószínűleg nem lesz elér
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"/>
+        <translation>Adatlap</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="104"/>
         <source>&amp;Language:</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Nyelv:</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="175"/>
         <source>&amp;Release notes</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Kiadási megjegyzések</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="185"/>
         <source>&amp;Known issues</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Ismert hibák</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="195"/>
         <source>&amp;Support</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Támogatás</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="205"/>
         <source>&amp;About</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Névjegy</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="56"/>
-        <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions see the Known Issues</source>
-        <translation type="unfinished"/>
+        <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer.&lt;br/&gt; Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions see the Known Issues</source>
+        <translation>&lt;h1&gt;Üdvözlet a %1 telepítőben.&lt;/h1&gt;&lt;br/&gt;Ez a program fel fog tenni néhány kérdést és %2 -t telepíti a számítógépre.&lt;br/&gt;Ne feledjük el, hogy a telepítő még fejlesztői stádiumban van&lt;br/&gt;Nincs megvalósítva a LUKS/LVM vagy RAID, UEFI és az automatikus&lt;br/&gt;&lt;b&gt; GPT BIOS particionálás.&lt;/ b&gt; A rendszer és az egyéb utasításokért tekintsük meg az Ismert problémákat.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="79"/>
         <source>About %1 installer</source>
-        <translation type="unfinished"/>
+        <translation>A %1 telepítőről</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="81"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014-2015 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;http://calamares.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Minden jog fenntartva 2014-2015 Teo Mrnjavac &lt;teo@kde.org&gt;&lt;br/&gt;;Köszönet: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;http://calamares.io/&quot;&gt;Calamares&lt;/a&gt; fejlesztés támogatói:&lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - szoftver, ami felszabadít.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="196"/>
         <source>%1 support</source>
-        <translation type="unfinished"/>
+        <translation>%1 támogatás</translation>
     </message>
 </context>
 <context>
@@ -2992,7 +2993,7 @@ Telepítés folytatható de néhány tulajdonság valószínűleg nem lesz elér
     <message>
         <location filename="../src/modules/welcome/WelcomeViewStep.cpp" line="48"/>
         <source>Welcome</source>
-        <translation type="unfinished"/>
+        <translation>Üdvözlet</translation>
     </message>
 </context>
 <context>
@@ -3010,12 +3011,12 @@ Telepítés folytatható de néhány tulajdonság valószínűleg nem lesz elér
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="90"/>
         <source>The default Office Suite is Calligra.&lt;br/&gt;LibreOffice is available in the repositories. &lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Az alapértelmezett irodai programcsomag a Calligra&lt;br/&gt;A LibreOffice is elérhető a tárolókban.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="110"/>
         <source>Qt/KDE specific internet applications include the Qupzilla web-browser &lt;br/&gt;and kde-telepathy for chat and Instant Messaging. &lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>A Qt/KDE specifikus internetes alkalmazás a Qupzilla böngésző.&lt;br/&gt; A kde-telepathy alkalmazást használhatjuk chat és azonnali üzenetküldéshez.</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="130"/>
