@@ -165,7 +165,7 @@ ChoicePage::init( PartitionCoreModule* core, const OsproberEntryList& osproberEn
                                                   string( Calamares::Branding::ShortVersionedName ) ) );
 
                 replaceButton->setText( tr( "<strong>Replace a partition with %1</strong><br/>"
-                                            "You will be offered a choice of which partition to erase. <strong>Not suitable for UEFI installs</strong> " )
+                                            "You will be offered a choice of which partition to erase. <strong>Suitable for UEFI installs</strong> " )
                                         .arg( Calamares::Branding::instance()->
                                               string( Calamares::Branding::ShortVersionedName ) ) );
             )
@@ -198,7 +198,7 @@ ChoicePage::init( PartitionCoreModule* core, const OsproberEntryList& osproberEn
                                                   string( Calamares::Branding::ShortVersionedName ) ) );
 
                 replaceButton->setText( tr( "<b>Replace a partition with %1</strong><br/>"
-                                            "You will be offered a choice of which partition to erase. <strong>Not suitable for UEFI installs</strong> " )
+                                            "You will be offered a choice of which partition to erase. <strong>Suitable for UEFI installs</strong> " )
                                         .arg( Calamares::Branding::instance()->
                                               string( Calamares::Branding::ShortVersionedName ) ) );
             )
@@ -247,7 +247,7 @@ ChoicePage::init( PartitionCoreModule* core, const OsproberEntryList& osproberEn
                                               string( Calamares::Branding::ShortVersionedName ) ) );
 
             replaceButton->setText( tr( "<strong>Replace a partition with %1</strong><br/>"
-                                        "You will be offered a choice of which partition to erase. <strong>Not suitable for UEFI installs</strong>" )
+                                        "You will be offered a choice of which partition to erase. <strong>Suitable for UEFI installs</strong>" )
                                     .arg( Calamares::Branding::instance()->
                                           string( Calamares::Branding::ShortVersionedName ) ) );
         )
@@ -265,7 +265,7 @@ ChoicePage::init( PartitionCoreModule* core, const OsproberEntryList& osproberEn
         somethingElseButton->setText( tr( "<strong>Manual partitioning</strong><br/>"
                                           "You can create or resize partitions yourself, or choose "
                                           "multiple partitions for %1."
-                                          "  Use this option for UEFI installs, having a GPT partition table and <strong>fat32 512Mb /boot partition"
+                                          "  Suitable for UEFI installs, having a GPT partition table and <strong>fat32 512Mb /boot partition"
                                           " is a must for UEFI installs</strong>, either use an existing without formatting or create one." )
                                         .arg( Calamares::Branding::instance()->
                                               string( Calamares::Branding::ShortVersionedName ) ) );

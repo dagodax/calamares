@@ -63,7 +63,7 @@ def create_conf(uuid, conf_path):
         '## This is just an exmaple config file.\n',
         '## Please edit the paths and kernel parameters according to your system.\n',
         '\n',
-        'title   %s GNU/Linux, with Linux core repo kernel\n' % distribution,
+        'title   %s GNU/Linux, with Linux kernel\n' % distribution,
         'linux   %s\n' % kernel,
         'initrd  %s\n' % img,
         'options root=UUID=%s quiet systemd.show_status=0 resume=UUID=%s rw\n' % (uuid, swap),
