@@ -452,22 +452,22 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="104"/>
         <source>This computer does not satisfy the minimum requirements for installing %1.&lt;br/&gt;Installation cannot continue. &lt;a href=&quot;#details&quot;&gt;Details...&lt;/a&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Komputer ini tidak memenuhi persyaratan minimum untuk memasang %1.&lt;br&gt;Pemasangan tidak bisa dilanjutkan. &lt;a href=&quot;#details&quot;&gt;Rincian...&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="125"/>
         <source>This computer does not satisfy some of the recommended requirements for installing %1.&lt;br/&gt;Installation can continue, but some features might be disabled.</source>
-        <translation type="unfinished"/>
+        <translation>Komputer ini tidak memenuhi beberapa persyaratan yang dianjurkan untuk memasang %1.&lt;br/&gt;Pemasangan bisa dilanjutkan, tetapi beberapa fitur mungkin dinonaktifkan.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="147"/>
         <source>For best results, please ensure that this computer:</source>
-        <translation type="unfinished"/>
+        <translation>Untuk hasil terbaik, silakan pastikan bahwa komputer ini:</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="172"/>
         <source>System requirements</source>
-        <translation type="unfinished"/>
+        <translation>Persyaratan sistem</translation>
     </message>
 </context>
 <context>
@@ -1608,7 +1608,7 @@ Beberapa sistem berkas yang membutuhkan alat eksternal untuk dipasang bagi merek
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="158"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014-2015 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;http://calamares.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;untuk %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Hak Cipta 2014-2015 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Terimakasih untuk: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini dan Rohan Garg.&lt;br/&gt;&lt;br/&gt; Pengembangan &lt;a href=&quot;http://calamares.io/&quot;&gt;Calamares&lt;/a&gt; disponsori oleh &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="188"/>
@@ -2453,47 +2453,47 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="54"/>
         <source>Gathering system information...</source>
-        <translation type="unfinished"/>
+        <translation>Sistem pengumpulan informasi...</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="91"/>
         <source>has at least %1 GB available drive space</source>
-        <translation type="unfinished"/>
+        <translation>setidaknya memiliki %1 GB ruang drive yang tersedia</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="93"/>
         <source>There is not enough drive space. At least %1 GB is required.</source>
-        <translation type="unfinished"/>
+        <translation>Tidak ada ruang drive yang cukup. Setidaknya %1 GB diperlukan.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="101"/>
         <source>has at least %1 GB working memory</source>
-        <translation type="unfinished"/>
+        <translation>setidaknya memiliki %1 GB memori kerja</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="103"/>
         <source>The system does not have enough working memory. At least %1 GB is required.</source>
-        <translation type="unfinished"/>
+        <translation>Sistem ini tidak memiliki memori kerja yang cukup. Setidaknya %1 GB diperlukan.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="111"/>
         <source>is plugged in to a power source</source>
-        <translation type="unfinished"/>
+        <translation>dicolokkan ke sumber listrik</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="112"/>
         <source>The system is not plugged in to a power source.</source>
-        <translation type="unfinished"/>
+        <translation>Sistem ini tidak dicolokkan dengan sumber listrik.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="119"/>
         <source>is connected to the Internet</source>
-        <translation type="unfinished"/>
+        <translation>tersambung ke internet</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="120"/>
         <source>The system is not connected to the Internet.</source>
-        <translation type="unfinished"/>
+        <translation>Sistem ini tidak tersambung ke internet.</translation>
     </message>
 </context>
 <context>
@@ -2935,52 +2935,52 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"/>
+        <translation>Formulir</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="104"/>
         <source>&amp;Language:</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Bahasa:</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="175"/>
         <source>&amp;Release notes</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Catatan rilis</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="185"/>
         <source>&amp;Known issues</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Masalah diketahui</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="195"/>
         <source>&amp;Support</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Dukungan</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="205"/>
         <source>&amp;About</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Tentang</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="56"/>
         <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer.&lt;br/&gt; Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions see the Known Issues</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Selamat datang di pemasang %1.&lt;/h1&gt;&lt;br/&gt;Program ini akan menanyakan beberapa pertanyaan dan menyiapkan %2 pada komputer Anda.&lt;br/&gt; Ingat, pemasang ini masih dalam tahap awal.&lt;br/&gt;Belum diimplementasikan LUKS/LVM atau RAID dan&lt;br/&gt;penggunaan salah satu opsi pemartisian otomatis bagi UEFI installs.&lt;br/&gt;Untuk &lt;b&gt;pemartisian GPT pada sistem BIOS&lt;/b&gt; dan pengarahan lainnya lihat Masalah Diketahui</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="79"/>
         <source>About %1 installer</source>
-        <translation type="unfinished"/>
+        <translation>Tentang pemasang %1</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="81"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014-2015 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;http://calamares.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;untuk %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Hak Cipta 2014-2015 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Terimakasih untuk: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini dan Rohan Garg.&lt;br/&gt;&lt;br/&gt; Pengembangan &lt;a href=&quot;http://calamares.io/&quot;&gt;Calamares&lt;/a&gt; disponsori oleh &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="196"/>
         <source>%1 support</source>
-        <translation type="unfinished"/>
+        <translation>%1 dukungan</translation>
     </message>
 </context>
 <context>
@@ -2988,7 +2988,7 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/welcome/WelcomeViewStep.cpp" line="48"/>
         <source>Welcome</source>
-        <translation type="unfinished"/>
+        <translation>Selamat datang</translation>
     </message>
 </context>
 <context>
@@ -2996,7 +2996,7 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="45"/>
         <source>Here the actual install of KaOS will start.&lt;br/&gt;Use the left &lt;b&gt;mouse button&lt;/b&gt; to go to the next slide, right for previous.&lt;br/&gt;After creating your chosen disk setup in the first 10 % &lt;br/&gt;the full copying of the ISO will take the longest of this install phase &lt;br/&gt;and will run until approximately 30%.&lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Di sini memasang KaOS yang sebenarnya akan mulai.&lt;br/&gt;Gunakan &lt;b&gt;tombol mouse&lt;/br&gt; kiri untuk ke slide selanjutnya, kanan untuk sebelumnya.&lt;br/&gt;Setelah membuat persiapan disk yang Anda pilih dalam 10% pertama &lt;br/&gt;penyalinan penuh ISO akan memakan waktu yang lama bagi fase pasang ini dan akan berlangsung sampai sekitar 30%.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="68"/>
@@ -3006,17 +3006,17 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="90"/>
         <source>The default Office Suite is Calligra.&lt;br/&gt;LibreOffice is available in the repositories. &lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Perlengkapan Kantor baku adalah Calligra.&lt;br/&gt;LibreOffice telah tersedia di repositori. &lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="110"/>
         <source>Qt/KDE specific internet applications include the Qupzilla web-browser &lt;br/&gt;and kde-telepathy for chat and Instant Messaging. &lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Aplikasi internet Qt/KDE tertentu termasuk peramban web Qupzilla &lt;br/&gt;dan kde-telepathy untuk obrolan dan Instant Messaging. &lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="130"/>
         <source>May using KaOS be a pleasant experience for you.</source>
-        <translation type="unfinished"/>
+        <translation>Mungkin menggunakan KaOS menjadi pengalaman yang menyenangkan bagi Anda.</translation>
     </message>
 </context>
 </TS>
