@@ -136,7 +136,7 @@ def install_bootloader(boot_loader, fw_type):
                 print(device)
         subprocess.call(["sgdisk", "--typecode=%s:EF00" % boot_p, "%s" % device])
         subprocess.call(
-            ["gummiboot", "--path=%s/boot" % install_path, "install"])
+            ["bootctl", "--path=%s/boot" % install_path, "install"])
         create_conf(uuid, conf_path)
         create_fallback(uuid, fallback_path)
         create_loader(loader_path)
