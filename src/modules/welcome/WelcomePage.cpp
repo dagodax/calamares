@@ -57,8 +57,7 @@ WelcomePage::WelcomePage( RequirementsChecker* requirementsChecker, QWidget* par
                                    "This program will ask you some questions and "
                                    "set up %2 on your computer.<br/>" 
                                    " Remember, this installer is still in an early stage.<br/>"
-                                   "Not implemented yet is LUKS/LVM or RAID and<br/>"
-                                   "using one of the automated partitioning options for UEFI installs.<br/>" 
+                                   "Not implemented yet is LUKS/LVM or RAID.<br/>"
                                    "For <b>GPT partioning on BIOS</b> systems and "
                                    "other instructions see the Known Issues" )
                                 .arg( Calamares::Branding::instance()->

@@ -143,7 +143,7 @@ EraseDiskPage::doAutopartition( Device* dev )
     int empty_space_size = 0;
     if ( isEfi )
     {
-        uefisys_part_size = 100;
+        uefisys_part_size = 300;
         empty_space_size = 2;
     }
     else
@@ -166,11 +166,11 @@ EraseDiskPage::doAutopartition( Device* dev )
             first_free_sector,
             lastSector
         );
+        PartitionInfo::setFormat( efiPartition, true );
         PartitionInfo::setMountPoint( efiPartition, Calamares::JobQueue::instance()
                                                         ->globalStorage()
                                                         ->value( "efiSystemPartition" )
                                                         .toString() );
-        PartitionInfo::setFormat( efiPartition, true );
         m_core->createPartition( dev, efiPartition );
         first_free_sector = lastSector + 1;
     }
@@ -187,8 +187,8 @@ EraseDiskPage::doAutopartition( Device* dev )
         first_free_sector,
         dev->totalSectors() - 1 //last sector
     );
-    PartitionInfo::setMountPoint( rootPartition, "/" );
     PartitionInfo::setFormat( rootPartition, true );
+    PartitionInfo::setMountPoint( rootPartition, "/" );
     m_core->createPartition( dev, rootPartition );
 
     updatePreviews();
