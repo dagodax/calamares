@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="hu" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ast" version="2.1">
 <context>
     <name>show</name>
     <message>
@@ -14,17 +14,17 @@
     <message>
         <location filename="../kaos_branding/show.qml" line="90"/>
         <source>The default Office Suite is Calligra.&lt;br/&gt;LibreOffice is available in the repositories. &lt;br/&gt;</source>
-        <translation>Az alapértelmezett irodai programcsomag a Calligra&lt;br/&gt;A LibreOffice is elérhető a tárolókban.&lt;br/&gt;</translation>
+        <translation>La suit por defeutu ye Calligra.&lt;br/&gt;LibreOffice ta disponible nos repositorios. &lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../kaos_branding/show.qml" line="110"/>
         <source>Qt/KDE specific internet applications include the Qupzilla web-browser &lt;br/&gt;and kde-telepathy for chat and Instant Messaging. &lt;br/&gt;</source>
-        <translation>A Qt/KDE specifikus internetes alkalmazás a Qupzilla böngésző.&lt;br/&gt; A kde-telepathy alkalmazást használhatjuk chat és azonnali üzenetküldéshez.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../kaos_branding/show.qml" line="130"/>
         <source>May using KaOS be a pleasant experience for you.</source>
-        <translation>A KaOS használata kellemes élmény lesz a felhasználó számára.</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 </TS>
