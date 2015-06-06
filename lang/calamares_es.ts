@@ -1672,7 +1672,7 @@ Algunos sistemas de archivos necesitan instalar herramientas externas para ser s
         <location filename="../src/modules/locale/LocalePage.cpp" line="159"/>
         <location filename="../src/modules/locale/LocalePage.cpp" line="170"/>
         <source>The system locale is set to %1.</source>
-        <translation>El sistema de configuración regional se establece en 1%.</translation>
+        <translation>El sistema de configuración regional se establece en %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="167"/>
