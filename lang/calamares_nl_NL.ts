@@ -542,8 +542,8 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="277"/>
-        <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.</source>
-        <translation>&lt;strong&gt;Handmatige schijfindeling&lt;/strong&gt;&lt;br/&gt;Zelf partities maken of aanpassen, of meerdere partities voor %1 kiezen.</translation>
+        <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;, either use an existing without formatting or create one.</source>
+        <translation>&lt;strong&gt;Handmatige partitionering&lt;/strong&gt;&lt;br/&gt;Je kunt partities zelf creeren of aanpassen, of kies meerdere partities voor %1. Het hebben van een GPT partitietabel en &lt;strong&gt;fat32 512Mb /boot partitie is een must voor UEFI installaties&lt;/strong&gt;, ofwel gebruik maken van een bestaande, zonder formatteren of creeer.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="177"/>

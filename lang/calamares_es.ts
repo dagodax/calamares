@@ -542,8 +542,8 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="277"/>
-        <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.</source>
-        <translation>&lt;strong&gt;Particionamiento manual&lt;/strong&gt;&lt;br/&gt;Puede crear o redimensionar usted mismo, o elegir múltiples particiones para %1.</translation>
+        <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;, either use an existing without formatting or create one.</source>
+        <translation>&lt;strong&gt;Particionado manual&lt;/strong&gt;&lt;br/&gt;Puede crear o redimensionar particiones Ud. mismo, o elegir múltiples particiones para %1. Tener una tabla de partición GPT y &lt;strong&gt;una partición /boot en fat32 de 512Mb es una condición necesaria para instalaciones UEFI&lt;/strong&gt;, o bien utilice una sin formato o puede crearla Ud.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="177"/>

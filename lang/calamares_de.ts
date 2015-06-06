@@ -542,7 +542,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="277"/>
-        <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.</source>
+        <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;, either use an existing without formatting or create one.</source>
         <translation type="unfinished"/>
     </message>
     <message>
