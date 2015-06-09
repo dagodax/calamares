@@ -1,4 +1,4 @@
-foreach( lang ast en es es_AR fr nl_NL )
+foreach( lang ast de en es es_AR fr hu id_ID nl_NL pt_BR sr_RS )
    list( APPEND TS_FILES "${CMAKE_CURRENT_SOURCE_DIR}/calamares-${COMPONENT_NAME}_${lang}.ts" )
 endforeach()
 qt5_add_translation( QM_FILES ${TS_FILES} )
