@@ -15,7 +15,7 @@ if( CMAKE_CXX_COMPILER_ID MATCHES "Clang" )
     set( CMAKE_C_FLAGS_RELEASE          "-O4 -DNDEBUG" )
     set( CMAKE_C_FLAGS_RELWITHDEBINFO   "-O2 -g" )
 
-    set( CMAKE_CXX_FLAGS                "${CMAKE_CXX_FLAGS} -Wall -std=c++11" )
+    set( CMAKE_CXX_FLAGS                "${CMAKE_CXX_FLAGS} -Weverything -std=c++11" )
     set( CMAKE_CXX_FLAGS_DEBUG          "-g" )
     set( CMAKE_CXX_FLAGS_MINSIZEREL     "-Os -DNDEBUG" )
     set( CMAKE_CXX_FLAGS_RELEASE        "-O4 -DNDEBUG" )
@@ -93,9 +93,9 @@ set( CALAMARES_DESCRIPTION_SUMMARY "The distribution-independent installer frame
 set( CALAMARES_TRANSLATION_LANGUAGES ast ca cs de en es es_AR fr hr hu id_ID it nl_NL pl pt_BR ru sl sr_RS sv tr_TR )
 
 set( CALAMARES_VERSION_MAJOR 1 )
-set( CALAMARES_VERSION_MINOR 0 )
+set( CALAMARES_VERSION_MINOR 1 )
 set( CALAMARES_VERSION_PATCH 0 )
-#set( CALAMARES_VERSION_RC 0 )
+set( CALAMARES_VERSION_RC 1 )
 
 set( CALAMARES_VERSION ${CALAMARES_VERSION_MAJOR}.${CALAMARES_VERSION_MINOR}.${CALAMARES_VERSION_PATCH} )
 set( CALAMARES_VERSION_SHORT "${CALAMARES_VERSION}" )

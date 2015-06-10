@@ -78,14 +78,15 @@ CheckerWidget::init( const QList< PrepareEntry >& checkEntries )
         }
     }
 
+    QLabel* textLabel = new QLabel;
+
+    textLabel->setWordWrap( true );
+    m_entriesLayout->insertWidget( 0, textLabel );
+    textLabel->setSizePolicy( QSizePolicy::Expanding, QSizePolicy::Preferred );
+
     if ( !allChecked )
     {
-        QLabel* textLabel = new QLabel;
-
-        textLabel->setWordWrap( true );
-        m_entriesLayout->insertWidget( 0, textLabel );
         m_entriesLayout->insertSpacing( 1, CalamaresUtils::defaultFontHeight() / 2 );
-        textLabel->setSizePolicy( QSizePolicy::Expanding, QSizePolicy::Preferred );
 
         if ( !requirementsSatisfied )
         {
@@ -117,6 +118,21 @@ CheckerWidget::init( const QList< PrepareEntry >& checkEntries )
             )
         }
     }
+
+    if ( allChecked && requirementsSatisfied )
+    {
+        CALAMARES_RETRANSLATE(
+            textLabel->setText( tr( "This program will ask you some questions and "
+                                    "set up %2 on your computer.<br/>" 
+                                    " Remember, this installer is still in an early stage.<br/>"
+                                    "Not implemented yet is LUKS/LVM or RAID.<br/>"
+                                    "For <b>GPT partioning on BIOS</b> systems and "
+                                    "other instructions see the Known Issues" )
+                                .arg( Calamares::Branding::instance()->
+                                      string( Calamares::Branding::ProductName ) ) );
+            textLabel->setAlignment( Qt::AlignCenter );
+        )
+    }
 }
 
 
@@ -138,6 +154,9 @@ CheckerWidget::showDetailsDialog( const QList< PrepareEntry >& checkEntries )
 
     for ( const PrepareEntry& entry : checkEntries )
     {
+        if ( entry.enumerationText().isEmpty() )
+            continue;
+
         CheckItemWidget* ciw = new CheckItemWidget( entry.checked );
         CALAMARES_RETRANSLATE( ciw->setText( entry.enumerationText() ); )
         entriesLayout->addWidget( ciw );
