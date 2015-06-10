@@ -2501,7 +2501,7 @@ is verbonden met het internet</translation>
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="100"/>
         <source>There is not enough drive space. At least %1 GB is required.</source>
-        <translation>Het systeem heeft niet genoeg werkgeheugen. Ten minste 1% GB vereist.</translation>
+        <translation>Het systeem heeft niet genoeg werkgeheugen. Ten minste %1 GB vereist.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="108"/>
@@ -2511,7 +2511,7 @@ is verbonden met het internet</translation>
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="110"/>
         <source>The system does not have enough working memory. At least %1 GB is required.</source>
-        <translation>Het systeem heeft niet genoeg werkgeheugen. Ten minste 1% GB vereist.</translation>
+        <translation>Het systeem heeft niet genoeg werkgeheugen. Ten minste %1 GB vereist.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="118"/>
