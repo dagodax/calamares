@@ -471,23 +471,28 @@ Minden változtatás elveszik, ha kilépünk a telepítőből.</translation>
 <context>
     <name>CheckerWidget</name>
     <message>
-        <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="93"/>
+        <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="94"/>
         <source>This computer does not satisfy the minimum requirements for installing %1.&lt;br/&gt;Installation cannot continue. &lt;a href=&quot;#details&quot;&gt;Details...&lt;/a&gt;</source>
         <translation>Ez a számítógép nem felel meg a minimum követelményeknek a %1 telepítéséhez.&lt;br/&gt;
 Telepítés nem folytatható. &lt;a href=&quot;#details&quot;&gt;Részletek...&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="111"/>
+        <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="112"/>
         <source>This computer does not satisfy some of the recommended requirements for installing %1.&lt;br/&gt;Installation can continue, but some features might be disabled.</source>
         <translation>Ez a számítógép nem felel meg a minimum követelményeknek a %1 telepítéséhez.&lt;br/&gt;Telepítés folytatható de néhány tulajdonság valószínűleg nem lesz elérhető.</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="133"/>
+        <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="125"/>
+        <source>This program will ask you some questions and set up %2 on your computer.&lt;br/&gt; Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions see the Known Issues</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="149"/>
         <source>For best results, please ensure that this computer:</source>
         <translation>A legjobb eredményért győződjünk meg, hogy ez a számítógép:</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="158"/>
+        <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="177"/>
         <source>System requirements</source>
         <translation>Rendszer követelmények</translation>
     </message>
@@ -925,17 +930,17 @@ Telepítés nem folytatható. &lt;a href=&quot;#details&quot;&gt;Részletek...&l
         <translation>MB</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="95"/>
+        <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="96"/>
         <source>Logical</source>
         <translation>Logikai</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="100"/>
+        <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="101"/>
         <source>Primary</source>
         <translation>Elsődleges</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="117"/>
+        <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="118"/>
         <source>GPT</source>
         <translation>GPT</translation>
     </message>
@@ -1384,17 +1389,17 @@ Telepítés nem folytatható. &lt;a href=&quot;#details&quot;&gt;Részletek...&l
 <context>
     <name>EraseDiskPage</name>
     <message>
-        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="53"/>
+        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="54"/>
         <source>Select drive:</source>
         <translation>Meghajtó kiválasztás:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="230"/>
+        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="287"/>
         <source>Before:</source>
         <translation>Előtte:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="236"/>
+        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="293"/>
         <source>After:</source>
         <translation>Utána:</translation>
     </message>
@@ -2484,49 +2489,54 @@ Telepítés folytatható de néhány tulajdonság valószínűleg nem lesz elér
 <context>
     <name>RequirementsChecker</name>
     <message>
-        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="54"/>
+        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="57"/>
         <source>Gathering system information...</source>
         <translation>Rendszerinformációk gyűjtése...</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="91"/>
+        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="98"/>
         <source>has at least %1 GB available drive space</source>
         <translation>Legalább %1 GB lemezterület elérhető</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="93"/>
+        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="100"/>
         <source>There is not enough drive space. At least %1 GB is required.</source>
         <translation>Elérhető elég lemezterület. Legalább %1GB szükséges.</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="101"/>
+        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="108"/>
         <source>has at least %1 GB working memory</source>
         <translation>Legalább %1 GB elérhető memória</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="103"/>
+        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="110"/>
         <source>The system does not have enough working memory. At least %1 GB is required.</source>
         <translation>A rendszernek van elég memóriája. Legalább %1 GB szükséges.</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="111"/>
+        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="118"/>
         <source>is plugged in to a power source</source>
         <translation>csatlakoztatva van külső áramforráshoz</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="112"/>
+        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="119"/>
         <source>The system is not plugged in to a power source.</source>
         <translation>A rendszer nincs csatlakoztatva külső áramforráshoz</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="119"/>
+        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="126"/>
         <source>is connected to the Internet</source>
         <translation>csatlakozik az internethez</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="120"/>
+        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="127"/>
         <source>The system is not connected to the Internet.</source>
         <translation>A rendszer nem csatlakozik az internethez.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="135"/>
+        <source>The installer is not running with administrator rights.</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -2971,47 +2981,47 @@ Telepítés folytatható de néhány tulajdonság valószínűleg nem lesz elér
         <translation>Adatlap</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="104"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="88"/>
         <source>&amp;Language:</source>
         <translation>&amp;Nyelv:</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="175"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="159"/>
         <source>&amp;Release notes</source>
         <translation>&amp;Kiadási megjegyzések</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="185"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="169"/>
         <source>&amp;Known issues</source>
         <translation>&amp;Ismert hibák</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="195"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="179"/>
         <source>&amp;Support</source>
         <translation>&amp;Támogatás</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="205"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="189"/>
         <source>&amp;About</source>
         <translation>&amp;Névjegy</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="56"/>
-        <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer.&lt;br/&gt; Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions see the Known Issues</source>
+        <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.cpp" line="78"/>
+        <location filename="../src/modules/welcome/WelcomePage.cpp" line="70"/>
         <source>About %1 installer</source>
         <translation>A %1 telepítőről</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.cpp" line="80"/>
+        <location filename="../src/modules/welcome/WelcomePage.cpp" line="72"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014-2015 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;http://calamares.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</source>
         <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Minden jog fenntartva 2014-2015 Teo Mrnjavac &lt;teo@kde.org&gt;&lt;br/&gt;;Köszönet: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;http://calamares.io/&quot;&gt;Calamares&lt;/a&gt; fejlesztés támogatói:&lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - szoftver, ami felszabadít.</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.cpp" line="195"/>
+        <location filename="../src/modules/welcome/WelcomePage.cpp" line="187"/>
         <source>%1 support</source>
         <translation>%1 támogatás</translation>
     </message>

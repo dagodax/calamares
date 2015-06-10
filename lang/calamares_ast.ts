@@ -471,22 +471,27 @@ L&apos;instalador colará y perderánse toles camudancies.</translation>
 <context>
     <name>CheckerWidget</name>
     <message>
-        <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="93"/>
+        <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="94"/>
         <source>This computer does not satisfy the minimum requirements for installing %1.&lt;br/&gt;Installation cannot continue. &lt;a href=&quot;#details&quot;&gt;Details...&lt;/a&gt;</source>
         <translation>Esti ordenador nun satifaz los requirimientos mínimos pa la instalación de %1.&lt;br/&gt;La instalación nun pue siguir. &lt;a href=&quot;#details&quot;&gt;Detalles...&lt;/a&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="111"/>
+        <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="112"/>
         <source>This computer does not satisfy some of the recommended requirements for installing %1.&lt;br/&gt;Installation can continue, but some features might be disabled.</source>
         <translation>Esti ordenador nun satifaz dellos requirimientos aconseyaos pa la instalación de %1.&lt;br/&gt;La instalación pue siguir, pero podríen deshabilitase delles carauterístiques.</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="133"/>
+        <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="125"/>
+        <source>This program will ask you some questions and set up %2 on your computer.&lt;br/&gt; Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions see the Known Issues</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="149"/>
         <source>For best results, please ensure that this computer:</source>
         <translation>Pa los meyores resultaos, por favor asegúrate qu&apos;esti ordenador:</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="158"/>
+        <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="177"/>
         <source>System requirements</source>
         <translation>Requirimientos del sistema</translation>
     </message>
@@ -924,17 +929,17 @@ L&apos;instalador colará y perderánse toles camudancies.</translation>
         <translation> MB</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="95"/>
+        <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="96"/>
         <source>Logical</source>
         <translation>Llóxica</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="100"/>
+        <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="101"/>
         <source>Primary</source>
         <translation>Primaria</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="117"/>
+        <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="118"/>
         <source>GPT</source>
         <translation>GPT</translation>
     </message>
@@ -1383,17 +1388,17 @@ L&apos;instalador colará y perderánse toles camudancies.</translation>
 <context>
     <name>EraseDiskPage</name>
     <message>
-        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="53"/>
+        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="54"/>
         <source>Select drive:</source>
         <translation>Esbillar unidá:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="230"/>
+        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="287"/>
         <source>Before:</source>
         <translation>Enantes:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="236"/>
+        <location filename="../src/modules/partition/gui/EraseDiskPage.cpp" line="293"/>
         <source>After:</source>
         <translation>Dempués:</translation>
     </message>
@@ -2483,49 +2488,54 @@ La instalación pue siguir, pero delles carauterístiques pudieron deshabilitase
 <context>
     <name>RequirementsChecker</name>
     <message>
-        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="54"/>
+        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="57"/>
         <source>Gathering system information...</source>
         <translation>Axuntando información del equipu...</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="91"/>
+        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="98"/>
         <source>has at least %1 GB available drive space</source>
         <translation>tien polo menos %1 GB disponibles d&apos;espaciu en discu</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="93"/>
+        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="100"/>
         <source>There is not enough drive space. At least %1 GB is required.</source>
         <translation>Nun hai espaciu abondu na unidá. Ríquense polo menos %1 GB.</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="101"/>
+        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="108"/>
         <source>has at least %1 GB working memory</source>
         <translation>polo menos %1 GB de memoria de trabayu</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="103"/>
+        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="110"/>
         <source>The system does not have enough working memory. At least %1 GB is required.</source>
         <translation>El sistema nun tien abonda memoria de trabayu. Ríquense polo menos %1 GB.</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="111"/>
+        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="118"/>
         <source>is plugged in to a power source</source>
         <translation>ta enchufáu a una fonte d&apos;enerxía</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="112"/>
+        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="119"/>
         <source>The system is not plugged in to a power source.</source>
         <translation>El sistema nun ta enchufáu a una fonte d&apos;enerxía.</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="119"/>
+        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="126"/>
         <source>is connected to the Internet</source>
         <translation>ta coneutáu a internet</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="120"/>
+        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="127"/>
         <source>The system is not connected to the Internet.</source>
         <translation>El sistema nun ta coneutáu a internet.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="135"/>
+        <source>The installer is not running with administrator rights.</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -2970,47 +2980,47 @@ La instalación pue siguir, pero delles carauterístiques pudieron deshabilitase
         <translation>Formulariu</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="104"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="88"/>
         <source>&amp;Language:</source>
         <translation>&amp;Llingua:</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="175"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="159"/>
         <source>&amp;Release notes</source>
         <translation>&amp;Notes de llanzamientu</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="185"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="169"/>
         <source>&amp;Known issues</source>
         <translation>&amp;Torgues conocíes</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="195"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="179"/>
         <source>&amp;Support</source>
         <translation>&amp;Sofitu</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="205"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="189"/>
         <source>&amp;About</source>
         <translation>&amp;Tocante a</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="56"/>
-        <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer.&lt;br/&gt; Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions see the Known Issues</source>
+        <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.cpp" line="78"/>
+        <location filename="../src/modules/welcome/WelcomePage.cpp" line="70"/>
         <source>About %1 installer</source>
         <translation>Tocante al instaldor %1</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.cpp" line="80"/>
+        <location filename="../src/modules/welcome/WelcomePage.cpp" line="72"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014-2015 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini and Rohan Garg.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;http://calamares.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</source>
         <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;pa %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014-2015 Teo Mrnjavac &lt;teo@kde.org&gt;&lt;br/&gt;Gracies a: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini y Rohan Garg.&lt;br/&gt;&lt;br/&gt;El desendolcu de &lt;a href=&quot;http://calamares.io/&quot;&gt;Calamares&lt;/a&gt; ta sofitáu por &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.cpp" line="195"/>
+        <location filename="../src/modules/welcome/WelcomePage.cpp" line="187"/>
         <source>%1 support</source>
         <translation type="unfinished"/>
     </message>
