@@ -14,22 +14,22 @@
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="117"/>
         <source>With this operation, the partition &lt;strong&gt;%1&lt;/strong&gt; which contains %4 will be shrunk to %2MB and a new %3MB partition will be created for %5.</source>
-        <translation type="unfinished"/>
+        <translation>Con esta operación, redimensionaráse a %2MB la partición &lt;strong&gt;%1&lt;/strong&gt; que caltién %4 y crearáse una partición nueva de %3MB pa %5.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="217"/>
         <source>An EFI system partition cannot be found anywhere on this system. Please go back and use manual partitioning to set up %1.</source>
-        <translation type="unfinished"/>
+        <translation>Nun pue alcontrase per nenyures una partición del sistema EFI nesti ordenador. Por favor, vuelvi atrás y usa&apos;l particionáu manual pa configurar %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="227"/>
         <source>The EFI system partition at %1 will be used for starting %2.</source>
-        <translation type="unfinished"/>
+        <translation>La partición del sistema EFI en %1 usaráse p&apos;aniciar %2.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="237"/>
         <source>EFI system partition:</source>
-        <translation type="unfinished"/>
+        <translation>Partición del sistema EFI:</translation>
     </message>
 </context>
 <context>
@@ -483,7 +483,7 @@ L&apos;instalador colará y perderánse toles camudancies.</translation>
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="125"/>
         <source>This program will ask you some questions and set up %2 on your computer.&lt;br/&gt; Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions see the Known Issues</source>
-        <translation type="unfinished"/>
+        <translation>Esti programa fadráte delles entruges y configurará %2 nel to ordenador.&lt;br/&gt; Recuerda, esti instalador ta entá nuna fas temprana.&lt;br/&gt;Entá nun s&apos;implementó LUKS/LVM o RAID.&lt;br/&gt;Pal &lt;b&gt;particionáu GPT en sistemes BIOS&lt;/b&gt; écha-y un güeyu a Torgues conocíes</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="149"/>
@@ -508,7 +508,7 @@ L&apos;instalador colará y perderánse toles camudancies.</translation>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="190"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="239"/>
         <source>&lt;strong&gt;Erase disk and install %1&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will delete all of your programs, documents, photos, music, and any other files.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Desaniciar discu ya instalar %1&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Avisu: &lt;/font&gt;Esto desanciará tolos tos programes, documentos, semeyes, música y cualesquier otru ficheru.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="126"/>
@@ -516,7 +516,7 @@ L&apos;instalador colará y perderánse toles camudancies.</translation>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="196"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="245"/>
         <source>&lt;strong&gt;Erase disk and install %1&lt;/strong&gt;&lt;br/&gt;You will be offered a choice of which disk to erase.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Desaniciar discu ya instalar %1&lt;/strong&gt;&lt;br/&gt;Ufrirásete una escoyeta de que discu desaniciar.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="142"/>
@@ -531,14 +531,14 @@ L&apos;instalador colará y perderánse toles camudancies.</translation>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="155"/>
         <source>&lt;strong&gt;Erase entire disk with %1 and install %2&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;This will erase the whole disk and delete all of your %1 programs, documents, photos, music, and any other files.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Desaniciar tol discu con %1 ya instalar %2&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Avisu: &lt;/font&gt;Esto desanciará tol discu y tolos tos programes, documentos, semeyes, música y cualesquier otru ficheru de %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="168"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="201"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="250"/>
         <source>&lt;strong&gt;Replace a partition with %1&lt;/strong&gt;&lt;br/&gt;You will be offered a choice of which partition to erase.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Tocar una partición con %1&lt;/strong&gt;&lt;br/&gt;Ufrirásete una escoyeta de que partición desaniciar.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="180"/>
@@ -553,7 +553,7 @@ L&apos;instalador colará y perderánse toles camudancies.</translation>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="277"/>
         <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;, either use an existing without formatting or create one.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Particionáu manual&lt;/strong&gt;&lt;br/&gt;Pues crear o redimensionar les particiones tu mesmu, o escoyer múltiples particiones pa %1.  Tener una tabla de particiones GPT &lt;strong&gt;rique d&apos;una partición /boot en FAT32 de 512 MB pa instalaciones UEFI&lt;/strong&gt;. Sicasí, pues usar una partición esistente o creala.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="177"/>
@@ -1425,12 +1425,12 @@ Dellos sistemes de ficheros riquen la instalación de ferramientes esternes pa t
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="75"/>
         <source>Grow</source>
-        <translation type="unfinished"/>
+        <translation>Aumentar</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="80"/>
         <source>Shrink</source>
-        <translation type="unfinished"/>
+        <translation>Amenorgar</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/filesystemsupportdialogwidgetbase.ui" line="85"/>
@@ -2465,24 +2465,24 @@ La instalación pue siguir, pero delles carauterístiques pudieron deshabilitase
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="281"/>
         <source>&lt;strong&gt;%2&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;An EFI system partition cannot be found anywhere on this system. Please go back and use manual partitioning to set up %1.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;%2&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Nun pue alcontrase per nenyures una partición del sistema EFI nesti ordenador. Por favor, vuelvi atrás y usa&apos;l particionáu manual pa configurar %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="293"/>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="312"/>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="337"/>
         <source>&lt;strong&gt;%3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;%1 will be installed on %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;all data on partition %2 will be lost.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;%3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;%1 instalaráse en %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Avisu: &lt;/font&gt;perderánse tolos datos na partición %2.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="303"/>
         <source>The EFI system partition at %1 will be used for starting %2.</source>
-        <translation type="unfinished"/>
+        <translation>La partición del sistema EFi en %1 usaráse p&apos;aniciar %2</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="321"/>
         <source>EFI system partition:</source>
-        <translation type="unfinished"/>
+        <translation>Partición del sistema EFI:</translation>
     </message>
 </context>
 <context>
@@ -2535,7 +2535,7 @@ La instalación pue siguir, pero delles carauterístiques pudieron deshabilitase
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="135"/>
         <source>The installer is not running with administrator rights.</source>
-        <translation type="unfinished"/>
+        <translation>L&apos;instalador nun ta executándose con drechos alministrativos.</translation>
     </message>
 </context>
 <context>
@@ -3007,7 +3007,7 @@ La instalación pue siguir, pero delles carauterístiques pudieron deshabilitase
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="56"/>
         <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Bienllegáu al instalador %1.&lt;/h1&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="70"/>

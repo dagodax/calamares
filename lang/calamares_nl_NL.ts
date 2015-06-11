@@ -391,7 +391,7 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="253"/>
         <source>The %1 installer is about to make changes to your disk in order to install %2.&lt;br/&gt;&lt;strong&gt;You will not be able to undo these changes.&lt;/strong&gt;</source>
-        <translation>Het %1 installeer programma zal nu wijzigingen in je schijf maken om% 2 te installeren.&lt;br/&gt;&lt;strong&gt;Je zult niet in staat zijn om deze veranderingen ongedaan te maken. .&lt;/strong&gt;</translation>
+        <translation>Het %1 installeer programma zal nu wijzigingen in je schijf maken om %2 te installeren.&lt;br/&gt;&lt;strong&gt;Je zult niet in staat zijn om deze veranderingen ongedaan te maken. .&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="260"/>
@@ -954,7 +954,7 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="59"/>
         <source>Create new &lt;strong&gt;%2MB&lt;/strong&gt; partition on &lt;strong&gt;%4&lt;/strong&gt; (%3) with file system &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation>Maak een nieuwe &lt;strong&gt;% 2MB&lt;/ strong&gt; partitie op &lt;strong&gt;% 4 &lt;/ strong&gt; (%3) met bestandssysteem &lt;strong&gt;%1&lt;/strong&gt;.</translation>
+        <translation>Maak een nieuwe &lt;strong&gt;%2MB&lt;/ strong&gt; partitie op &lt;strong&gt;%4 &lt;/ strong&gt; (%3) met bestandssysteem &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="74"/>
@@ -1514,7 +1514,7 @@ Sommige bestandssystemen vereisen dat externe programma&apos;s geïnstalleerd wo
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="142"/>
         <source>Install boot loader on &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation>Installeer de boot loader op </translation>
+        <translation>Installeer de boot loader op &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="155"/>
