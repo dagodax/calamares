@@ -483,7 +483,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="125"/>
         <source>This program will ask you some questions and set up %2 on your computer.&lt;br/&gt; Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions see the Known Issues</source>
-        <translation>&lt;h1&gt;Willkommen zum %1 Installationsprogramm. &lt;/h1&gt;&lt;br/&gt;Diese Anwendung wird dir jetzt ein paar Fragen stellen und %2 auf deinem Computer einrichten. &lt;br/&gt;Noch nicht implementiert ist: LUKS/LVM sowie RAID. Für &lt;b&gt;die GPT Partitionierung in BIOS&lt;/b&gt; Systemen und für andere Hinweise, lies bitte den folgenden Link:, read &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Known Issues&lt;/a&gt;</translation>
+        <translation>Diese Anwendung wird dir jetzt ein paar Fragen stellen und %2 auf deinem Computer einrichten. &lt;br/&gt;Noch nicht implementiert ist: LUKS/LVM sowie RAID. Für &lt;b&gt;die GPT Partitionierung in BIOS&lt;/b&gt; Systemen und für andere Hinweise, lies bitte den folgenden Link:, read &lt;a href=&quot;http://kaosx.us/download/&quot;&gt;Known Issues&lt;/a&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="149"/>

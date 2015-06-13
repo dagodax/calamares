@@ -4,12 +4,12 @@
     <message>
         <location filename="../kaos_branding/show.qml" line="45"/>
         <source>Here the actual install of KaOS will start.&lt;br/&gt;Use the left &lt;b&gt;mouse button&lt;/b&gt; to go to the next slide, right for previous.&lt;br/&gt;After creating your chosen disk setup in the first 10 % &lt;br/&gt;the full copying of the ISO will take the longest of this install phase &lt;br/&gt;and will run until approximately 30%.&lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Equí ye u entamará la instalación actual de KaOS.&lt;br/&gt;Usa&apos;l &lt;b&gt;botón esquierdu del mur&lt;/b&gt; pa dir a la dispositiva siguiente, el drechu pa dir a la anterior.&lt;br/&gt;Dempués de crear la to configuración de discos escoyida nel primer 10%, &lt;br/&gt;la copia completa de la ISO ye lo que más tardará nesta fas d&apos;instalación &lt;br/&gt; y executaráse fasta aproximadaménte&apos;l 30%.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../kaos_branding/show.qml" line="68"/>
         <source>After the ISO is copied some 25 post-install modules will run.&lt;br/&gt;This includes setting user specific options, &lt;br/&gt;removing Live Session only packages&lt;br/&gt;and adjusting hardware setup.&lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Dempués de copiase la ISO executaránse 25 módulos de post-instalación.&lt;br/&gt; Esto inclúi la configuración d&apos;opciones específiques del usuariu, &lt;br/&gt;desaniciu de los paquetes de la sesión Live&lt;br/&gt;y l&apos;axuste de la configuración del hardware.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../kaos_branding/show.qml" line="90"/>
@@ -19,12 +19,12 @@
     <message>
         <location filename="../kaos_branding/show.qml" line="110"/>
         <source>Qt/KDE specific internet applications include the Qupzilla web-browser &lt;br/&gt;and kde-telepathy for chat and Instant Messaging. &lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Les aplicaciones d&apos;internet específiques de QT/KDE inclúin el restolador &lt;br/&gt;web Qupzilla y kde-telepathy pa charres y mensaxería nel intre. &lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../kaos_branding/show.qml" line="130"/>
         <source>May using KaOS be a pleasant experience for you.</source>
-        <translation type="unfinished"/>
+        <translation>Que l&apos;usu de KaOS sía una esperiencia prestosa pa tigo</translation>
     </message>
 </context>
 </TS>

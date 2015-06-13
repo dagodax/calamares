@@ -452,7 +452,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/calamares/CalamaresWindow.cpp" line="98"/>
         <source>Show debug information</source>
-        <translation>Прикажи податке за праћење грешака</translation>
+        <translation>Праћење грешака</translation>
     </message>
 </context>
 <context>
