@@ -60,7 +60,6 @@ def create_conf(uuid, conf_path):
             swap = partition["uuid"]
 
     lines = [
-        '## This is just an exmaple config file.\n',
         '## Please edit the paths and kernel parameters according to your system.\n',
         '\n',
         'title   %s GNU/Linux, with Linux kernel\n' % distribution,
@@ -86,7 +85,6 @@ def create_fallback(uuid, fallback_path):
             swap = partition["uuid"]
 
     lines = [
-        '## This is just an exmaple config file.\n',
         '## Please edit the paths and kernel parameters according to your system.\n',
         '\n',
         'title   %s GNU/Linux, with Linux fallback kernel\n' % distribution,
