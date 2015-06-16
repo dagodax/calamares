@@ -1,8 +1,13 @@
 ### Calamares: Distribution-Independent Installer Framework
 ---------
 
-| [![Build Status](http://calamares.io/ci/buildStatus/icon?job=calamares-master)](http://calamares.io/ci/job/calamares-master/) | [Report a Bug](http://calamares.io/bugs/) | [Contribute](https://github.com/calamares/calamares/blob/master/HACKING.md) | [Translate](https://www.transifex.com/projects/p/calamares/) | Freenode (IRC): #calamares |
-|:-----------------------------------------:|:--------------------------:|:--------------------------:|:--------------------------:|:--------------------------:|
+[![GitHub release](https://img.shields.io/github/release/calamares/calamares.svg)](https://github.com/calamares/calamares/releases)
+[![Build Status](http://calamares.io/ci/buildStatus/icon?job=calamares-master)](http://calamares.io/ci/job/calamares-master/)
+[![Coverity Scan Build Status](https://scan.coverity.com/projects/5389/badge.svg)](https://scan.coverity.com/projects/5389)
+[![GitHub license](https://img.shields.io/github/license/calamares/calamares.svg)](https://github.com/calamares/calamares/blob/master/LICENSE)
+
+| [Report a Bug](http://calamares.io/bugs/) | [Contribute](https://github.com/calamares/calamares/blob/master/HACKING.md) | [Translate](https://www.transifex.com/projects/p/calamares/) | Freenode (IRC): #calamares |
+|:-----------------------------------------:|:----------------------:|:-----------------------:|:--------------------------:|
 
 ### Dependencies
 
@@ -10,7 +15,7 @@ Compiler with C++11 support: GCC >= 4.8.4 or Clang >= 3.5.1
 
 | Main | Welcome module | Partitioning module | Bootloader module | Unpackfs module |
 |:----:|:--------------:|:-------------------:|:-----------------:|:---------------:|
-| CMake >= 2.8.12 | NetworkManager | extra-cmake-modules | gummiboot or GRUB2 | squashfs-tools |
+| CMake >= 2.8.12 | NetworkManager | extra-cmake-modules | systemd-boot or GRUB2 | squashfs-tools |
 | Qt >= 5.3 | UPower | kconfig (part of KF5) | sgdisk | rsync |
 | yaml-cpp >= 0.5.1 | | solid (part of KF5) | | |
 | Python >= 3.3 | | kcoreaddons (part of KF5) | | |
