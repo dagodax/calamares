@@ -1499,7 +1499,7 @@ Dellos sistemes de ficheros riquen la instalación de ferramientes esternes pa t
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="116"/>
         <source>Set up &lt;strong&gt;new&lt;/strong&gt; %2 partition with mount point &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation>Configurar la partición &lt;strong&gt;nueva&lt;/strong&gt; %2 col puntu de montaxe &lt;strong&gt;%1&lt;/strong&gt;.</translation>
+        <translation>Configuraráse la partición &lt;strong&gt;nueva&lt;/strong&gt; %2 col puntu montaxe &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="124"/>
@@ -1509,7 +1509,7 @@ Dellos sistemes de ficheros riquen la instalación de ferramientes esternes pa t
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="130"/>
         <source>Set up %3 partition &lt;strong&gt;%1&lt;/strong&gt; with mount point &lt;strong&gt;%2&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Configuraráse la partición %3 de &lt;strong&gt;%1&lt;/strong&gt; col puntu montaxe &lt;strong&gt;%2&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="142"/>
@@ -1537,7 +1537,7 @@ Dellos sistemes de ficheros riquen la instalación de ferramientes esternes pa t
     <message>
         <location filename="../src/modules/finished/FinishedPage.cpp" line="50"/>
         <source>&lt;h1&gt;All done.&lt;/h1&gt;&lt;br/&gt;%1 has been installed on your computer.&lt;br/&gt;You may now restart into your new system, or continue using the %2 Live environment.</source>
-        <translation>&lt;h1&gt;Too fecho.&lt;/h1&gt;&lt;br/&gt;%1 instalóse nel to ordenador.&lt;br/&gt;Podríes querer reaniciar agora al to sistema nuevu, o siguir usando l&apos;entornu live %2.</translation>
+        <translation>&lt;h1&gt;Too fecho.&lt;/h1&gt;&lt;br/&gt;%1 instalóse nel to ordenador.&lt;br/&gt;Quiciabes quies reaniciar agora al to sistema nuevu, o siguir usando l&apos;entornu live %2.</translation>
     </message>
 </context>
 <context>
@@ -1558,7 +1558,7 @@ Dellos sistemes de ficheros riquen la instalación de ferramientes esternes pa t
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="59"/>
         <source>Format &lt;strong&gt;%3MB&lt;/strong&gt; partition &lt;strong&gt;%1&lt;/strong&gt; with file system &lt;strong&gt;%2&lt;/strong&gt;.</source>
-        <translation>Formatiar la partición &lt;strong&gt;%3MB&lt;/strong&gt; de &lt;strong&gt;%1&lt;/strong&gt; col sistema de ficheros &lt;strong&gt;%2&lt;/strong&gt;.</translation>
+        <translation>Formatiaráse la partición &lt;strong&gt;%3MB&lt;/strong&gt; de &lt;strong&gt;%1&lt;/strong&gt; col sistema de ficheros &lt;strong&gt;%2&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="71"/>
@@ -2566,7 +2566,7 @@ La instalación pue siguir, pero delles carauterístiques pudieron deshabilitase
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="194"/>
         <source>Resize &lt;strong&gt;%2MB&lt;/strong&gt; partition &lt;strong&gt;%1&lt;/strong&gt; to &lt;strong&gt;%3MB&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Redimensionaráse la partición &lt;strong&gt;%2MB&lt;/strong&gt; de &lt;strong&gt;%1&lt;/strong&gt; a &lt;strong&gt;%3MB&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="220"/>

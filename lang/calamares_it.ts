@@ -226,7 +226,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="44"/>
         <source>Modules</source>
-        <translation type="unfinished"/>
+        <translation>Moduli</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.cpp" line="95"/>
@@ -1631,7 +1631,7 @@ Alcuni file system necessitano l&apos;installazione di strumenti esterni per ess
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="188"/>
         <source>%1 support</source>
-        <translation type="unfinished"/>
+        <translation>1% supporto</translation>
     </message>
 </context>
 <context>
@@ -3021,7 +3021,7 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="187"/>
         <source>%1 support</source>
-        <translation type="unfinished"/>
+        <translation>1% supporto</translation>
     </message>
 </context>
 <context>
