@@ -2537,7 +2537,7 @@ A instalação pode continuar, mas alguns recursos podem ser desativados.</trans
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="135"/>
         <source>The installer is not running with administrator rights.</source>
-        <translation type="unfinished"/>
+        <translation>O instalador não está sendo executado com direitos de administrador.</translation>
     </message>
 </context>
 <context>
