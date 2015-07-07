@@ -60,6 +60,10 @@ def modify_grub_default(partitions, root_mount_point, distributor):
     return None
 
 def run():
+
+    if libcalamares.globalstorage.value("bootLoader") is None:
+        return None
+
     partitions = libcalamares.globalstorage.value("partitions")
     root_mount_point = libcalamares.globalstorage.value("rootMountPoint")
     distributor = libcalamares.job.configuration["distributor"]
