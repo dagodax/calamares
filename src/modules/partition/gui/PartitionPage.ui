@@ -142,7 +142,15 @@
      <item>
       <widget class="QLabel" name="label_3">
        <property name="text">
-        <string>&amp;Install boot loader on:</string>
+        <string>&amp;Install boot loader on: 
+ Only &quot;Do not install&quot; 
+ is a valid choice for UEFI</string>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+       <property name="wordWrap">
+        <bool>true</bool>
        </property>
        <property name="buddy">
         <cstring>bootLoaderComboBox</cstring>
