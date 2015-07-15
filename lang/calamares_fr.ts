@@ -203,7 +203,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="110"/>
         <source>Do not install a boot loader</source>
-        <translation type="unfinished"/>
+        <translation>Ne pas installer le chargeur de démarrage</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="124"/>
@@ -265,7 +265,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="60"/>
         <source>Running command %1 %2</source>
-        <translation type="unfinished"/>
+        <translation>Exécution de la commande %1 %2</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="88"/>
@@ -335,7 +335,7 @@ Sortie :
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="241"/>
         <source>Running %1 operation.</source>
-        <translation type="unfinished"/>
+        <translation>Opération %1 lancée.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="254"/>
@@ -586,7 +586,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="50"/>
         <source>Clearing mounts for partitioning operations on %1.</source>
-        <translation type="unfinished"/>
+        <translation>Effacement des montages pour les opérations de partitionnement sur %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="169"/>
@@ -604,7 +604,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="45"/>
         <source>Clearing all temporary mounts.</source>
-        <translation type="unfinished"/>
+        <translation>Effacement tous les montages temporaires.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="56"/>
@@ -979,7 +979,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="71"/>
         <source>Creating new %1 partition on %2.</source>
-        <translation type="unfinished"/>
+        <translation>Création d’une nouvelle table de partitions %1 sur %2.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="83"/>
@@ -1050,7 +1050,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="66"/>
         <source>Creating new %1 partition table on %2.</source>
-        <translation type="unfinished"/>
+        <translation>Création d’une nouvelle table de partitions %1 sur %2.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="76"/>
@@ -1101,12 +1101,12 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="58"/>
         <source>Create user &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Créer l’utilisateur &lt;strong&gt;%1&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="65"/>
         <source>Creating user %1.</source>
-        <translation type="unfinished"/>
+        <translation>Création de l’utilisateur %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="81"/>
@@ -1187,7 +1187,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="58"/>
         <source>Deleting partition %1.</source>
-        <translation type="unfinished"/>
+        <translation>Suppression de la partition %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="67"/>
@@ -1564,7 +1564,7 @@ Certains systèmes de fichiers nécessitent l&apos;installation d&apos;outils ex
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="152"/>
         <source>Setting up mount points.</source>
-        <translation type="unfinished"/>
+        <translation>Configuration des points de montage.</translation>
     </message>
 </context>
 <context>
@@ -1608,7 +1608,7 @@ Certains systèmes de fichiers nécessitent l&apos;installation d&apos;outils ex
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="70"/>
         <source>Formatting partition %1 with file system %2.</source>
-        <translation type="unfinished"/>
+        <translation>Formatage de la partition %1 avec le système de fichier %2.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="82"/>
@@ -1931,12 +1931,12 @@ Certains systèmes de fichiers nécessitent l&apos;installation d&apos;outils ex
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="596"/>
         <source>&amp;Log in automatically</source>
-        <translation type="unfinished"/>
+        <translation>Se %connecter automatiquement</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="606"/>
         <source>Require &amp;my password to log in</source>
-        <translation type="unfinished"/>
+        <translation>Demander &amp;mon mot de passe à la connexion</translation>
     </message>
 </context>
 <context>
@@ -2177,7 +2177,10 @@ Certains systèmes de fichiers nécessitent l&apos;installation d&apos;outils ex
 Only changing to 
 &quot;Do not install&quot; 
 has an effect for UEFI</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Intaller le chargeur de démarrage sur :
+Seul le changement sur
+“Ne pas installer”
+a un effet pour UEFI</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="130"/>
@@ -2619,7 +2622,7 @@ L&apos;installation peut continuer, mais certaines fonctionnalités peuvent êtr
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="205"/>
         <source>Resizing %2MB partition %1 to %3MB.</source>
-        <translation type="unfinished"/>
+        <translation>Redimensionnement de la partition %1 de %2Mo à %3Mo.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="232"/>
@@ -2643,12 +2646,12 @@ L&apos;installation peut continuer, mais certaines fonctionnalités peuvent êtr
     <message>
         <location filename="../src/modules/users/SetHostNameJob.cpp" line="44"/>
         <source>Set hostname &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Définir le nom d&apos;hôte &lt;strong&gt;%1&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetHostNameJob.cpp" line="51"/>
         <source>Setting hostname %1.</source>
-        <translation type="unfinished"/>
+        <translation>Définition du nom d&apos;hôte %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetHostNameJob.cpp" line="61"/>
@@ -2710,7 +2713,7 @@ L&apos;installation peut continuer, mais certaines fonctionnalités peuvent êtr
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="49"/>
         <source>Setting password for user %1.</source>
-        <translation type="unfinished"/>
+        <translation>Configuration du mot de passe utilisateur %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="59"/>

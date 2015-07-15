@@ -2177,7 +2177,10 @@ Algunos sistemas de archivos requieren de la instalación de herramientas extern
 Only changing to 
 &quot;Do not install&quot; 
 has an effect for UEFI</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Instalar cargador de arranque en: 
+Cambiar a  
+&quot;No instalar&quot; 
+solo tiene efecto para UEFI</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="130"/>
@@ -2619,7 +2622,7 @@ La instalación puede continuar pero algunas características podrían no estar 
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="205"/>
         <source>Resizing %2MB partition %1 to %3MB.</source>
-        <translation type="unfinished"/>
+        <translation>Redimensionar partición %1 de %2MB a %3MB.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="232"/>
@@ -2643,12 +2646,12 @@ La instalación puede continuar pero algunas características podrían no estar 
     <message>
         <location filename="../src/modules/users/SetHostNameJob.cpp" line="44"/>
         <source>Set hostname &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Ajustar hostname &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetHostNameJob.cpp" line="51"/>
         <source>Setting hostname %1.</source>
-        <translation type="unfinished"/>
+        <translation>Configurar hostname %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetHostNameJob.cpp" line="61"/>
@@ -2710,7 +2713,7 @@ La instalación puede continuar pero algunas características podrían no estar 
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="49"/>
         <source>Setting password for user %1.</source>
-        <translation type="unfinished"/>
+        <translation>Poner contraseña para usuario %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="59"/>

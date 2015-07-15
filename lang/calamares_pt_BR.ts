@@ -606,7 +606,7 @@ O instalador será fechado e todas as alterações serão perdidas.</translation
     <message>
         <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="45"/>
         <source>Clearing all temporary mounts.</source>
-        <translation type="unfinished"/>
+        <translation>Limpar todas as montagens temporárias.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="56"/>
@@ -1566,7 +1566,7 @@ Alguns sistemas de arquivos necessitam de ferramentas externas para serem suport
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="152"/>
         <source>Setting up mount points.</source>
-        <translation type="unfinished"/>
+        <translation>Configurando pontos de montagem.</translation>
     </message>
 </context>
 <context>
@@ -1938,7 +1938,7 @@ Alguns sistemas de arquivos necessitam de ferramentas externas para serem suport
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="606"/>
         <source>Require &amp;my password to log in</source>
-        <translation type="unfinished"/>
+        <translation>Exigir &amp;minha senha para entrar</translation>
     </message>
 </context>
 <context>
