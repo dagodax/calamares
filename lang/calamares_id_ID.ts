@@ -203,7 +203,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="110"/>
         <source>Do not install a boot loader</source>
-        <translation type="unfinished"/>
+        <translation>Jangan memasang boot loader</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="124"/>
@@ -265,7 +265,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="60"/>
         <source>Running command %1 %2</source>
-        <translation type="unfinished"/>
+        <translation>Menjalankan perintah %1 %2</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="88"/>
@@ -335,7 +335,7 @@ Output:
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="241"/>
         <source>Running %1 operation.</source>
-        <translation type="unfinished"/>
+        <translation>Menjalankan %1 operasi.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="254"/>
@@ -585,7 +585,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="50"/>
         <source>Clearing mounts for partitioning operations on %1.</source>
-        <translation type="unfinished"/>
+        <translation>Membersihkan kait bagi operasi mempartisi pada %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="169"/>
@@ -603,7 +603,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="45"/>
         <source>Clearing all temporary mounts.</source>
-        <translation type="unfinished"/>
+        <translation>Membersihkan semua temporer kait.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="56"/>
@@ -978,7 +978,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="71"/>
         <source>Creating new %1 partition on %2.</source>
-        <translation type="unfinished"/>
+        <translation>Membuat %1 partisi baru pada %2.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="83"/>
@@ -1049,7 +1049,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="66"/>
         <source>Creating new %1 partition table on %2.</source>
-        <translation type="unfinished"/>
+        <translation>Membuat %1 tabel partisi baru pada %2.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionTableJob.cpp" line="76"/>
@@ -1100,12 +1100,12 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="58"/>
         <source>Create user &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Buat pengguna &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="65"/>
         <source>Creating user %1.</source>
-        <translation type="unfinished"/>
+        <translation>Membuat pengguna %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="81"/>
@@ -1186,7 +1186,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="58"/>
         <source>Deleting partition %1.</source>
-        <translation type="unfinished"/>
+        <translation>Menghapus partisi %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="67"/>
@@ -1563,7 +1563,7 @@ Beberapa sistem berkas yang membutuhkan alat eksternal untuk dipasang bagi merek
     <message>
         <location filename="../src/modules/partition/jobs/FillGlobalStorageJob.cpp" line="152"/>
         <source>Setting up mount points.</source>
-        <translation type="unfinished"/>
+        <translation>Penyetelan titik kait.</translation>
     </message>
 </context>
 <context>
@@ -1607,7 +1607,7 @@ Beberapa sistem berkas yang membutuhkan alat eksternal untuk dipasang bagi merek
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="70"/>
         <source>Formatting partition %1 with file system %2.</source>
-        <translation type="unfinished"/>
+        <translation>Memformat partisi %1 dengan sistem berkas %2.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="82"/>
@@ -1905,7 +1905,7 @@ Beberapa sistem berkas yang membutuhkan alat eksternal untuk dipasang bagi merek
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="322"/>
         <source>&lt;small&gt;Enter the same password twice, so that it can be checked for typing errors. A good password will contain a mixture of letters, numbers and punctuation, should be at least eight characters long, and should be changed at regular intervals.&lt;/small&gt;</source>
-        <translation>&lt;small&gt;Masukkan kata sandi yang sama dua kali, sehingga dapat diperiksa untuk kesalahan mengetik. Sandi yang baik akan mengandung campuran huruf, angka dan tanda baca, harus setidaknya delapan karakter, dan harus diubah secara berkala.&lt;/small&gt;</translation>
+        <translation>&lt;small&gt;Masukkan kata sandi yang sama dua kali, sehingga dapat diperiksa untuk kesalahan mengetik. Sandi yang baik yang mengandung campuran huruf, angka dan tanda baca, setidaknya delapan karakter, dan setidaknya diubah secara berkala.&lt;/small&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="345"/>
@@ -1930,12 +1930,12 @@ Beberapa sistem berkas yang membutuhkan alat eksternal untuk dipasang bagi merek
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="596"/>
         <source>&amp;Log in automatically</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Log masuk secara otomatis</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="606"/>
         <source>Require &amp;my password to log in</source>
-        <translation type="unfinished"/>
+        <translation>Butuh &amp;kata sandiku untuk log masuk</translation>
     </message>
 </context>
 <context>
@@ -2176,7 +2176,10 @@ Beberapa sistem berkas yang membutuhkan alat eksternal untuk dipasang bagi merek
 Only changing to 
 &quot;Do not install&quot; 
 has an effect for UEFI</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Pasang boot loader pada: 
+Hanya mengubah ke 
+&quot;Jangan pasang&quot; 
+apabila berpengaruh bagi UEFI</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="130"/>
@@ -2616,7 +2619,7 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="205"/>
         <source>Resizing %2MB partition %1 to %3MB.</source>
-        <translation type="unfinished"/>
+        <translation>Mengubah ukuran partisi %1 %2MB ke %3MB.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="232"/>
@@ -2640,12 +2643,12 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/users/SetHostNameJob.cpp" line="44"/>
         <source>Set hostname &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Setel hostname &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetHostNameJob.cpp" line="51"/>
         <source>Setting hostname %1.</source>
-        <translation type="unfinished"/>
+        <translation>Menyetel hostname %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetHostNameJob.cpp" line="61"/>
@@ -2707,7 +2710,7 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="49"/>
         <source>Setting password for user %1.</source>
-        <translation type="unfinished"/>
+        <translation>Menyetel kata sandi bagi pengguna %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="59"/>
