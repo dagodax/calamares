@@ -9,12 +9,12 @@
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="74"/>
         <source>Allocate drive space by dragging the divider below:</source>
-        <translation>Alokasikan ruang disk menurut penjatuhan sekat di bawah:</translation>
+        <translation>Alokasikan ruang disk menurut penyeretan sekat di bawah:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="117"/>
         <source>With this operation, the partition &lt;strong&gt;%1&lt;/strong&gt; which contains %4 will be shrunk to %2MB and a new %3MB partition will be created for %5.</source>
-        <translation>Dengan operasi ini, partisi &lt;strong&gt;%1&lt;/strong&gt; yang berisi %4 akan diiris ke %2MB dan %3MB partisi baru akan dibuat bagi %5.</translation>
+        <translation>Dengan operasi ini, partisi &lt;strong&gt;%1&lt;/strong&gt; yang berisi %4 akan diiris ke %2MB dan %3MB partisi baru akan dibuat untuk %5.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="217"/>
@@ -562,7 +562,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="278"/>
         <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;, either use an existing without formatting or create one.</source>
-        <translation>&lt;strong&gt;Pemartisian manual&lt;/strong&gt;&lt;br/&gt;Anda dapat membuat atau mengubah ukuran partisi sendiri, atau memilih beberapa partisi untuk %1. Memiliki sebuah tabel partisi GPT dan &lt;strong&gt;partisi /boot fat32 512M yang harus untuk UEFI installs&lt;/strong&gt;, gunakan salah satu yang ada tanpa memformat atau membuatnya.</translation>
+        <translation>&lt;strong&gt;Pemartisian manual&lt;/strong&gt;&lt;br/&gt;Anda dapat membuat atau mengubah ukuran partisi sendiri, atau memilih beberapa partisi untuk %1. Sebuah tabel partisi GPT dan &lt;strong&gt;partisi /boot fat32 512M harus dimiliki untuk UEFI installs&lt;/strong&gt;, gunakanlah salah satu yang ada tanpa memformat atau membuatnya.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="178"/>
@@ -580,7 +580,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="42"/>
         <source>Clear mounts for partitioning operations on %1</source>
-        <translation>Bersihkan kait-kait untuk pengoperasian mempartisi pada %1</translation>
+        <translation>Bersihkan kait-mengait untuk pengoperasian mempartisi pada %1</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="50"/>
@@ -842,7 +842,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="71"/>
         <source>Align partitions per default</source>
-        <translation>Sejajarkan partisi per baku</translation>
+        <translation>Sejajarkan partisi tiap baku</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/config/configurepagegeneral.ui" line="90"/>
@@ -930,7 +930,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="89"/>
         <source>F&amp;ile System:</source>
-        <translation>Sistem Berkas:</translation>
+        <translation>S&amp;istem Berkas:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="118"/>
@@ -1290,7 +1290,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="50"/>
         <source>Content:</source>
-        <translation>Konten:</translation>
+        <translation>Daftar Isi:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="60"/>
