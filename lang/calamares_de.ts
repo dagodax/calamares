@@ -586,7 +586,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="50"/>
         <source>Clearing mounts for partitioning operations on %1.</source>
-        <translation type="unfinished"/>
+        <translation>Löse eingehängte Partitionen für Operationen auf %1</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="169"/>
@@ -1608,7 +1608,7 @@ Einige Dateisysteme erfordern die Installation externer Programme, um unterstüt
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="70"/>
         <source>Formatting partition %1 with file system %2.</source>
-        <translation type="unfinished"/>
+        <translation>Formatiere Partition %1  mit dem Dateisystem %2.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="82"/>
@@ -1936,7 +1936,7 @@ Einige Dateisysteme erfordern die Installation externer Programme, um unterstüt
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="606"/>
         <source>Require &amp;my password to log in</source>
-        <translation type="unfinished"/>
+        <translation>Passworteingabe erforderlich zum Anmelden</translation>
     </message>
 </context>
 <context>
@@ -2177,7 +2177,10 @@ Einige Dateisysteme erfordern die Installation externer Programme, um unterstüt
 Only changing to 
 &quot;Do not install&quot; 
 has an effect for UEFI</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Installiere den Boot Loader: 
+Nur der Wechsel auf
+&quot;Nicht installieren&quot; 
+hat einen Effekt auf UEFI </translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="130"/>
@@ -2619,7 +2622,7 @@ Die Installation wird fortgesetzt, es werden eventuell nicht alle Funktionen ver
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="205"/>
         <source>Resizing %2MB partition %1 to %3MB.</source>
-        <translation type="unfinished"/>
+        <translation>Ändere die Grösse von %2MB Partition %1 auf %3MB.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="232"/>
