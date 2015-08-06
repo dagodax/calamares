@@ -19,7 +19,7 @@
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="217"/>
         <source>An EFI system partition cannot be found anywhere on this system. Please go back and use manual partitioning to set up %1.</source>
-        <translation>Auf diesem System kann nirgenst eine EFI Systempartition gefunden werden. Bitte geh zurück und wähle manuelle Partitionierung, um %1 einzurichten.</translation>
+        <translation>Auf diesem System kann keine EFI Systempartition gefunden werden. Bitte geh zurück und wähle manuelle Partitionierung, um %1 einzurichten.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="227"/>
@@ -203,7 +203,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="110"/>
         <source>Do not install a boot loader</source>
-        <translation>Installieren Sie keinen Bootloader</translation>
+        <translation>Keinen Bootloader installieren</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="124"/>
@@ -396,7 +396,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="256"/>
         <source>Continue with setup?</source>
-        <translation>Mit Einrichtung fortsetzen?</translation>
+        <translation>Möchtest du diese Einrichtung jetzt fortsetzen?</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="257"/>
@@ -553,17 +553,19 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="181"/>
         <source>&lt;strong&gt;Install %1 alongside your current operating system&lt;/strong&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.</source>
-        <translation>&lt;strong&gt; Installiere %1 zusätzlich zu deinem aktuellen Betriebssystem &lt;/strong&gt;&lt;br/&gt; Dieses Installationsprogramm wird Raum schaffen für %2. Du kannst dann bei jedem Start wählen, welches von beiden du verwenden willst.  </translation>
+        <translation>&lt;strong&gt; Installiere %1 zusätzlich zu deinem aktuellen Betriebssystem &lt;/strong&gt;&lt;br/&gt; Dieses Installationsprogramm wird Raum schaffen für %2. 
+Du kannst dann bei jedem Start wählen, welches von beiden du verwenden willst.  </translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="230"/>
         <source>&lt;strong&gt;Install %1 alongside your current operating systems&lt;/strong&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.</source>
-        <translation>&lt;strong&gt; Installiere %1 zusätzlich zu deinem aktuellen Betriebssystem &lt;/strong&gt;&lt;br/&gt; Dieses Installationsprogramm wird Raum schaffen für %2. Du kannst dann bei jedem Start wählen, welches von beiden du verwenden willst.  </translation>
+        <translation>&lt;strong&gt; Installiere %1 zusätzlich zu deinem aktuellen Betriebssystem &lt;/strong&gt;&lt;br/&gt; Dieses Installationsprogramm wird Raum schaffen für %2. 
+Du kannst dann bei jedem Start wählen, welches von beiden du verwenden willst.  </translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="278"/>
         <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;, either use an existing without formatting or create one.</source>
-        <translation>&lt;b&gt;Weitere Optionen&lt;/b&gt;&lt;br/&gt;Hier kannst du Partitionen manuell erstellen, ihren Umfang verändern und/oder verschiedene Partitionen für %1 festlegen. Verwende diese Option für UEFI Installationen; Eine GPT Partitionstabelle und eine &lt;b&gt;fat32 512Mb /boot Partition ist hierfür notwendig&lt;/b&gt;, verwenden sie entweder eine vorhandene ohne Formatierung oder sie erstellen eine.</translation>
+        <translation>&lt;b&gt;Manuelle Partitionierung&lt;/b&gt;&lt;br/&gt; Hier kannst du Partitionen manuell erstellen, ihren Umfang verändern und/oder verschiedene Partitionen für %1 festlegen. Für eine UEFI Installationen ist eine GPT Partitionstabelle und eine &lt;b&gt;fat32 512Mb /boot Partition notwendig&lt;/b&gt;, verwenden sie entweder eine vorhandene Partition ohne Formatierung oder sie erstellen eine.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="178"/>
@@ -1651,17 +1653,17 @@ Einige Dateisysteme erfordern die Installation externer Programme, um unterstüt
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="104"/>
         <source>&amp;Release notes</source>
-        <translation>Ve&amp;rsionshinweise</translation>
+        <translation>&amp;Versionshinweise</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="114"/>
         <source>&amp;Known issues</source>
-        <translation>Be&amp;kannte Schwierigkeiten:</translation>
+        <translation>&amp;Bekannte Schwierigkeiten:</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="124"/>
         <source>&amp;Support</source>
-        <translation>Unter&amp;stützung</translation>
+        <translation>&amp;Unterstützung</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.ui" line="134"/>
@@ -2632,7 +2634,7 @@ Die Installation wird fortgesetzt, es werden eventuell nicht alle Funktionen ver
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="237"/>
         <source>Could not open device &apos;%1&apos;.</source>
-        <translation>Kann Gerät &apos;%1&apos; nicht öffnen.</translation>
+        <translation>Konnte &apos;%1&apos; nicht öffnen.</translation>
     </message>
 </context>
 <context>
@@ -3108,7 +3110,7 @@ Die Installation wird fortgesetzt, es werden eventuell nicht alle Funktionen ver
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="45"/>
         <source>Here the actual install of KaOS will start.&lt;br/&gt;Use the left &lt;b&gt;mouse button&lt;/b&gt; to go to the next slide, right for previous.&lt;br/&gt;After creating your chosen disk setup in the first 10 % &lt;br/&gt;the full copying of the ISO will take the longest of this install phase &lt;br/&gt;and will run until approximately 30%.&lt;br/&gt;</source>
-        <translation>Die faktische Installation von KaOS beginnt nun. &lt;br/&gt;Verwende die linke &lt;b&gt; Maustaste, um auf die nächste Seite dieser Vorführung zu kommen, sowie die rechte, um einen Schritt zurückzugelangen. &lt;br/&gt; Nachdem die Partitionierung bei 10 % eingerichtet ist, &lt;br/&gt;wird der Kopiervorgang dieser ISO die längste Phase der Installation einnehmen, welcher schätzungsweise bei 30% des Gesamtfortschritts fertig gestellt ist.</translation>
+        <translation>Die Installation von KaOS beginnt nun. &lt;br/&gt;Verwende die linke &lt;b&gt; Maustaste, um auf die nächste Seite dieser Vorführung zu gelangen, sowie die rechte, um einen Schritt zurückzugeblättern. &lt;br/&gt; Nachdem die Partitionierung bei 10 % eingerichtet ist, &lt;br/&gt;wird der Kopiervorgang dieser ISO die längste Phase der Installation einnehmen  und ist bei rund 30% des Gesamtfortschritts fertig gestellt.</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="68"/>
