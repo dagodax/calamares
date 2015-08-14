@@ -2304,7 +2304,7 @@ Installation can continue, but some features might be disabled.</source>
     <message>
         <location filename="../src/modules/prepare/PrepareViewStep.cpp" line="158"/>
         <source>Prepare</source>
-        <translation>Perbaikan</translation>
+        <translation>Mempersiapkan</translation>
     </message>
 </context>
 <context>

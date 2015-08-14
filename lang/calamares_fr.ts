@@ -1936,7 +1936,7 @@ Certains systèmes de fichiers nécessitent l&apos;installation d&apos;outils ex
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="596"/>
         <source>&amp;Log in automatically</source>
-        <translation>Se %connecter automatiquement</translation>
+        <translation>Se &amp;connecter automatiquement</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="606"/>
