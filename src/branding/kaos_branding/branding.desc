@@ -13,6 +13,10 @@ strings:
     supportUrl:          http://kaosx.us/knowledge-base/
     knownIssuesUrl:      http://kaosx.us/download/#Known_Issues
     releaseNotesUrl:     http://kaosx.us/release-notes
+    nvidiaUrl:           https://www.nvidia.com/content/DriverDownload-March2009/licence.php?lang=us
+    catalystUrl:         http://support.amd.com/en-us/download/eula
+    flashUrl:            http://www.adobe.com/products/eulas/pdfs/PlatformClients_PC_WWEULA_Combined_20100108_1657.pdf
+    licenseUrl:          https://www.nvidia.com/content/DriverDownload-March2009/licence.php?lang=us
 
 images:
     productLogo:         "squid.png"

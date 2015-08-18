@@ -48,7 +48,11 @@ public:
         ProductUrl,
         SupportUrl,
         KnownIssuesUrl,
-        ReleaseNotesUrl
+        ReleaseNotesUrl,
+        NvidiaUrl,
+        CatalystUrl,
+        FlashUrl,
+        LicenseUrl
     };
 
     enum ImageEntry : short

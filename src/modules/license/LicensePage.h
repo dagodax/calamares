@@ -31,6 +31,11 @@ class LicensePage : public QWidget
     Q_OBJECT
 public:
     explicit LicensePage( QWidget* parent = nullptr );
+    
+    void setUpLinks( bool nvidiaUrl,
+                     bool catalystUrl,
+                     bool flashUrl,
+                     bool licenseUrl );
 
 /*protected:
     void focusInEvent( QFocusEvent* e ) override; //choose the child widget to focus */

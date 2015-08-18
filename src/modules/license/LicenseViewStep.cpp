@@ -98,4 +98,28 @@ LicenseViewStep::jobs() const
     return QList< Calamares::job_ptr >();
 }
 
+void
+LicenseViewStep::setConfigurationMap( const QVariantMap& configurationMap )
+{
+    bool showNvidiaUrl =
+        configurationMap.contains( "showNvidiaUrl" ) &&
+        configurationMap.value( "showNvidiaUrl" ).type() == QVariant::Bool &&
+        configurationMap.value( "showNvidiaUrl" ).toBool();
+    bool showCatalystUrl =
+        configurationMap.contains( "showCatalystUrl" ) &&
+        configurationMap.value( "showCatalystUrl" ).type() == QVariant::Bool &&
+        configurationMap.value( "showCatalystUrl" ).toBool();
+    bool showFlashUrl =
+        configurationMap.contains( "showFlashUrl" ) &&
+        configurationMap.value( "showFlashUrl" ).type() == QVariant::Bool &&
+        configurationMap.value( "showFlashUrl" ).toBool();
+    bool showLicenseUrl =
+        configurationMap.contains( "showLicenseUrl" ) &&
+        configurationMap.value( "showLicenseUrl" ).type() == QVariant::Bool &&
+        configurationMap.value( "showLicenseUrl" ).toBool();
 
+    m_widget->setUpLinks( showNvidiaUrl,
+                          showCatalystUrl,
+                          showFlashUrl,
+                          showLicenseUrl );
+}

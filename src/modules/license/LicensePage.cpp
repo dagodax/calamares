@@ -34,6 +34,8 @@
 #include <QComboBox>
 #include <QMessageBox>
 
+#include "Branding.h"
+
 LicensePage::LicensePage(QWidget *parent)
     : QWidget( parent )
     , ui( new Ui::LicensePage )
@@ -54,7 +56,7 @@ LicensePage::LicensePage(QWidget *parent)
         ui->retranslateUi( this );
     )
     
-    ui->licenseButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::Information,
+    /* ui->licenseButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::Information,
                                                              CalamaresUtils::Original,
                                                              2*QSize( CalamaresUtils::defaultFontHeight(),
                                                                     CalamaresUtils::defaultFontHeight() ) ) );
@@ -84,7 +86,7 @@ LicensePage::LicensePage(QWidget *parent)
     {
         //QDesktopServices::openUrl(QUrl(configurationMap.value("licenseUrl").toString());
         QDesktopServices::openUrl(QUrl("file:///usr/share/licenses/nvidia/LICENSE"));
-    } );
+    } );  */
     
     Calamares::GlobalStorage* gs = Calamares::JobQueue::instance()->globalStorage();
     if ( ui->disagreeButton->isChecked() )
@@ -92,3 +94,75 @@ LicensePage::LicensePage(QWidget *parent)
     
 }
 
+void
+LicensePage::setUpLinks( bool showNvidiaUrl,
+                          bool showCatalystUrl,
+                          bool showFlashUrl,
+                          bool showLicenseUrl )
+{
+    using namespace Calamares;
+    Branding* b = Branding::instance();
+    if ( showNvidiaUrl && !b->string( Branding::NvidiaUrl ).isEmpty() )
+    {
+        ui->nvidiaButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::Release,
+                                                                   CalamaresUtils::Original,
+                                                                   2*QSize( CalamaresUtils::defaultFontHeight(),
+                                                                          CalamaresUtils::defaultFontHeight() ) ) );
+        connect( ui->nvidiaButton, &QPushButton::clicked, []
+        {
+            QDesktopServices::openUrl( Branding::instance()->string( Branding::NvidiaUrl ) );
+        } );
+    }
+    else
+    {
+        ui->nvidiaButton->hide();
+    }
+
+    if ( showCatalystUrl && !b->string( Branding::CatalystUrl ).isEmpty() )
+    {
+        ui->catalystButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::Release,
+                                                                       CalamaresUtils::Original,
+                                                                       2*QSize( CalamaresUtils::defaultFontHeight(),
+                                                                              CalamaresUtils::defaultFontHeight() ) ) );
+        connect( ui->catalystButton, &QPushButton::clicked, []
+        {
+            QDesktopServices::openUrl( Branding::instance()->string( Branding::CatalystUrl ) );
+        } );
+    }
+    else
+    {
+        ui->catalystButton->hide();
+    }
+
+    if ( showFlashUrl && !b->string( Branding::FlashUrl ).isEmpty() )
+    {
+        ui->flashButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::Release,
+                                                                        CalamaresUtils::Original,
+                                                                        2*QSize( CalamaresUtils::defaultFontHeight(),
+                                                                               CalamaresUtils::defaultFontHeight() ) ) );
+        connect( ui->flashButton, &QPushButton::clicked, []
+        {
+            QDesktopServices::openUrl( Branding::instance()->string( Branding::FlashUrl ) );
+        } );
+    }
+    else
+    {
+        ui->flashButton->hide();
+    }
+    
+    if ( showLicenseUrl && !b->string( Branding::LicenseUrl ).isEmpty() )
+    {
+        ui->licenseButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::Release,
+                                                                        CalamaresUtils::Original,
+                                                                        2*QSize( CalamaresUtils::defaultFontHeight(),
+                                                                               CalamaresUtils::defaultFontHeight() ) ) );
+        connect( ui->licenseButton, &QPushButton::clicked, []
+        {
+            QDesktopServices::openUrl( Branding::instance()->string( Branding::LicenseUrl ) );
+        } );
+    }
+    else
+    {
+        ui->licenseButton->hide();
+    }
+}
