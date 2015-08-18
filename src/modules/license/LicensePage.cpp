@@ -58,6 +58,27 @@ LicensePage::LicensePage(QWidget *parent)
                                                              CalamaresUtils::Original,
                                                              2*QSize( CalamaresUtils::defaultFontHeight(),
                                                                     CalamaresUtils::defaultFontHeight() ) ) );
+    connect( ui->nvidiaButton, &QPushButton::clicked,
+             this, [ this ]
+    {
+        //QDesktopServices::openUrl(QUrl(configurationMap.value("licenseUrl").toString());
+        QDesktopServices::openUrl(QUrl("file:///usr/share/licenses/nvidia/LICENSE"));
+    } );
+    
+    connect( ui->catalystButton, &QPushButton::clicked,
+             this, [ this ]
+    {
+        //QDesktopServices::openUrl(QUrl(configurationMap.value("licenseUrl").toString());
+        QDesktopServices::openUrl(QUrl("http://support.amd.com/en-us/download/eula"));
+    } );
+    
+    connect( ui->flashButton, &QPushButton::clicked,
+             this, [ this ]
+    {
+        //QDesktopServices::openUrl(QUrl(configurationMap.value("licenseUrl").toString());
+        QDesktopServices::openUrl(QUrl("http://www.adobe.com/products/eulas/pdfs/PlatformClients_PC_WWEULA_Combined_20100108_1657.pdf"));
+    } );
+    
     connect( ui->licenseButton, &QPushButton::clicked,
              this, [ this ]
     {
