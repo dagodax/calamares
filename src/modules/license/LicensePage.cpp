@@ -54,10 +54,6 @@ LicensePage::LicensePage(QWidget *parent)
         ui->retranslateUi( this );
     )
     
-    ui->licenseButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::Information,
-                                                             CalamaresUtils::Original,
-                                                             2*QSize( CalamaresUtils::defaultFontHeight(),
-                                                                    CalamaresUtils::defaultFontHeight() ) ) );
     connect( ui->nvidiaButton, &QPushButton::clicked,
              this, [ this ]
     {
@@ -84,7 +80,7 @@ LicensePage::LicensePage(QWidget *parent)
     {
         //QDesktopServices::openUrl(QUrl(configurationMap.value("licenseUrl").toString());
         QDesktopServices::openUrl(QUrl("file:///usr/share/licenses/nvidia/LICENSE"));
-    } );  */
+    } ); 
     
     Calamares::GlobalStorage* gs = Calamares::JobQueue::instance()->globalStorage();
     if ( ui->disagreeButton->isChecked() )
