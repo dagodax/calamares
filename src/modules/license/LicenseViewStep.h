@@ -61,6 +61,7 @@ public:
 
 private:
     LicensePage* m_widget;
+    QVariantMap m_config;
 };
 
 #endif // LICENSEPAGEPLUGIN_H

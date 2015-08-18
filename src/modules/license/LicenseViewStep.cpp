@@ -101,6 +101,7 @@ LicenseViewStep::jobs() const
 void
 LicenseViewStep::setConfigurationMap( const QVariantMap& configurationMap )
 {
+    //m_config = configurationMap;
     bool showNvidiaUrl =
         configurationMap.contains( "showNvidiaUrl" ) &&
         configurationMap.value( "showNvidiaUrl" ).type() == QVariant::Bool &&
@@ -116,10 +117,12 @@ LicenseViewStep::setConfigurationMap( const QVariantMap& configurationMap )
     bool showLicenseUrl =
         configurationMap.contains( "showLicenseUrl" ) &&
         configurationMap.value( "showLicenseUrl" ).type() == QVariant::Bool &&
-        configurationMap.value( "showLicenseUrl" ).toBool();
+        configurationMap.value( "showLicenseUrl" ).toBool(); 
 
-    m_widget->setUpLinks( showNvidiaUrl,
-                          showCatalystUrl,
-                          showFlashUrl,
-                          showLicenseUrl );
+    m_widget->showNvidiaUrl( showNvidiaUrl );
+    m_widget->showCatalystUrl( showCatalystUrl );
+    m_widget->showFlashUrl( showFlashUrl );
+    m_widget->showLicenseUrl( showLicenseUrl );
+                          
+    //m_widget->setUpLinks( m_config ); */
 }

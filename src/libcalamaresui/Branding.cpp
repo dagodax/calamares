@@ -56,11 +56,7 @@ QStringList Branding::s_stringEntryStrings =
     "productUrl",
     "supportUrl",
     "knownIssuesUrl",
-    "releaseNotesUrl",
-    "nvidiaUrl",
-    "catalystUrl",
-    "flashUrl",
-    "licenseUrl"
+    "releaseNotesUrl"
 };
 
 
