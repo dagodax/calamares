@@ -20,8 +20,11 @@
 #include "LicenseViewStep.h"
 
 #include "LicensePage.h"
+#include "JobQueue.h"
+#include "GlobalStorage.h"
+#include "utils/Logger.h"
 
-#include <QVariant>
+#include <QVariantMap>
 
 LicenseViewStep::LicenseViewStep( QObject* parent )
     : Calamares::ViewStep( parent )
@@ -101,7 +104,6 @@ LicenseViewStep::jobs() const
 void
 LicenseViewStep::setConfigurationMap( const QVariantMap& configurationMap )
 {
-    //m_config = configurationMap;
     bool showNvidiaUrl =
         configurationMap.contains( "showNvidiaUrl" ) &&
         configurationMap.value( "showNvidiaUrl" ).type() == QVariant::Bool &&
@@ -117,12 +119,18 @@ LicenseViewStep::setConfigurationMap( const QVariantMap& configurationMap )
     bool showLicenseUrl =
         configurationMap.contains( "showLicenseUrl" ) &&
         configurationMap.value( "showLicenseUrl" ).type() == QVariant::Bool &&
-        configurationMap.value( "showLicenseUrl" ).toBool(); 
+        configurationMap.value( "showLicenseUrl" ).toBool();
+        
+    if ( configurationMap.contains( "nvidiaUrl" ) &&
+         configurationMap.value( "nvidiaUrl" ).type() == QVariant::String )
+    {
+        m_nvidiaUrl = configurationMap.value( "nvidiaUrl" ).toString();
+        cDebug() << "Read: " << m_nvidiaUrl;
+    }
 
     m_widget->showNvidiaUrl( showNvidiaUrl );
     m_widget->showCatalystUrl( showCatalystUrl );
     m_widget->showFlashUrl( showFlashUrl );
     m_widget->showLicenseUrl( showLicenseUrl );
                           
-    //m_widget->setUpLinks( m_config ); */
 }

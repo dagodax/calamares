@@ -57,8 +57,9 @@ LicensePage::LicensePage(QWidget *parent)
     connect( ui->nvidiaButton, &QPushButton::clicked,
              this, [ this ]
     {
-        //QDesktopServices::openUrl(QUrl(configurationMap.value("licenseUrl").toString());
-        QDesktopServices::openUrl(QUrl("https://www.nvidia.com/content/DriverDownload-March2009/licence.php?lang=us"));
+        QDesktopServices::openUrl(QUrl(m_nvidiaUrl));
+        cDebug() << "Is: " << m_nvidiaUrl;
+        //QDesktopServices::openUrl(QUrl("https://www.nvidia.com/content/DriverDownload-March2009/licence.php?lang=us"));
     } );
     
     connect( ui->catalystButton, &QPushButton::clicked,
@@ -80,11 +81,11 @@ LicensePage::LicensePage(QWidget *parent)
     {
         //QDesktopServices::openUrl(QUrl(configurationMap.value("licenseUrl").toString());
         QDesktopServices::openUrl(QUrl("file:///usr/share/licenses/nvidia/LICENSE"));
-    } ); 
+    } );
     
     Calamares::GlobalStorage* gs = Calamares::JobQueue::instance()->globalStorage();
     if ( ui->disagreeButton->isChecked() )
-        gs->insert( "licenseAgree", ui->disagreeButton->text() ); 
+        gs->insert( "licenseAgree", false ); 
     
 }
 
@@ -111,3 +112,4 @@ LicensePage::showLicenseUrl( bool enabled )
 {
     ui->licenseButton->setVisible( enabled );
 }
+

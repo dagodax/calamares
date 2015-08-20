@@ -21,6 +21,7 @@
 #define LICENSEPAGEPLUGIN_H
 
 #include <QObject>
+#include <QUrl>
 
 #include "viewpages/ViewStep.h"
 #include "PluginDllMacro.h"
@@ -57,11 +58,9 @@ public:
     
     void setConfigurationMap( const QVariantMap& configurationMap ) override;
 
-    //void onActivate() override;
-
 private:
     LicensePage* m_widget;
-    QVariantMap m_config;
+    QUrl m_nvidiaUrl;
 };
 
 #endif // LICENSEPAGEPLUGIN_H

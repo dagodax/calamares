@@ -20,6 +20,7 @@
 #define LICENSEPAGE_H
 
 #include <QWidget>
+#include <QUrl>
 
 namespace Ui
 {
@@ -36,12 +37,11 @@ public:
     void showCatalystUrl( bool enabled );
     void showFlashUrl( bool enabled );
     void showLicenseUrl( bool enabled );
-
-/*protected:
-    void focusInEvent( QFocusEvent* e ) override; //choose the child widget to focus */
+    void setNvidiaUrl( const QUrl& url );
 
 private:
     Ui::LicensePage* ui;
+    QString m_nvidiaUrl;
 };
 
 #endif //LICENSEPAGE_H
