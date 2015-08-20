@@ -30,6 +30,10 @@ def run():
     """ Setup graphics drivers and sound """
 
     install_path = libcalamares.globalstorage.value("rootMountPoint")
+    
+    if libcalamares.globalstorage.value("licenseAgree") is "false":
+        return None
+        print('License declined')
 
     # remove any db.lck
     db_lock = os.path.join(install_path, "var/lib/pacman/db.lck")
