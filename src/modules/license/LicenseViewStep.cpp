@@ -128,7 +128,7 @@ LicenseViewStep::setConfigurationMap( const QVariantMap& configurationMap )
         cDebug() << "Read: " << m_nvidiaUrl;
     }
 
-    m_widget->showNvidiaUrl( showNvidiaUrl );
+    m_widget->showNvidiaUrl( showNvidiaUrl, m_nvidiaUrl );
     m_widget->showCatalystUrl( showCatalystUrl );
     m_widget->showFlashUrl( showFlashUrl );
     m_widget->showLicenseUrl( showLicenseUrl );

@@ -33,7 +33,7 @@ class LicensePage : public QWidget
 public:
     explicit LicensePage( QWidget* parent = nullptr );
     
-    void showNvidiaUrl( bool enabled );
+    void showNvidiaUrl( bool enabled, QUrl& m_nvidialUrl );
     void showCatalystUrl( bool enabled );
     void showFlashUrl( bool enabled );
     void showLicenseUrl( bool enabled );

@@ -54,35 +54,6 @@ LicensePage::LicensePage(QWidget *parent)
         ui->retranslateUi( this );
     )
     
-    connect( ui->nvidiaButton, &QPushButton::clicked,
-             this, [ this ]
-    {
-        QDesktopServices::openUrl(QUrl(m_nvidiaUrl));
-        cDebug() << "Is: " << m_nvidiaUrl;
-        //QDesktopServices::openUrl(QUrl("https://www.nvidia.com/content/DriverDownload-March2009/licence.php?lang=us"));
-    } );
-    
-    connect( ui->catalystButton, &QPushButton::clicked,
-             this, [ this ]
-    {
-        //QDesktopServices::openUrl(QUrl(configurationMap.value("licenseUrl").toString());
-        QDesktopServices::openUrl(QUrl("http://support.amd.com/en-us/download/eula"));
-    } );
-    
-    connect( ui->flashButton, &QPushButton::clicked,
-             this, [ this ]
-    {
-        //QDesktopServices::openUrl(QUrl(configurationMap.value("licenseUrl").toString());
-        QDesktopServices::openUrl(QUrl("http://www.adobe.com/products/eulas/pdfs/PlatformClients_PC_WWEULA_Combined_20100108_1657.pdf"));
-    } );
-    
-    connect( ui->licenseButton, &QPushButton::clicked,
-             this, [ this ]
-    {
-        //QDesktopServices::openUrl(QUrl(configurationMap.value("licenseUrl").toString());
-        QDesktopServices::openUrl(QUrl("file:///usr/share/licenses/nvidia/LICENSE"));
-    } );
-    
     Calamares::GlobalStorage* gs = Calamares::JobQueue::instance()->globalStorage();
     if ( ui->disagreeButton->isChecked() )
         gs->insert( "licenseAgree", false ); 
@@ -90,26 +61,55 @@ LicensePage::LicensePage(QWidget *parent)
 }
 
 void
-LicensePage::showNvidiaUrl( bool enabled )
+LicensePage::showNvidiaUrl( bool enabled, QUrl& m_nvidialUrl )
 {
     ui->nvidiaButton->setVisible( enabled );
+    
+    connect( ui->nvidiaButton, &QPushButton::clicked,
+             this, [ this ]
+    {
+        QDesktopServices::openUrl(m_nvidiaUrl);
+        cDebug() << "Is: " << m_nvidiaUrl;
+        //QDesktopServices::openUrl(QUrl("https://www.nvidia.com/content/DriverDownload-March2009/licence.php?lang=us"));
+    } );
 }
 
 void
 LicensePage::showCatalystUrl( bool enabled )
 {
     ui->catalystButton->setVisible( enabled );
+    
+    connect( ui->catalystButton, &QPushButton::clicked,
+             this, [ this ]
+    {
+        //QDesktopServices::openUrl(QUrl(configurationMap.value("licenseUrl").toString());
+        QDesktopServices::openUrl(QUrl("http://support.amd.com/en-us/download/eula"));
+    } );
 }
 
 void
 LicensePage::showFlashUrl( bool enabled )
 {
     ui->flashButton->setVisible( enabled );
+    
+    connect( ui->flashButton, &QPushButton::clicked,
+             this, [ this ]
+    {
+        //QDesktopServices::openUrl(QUrl(configurationMap.value("licenseUrl").toString());
+        QDesktopServices::openUrl(QUrl("http://www.adobe.com/products/eulas/pdfs/PlatformClients_PC_WWEULA_Combined_20100108_1657.pdf"));
+    } );
 }
 
 void
 LicensePage::showLicenseUrl( bool enabled )
 {
     ui->licenseButton->setVisible( enabled );
+    
+    connect( ui->licenseButton, &QPushButton::clicked,
+             this, [ this ]
+    {
+        //QDesktopServices::openUrl(QUrl(configurationMap.value("licenseUrl").toString());
+        QDesktopServices::openUrl(QUrl("file:///usr/share/licenses/nvidia/LICENSE"));
+    } );
 }
 
