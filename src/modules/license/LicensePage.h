@@ -1,6 +1,7 @@
 /* === This file is part of Calamares - <http://github.com/calamares> ===
  *
  *   Copyright 2015, Anke Boersma <demm@kaosx.us>
+ *   Copyright 2015, Alexandre Arnt <qtgzmanager@gmail.com>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -33,15 +34,21 @@ class LicensePage : public QWidget
 public:
     explicit LicensePage( QWidget* parent = nullptr );
     
-    void showNvidiaUrl( bool enabled, QUrl& m_nvidialUrl );
+    void showNvidiaUrl( bool enabled );
     void showCatalystUrl( bool enabled );
     void showFlashUrl( bool enabled );
     void showLicenseUrl( bool enabled );
-    void setNvidiaUrl( const QUrl& url );
+    void setNvidiaUrl( const QString& url );
+    void setCatalystUrl( const QString& url );
+    void setFlashUrl( const QString& url );
+    void setLicenseUrl( const QString& url );
 
 private:
     Ui::LicensePage* ui;
     QString m_nvidiaUrl;
+    QString m_catalystUrl;
+    QString m_flashUrl;
+    QString m_licenseUrl;
 };
 
 #endif //LICENSEPAGE_H

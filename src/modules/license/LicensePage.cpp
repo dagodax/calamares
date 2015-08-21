@@ -1,6 +1,7 @@
 /* === This file is part of Calamares - <http://github.com/calamares> ===
  *
  *   Copyright 2015, Anke Boersma <demm@kaosx.us>
+ *   Copyright 2015, Alexandre Arnt <qtgzmanager@gmail.com>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -61,16 +62,20 @@ LicensePage::LicensePage(QWidget *parent)
 }
 
 void
-LicensePage::showNvidiaUrl( bool enabled, QUrl& m_nvidialUrl )
+LicensePage::showNvidiaUrl( bool enabled )
 {
     ui->nvidiaButton->setVisible( enabled );
+    
+    ui->nvidiaButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::Release,
+                                                                   CalamaresUtils::Original,
+                                                                   2*QSize( CalamaresUtils::defaultFontHeight(),
+                                                                          CalamaresUtils::defaultFontHeight() ) ) );
     
     connect( ui->nvidiaButton, &QPushButton::clicked,
              this, [ this ]
     {
-        QDesktopServices::openUrl(m_nvidiaUrl);
+        QDesktopServices::openUrl(QUrl(m_nvidiaUrl));
         cDebug() << "Is: " << m_nvidiaUrl;
-        //QDesktopServices::openUrl(QUrl("https://www.nvidia.com/content/DriverDownload-March2009/licence.php?lang=us"));
     } );
 }
 
@@ -79,11 +84,15 @@ LicensePage::showCatalystUrl( bool enabled )
 {
     ui->catalystButton->setVisible( enabled );
     
+    ui->catalystButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::Release,
+                                                                       CalamaresUtils::Original,
+                                                                       2*QSize( CalamaresUtils::defaultFontHeight(),
+                                                                              CalamaresUtils::defaultFontHeight() ) ) );
+    
     connect( ui->catalystButton, &QPushButton::clicked,
              this, [ this ]
     {
-        //QDesktopServices::openUrl(QUrl(configurationMap.value("licenseUrl").toString());
-        QDesktopServices::openUrl(QUrl("http://support.amd.com/en-us/download/eula"));
+        QDesktopServices::openUrl(QUrl(m_catalystUrl));
     } );
 }
 
@@ -92,11 +101,15 @@ LicensePage::showFlashUrl( bool enabled )
 {
     ui->flashButton->setVisible( enabled );
     
+    ui->flashButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::Release,
+                                                                        CalamaresUtils::Original,
+                                                                        2*QSize( CalamaresUtils::defaultFontHeight(),
+                                                                               CalamaresUtils::defaultFontHeight() ) ) );
+    
     connect( ui->flashButton, &QPushButton::clicked,
              this, [ this ]
     {
-        //QDesktopServices::openUrl(QUrl(configurationMap.value("licenseUrl").toString());
-        QDesktopServices::openUrl(QUrl("http://www.adobe.com/products/eulas/pdfs/PlatformClients_PC_WWEULA_Combined_20100108_1657.pdf"));
+        QDesktopServices::openUrl(QUrl(m_flashUrl));
     } );
 }
 
@@ -105,11 +118,38 @@ LicensePage::showLicenseUrl( bool enabled )
 {
     ui->licenseButton->setVisible( enabled );
     
+    ui->licenseButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::Release,
+                                                                        CalamaresUtils::Original,
+                                                                        2*QSize( CalamaresUtils::defaultFontHeight(),
+                                                                               CalamaresUtils::defaultFontHeight() ) ) );
+    
     connect( ui->licenseButton, &QPushButton::clicked,
              this, [ this ]
     {
-        //QDesktopServices::openUrl(QUrl(configurationMap.value("licenseUrl").toString());
-        QDesktopServices::openUrl(QUrl("file:///usr/share/licenses/nvidia/LICENSE"));
+        QDesktopServices::openUrl(QUrl(m_licenseUrl));
     } );
 }
 
+void
+LicensePage::setNvidiaUrl( const QString& url )
+{
+    m_nvidiaUrl = url;
+}
+
+void
+LicensePage::setCatalystUrl( const QString& url )
+{
+    m_catalystUrl = url;
+}
+
+void
+LicensePage::setFlashUrl( const QString& url )
+{
+    m_flashUrl = url;
+}
+
+void
+LicensePage::setLicenseUrl( const QString& url )
+{
+    m_licenseUrl = url;
+}

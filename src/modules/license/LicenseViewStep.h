@@ -1,6 +1,5 @@
 /* === This file is part of Calamares - <http://github.com/calamares> ===
  *
- *   Copyright 2014-2015, Teo Mrnjavac <teo@kde.org>
  *   Copyright 2015, Anke Boersma <demm@kaosx.us>
  *
  *   Calamares is free software: you can redistribute it and/or modify
@@ -60,7 +59,6 @@ public:
 
 private:
     LicensePage* m_widget;
-    QUrl m_nvidiaUrl;
 };
 
 #endif // LICENSEPAGEPLUGIN_H

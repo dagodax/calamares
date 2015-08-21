@@ -1,6 +1,5 @@
 /* === This file is part of Calamares - <http://github.com/calamares> ===
  *
- *   Copyright 2014-2015, Teo Mrnjavac <teo@kde.org>
  *   Copyright 2015, Anke Boersma <demm@kaosx.us>
  *
  *   Calamares is free software: you can redistribute it and/or modify
@@ -121,16 +120,42 @@ LicenseViewStep::setConfigurationMap( const QVariantMap& configurationMap )
         configurationMap.value( "showLicenseUrl" ).type() == QVariant::Bool &&
         configurationMap.value( "showLicenseUrl" ).toBool();
         
+    QString nvidiaUrl;
     if ( configurationMap.contains( "nvidiaUrl" ) &&
          configurationMap.value( "nvidiaUrl" ).type() == QVariant::String )
     {
-        m_nvidiaUrl = configurationMap.value( "nvidiaUrl" ).toString();
-        cDebug() << "Read: " << m_nvidiaUrl;
+        nvidiaUrl = configurationMap.value( "nvidiaUrl" ).toString();
+        cDebug() << "Read: " << nvidiaUrl;
+    }
+    
+    QString catalystUrl;
+    if ( configurationMap.contains( "catalystUrl" ) &&
+         configurationMap.value( "catalystUrl" ).type() == QVariant::String )
+    {
+        catalystUrl = configurationMap.value( "catalystUrl" ).toString();
+    }
+    
+    QString flashUrl;
+    if ( configurationMap.contains( "flashUrl" ) &&
+         configurationMap.value( "flashUrl" ).type() == QVariant::String )
+    {
+        flashUrl = configurationMap.value( "flashUrl" ).toString();
+    }
+    
+    QString licenseUrl;
+    if ( configurationMap.contains( "licenseUrl" ) &&
+         configurationMap.value( "licenseUrl" ).type() == QVariant::String )
+    {
+        licenseUrl = configurationMap.value( "licenseUrl" ).toString();
     }
 
-    m_widget->showNvidiaUrl( showNvidiaUrl, m_nvidiaUrl );
+    m_widget->showNvidiaUrl( showNvidiaUrl );
     m_widget->showCatalystUrl( showCatalystUrl );
     m_widget->showFlashUrl( showFlashUrl );
     m_widget->showLicenseUrl( showLicenseUrl );
+    m_widget->setNvidiaUrl(nvidiaUrl);
+    m_widget->setCatalystUrl(catalystUrl);
+    m_widget->setFlashUrl(flashUrl);
+    m_widget->setLicenseUrl(licenseUrl);
                           
 }
