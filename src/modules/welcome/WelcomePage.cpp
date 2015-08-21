@@ -59,7 +59,7 @@ WelcomePage::WelcomePage( RequirementsChecker* requirementsChecker, QWidget* par
         ui->retranslateUi( this );
     )
 
-    ui->aboutButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::Information,
+    ui->aboutButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::Release,
                                                              CalamaresUtils::Original,
                                                              2*QSize( CalamaresUtils::defaultFontHeight(),
                                                                     CalamaresUtils::defaultFontHeight() ) ) );
@@ -209,7 +209,7 @@ WelcomePage::setUpLinks( bool showSupportUrl,
 
     if ( showKnownIssuesUrl && !b->string( Branding::KnownIssuesUrl ).isEmpty() )
     {
-        ui->knownIssuesButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::Bugs,
+        ui->knownIssuesButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::Release,
                                                                        CalamaresUtils::Original,
                                                                        2*QSize( CalamaresUtils::defaultFontHeight(),
                                                                               CalamaresUtils::defaultFontHeight() ) ) );
