@@ -6,6 +6,10 @@ The reason for this module not being accpepted in Calamares master is that the t
 ui->license1Button->setText( "..... License" );
 ``` and set the text according to your needs.
 
+If you do not want to include this module in your Calamares build, add ```-DSKIP_MODULES="license"```
+to your build settings.
+
+
 How to implement the removal or not installing of proprietary software is up to any distribution to implement.  For example, proprietary graphics drivers cannot simply be removed in the packages module, a free version will need to be installed.
 An example of where the licenseAgree globalstorage entry is used:
 https://github.com/KaOSx/calamares/blob/master/src/modules/nonfree_drivers/main.py
