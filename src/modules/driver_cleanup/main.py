@@ -39,8 +39,8 @@ def run():
         with misc.raised_privileges():
             os.remove(db_lock)
 
-    if os.path.exists("/tmp/used_drivers"):
-        with open("/tmp/used_drivers", "r") as searchfile:
+    if os.path.exists("/tmp/used_gfx"):
+        with open("/tmp/used_gfx", "r") as searchfile:
             for line in searchfile:
                 if "intel" in line:
                     print(line)
