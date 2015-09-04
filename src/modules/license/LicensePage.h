@@ -38,6 +38,8 @@ public:
     void showLicense2Url( bool enabled );
     void showLicense3Url( bool enabled );
     void showLicense4Url( bool enabled );
+    void agreeButton( bool enabled );
+    void disagreeButton( bool enabled );
     void setLicense1Url( const QString& url );
     void setLicense2Url( const QString& url );
     void setLicense3Url( const QString& url );

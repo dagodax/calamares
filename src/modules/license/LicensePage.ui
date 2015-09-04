@@ -296,6 +296,9 @@
            <property name="text">
             <string>I &amp;disagree</string>
            </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
           </widget>
          </item>
         </layout>

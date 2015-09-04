@@ -147,8 +147,8 @@ def install_bootloader(boot_loader, fw_type):
 def run():
 
     if libcalamares.globalstorage.value("bootLoader") is None:
-        return None
         print('no bootloader install')
+        return None
 
     detect_firmware_type()
     boot_loader = libcalamares.globalstorage.value("bootLoader")

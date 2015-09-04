@@ -56,9 +56,19 @@ LicensePage::LicensePage(QWidget *parent)
         ui->retranslateUi( this );
     )
     
-    Calamares::GlobalStorage* gs = Calamares::JobQueue::instance()->globalStorage();
-    if ( ui->disagreeButton->isChecked() )
-        gs->insert( "licenseAgree", false ); 
+    connect( ui->disagreeButton, &QRadioButton::toggled,
+             this, [ this ]( bool checked )
+    {
+        if ( checked )
+            Calamares::JobQueue::instance()->globalStorage()->insert( "licenseAgree", false );;
+    } );
+    
+    connect( ui->agreeButton, &QRadioButton::toggled,
+             this, [ this ]( bool checked )
+    {
+        if ( checked )
+            Calamares::JobQueue::instance()->globalStorage()->insert( "licenseAgree", true );;
+    } );
     
 }
 
