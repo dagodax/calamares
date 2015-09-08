@@ -14,7 +14,7 @@
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="117"/>
         <source>With this operation, the partition &lt;strong&gt;%1&lt;/strong&gt; which contains %4 will be shrunk to %2MB and a new %3MB partition will be created for %5.</source>
-        <translation type="unfinished"/>
+        <translation>Bu işlem ile &lt;b&gt;%1&lt;/b&gt; bölümü içeren %4 %2MB küçültülecek ve yeni bölüm %3MB oluşturulacak %5 için.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="217"/>
@@ -29,7 +29,7 @@
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="237"/>
         <source>EFI system partition:</source>
-        <translation type="unfinished"/>
+        <translation>EFI sistem bölümü:</translation>
     </message>
 </context>
 <context>
@@ -203,12 +203,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="110"/>
         <source>Do not install a boot loader</source>
-        <translation type="unfinished"/>
+        <translation>Bir önyükleyici yüklemeyin</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="124"/>
         <source>%1 (%2)</source>
-        <translation type="unfinished"/>
+        <translation> %1 (%2)</translation>
     </message>
 </context>
 <context>
@@ -221,12 +221,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="24"/>
         <source>GlobalStorage</source>
-        <translation type="unfinished"/>
+        <translation> GlobalStorage</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="34"/>
         <source>JobQueue</source>
-        <translation type="unfinished"/>
+        <translation> JobQueue</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="44"/>
@@ -236,7 +236,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.cpp" line="96"/>
         <source>Debug information</source>
-        <translation type="unfinished"/>
+        <translation>Hata ayıklama bilgileri</translation>
     </message>
 </context>
 <context>
@@ -260,12 +260,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="51"/>
         <source>Run command %1 %2</source>
-        <translation type="unfinished"/>
+        <translation>%1 %2 komutu çalıştırın</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="60"/>
         <source>Running command %1 %2</source>
-        <translation type="unfinished"/>
+        <translation>Çalışan komut %1 %2</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="88"/>
@@ -335,7 +335,7 @@ Output:
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="241"/>
         <source>Running %1 operation.</source>
-        <translation type="unfinished"/>
+        <translation>%1 operasyonu yürütüyor.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="254"/>
@@ -396,7 +396,7 @@ Yükleyiciden çıkınca tüm değişiklikler kaybedilecek.</translation>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="256"/>
         <source>Continue with setup?</source>
-        <translation type="unfinished"/>
+        <translation>Kuruluma devam edilsin mi?</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="257"/>
@@ -406,12 +406,12 @@ Yükleyiciden çıkınca tüm değişiklikler kaybedilecek.</translation>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="264"/>
         <source>&amp;Install now</source>
-        <translation type="unfinished"/>
+        <translation>&amp;şimdi yükle</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="265"/>
         <source>Go &amp;back</source>
-        <translation type="unfinished"/>
+        <translation>Geri &amp;git</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="304"/>
@@ -462,7 +462,7 @@ Yükleyiciden çıkınca tüm değişiklikler kaybedilecek.</translation>
     <message>
         <location filename="../src/calamares/CalamaresWindow.cpp" line="98"/>
         <source>Show debug information</source>
-        <translation type="unfinished"/>
+        <translation>Hata ayıklama bilgilerini göster</translation>
     </message>
 </context>
 <context>
@@ -498,12 +498,12 @@ Yükleyiciden çıkınca tüm değişiklikler kaybedilecek.</translation>
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="170"/>
         <source>For best results, please ensure that this computer:</source>
-        <translation type="unfinished"/>
+        <translation>En iyi sonuç için, bilgisayarınızın şunları sağladığından emin olun:</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="198"/>
         <source>System requirements</source>
-        <translation type="unfinished"/>
+        <translation>Sistem gereksinimleri</translation>
     </message>
 </context>
 <context>
@@ -586,7 +586,7 @@ Yükleyiciden çıkınca tüm değişiklikler kaybedilecek.</translation>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="50"/>
         <source>Clearing mounts for partitioning operations on %1.</source>
-        <translation type="unfinished"/>
+        <translation>Takas %1 bölme işlemleri için bağlar.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearMountsJob.cpp" line="169"/>
@@ -599,22 +599,22 @@ Yükleyiciden çıkınca tüm değişiklikler kaybedilecek.</translation>
     <message>
         <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="38"/>
         <source>Clear all temporary mounts.</source>
-        <translation type="unfinished"/>
+        <translation>Geçici bağları temizle.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="45"/>
         <source>Clearing all temporary mounts.</source>
-        <translation type="unfinished"/>
+        <translation>Geçici bağlar temizleniyor.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="56"/>
         <source>Cannot get list of temporary mounts.</source>
-        <translation type="unfinished"/>
+        <translation>Geçici bağlar listesi alınamıyor.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="95"/>
         <source>Cleared all temporary mounts.</source>
-        <translation type="unfinished"/>
+        <translation>Tüm geçici bağlar temizlenir.</translation>
     </message>
 </context>
 <context>
@@ -1732,6 +1732,37 @@ Bazı dosya sistemlerinin desteklenmesi ve düzenlenmesi için ek uygulamalar ge
     </message>
 </context>
 <context>
+    <name>LicensePage</name>
+    <message>
+        <location filename="../src/modules/license/LicensePage.ui" line="14"/>
+        <source>Form</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/license/LicensePage.ui" line="299"/>
+        <source>I a&amp;gree</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/license/LicensePage.ui" line="309"/>
+        <source>I &amp;disagree</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/license/LicensePage.cpp" line="51"/>
+        <source>&lt;h1&gt;License Approval&lt;/h1&gt;In case non-free was selected, this installer will install proprietary &lt;br/&gt;packages that have additional End User License Agreements (EULAs) &lt;br/&gt;attached to them, do you accept these terms? &lt;br/&gt;If declined a free version will be used (when available).</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>LicenseViewStep</name>
+    <message>
+        <location filename="../src/modules/license/LicenseViewStep.cpp" line="46"/>
+        <source>License</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>LocalePage</name>
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="158"/>
@@ -2712,7 +2743,7 @@ Kuruluma devam edebilirsiniz fakat bazı özellikler devre dışı kalabilir.</t
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="49"/>
         <source>Setting password for user %1.</source>
-        <translation type="unfinished"/>
+        <translation>%1 kullanıcısı için parola ayarlama.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="59"/>
@@ -2963,7 +2994,7 @@ Kuruluma devam edebilirsiniz fakat bazı özellikler devre dışı kalabilir.</t
     <message>
         <location filename="../src/modules/summary/SummaryPage.cpp" line="42"/>
         <source>This is an overview of what will happen once you start the install procedure.</source>
-        <translation type="unfinished"/>
+        <translation>Yükleme prosedürü başladığında ne olacak genel bir bakış niteliğindedir bu.</translation>
     </message>
 </context>
 <context>
@@ -3005,27 +3036,27 @@ Kuruluma devam edebilirsiniz fakat bazı özellikler devre dışı kalabilir.</t
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="253"/>
         <source>Your username is too long.</source>
-        <translation type="unfinished"/>
+        <translation>Kullanıcı adınız çok uzun.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="263"/>
         <source>Your username contains invalid characters. Only lowercase letters and numbers are allowed.</source>
-        <translation type="unfinished"/>
+        <translation>Kullanıcı adı geçersiz karakterler içeriyor. Yalnızca küçük harfler ve sayılara izin verilir.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="307"/>
         <source>Your hostname is too short.</source>
-        <translation type="unfinished"/>
+        <translation>Ana bilgisayar adın çok kısa</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="318"/>
         <source>Your hostname is too long.</source>
-        <translation type="unfinished"/>
+        <translation>Ana bilgisayar adın çok uzun.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="329"/>
         <source>Your hostname contains invalid characters. Only letters, numbers and dashes are allowed.</source>
-        <translation type="unfinished"/>
+        <translation>Ana bilgisayar adın geçersiz karakterler içeriyor. Yalnızca harf, sayı ve tire izin verilir.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="360"/>
@@ -3047,32 +3078,32 @@ Kuruluma devam edebilirsiniz fakat bazı özellikler devre dışı kalabilir.</t
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"/>
+        <translation>Biçim</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="75"/>
         <source>&amp;Language:</source>
-        <translation type="unfinished"/>
+        <translation>Dil:</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="176"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="250"/>
         <source>&amp;Release notes</source>
-        <translation type="unfinished"/>
+        <translation>Sürüm Notları</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="166"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="240"/>
         <source>&amp;Known issues</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="156"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="193"/>
         <source>&amp;Support</source>
-        <translation type="unfinished"/>
+        <translation>Destek</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="146"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="183"/>
         <source>&amp;About</source>
-        <translation type="unfinished"/>
+        <translation>Hakkında</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="56"/>
@@ -3082,7 +3113,7 @@ Kuruluma devam edebilirsiniz fakat bazı özellikler devre dışı kalabilir.</t
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="70"/>
         <source>About %1 installer</source>
-        <translation type="unfinished"/>
+        <translation>%1 sistem yükleyici hakkında</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="72"/>
@@ -3100,7 +3131,7 @@ Kuruluma devam edebilirsiniz fakat bazı özellikler devre dışı kalabilir.</t
     <message>
         <location filename="../src/modules/welcome/WelcomeViewStep.cpp" line="48"/>
         <source>Welcome</source>
-        <translation type="unfinished"/>
+        <translation>Hoşgeldiniz</translation>
     </message>
 </context>
 <context>
@@ -3118,7 +3149,7 @@ Kuruluma devam edebilirsiniz fakat bazı özellikler devre dışı kalabilir.</t
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="90"/>
         <source>The default Office Suite is Calligra.&lt;br/&gt;LibreOffice is available in the repositories. &lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Varsayılan Ofis Paketi Calligra&apos;dır.&lt;br/&gt;LibreOffice Repoda Mevcuttur.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="110"/>
@@ -3128,7 +3159,7 @@ Kuruluma devam edebilirsiniz fakat bazı özellikler devre dışı kalabilir.</t
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="130"/>
         <source>May using KaOS be a pleasant experience for you.</source>
-        <translation type="unfinished"/>
+        <translation>KaOS kullanmak sizin için hoş bir deneyim olabilir.</translation>
     </message>
 </context>
 </TS>

@@ -1732,6 +1732,37 @@ Alguns sistemes de fitxers necessiten eines externes que s&apos;han d&apos;insta
     </message>
 </context>
 <context>
+    <name>LicensePage</name>
+    <message>
+        <location filename="../src/modules/license/LicensePage.ui" line="14"/>
+        <source>Form</source>
+        <translation>Formulari</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/license/LicensePage.ui" line="299"/>
+        <source>I a&amp;gree</source>
+        <translation>Hi estic &amp;d&apos;acord</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/license/LicensePage.ui" line="309"/>
+        <source>I &amp;disagree</source>
+        <translation>&amp;No hi estic d&apos;acord</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/license/LicensePage.cpp" line="51"/>
+        <source>&lt;h1&gt;License Approval&lt;/h1&gt;In case non-free was selected, this installer will install proprietary &lt;br/&gt;packages that have additional End User License Agreements (EULAs) &lt;br/&gt;attached to them, do you accept these terms? &lt;br/&gt;If declined a free version will be used (when available).</source>
+        <translation>&lt;h1&gt;Acceptació de llicència&lt;/h1&gt; En cas que s&apos;hagi seleccionat &quot;non-free&quot; (no lliure), aquest instal·lador instal·larà &lt;br/&gt;paquets de propietat que tenen acceptacions de llicències addicionals (End User License Agreements (EULA)) &lt;br/&gt; que hi estan lligades. Accepteu aquests termes? &lt;br/&gt;Si es declina se n&apos;usarà una versió lliure (sempre que estigui disponible).</translation>
+    </message>
+</context>
+<context>
+    <name>LicenseViewStep</name>
+    <message>
+        <location filename="../src/modules/license/LicenseViewStep.cpp" line="46"/>
+        <source>License</source>
+        <translation>Llicència</translation>
+    </message>
+</context>
+<context>
     <name>LocalePage</name>
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="158"/>
@@ -3055,22 +3086,22 @@ La instal·lació pot continuar, però algunes característiques estaran inhabil
         <translation>&amp;Llengua:</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="176"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="250"/>
         <source>&amp;Release notes</source>
         <translation>&amp;Notes de la versió</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="166"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="240"/>
         <source>&amp;Known issues</source>
         <translation>&amp;Problemes coneguts</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="156"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="193"/>
         <source>&amp;Support</source>
         <translation>&amp;Suport</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="146"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="183"/>
         <source>&amp;About</source>
         <translation>&amp;Quant a</translation>
     </message>

@@ -203,7 +203,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="110"/>
         <source>Do not install a boot loader</source>
-        <translation type="unfinished"/>
+        <translation>Não instalar um gerenciador de boot</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="124"/>
@@ -1298,7 +1298,7 @@ O instalador será fechado e todas as alterações serão perdidas.</translation
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="60"/>
         <source>&amp;Keep</source>
-        <translation type="unfinished"/>
+        <translation>Manter</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="70"/>
@@ -1318,12 +1318,12 @@ O instalador será fechado e todas as alterações serão perdidas.</translation
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="119"/>
         <source>Si&amp;ze:</source>
-        <translation type="unfinished"/>
+        <translation>Tamanho</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="132"/>
         <source>Fi&amp;le System:</source>
-        <translation type="unfinished"/>
+        <translation>Sistema de Arquivo</translation>
     </message>
 </context>
 <context>
@@ -1731,6 +1731,37 @@ Alguns sistemas de arquivos necessitam de ferramentas externas para serem suport
         <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="40"/>
         <source>The system locale setting affects the language and character set for some command line user interface elements.&lt;br/&gt;The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
         <translation>A localização do sistema afeta a linguagem e caracteres de alguns elementos de linhas de comando das interfaces de usuário .&lt;br/&gt;A configuração atual é &lt;strong&gt;%1&lt;/strong&gt;.</translation>
+    </message>
+</context>
+<context>
+    <name>LicensePage</name>
+    <message>
+        <location filename="../src/modules/license/LicensePage.ui" line="14"/>
+        <source>Form</source>
+        <translation>Formulário</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/license/LicensePage.ui" line="299"/>
+        <source>I a&amp;gree</source>
+        <translation>Eu aceito</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/license/LicensePage.ui" line="309"/>
+        <source>I &amp;disagree</source>
+        <translation>Eu não aceito</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/license/LicensePage.cpp" line="51"/>
+        <source>&lt;h1&gt;License Approval&lt;/h1&gt;In case non-free was selected, this installer will install proprietary &lt;br/&gt;packages that have additional End User License Agreements (EULAs) &lt;br/&gt;attached to them, do you accept these terms? &lt;br/&gt;If declined a free version will be used (when available).</source>
+        <translation>&lt;h1&gt;Aceite da Licença&lt;/h1&gt;No caso de non-free ter sido selecionado, este instalador irá instalar pacotes &lt;br/&gt;proprietários que possuem contratos de licença para usuários finais (EULAs) &lt;br/&gt;anexados a eles, você está de acordo com estes termos? &lt;br/&gt;Se declinar, uma versão free será utilizada (quando disponível).</translation>
+    </message>
+</context>
+<context>
+    <name>LicenseViewStep</name>
+    <message>
+        <location filename="../src/modules/license/LicenseViewStep.cpp" line="46"/>
+        <source>License</source>
+        <translation>Licença</translation>
     </message>
 </context>
 <context>
@@ -2181,7 +2212,7 @@ Alguns sistemas de arquivos necessitam de ferramentas externas para serem suport
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="145"/>
         <source>&amp;Install boot loader on:</source>
-        <translation type="unfinished"/>
+        <translation>Instalar o gerenciador de boot em:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="135"/>
@@ -2623,7 +2654,7 @@ A instalação pode continuar, mas alguns recursos podem ser desativados.</trans
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="205"/>
         <source>Resizing %2MB partition %1 to %3MB.</source>
-        <translation type="unfinished"/>
+        <translation>Redimensionando a partição %1 de %2MB para %3MB.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="232"/>
@@ -3057,22 +3088,22 @@ A instalação pode continuar, mas alguns recursos podem ser desativados.</trans
         <translation>&amp;Linguagem</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="176"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="250"/>
         <source>&amp;Release notes</source>
         <translation>&amp;Notas de lançamento</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="166"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="240"/>
         <source>&amp;Known issues</source>
         <translation>&amp;Problemas conhecidos</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="156"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="193"/>
         <source>&amp;Support</source>
         <translation>&amp;Suporte</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="146"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="183"/>
         <source>&amp;About</source>
         <translation>&amp;Sobre</translation>
     </message>

@@ -1732,6 +1732,37 @@ Certains systèmes de fichiers nécessitent l&apos;installation d&apos;outils ex
     </message>
 </context>
 <context>
+    <name>LicensePage</name>
+    <message>
+        <location filename="../src/modules/license/LicensePage.ui" line="14"/>
+        <source>Form</source>
+        <translation>Formulaire</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/license/LicensePage.ui" line="299"/>
+        <source>I a&amp;gree</source>
+        <translation>A&amp;pprouver</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/license/LicensePage.ui" line="309"/>
+        <source>I &amp;disagree</source>
+        <translation>Re$fuser</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/license/LicensePage.cpp" line="51"/>
+        <source>&lt;h1&gt;License Approval&lt;/h1&gt;In case non-free was selected, this installer will install proprietary &lt;br/&gt;packages that have additional End User License Agreements (EULAs) &lt;br/&gt;attached to them, do you accept these terms? &lt;br/&gt;If declined a free version will be used (when available).</source>
+        <translation>&lt;h1&gt;Acceptation de la licence&lt;/h1&gt;Au cas où les pilotes non libres ont été sélectionnés, cet installateur installera les paquets&lt;br/&gt;propriétaires qui sont rattachés aux&lt;br/&gt;Contrats de Licence Utilisateur Final (CLUFs). Acceptez-vous leurs termes ?&lt;br/&gt;Si vous les refusez, la version libre sera utilisée (si disponible). </translation>
+    </message>
+</context>
+<context>
+    <name>LicenseViewStep</name>
+    <message>
+        <location filename="../src/modules/license/LicenseViewStep.cpp" line="46"/>
+        <source>License</source>
+        <translation>Licence</translation>
+    </message>
+</context>
+<context>
     <name>LocalePage</name>
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="158"/>
@@ -3055,22 +3086,22 @@ L&apos;installation peut continuer, mais certaines fonctionnalités peuvent êtr
         <translation>&amp;Langue :</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="176"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="250"/>
         <source>&amp;Release notes</source>
         <translation>&amp;Notes de version</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="166"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="240"/>
         <source>&amp;Known issues</source>
         <translation>&amp;Problèmes connus</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="156"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="193"/>
         <source>&amp;Support</source>
         <translation>&amp;Support</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.ui" line="146"/>
+        <location filename="../src/modules/welcome/WelcomePage.ui" line="183"/>
         <source>&amp;About</source>
         <translation>&amp;À propos</translation>
     </message>
