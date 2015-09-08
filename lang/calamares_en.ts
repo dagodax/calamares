@@ -1717,17 +1717,17 @@ Some file systems need external tools to be installed for them to be supported. 
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/modules/license/LicensePage.ui" line="235"/>
+        <location filename="../src/modules/license/LicensePage.ui" line="238"/>
         <source>&lt;license4 text&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/modules/license/LicensePage.ui" line="287"/>
+        <location filename="../src/modules/license/LicensePage.ui" line="290"/>
         <source>I a&amp;gree</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/modules/license/LicensePage.ui" line="297"/>
+        <location filename="../src/modules/license/LicensePage.ui" line="300"/>
         <source>I &amp;disagree</source>
         <translation type="unfinished"></translation>
     </message>
