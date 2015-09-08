@@ -131,7 +131,15 @@ def install_bootloader(boot_loader, fw_type):
                 boot_device = partition["device"]
                 boot_p = boot_device[-1:]
                 device = boot_device[:-1]
-                print(device)
+
+                if not boot_p or not device:
+                    return ("EFI directory /boot not found!",
+                            "Boot partition: \"{!s}\"",
+                            "Boot device: \"{!s}\"".format(boot_p, device))
+                else:
+                    print("EFI directory: /boot")
+                    print("Boot partition: \"{!s}\"".format(boot_p))
+                    print("Boot device: \"{!s}\"".format(device))
         subprocess.call(["sgdisk", "--typecode=%s:EF00" % boot_p, "%s" % device])
         subprocess.call(
             ["bootctl", "--path=%s/boot" % install_path, "install"])
