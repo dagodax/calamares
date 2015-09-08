@@ -244,7 +244,7 @@
           <string notr="true"/>
          </property>
          <property name="text">
-          <string>&lt;license4 text&gt;</string>
+          <string notr="true">&lt;license4 text&gt;</string>
          </property>
         </widget>
        </item>
