@@ -33,7 +33,7 @@ def run():
     license = libcalamares.globalstorage.value("licenseAgree")
     print(license)
     
-    if license == "false":
+    if license == False:
         print('License declined')
         return None
 
