@@ -1738,17 +1738,17 @@ Einige Dateisysteme erfordern die Installation externer Programme, um unterstüt
     <message>
         <location filename="../src/modules/license/LicensePage.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"/>
+        <translation>Formular</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.ui" line="299"/>
         <source>I a&amp;gree</source>
-        <translation type="unfinished"/>
+        <translation>Ich stimme &amp;zu</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.ui" line="309"/>
         <source>I &amp;disagree</source>
-        <translation type="unfinished"/>
+        <translation>Ich stimme &amp;nicht zu</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="51"/>
@@ -1761,7 +1761,7 @@ Einige Dateisysteme erfordern die Installation externer Programme, um unterstüt
     <message>
         <location filename="../src/modules/license/LicenseViewStep.cpp" line="46"/>
         <source>License</source>
-        <translation type="unfinished"/>
+        <translation>Lizenz</translation>
     </message>
 </context>
 <context>

@@ -1736,22 +1736,22 @@ Algunos sistemas de archivos requieren de la instalación de herramientas extern
     <message>
         <location filename="../src/modules/license/LicensePage.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"/>
+        <translation>Formulario</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.ui" line="299"/>
         <source>I a&amp;gree</source>
-        <translation type="unfinished"/>
+        <translation>Estoy de &amp;acuerdo</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.ui" line="309"/>
         <source>I &amp;disagree</source>
-        <translation type="unfinished"/>
+        <translation>No estoy de &amp;acuerdo</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="51"/>
         <source>&lt;h1&gt;License Approval&lt;/h1&gt;In case non-free was selected, this installer will install proprietary &lt;br/&gt;packages that have additional End User License Agreements (EULAs) &lt;br/&gt;attached to them, do you accept these terms? &lt;br/&gt;If declined a free version will be used (when available).</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Aprobación de Licencia&lt;/h1&gt;En caso de haber seleccionado  no-libres, este instalador instalará paquetes propietarios&lt;br/&gt;que tienen un Acuerdo de Licencia de Usuario Final (EULA) &lt;br/&gt; adosado a ellos, ¿acepta estos términos? &lt;br/&gt;Si declina, se usará una versión libre (cuando esté disponible).</translation>
     </message>
 </context>
 <context>
@@ -1759,7 +1759,7 @@ Algunos sistemas de archivos requieren de la instalación de herramientas extern
     <message>
         <location filename="../src/modules/license/LicenseViewStep.cpp" line="46"/>
         <source>License</source>
-        <translation type="unfinished"/>
+        <translation>Licencia</translation>
     </message>
 </context>
 <context>

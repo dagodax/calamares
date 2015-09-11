@@ -1735,22 +1735,22 @@ Beberapa sistem berkas yang membutuhkan alat eksternal untuk dipasang bagi merek
     <message>
         <location filename="../src/modules/license/LicensePage.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"/>
+        <translation>Formulir</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.ui" line="299"/>
         <source>I a&amp;gree</source>
-        <translation type="unfinished"/>
+        <translation>Saya s&amp;etuju</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.ui" line="309"/>
         <source>I &amp;disagree</source>
-        <translation type="unfinished"/>
+        <translation>Saya &amp;tidak setuju</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="51"/>
         <source>&lt;h1&gt;License Approval&lt;/h1&gt;In case non-free was selected, this installer will install proprietary &lt;br/&gt;packages that have additional End User License Agreements (EULAs) &lt;br/&gt;attached to them, do you accept these terms? &lt;br/&gt;If declined a free version will be used (when available).</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Persetujuan Lisensi&lt;/h1&gt;Dalam hal non-free yang dipilih, pemasang ini akan memasang paket &lt;br/&gt;proprietary yang memiliki tambahan Perjanjian Lisensi Pengguna Akhir (EULA) &lt;br/&gt;melekat padanya, Anda menerima istilah-istilah ini? &lt;br/&gt;Jika menolak, versi free yang akan digunakan (bila tersedia).</translation>
     </message>
 </context>
 <context>
@@ -1758,7 +1758,7 @@ Beberapa sistem berkas yang membutuhkan alat eksternal untuk dipasang bagi merek
     <message>
         <location filename="../src/modules/license/LicenseViewStep.cpp" line="46"/>
         <source>License</source>
-        <translation type="unfinished"/>
+        <translation>Lisensi</translation>
     </message>
 </context>
 <context>
