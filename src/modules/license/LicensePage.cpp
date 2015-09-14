@@ -123,7 +123,7 @@ LicensePage::setEntries( const QList< LicenseEntry >& entriesList )
         {
             ui->mainText->setText( tr( "<h1>License Agreement</h1>"
                 "This setup procedure can install proprietary "
-                "software that is subject to licensing terms "
+                "software that is subject to licensing terms <br/>"
                 "in order to provide additional features and enhance the user "
                 "experience." ) );
             ui->additionalText->setText( tr( "Please review the End User License "
