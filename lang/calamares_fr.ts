@@ -1739,25 +1739,72 @@ Certains systèmes de fichiers nécessitent l&apos;installation d&apos;outils ex
         <translation>Formulaire</translation>
     </message>
     <message>
-        <location filename="../src/modules/license/LicensePage.ui" line="299"/>
-        <source>I a&amp;gree</source>
-        <translation>A&amp;pprouver</translation>
+        <location filename="../src/modules/license/LicensePage.cpp" line="88"/>
+        <source>I accept the terms and conditions above.</source>
+        <translation>J’accepte les termes et les conditions ci-dessus.</translation>
     </message>
     <message>
-        <location filename="../src/modules/license/LicensePage.ui" line="309"/>
-        <source>I &amp;disagree</source>
-        <translation>Re$fuser</translation>
+        <location filename="../src/modules/license/LicensePage.cpp" line="115"/>
+        <source>&lt;h1&gt;License Agreement&lt;/h1&gt;This setup procedure will install proprietary software that is subject to licensing terms.</source>
+        <translation>&lt;h1&gt;Accord de licence&lt;/h1&gt;Cette procédure de configuration installera un logiciel propriétaire qui est sujet à des termes de licence.</translation>
     </message>
     <message>
-        <location filename="../src/modules/license/LicensePage.cpp" line="51"/>
-        <source>&lt;h1&gt;License Approval&lt;/h1&gt;In case non-free was selected, this installer will install proprietary &lt;br/&gt;packages that have additional End User License Agreements (EULAs) &lt;br/&gt;attached to them, do you accept these terms? &lt;br/&gt;If declined a free version will be used (when available).</source>
-        <translation>&lt;h1&gt;Acceptation de la licence&lt;/h1&gt;Au cas où les pilotes non libres ont été sélectionnés, cet installateur installera les paquets&lt;br/&gt;propriétaires qui sont rattachés aux&lt;br/&gt;Contrats de Licence Utilisateur Final (CLUFs). Acceptez-vous leurs termes ?&lt;br/&gt;Si vous les refusez, la version libre sera utilisée (si disponible). </translation>
+        <location filename="../src/modules/license/LicensePage.cpp" line="118"/>
+        <source>Please review the End User License Agreements (EULAs) above.&lt;br/&gt;If you do not agree with the terms, the setup procedure cannot continue.</source>
+        <translation>Veuillez lire les Contrats de Licence Utilisateur Final (CLUFs) ci-dessus.&lt;br/&gt;Si vous n’êtes pas d’accord avec ces termes, la procédure de configuration ne pourra pas continuer.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/license/LicensePage.cpp" line="124"/>
+        <source>&lt;h1&gt;License Agreement&lt;/h1&gt;In case non-free was selected, this installer will install proprietary packages &lt;br/&gt;that have additional End User License Agreements (EULAs) attached to them.</source>
+        <translation>&lt;h1&gt;Accord de licence&lt;/h1&gt;Au cas ou non-free a été sélectionné, cet installateur installateur installera des paquets propriétaires &lt;br/&gt; qui sont soumis à un Contrat de Licence Utilisateur Final (CLUF).</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/license/LicensePage.cpp" line="127"/>
+        <source>Please review the End User License Agreements (EULAs) above.&lt;br/&gt;If you do not agree with the terms, proprietary software will not be installed, and open source alternatives will be used instead.</source>
+        <translation>Veuillez lire les Contrats de Licence Utilisateur Final (CLUFs) ci-dessus.&lt;br/&gt;Si vous n’êtes pas d’accord avec ces termes, les logiciels propriétaires ne sont pas installés, les alternatives Open Sources seront utilisées à la place.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/license/LicensePage.cpp" line="157"/>
+        <source>&lt;strong&gt;%1 driver&lt;/strong&gt;&lt;br/&gt;by %2</source>
+        <extracomment>%1 is an untranslatable product name, example: Creative Audigy driver</extracomment>
+        <translation>&lt;strong&gt;Pilote %1&lt;/strong&gt;&lt;br/&gt; par %2</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/license/LicensePage.cpp" line="163"/>
+        <source>&lt;strong&gt;%1 graphics driver&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;Grey&quot;&gt;by %2&lt;/font&gt;</source>
+        <extracomment>%1 is usually a vendor name, example: Nvidia graphics driver</extracomment>
+        <translation>&lt;strong&gt;Pilote graphique %1&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;Grey&quot;&gt;par %2&lt;/font&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/license/LicensePage.cpp" line="169"/>
+        <source>&lt;strong&gt;%1 browser plugin&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;Grey&quot;&gt;by %2&lt;/font&gt;</source>
+        <translation>&lt;strong&gt;Plugin de navigateur %1&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;Grey&quot;&gt;par %2&lt;/font&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/license/LicensePage.cpp" line="175"/>
+        <source>&lt;strong&gt;%1 codec&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;Grey&quot;&gt;by %2&lt;/font&gt;</source>
+        <translation>&lt;strong&gt;Codec %1&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;Grey&quot;&gt;par %2&lt;/font&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/license/LicensePage.cpp" line="181"/>
+        <source>&lt;strong&gt;%1 package&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;Grey&quot;&gt;by %2&lt;/font&gt;</source>
+        <translation>&lt;strong&gt;Paquet %1&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;Grey&quot;&gt;par %2&lt;/font&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/license/LicensePage.cpp" line="187"/>
+        <source>&lt;strong&gt;%1&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;Grey&quot;&gt;by %2&lt;/font&gt;</source>
+        <translation>&lt;strong&gt;%1&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;Grey&quot;&gt;par %2&lt;/font&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/license/LicensePage.cpp" line="199"/>
+        <source>&lt;a href=&quot;%1&quot;&gt;view license agreement&lt;/a&gt;</source>
+        <translation>&lt;a href=&quot;%1&quot;&gt;Afficher l’accord de licence&lt;/a&gt;</translation>
     </message>
 </context>
 <context>
     <name>LicenseViewStep</name>
     <message>
-        <location filename="../src/modules/license/LicenseViewStep.cpp" line="46"/>
+        <location filename="../src/modules/license/LicenseViewStep.cpp" line="49"/>
         <source>License</source>
         <translation>Licence</translation>
     </message>
