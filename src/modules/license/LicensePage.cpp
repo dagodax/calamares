@@ -122,10 +122,8 @@ LicensePage::setEntries( const QList< LicenseEntry >& entriesList )
         else
         {
             ui->mainText->setText( tr( "<h1>License Agreement</h1>"
-                "This setup procedure can install proprietary "
-                "software that is subject to licensing terms <br/>"
-                "in order to provide additional features and enhance the user "
-                "experience." ) );
+                "In case non-free was selected, this installer will install proprietary packages <br/>"
+                "that have additional End User License Agreements (EULAs) attached to them." ) );
             ui->additionalText->setText( tr( "Please review the End User License "
                 "Agreements (EULAs) above.<br/>"
                 "If you do not agree with the terms, proprietary software will not "
