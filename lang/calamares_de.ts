@@ -1743,64 +1743,64 @@ Einige Dateisysteme erfordern die Installation externer Programme, um unterstüt
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="88"/>
         <source>I accept the terms and conditions above.</source>
-        <translation type="unfinished"/>
+        <translation>Ich akzeptiere die obigen Geschäftsbedingungen.</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="115"/>
         <source>&lt;h1&gt;License Agreement&lt;/h1&gt;This setup procedure will install proprietary software that is subject to licensing terms.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Lizenzvereinbarung&lt;/h1&gt;Diese Einrichtungsprozedur wird proprietäre Software installieren, die diesen Lizenzbedingungen unterliegt.</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="118"/>
         <source>Please review the End User License Agreements (EULAs) above.&lt;br/&gt;If you do not agree with the terms, the setup procedure cannot continue.</source>
-        <translation type="unfinished"/>
+        <translation>Bitte sehen Sie die obigen Endbenutzer-Lizenzvereinbarungen (EULAs) durch.&lt;br/&gt;Wenn Sie mit den Bedingungen nicht einverstanden sind, kann die Einrichtungsprozedur nicht fortgesetzt werden.</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="124"/>
         <source>&lt;h1&gt;License Agreement&lt;/h1&gt;In case non-free was selected, this installer will install proprietary packages &lt;br/&gt;that have additional End User License Agreements (EULAs) attached to them.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Lizenzvereinbarung&lt;/h1&gt;Falls nichtfrei gewählt wurde, wird dieses Installationsprogramm proprietäre Pakete &lt;br/&gt;, die zusätzliche Endbenutzer-Lizenzvereinbarungen (EULAs) haben, installieren.</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="127"/>
         <source>Please review the End User License Agreements (EULAs) above.&lt;br/&gt;If you do not agree with the terms, proprietary software will not be installed, and open source alternatives will be used instead.</source>
-        <translation type="unfinished"/>
+        <translation>Bitte sehen Sie die obigen Endbenutzer-Lizenzvereinbarungen (EULAs) durch.&lt;br/&gt;Wenn Sie mit den Bedingungen nicht einverstanden sind, wird keine proprietäre Software installiert und quelloffene Alternativen werden stattdessen verwendet.</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="157"/>
         <source>&lt;strong&gt;%1 driver&lt;/strong&gt;&lt;br/&gt;by %2</source>
         <extracomment>%1 is an untranslatable product name, example: Creative Audigy driver</extracomment>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;%1 Treiber&lt;/strong&gt;&lt;br/&gt;von %2</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="163"/>
         <source>&lt;strong&gt;%1 graphics driver&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;Grey&quot;&gt;by %2&lt;/font&gt;</source>
         <extracomment>%1 is usually a vendor name, example: Nvidia graphics driver</extracomment>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;%1 Grafiktreiber&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;Grey&quot;&gt;von %2&lt;/font&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="169"/>
         <source>&lt;strong&gt;%1 browser plugin&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;Grey&quot;&gt;by %2&lt;/font&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;%1 Browser-Plugin&lt;/strong&gt;&lt;br/&gt;&lt;von color=&quot;Grey&quot;&gt;by %2&lt;/font&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="175"/>
         <source>&lt;strong&gt;%1 codec&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;Grey&quot;&gt;by %2&lt;/font&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;%1 Codec&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;Grey&quot;&gt;von %2&lt;/font&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="181"/>
         <source>&lt;strong&gt;%1 package&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;Grey&quot;&gt;by %2&lt;/font&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;%1 Paket&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;Grey&quot;&gt;von %2&lt;/font&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="187"/>
         <source>&lt;strong&gt;%1&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;Grey&quot;&gt;by %2&lt;/font&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;%1&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;Grey&quot;&gt;von %2&lt;/font&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="199"/>
         <source>&lt;a href=&quot;%1&quot;&gt;view license agreement&lt;/a&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;a href=&quot;%1&quot;&gt;Lizenzvereinbarung ansehen&lt;/a&gt;</translation>
     </message>
 </context>
 <context>
