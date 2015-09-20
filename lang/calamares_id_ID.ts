@@ -60,7 +60,7 @@
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="64"/>
         <source>Total Time: 00:00:00</source>
-        <translation>Waktu Total: 00:00:00</translation>
+        <translation>Total Waktu: 00:00:00</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/partitionmanager/src/gui/applyprogressdialogwidgetbase.ui" line="81"/>
@@ -474,7 +474,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/jobs/CheckFileSystemJob.cpp" line="58"/>
         <source>The file system check on partition %1 failed.</source>
-        <translation>Periksaan sistem berkas pada partisi %1 gagal.</translation>
+        <translation>Pemeriksaan sistem berkas pada partisi %1 gagal.</translation>
     </message>
 </context>
 <context>
@@ -492,7 +492,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="142"/>
         <source>This program will ask you some questions and set up %2 on your computer.&lt;br/&gt; Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions see the Known Issues</source>
-        <translation>Program ini akan menanyakan Anda beberapa pertanyaan dan persiapan %2 pada komputer Anda.&lt;br/&gt; Ingat, pemasang ini masih dalam tahap awal.&lt;br/&gt;LUKS/LVM atau RAID belum diimplementasikan.&lt;br/&gt;Untuk &lt;b&gt;pemartisian GPT pada sistem BIOS&lt;/b&gt; dan pengarahan lainnya lihat Masalah Diketahui</translation>
+        <translation>Program ini akan menanyakan Anda beberapa pertanyaan dan persiapan %2 pada komputer Anda.&lt;br/&gt; Ingat, pemasang ini masih dalam tahap awal.&lt;br/&gt;LUKS/LVM atau RAID belum diimplementasikan.&lt;br/&gt;Untuk &lt;b&gt;pemartisian GPT pada sistem BIOS&lt;/b&gt; dan petunjuk lainnya lihat Masalah Diketahui</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="170"/>
@@ -562,7 +562,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="278"/>
         <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;, either use an existing without formatting or create one.</source>
-        <translation>&lt;strong&gt;Pemartisian manual&lt;/strong&gt;&lt;br/&gt;Anda dapat membuat atau mengubah ukuran partisi sendiri, atau memilih beberapa partisi untuk %1. Sebuah tabel partisi GPT dan &lt;strong&gt;partisi /boot fat32 512M harus dimiliki untuk UEFI installs&lt;/strong&gt;, gunakanlah salah satu yang ada tanpa memformat atau membuatnya.</translation>
+        <translation>&lt;strong&gt;Pemartisian manual&lt;/strong&gt;&lt;br/&gt;Anda dapat membuat atau mengubah ukuran partisi sendiri, atau memilih beberapa partisi untuk %1. Memiliki sebuah tabel partisi GPT dan &lt;strong&gt;partisi /boot fat32 512M adalah suatu keharusan untuk UEFI installs&lt;/strong&gt;, gunakanlah salah satu yang ada tanpa memformat atau membuatnya.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="178"/>
@@ -1670,7 +1670,7 @@ Beberapa sistem berkas yang membutuhkan alat eksternal untuk dipasang bagi merek
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="134"/>
         <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;&lt;br/&gt;This program will ask you some questions and set up %2 on your computer. Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID and&lt;br/&gt;using one of the automated partitioning options for UEFI installs.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions, read:</source>
-        <translation>&lt;h1&gt;Selamat datang di pemasang %1.&lt;/h1&gt;&lt;br/&gt;Program ini akan menanyakan beberapa pertanyaan dan menyiapkan %2 pada komputer Anda. Ingat, pemasang ini masih dalam tahap awal.&lt;br/&gt;Belum diimplementasikan LUKS/LVM atau RAID dan&lt;br/&gt;salah satu menggunakan opsi pemartisian otomatis untuk UEFI installs.&lt;br/&gt;Untuk &lt;b&gt;pemartisian GPT pada sistem BIOS&lt;/b&gt; dan instruksi lainnya, baca:</translation>
+        <translation>&lt;h1&gt;Selamat datang di pemasang %1.&lt;/h1&gt;&lt;br/&gt;Program ini akan menanyakan beberapa pertanyaan dan menyiapkan %2 pada komputer Anda. Ingat, pemasang ini masih dalam tahap awal.&lt;br/&gt; LUKS/LVM atau RAID dan&lt;br/&gt;penggunaan salah satu opsi pemartisian otomatis untuk UEFI installs belum diimplementasikan.&lt;br/&gt;Untuk &lt;b&gt;pemartisian GPT pada sistem BIOS&lt;/b&gt; dan petunjuk lainnya, baca:</translation>
     </message>
     <message>
         <location filename="../src/modules/greeting/GreetingPage.cpp" line="156"/>
@@ -1988,7 +1988,7 @@ Beberapa sistem berkas yang membutuhkan alat eksternal untuk dipasang bagi merek
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="322"/>
         <source>&lt;small&gt;Enter the same password twice, so that it can be checked for typing errors. A good password will contain a mixture of letters, numbers and punctuation, should be at least eight characters long, and should be changed at regular intervals.&lt;/small&gt;</source>
-        <translation>&lt;small&gt;Masukkan kata sandi yang sama dua kali, sehingga dapat diperiksa untuk kesalahan mengetik. Sandi yang baik yang mengandung campuran huruf, angka dan tanda baca, setidaknya delapan karakter, dan setidaknya diubah secara berkala.&lt;/small&gt;</translation>
+        <translation>&lt;small&gt;Masukkan kata sandi yang sama dua kali, sehingga dapat diperiksa untuk kesalahan mengetik. Sandi yang baik yang mengandung campuran huruf, angka dan tanda baca, setidaknya delapan karakter, dan sebaiknya diubah secara berkala.&lt;/small&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="345"/>
