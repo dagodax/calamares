@@ -252,7 +252,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamares/JobQueue.cpp" line="89"/>
         <source>Done</source>
-        <translation>Beres</translation>
+        <translation>Kelar</translation>
     </message>
 </context>
 <context>
@@ -335,7 +335,7 @@ Output:
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="241"/>
         <source>Running %1 operation.</source>
-        <translation>Menjalankan %1 operasi.</translation>
+        <translation>Menjalankan operasi %1.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="254"/>
@@ -1581,12 +1581,12 @@ Beberapa sistem berkas yang membutuhkan alat eksternal untuk dipasang bagi merek
     <message>
         <location filename="../src/modules/finished/FinishedPage.ui" line="77"/>
         <source>&amp;Restart now</source>
-        <translation>&amp;Restart sekarang</translation>
+        <translation>&amp;Mulai ulang sekarang</translation>
     </message>
     <message>
         <location filename="../src/modules/finished/FinishedPage.cpp" line="50"/>
         <source>&lt;h1&gt;All done.&lt;/h1&gt;&lt;br/&gt;%1 has been installed on your computer.&lt;br/&gt;You may now restart into your new system, or continue using the %2 Live environment.</source>
-        <translation>&lt;h1&gt;Semua beres.&lt;/h1&gt;&lt;br/&gt; %1 telah dipasang pada komputer Anda.&lt;br/&gt;Sekarang Anda dapat me-restart ke dalam sistem baru Anda, atau terus menggunakan lingkungan Live %2.</translation>
+        <translation>&lt;h1&gt;Semua kelar.&lt;/h1&gt;&lt;br/&gt; %1 telah dipasang pada komputer Anda.&lt;br/&gt;Sekarang Anda dapat memulai ulang ke dalam sistem baru Anda, atau terus menggunakan lingkungan Live %2.</translation>
     </message>
 </context>
 <context>
@@ -1594,7 +1594,7 @@ Beberapa sistem berkas yang membutuhkan alat eksternal untuk dipasang bagi merek
     <message>
         <location filename="../src/modules/finished/FinishedViewStep.cpp" line="43"/>
         <source>All done</source>
-        <translation>Semua beres</translation>
+        <translation>Semua kelar</translation>
     </message>
 </context>
 <context>
