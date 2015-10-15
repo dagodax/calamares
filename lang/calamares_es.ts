@@ -2019,7 +2019,7 @@ Algunos sistemas de archivos necesitan instalar herramientas externas para ser s
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="606"/>
         <source>Require &amp;my password to log in</source>
-        <translation>Requiere &amp;my contraseña para iniciar sesión</translation>
+        <translation>Requiere &amp;mi contraseña para iniciar sesión</translation>
     </message>
 </context>
 <context>
