@@ -2,7 +2,7 @@
 ---------
 
 [![GitHub release](https://img.shields.io/github/release/calamares/calamares.svg)](https://github.com/calamares/calamares/releases)
-[![Build Status](https://calamares.io/ci/buildStatus/icon?job=calamares-master)](https://calamares.io/ci/job/calamares-master/)
+[![Build Status](https://calamares.io/ci/buildStatus/icon?job=calamares-post_commit)](https://calamares.io/ci/job/calamares-post_commit/)
 [![Coverity Scan Build Status](https://scan.coverity.com/projects/5389/badge.svg)](https://scan.coverity.com/projects/5389)
 [![GitHub license](https://img.shields.io/github/license/calamares/calamares.svg)](https://github.com/calamares/calamares/blob/master/LICENSE)
 
@@ -11,7 +11,7 @@
 
 ### Dependencies
 
-Compiler with C++11 support: GCC >= 4.8.4 or Clang >= 3.5.1
+Compiler with C++11 support: GCC >= 4.9.0 or Clang >= 3.5.1
 
 | Main | Welcome module | Partitioning module | Bootloader module | Unpackfs module |
 |:----:|:--------------:|:-------------------:|:-----------------:|:---------------:|
@@ -35,9 +35,13 @@ $ git submodule init
 $ git submodule update
 $ mkdir build
 $ cd build
-$ cmake -DCMAKE_BUILD_TYPE=Debug -DWITH_PARTITIONMANAGER=1 ..
+$ cmake -DCMAKE_BUILD_TYPE=Debug ..
 $ make
 ```
+
+#### Supported variables for CMake
+ * `WITH_PYTHON` - if this is set to false, the Python module interface will not be built. Default is true.
+ * `SKIP_MODULES` - takes a space-separated list of module names that should not be built even if present in `src/modules` (e.g. `cmake -DSKIP_MODULES="partition mount umount welcome" ..`). Default is empty.
 
 ### Design Notes
 Calamares is currently split as follows:

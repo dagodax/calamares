@@ -1,6 +1,6 @@
 /* === This file is part of Calamares - <http://github.com/calamares> ===
  *
- *   Copyright 2014, Teo Mrnjavac <teo@kde.org>
+ *   Copyright 2015, Teo Mrnjavac <teo@kde.org>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -16,24 +16,22 @@
  *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef PREPAREPAGE_H
-#define PREPAREPAGE_H
+#ifndef PARTUTILS_H
+#define PARTUTILS_H
 
-#include "PrepareViewStep.h"
+#include "OsproberEntry.h"
 
-#include <QBoxLayout>
-#include <QWidget>
+#include <QString>
 
-class PreparePage : public QWidget
+class PartitionCoreModule;
+
+namespace PartUtils
 {
-    Q_OBJECT
-public:
-    explicit PreparePage( QWidget* parent = nullptr );
 
-    void init( const QList< PrepareEntry >& checkEntries );
+bool canBeResized( PartitionCoreModule* core, const QString& partitionPath );
 
-private:
-    QBoxLayout* m_entriesLayout;
-};
+OsproberEntryList runOsprober( PartitionCoreModule* core );
 
-#endif // PREPAREPAGE_H
+}
+
+#endif // PARTUTILS_H

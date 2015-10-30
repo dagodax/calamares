@@ -16,11 +16,11 @@
  *   You should have received a copy of the GNU General Public License
  *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef PMUTILS_H
-#define PMUTILS_H
+#ifndef KPMHELPERS_H
+#define KPMHELPERS_H
 
-// CalaPM
-#include <fs/filesystem.h>
+// KPMcore
+#include <kpmcore/fs/filesystem.h>
 
 // Qt
 #include <QList>
@@ -35,8 +35,21 @@ class PartitionRole;
 /**
  * Helper functions to manipulate partitions
  */
-namespace PMUtils
+namespace KPMHelpers
 {
+
+/**
+ * Thin wrapper on top of CoreBackendManager. Hides things like initializing the
+ * Config instance or instantiating the backend.
+ *
+ * Initialize PartitionManager Config object and load a PartitionManager
+ * backend. It loads the "libparted" plugin by default, but this can be
+ * overloaded by settings the environment variable KPMCORE_BACKEND. Setting it to
+ * "dummy" will load the dummy plugin instead.
+ *
+ * @return true if initialization was successful.
+ */
+bool initKPMcore();
 
 bool isPartitionFreeSpace( Partition* );
 
@@ -74,4 +87,4 @@ Partition* createNewPartition( PartitionNode* parent, const Device& device, cons
 Partition* clonePartition( Device* device, Partition* partition );
 }
 
-#endif /* PMUTILS_H */
+#endif /* KPMHELPERS_H */

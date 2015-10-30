@@ -48,35 +48,35 @@ def run():
     if os.path.exists('/tmp/nvidia'):
         print('nvidia detected')
         print('removing unneeded packages')
-        libcalamares.utils.chroot_call(
+        libcalamares.utils.target_env_call(
             ['pacman', '-Rdd', '--noconfirm', 'libgl'])
-        libcalamares.utils.chroot_call(
+        libcalamares.utils.target_env_call(
             ['pacman', '-Rdd', '--noconfirm', 'xf86-video-nouveau'])
         print('installing driver')
         shutil.copytree(
             '/opt/kdeos/pkgs', '%s/opt/kdeos/pkgs' % (install_path))
         for nvidia_utils in glob.glob('/opt/kdeos/pkgs/nvidia-utils-35*'):
-            libcalamares.utils.chroot_call(
+            libcalamares.utils.target_env_call(
                 ['pacman', '-Ud', '--force', '--noconfirm', nvidia_utils])
         for nvidia in glob.glob('/opt/kdeos/pkgs/nvidia-35*'):
-            libcalamares.utils.chroot_call(
+            libcalamares.utils.target_env_call(
                 ['pacman', '-Ud', '--force', '--noconfirm', nvidia])
         shutil.rmtree('%s/opt/kdeos/pkgs' % (install_path))
     elif os.path.exists('/tmp/nvidia-304xx'):
         print('nvidia-304xx detected')
         print('removing unneeded packages')
-        libcalamares.utils.chroot_call(
+        libcalamares.utils.target_env_call(
             ['pacman', '-Rdd', '--noconfirm', 'libgl'])
-        libcalamares.utils.chroot_call(
+        libcalamares.utils.target_env_call(
             ['pacman', '-Rdd', '--noconfirm', 'xf86-video-nouveau'])
         print('installing driver')
         shutil.copytree(
             '/opt/kdeos/pkgs', '%s/opt/kdeos/pkgs' % (install_path))
         for nvidia_304_utils in glob.glob('/opt/kdeos/pkgs/nvidia-304xx-utils*'):
-            libcalamares.utils.chroot_call(
+            libcalamares.utils.target_env_call(
                 ['pacman', '-Ud', '--force', '--noconfirm', nvidia_304_utils])
         for nvidia_304 in glob.glob('/opt/kdeos/pkgs/nvidia-304xx-3*'):
-            libcalamares.utils.chroot_call(
+            libcalamares.utils.target_env_call(
                 ['pacman', '-Ud', '--force', '--noconfirm', nvidia_304])
         shutil.rmtree('%s/opt/kdeos/pkgs' % (install_path))
 

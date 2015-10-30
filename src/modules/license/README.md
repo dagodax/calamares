@@ -9,4 +9,4 @@ How to implement the removal or not installing of proprietary software is up to 
 An example of where the licenseAgree globalstorage entry is used:
 https://github.com/KaOSx/calamares/blob/master/src/modules/nonfree_drivers/main.py
 
-![License Page](http://wstaw.org/m/2015/09/14/Screenshot_20150914_130726.png)
+![License Page](http://wstaw.org/m/2015/09/14/Screenshot_20150914_113333.png)

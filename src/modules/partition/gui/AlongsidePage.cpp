@@ -21,9 +21,7 @@
 #include "core/ColorUtils.h"
 #include "core/PartitionCoreModule.h"
 #include "core/DeviceModel.h"
-#include "core/PMUtils.h"
-#include "core/device.h"
-#include "core/partition.h"
+#include "core/KPMHelpers.h"
 #include "core/PartitionInfo.h"
 #include "core/PartitionIterator.h"
 #include "gui/PartitionSplitterWidget.h"
@@ -35,6 +33,10 @@
 #include "utils/CalamaresUtilsGui.h"
 #include "utils/Retranslator.h"
 #include "Branding.h"
+
+// KPMcore
+#include <kpmcore/core/device.h>
+#include <kpmcore/core/partition.h>
 
 #include <QBoxLayout>
 #include <QComboBox>
@@ -125,44 +127,9 @@ AlongsidePage::init( PartitionCoreModule* core , const OsproberEntryList& osprob
                                         string( Calamares::Branding::ProductName ) ) );
     } );
 
-    // TODO 2.0: move this to a Utils namespace.
-    // Iterate over devices in devicemodel, foreach device, if it's DOS MBR and limit is
-    // reached and we have an osprober entry inside it, then disable alongside.
-    QStringList pathsOfDevicesWithPrimariesLimitReached;
-    for ( int row = 0; row < m_core->deviceModel()->rowCount(); ++row )
-    {
-        const QModelIndex& deviceIndex = m_core->deviceModel()->index( row );
-
-        Device* dev = m_core->deviceModel()->deviceForIndex( deviceIndex );
-        if ( dev->partitionTable() &&
-             ( dev->partitionTable()->type() == PartitionTable::msdos ||
-               dev->partitionTable()->type() == PartitionTable::msdos_sectorbased ) &&
-             dev->partitionTable()->numPrimaries() == dev->partitionTable()->maxPrimaries() )
-        {
-            // Primaries limit reached!
-            pathsOfDevicesWithPrimariesLimitReached.append( dev->deviceNode() );
-        }
-    }
-    // End MBR primary limit check.
-
-    cDebug() << "Devices with limit reached:" << pathsOfDevicesWithPrimariesLimitReached;
-    cDebug() << "Osprober entries:";
     foreach ( const OsproberEntry& e, osproberEntries )
     {
-        cDebug() << "     *" << e.path << e.line;
-        // TODO 2.0: move this to a Utils namespace.
-        bool cantCreatePartitions = false;
-        foreach ( const QString& devicePath, pathsOfDevicesWithPrimariesLimitReached )
-        {
-            if ( e.path.startsWith( devicePath ) )
-            {
-                cantCreatePartitions = true;
-                break;
-            }
-        }
-        // End partition creatable check.
-
-        if ( e.canBeResized && !cantCreatePartitions )
+        if ( e.canBeResized )
             m_partitionsComboBox->addItem( e.prettyName + " (" + e.path + ")", e.path );
     }
     setNextEnabled( true );
@@ -179,7 +146,7 @@ AlongsidePage::onPartitionSelected( int comboBoxIndex )
     for ( int i = 0; i < dm->rowCount(); ++i )
     {
         Device* dev = dm->deviceForIndex( dm->index( i ) );
-        Partition* candidate = PMUtils::findPartitionByPath( { dev }, path );
+        Partition* candidate = KPMHelpers::findPartitionByPath( { dev }, path );
         if ( candidate )
         {
             // store candidate->partitionPath() here!
@@ -313,7 +280,7 @@ AlongsidePage::applyChanges()
     for ( int i = 0; i < dm->rowCount(); ++i )
     {
         Device* dev = dm->deviceForIndex( dm->index( i ) );
-        Partition* candidate = PMUtils::findPartitionByPath( { dev }, path );
+        Partition* candidate = KPMHelpers::findPartitionByPath( { dev }, path );
         if ( candidate )
         {
             qint64 firstSector = candidate->firstSector();
@@ -322,7 +289,7 @@ AlongsidePage::applyChanges()
                                    dev->logicalSectorSize();
 
             m_core->resizePartition( dev, candidate, firstSector, newLastSector );
-            Partition* newPartition = PMUtils::createNewPartition(
+            Partition* newPartition = KPMHelpers::createNewPartition(
                                           candidate->parent(),
                                           *dev,
                                           candidate->roles(),

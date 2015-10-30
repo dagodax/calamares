@@ -1,5 +1,6 @@
 /* === This file is part of Calamares - <http://github.com/calamares> ===
  *
+ *   Copyright 2014, Aurélien Gâteau <agateau@kde.org>
  *   Copyright 2014-2015, Teo Mrnjavac <teo@kde.org>
  *
  *   Calamares is free software: you can redistribute it and/or modify
@@ -16,28 +17,25 @@
  *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef GREETINGPAGEPLUGIN_H
-#define GREETINGPAGEPLUGIN_H
+#ifndef EXECUTIONVIEWSTEP_H
+#define EXECUTIONVIEWSTEP_H
 
-#include <QObject>
+#include <viewpages/ViewStep.h>
 
-#include "viewpages/ViewStep.h"
-#include "PluginDllMacro.h"
+#include <QStringList>
 
-#include <QVariantMap>
+class QLabel;
+class QProgressBar;
+class QQuickWidget;
 
-class GreetingPage;
+namespace Calamares
+{
 
-class PLUGINDLLEXPORT GreetingViewStep : public Calamares::ViewStep
+class ExecutionViewStep : public ViewStep
 {
     Q_OBJECT
-    Q_PLUGIN_METADATA( IID "calamares.ViewModule/1.0" )
-
-    Q_INTERFACES( Calamares::ViewStep )
-
 public:
-    explicit GreetingViewStep( QObject* parent = nullptr );
-    virtual ~GreetingViewStep();
+    explicit ExecutionViewStep( QObject* parent = nullptr );
 
     QString prettyName() const override;
 
@@ -52,12 +50,23 @@ public:
     bool isAtBeginning() const override;
     bool isAtEnd() const override;
 
-    QList< Calamares::job_ptr > jobs() const override;
+    void onActivate() override;
 
-    void setConfigurationMap( const QVariantMap& configurationMap ) override;
+    QList< job_ptr > jobs() const override;
+
+    void appendJobModuleInstanceKey( const QString& instanceKey );
 
 private:
-    GreetingPage* m_widget;
+    QWidget* m_widget;
+    QProgressBar* m_progressBar;
+    QLabel* m_label;
+    QQuickWidget* m_slideShow;
+
+    QStringList m_jobInstanceKeys;
+
+    void updateFromJobQueue( qreal percent, const QString& message );
 };
 
-#endif // GREETINGPAGEPLUGIN_H
+}
+
+#endif /* EXECUTIONVIEWSTEP_H */

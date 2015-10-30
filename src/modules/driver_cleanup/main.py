@@ -46,7 +46,7 @@ def run():
                     print(line)
                 else:
                     try:
-                        libcalamares.utils.chroot_call(['pacman', '-R', '--noconfirm',
+                        libcalamares.utils.target_env_call(['pacman', '-R', '--noconfirm',
                                                         'xf86-video-vmware'])
                     except Exception as e:
                         pass
@@ -54,7 +54,7 @@ def run():
                     print(line)
                 else:
                     try:
-                        libcalamares.utils.chroot_call(['pacman', '-R', '--noconfirm',
+                        libcalamares.utils.target_env_call(['pacman', '-R', '--noconfirm',
                                                         'xf86-video-nouveau'])
                     except Exception as e:
                         pass
@@ -62,7 +62,7 @@ def run():
                     print(line)
                 else:
                     try:
-                        libcalamares.utils.chroot_call(['pacman', '-R', '--noconfirm',
+                        libcalamares.utils.target_env_call(['pacman', '-R', '--noconfirm',
                                                         'xf86-video-ati'])
                     except Exception as e:
                         pass
@@ -70,14 +70,14 @@ def run():
                     print(line)
                 else:
                     try:
-                        libcalamares.utils.chroot_call(['pacman', '-R', '--noconfirm',
+                        libcalamares.utils.target_env_call(['pacman', '-R', '--noconfirm',
                                                         'xf86-video-vmware'])
                     except Exception as e:
                         pass
         searchfile.close()
     else:
         try:
-            libcalamares.utils.chroot_call(['pacman', '-R', '--noconfirm', 'xf86-video-ati',
+            libcalamares.utils.target_env_call(['pacman', '-R', '--noconfirm', 'xf86-video-ati',
                                             'xf86-video-vmware'])
         except Exception as e:
             pass
@@ -91,7 +91,7 @@ def run():
         print('wacom in use')
     else:
         try:
-            libcalamares.utils.chroot_call(['pacman', '-Rncs', '--noconfirm',
+            libcalamares.utils.target_env_call(['pacman', '-Rncs', '--noconfirm',
                                             'xf86-input-wacom'])
         except Exception as e:
             pass

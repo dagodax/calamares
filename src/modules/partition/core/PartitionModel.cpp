@@ -15,18 +15,19 @@
  *   You should have received a copy of the GNU General Public License
  *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
-#include <core/PartitionModel.h>
 
-#include <core/ColorUtils.h>
-#include <core/PartitionInfo.h>
-#include <core/PMUtils.h>
-#include <utils/Logger.h>
+#include "core/PartitionModel.h"
+
+#include "core/ColorUtils.h"
+#include "core/PartitionInfo.h"
+#include "core/KPMHelpers.h"
+#include "utils/Logger.h"
 
 // CalaPM
-#include <core/device.h>
-#include <core/partition.h>
-#include <core/partitiontable.h>
-#include <fs/filesystem.h>
+#include <kpmcore/core/device.h>
+#include <kpmcore/core/partition.h>
+#include <kpmcore/core/partitiontable.h>
+#include <kpmcore/fs/filesystem.h>
 
 // KF5
 #include <KFormat>
@@ -131,11 +132,11 @@ PartitionModel::data( const QModelIndex& index, int role ) const
         int col = index.column();
         if ( col == NameColumn )
         {
-            if ( PMUtils::isPartitionFreeSpace( partition ) )
+            if ( KPMHelpers::isPartitionFreeSpace( partition ) )
                 return tr( "Free Space" );
             else
             {
-                return PMUtils::isPartitionNew( partition )
+                return KPMHelpers::isPartitionNew( partition )
                        ? tr( "New partition" )
                        : partition->partitionPath();
             }
@@ -160,7 +161,7 @@ PartitionModel::data( const QModelIndex& index, int role ) const
     case SizeRole:
         return ( partition->lastSector() - partition->firstSector() + 1 ) * m_device->logicalSectorSize();
     case IsFreeSpaceRole:
-        return PMUtils::isPartitionFreeSpace( partition );
+        return KPMHelpers::isPartitionFreeSpace( partition );
     default:
         return QVariant();
     }

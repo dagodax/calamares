@@ -19,16 +19,24 @@
 #ifndef CHOICEPAGE_H
 #define CHOICEPAGE_H
 
+#include "ui_ChoicePage.h"
+
 #include <QWidget>
 
-#include "OsproberEntry.h"
+#include "core/OsproberEntry.h"
+
+#include <QMutex>
 
 class QBoxLayout;
 class QLabel;
+class QListView;
 
 class PartitionCoreModule;
+class PrettyRadioButton;
 
-class ChoicePage : public QWidget
+class Device;
+
+class ChoicePage : public QWidget, private Ui::ChoicePage
 {
     Q_OBJECT
 public:
@@ -41,10 +49,11 @@ public:
         Manual
     };
 
-    explicit ChoicePage( QWidget* parent = nullptr );
+    explicit ChoicePage( bool compactMode = false, QWidget* parent = nullptr );
     virtual ~ChoicePage();
 
-    void init( PartitionCoreModule* core, const OsproberEntryList& osproberEntries );
+    void init( PartitionCoreModule* core,
+               const OsproberEntryList& osproberEntries );
 
     bool isNextEnabled() const;
 
@@ -52,16 +61,35 @@ public:
 
 signals:
     void nextStatusChanged( bool );
+    void actionChosen();
 
 private:
+    bool compact();
     void setNextEnabled( bool enabled );
+    void setupChoices();
+    Device* selectedDevice();
+    void applyDeviceChoice();
+    void updateDeviceStatePreview( Device* currentDevice );
+    void updateActionChoicePreview( Device* currentDevice, ChoicePage::Choice choice );
+    void setupActions( Device* currentDevice );
 
     bool m_nextEnabled;
     PartitionCoreModule* m_core;
-    QBoxLayout* m_itemsLayout;
-    QLabel* m_messageLabel;
+    OsproberEntryList m_osproberEntries;
+
+    QMutex m_previewsMutex;
 
     Choice m_choice;
+
+    bool m_compactMode;
+    QWidget* m_drivesView;
+
+    PrettyRadioButton* m_alongsideButton;
+    PrettyRadioButton* m_eraseButton;
+    PrettyRadioButton* m_replaceButton;
+    PrettyRadioButton* m_somethingElseButton;
+
+    int m_lastSelectedDeviceIndex;
 };
 
 #endif // CHOICEPAGE_H

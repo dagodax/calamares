@@ -39,25 +39,25 @@ def run():
     # Remove Calamares and depends
     if os.path.exists("%s/usr/bin/calamares" % install_path):
         print('Removing installer packages')
-        libcalamares.utils.chroot_call(
+        libcalamares.utils.target_env_call(
             ['pacman', '-Rns', '--noconfirm', 'calamares', 'keyboardctl'])
 
     # Remove welcome
     if os.path.exists("%s/usr/bin/welcome" % install_path):
         print('Removing live ISO packages')
-        libcalamares.utils.chroot_call(
+        libcalamares.utils.target_env_call(
             ['pacman', '-R', '--noconfirm', 'welcome'])
 
     # Remove hardware detection
     if os.path.exists("%s/etc/kdeos-hwdetect.conf" % install_path):
         print('Removing live start-up packages')
-        libcalamares.utils.chroot_call(
+        libcalamares.utils.target_env_call(
             ['pacman', '-Rns', '--noconfirm', 'kdeos-hardware-detection'])
 
     # Remove init-live
     if os.path.exists("%s/etc/live" % install_path):
         print('Removing live configuration packages')
-        libcalamares.utils.chroot_call(
+        libcalamares.utils.target_env_call(
             ['pacman', '-R', '--noconfirm', 'init-live'])
 
     # Remove KDE l10n
@@ -89,7 +89,7 @@ def run():
     for pkg in list_of_pkgs:
         if pkg[9:11] != this_locale:
             print('Removing KDE l10n packages')
-            libcalamares.utils.chroot_call(
+            libcalamares.utils.target_env_call(
                 ['pacman', '-Rddn', '--noconfirm', '%s' % (pkg)])
 
     # Remove Calligra l10n
@@ -116,7 +116,7 @@ def run():
     for pkg in list_of_pkgs:
         if pkg[14:16] != this_locale:
             print('Removing Calligra l10n packages')
-            libcalamares.utils.chroot_call(
+            libcalamares.utils.target_env_call(
                 ['pacman', '-Rddn', '--noconfirm', '%s' % (pkg)])
 
     print('package removal completed')

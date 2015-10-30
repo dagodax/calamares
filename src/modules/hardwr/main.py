@@ -22,14 +22,14 @@ import subprocess
 import shutil
 
 import libcalamares
-from libcalamares.utils import check_chroot_call
+from libcalamares.utils import check_target_env_call
 
 
 def run():
     """ Run mkinitcpio """
     
     kernel = libcalamares.job.configuration['kernel']
-    check_chroot_call(['mkinitcpio', '-p', kernel])
+    check_target_env_call(['mkinitcpio', '-p', kernel])
 
     """ Set hardware clock """
 
@@ -48,7 +48,7 @@ def run():
     # for broken realtek nics
     print('setup alsa config')
     install_path = libcalamares.globalstorage.value("rootMountPoint")
-    libcalamares.utils.chroot_call(
+    libcalamares.utils.target_env_call(
         ['/usr/bin/mkdir', '-p', '%s/etc/modprobe.d' % install_path])
     if os.path.exists('/etc/asound.state'):
         shutil.copy2('/etc/asound.state', '%s/etc/asound.state' % install_path)

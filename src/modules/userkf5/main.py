@@ -44,7 +44,7 @@ def run():
         '.kde4/share/config'
     ]
     for d in common_dirs:
-        libcalamares.utils.chroot_call(
+        libcalamares.utils.target_env_call(
             ['/usr/bin/mkdir', '-p', '/home/%s/%s' % (user,  d)])
 
     print('setup distribution specific settings')
@@ -82,7 +82,7 @@ def run():
         shutil.copy2('/etc/skel/%s' % f, '%s/home/%s/%s%s' %
                      (install_path,  user,  d,  f))
 
-    libcalamares.utils.chroot_call(
+    libcalamares.utils.target_env_call(
         ['chown', '-R', '%s:users' % user, "/home/%s" % user])
 
     #sddm_conf_path = os.path.join(install_path, "etc/sddm.conf")
@@ -99,10 +99,10 @@ def run():
     # sddm_conf.close()
 
     # fix SUID to capable permissions on iputils
-    libcalamares.utils.chroot_call(
+    libcalamares.utils.target_env_call(
         ['setcap', 'cap_net_raw=ep', '/usr/bin/ping'])
-    # libcalamares.utils.chroot_call(
-    #    ['setcap', 'cap_net_raw=ep', '/usr/bin/ping6'])
+    libcalamares.utils.target_env_call(
+        ['setcap', 'cap_net_raw=ep', '/usr/bin/ping6'])
 
     # set pacman.conf for kf5 needed repos
     #shutil.copy2('/etc/skel/pacman.conf', '%s/etc/pacman.conf' % install_path)

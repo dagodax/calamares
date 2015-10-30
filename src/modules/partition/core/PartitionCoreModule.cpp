@@ -17,33 +17,32 @@
  *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <core/PartitionCoreModule.h>
+#include "core/PartitionCoreModule.h"
 
-#include <core/BootLoaderModel.h>
-#include <core/DeviceModel.h>
-#include <core/PartitionInfo.h>
-#include <core/PartitionIterator.h>
-#include <core/PartitionModel.h>
-#include <core/PMUtils.h>
-#include <jobs/ClearMountsJob.h>
-#include <jobs/ClearTempMountsJob.h>
-#include <jobs/CreatePartitionJob.h>
-#include <jobs/CreatePartitionTableJob.h>
-#include <jobs/DeletePartitionJob.h>
-#include <jobs/FillGlobalStorageJob.h>
-#include <jobs/FormatPartitionJob.h>
-#include <jobs/ResizePartitionJob.h>
+#include "core/BootLoaderModel.h"
+#include "core/DeviceModel.h"
+#include "core/PartitionInfo.h"
+#include "core/PartitionIterator.h"
+#include "core/PartitionModel.h"
+#include "core/KPMHelpers.h"
+#include "jobs/ClearMountsJob.h"
+#include "jobs/ClearTempMountsJob.h"
+#include "jobs/CreatePartitionJob.h"
+#include "jobs/CreatePartitionTableJob.h"
+#include "jobs/DeletePartitionJob.h"
+#include "jobs/FillGlobalStorageJob.h"
+#include "jobs/FormatPartitionJob.h"
+#include "jobs/ResizePartitionJob.h"
 
-#include <Typedefs.h>
-#include <utils/Logger.h>
+#include "Typedefs.h"
+#include "utils/Logger.h"
 
-// CalaPM
-#include <CalaPM.h>
-#include <core/device.h>
-#include <core/partition.h>
-#include <backend/corebackend.h>
-#include <backend/corebackendmanager.h>
-#include <fs/filesystemfactory.h>
+// KPMcore
+#include <kpmcore/core/device.h>
+#include <kpmcore/core/partition.h>
+#include <kpmcore/backend/corebackend.h>
+#include <kpmcore/backend/corebackendmanager.h>
+#include <kpmcore/fs/filesystemfactory.h>
 
 // Qt
 #include <QStandardItemModel>
@@ -97,8 +96,8 @@ PartitionCoreModule::PartitionCoreModule( QObject* parent )
     , m_deviceModel( new DeviceModel( this ) )
     , m_bootLoaderModel( new BootLoaderModel( this ) )
 {
-    if ( !CalaPM::init() )
-        qFatal( "Failed to init CalaPM" );
+    if ( !KPMHelpers::initKPMcore() )
+        qFatal( "Failed to initialize KPMcore backend" );
     FileSystemFactory::init();
     init();
 }
@@ -107,7 +106,7 @@ void
 PartitionCoreModule::init()
 {
     CoreBackend* backend = CoreBackendManager::self()->backend();
-    auto devices = backend->scanDevices();
+    auto devices = backend->scanDevices( true );
 
     // Remove the device which contains / from the list
     for ( auto it = devices.begin(); it != devices.end(); )
@@ -217,7 +216,7 @@ PartitionCoreModule::deletePartition( Device* device, Partition* partition )
         // deleting them, so let's play it safe and keep our own list.
         QList< Partition* > lst;
         for ( auto childPartition : partition->children() )
-            if ( !PMUtils::isPartitionFreeSpace( childPartition ) )
+            if ( !KPMHelpers::isPartitionFreeSpace( childPartition ) )
                 lst << childPartition;
 
         for ( auto partition : lst )
@@ -417,7 +416,7 @@ PartitionCoreModule::scanForEfiSystemPartitions()
     //       The following findPartitions call and lambda should be scrapped and
     //       rewritten based on libKPM.     -- Teo 5/2015
     QList< Partition* > efiSystemPartitions =
-        PMUtils::findPartitions( devices,
+        KPMHelpers::findPartitions( devices,
                                  []( Partition* partition ) -> bool
     {
         QProcess process;
@@ -482,6 +481,7 @@ PartitionCoreModule::revert()
     m_deviceInfos.clear();
     init();
     updateIsDirty();
+    emit reverted();
 }
 
 

@@ -23,7 +23,7 @@ import libcalamares
 import os
 import subprocess
 
-from libcalamares.utils import check_chroot_call
+from libcalamares.utils import check_target_env_call
 
 
 def detect_firmware_type():
@@ -148,8 +148,8 @@ def install_bootloader(boot_loader, fw_type):
         create_loader(loader_path)
     else:
         install_path = boot_loader["installPath"]
-        check_chroot_call(["grub-install", install_path])
-        check_chroot_call(["grub-mkconfig", "-o", "/boot/grub/grub.cfg"])
+        check_target_env_call(["grub-install", install_path])
+        check_target_env_call(["grub-mkconfig", "-o", "/boot/grub/grub.cfg"])
 
 
 def run():

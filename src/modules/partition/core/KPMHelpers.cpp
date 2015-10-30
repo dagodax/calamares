@@ -17,17 +17,42 @@
  *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <core/PMUtils.h>
+#include "core/KPMHelpers.h"
 
-#include <core/PartitionInfo.h>
-#include <core/PartitionIterator.h>
+#include "core/PartitionInfo.h"
+#include "core/PartitionIterator.h"
 
-// CalaPM
-#include <core/partition.h>
-#include <fs/filesystemfactory.h>
+// KPMcore
+#include <kpmcore/core/partition.h>
+#include <kpmcore/fs/filesystemfactory.h>
+#include <kpmcore/backend/corebackendmanager.h>
 
-namespace PMUtils
+#include <QDebug>
+
+
+namespace KPMHelpers
 {
+
+static bool s_KPMcoreInited = false;
+
+bool
+initKPMcore()
+{
+    if ( s_KPMcoreInited )
+        return true;
+
+    QByteArray backendName = qgetenv( "KPMCORE_BACKEND" );
+    if ( backendName.isEmpty() )
+        backendName = "pmlibpartedbackendplugin";
+
+    if ( !CoreBackendManager::self()->load( backendName ) )
+    {
+        qWarning() << "Failed to load backend plugin" << backendName;
+        return false;
+    }
+    s_KPMcoreInited = true;
+    return true;
+}
 
 
 bool
@@ -114,6 +139,5 @@ clonePartition( Device* device, Partition* partition )
                partition->partitionPath()
                 );
 }
-
 
 } // namespace

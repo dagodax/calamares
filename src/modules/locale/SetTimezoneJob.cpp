@@ -1,6 +1,7 @@
 /* === This file is part of Calamares - <http://github.com/calamares> ===
  *
  *   Copyright 2014, Teo Mrnjavac <teo@kde.org>
+ *   Copyright 2015, Rohan Garg <rohan@garg.io>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -45,6 +46,14 @@ SetTimezoneJob::prettyName() const
 Calamares::JobResult
 SetTimezoneJob::exec()
 {
+    int ec = CalamaresUtils::System::instance()->
+                          targetEnvCall( { "timedatectl",
+                                           "set-timezone",
+                                           m_region + '/' + m_zone } );
+
+    if ( !ec )
+        return Calamares::JobResult::ok();
+
     QString localtimeSlink( "/etc/localtime" );
     QString zoneinfoPath( "/usr/share/zoneinfo" );
     zoneinfoPath.append( QDir::separator() + m_region );
@@ -57,11 +66,13 @@ SetTimezoneJob::exec()
                                             tr( "Bad path: %1" ).arg( zoneFile.absolutePath() ) );
 
     // Make sure /etc/localtime doesn't exist, otherwise symlinking will fail
-    CalamaresUtils::chrootCall( { "rm",
+    CalamaresUtils::System::instance()->
+                 targetEnvCall( { "rm",
                                   "-f",
                                   localtimeSlink } );
 
-    int ec = CalamaresUtils::chrootCall( { "ln",
+    ec = CalamaresUtils::System::instance()->
+                          targetEnvCall( { "ln",
                                            "-s",
                                            zoneinfoPath,
                                            localtimeSlink } );
@@ -71,5 +82,16 @@ SetTimezoneJob::exec()
                                                 .arg( zoneinfoPath )
                                                 .arg( "/etc/localtime" ) );
 
+    QFile timezoneFile( "/etc/timezone" );
+    if ( timezoneFile.exists() )
+    {
+      if (!timezoneFile.open(QIODevice::WriteOnly | QIODevice::Text | QIODevice::Truncate))
+          return Calamares::JobResult::error( tr( "Cannot set timezone,"),
+                                              tr( "Cannot open /etc/timezone for writing"));
+
+        QTextStream out(&timezoneFile);
+        out << m_region << '/' << m_zone << "\n";
+        timezoneFile.close();
+    }
     return Calamares::JobResult::ok();
 }
