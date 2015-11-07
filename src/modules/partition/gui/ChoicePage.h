@@ -31,6 +31,7 @@ class QBoxLayout;
 class QLabel;
 class QListView;
 
+class ExpandableRadioButton;
 class PartitionCoreModule;
 class PrettyRadioButton;
 
@@ -70,6 +71,7 @@ private:
     Device* selectedDevice();
     void applyDeviceChoice();
     void updateDeviceStatePreview( Device* currentDevice );
+    void applyActionChoice( Device* currentDevice, ChoicePage::Choice choice );
     void updateActionChoicePreview( Device* currentDevice, ChoicePage::Choice choice );
     void setupActions( Device* currentDevice );
 
@@ -82,10 +84,11 @@ private:
     Choice m_choice;
 
     bool m_compactMode;
+    bool m_isEfi;
     QWidget* m_drivesView;
 
     PrettyRadioButton* m_alongsideButton;
-    PrettyRadioButton* m_eraseButton;
+    ExpandableRadioButton* m_eraseButton;
     PrettyRadioButton* m_replaceButton;
     PrettyRadioButton* m_somethingElseButton;
 

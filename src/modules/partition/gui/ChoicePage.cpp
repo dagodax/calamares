@@ -18,6 +18,7 @@
 
 #include "ChoicePage.h"
 
+#include "core/BootLoaderModel.h"
 #include "core/PartitionActions.h"
 #include "core/PartitionCoreModule.h"
 #include "core/DeviceModel.h"
@@ -25,6 +26,7 @@
 #include "core/OsproberEntry.h"
 
 #include "PrettyRadioButton.h"
+#include "ExpandableRadioButton.h"
 #include "PartitionPreview.h"
 
 #include "utils/CalamaresUtilsGui.h"
@@ -63,6 +65,7 @@ ChoicePage::ChoicePage( bool compactMode, QWidget* parent )
     , m_replaceButton( nullptr )
     , m_somethingElseButton( nullptr )
     , m_lastSelectedDeviceIndex( -1 )
+    , m_isEfi( false )
 {
     setupUi( this );
     if ( m_compactMode )
@@ -125,6 +128,7 @@ ChoicePage::init( PartitionCoreModule* core,
 {
     m_core = core;
     m_osproberEntries = osproberEntries;
+    m_isEfi = QDir( "/sys/firmware/efi/efivars" ).exists();
 
     setupChoices();
 
@@ -190,8 +194,8 @@ ChoicePage::setupChoices()
     //  3) Manual
     //  TBD: upgrade option?
 
-    QSize iconSize( CalamaresUtils::defaultIconSize().width() * 2,
-                    CalamaresUtils::defaultIconSize().height() * 2 );
+    QSize iconSize( CalamaresUtils::defaultIconSize().width() * 2.5,
+                    CalamaresUtils::defaultIconSize().height() * 2.5 );
     QButtonGroup* grp = new QButtonGroup( this );
 
     m_alongsideButton = new PrettyRadioButton;
@@ -201,7 +205,30 @@ ChoicePage::setupChoices()
                                                                iconSize ) );
     grp->addButton( m_alongsideButton->buttonWidget() );
 
-    m_eraseButton = new PrettyRadioButton;
+    m_eraseButton = new ExpandableRadioButton;
+    if ( !m_isEfi )
+    {
+        QWidget* eraseWidget = new QWidget;
+        {
+            eraseWidget->setLayout( new QHBoxLayout );
+            QLabel* eraseBootloaderLabel = new QLabel( eraseWidget );
+            eraseWidget->layout()->addWidget( eraseBootloaderLabel );
+            eraseBootloaderLabel->setText( tr( "Boot loader location:" ) );
+            QComboBox* eraseBootloaderCombo = new QComboBox;
+            eraseWidget->layout()->addWidget( eraseBootloaderCombo );
+            eraseBootloaderLabel->setBuddy( eraseBootloaderCombo );
+            eraseBootloaderCombo->setModel( m_core->bootLoaderModel() );
+            connect( eraseBootloaderCombo, static_cast< void (QComboBox::*)(int) >( &QComboBox::currentIndexChanged ),
+                     [=]( int /* index */ )
+            {
+                QVariant var = eraseBootloaderCombo->currentData( BootLoaderModel::BootLoaderPathRole );
+                if ( !var.isValid() )
+                    return;
+                m_core->setBootLoaderInstallPath( var.toString() );
+            } );
+        }
+        m_eraseButton->setExpandableWidget( eraseWidget );
+    }
     m_eraseButton->setIconSize( iconSize );
     m_eraseButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::PartitionEraseAuto,
                                                            CalamaresUtils::Original,
@@ -260,12 +287,6 @@ ChoicePage::setupChoices()
         if ( checked )
         {
             m_choice = Erase;
-
-            if ( m_core->isDirty() )
-                m_core->clearJobs();
-
-            PartitionActions::doAutopartition( m_core, selectedDevice() );
-
             setNextEnabled( true );
             emit actionChosen();
         }
@@ -303,6 +324,7 @@ ChoicePage::setupChoices()
         Device* currd = selectedDevice();
         if ( currd )
         {
+            applyActionChoice( currd, currentChoice() );
             updateActionChoicePreview( currd, currentChoice() );
         }
     } );
@@ -354,6 +376,9 @@ ChoicePage::applyDeviceChoice()
 {
     Device* currd = selectedDevice();
 
+    if ( m_core->isDirty() )
+        m_core->clearJobs();
+
     // The device should only be nullptr immediately after a PCM reset.
     // applyDeviceChoice() will be called again momentarily as soon as we handle the
     // PartitionCoreModule::reverted signal.
@@ -369,6 +394,27 @@ ChoicePage::applyDeviceChoice()
         m_lastSelectedDeviceIndex = drivesCombo->currentIndex();
     else
         m_lastSelectedDeviceIndex = drivesList->selectionModel()->currentIndex().row();
+
+    emit actionChosen();
+}
+
+
+void
+ChoicePage::applyActionChoice( Device* currentDevice, ChoicePage::Choice choice )
+{
+    switch ( choice )
+    {
+    case Erase:
+        if ( m_core->isDirty() )
+            m_core->clearJobs();
+
+        PartitionActions::doAutopartition( m_core, selectedDevice() );
+        break;
+    case Replace:
+    case NoChoice:
+    case Manual:
+        break;
+    }
 }
 
 
