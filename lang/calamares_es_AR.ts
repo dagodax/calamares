@@ -198,7 +198,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamaresui/ExecutionViewStep.cpp" line="77"/>
         <source>Install</source>
-        <translation type="unfinished"/>
+        <translation>Instalar</translation>
     </message>
 </context>
 <context>
@@ -502,29 +502,30 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="103"/>
         <source>Storage de&amp;vice:</source>
-        <translation type="unfinished"/>
+        <translation>Dispositivo de almacenamiento:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="443"/>
         <source>Drag to split:</source>
-        <translation type="unfinished"/>
+        <translation>Arrastra para dividr:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="449"/>
         <source>Preview:</source>
-        <translation type="unfinished"/>
+        <translation>Vista previa:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="488"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="554"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="601"/>
         <source>&lt;strong&gt;Erase disk and install %1&lt;/strong&gt;&lt;br/&gt;This will &lt;font color=&quot;red&quot;&gt;delete&lt;/font&gt; all the data currently present on %2 (if any), including programs, documents, photos, music, and other files.&lt;br/&gt;You will be able to review and confirm your choice before proceeding.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Borrar disco e instalar %1&lt;/strong&gt;&lt;br/&gt;Esto &lt;font color=&quot;red&quot;&gt;borrará&lt;/font&gt; todos los datos que actualmente se encuentren en %2 (si hubiere), incluyendo programas, documentos, fotos, música y otros archivos.&lt;br/&gt;Podrá revisar y confirmar su elección antes de proceder.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="521"/>
         <source>&lt;strong&gt;Erase disk with %3 and install %1&lt;/strong&gt;&lt;br/&gt;This will &lt;font color=&quot;red&quot;&gt;delete&lt;/font&gt; all the data currently present on %2 (if any), including programs, documents, photos, music, and other files.&lt;br/&gt;You will be able to review and confirm your choice before proceeding.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Borrar disco con %3 e instalar %1&lt;/strong&gt;&lt;br/&gt;Esto 
+ &lt;font color=&quot;red&quot;&gt;borrará&lt;/font&gt; todos los datos que actualmente se encuentren en %2 (si hubiere), incluyendo programas, documentos, fotos, música y otros archivos.&lt;br/&gt;Podrá revisar y confirmar su elección antes de proceder.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="542"/>
@@ -539,7 +540,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"/>
+        <translation>Formulario</translation>
     </message>
 </context>
 <context>
@@ -958,7 +959,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/finished/FinishedViewStep.cpp" line="43"/>
         <source>Finish</source>
-        <translation type="unfinished"/>
+        <translation>Finalizar</translation>
     </message>
 </context>
 <context>
@@ -1278,12 +1279,12 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="450"/>
         <source>Log in automatically without asking for the password.</source>
-        <translation type="unfinished"/>
+        <translation>Iniciar sesión automáticamente sin pedir la contraseña.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="457"/>
         <source>Use the same password for the administrator account.</source>
-        <translation type="unfinished"/>
+        <translation>Usar la misma contraseña para la cuenta de administrador.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="480"/>
@@ -1339,7 +1340,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="22"/>
         <source>Storage de&amp;vice:</source>
-        <translation type="unfinished"/>
+        <translation>Dispositivo de almacenamiento:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="51"/>
@@ -1369,7 +1370,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="145"/>
         <source>Install boot &amp;loader on:</source>
-        <translation type="unfinished"/>
+        <translation>Instalar el cargador de &amp;arranque en:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="135"/>
@@ -1461,7 +1462,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPreview.cpp" line="46"/>
         <source>Unpartitioned space or unknown partition table</source>
-        <translation type="unfinished"/>
+        <translation>Espacio sin particionar o tabla de partición desconcida</translation>
     </message>
 </context>
 <context>
@@ -1774,12 +1775,12 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="89"/>
         <source>Cannot set timezone,</source>
-        <translation type="unfinished"/>
+        <translation>No se puede ajustar la zona horaria,</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="90"/>
         <source>Cannot open /etc/timezone for writing</source>
-        <translation type="unfinished"/>
+        <translation>No se puede abrir /etc/timezone para escribir en él</translation>
     </message>
 </context>
 <context>

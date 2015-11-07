@@ -198,7 +198,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamaresui/ExecutionViewStep.cpp" line="77"/>
         <source>Install</source>
-        <translation type="unfinished"/>
+        <translation>Installieren</translation>
     </message>
 </context>
 <context>
@@ -504,17 +504,17 @@ Du kannst dann bei jedem Start wählen, welches von beiden du verwenden willst. 
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="103"/>
         <source>Storage de&amp;vice:</source>
-        <translation type="unfinished"/>
+        <translation>Speicherge&amp;rät:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="443"/>
         <source>Drag to split:</source>
-        <translation type="unfinished"/>
+        <translation>Zum Teilen ziehen:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="449"/>
         <source>Preview:</source>
-        <translation type="unfinished"/>
+        <translation>Vorschau:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="488"/>
@@ -1280,17 +1280,17 @@ Du kannst dann bei jedem Start wählen, welches von beiden du verwenden willst. 
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="450"/>
         <source>Log in automatically without asking for the password.</source>
-        <translation type="unfinished"/>
+        <translation>Automatisch anmelden ohne nach dem Passwort zu fragen.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="457"/>
         <source>Use the same password for the administrator account.</source>
-        <translation type="unfinished"/>
+        <translation>Das gleiche Passwort für das Administratorkonto verwenden.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="480"/>
         <source>Choose a password for the administrator account.</source>
-        <translation>Wählen Sie ein Passwort für das Administrationskonto.</translation>
+        <translation>Wählen Sie ein Passwort für das Administratorkonto aus.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="585"/>
@@ -1341,7 +1341,7 @@ Du kannst dann bei jedem Start wählen, welches von beiden du verwenden willst. 
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="22"/>
         <source>Storage de&amp;vice:</source>
-        <translation type="unfinished"/>
+        <translation>Speicherge&amp;rät:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="51"/>
@@ -1371,7 +1371,7 @@ Du kannst dann bei jedem Start wählen, welches von beiden du verwenden willst. 
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="145"/>
         <source>Install boot &amp;loader on:</source>
-        <translation type="unfinished"/>
+        <translation>Bootloader &amp;installieren auf:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="135"/>
@@ -1463,7 +1463,7 @@ Du kannst dann bei jedem Start wählen, welches von beiden du verwenden willst. 
     <message>
         <location filename="../src/modules/partition/gui/PartitionPreview.cpp" line="46"/>
         <source>Unpartitioned space or unknown partition table</source>
-        <translation type="unfinished"/>
+        <translation>Unpartitionierter Bereich oder unbekannte Partitionstabelle</translation>
     </message>
 </context>
 <context>
@@ -1766,7 +1766,7 @@ Du kannst dann bei jedem Start wählen, welches von beiden du verwenden willst. 
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="80"/>
         <source>Cannot set timezone.</source>
-        <translation>Zeitzone kann nicht gesetzt werden.</translation>
+        <translation>Kann Zeitzone nicht festlegen.</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="81"/>
@@ -1776,12 +1776,12 @@ Du kannst dann bei jedem Start wählen, welches von beiden du verwenden willst. 
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="89"/>
         <source>Cannot set timezone,</source>
-        <translation type="unfinished"/>
+        <translation>Kann Zeitzone nicht festlegen,</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="90"/>
         <source>Cannot open /etc/timezone for writing</source>
-        <translation type="unfinished"/>
+        <translation>Kann /etc/timezone nicht zum Schreiben öffnen</translation>
     </message>
 </context>
 <context>

@@ -198,7 +198,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamaresui/ExecutionViewStep.cpp" line="77"/>
         <source>Install</source>
-        <translation type="unfinished"/>
+        <translation>Pasang</translation>
     </message>
 </context>
 <context>
@@ -501,29 +501,29 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="103"/>
         <source>Storage de&amp;vice:</source>
-        <translation type="unfinished"/>
+        <translation>Perangkat pe&amp;nyimpanan:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="443"/>
         <source>Drag to split:</source>
-        <translation type="unfinished"/>
+        <translation>Seret untuk membelah:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="449"/>
         <source>Preview:</source>
-        <translation type="unfinished"/>
+        <translation>Pratinjau:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="488"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="554"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="601"/>
         <source>&lt;strong&gt;Erase disk and install %1&lt;/strong&gt;&lt;br/&gt;This will &lt;font color=&quot;red&quot;&gt;delete&lt;/font&gt; all the data currently present on %2 (if any), including programs, documents, photos, music, and other files.&lt;br/&gt;You will be able to review and confirm your choice before proceeding.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Setip disk dan pasang %1&lt;/strong&gt;&lt;br/&gt;Ini akan &lt;font color=&quot;red&quot;&gt;menghapus&lt;/font&gt; semua data yang ada saat ini pada %2 (jika ada), termasuk program, dokumen, foto, musik, dan berkas lainnya.&lt;br/&gt;Anda dapat meninjau dan mengkonfirmasi pilihan Anda sebelum melanjutkan.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="521"/>
         <source>&lt;strong&gt;Erase disk with %3 and install %1&lt;/strong&gt;&lt;br/&gt;This will &lt;font color=&quot;red&quot;&gt;delete&lt;/font&gt; all the data currently present on %2 (if any), including programs, documents, photos, music, and other files.&lt;br/&gt;You will be able to review and confirm your choice before proceeding.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Setip disk %3 dan pasang %1&lt;/strong&gt;&lt;br/&gt;Ini akan &lt;font color=&quot;red&quot;&gt;menghapus&lt;/font&gt; semua data yang ada saat ini pada %2 (jika ada), termasuk program, dokumen, foto, musik, dan berkas lainnya.&lt;br/&gt;Anda dapat meninjau dan mengkonfirmasi pilihan Anda sebelum melanjutkan.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="542"/>
@@ -957,7 +957,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/finished/FinishedViewStep.cpp" line="43"/>
         <source>Finish</source>
-        <translation type="unfinished"/>
+        <translation>Finis</translation>
     </message>
 </context>
 <context>
@@ -1257,12 +1257,12 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="335"/>
         <source>Choose a password to keep your account safe.</source>
-        <translation>Memilih kata-sandi untuk menjaga akun Anda aman.</translation>
+        <translation>Memilih sandi untuk menjaga akun Anda aman.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="440"/>
         <source>&lt;small&gt;Enter the same password twice, so that it can be checked for typing errors. A good password will contain a mixture of letters, numbers and punctuation, should be at least eight characters long, and should be changed at regular intervals.&lt;/small&gt;</source>
-        <translation>&lt;small&gt;Masukkan kata-sandi yang sama dua kali, sehingga dapat diperiksa untuk kesalahan mengetik. Kata-sandi yang baik yang mengandung campuran huruf, angka dan tanda baca, setidaknya delapan karakter, dan sebaiknya diubah secara berkala.&lt;/small&gt;</translation>
+        <translation>&lt;small&gt;Masukkan sandi yang sama dua kali, sehingga dapat diperiksa untuk kesalahan mengetik. Sandi yang baik yang mengandung campuran huruf, angka dan tanda baca, setidaknya delapan karakter, dan sebaiknya diubah secara berkala.&lt;/small&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="226"/>
@@ -1277,22 +1277,22 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="450"/>
         <source>Log in automatically without asking for the password.</source>
-        <translation type="unfinished"/>
+        <translation>Log masuk secara otomatis tanpa menanyakan sandi.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="457"/>
         <source>Use the same password for the administrator account.</source>
-        <translation type="unfinished"/>
+        <translation>Gunakan sandi yang sama untuk akun administrator.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="480"/>
         <source>Choose a password for the administrator account.</source>
-        <translation>Memilih kata-sandi untuk akun administrator.</translation>
+        <translation>Memilih sandi untuk akun administrator.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="585"/>
         <source>&lt;small&gt;Enter the same password twice, so that it can be checked for typing errors.&lt;/small&gt;</source>
-        <translation>&lt;small&gt;Masukkan kata-sandi yang sama dua kali, sehingga dapat diperiksa untuk kesalahan mengetik.&lt;/small&gt;</translation>
+        <translation>&lt;small&gt;Masukkan sandi yang sama dua kali, sehingga dapat diperiksa untuk kesalahan mengetik.&lt;/small&gt;</translation>
     </message>
 </context>
 <context>
@@ -1338,7 +1338,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="22"/>
         <source>Storage de&amp;vice:</source>
-        <translation type="unfinished"/>
+        <translation>Perangkat pe&amp;nyimpanan:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="51"/>
@@ -1368,7 +1368,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="145"/>
         <source>Install boot &amp;loader on:</source>
-        <translation type="unfinished"/>
+        <translation>Pasang boot &amp;loader pada:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="135"/>
@@ -1460,7 +1460,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPreview.cpp" line="46"/>
         <source>Unpartitioned space or unknown partition table</source>
-        <translation type="unfinished"/>
+        <translation>Ruang tidak terpartisi atau tabel partisi tidak diketahui</translation>
     </message>
 </context>
 <context>
@@ -1715,12 +1715,12 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="42"/>
         <source>Set password for user %1</source>
-        <translation>Setel kata-sandi untuk pengguna %1</translation>
+        <translation>Setel sandi untuk pengguna %1</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="49"/>
         <source>Setting password for user %1.</source>
-        <translation>Menyetel kata-sandi untuk pengguna %1.</translation>
+        <translation>Menyetel sandi untuk pengguna %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="59"/>
@@ -1735,7 +1735,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="74"/>
         <source>Cannot set password for user %1.</source>
-        <translation>Tidak bisa menyetel kata-sandi untuk pengguna %1.</translation>
+        <translation>Tidak bisa menyetel sandi untuk pengguna %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="76"/>
@@ -1773,12 +1773,12 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="89"/>
         <source>Cannot set timezone,</source>
-        <translation type="unfinished"/>
+        <translation>Tidak bisa menyetel zona-waktu,</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="90"/>
         <source>Cannot open /etc/timezone for writing</source>
-        <translation type="unfinished"/>
+        <translation>Tidak bisa membuka /etc/timezone untuk penulisan</translation>
     </message>
 </context>
 <context>
@@ -1828,7 +1828,7 @@ The installer will quit and all changes will be lost.</source>
         <location filename="../src/modules/users/UsersPage.cpp" line="372"/>
         <location filename="../src/modules/users/UsersPage.cpp" line="405"/>
         <source>Your passwords do not match!</source>
-        <translation>Kata-sandi Anda tidak cocok!</translation>
+        <translation>Sandi Anda tidak cocok!</translation>
     </message>
 </context>
 <context>
