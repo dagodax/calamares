@@ -74,7 +74,7 @@ Presentation
                     "removing Live Session only packages<br/>"+
                     "and adjusting hardware setup.<br/>")
                 wrapMode: Text.WordWrap
-                width: 350
+                width: 300
                 horizontalAlignment: Text.AlignLeft
             }
         }
@@ -97,7 +97,7 @@ Presentation
                 text: qsTr("The default Office Suite is Calligra.<br/>"+
                     "LibreOffice is available in the repositories. <br/>")
                 wrapMode: Text.WordWrap
-                width: 350
+                width: 300
                 horizontalAlignment: Text.AlignLeft
             }
         }
@@ -120,7 +120,7 @@ Presentation
                 text: qsTr("Qt/KDE specific internet applications include the Qupzilla web-browser <br/>"+
                     "and kde-telepathy for chat and Instant Messaging. <br/>")
                 wrapMode: Text.WordWrap
-                width: 350
+                width: 300
                 horizontalAlignment: Text.AlignLeft
             }
         }
