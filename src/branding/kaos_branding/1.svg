@@ -10,13 +10,13 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="640"
-   height="400"
-   viewBox="0 0 640.00001 400.00001"
+   width="1280"
+   height="800"
+   viewBox="0 0 1280 800.00002"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="6.svg">
+   sodipodi:docname="1.svg">
   <defs
      id="defs4">
     <linearGradient
@@ -35,11 +35,12 @@
        inkscape:collect="always"
        xlink:href="#linearGradient4749"
        id="linearGradient4755"
-       x1="630.76923"
-       y1="394.8718"
-       x2="24.359001"
-       y2="66.666664"
-       gradientUnits="userSpaceOnUse" />
+       x1="328.04813"
+       y1="339.76974"
+       x2="637.28412"
+       y2="4.0816321"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.9957355,0,0,2.0029772,-1.276584,-2.4767375)" />
     <clipPath
        id="clipPath16"
        clipPathUnits="userSpaceOnUse">
@@ -155,23 +156,26 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.78"
-     inkscape:cx="334.73702"
-     inkscape:cy="222.2764"
+     inkscape:zoom="0.69044441"
+     inkscape:cx="534.4714"
+     inkscape:cy="272.9935"
      inkscape:document-units="px"
      inkscape:current-layer="svg2"
      showgrid="false"
      units="px"
-     inkscape:snap-bbox="false"
-     inkscape:snap-nodes="false"
+     inkscape:snap-bbox="true"
+     inkscape:snap-nodes="true"
      inkscape:snap-global="true"
      inkscape:snap-path-clip="true"
      inkscape:snap-path-mask="true"
-     inkscape:window-width="1442"
-     inkscape:window-height="894"
-     inkscape:window-x="409"
-     inkscape:window-y="96"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1830"
+     inkscape:window-height="1056"
+     inkscape:window-x="642"
+     inkscape:window-y="105"
+     inkscape:window-maximized="0"
+     inkscape:snap-others="false"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="false" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -188,17 +192,17 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-652.36216)" />
+     transform="translate(0,-252.36216)" />
   <rect
      style="opacity:0.95;fill:url(#linearGradient4755);fill-opacity:1"
      id="rect4745"
-     width="640"
-     height="400"
+     width="1277.2708"
+     height="801.19086"
      x="1.2820513"
-     y="1.2820513" />
+     y="0.091166265" />
   <g
      id="g3732"
-     transform="matrix(0.2539059,0,0,0.2539059,-1.4459586,-45.376885)">
+     transform="matrix(0.37715146,0,0,0.37715146,942.21624,209.16251)">
     <g
        id="layer1-1"
        inkscape:label="Layer 1" />
@@ -472,7 +476,7 @@
   </g>
   <g
      id="g3986"
-     transform="matrix(0.09959591,0,0,0.09959591,467.19763,206.99133)">
+     transform="matrix(0.12026875,0,0,0.12026875,811.13039,524.32524)">
     <g
        id="g3969">
       <path
@@ -506,7 +510,7 @@
   <g
      style="overflow:visible"
      id="g3901"
-     transform="matrix(0.87173553,0,0,0.87173553,228.24901,117.14221)">
+     transform="matrix(1.0835302,0,0,1.0835302,812.45849,47.204086)">
     <path
        id="path1575"
        d="m 20.305,7.488 140.184,0 c 7.057,0 12.816,5.76 12.816,12.816 l 0,139.248 c 0,7.057 -5.76,12.889 -12.816,12.889 l -140.184,0 c -7.057,0 -12.816,-5.832 -12.816,-12.889 l 0,-139.248 C 7.488,13.248 13.248,7.488 20.305,7.488 Z"
@@ -539,10 +543,15 @@
        inkscape:connector-curvature="0" />
   </g>
   <rect
-     style="fill:#000000;fill-opacity:0.58401639;fill-rule:evenodd;stroke:#000000;stroke-width:1.13384449px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0"
+     style="fill:#292f34;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.47990656px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0"
      id="rect3483"
-     width="448.20227"
-     height="182.12001"
-     x="95.898865"
-     y="108.93999" />
+     width="765.92114"
+     height="181.55545"
+     x="0.73995328"
+     y="309.22226" />
+  <path
+     style="opacity:0.95;fill:#292f34;fill-opacity:1;stroke:none;stroke-width:0.28222224px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 692.56439,563.6737 74.83712,-74.83617 -74.83712,0 z"
+     id="path4120"
+     inkscape:connector-curvature="0" />
 </svg>

@@ -41,7 +41,8 @@ Presentation
             Text {
                 anchors.centerIn: parent
                 anchors.verticalCenterOffset: 0
-                font.pixelSize: parent.width *.02
+                anchors.horizontalCenterOffset: -125
+                font.pixelSize: parent.width *.015
                 color: 'white'
                 text: qsTr("Here the actual install of KaOS will start.<br/>"+
                     "Use the left <b>mouse button</b> to go to the next slide, right for previous.<br/>"+
@@ -49,8 +50,8 @@ Presentation
                     "the full copying of the ISO will take the longest of this install phase <br/>"+
                     "and will run until approximately 30%.<br/>")
                 wrapMode: Text.WordWrap
-                width: 600
-                horizontalAlignment: Text.Center
+                width: 500
+                horizontalAlignment: Text.AlignLeft
             }
         }
     }
@@ -66,15 +67,15 @@ Presentation
             Text {
                 anchors.centerIn: parent
                 anchors.verticalCenterOffset: 0
-                anchors.horizontalCenterOffset: -200
-                font.pixelSize: parent.width *.02
+                anchors.horizontalCenterOffset: 250
+                font.pixelSize: parent.width *.015
                 color: 'white'
                 text: qsTr("After the ISO is copied some 25 post-install modules will run.<br/>"+
                     "This includes setting user specific options, <br/>"+
                     "removing Live Session only packages<br/>"+
                     "and adjusting hardware setup.<br/>")
                 wrapMode: Text.WordWrap
-                width: 300
+                width: 450
                 horizontalAlignment: Text.AlignLeft
             }
         }
@@ -91,13 +92,13 @@ Presentation
             Text {
                 anchors.centerIn: parent
                 anchors.verticalCenterOffset: 0
-                anchors.horizontalCenterOffset: 200
-                font.pixelSize: parent.width *.02
-                color: 'black'
+                anchors.horizontalCenterOffset: -100
+                font.pixelSize: parent.width *.015
+                color: 'white'
                 text: qsTr("The default Office Suite is Calligra.<br/>"+
                     "LibreOffice is available in the repositories. <br/>")
                 wrapMode: Text.WordWrap
-                width: 300
+                width: 450
                 horizontalAlignment: Text.AlignLeft
             }
         }
@@ -114,13 +115,13 @@ Presentation
             Text {
                 anchors.centerIn: parent
                 anchors.verticalCenterOffset: 0
-                anchors.horizontalCenterOffset: -200
-                font.pixelSize: parent.width *.02
+                anchors.horizontalCenterOffset: 250
+                font.pixelSize: parent.width *.015
                 color: 'white'
                 text: qsTr("Qt/KDE specific internet applications include the Qupzilla web-browser <br/>"+
                     "and kde-telepathy for chat and Instant Messaging. <br/>")
                 wrapMode: Text.WordWrap
-                width: 300
+                width: 450
                 horizontalAlignment: Text.AlignLeft
             }
         }
@@ -137,11 +138,34 @@ Presentation
             Text {
                 anchors.centerIn: parent
                 anchors.verticalCenterOffset: 0
-                font.pixelSize: parent.width *.02
+                anchors.horizontalCenterOffset: -200
+                font.pixelSize: parent.width *.015
+                color: 'white'
+                text: qsTr("For package management Octopi is the GUI application.<br/>")
+                wrapMode: Text.WordWrap
+                width: 450
+                horizontalAlignment: Text.Center
+            }
+        }
+    }
+    
+    Slide {
+        anchors.fill: parent
+
+        Image {
+            id: background5
+            source: "6.svg"
+            anchors.fill: parent
+
+            Text {
+                anchors.centerIn: parent
+                anchors.verticalCenterOffset: 0
+                anchors.horizontalCenterOffset: 250
+                font.pixelSize: parent.width *.015
                 color: 'white'
                 text: qsTr("May using KaOS be a pleasant experience for you.")
                 wrapMode: Text.WordWrap
-                width: 600
+                width: 450
                 horizontalAlignment: Text.Center
             }
         }
