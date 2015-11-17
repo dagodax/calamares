@@ -119,7 +119,8 @@ Presentation
                 font.pixelSize: parent.width *.015
                 color: 'white'
                 text: qsTr("Qt/KDE specific internet applications include the <br/>"+
-                    "Qupzilla web-browser and kde-telepathy for chat and Instant Messaging. <br/>")
+                    "Qupzilla web-browser and kde-telepathy for <br/>"+
+                    "chat and Instant Messaging. <br/>")
                 wrapMode: Text.WordWrap
                 width: 450
                 horizontalAlignment: Text.AlignLeft
