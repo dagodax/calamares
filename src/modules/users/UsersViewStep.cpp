@@ -167,5 +167,11 @@ UsersViewStep::setConfigurationMap( const QVariantMap& configurationMap )
     {
         m_widget->setAutologinDefault( configurationMap.value( "doAutologin" ).toBool() );
     }
+    
+    if ( configurationMap.contains( "doReusePassword" ) &&
+         configurationMap.value( "doReusePassword" ).type() == QVariant::Bool )
+    {
+        m_widget->setReusePasswordDefault( configurationMap.value( "doReusePassword" ).toBool() );
+    }
 }
 

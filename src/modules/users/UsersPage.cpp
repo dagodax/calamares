@@ -81,7 +81,7 @@ UsersPage::UsersPage( QWidget* parent )
     m_customHostname = false;
 
     setShowRootPassword( true );
-    ui->checkBoxReusePassword->setChecked( false );
+    ui->checkBoxReusePassword->setChecked( true );
 
     CALAMARES_RETRANSLATE( ui->retranslateUi( this ); )
 }
@@ -425,4 +425,10 @@ void
 UsersPage::setAutologinDefault( bool checked )
 {
     ui->checkBoxAutoLogin->setChecked( checked );
+}
+
+void
+UsersPage::setReusePasswordDefault( bool checked )
+{
+    ui->checkBoxReusePassword->setChecked( checked );
 }
