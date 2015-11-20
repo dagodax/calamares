@@ -159,7 +159,7 @@ UsersViewStep::setConfigurationMap( const QVariantMap& configurationMap )
     {
         Calamares::JobQueue::instance()->globalStorage()->insert( "setRootPassword",
                         configurationMap.value( "setRootPassword" ).toBool() );
-        m_widget->setShowRootPassword( configurationMap.value( "setRootPassword" ).toBool() );
+        m_widget->setWriteRootPassword( configurationMap.value( "setRootPassword" ).toBool() );
     }
 
     if ( configurationMap.contains( "doAutologin" ) &&
