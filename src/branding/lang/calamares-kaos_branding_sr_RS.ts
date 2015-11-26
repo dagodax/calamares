@@ -24,7 +24,7 @@
     <message>
         <location filename="../kaos_branding/show.qml" line="144"/>
         <source>For package management Octopi is the GUI application.&lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>За управљање пакетима, Октопи је права апликација.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../kaos_branding/show.qml" line="166"/>

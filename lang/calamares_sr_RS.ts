@@ -14,7 +14,7 @@
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="119"/>
         <source>With this operation, the partition &lt;strong&gt;%1&lt;/strong&gt; which contains %4 will be shrunk to %2MB and a new %3MB partition will be created for %5.</source>
-        <translation type="unfinished"/>
+        <translation>Овом операцијом, партиција &lt;strong&gt;%1&lt;/strong&gt; која садржи %4 биће смањена на %2MB а нова %3MB партиција биће направљена за %5.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="219"/>
@@ -157,12 +157,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="111"/>
         <source>Do not install a boot loader</source>
-        <translation type="unfinished"/>
+        <translation>Не инсталирај бут учитавач</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="125"/>
         <source>%1 (%2)</source>
-        <translation type="unfinished"/>
+        <translation>%1 (%2)</translation>
     </message>
 </context>
 <context>
@@ -198,7 +198,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamaresui/ExecutionViewStep.cpp" line="77"/>
         <source>Install</source>
-        <translation type="unfinished"/>
+        <translation>Инсталирај</translation>
     </message>
 </context>
 <context>
@@ -219,7 +219,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="60"/>
         <source>Running command %1 %2</source>
-        <translation type="unfinished"/>
+        <translation>Покрећем команду %1 %2</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="89"/>
@@ -289,7 +289,7 @@ Output:
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="241"/>
         <source>Running %1 operation.</source>
-        <translation type="unfinished"/>
+        <translation>Покрећем радњу %1</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="254"/>
@@ -447,7 +447,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="142"/>
         <source>This program will ask you some questions and set up %2 on your computer.&lt;br/&gt; Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID.&lt;br/&gt;For &lt;b&gt;GPT partioning on BIOS&lt;/b&gt; systems and other instructions see the Known Issues</source>
-        <translation type="unfinished"/>
+        <translation>Овај програм ће вам поставити пар питања и инсталирати %2 на ваш рачунар.&lt;br/&gt;Запамтите, овај програм је још у раној фази.&lt;br/&gt;Још увек не подржава ЛУКС/ЛВМ или РАИД.&lt;br/&gt;За &lt;b&gt;ГПТ партиционисање у БИОС-у&lt;/b&gt; и остала упутства погледајте „Познати проблеми“</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="170"/>
@@ -475,51 +475,51 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="513"/>
         <source>&lt;strong&gt;Install %2 alongside %1&lt;/strong&gt;&lt;br/&gt;The installer will shrink the %1 volume to make room for %2. You can choose which operating system you want each time the computer starts up.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Инсталирај %2 поред %1&lt;/strong&gt;&lt;br/&gt;Инсталатер ће скупити %1 партицију да направи места за %2. Моћи ћете да изаберете при сваком укључењу који оперативни систем желите да покренете.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="533"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="564"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="611"/>
         <source>&lt;strong&gt;Replace a partition with %1&lt;/strong&gt;&lt;br/&gt;You will be offered a choice of which partition to erase.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Замени партицију са %1&lt;/strong&gt;&lt;br/&gt;Биће вам понуђено да изаберете коју партицију обрисати.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="545"/>
         <source>&lt;strong&gt;Install %1 alongside your current operating system&lt;/strong&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Инсталирај %1 поред тренутног оперативног система&lt;/strong&gt;&lt;br/&gt;Инсталатер ће скупити постојећу партицију да направи места за %2. Моћи ћете да изаберете при сваком укључењу који оперативни систем желите да покренете.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="592"/>
         <source>&lt;strong&gt;Install %1 alongside your current operating systems&lt;/strong&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Инсталирај %1 поред тренутних оперативних система&lt;/strong&gt;&lt;br/&gt;Инсталатер ће скупити постојећу партицију да направи места за %2. Моћи ћете да изаберете при сваком укључењу који оперативни систем желите да покренете.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="229"/>
         <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;, either use an existing without formatting or create one.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Ручно партиционисање&lt;/strong&gt;&lt;br/&gt;Можете сами правити или мењати партиције или изабрати више партиција за %1. Морате имати ГПТ партициону табелу и &lt;strong&gt;fat32 512Mb /boot партицију за УЕФИ инсталацију.&lt;/strong&gt; Искористите постојећу без форматирања или направите нову.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="103"/>
         <source>Storage de&amp;vice:</source>
-        <translation type="unfinished"/>
+        <translation>Ур&amp;еђај:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="443"/>
         <source>Drag to split:</source>
-        <translation type="unfinished"/>
+        <translation>Превуци да поделиш:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="449"/>
         <source>Preview:</source>
-        <translation type="unfinished"/>
+        <translation>Преглед:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="488"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="554"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="601"/>
         <source>&lt;strong&gt;Erase disk and install %1&lt;/strong&gt;&lt;br/&gt;This will &lt;font color=&quot;red&quot;&gt;delete&lt;/font&gt; all the data currently present on %2 (if any), including programs, documents, photos, music, and other files.&lt;br/&gt;You will be able to review and confirm your choice before proceeding.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Обриши диск и инсталирај %1&lt;/strong&gt;&lt;br/&gt;Ово ће &lt;font color=&quot;red&quot;&gt;обрисати&lt;/font&gt; све податке који се налазе на %2 (ако их има), укључујући програме, документе, фотографије, музику и све друге фајлове.&lt;br/&gt;Моћи ћете да размотрите и потврдите избор пре поступка.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="521"/>
@@ -1339,7 +1339,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="22"/>
         <source>Storage de&amp;vice:</source>
-        <translation type="unfinished"/>
+        <translation>Ур&amp;еђај:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="51"/>
