@@ -28,11 +28,11 @@
  * call any PartitionModel-specific methods: it should be usable with other
  * models as long as they provide the same roles PartitionModel provides.
  */
-class PartitionPreview : public QAbstractItemView
+class PartitionBarsView : public QAbstractItemView
 {
 public:
-    explicit PartitionPreview( QWidget* parent = nullptr );
-    ~PartitionPreview();
+    explicit PartitionBarsView( QWidget* parent = nullptr );
+    virtual ~PartitionBarsView();
 
     QSize minimumSizeHint() const override;
 
@@ -45,8 +45,6 @@ public:
     QRect visualRect( const QModelIndex& index ) const override;
     void scrollTo( const QModelIndex& index, ScrollHint hint = EnsureVisible ) override;
 
-    void setLabelsVisible( bool visible = true );
-
 protected:
     // QAbstractItemView API
     QRegion visualRegionForSelection( const QItemSelection& selection ) const override;
@@ -56,18 +54,25 @@ protected:
     QModelIndex moveCursor( CursorAction cursorAction, Qt::KeyboardModifiers modifiers ) override;
     void setSelection( const QRect& rect, QItemSelectionModel::SelectionFlags flags ) override;
 
+    void mouseMoveEvent( QMouseEvent* event ) override;
+    void leaveEvent( QEvent* event ) override;
+
 protected slots:
     void updateGeometries() override;
 
 private:
     void drawPartitions( QPainter* painter, const QRect& rect, const QModelIndex& parent );
-    void drawLabels( QPainter* painter, const QRect& rect, const QModelIndex& parent );
-    QSize sizeForAllLabels( int maxLineWidth ) const;
-    QSize sizeForLabel( const QStringList& text ) const;
-    void drawLabel( QPainter* painter, const QStringList& text, const QColor& color, const QPoint& pos );
-    QModelIndexList getIndexesToDraw( const QModelIndex& parent ) const;
+    void drawSection( QPainter* painter, const QRect& rect_, int x, int width, const QModelIndex& index );
+    QModelIndex indexAt( const QPoint& point, const QRect& rect, const QModelIndex& parent ) const;
+    QRect visualRect( const QModelIndex& index, const QRect& rect, const QModelIndex& parent ) const;
 
-    bool m_showLabels;
+    struct Item
+    {
+        qreal size;
+        QModelIndex index;
+    };
+    inline QPair< QVector< Item >, qreal > computeItemsVector( const QModelIndex& parent ) const;
+    QPersistentModelIndex m_hoveredIndex;
 };
 
 #endif /* PARTITIONPREVIEW_H */

@@ -28,12 +28,14 @@
 #include <QMutex>
 
 class QBoxLayout;
+class QComboBox;
 class QLabel;
 class QListView;
 
 class ExpandableRadioButton;
 class PartitionCoreModule;
 class PrettyRadioButton;
+class DeviceInfoWidget;
 
 class Device;
 
@@ -50,7 +52,7 @@ public:
         Manual
     };
 
-    explicit ChoicePage( bool compactMode = false, QWidget* parent = nullptr );
+    explicit ChoicePage( QWidget* parent = nullptr );
     virtual ~ChoicePage();
 
     void init( PartitionCoreModule* core,
@@ -66,16 +68,18 @@ signals:
     void deviceChosen( Device* );
 
 private:
-    bool compact();
     void setNextEnabled( bool enabled );
     void setupChoices();
+    QComboBox* createBootloaderComboBox( ExpandableRadioButton* parentButton );
     ExpandableRadioButton* createEraseButton();
+    ExpandableRadioButton* createReplaceButton();
     Device* selectedDevice();
     void applyDeviceChoice();
     void updateDeviceStatePreview( Device* currentDevice );
     void applyActionChoice( Device* currentDevice, ChoicePage::Choice choice );
     void updateActionChoicePreview( Device* currentDevice, ChoicePage::Choice choice );
     void setupActions( Device* currentDevice );
+    OsproberEntryList getOsproberEntriesForDevice( Device* device ) const;
 
     bool m_nextEnabled;
     PartitionCoreModule* m_core;
@@ -85,14 +89,15 @@ private:
 
     Choice m_choice;
 
-    bool m_compactMode;
     bool m_isEfi;
-    QWidget* m_drivesView;
+    QComboBox* m_drivesCombo;
 
     PrettyRadioButton* m_alongsideButton;
     ExpandableRadioButton* m_eraseButton;
-    PrettyRadioButton* m_replaceButton;
+    ExpandableRadioButton* m_replaceButton;
     PrettyRadioButton* m_somethingElseButton;
+
+    DeviceInfoWidget* m_deviceInfoWidget;
 
     int m_lastSelectedDeviceIndex;
 };

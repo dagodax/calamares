@@ -25,7 +25,8 @@
 #include "core/PartitionInfo.h"
 #include "core/PartitionIterator.h"
 #include "gui/PartitionSplitterWidget.h"
-#include "gui/PartitionPreview.h"
+#include "gui/PartitionBarsView.h"
+#include "gui/PartitionLabelsView.h"
 
 #include "JobQueue.h"
 #include "GlobalStorage.h"
@@ -64,9 +65,10 @@ AlongsidePage::AlongsidePage( QWidget* parent )
 
     partitionsComboLayout->addStretch();
 
-    m_previewWidget = new PartitionPreview;
-    m_previewWidget->setLabelsVisible( true );
+    m_previewWidget = new PartitionBarsView;
+    m_previewLabels = new PartitionLabelsView;
     mainLayout->addWidget( m_previewWidget );
+    mainLayout->addWidget( m_previewLabels );
 
     QLabel* allocateSpaceLabel = new QLabel();
     mainLayout->addWidget( allocateSpaceLabel );
@@ -194,6 +196,7 @@ AlongsidePage::onPartitionSelected( int comboBoxIndex )
             partitionModelBefore->setParent( m_previewWidget );
 
             m_previewWidget->setModel( partitionModelBefore );
+            m_previewLabels->setModel( partitionModelBefore );
             m_splitterWidget->init( allPartitionItems );
 
             m_splitterWidget->setSplitPartition( candidate->partitionPath(),

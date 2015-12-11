@@ -25,9 +25,12 @@
 #include "core/PartitionModel.h"
 #include "core/OsproberEntry.h"
 
+#include "ReplaceWidget.h"
 #include "PrettyRadioButton.h"
 #include "ExpandableRadioButton.h"
-#include "PartitionPreview.h"
+#include "PartitionBarsView.h"
+#include "PartitionLabelsView.h"
+#include "DeviceInfoWidget.h"
 
 #include "utils/CalamaresUtilsGui.h"
 #include "utils/Logger.h"
@@ -44,8 +47,6 @@
 #include <QListView>
 
 
-#define drivesList  qobject_cast< QListView* >( m_drivesView )
-#define drivesCombo qobject_cast< QComboBox* >( m_drivesView )
 
 /**
  * @brief ChoicePage::ChoicePage is the default constructor. Called on startup as part of
@@ -54,9 +55,8 @@
  *      will show up as a list view.
  * @param parent the QWidget parent.
  */
-ChoicePage::ChoicePage( bool compactMode, QWidget* parent )
+ChoicePage::ChoicePage( QWidget* parent )
     : QWidget( parent )
-    , m_compactMode( compactMode )
     , m_choice( NoChoice )
     , m_nextEnabled( false )
     , m_core( nullptr )
@@ -64,46 +64,37 @@ ChoicePage::ChoicePage( bool compactMode, QWidget* parent )
     , m_eraseButton( nullptr )
     , m_replaceButton( nullptr )
     , m_somethingElseButton( nullptr )
+    , m_deviceInfoWidget( nullptr )
     , m_lastSelectedDeviceIndex( -1 )
     , m_isEfi( false )
 {
     setupUi( this );
-    if ( m_compactMode )
-    {
-        m_mainLayout->setDirection( QBoxLayout::TopToBottom );
-        m_drivesLayout->setDirection( QBoxLayout::LeftToRight );
-        m_drivesView = new QComboBox( this );
-        m_mainLayout->setStretchFactor( m_drivesLayout, 0 );
-        m_mainLayout->setStretchFactor( m_rightLayout, 1 );
-        m_drivesLabel->setBuddy( m_drivesView );
-    }
-    else
-    {
-        m_drivesView = new QListView( this );
 
-        drivesList->setViewMode( QListView::ListMode );
-        drivesList->setWrapping( false );
-        drivesList->setFlow( QListView::TopToBottom );
-        drivesList->setSelectionRectVisible( false );
-        drivesList->setWordWrap( true );
-        drivesList->setUniformItemSizes( true );
-        drivesList->setSelectionMode( QAbstractItemView::SingleSelection );
-        drivesList->setHorizontalScrollBarPolicy( Qt::ScrollBarAlwaysOff );
+    // Set up drives combo
+    m_mainLayout->setDirection( QBoxLayout::TopToBottom );
+    m_drivesLayout->setDirection( QBoxLayout::LeftToRight );
+    m_drivesCombo = new QComboBox( this );
+    m_mainLayout->setStretchFactor( m_drivesLayout, 0 );
+    m_mainLayout->setStretchFactor( m_rightLayout, 1 );
+    m_drivesLabel->setBuddy( m_drivesCombo );
 
-        drivesList->setIconSize( CalamaresUtils::defaultIconSize() / 2 );
-    }
+    m_drivesLayout->addWidget( m_drivesCombo );
 
-    m_drivesLayout->addWidget( m_drivesView );
-
-    if ( m_compactMode )
-        m_drivesLayout->addStretch();
+    m_drivesLayout->addStretch();
+    m_deviceInfoWidget = new DeviceInfoWidget;
+    m_drivesLayout->addWidget( m_deviceInfoWidget );
 
     m_messageLabel->setWordWrap( true );
 
     CalamaresUtils::unmarginLayout( m_itemsLayout );
 
     // Drive selector + preview
-    CALAMARES_RETRANSLATE( m_drivesLabel->setText( tr( "Storage de&vice:" ) ); )
+    CALAMARES_RETRANSLATE(
+        retranslateUi( this );
+        m_drivesLabel->setText( tr( "Storage de&vice:" ) );
+        m_previewBeforeLabel->setText( tr( "Current state:" ) );
+        m_previewAfterLabel->setText(  tr( "Your changes:" ) );
+    )
 
     m_previewBeforeFrame->setSizePolicy( QSizePolicy::Preferred, QSizePolicy::Expanding );
     m_previewAfterFrame->setSizePolicy( QSizePolicy::Preferred, QSizePolicy::Expanding );
@@ -132,36 +123,19 @@ ChoicePage::init( PartitionCoreModule* core,
 
     setupChoices();
 
-    if ( compact() )
-    {
-        // We need to do this because a PCM revert invalidates the deviceModel.
-        connect( core, &PartitionCoreModule::reverted,
-                 this, [=]
-        {
-            drivesCombo->setModel( core->deviceModel() );
-            drivesCombo->setCurrentIndex( m_lastSelectedDeviceIndex );
-        } );
-        drivesCombo->setModel( core->deviceModel() );
 
-        connect( drivesCombo,
-                 static_cast< void ( QComboBox::* )( int ) >( &QComboBox::currentIndexChanged ),
-                 this, &ChoicePage::applyDeviceChoice );
-    }
-    else
+    // We need to do this because a PCM revert invalidates the deviceModel.
+    connect( core, &PartitionCoreModule::reverted,
+             this, [=]
     {
-        // Same as above.
-        connect( core, &PartitionCoreModule::reverted,
-                 this, [=]
-        {
-            drivesList->setModel( core->deviceModel() );
-            drivesList->selectionModel()->setCurrentIndex(
-                        core->deviceModel()->index( m_lastSelectedDeviceIndex ), QItemSelectionModel::ClearAndSelect );
-        } );
-        drivesList->setModel( core->deviceModel() );
-        connect( drivesList->selectionModel(),
-                 &QItemSelectionModel::currentChanged,
-                 this, &ChoicePage::applyDeviceChoice );
-    }
+        m_drivesCombo->setModel( core->deviceModel() );
+        m_drivesCombo->setCurrentIndex( m_lastSelectedDeviceIndex );
+    } );
+    m_drivesCombo->setModel( core->deviceModel() );
+
+    connect( m_drivesCombo,
+             static_cast< void ( QComboBox::* )( int ) >( &QComboBox::currentIndexChanged ),
+             this, &ChoicePage::applyDeviceChoice );
 
     ChoicePage::applyDeviceChoice();
 }
@@ -213,7 +187,8 @@ ChoicePage::setupChoices()
                                                            iconSize ) );
     grp->addButton( m_eraseButton->buttonWidget() );
 
-    m_replaceButton = new PrettyRadioButton;
+    m_replaceButton = createReplaceButton();
+
     m_replaceButton->setIconSize( iconSize );
     m_replaceButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::PartitionReplaceOs,
                                                              CalamaresUtils::Original,
@@ -309,6 +284,55 @@ ChoicePage::setupChoices()
 }
 
 
+QComboBox*
+ChoicePage::createBootloaderComboBox( ExpandableRadioButton* parentButton )
+{
+    QComboBox* bcb = new QComboBox;
+    bcb->setModel( m_core->bootLoaderModel() );
+
+    // When the chosen bootloader device changes, we update the choice in the PCM
+    connect( bcb, static_cast< void (QComboBox::*)(int) >( &QComboBox::currentIndexChanged ),
+             [=]( int newIndex )
+    {
+        QVariant var = bcb->itemData( newIndex, BootLoaderModel::BootLoaderPathRole );
+        if ( !var.isValid() )
+            return;
+        m_core->setBootLoaderInstallPath( var.toString() );
+    } );
+
+    // If the user picks a new device, we update the bootloader choice to that
+    // same device automatically.
+    auto updateBootloaderDevice = [bcb]( Device* currd )
+    {
+        if ( !currd )
+            return;
+        QString devPath = currd->deviceNode();
+        for ( int i = 0; i < bcb->count(); ++i )
+        {
+            QVariant var = bcb->itemData( i , BootLoaderModel::BootLoaderPathRole );
+            if ( !var.isValid() )
+                continue;
+            if ( var.toString() == devPath )
+            {
+                bcb->setCurrentIndex( i );
+                return;
+            }
+        }
+    };
+    connect( this, &ChoicePage::deviceChosen,
+             this, updateBootloaderDevice );
+    connect( parentButton, &ExpandableRadioButton::expanded,
+             this, [=]( bool expanded )
+    {
+        if ( expanded )
+            updateBootloaderDevice( selectedDevice() );
+    }, Qt::QueuedConnection );
+    // ^ Must be Queued so it's sure to run when the widget is already visible.
+
+    return bcb;
+}
+
+
 ExpandableRadioButton*
 ChoicePage::createEraseButton()
 {
@@ -323,54 +347,48 @@ ChoicePage::createEraseButton()
         QLabel* eraseBootloaderLabel = new QLabel( eraseWidget );
         eraseLayout->addWidget( eraseBootloaderLabel );
         eraseBootloaderLabel->setText( tr( "Boot loader location:" ) );
-        QComboBox* eraseBootloaderCombo = new QComboBox;
+
+        QComboBox* eraseBootloaderCombo = createBootloaderComboBox( eraseButton );
         eraseLayout->addWidget( eraseBootloaderCombo );
         eraseBootloaderLabel->setBuddy( eraseBootloaderCombo );
-        eraseBootloaderCombo->setModel( m_core->bootLoaderModel() );
         eraseLayout->addStretch();
-
-        // When the chosen bootloader device changes, we update the choice in the PCM
-        connect( eraseBootloaderCombo, static_cast< void (QComboBox::*)(int) >( &QComboBox::currentIndexChanged ),
-                 [=]( int newIndex )
-        {
-            QVariant var = eraseBootloaderCombo->itemData( newIndex, BootLoaderModel::BootLoaderPathRole );
-            if ( !var.isValid() )
-                return;
-            m_core->setBootLoaderInstallPath( var.toString() );
-        } );
-
-        // If the user picks a new device, we update the bootloader choice to that
-        // same device automatically.
-        auto updateBootloaderDevice = [eraseBootloaderCombo]( Device* currd )
-        {
-            if ( !currd )
-                return;
-            QString devPath = currd->deviceNode();
-            for ( int i = 0; i < eraseBootloaderCombo->count(); ++i )
-            {
-                QVariant var = eraseBootloaderCombo->itemData( i , BootLoaderModel::BootLoaderPathRole );
-                if ( !var.isValid() )
-                    continue;
-                if ( var.toString() == devPath )
-                {
-                    eraseBootloaderCombo->setCurrentIndex( i );
-                    return;
-                }
-            }
-        };
-        connect( this, &ChoicePage::deviceChosen,
-                 this, updateBootloaderDevice );
-        connect( eraseButton, &ExpandableRadioButton::expanded,
-                 this, [=]( bool expanded )
-        {
-            if ( expanded )
-                updateBootloaderDevice( selectedDevice() );
-        }, Qt::QueuedConnection );
-        // ^ Must be Queued so it's sure to run when the widget is already visible.
 
         eraseButton->setExpandableWidget( eraseWidget );
     }
     return eraseButton;
+}
+
+
+ExpandableRadioButton*
+ChoicePage::createReplaceButton()
+{
+    ExpandableRadioButton* replaceButton = new ExpandableRadioButton;
+    QWidget* replaceContainer = new QWidget;
+    QVBoxLayout* mainReplaceLayout = new QVBoxLayout;
+    replaceContainer->setLayout( mainReplaceLayout );
+    CalamaresUtils::unmarginLayout( mainReplaceLayout );
+    ReplaceWidget* replaceWidget = new ReplaceWidget( m_core, m_drivesCombo );
+    mainReplaceLayout->addWidget( replaceWidget );
+
+    if ( !m_isEfi )
+    {
+        QHBoxLayout* bootloaderLayout = new QHBoxLayout;
+        bootloaderLayout->setContentsMargins( 0, 0, 0, 0 );
+        QLabel* eraseBootloaderLabel = new QLabel( replaceButton );
+        bootloaderLayout->addWidget( eraseBootloaderLabel );
+        eraseBootloaderLabel->setText( tr( "Boot loader location:" ) );
+
+        QComboBox* eraseBootloaderCombo = createBootloaderComboBox( replaceButton );
+        bootloaderLayout->addWidget( eraseBootloaderCombo );
+        eraseBootloaderLabel->setBuddy( eraseBootloaderCombo );
+        bootloaderLayout->addStretch();
+
+        mainReplaceLayout->addLayout( bootloaderLayout );
+    }
+
+    replaceButton->setExpandableWidget( replaceContainer );
+
+    return replaceButton;
 }
 
 
@@ -383,25 +401,10 @@ ChoicePage::createEraseButton()
 Device*
 ChoicePage::selectedDevice()
 {
-    if ( !compact() &&
-         drivesList->selectionModel()->currentIndex() == QModelIndex() )
-    {
-        cDebug() << "No disk selected, bailing out.";
-        return nullptr;
-    }
-
     Device* currentDevice = nullptr;
-    if ( compact() )
-    {
-        currentDevice = m_core->deviceModel()->deviceForIndex(
-                  m_core->deviceModel()->index(
-                      drivesCombo->currentIndex() ) );
-    }
-    else
-    {
-        currentDevice = m_core->deviceModel()->deviceForIndex(
-                  drivesList->selectionModel()->currentIndex() );
-    }
+    currentDevice = m_core->deviceModel()->deviceForIndex(
+              m_core->deviceModel()->index(
+                  m_drivesCombo->currentIndex() ) );
 
     return currentDevice;
 }
@@ -433,10 +436,7 @@ ChoicePage::applyDeviceChoice()
 
     setupActions( currd );
 
-    if ( compact() )
-        m_lastSelectedDeviceIndex = drivesCombo->currentIndex();
-    else
-        m_lastSelectedDeviceIndex = drivesList->selectionModel()->currentIndex().row();
+    m_lastSelectedDeviceIndex = m_drivesCombo->currentIndex();
 
     emit actionChosen();
     emit deviceChosen( currd );
@@ -482,10 +482,11 @@ ChoicePage::updateDeviceStatePreview( Device* currentDevice )
 
     QVBoxLayout* layout = new QVBoxLayout;
     m_previewBeforeFrame->setLayout( layout );
-    layout->setMargin( 0 );
+    CalamaresUtils::unmarginLayout( layout );
+    layout->setSpacing( 6 );
 
-    PartitionPreview* preview = new PartitionPreview( m_previewBeforeFrame );
-    preview->setLabelsVisible( true );
+    PartitionBarsView* preview = new PartitionBarsView( m_previewBeforeFrame );
+    PartitionLabelsView* previewLabels = new PartitionLabelsView( m_previewBeforeFrame );
 
     Device* deviceBefore = m_core->createImmutableDeviceCopy( currentDevice );
 
@@ -498,7 +499,9 @@ ChoicePage::updateDeviceStatePreview( Device* currentDevice )
     model->setParent( preview );
 
     preview->setModel( model );
+    previewLabels->setModel( model );
     layout->addWidget( preview );
+    layout->addWidget( previewLabels );
 }
 
 
@@ -521,24 +524,21 @@ ChoicePage::updateActionChoicePreview( Device* currentDevice, ChoicePage::Choice
 
     QVBoxLayout* layout = new QVBoxLayout;
     m_previewAfterFrame->setLayout( layout );
-    layout->setMargin( 0 );
-
-    QLabel* label = new QLabel;
-    layout->addWidget( label );
+    CalamaresUtils::unmarginLayout( layout );
+    layout->setSpacing( 6 );
 
     switch ( choice )
     {
     case Alongside:
         // split widget goes here
-        label->setText( tr( "Drag to split:" ) );
+        //label->setText( tr( "Drag to split:" ) );
 
         break;
     case Erase:
     case Replace:
         {
-            label->setText( tr( "Preview:" ) );
-            PartitionPreview* preview = new PartitionPreview( m_previewAfterFrame );
-            preview->setLabelsVisible( true );
+            PartitionBarsView* preview = new PartitionBarsView( m_previewAfterFrame );
+            PartitionLabelsView* previewLabels = new PartitionLabelsView( m_previewAfterFrame );
 
             PartitionModel* model = new PartitionModel( preview );
             model->init( currentDevice );
@@ -547,7 +547,9 @@ ChoicePage::updateActionChoicePreview( Device* currentDevice, ChoicePage::Choice
             // see qDeleteAll above.
             model->setParent( preview );
             preview->setModel( model );
+            previewLabels->setModel( model );
             layout->addWidget( preview );
+            layout->addWidget( previewLabels );
 
             m_previewAfterFrame->show();
             break;
@@ -569,18 +571,26 @@ ChoicePage::updateActionChoicePreview( Device* currentDevice, ChoicePage::Choice
 void
 ChoicePage::setupActions( Device *currentDevice )
 {
-    if ( m_osproberEntries.count() == 0 )
+    OsproberEntryList osproberEntriesForCurrentDevice =
+            getOsproberEntriesForDevice( currentDevice );
+
+    if ( currentDevice->partitionTable() )
+        m_deviceInfoWidget->setPartitionTableType( currentDevice->partitionTable()->type() );
+    else
+        m_deviceInfoWidget->setPartitionTableType( PartitionTable::unknownTableType );
+
+    if ( osproberEntriesForCurrentDevice.count() == 0 )
     {
         CALAMARES_RETRANSLATE(
-            m_messageLabel->setText( tr( "This computer currently does not seem to have an operating system on it. "
-                                         "What would you like to do?" ) );
+            m_messageLabel->setText( tr( "This storage device does not seem to have an operating system on it. "
+                                         "What would you like to do?<br/>"
+                                         "You will be able to review and confirm your choices "
+                                         "before any change is made to the storage device." ) );
 
             m_eraseButton->setText( tr( "<strong>Erase disk and install %1</strong><br/>"
                                         "This will <font color=\"red\">delete</font> all the data "
                                         "currently present on %2 (if any), including programs, "
-                                        "documents, photos, music, and other files.<br/>"
-                                        "You will be able to review and confirm your choice "
-                                        "before proceeding." )
+                                        "documents, photos, music, and other files." )
                                     .arg( Calamares::Branding::instance()->
                                           string( Calamares::Branding::ShortVersionedName ) )
                                     .arg( currentDevice->deviceNode() ) );
@@ -589,15 +599,17 @@ ChoicePage::setupActions( Device *currentDevice )
         m_replaceButton->hide();
         m_alongsideButton->hide();
     }
-    else if ( m_osproberEntries.count() == 1 )
+    else if ( osproberEntriesForCurrentDevice.count() == 1 )
     {
-        QString osName = m_osproberEntries.first().prettyName;
+        QString osName = osproberEntriesForCurrentDevice.first().prettyName;
 
         if ( !osName.isEmpty() )
         {
             CALAMARES_RETRANSLATE(
-                m_messageLabel->setText( tr( "This computer currently has %1 on it. "
-                                             "What would you like to do?" )
+                m_messageLabel->setText( tr( "This storage device has %1 on it. "
+                                             "What would you like to do?<br/>"
+                                             "You will be able to review and confirm your choices "
+                                             "before any change is made to the storage device." )
                                             .arg( osName ) );
 
                 m_alongsideButton->setText( tr( "<strong>Install %2 alongside %1</strong><br/>"
@@ -611,9 +623,7 @@ ChoicePage::setupActions( Device *currentDevice )
                 m_eraseButton->setText( tr( "<strong>Erase disk with %3 and install %1</strong><br/>"
                                             "This will <font color=\"red\">delete</font> all the data "
                                             "currently present on %2 (if any), including programs, "
-                                            "documents, photos, music, and other files.<br/>"
-                                            "You will be able to review and confirm your choice "
-                                            "before proceeding." )
+                                            "documents, photos, music, and other files." )
                                         .arg( Calamares::Branding::instance()->
                                               string( Calamares::Branding::ShortVersionedName ) )
                                         .arg( currentDevice->deviceNode() )
@@ -629,8 +639,10 @@ ChoicePage::setupActions( Device *currentDevice )
         else
         {
             CALAMARES_RETRANSLATE(
-                m_messageLabel->setText( tr( "This computer already has an operating system on it. "
-                                             "What would you like to do?" ) );
+                m_messageLabel->setText( tr( "This storage device already has an operating system on it. "
+                                             "What would you like to do?<br/>"
+                                             "You will be able to review and confirm your choices "
+                                             "before any change is made to the storage device." ) );
 
                 m_alongsideButton->setText( tr( "<strong>Install %1 alongside your current operating system</strong><br/>"
                                                 "The installer will shrink an existing volume to make room for %2. "
@@ -644,9 +656,7 @@ ChoicePage::setupActions( Device *currentDevice )
                 m_eraseButton->setText( tr( "<strong>Erase disk and install %1</strong><br/>"
                                             "This will <font color=\"red\">delete</font> all the data "
                                             "currently present on %2 (if any), including programs, "
-                                            "documents, photos, music, and other files.<br/>"
-                                            "You will be able to review and confirm your choice "
-                                            "before proceeding." )
+                                            "documents, photos, music, and other files." )
                                         .arg( Calamares::Branding::instance()->
                                               string( Calamares::Branding::ShortVersionedName ) )
                                         .arg( currentDevice->deviceNode() ) );
@@ -657,16 +667,16 @@ ChoicePage::setupActions( Device *currentDevice )
                                               string( Calamares::Branding::ShortVersionedName ) ) );
             )
         }
-        if ( !m_osproberEntries.first().canBeResized )
+        if ( !osproberEntriesForCurrentDevice.first().canBeResized )
             m_alongsideButton->hide();
     }
     else
     {
-        // m_osproberLines has at least 2 items.
+        // osproberEntriesForCurrentDevice has at least 2 items.
 
         bool atLeastOneCanBeResized = false;
 
-        foreach ( const OsproberEntry& entry, m_osproberEntries )
+        foreach ( const OsproberEntry& entry, osproberEntriesForCurrentDevice )
         {
             if ( entry.canBeResized )
             {
@@ -676,8 +686,10 @@ ChoicePage::setupActions( Device *currentDevice )
         }
 
         CALAMARES_RETRANSLATE(
-            m_messageLabel->setText( tr( "This computer currently has multiple operating systems on it. "
-                                         "What would you like to do?" ) );
+            m_messageLabel->setText( tr( "This storage device has multiple operating systems on it. "
+                                         "What would you like to do?<br/>"
+                                         "You will be able to review and confirm your choices "
+                                         "before any change is made to the storage device." ) );
 
             m_alongsideButton->setText( tr( "<strong>Install %1 alongside your current operating systems</strong><br/>"
                                             "The installer will shrink an existing volume to make room for %2. "
@@ -691,9 +703,7 @@ ChoicePage::setupActions( Device *currentDevice )
             m_eraseButton->setText( tr( "<strong>Erase disk and install %1</strong><br/>"
                                         "This will <font color=\"red\">delete</font> all the data "
                                         "currently present on %2 (if any), including programs, "
-                                        "documents, photos, music, and other files.<br/>"
-                                        "You will be able to review and confirm your choice "
-                                        "before proceeding." )
+                                        "documents, photos, music, and other files." )
                                     .arg( Calamares::Branding::instance()->
                                           string( Calamares::Branding::ShortVersionedName ) )
                                     .arg( currentDevice->deviceNode() ) );
@@ -721,6 +731,19 @@ ChoicePage::setupActions( Device *currentDevice )
 }
 
 
+OsproberEntryList
+ChoicePage::getOsproberEntriesForDevice( Device* device ) const
+{
+    OsproberEntryList eList;
+    foreach ( const OsproberEntry& entry, m_osproberEntries )
+    {
+        if ( entry.path.startsWith( device->deviceNode() ) )
+            eList.append( entry );
+    }
+    return eList;
+}
+
+
 bool
 ChoicePage::isNextEnabled() const
 {
@@ -732,24 +755,6 @@ ChoicePage::Choice
 ChoicePage::currentChoice() const
 {
     return m_choice;
-}
-
-
-bool
-ChoicePage::compact()
-{
-    if ( m_compactMode )
-    {
-        Q_ASSERT( drivesCombo );
-        Q_ASSERT( !drivesList );
-        return true;
-    }
-    else
-    {
-        Q_ASSERT( drivesList );
-        Q_ASSERT( !drivesCombo );
-        return false;
-    }
 }
 
 
