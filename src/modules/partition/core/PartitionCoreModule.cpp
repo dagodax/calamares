@@ -25,6 +25,7 @@
 #include "core/PartitionIterator.h"
 #include "core/PartitionModel.h"
 #include "core/KPMHelpers.h"
+#include "core/PartUtils.h"
 #include "jobs/ClearMountsJob.h"
 #include "jobs/ClearTempMountsJob.h"
 #include "jobs/CreatePartitionJob.h"
@@ -119,10 +120,17 @@ PartitionCoreModule::init()
     {
         auto deviceInfo = new DeviceInfo( device );
         m_deviceInfos << deviceInfo;
-
-        deviceInfo->partitionModel->init( device );
     }
     m_deviceModel->init( devices );
+
+    // The following PartUtils::runOsprober call in turn calls PartUtils::canBeResized,
+    // which relies on a working DeviceModel.
+    m_osproberLines = PartUtils::runOsprober( this );
+
+    for ( auto deviceInfo : m_deviceInfos )
+    {
+        deviceInfo->partitionModel->init( deviceInfo->device.data(), m_osproberLines );
+    }
 
     m_bootLoaderModel->init( devices );
 
@@ -353,6 +361,13 @@ PartitionCoreModule::dumpQueue() const
     }
 }
 
+
+OsproberEntryList
+PartitionCoreModule::osproberEntries() const
+{
+    return m_osproberLines;
+}
+
 void
 PartitionCoreModule::refreshPartition( Device* device, Partition* partition )
 {
@@ -517,13 +532,13 @@ PartitionCoreModule::createSummaryInfo() const
 
         Device* deviceBefore = backend->scanDevice( deviceInfo->device->deviceNode() );
         summaryInfo.partitionModelBefore = new PartitionModel;
-        summaryInfo.partitionModelBefore->init( deviceBefore );
+        summaryInfo.partitionModelBefore->init( deviceBefore, m_osproberLines );
         // Make deviceBefore a child of partitionModelBefore so that it is not
         // leaked (as long as partitionModelBefore is deleted)
         deviceBefore->setParent( summaryInfo.partitionModelBefore );
 
         summaryInfo.partitionModelAfter = new PartitionModel;
-        summaryInfo.partitionModelAfter->init( deviceInfo->device.data() );
+        summaryInfo.partitionModelAfter->init( deviceInfo->device.data(), m_osproberLines );
 
         lst << summaryInfo;
     }

@@ -26,6 +26,7 @@
 #include <utils/Logger.h>
 
 #include <kpmcore/core/device.h>
+#include <kpmcore/fs/filesystem.h>
 
 #include <KFormat>
 
@@ -34,9 +35,9 @@
 
 
 static const int LAYOUT_MARGIN = 4;
-static const int LABELS_MARGIN = 40;
 static const int LABEL_PARTITION_SQUARE_MARGIN =
         qMax( QFontMetrics( CalamaresUtils::defaultFont() ).ascent() - 2, 18 );
+static const int LABELS_MARGIN = LABEL_PARTITION_SQUARE_MARGIN;
 
 
 QStringList
@@ -136,6 +137,55 @@ PartitionLabelsView::getIndexesToDraw( const QModelIndex& parent ) const
 }
 
 
+QStringList
+PartitionLabelsView::buildTexts( const QModelIndex& index ) const
+{
+    QString firstLine, secondLine;
+
+    if ( index.data( PartitionModel::IsPartitionNewRole ).toBool() )
+    {
+        QString mountPoint = index.sibling( index.row(),
+                                            PartitionModel::MountPointColumn )
+                                  .data().toString();
+        if ( mountPoint == "/" )
+            firstLine = m_customNewRootLabel.isEmpty() ?
+                            tr( "Root" ) :
+                            m_customNewRootLabel;
+        else if ( mountPoint == "/home" )
+            firstLine = tr( "Home" );
+        else if ( mountPoint == "/boot" )
+            firstLine = tr( "Boot" );
+        else if ( mountPoint.contains( "/efi" ) &&
+                  index.data( PartitionModel::FileSystemTypeRole ).toInt() == FileSystem::Fat32 )
+            firstLine = tr( "EFI system" );
+        else if ( index.data( PartitionModel::FileSystemTypeRole ).toInt() == FileSystem::LinuxSwap )
+            firstLine = tr( "Swap" );
+        else
+            firstLine = tr( "New partition for %1" ).arg( mountPoint );
+    }
+    else if ( index.data( PartitionModel::OsproberNameRole ).toString().isEmpty() )
+        firstLine = index.data().toString();
+    else
+        firstLine = index.data( PartitionModel::OsproberNameRole ).toString();
+
+    if ( index.data( PartitionModel::IsFreeSpaceRole ).toBool() ||
+         index.data( PartitionModel::FileSystemTypeRole ).toInt() == FileSystem::Extended )
+        secondLine = index.sibling( index.row(),
+                                    PartitionModel::SizeColumn )
+                          .data().toString();
+    else
+        secondLine = tr( "%1  %2" )
+                     .arg( index.sibling( index.row(),
+                                          PartitionModel::SizeColumn )
+                                .data().toString() )
+                     .arg( index.sibling( index.row(),
+                                          PartitionModel::FileSystemColumn )
+                                .data().toString() );
+
+    return { firstLine, secondLine };
+}
+
+
 void
 PartitionLabelsView::drawLabels( QPainter* painter,
                                  const QRect& rect,
@@ -151,10 +201,7 @@ PartitionLabelsView::drawLabels( QPainter* painter,
     int label_y = rect.y();
     foreach ( const QModelIndex& index, indexesToDraw )
     {
-        QStringList texts = { index.data().toString(),
-                              index.sibling( index.row(),
-                                             PartitionModel::SizeColumn )
-                                   .data().toString() };
+        QStringList texts = buildTexts( index );
 
         QSize labelSize = sizeForLabel( texts );
 
@@ -163,7 +210,7 @@ PartitionLabelsView::drawLabels( QPainter* painter,
         if ( label_x + labelSize.width() > rect.width() ) //wrap to new line if overflow
         {
             label_x = rect.x();
-            label_y += labelSize.height();
+            label_y += labelSize.height() + labelSize.height() / 4;
         }
         drawLabel( painter, texts, labelColor, QPoint( label_x, label_y ) );
 
@@ -195,10 +242,8 @@ PartitionLabelsView::sizeForAllLabels( int maxLineWidth ) const
     int singleLabelHeight = 0;
     foreach ( const QModelIndex& index, indexesToDraw )
     {
-        QStringList texts = { index.data().toString(),
-                              index.sibling( index.row(),
-                                             PartitionModel::SizeColumn )
-                                   .data().toString() };
+        QStringList texts = buildTexts( index );
+
         QSize labelSize = sizeForLabel( texts );
 
         if ( lineLength + labelSize.width() > maxLineWidth )
@@ -221,7 +266,8 @@ PartitionLabelsView::sizeForAllLabels( int maxLineWidth ) const
                             .height();
     }
 
-    int totalHeight = numLines * singleLabelHeight;
+    int totalHeight = numLines * singleLabelHeight +
+                      ( numLines - 1 ) * singleLabelHeight / 4; //spacings
 
     return QSize( maxLineWidth, totalHeight );
 }
@@ -310,6 +356,14 @@ PartitionLabelsView::verticalOffset() const
 void
 PartitionLabelsView::scrollTo( const QModelIndex& index, ScrollHint hint )
 {
+}
+
+
+void
+PartitionLabelsView::setCustomNewRootLabel( const QString& text )
+{
+    m_customNewRootLabel = text;
+    viewport()->repaint();
 }
 
 

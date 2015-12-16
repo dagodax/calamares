@@ -85,15 +85,16 @@ ChoicePage::ChoicePage( QWidget* parent )
     m_drivesLayout->addWidget( m_deviceInfoWidget );
 
     m_messageLabel->setWordWrap( true );
+    m_messageLabel->hide();
 
     CalamaresUtils::unmarginLayout( m_itemsLayout );
 
     // Drive selector + preview
     CALAMARES_RETRANSLATE(
         retranslateUi( this );
-        m_drivesLabel->setText( tr( "Storage de&vice:" ) );
-        m_previewBeforeLabel->setText( tr( "Current state:" ) );
-        m_previewAfterLabel->setText(  tr( "Your changes:" ) );
+        m_drivesLabel->setText( tr( "Pick a storage de&vice:" ) );
+        m_previewBeforeLabel->setText( tr( "Before:" ) );
+        m_previewAfterLabel->setText(  tr( "After:" ) );
     )
 
     m_previewBeforeFrame->setSizePolicy( QSizePolicy::Preferred, QSizePolicy::Expanding );
@@ -114,11 +115,9 @@ ChoicePage::~ChoicePage()
  * @param osproberEntries the output of os-prober, cleaned up and structured.
  */
 void
-ChoicePage::init( PartitionCoreModule* core,
-                  const OsproberEntryList& osproberEntries )
+ChoicePage::init( PartitionCoreModule* core )
 {
     m_core = core;
-    m_osproberEntries = osproberEntries;
     m_isEfi = QDir( "/sys/firmware/efi/efivars" ).exists();
 
     setupChoices();
@@ -491,7 +490,7 @@ ChoicePage::updateDeviceStatePreview( Device* currentDevice )
     Device* deviceBefore = m_core->createImmutableDeviceCopy( currentDevice );
 
     PartitionModel* model = new PartitionModel( preview );
-    model->init( deviceBefore );
+    model->init( deviceBefore, m_core->osproberEntries() );
 
     // The QObject parents tree is meaningful for memory management here,
     // see qDeleteAll above.
@@ -539,9 +538,11 @@ ChoicePage::updateActionChoicePreview( Device* currentDevice, ChoicePage::Choice
         {
             PartitionBarsView* preview = new PartitionBarsView( m_previewAfterFrame );
             PartitionLabelsView* previewLabels = new PartitionLabelsView( m_previewAfterFrame );
+            previewLabels->setCustomNewRootLabel( Calamares::Branding::instance()->
+                                                  string( Calamares::Branding::BootloaderEntryName ) );
 
             PartitionModel* model = new PartitionModel( preview );
-            model->init( currentDevice );
+            model->init( currentDevice, m_core->osproberEntries() );
 
             // The QObject parents tree is meaningful for memory management here,
             // see qDeleteAll above.
@@ -587,12 +588,10 @@ ChoicePage::setupActions( Device *currentDevice )
                                          "You will be able to review and confirm your choices "
                                          "before any change is made to the storage device." ) );
 
-            m_eraseButton->setText( tr( "<strong>Erase disk and install %1</strong><br/>"
+            m_eraseButton->setText( tr( "<strong>Erase disk</strong><br/>"
                                         "This will <font color=\"red\">delete</font> all the data "
-                                        "currently present on %2 (if any), including programs, "
+                                        "currently present on %1 (if any), including programs, "
                                         "documents, photos, music, and other files." )
-                                    .arg( Calamares::Branding::instance()->
-                                          string( Calamares::Branding::ShortVersionedName ) )
                                     .arg( currentDevice->deviceNode() ) );
         )
 
@@ -612,28 +611,20 @@ ChoicePage::setupActions( Device *currentDevice )
                                              "before any change is made to the storage device." )
                                             .arg( osName ) );
 
-                m_alongsideButton->setText( tr( "<strong>Install %2 alongside %1</strong><br/>"
-                                                "The installer will shrink the %1 volume to make room for %2. "
-                                                "You can choose which operating system you want each time the "
-                                                "computer starts up." )
-                                            .arg( osName )
+                m_alongsideButton->setText( tr( "<strong>Install alongside</strong><br/>"
+                                                "The installer will shrink a volume to make room for %1." )
                                             .arg( Calamares::Branding::instance()->
                                                   string( Calamares::Branding::ShortVersionedName ) ) );
 
-                m_eraseButton->setText( tr( "<strong>Erase disk with %3 and install %1</strong><br/>"
+                m_eraseButton->setText( tr( "<strong>Erase disk</strong><br/>"
                                             "This will <font color=\"red\">delete</font> all the data "
-                                            "currently present on %2 (if any), including programs, "
+                                            "currently present on %1 (if any), including programs, "
                                             "documents, photos, music, and other files." )
-                                        .arg( Calamares::Branding::instance()->
-                                              string( Calamares::Branding::ShortVersionedName ) )
-                                        .arg( currentDevice->deviceNode() )
-                                        .arg( osName ) );
+                                        .arg( currentDevice->deviceNode() ) );
 
 
-                m_replaceButton->setText( tr( "<strong>Replace a partition with %1</strong><br/>"
-                                              "You will be offered a choice of which partition to erase." )
-                                        .arg( Calamares::Branding::instance()->
-                                              string( Calamares::Branding::ShortVersionedName ) ) );
+                m_replaceButton->setText( tr( "<strong>Replace a partition</strong><br/>"
+                                              "You will be offered a choice of which partition to erase." ) );
             )
         }
         else
@@ -644,27 +635,19 @@ ChoicePage::setupActions( Device *currentDevice )
                                              "You will be able to review and confirm your choices "
                                              "before any change is made to the storage device." ) );
 
-                m_alongsideButton->setText( tr( "<strong>Install %1 alongside your current operating system</strong><br/>"
-                                                "The installer will shrink an existing volume to make room for %2. "
-                                                "You can choose which operating system you want each time the "
-                                                "computer starts up." )
+                m_alongsideButton->setText( tr( "<strong>Install alongside</strong><br/>"
+                                                "The installer will shrink a volume to make room for %1." )
                                             .arg( Calamares::Branding::instance()->
-                                                  string( Calamares::Branding::ShortVersionedName ) )
-                                            .arg( Calamares::Branding::instance()->
-                                                  string( Calamares::Branding::ShortProductName ) ) );
+                                                  string( Calamares::Branding::ShortVersionedName ) ) );
 
-                m_eraseButton->setText( tr( "<strong>Erase disk and install %1</strong><br/>"
+                m_eraseButton->setText( tr( "<strong>Erase disk</strong><br/>"
                                             "This will <font color=\"red\">delete</font> all the data "
-                                            "currently present on %2 (if any), including programs, "
+                                            "currently present on %1 (if any), including programs, "
                                             "documents, photos, music, and other files." )
-                                        .arg( Calamares::Branding::instance()->
-                                              string( Calamares::Branding::ShortVersionedName ) )
                                         .arg( currentDevice->deviceNode() ) );
 
-                m_replaceButton->setText( tr( "<strong>Replace a partition with %1</strong><br/>"
-                                              "You will be offered a choice of which partition to erase." )
-                                        .arg( Calamares::Branding::instance()->
-                                              string( Calamares::Branding::ShortVersionedName ) ) );
+                m_replaceButton->setText( tr( "<strong>Replace a partition</strong><br/>"
+                                              "You will be offered a choice of which partition to erase." ) );
             )
         }
         if ( !osproberEntriesForCurrentDevice.first().canBeResized )
@@ -691,27 +674,19 @@ ChoicePage::setupActions( Device *currentDevice )
                                          "You will be able to review and confirm your choices "
                                          "before any change is made to the storage device." ) );
 
-            m_alongsideButton->setText( tr( "<strong>Install %1 alongside your current operating systems</strong><br/>"
-                                            "The installer will shrink an existing volume to make room for %2. "
-                                            "You can choose which operating system you want each time the "
-                                            "computer starts up." )
+            m_alongsideButton->setText( tr( "<strong>Install alongside</strong><br/>"
+                                            "The installer will shrink a volume to make room for %1." )
                                         .arg( Calamares::Branding::instance()->
-                                              string( Calamares::Branding::ShortVersionedName ) )
-                                        .arg( Calamares::Branding::instance()->
-                                              string( Calamares::Branding::ShortProductName ) ) );
+                                              string( Calamares::Branding::ShortVersionedName ) ) );
 
-            m_eraseButton->setText( tr( "<strong>Erase disk and install %1</strong><br/>"
+            m_eraseButton->setText( tr( "<strong>Erase disk</strong><br/>"
                                         "This will <font color=\"red\">delete</font> all the data "
-                                        "currently present on %2 (if any), including programs, "
+                                        "currently present on %1 (if any), including programs, "
                                         "documents, photos, music, and other files." )
-                                    .arg( Calamares::Branding::instance()->
-                                          string( Calamares::Branding::ShortVersionedName ) )
                                     .arg( currentDevice->deviceNode() ) );
 
-            m_replaceButton->setText( tr( "<strong>Replace a partition with %1</strong><br/>"
-                                          "You will be offered a choice of which partition to erase." )
-                                    .arg( Calamares::Branding::instance()->
-                                          string( Calamares::Branding::ShortVersionedName ) ) );
+            m_replaceButton->setText( tr( "<strong>Replace a partition</strong><br/>"
+                                          "You will be offered a choice of which partition to erase." ) );
         )
 
         if ( !atLeastOneCanBeResized )
@@ -735,7 +710,7 @@ OsproberEntryList
 ChoicePage::getOsproberEntriesForDevice( Device* device ) const
 {
     OsproberEntryList eList;
-    foreach ( const OsproberEntry& entry, m_osproberEntries )
+    foreach ( const OsproberEntry& entry, m_core->osproberEntries() )
     {
         if ( entry.path.startsWith( device->deviceNode() ) )
             eList.append( entry );

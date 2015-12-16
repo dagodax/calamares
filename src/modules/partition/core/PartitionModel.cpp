@@ -55,10 +55,11 @@ PartitionModel::PartitionModel( QObject* parent )
 }
 
 void
-PartitionModel::init( Device* device )
+PartitionModel::init( Device* device , const OsproberEntryList& osproberEntries )
 {
     beginResetModel();
     m_device = device;
+    m_osproberEntries = osproberEntries;
     endResetModel();
 }
 
@@ -142,7 +143,7 @@ PartitionModel::data( const QModelIndex& index, int role ) const
             }
         }
         if ( col == FileSystemColumn )
-            return partition->fileSystem().name();
+            return KPMHelpers::prettyNameForFileSystemType( partition->fileSystem().type() );
         if ( col == MountPointColumn )
             return PartitionInfo::mountPoint( partition );
         if ( col == SizeColumn )
@@ -162,6 +163,42 @@ PartitionModel::data( const QModelIndex& index, int role ) const
         return ( partition->lastSector() - partition->firstSector() + 1 ) * m_device->logicalSectorSize();
     case IsFreeSpaceRole:
         return KPMHelpers::isPartitionFreeSpace( partition );
+
+    case IsPartitionNewRole:
+        return KPMHelpers::isPartitionNew( partition );
+
+    case FileSystemLabelRole:
+        if ( partition->fileSystem().supportGetLabel() != FileSystem::cmdSupportNone &&
+             !partition->fileSystem().label().isEmpty() )
+            return partition->fileSystem().label();
+        return QVariant();
+
+    case FileSystemTypeRole:
+        return partition->fileSystem().type();
+
+    // Osprober roles:
+    case OsproberNameRole:
+        foreach ( const OsproberEntry& osproberEntry, m_osproberEntries )
+            if ( osproberEntry.path == partition->partitionPath() )
+                return osproberEntry.prettyName;
+        return QVariant();
+    case OsproberPathRole:
+        foreach ( const OsproberEntry& osproberEntry, m_osproberEntries )
+            if ( osproberEntry.path == partition->partitionPath() )
+                return osproberEntry.path;
+        return QVariant();
+    case OsproberCanBeResizedRole:
+        foreach ( const OsproberEntry& osproberEntry, m_osproberEntries )
+            if ( osproberEntry.path == partition->partitionPath() )
+                return osproberEntry.canBeResized;
+        return QVariant();
+    case OsproberRawLineRole:
+        foreach ( const OsproberEntry& osproberEntry, m_osproberEntries )
+            if ( osproberEntry.path == partition->partitionPath() )
+                return osproberEntry.line;
+        return QVariant();
+    // end Osprober roles.
+
     default:
         return QVariant();
     }
