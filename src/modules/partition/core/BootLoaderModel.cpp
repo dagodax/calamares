@@ -128,4 +128,3 @@ BootLoaderModel::data( const QModelIndex& index, int role ) const
     }
     return QStandardItemModel::data( index, role );
 }
-
