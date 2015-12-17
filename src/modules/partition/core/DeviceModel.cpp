@@ -21,6 +21,7 @@
 #include "core/PartitionModel.h"
 
 #include "utils/CalamaresUtilsGui.h"
+#include "utils/Logger.h"
 
 // KPMcore
 #include <kpmcore/core/device.h>
@@ -106,7 +107,6 @@ DeviceModel::swapDevice( Device* oldDevice, Device* newDevice )
 {
     Q_ASSERT( oldDevice );
     Q_ASSERT( newDevice );
-    Q_ASSERT( oldDevice->deviceNode() == newDevice->deviceNode() );
 
     int indexOfOldDevice = m_devices.indexOf( oldDevice );
     if ( indexOfOldDevice < 0 )
