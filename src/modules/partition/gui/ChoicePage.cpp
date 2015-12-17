@@ -36,6 +36,7 @@
 #include "utils/Logger.h"
 #include "utils/Retranslator.h"
 #include "Branding.h"
+#include "core/KPMHelpers.h"
 
 #include <kpmcore/core/device.h>
 
@@ -67,6 +68,8 @@ ChoicePage::ChoicePage( QWidget* parent )
     , m_deviceInfoWidget( nullptr )
     , m_lastSelectedDeviceIndex( -1 )
     , m_isEfi( false )
+    , m_beforePartitionBarsView( nullptr )
+    , m_beforePartitionLabelsView( nullptr )
 {
     setupUi( this );
 
@@ -362,30 +365,8 @@ ExpandableRadioButton*
 ChoicePage::createReplaceButton()
 {
     ExpandableRadioButton* replaceButton = new ExpandableRadioButton;
-    QWidget* replaceContainer = new QWidget;
-    QVBoxLayout* mainReplaceLayout = new QVBoxLayout;
-    replaceContainer->setLayout( mainReplaceLayout );
-    CalamaresUtils::unmarginLayout( mainReplaceLayout );
-    ReplaceWidget* replaceWidget = new ReplaceWidget( m_core, m_drivesCombo );
-    mainReplaceLayout->addWidget( replaceWidget );
-
-    if ( !m_isEfi )
-    {
-        QHBoxLayout* bootloaderLayout = new QHBoxLayout;
-        bootloaderLayout->setContentsMargins( 0, 0, 0, 0 );
-        QLabel* eraseBootloaderLabel = new QLabel( replaceButton );
-        bootloaderLayout->addWidget( eraseBootloaderLabel );
-        eraseBootloaderLabel->setText( tr( "Boot loader location:" ) );
-
-        QComboBox* eraseBootloaderCombo = createBootloaderComboBox( replaceButton );
-        bootloaderLayout->addWidget( eraseBootloaderCombo );
-        eraseBootloaderLabel->setBuddy( eraseBootloaderCombo );
-        bootloaderLayout->addStretch();
-
-        mainReplaceLayout->addLayout( bootloaderLayout );
-    }
-
-    replaceButton->setExpandableWidget( replaceContainer );
+    replaceButton->setExpandableWidget(
+                new QLabel( tr( "Select which OS to replace below." ) ) );
 
     return replaceButton;
 }
@@ -454,6 +435,23 @@ ChoicePage::applyActionChoice( Device* currentDevice, ChoicePage::Choice choice 
         PartitionActions::doAutopartition( m_core, selectedDevice() );
         break;
     case Replace:
+        connect( m_beforePartitionBarsView->selectionModel(), &QItemSelectionModel::currentRowChanged,
+                 this, [ this ]( const QModelIndex& current, const QModelIndex& previous )
+        {
+            if ( m_core->isDirty() )
+                m_core->clearJobs();
+
+            // We can't use the PartitionPtrRole because we need to make changes to the
+            // main DeviceModel, not the immutable copy.
+            QString partPath = current.data( PartitionModel::PartitionPathRole ).toString();
+            Partition* partition = KPMHelpers::findPartitionByPath( { selectedDevice() },
+                                                                    partPath );
+            if ( partition )
+                PartitionActions::doReplacePartition( m_core,
+                                                      selectedDevice(),
+                                                      partition );
+        } );
+
     case NoChoice:
     case Manual:
         break;
@@ -484,26 +482,41 @@ ChoicePage::updateDeviceStatePreview( Device* currentDevice )
     CalamaresUtils::unmarginLayout( layout );
     layout->setSpacing( 6 );
 
-    PartitionBarsView* preview = new PartitionBarsView( m_previewBeforeFrame );
-    PartitionLabelsView* previewLabels = new PartitionLabelsView( m_previewBeforeFrame );
+    m_beforePartitionBarsView = new PartitionBarsView( m_previewBeforeFrame );
+    m_beforePartitionLabelsView = new PartitionLabelsView( m_previewBeforeFrame );
 
     Device* deviceBefore = m_core->createImmutableDeviceCopy( currentDevice );
 
-    PartitionModel* model = new PartitionModel( preview );
+    PartitionModel* model = new PartitionModel( m_beforePartitionBarsView );
     model->init( deviceBefore, m_core->osproberEntries() );
 
     // The QObject parents tree is meaningful for memory management here,
     // see qDeleteAll above.
     deviceBefore->setParent( model );
-    model->setParent( preview );
+    model->setParent( m_beforePartitionBarsView );
 
-    preview->setModel( model );
-    preview->setSelectionMode( QAbstractItemView::NoSelection );
-    previewLabels->setModel( model );
-    previewLabels->setSelectionMode( QAbstractItemView::NoSelection );
+    m_beforePartitionBarsView->setModel( model );
+    m_beforePartitionLabelsView->setModel( model );
 
-    layout->addWidget( preview );
-    layout->addWidget( previewLabels );
+    // Make the bars and labels view use the same selectionModel.
+    auto sm = m_beforePartitionLabelsView->selectionModel();
+    m_beforePartitionLabelsView->setSelectionModel( m_beforePartitionBarsView->selectionModel() );
+    sm->deleteLater();
+
+    switch ( m_choice )
+    {
+    case Replace:
+    case Alongside:
+        m_beforePartitionBarsView->setSelectionMode( QAbstractItemView::SingleSelection );
+        m_beforePartitionLabelsView->setSelectionMode( QAbstractItemView::SingleSelection );
+        break;
+    default:
+        m_beforePartitionBarsView->setSelectionMode( QAbstractItemView::NoSelection );
+        m_beforePartitionLabelsView->setSelectionMode( QAbstractItemView::NoSelection );
+    }
+
+    layout->addWidget( m_beforePartitionBarsView );
+    layout->addWidget( m_beforePartitionLabelsView );
 }
 
 
@@ -518,6 +531,7 @@ void
 ChoicePage::updateActionChoicePreview( Device* currentDevice, ChoicePage::Choice choice )
 {
     Q_ASSERT( currentDevice );
+
     QMutexLocker locker( &m_previewsMutex );
 
     cDebug() << "Updating partitioning preview widgets.";
@@ -552,17 +566,8 @@ ChoicePage::updateActionChoicePreview( Device* currentDevice, ChoicePage::Choice
             model->setParent( preview );
             preview->setModel( model );
             previewLabels->setModel( model );
-
-            // Make the bars and labels view use the same selectionModel.
-            auto sm = previewLabels->selectionModel();
-            previewLabels->setSelectionModel( preview->selectionModel() );
-            sm->deleteLater();
-
-            if ( choice == Erase )
-            {
-                preview->setSelectionMode( QAbstractItemView::NoSelection );
-                previewLabels->setSelectionMode( QAbstractItemView::NoSelection );
-            }
+            preview->setSelectionMode( QAbstractItemView::NoSelection );
+            previewLabels->setSelectionMode( QAbstractItemView::NoSelection );
 
             layout->addWidget( preview );
             layout->addWidget( previewLabels );
@@ -574,6 +579,28 @@ ChoicePage::updateActionChoicePreview( Device* currentDevice, ChoicePage::Choice
     case Manual:
         m_previewAfterFrame->hide();
         break;
+    }
+
+    // Also handle selection behavior on beforeFrame.
+    QAbstractItemView::SelectionMode previewSelectionMode;
+    switch ( m_choice )
+    {
+    case Replace:
+    case Alongside:
+        previewSelectionMode = QAbstractItemView::SingleSelection;
+        break;
+    default:
+        previewSelectionMode = QAbstractItemView::NoSelection;
+    }
+
+    foreach ( QObject* child, m_previewBeforeFrame->children() )
+    {
+        PartitionBarsView* pbv = qobject_cast< PartitionBarsView* >( child );
+        if ( pbv )
+            pbv->setSelectionMode( previewSelectionMode );
+        PartitionLabelsView* plv = qobject_cast< PartitionLabelsView* >( child );
+        if ( plv )
+            plv->setSelectionMode( previewSelectionMode );
     }
 }
 

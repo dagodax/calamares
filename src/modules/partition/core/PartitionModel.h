@@ -72,6 +72,8 @@ public:
         IsPartitionNewRole,
         FileSystemLabelRole,
         FileSystemTypeRole,
+        PartitionPathRole,
+        PartitionPtrRole,   // passed as void*, use sparingly
         OsproberNameRole,
         OsproberPathRole,
         OsproberCanBeResizedRole,

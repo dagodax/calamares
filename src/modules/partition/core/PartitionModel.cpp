@@ -176,6 +176,12 @@ PartitionModel::data( const QModelIndex& index, int role ) const
     case FileSystemTypeRole:
         return partition->fileSystem().type();
 
+    case PartitionPathRole:
+        return partition->devicePath();
+
+    case PartitionPtrRole:
+        return qVariantFromValue( (void*)partition );
+
     // Osprober roles:
     case OsproberNameRole:
         foreach ( const OsproberEntry& osproberEntry, m_osproberEntries )
