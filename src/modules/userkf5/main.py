@@ -71,7 +71,6 @@ def run():
         ('kcminputrc', '.config/'),
         ('plasmarc', '.config/'),
         ('plasmashellrc', '.config/'),
-        ('rekonqrc', '.config/'),
         ('startupconfig', '.config/'),
         ('startupconfigkeys', '.config/'),
         ('Linux.colorscheme', '.local/share/konsole/'),
