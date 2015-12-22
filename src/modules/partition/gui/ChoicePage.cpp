@@ -189,7 +189,7 @@ ChoicePage::setupChoices()
                                                            iconSize ) );
     grp->addButton( m_eraseButton->buttonWidget() );
 
-    m_replaceButton = createReplaceButton();
+    m_replaceButton = new PrettyRadioButton;
 
     m_replaceButton->setIconSize( iconSize );
     m_replaceButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::PartitionReplaceOs,
@@ -202,16 +202,11 @@ ChoicePage::setupChoices()
     m_itemsLayout->addWidget( m_eraseButton );
     m_itemsLayout->setSpacing( CalamaresUtils::defaultFontHeight() / 2 );
 
-    QFrame* hLine = new QFrame;
-    hLine->setFrameStyle( QFrame::HLine );
-    m_itemsLayout->addWidget( hLine );
-
     m_somethingElseButton = new PrettyRadioButton;
     CALAMARES_RETRANSLATE(
         m_somethingElseButton->setText( tr( "<strong>Manual partitioning</strong><br/>"
-                                            "You can create or resize partitions yourself, or choose "
-                                            "multiple partitions for %1."
-                                            "  Having a GPT partition table and <strong>fat32 512Mb /boot partition"
+                                            "You can create or resize partitions yourself."
+                                          "  Having a GPT partition table and <strong>fat32 512Mb /boot partition"
                                             " is a must for UEFI installs</strong>, either use an existing without formatting or create one." )
                                         .arg( Calamares::Branding::instance()->
                                               string( Calamares::Branding::ShortVersionedName ) ) );
@@ -359,17 +354,6 @@ ChoicePage::createEraseButton()
         eraseButton->setExpandableWidget( eraseWidget );
     }
     return eraseButton;
-}
-
-
-ExpandableRadioButton*
-ChoicePage::createReplaceButton()
-{
-    ExpandableRadioButton* replaceButton = new ExpandableRadioButton;
-    replaceButton->setExpandableWidget(
-                new QLabel( tr( "Select which OS to replace below." ) ) );
-
-    return replaceButton;
 }
 
 
@@ -570,6 +554,7 @@ ChoicePage::updateActionChoicePreview( ChoicePage::Choice choice )
     case Alongside:
         // split widget goes here
         //label->setText( tr( "Drag to split:" ) );
+        m_selectLabel->hide();
 
         break;
     case Erase:
@@ -593,10 +578,20 @@ ChoicePage::updateActionChoicePreview( ChoicePage::Choice choice )
             layout->addWidget( previewLabels );
 
             m_previewAfterFrame->show();
+
+            if ( m_choice == Erase )
+                m_selectLabel->hide();
+            else
+            {
+                m_selectLabel->show();
+                m_selectLabel->setText( tr( "Select which partition to replace" ) );
+            }
+
             break;
         }
     case NoChoice:
     case Manual:
+        m_selectLabel->hide();
         m_previewAfterFrame->hide();
         break;
     }
@@ -652,10 +647,8 @@ ChoicePage::setupActions()
                                          "before any change is made to the storage device." ) );
 
             m_eraseButton->setText( tr( "<strong>Erase disk</strong><br/>"
-                                        "This will <font color=\"red\">delete</font> all the data "
-                                        "currently present on %1 (if any), including programs, "
-                                        "documents, photos, music, and other files." )
-                                    .arg( currentDevice->deviceNode() ) );
+                                        "This will <font color=\"red\">delete</font> all data "
+                                        "currently present on the selected storage device." ) );
         )
 
         m_replaceButton->hide();
@@ -675,19 +668,19 @@ ChoicePage::setupActions()
                                             .arg( osName ) );
 
                 m_alongsideButton->setText( tr( "<strong>Install alongside</strong><br/>"
-                                                "The installer will shrink a volume to make room for %1." )
+                                                "The installer will shrink a partition to make room for %1." )
                                             .arg( Calamares::Branding::instance()->
                                                   string( Calamares::Branding::ShortVersionedName ) ) );
 
                 m_eraseButton->setText( tr( "<strong>Erase disk</strong><br/>"
-                                            "This will <font color=\"red\">delete</font> all the data "
-                                            "currently present on %1 (if any), including programs, "
-                                            "documents, photos, music, and other files." )
-                                        .arg( currentDevice->deviceNode() ) );
+                                            "This will <font color=\"red\">delete</font> all data "
+                                            "currently present on the selected storage device." ) );
 
 
                 m_replaceButton->setText( tr( "<strong>Replace a partition</strong><br/>"
-                                              "You will be offered a choice of which partition to erase." ) );
+                                              "Replaces a partition with %1." )
+                                          .arg( Calamares::Branding::instance()->
+                                                string( Calamares::Branding::ShortVersionedName ) ) );
             )
         }
         else
@@ -699,18 +692,18 @@ ChoicePage::setupActions()
                                              "before any change is made to the storage device." ) );
 
                 m_alongsideButton->setText( tr( "<strong>Install alongside</strong><br/>"
-                                                "The installer will shrink a volume to make room for %1." )
+                                                "The installer will shrink a partition to make room for %1." )
                                             .arg( Calamares::Branding::instance()->
                                                   string( Calamares::Branding::ShortVersionedName ) ) );
 
                 m_eraseButton->setText( tr( "<strong>Erase disk</strong><br/>"
-                                            "This will <font color=\"red\">delete</font> all the data "
-                                            "currently present on %1 (if any), including programs, "
-                                            "documents, photos, music, and other files." )
-                                        .arg( currentDevice->deviceNode() ) );
+                                            "This will <font color=\"red\">delete</font> all data "
+                                            "currently present on the selected storage device." ) );
 
                 m_replaceButton->setText( tr( "<strong>Replace a partition</strong><br/>"
-                                              "You will be offered a choice of which partition to erase." ) );
+                                              "Replaces a partition with %1." )
+                                          .arg( Calamares::Branding::instance()->
+                                                string( Calamares::Branding::ShortVersionedName ) ) );
             )
         }
         if ( !osproberEntriesForCurrentDevice.first().canBeResized )
@@ -738,18 +731,18 @@ ChoicePage::setupActions()
                                          "before any change is made to the storage device." ) );
 
             m_alongsideButton->setText( tr( "<strong>Install alongside</strong><br/>"
-                                            "The installer will shrink a volume to make room for %1." )
+                                            "The installer will shrink a partition to make room for %1." )
                                         .arg( Calamares::Branding::instance()->
                                               string( Calamares::Branding::ShortVersionedName ) ) );
 
             m_eraseButton->setText( tr( "<strong>Erase disk</strong><br/>"
-                                        "This will <font color=\"red\">delete</font> all the data "
-                                        "currently present on %1 (if any), including programs, "
-                                        "documents, photos, music, and other files." )
-                                    .arg( currentDevice->deviceNode() ) );
+                                        "This will <font color=\"red\">delete</font> all data "
+                                        "currently present on the selected storage device." ) );
 
             m_replaceButton->setText( tr( "<strong>Replace a partition</strong><br/>"
-                                          "You will be offered a choice of which partition to erase." ) );
+                                          "Replaces a partition with %1." )
+                                      .arg( Calamares::Branding::instance()->
+                                            string( Calamares::Branding::ShortVersionedName ) ) );
         )
 
         if ( !atLeastOneCanBeResized )
