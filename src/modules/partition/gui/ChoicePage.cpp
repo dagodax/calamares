@@ -46,8 +46,6 @@
 #include <QDir>
 #include <QLabel>
 #include <QListView>
-#include <QFutureWatcher>
-#include <QtConcurrent/QtConcurrent>
 
 
 
@@ -277,7 +275,6 @@ ChoicePage::setupChoices()
         if ( currd )
         {
             applyActionChoice( currentChoice() );
-            updateActionChoicePreview( currentChoice() );
         }
     } );
 }
@@ -456,30 +453,18 @@ ChoicePage::applyActionChoice( ChoicePage::Choice choice )
 
             if ( m_core->isDirty() )
             {
-                QFutureWatcher< void > watcher;
-                connect( &watcher, &QFutureWatcher< void >::finished,
-                         this, [=]
-                {
-                    doReplace();
-                    updateActionChoicePreview( currentChoice() );
-                } );
-
-                QFuture< void > future = QtConcurrent::run( [=]
-                {
-                    m_core->revertDevice( selectedDevice() );
-                    m_core->clearJobs();
-                } );
-                watcher.setFuture( future );
+                m_core->asyncRevertDevice( selectedDevice(), doReplace );
+                m_core->clearJobs();
             }
             else
                 doReplace();
-
         } );
         break;
     case NoChoice:
     case Manual:
         break;
     }
+    updateActionChoicePreview( currentChoice() );
 }
 
 
@@ -604,7 +589,7 @@ ChoicePage::updateActionChoicePreview( ChoicePage::Choice choice )
             else
             {
                 m_selectLabel->show();
-                m_selectLabel->setText( tr( "Select which partition to replace" ) );
+                m_selectLabel->setText( tr( "<strong>Select which partition to replace</strong>" ) );
             }
 
             break;

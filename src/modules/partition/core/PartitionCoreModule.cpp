@@ -49,6 +49,7 @@
 #include <QStandardItemModel>
 #include <QDir>
 #include <QProcess>
+#include <QTimer>
 
 static bool
 hasRootPartition( Device* device )
@@ -505,6 +506,7 @@ PartitionCoreModule::revert()
 void
 PartitionCoreModule::revertDevice( Device* dev )
 {
+    QMutexLocker locker( &m_revertMutex );
     DeviceInfo* devInfo = infoForDevice( dev );
     if ( !devInfo )
         return;
@@ -523,6 +525,17 @@ PartitionCoreModule::revertDevice( Device* dev )
     m_bootLoaderModel->init( devices );
 
     updateIsDirty();
+}
+
+
+void
+PartitionCoreModule::asyncRevertDevice( Device* dev, std::function< void() > callback )
+{
+    QTimer::singleShot( 0, this, [=]
+    {
+        revertDevice( dev );
+        QTimer::singleShot( 0, callback );
+    } );
 }
 
 

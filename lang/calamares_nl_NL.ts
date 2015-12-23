@@ -463,70 +463,74 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
 <context>
     <name>ChoicePage</name>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="95"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="100"/>
         <source>Pick a storage de&amp;vice:</source>
         <translation>Kies een opslag de&amp;vice:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="96"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="101"/>
         <source>Before:</source>
         <translation>Tevoren:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="97"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="102"/>
         <source>After:</source>
         <translation>Naderhand:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="208"/>
-        <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;, either use an existing without formatting or create one.</source>
-        <translation>&lt;strong&gt;Handmatige partitionering&lt;/strong&gt;&lt;br/&gt;Je kunt partities zelf creeren of aanpassen, of kies meerdere partities voor %1. Het hebben van een GPT partitietabel en &lt;strong&gt;fat32 512Mb /boot partitie is een must voor UEFI installaties&lt;/strong&gt;, ofwel gebruik maken van een bestaande, zonder formatteren of creeer.</translation>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="209"/>
+        <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself.  Having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;, either use an existing without formatting or create one.</source>
+        <translation>&lt;strong&gt;Handmatige partitionering&lt;/strong&gt;&lt;br/&gt;Je kunt partities zelf creeren of aanpassen. Het hebben van een GPT partitietabel en &lt;strong&gt;fat32 512Mb /boot partitie is een must voor UEFI installaties&lt;/strong&gt;, ofwel gebruik maken van een bestaande, zonder formatteren of creeer.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="348"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="378"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="669"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="695"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="719"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="758"/>
+        <source>&lt;strong&gt;Erase disk&lt;/strong&gt;&lt;br/&gt;This will &lt;font color=&quot;red&quot;&gt;delete&lt;/font&gt; all data currently present on the selected storage device.</source>
+        <translation>&lt;strong&gt;Wis schijf&lt;/strong&gt;&lt;br/&gt;Dit zal alle data &lt;font color=&quot;red&quot;&gt;verwijderen&lt;/font&gt; welke momenteel aanwezig is op het geselecteerde opslag apparaat.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="690"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="714"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="753"/>
+        <source>&lt;strong&gt;Install alongside&lt;/strong&gt;&lt;br/&gt;The installer will shrink a partition to make room for %1.</source>
+        <translation>&lt;strong&gt;Installeer naast&lt;/strong&gt;&lt;br/&gt;Het installatie programma zal een psrtitie inkrimpen om ruimte te maken voor %1.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="700"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="723"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="762"/>
+        <source>&lt;strong&gt;Replace a partition&lt;/strong&gt;&lt;br/&gt;Replaces a partition with %1.</source>
+        <translation>&lt;strong&gt;Vervang een partitie&lt;/strong&gt;&lt;br/&gt;Vervangt een partitie met %1.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="349"/>
         <source>Boot loader location:</source>
         <translation>Bootloader locatie:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="586"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="607"/>
+        <source>Select which partition to replace</source>
+        <translation>Selecteer welke partitie te vervangen</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="664"/>
         <source>This storage device does not seem to have an operating system on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
         <translation>Dit opslagapparaat heeft ogenschijnlijk geen besturingssysteem beschikbaar. Wat wil je doen?&lt;br/&gt;Je zult in staat zijn om te beoordelen en je keuzes te bevestigen voordat een wijziging wordt aangebracht aan het opslagapparaat.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="591"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="619"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="643"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="682"/>
-        <source>&lt;strong&gt;Erase disk&lt;/strong&gt;&lt;br/&gt;This will &lt;font color=&quot;red&quot;&gt;delete&lt;/font&gt; all the data currently present on %1 (if any), including programs, documents, photos, music, and other files.</source>
-        <translation>&lt;strong&gt;Wis schijf&lt;/strong&gt;&lt;br/&gt;Dit zal alle data &lt;font color=&quot;red&quot;&gt;verwijderen&lt;/font&gt; welke momenteel aanwezig is op %1 (mits aanwezig), inclusief programmas, documenten, foto&apos;s, muziek en alle andere bestanden.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="608"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="684"/>
         <source>This storage device has %1 on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
         <translation>Dit opslagapparaat heeft %1 geinstalleerd. Wat wil je doesn?&lt;br/&gt;Je zult in staat zijn om te beoordelen en je keuzes te bevestigen voordat een wijziging wordt aangebracht aan het opslagapparaat.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="614"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="638"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="677"/>
-        <source>&lt;strong&gt;Install alongside&lt;/strong&gt;&lt;br/&gt;The installer will shrink a volume to make room for %1.</source>
-        <translation>&lt;strong&gt;Installeer naast&lt;/strong&gt;&lt;br/&gt;Het installatie programma zal een volume inkrimpen om ruimte te maken voor %1.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="626"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="649"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="688"/>
-        <source>&lt;strong&gt;Replace a partition&lt;/strong&gt;&lt;br/&gt;You will be offered a choice of which partition to erase.</source>
-        <translation>&lt;strong&gt;Vervang een partitie&lt;/strong&gt;&lt;br/&gt;Er zal een keuze worden aangeboden van welke schijf te wissen. </translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="633"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="709"/>
         <source>This storage device already has an operating system on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
         <translation>Dit opslagapparaat heeft een besturingssysteem geinstalleerd. Wat wil je doen?&lt;br/&gt;Je zult in staat zijn om te beoordelen en je keuzes te bevestigen voordat een wijziging wordt aangebracht aan het opslagapparaat.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="672"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="748"/>
         <source>This storage device has multiple operating systems on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
         <translation>Dit opslagapparaat heeft meerdere besturingssystemen geinstalleerd. Wat wil je doen?&lt;br/&gt;Je zult in staat zijn om te beoordelen en je keuzes te bevestigen voordat een wijziging wordt aangebracht aan het opslagapparaat.</translation>
     </message>
@@ -891,7 +895,7 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
 <context>
     <name>DeviceModel</name>
     <message>
-        <location filename="../src/modules/partition/core/DeviceModel.cpp" line="79"/>
+        <location filename="../src/modules/partition/core/DeviceModel.cpp" line="80"/>
         <source>%1 - %2 (%3)</source>
         <translation>%1 - %2 (%3)</translation>
     </message>
@@ -1341,37 +1345,37 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
 <context>
     <name>PartitionLabelsView</name>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="152"/>
+        <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="186"/>
         <source>Root</source>
         <translation>Root</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="155"/>
+        <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="189"/>
         <source>Home</source>
         <translation>Home</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="157"/>
+        <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="191"/>
         <source>Boot</source>
         <translation>Boot</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="160"/>
+        <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="194"/>
         <source>EFI system</source>
         <translation>EFI systeem</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="162"/>
+        <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="196"/>
         <source>Swap</source>
         <translation>Swap</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="164"/>
+        <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="198"/>
         <source>New partition for %1</source>
         <translation>Nieuwe partitie op %1</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="177"/>
+        <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="215"/>
         <source>%1  %2</source>
         <translation>%1  %2</translation>
     </message>
@@ -1389,22 +1393,22 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
         <translation>Nieuwe partitie</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="216"/>
+        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="222"/>
         <source>Name</source>
         <translation>Naam</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="218"/>
+        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="224"/>
         <source>File System</source>
         <translation>Bestandssysteem</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="220"/>
+        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="226"/>
         <source>Mount Point</source>
         <translation>Aankoppelpunt</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="222"/>
+        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="228"/>
         <source>Size</source>
         <translation>Grootte</translation>
     </message>
@@ -1539,7 +1543,7 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
         <translation>Standaard</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="46"/>
+        <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="48"/>
         <source>Unpartitioned space or unknown partition table</source>
         <translation>Niet gepartitioneerde ruimte of onbekende partitietabel</translation>
     </message>
