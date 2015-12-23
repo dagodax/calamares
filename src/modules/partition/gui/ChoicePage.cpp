@@ -46,6 +46,8 @@
 #include <QDir>
 #include <QLabel>
 #include <QListView>
+#include <QFutureWatcher>
+#include <QtConcurrent/QtConcurrent>
 
 
 
@@ -206,7 +208,7 @@ ChoicePage::setupChoices()
     CALAMARES_RETRANSLATE(
         m_somethingElseButton->setText( tr( "<strong>Manual partitioning</strong><br/>"
                                             "You can create or resize partitions yourself."
-                                          "  Having a GPT partition table and <strong>fat32 512Mb /boot partition"
+                                            "  Having a GPT partition table and <strong>fat32 512Mb /boot partition"
                                             " is a must for UEFI installs</strong>, either use an existing without formatting or create one." )
                                         .arg( Calamares::Branding::instance()->
                                               string( Calamares::Branding::ShortVersionedName ) ) );
@@ -439,21 +441,39 @@ ChoicePage::applyActionChoice( ChoicePage::Choice choice )
         connect( m_beforePartitionBarsView->selectionModel(), &QItemSelectionModel::currentRowChanged,
                  this, [ this ]( const QModelIndex& current, const QModelIndex& previous )
         {
+            auto doReplace = [=]
+            {
+                // We can't use the PartitionPtrRole because we need to make changes to the
+                // main DeviceModel, not the immutable copy.
+                QString partPath = current.data( PartitionModel::PartitionPathRole ).toString();
+                Partition* partition = KPMHelpers::findPartitionByPath( { selectedDevice() },
+                                                                        partPath );
+                if ( partition )
+                    PartitionActions::doReplacePartition( m_core,
+                                                          selectedDevice(),
+                                                          partition );
+            };
+
             if ( m_core->isDirty() )
             {
-                m_core->revertDevice( selectedDevice() );
-                m_core->clearJobs();
-            }
+                QFutureWatcher< void > watcher;
+                connect( &watcher, &QFutureWatcher< void >::finished,
+                         this, [=]
+                {
+                    doReplace();
+                    updateActionChoicePreview( currentChoice() );
+                } );
 
-            // We can't use the PartitionPtrRole because we need to make changes to the
-            // main DeviceModel, not the immutable copy.
-            QString partPath = current.data( PartitionModel::PartitionPathRole ).toString();
-            Partition* partition = KPMHelpers::findPartitionByPath( { selectedDevice() },
-                                                                    partPath );
-            if ( partition )
-                PartitionActions::doReplacePartition( m_core,
-                                                      selectedDevice(),
-                                                      partition );
+                QFuture< void > future = QtConcurrent::run( [=]
+                {
+                    m_core->revertDevice( selectedDevice() );
+                    m_core->clearJobs();
+                } );
+                watcher.setFuture( future );
+            }
+            else
+                doReplace();
+
         } );
         break;
     case NoChoice:
