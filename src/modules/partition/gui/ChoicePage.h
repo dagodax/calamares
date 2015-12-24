@@ -76,6 +76,7 @@ private:
     ExpandableRadioButton* createEraseButton();
     Device* selectedDevice();
     void applyDeviceChoice();
+    void doReplaceSelectedPartition( const QModelIndex& current );
     void updateDeviceStatePreview();
     void applyActionChoice( ChoicePage::Choice choice );
     void updateActionChoicePreview( ChoicePage::Choice choice );
@@ -101,8 +102,12 @@ private:
 
     QPointer< PartitionBarsView > m_beforePartitionBarsView;
     QPointer< PartitionLabelsView > m_beforePartitionLabelsView;
+    QPointer< PartitionBarsView > m_afterPartitionBarsView;
+    QPointer< PartitionLabelsView > m_afterPartitionLabelsView;
 
     int m_lastSelectedDeviceIndex;
+
+    QMutex m_coreMutex;
 };
 
 #endif // CHOICEPAGE_H

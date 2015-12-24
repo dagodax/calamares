@@ -46,6 +46,8 @@
 #include <QDir>
 #include <QLabel>
 #include <QListView>
+#include <QFutureWatcher>
+#include <QtConcurrent/QtConcurrent>
 
 
 
@@ -390,7 +392,6 @@ ChoicePage::applyDeviceChoice()
     if ( m_core->isDirty() )
     {
         m_core->revertDevice( selectedDevice() );
-        m_core->clearJobs();
     }
 
     Device* currd = selectedDevice();
@@ -423,7 +424,6 @@ ChoicePage::applyActionChoice( ChoicePage::Choice choice )
         if ( m_core->isDirty() )
         {
             m_core->revertDevice( selectedDevice() );
-            m_core->clearJobs();
         }
 
         PartitionActions::doAutopartition( m_core, selectedDevice() );
@@ -432,32 +432,20 @@ ChoicePage::applyActionChoice( ChoicePage::Choice choice )
         if ( m_core->isDirty() )
         {
             m_core->revertDevice( selectedDevice() );
-            m_core->clearJobs();
         }
 
         connect( m_beforePartitionBarsView->selectionModel(), &QItemSelectionModel::currentRowChanged,
                  this, [ this ]( const QModelIndex& current, const QModelIndex& previous )
         {
-            auto doReplace = [=]
+            QFutureWatcher< void >* watcher = new QFutureWatcher< void >();
+            connect( watcher, &QFutureWatcher< void >::finished,
+                     this, [ watcher ]
             {
-                // We can't use the PartitionPtrRole because we need to make changes to the
-                // main DeviceModel, not the immutable copy.
-                QString partPath = current.data( PartitionModel::PartitionPathRole ).toString();
-                Partition* partition = KPMHelpers::findPartitionByPath( { selectedDevice() },
-                                                                        partPath );
-                if ( partition )
-                    PartitionActions::doReplacePartition( m_core,
-                                                          selectedDevice(),
-                                                          partition );
-            };
+                watcher->deleteLater();
+            } );
 
-            if ( m_core->isDirty() )
-            {
-                m_core->asyncRevertDevice( selectedDevice(), doReplace );
-                m_core->clearJobs();
-            }
-            else
-                doReplace();
+            QFuture< void > future = QtConcurrent::run( this, &ChoicePage::doReplaceSelectedPartition, current );
+            watcher->setFuture( future );
         } );
         break;
     case NoChoice:
@@ -465,6 +453,29 @@ ChoicePage::applyActionChoice( ChoicePage::Choice choice )
         break;
     }
     updateActionChoicePreview( currentChoice() );
+}
+
+
+void
+ChoicePage::doReplaceSelectedPartition( const QModelIndex& current )
+{
+    cDebug() << "begin doReplace";
+    QMutexLocker locker( &m_coreMutex );
+
+    if ( m_core->isDirty() )
+    {
+        m_core->revertDevice( selectedDevice() );
+    }
+    // We can't use the PartitionPtrRole because we need to make changes to the
+    // main DeviceModel, not the immutable copy.
+    QString partPath = current.data( PartitionModel::PartitionPathRole ).toString();
+    Partition* partition = KPMHelpers::findPartitionByPath( { selectedDevice() },
+                                                            partPath );
+    if ( partition )
+        PartitionActions::doReplacePartition( m_core,
+                                              selectedDevice(),
+                                              partition );
+    cDebug() << "end doReplace";
 }
 
 
@@ -565,22 +576,22 @@ ChoicePage::updateActionChoicePreview( ChoicePage::Choice choice )
     case Erase:
     case Replace:
         {
-            PartitionBarsView* preview = new PartitionBarsView( m_previewAfterFrame );
-            PartitionLabelsView* previewLabels = new PartitionLabelsView( m_previewAfterFrame );
-            previewLabels->setCustomNewRootLabel( Calamares::Branding::instance()->
+            m_afterPartitionBarsView = new PartitionBarsView( m_previewAfterFrame );
+            m_afterPartitionLabelsView = new PartitionLabelsView( m_previewAfterFrame );
+            m_afterPartitionLabelsView->setCustomNewRootLabel( Calamares::Branding::instance()->
                                                   string( Calamares::Branding::BootloaderEntryName ) );
 
             PartitionModel* model = m_core->partitionModelForDevice( selectedDevice() );
 
             // The QObject parents tree is meaningful for memory management here,
             // see qDeleteAll above.
-            preview->setModel( model );
-            previewLabels->setModel( model );
-            preview->setSelectionMode( QAbstractItemView::NoSelection );
-            previewLabels->setSelectionMode( QAbstractItemView::NoSelection );
+            m_afterPartitionBarsView->setModel( model );
+            m_afterPartitionLabelsView->setModel( model );
+            m_afterPartitionBarsView->setSelectionMode( QAbstractItemView::NoSelection );
+            m_afterPartitionLabelsView->setSelectionMode( QAbstractItemView::NoSelection );
 
-            layout->addWidget( preview );
-            layout->addWidget( previewLabels );
+            layout->addWidget( m_afterPartitionBarsView );
+            layout->addWidget( m_afterPartitionLabelsView );
 
             m_previewAfterFrame->show();
 
