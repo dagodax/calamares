@@ -479,7 +479,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="209"/>
         <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself.  Having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;, either use an existing without formatting or create one.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Pemartisian manual&lt;/strong&gt;&lt;br/&gt;Anda bisa membuat atau mengubah ukuran partisi sendiri. Memiliki sebuah tabel partisi GPT dan &lt;strong&gt;partisi /boot fat32 512M adalah suatu keharusan untuk UEFI installs&lt;/strong&gt;, gunakanlah salah satu yang ada tanpa memformat atau membuat.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="669"/>
@@ -487,21 +487,21 @@ The installer will quit and all changes will be lost.</source>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="719"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="758"/>
         <source>&lt;strong&gt;Erase disk&lt;/strong&gt;&lt;br/&gt;This will &lt;font color=&quot;red&quot;&gt;delete&lt;/font&gt; all data currently present on the selected storage device.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Setip diska&lt;/strong&gt;&lt;br/&gt;Ini akan &lt;font color=&quot;red&quot;&gt;menghapus&lt;/font&gt; semua data yang ada saat ini pada perangkat penyimpanan terpilih.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="690"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="714"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="753"/>
         <source>&lt;strong&gt;Install alongside&lt;/strong&gt;&lt;br/&gt;The installer will shrink a partition to make room for %1.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Pasang di samping&lt;/strong&gt;&lt;br/&gt;Pemasang akan mengiris sebuah partisi untuk membuat ruang bagi %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="700"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="723"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="762"/>
         <source>&lt;strong&gt;Replace a partition&lt;/strong&gt;&lt;br/&gt;Replaces a partition with %1.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Ganti partisi&lt;/strong&gt;&lt;br/&gt;Penggantian partisi dengan %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="349"/>
@@ -511,7 +511,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="607"/>
         <source>Select which partition to replace</source>
-        <translation type="unfinished"/>
+        <translation>Pilih partisi mana untuk mengganti</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="664"/>
@@ -888,7 +888,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="204"/>
         <source>&lt;br&gt;&lt;br&gt;This partition table type is only advisable on older systems which start from a &lt;strong&gt;BIOS&lt;/strong&gt; boot environment. For most uses GPT should be preferred instead.&lt;br&gt;&lt;strong&gt;Warning:&lt;/strong&gt; the MSDOS partition table is an obsolete standard with important drawbacks.&lt;br&gt;Only 4 &lt;em&gt;primary&lt;/em&gt; partitions may be created, and of those 4, one can be an &lt;em&gt;extended&lt;/em&gt; partition, which may in turn contain many &lt;em&gt;logical&lt;/em&gt; partitions.&lt;br&gt;For compatibility reasons, it is recommended for a setup based on an MSDOS partition table to have a separate boot partition. This installer can create the boot partition for you automatically, or you may set it up yourself on the manual partitioning page.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;br&gt;&lt;br&gt;Tipe tabel partisi ini hanya dianjurkan pada sistem lawas yang mulai dari sebuah lingkungan boot &lt;strong&gt;BIOS&lt;/strong&gt;. Bagi kebanyakan penggunaan GPT lebih disukai sebagai gantinya.&lt;br&gt;&lt;strong&gt;Peringatan:&lt;/strong&gt; tabel partisi MSDOS adalah standar usang dengan kelemahan penting.&lt;br&gt;Hanya 4 partisi &lt;em&gt;primer&lt;/ em&gt; yang mungkin dapat dibuat, dan dari 4 mereka, salah satu bisa menjadi sebuah partisi &lt;em&gt;luas&lt;/em&gt;, yang pada gilirannya berisi banyak partisi &lt;em&gt;logikal&lt;/em&gt;.&lt;br&gt;Untuk alasan kompatibilitas, disarankan untuk persiapan berdasarkan pada tabel partisi MSDOS untuk memiliki partisi boot terpisah. Pemasang ini bisa membuat partisi boot untuk Anda secara otomatis, atau Anda dapat menyetelnya sendiri di halaman partisi manual.</translation>
     </message>
 </context>
 <context>
@@ -1346,7 +1346,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="186"/>
         <source>Root</source>
-        <translation type="unfinished"/>
+        <translation>Root</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="189"/>
@@ -1554,7 +1554,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="152"/>
         <source>extended</source>
-        <translation type="unfinished"/>
+        <translation>luas</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="154"/>
@@ -1572,27 +1572,27 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/ReplaceWidget.cpp" line="134"/>
         <source>Select where to install %1.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;this will delete all files on the selected partition.</source>
-        <translation type="unfinished"/>
+        <translation>Pilih di mana untuk memasang %1.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Peringatan: &lt;/font&gt;ini akan menghapus semua berkas pada partisi terpilih.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplaceWidget.cpp" line="161"/>
         <source>The selected item does not appear to be a valid partition.</source>
-        <translation type="unfinished"/>
+        <translation>Item terpilih tidak muncul untuk menjadi sebuah partisi yang sah.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplaceWidget.cpp" line="169"/>
         <source>%1 cannot be installed on empty space. Please select an existing partition.</source>
-        <translation type="unfinished"/>
+        <translation>%1 tidak bisa dipasang pada ruang kosong. Silakan pilih partisi yang ada.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplaceWidget.cpp" line="180"/>
         <source>%1 cannot be installed on an extended partition. Please select an existing primary or logical partition.</source>
-        <translation type="unfinished"/>
+        <translation>%1 tidak bisa dipasang pada sebuah partisi luas. Silakan pilih partisi primer atau logical yang ada.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplaceWidget.cpp" line="191"/>
         <source>%1 cannot be installed on this partition.</source>
-        <translation type="unfinished"/>
+        <translation>%1 tidak bisa dipasang pada partisi ini.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplaceWidget.cpp" line="198"/>
@@ -1612,19 +1612,19 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/ReplaceWidget.cpp" line="231"/>
         <source>&lt;strong&gt;%4&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;The partition %1 is too small for %2. Please select a partition with capacity at least %3 GiB.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;%4&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Partisi %1 terlalu kecil untuk %2. Silakan pilih partisi dengan kapasitas setidaknya %3 GiB.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplaceWidget.cpp" line="255"/>
         <source>&lt;strong&gt;%2&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;An EFI system partition cannot be found anywhere on this system. Please go back and use manual partitioning to set up %1.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;%2&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Sebuah partisi sistem EFI tidak ditemukan di mana pun pada sistem ini. Silakan kembali dan gunakan pemartisian manual untuk mempersiapkan %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplaceWidget.cpp" line="267"/>
         <location filename="../src/modules/partition/gui/ReplaceWidget.cpp" line="286"/>
         <location filename="../src/modules/partition/gui/ReplaceWidget.cpp" line="311"/>
         <source>&lt;strong&gt;%3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;%1 will be installed on %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;all data on partition %2 will be lost.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;%3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;%1 akan dipasang pada %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Peringatan: &lt;/font&gt;semua data pada partisi %2 akan hilang.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplaceWidget.cpp" line="277"/>
@@ -2014,12 +2014,12 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="121"/>
         <source>Qt/KDE specific internet applications include the &lt;br/&gt;Qupzilla web-browser and kde-telepathy for &lt;br/&gt;chat and Instant Messaging. &lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Aplikasi internet Qt/KDE tertentu termasuk &lt;br/&gt;Qupzilla penjelajah web dan kde-telepathy  untuk &lt;br/&gt;obrolan dan Instant Messaging. &lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="145"/>
         <source>For package management Octopi is the GUI application.&lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Untuk manajemen paket Octopi adalah aplikasi antarmuka pengguna secara grafis.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="167"/>

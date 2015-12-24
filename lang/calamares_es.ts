@@ -480,7 +480,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="209"/>
         <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself.  Having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;, either use an existing without formatting or create one.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Particionamiento Manual&lt;/strong&gt;&lt;br/&gt;Puede crear o redimensionar particiones Ud. mismo. Para instalaciones UEFI es necesario tener una tabla partición GPT y &lt;strong&gt;partición /boot en fat32 de 512mb&lt;/strong&gt;, o bien usar una existente sin formato o crear una.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="669"/>
@@ -488,21 +488,21 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="719"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="758"/>
         <source>&lt;strong&gt;Erase disk&lt;/strong&gt;&lt;br/&gt;This will &lt;font color=&quot;red&quot;&gt;delete&lt;/font&gt; all data currently present on the selected storage device.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Borrar disco&lt;/strong&gt;&lt;br/&gt;Esto &lt;font color=&quot;red&quot;&gt;borrará&lt;/font&gt; todos los datos que se encuentren actualmente en el dispositivo de almacenamiento seleccionado.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="690"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="714"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="753"/>
         <source>&lt;strong&gt;Install alongside&lt;/strong&gt;&lt;br/&gt;The installer will shrink a partition to make room for %1.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Instalar junto a otro SO&lt;/strong&gt;&lt;br/&gt;El instalador reducirá una partición para hacer lugar para %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="700"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="723"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="762"/>
         <source>&lt;strong&gt;Replace a partition&lt;/strong&gt;&lt;br/&gt;Replaces a partition with %1.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Reemplazar una partición&lt;/strong&gt;&lt;br/&gt;Reemplaza una partición con %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="349"/>
@@ -512,7 +512,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="607"/>
         <source>Select which partition to replace</source>
-        <translation type="unfinished"/>
+        <translation>Seleccione que partición reemplazar</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="664"/>
