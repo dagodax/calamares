@@ -516,22 +516,22 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="664"/>
         <source>This storage device does not seem to have an operating system on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
-        <translation type="unfinished"/>
+        <translation>Perangkat penyimpanan ini tampaknya tidak memiliki sistem operasi di atasnya. Apa yang akan Anda lakukan?&lt;br/&gt;Anda dapat meninjau dan mengkonfirmasi pilihan Anda sebelum perubahan dilakukan untuk perangkat penyimpanan.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="684"/>
         <source>This storage device has %1 on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
-        <translation type="unfinished"/>
+        <translation>Perangkat penyimpanan ini memiliki %1 di atasnya. Apa yang akan Anda lakukan?&lt;br/&gt;Anda dapat meninjau dan mengkonfirmasi pilihan Anda sebelum perubahan dilakukan untuk perangkat penyimpanan.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="709"/>
         <source>This storage device already has an operating system on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
-        <translation type="unfinished"/>
+        <translation>Perangkat penyimpanan ini sudah memiliki sistem operasi di atasnya. Apa yang akan Anda lakukan?&lt;br/&gt;Anda dapat meninjau dan mengkonfirmasi pilihan Anda sebelum perubahan dilakukan untuk perangkat penyimpanan.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="748"/>
         <source>This storage device has multiple operating systems on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
-        <translation type="unfinished"/>
+        <translation>Perangkat penyimpanan ini sudah memiliki beberapa sistem operasi di atasnya. Apa yang akan Anda lakukan?&lt;br/&gt;Anda dapat meninjau dan mengkonfirmasi pilihan Anda sebelum perubahan dilakukan untuk perangkat penyimpanan.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.ui" line="14"/>
@@ -848,42 +848,42 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="79"/>
         <source>The &lt;strong&gt;boot environment&lt;/strong&gt; of this system.&lt;br&gt;&lt;br&gt;Older x86 systems only support &lt;strong&gt;BIOS&lt;/strong&gt;.&lt;br&gt;Modern systems usually use &lt;strong&gt;EFI&lt;/strong&gt;, but may also show up as BIOS if the boot environment runs in compatibility mode.&lt;br&gt;Relevant entries in the system setup utility include: CSM, compatibility support module, Legacy boot mode, BIOS mode, etc.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Lingkungan boot&lt;/strong&gt; dari sistem ini.&lt;br&gt;&lt;br&gt;Sistem x86 lawas hanya mendukung &lt;strong&gt;BIOS&lt;/strong&gt;.&lt;br&gt;Sistem modern biasanya menggunakan &lt;strong&gt;EFI&lt;/strong&gt;, tetapi juga dapat muncul sebagai BIOS jika lingkungan boot berjalan dalam modus kompatibilitas.&lt;br&gt;Entri yang relevan dalam utilitas konfigurasi sistem meliputi: CSM, dukungan kompatibilitas modul, modus boot Legacy, modus BIOS, dll.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="87"/>
         <source>The type of &lt;strong&gt;partition table&lt;/strong&gt; currently present on the selected storage device.&lt;br&gt;&lt;br&gt;Common values on x86-compatible systems include &lt;strong&gt;GPT&lt;/strong&gt; and &lt;strong&gt;MSDOS&lt;/strong&gt;.&lt;br&gt;Some systems may use other, less common partition table types, like BSD or Sun.&lt;br&gt;The only way to change the partition table type is to erase and recreate the partition table from scratch, which destroys all data on the storage device.&lt;br&gt;This installer will keep the current partition table unless you explicitly choose otherwise.&lt;br&gt;If unsure, on modern systems GPT is preferred.</source>
-        <translation type="unfinished"/>
+        <translation>Tipe &lt;strong&gt;tabel partisi&lt;/strong&gt; saat ini hadir di perangkat penyimpanan yang dipilih.&lt;br&gt;Nilai umum pada sistem kompatibel x86 mencakup &lt;strong&gt;GPT&lt;/strong&gt; dan &lt;strong&gt;MSDOS&lt;/strong&gt;.&lt;br&gt;Beberapa sistem dapat menggunakan yang lain, tipe-tipe tabel partisi yang kurang umum, seperti BSD atau Sun.&lt;br&gt;Satu-satunya cara untuk mengubah tipe tabel partisi adalah untuk menyetipnya dan menciptakan tabel partisi dari awal, yang menghancurkan semua data pada perangkat penyimpanan.&lt;br&gt;Pemasang ini akan menjaga tabel partisi saat ini kecuali Anda secara gamblang memilih sebaliknya.&lt;br&gt;Jika tidak yakin, pada sistem modern GPT lebih disukai.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="108"/>
         <source>This system was started with an &lt;strong&gt;EFI&lt;/strong&gt; boot environment.&lt;br&gt;&lt;br&gt;Most consumer systems nowadays use EFI, along with a GPT partition table.&lt;br&gt;Current versions of other operating systems, like Windows and Mac OS X also support EFI, and dual boot is possible.&lt;br&gt;In order to boot from an EFI environment, this installer must deploy a boot loader application, like &lt;strong&gt;GRUB&lt;/strong&gt; or &lt;strong&gt;systemd-boot&lt;/strong&gt; on an &lt;strong&gt;EFI System Partition&lt;/strong&gt;. This is automatic, unless you choose manual partitioning, in which case you must choose it or create it on your own.</source>
-        <translation type="unfinished"/>
+        <translation>Sistem ini dimulai dengan lingkungan boot &lt;strong&gt;EFI&lt;/strong&gt;.&lt;br&gt;Kebanyakan sistem konsumen saat ini menggunakan EFI, bersama dengan tabel partisi GPT.&lt;br&gt;Versi saat ini dari sistem operasi lain, seperti Windows dan Mac OSX juga mendukung EFI, dan dual boot adalah mungkin.&lt;br&gt;Untuk boot dari lingkungan EFI, pemasang ini harus menggunakan aplikasi pemuat boot, seperti &lt;strong&gt;GRUB&lt;/strong&gt; atau &lt;strong&gt;systemd-boot&lt;/strong&gt; pada &lt;strong&gt;Partisi Sistem EFI&lt;/strong&gt;. Ini otomatis, kecuali jika Anda memilih pemartisian manual, dalam hal ini Anda harus memilih atau menciptakannya sendiri.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="124"/>
         <source>This system was started with a &lt;strong&gt;BIOS&lt;/strong&gt; boot environment.&lt;br&gt;&lt;br&gt;Older systems which do not support EFI start from BIOS.&lt;br&gt;New systems that support EFI can also start in BIOS mode through a compatibility layer, sometimes known as CSM, Legacy boot mode or BIOS mode. On such systems EFI should be preferred, unless you wish to dual boot with an old operating system, like Windows XP. In that case, a MSDOS partition table should also be used instead of GPT.&lt;br&gt;In order to boot from a BIOS environment, this installer must install a boot loader, like &lt;strong&gt;GRUB&lt;/strong&gt;, either at the beginning of a partition or on the &lt;strong&gt;Master Boot Record&lt;/strong&gt; near the beginning of the partition table (preferred). This is automatic, unless you choose manual partitioning, in which case you must set it up on your own.</source>
-        <translation type="unfinished"/>
+        <translation>Sistem ini dimulai dengan lingkungan boot &lt;strong&gt;BIOS&lt;/strong&gt;.&lt;br&gt;Sistem lawas yang tidak mendukung EFI mulai dari BIOS.&lt;br&gt;Sistem anyar yang mendukung EFI juga dapat mulai dalam modus BIOS melalui lapisan kompatibilitas, kadang-kadang dikenal sebagai CSM, modus boot Legacy atau modus BIOS. Pada sistem seperti EFI harus lebih disukai, kecuali jika Anda ingin dual boot dengan sistem operasi lawas, seperti Windows XP. Dalam hal ini, tabel partisi MSDOS juga harus digunakan sebagai pengganti GPT.&lt;br&gt;Dalam urutan untuk mem-boot dari lingkungan BIOS, pemasang ini harus memasang pemuat boot, seperti &lt;strong&gt;GRUB&lt;/strong&gt;, baik di awal partisi atau pada &lt;strong&gt;Master Boot Record&lt;/strong&gt; di bagian awal tabel partisi (disukai). Ini otomatis, kecuali jika Anda memilih partisi manual, dalam hal ini Anda harus menyetelnya sendiri.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="174"/>
         <source>The selected storage device has a partition table. The partition table type is &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Perangkat penyimpanan yang dipilih memiliki sebuah tabel partisi. Tipe tabel partisinya adalah &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="181"/>
         <source>The selected storage device is a &lt;strong&gt;loop&lt;/strong&gt; device.&lt;br&gt;&lt;br&gt;This is not an actual partition table, it is a pseudo-device that makes a file accessible as a block device. This kind of setup usually only contains a single filesystem.</source>
-        <translation type="unfinished"/>
+        <translation>Perangkat penyimpanan yang dipilih adalah perangkat &lt;strong&gt;lingkaran&lt;/strong&gt;.&lt;br&gt;Ini bukan tabel partisi yang sebenarnya, itu adalah perangkat pseudo yang membuat berkas diakses sebagai perangkat blok. Jenis setup ini biasanya hanya berisi filesystem tunggal.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="188"/>
         <source>This installer &lt;strong&gt;cannot detect a partition table&lt;/strong&gt; on the selected storage device.&lt;br&gt;&lt;br&gt;The device either has no partition table, or the partition table is corrupted or of an unknown type.&lt;br&gt;This installer can create a new partition table for you, either automatically, or through the manual partitioning page.</source>
-        <translation type="unfinished"/>
+        <translation>Pemasang ini &lt;strong&gt;tidak bisa mendeteksi tabel partisi&lt;/strong&gt; pada perangkat penyimpanan yang dipilih.&lt;br&gt;Perangkat baik yang tidak memiliki tabel partisi, atau tabel partisi rusak atau dari tipe yang tidak diketahui.&lt;br&gt;Pemasang ini bisa membuat tabel partisi baru untuk Anda, baik secara otomatis, atau melalui halaman pemartisian manual.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="198"/>
         <source>&lt;br&gt;&lt;br&gt;This is the recommended partition table type for modern systems which start from an &lt;strong&gt;EFI&lt;/strong&gt; boot environment.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;br&gt;&lt;br&gt;Ini adalah tipe tabel partisi yang dianjurkan bagi sistem moderen untuk memulai dari lingkungan boot &lt;strong&gt;EFI&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="204"/>
@@ -1520,7 +1520,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="225"/>
         <source>Current state:</source>
-        <translation type="unfinished"/>
+        <translation>Negara saat ini:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="237"/>
@@ -1567,7 +1567,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/ReplaceWidget.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"/>
+        <translation>Formulir</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplaceWidget.cpp" line="134"/>
