@@ -208,12 +208,12 @@ ChoicePage::setupChoices()
     CALAMARES_RETRANSLATE(
         m_somethingElseButton->setText( tr( "<strong>Manual partitioning</strong><br/>"
                                             "You can create or resize partitions yourself."
-                                            "  Having a GPT partition table and <strong>fat32 512Mb /boot partition"
-                                            " is a must for UEFI installs</strong>, either use an existing without formatting or create one."
-                                            "<font color=\"red\">Currently there is a bug in manual partitioning which makes the GUI "
-                                            "not progress after the summary page.  This does not effect the actual install, clicking on the "
-                                            " summary page will move the GUI to the install page, do not cancel the install, the finish page "
-                                            "will show correctly afterward.</font>")
+                                            "  Having a GPT partition table and <strong>fat32 512Mb /boot partition "
+                                            "is a must for UEFI installs</strong>, either use an existing without formatting or create one."
+                                            "<font color=\"red\"> Currently there is a bug in manual partitioning which makes the GUI "
+                                            "not progress after the summary page</font>.  This does not effect the actual install, "
+                                            "clicking on the summary page will move the GUI to the install page. Do not cancel the "
+                                            "install, the finish page will show correctly afterward.")
                                         .arg( Calamares::Branding::instance()->
                                               string( Calamares::Branding::ShortVersionedName ) ) );
     )

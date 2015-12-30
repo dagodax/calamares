@@ -26,6 +26,7 @@
 #include "core/KPMHelpers.h"
 #include "gui/CreatePartitionDialog.h"
 #include "gui/EditExistingPartitionDialog.h"
+#include "gui/ScanningDialog.h"
 
 #include "ui_PartitionPage.h"
 #include "ui_CreatePartitionTableDialog.h"
@@ -43,6 +44,8 @@
 #include <QMessageBox>
 #include <QPointer>
 #include <QDir>
+#include <QFutureWatcher>
+#include <QtConcurrent/QtConcurrent>
 
 PartitionPage::PartitionPage( PartitionCoreModule* core, QWidget* parent )
     : QWidget( parent )
@@ -188,13 +191,33 @@ PartitionPage::onDeleteClicked()
     m_core->deletePartition( model->device(), partition );
 }
 
+
 void
 PartitionPage::onRevertClicked()
 {
-    int oldIndex = m_ui->deviceComboBox->currentIndex();
-    m_core->revert();
-    m_ui->deviceComboBox->setCurrentIndex( oldIndex );
-    updateFromCurrentDevice();
+    ScanningDialog* rescanningDialog =
+            new ScanningDialog( tr( "Scanning storage devices..." ), this );
+    rescanningDialog->show();
+
+    QFutureWatcher< void >* watcher = new QFutureWatcher< void >();
+    connect( watcher, &QFutureWatcher< void >::finished,
+             this, [ watcher, rescanningDialog ]
+    {
+        watcher->deleteLater();
+        rescanningDialog->hide();
+        rescanningDialog->deleteLater();
+    } );
+
+    QFuture< void > future = QtConcurrent::run( [ this ]
+    {
+        QMutexLocker locker( &m_revertMutex );
+
+        int oldIndex = m_ui->deviceComboBox->currentIndex();
+        m_core->revertAllDevices();
+        m_ui->deviceComboBox->setCurrentIndex( oldIndex );
+        updateFromCurrentDevice();
+    } );
+    watcher->setFuture( future );
 }
 
 void
@@ -269,6 +292,26 @@ PartitionPage::updateFromCurrentDevice()
     m_ui->partitionBarsView->setModel( model );
     m_ui->partitionTreeView->setModel( model );
     m_ui->partitionTreeView->expandAll();
+
+    // Make both views use the same selection model.
+    if ( m_ui->partitionBarsView->selectionModel() !=
+         m_ui->partitionTreeView->selectionModel() )
+    {
+        QItemSelectionModel* selectionModel = m_ui->partitionTreeView->selectionModel();
+        m_ui->partitionTreeView->setSelectionModel( m_ui->partitionBarsView->selectionModel() );
+        selectionModel->deleteLater();
+    }
+
+    // This is necessary because even with the same selection model it might happen that
+    // a !=0 column is selected in the tree view, which for some reason doesn't trigger a
+    // timely repaint in the bars view.
+    connect( m_ui->partitionBarsView->selectionModel(), &QItemSelectionModel::currentChanged,
+             this, [=]
+    {
+        QModelIndex selectedIndex = m_ui->partitionBarsView->selectionModel()->currentIndex();
+        selectedIndex = selectedIndex.sibling( selectedIndex.row(), 0 );
+        m_ui->partitionBarsView->setCurrentIndex( selectedIndex );
+    }, Qt::UniqueConnection );
 
     // Must be done here because we need to have a model set to define
     // individual column resize mode
