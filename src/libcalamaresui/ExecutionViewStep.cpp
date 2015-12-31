@@ -128,6 +128,7 @@ ExecutionViewStep::isAtEnd() const
 void
 ExecutionViewStep::onActivate()
 {
+    cDebug() << "loading ok ";
     CALAMARES_RETRANSLATE_WIDGET( m_widget,
         if ( !Calamares::Branding::instance()->slideshowPath().isEmpty() )
             m_slideShow->setSource( QUrl::fromLocalFile( Calamares::Branding::instance()
@@ -151,7 +152,6 @@ ExecutionViewStep::onActivate()
 QList< Calamares::job_ptr >
 ExecutionViewStep::jobs() const
 {
-    cDebug() << "loading ok ";
     return QList< Calamares::job_ptr >();
 }
 
