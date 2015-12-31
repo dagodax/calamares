@@ -20,13 +20,27 @@
 #define SCANNINGDIALOG_H
 
 #include <QDialog>
+#include <QFuture>
 
+#include <functional>
 
 class ScanningDialog : public QDialog
 {
     Q_OBJECT
 public:
-    explicit ScanningDialog( const QString& text, QWidget* parent = nullptr );
+    explicit ScanningDialog( const QString& text,
+                             const QString& windowTitle,
+                             QWidget* parent = nullptr );
+
+    static void run( const QFuture< void >& future,
+                     const QString& text,
+                     const QString& windowTitle,
+                     const std::function< void() >& callback = []{},
+                     QWidget* parent = nullptr );
+
+    static void run( const QFuture< void >& future,
+                     const std::function< void() >& callback = []{},
+                     QWidget* parent = nullptr );
 
 public slots:
     void setVisible( bool visible ) override;

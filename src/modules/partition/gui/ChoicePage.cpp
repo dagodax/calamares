@@ -31,6 +31,7 @@
 #include "PartitionBarsView.h"
 #include "PartitionLabelsView.h"
 #include "DeviceInfoWidget.h"
+#include "ScanningDialog.h"
 
 #include "utils/CalamaresUtilsGui.h"
 #include "utils/Logger.h"
@@ -98,12 +99,13 @@ ChoicePage::ChoicePage( QWidget* parent )
     CALAMARES_RETRANSLATE(
         retranslateUi( this );
         m_drivesLabel->setText( tr( "Pick a storage de&vice:" ) );
-        m_previewBeforeLabel->setText( tr( "Before:" ) );
+        m_previewBeforeLabel->setText( tr( "Device:" ) );
         m_previewAfterLabel->setText(  tr( "After:" ) );
     )
 
     m_previewBeforeFrame->setSizePolicy( QSizePolicy::Preferred, QSizePolicy::Expanding );
     m_previewAfterFrame->setSizePolicy( QSizePolicy::Preferred, QSizePolicy::Expanding );
+    m_previewAfterLabel->hide();
     m_previewAfterFrame->hide();
     // end
 }
@@ -213,7 +215,7 @@ ChoicePage::setupChoices()
                                             "<font color=\"red\"> Currently there is a bug in manual partitioning which makes the GUI "
                                             "not progress after the summary page</font>.  This does not effect the actual install, "
                                             "clicking on the summary page will move the GUI to the install page. Do not cancel the "
-                                            "install, the finish page will show correctly afterward.") );
+                                            "install, the finish page will show correctly afterward." ) );
     )
     m_somethingElseButton->setIconSize( iconSize );
     m_somethingElseButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::PartitionManual,
@@ -252,7 +254,7 @@ ChoicePage::setupChoices()
         if ( checked )
         {
             m_choice = Replace;
-            setNextEnabled( true );
+            setNextEnabled( false );
             emit actionChosen();
         }
     } );
@@ -420,35 +422,47 @@ ChoicePage::applyDeviceChoice()
 void
 ChoicePage::applyActionChoice( ChoicePage::Choice choice )
 {
+    m_beforePartitionBarsView->selectionModel()->
+            disconnect( SIGNAL( currentRowChanged( QModelIndex, QModelIndex ) ) );
+    m_beforePartitionBarsView->selectionModel()->clearSelection();
+    m_beforePartitionBarsView->selectionModel()->clearCurrentIndex();
+
     switch ( choice )
     {
     case Erase:
         if ( m_core->isDirty() )
         {
-            m_core->revertDevice( selectedDevice() );
+            ScanningDialog::run( QtConcurrent::run( [ = ]
+            {
+                QMutexLocker locker( &m_coreMutex );
+                m_core->revertDevice( selectedDevice() );
+            } ),
+            [ = ]
+            {
+                PartitionActions::doAutopartition( m_core, selectedDevice() );
+            },
+            this );
         }
+        else
+            PartitionActions::doAutopartition( m_core, selectedDevice() );
 
-        PartitionActions::doAutopartition( m_core, selectedDevice() );
         break;
     case Replace:
         if ( m_core->isDirty() )
         {
-            m_core->revertDevice( selectedDevice() );
-        }
-
-        connect( m_beforePartitionBarsView->selectionModel(), &QItemSelectionModel::currentRowChanged,
-                 this, [ this ]( const QModelIndex& current, const QModelIndex& previous )
-        {
-            QFutureWatcher< void >* watcher = new QFutureWatcher< void >();
-            connect( watcher, &QFutureWatcher< void >::finished,
-                     this, [ watcher ]
+            ScanningDialog::run( QtConcurrent::run( [ = ]
             {
-                watcher->deleteLater();
-            } );
+                QMutexLocker locker( &m_coreMutex );
+                m_core->revertDevice( selectedDevice() );
+            } ),
+            []{},
+            this );
+        }
+        setNextEnabled( !m_beforePartitionBarsView->selectionModel()->selectedRows().isEmpty() );
 
-            QFuture< void > future = QtConcurrent::run( this, &ChoicePage::doReplaceSelectedPartition, current );
-            watcher->setFuture( future );
-        } );
+        connect( m_beforePartitionBarsView->selectionModel(), SIGNAL( currentRowChanged( QModelIndex, QModelIndex ) ),
+                 this, SLOT( doReplaceSelectedPartition( QModelIndex, QModelIndex ) ),
+                 Qt::UniqueConnection );
         break;
     case NoChoice:
     case Manual:
@@ -459,25 +473,34 @@ ChoicePage::applyActionChoice( ChoicePage::Choice choice )
 
 
 void
-ChoicePage::doReplaceSelectedPartition( const QModelIndex& current )
+ChoicePage::doReplaceSelectedPartition( const QModelIndex& current,
+                                        const QModelIndex& previous )
 {
-    cDebug() << "begin doReplace";
-    QMutexLocker locker( &m_coreMutex );
+    if ( !current.isValid() )
+        return;
 
-    if ( m_core->isDirty() )
+    ScanningDialog::run( QtConcurrent::run( [ = ]
     {
-        m_core->revertDevice( selectedDevice() );
-    }
-    // We can't use the PartitionPtrRole because we need to make changes to the
-    // main DeviceModel, not the immutable copy.
-    QString partPath = current.data( PartitionModel::PartitionPathRole ).toString();
-    Partition* partition = KPMHelpers::findPartitionByPath( { selectedDevice() },
-                                                            partPath );
-    if ( partition )
-        PartitionActions::doReplacePartition( m_core,
-                                              selectedDevice(),
-                                              partition );
-    cDebug() << "end doReplace";
+        QMutexLocker locker( &m_coreMutex );
+
+        if ( m_core->isDirty() )
+        {
+            m_core->revertDevice( selectedDevice() );
+        }
+        // We can't use the PartitionPtrRole because we need to make changes to the
+        // main DeviceModel, not the immutable copy.
+        QString partPath = current.data( PartitionModel::PartitionPathRole ).toString();
+        Partition* partition = KPMHelpers::findPartitionByPath( { selectedDevice() },
+                                                                partPath );
+        if ( partition )
+            PartitionActions::doReplacePartition( m_core,
+                                                  selectedDevice(),
+                                                  partition );
+    } ),
+    [=]
+    {
+        setNextEnabled( !m_beforePartitionBarsView->selectionModel()->selectedRows().isEmpty() );
+    }, this );
 }
 
 
@@ -570,6 +593,8 @@ ChoicePage::updateActionChoicePreview( ChoicePage::Choice choice )
     switch ( choice )
     {
     case Alongside:
+        m_previewBeforeLabel->setText( tr( "Device:" ) );
+        m_previewAfterLabel->hide();
         // split widget goes here
         //label->setText( tr( "Drag to split:" ) );
         m_selectLabel->hide();
@@ -578,6 +603,7 @@ ChoicePage::updateActionChoicePreview( ChoicePage::Choice choice )
     case Erase:
     case Replace:
         {
+            m_previewBeforeLabel->setText( tr( "Before:" ) );
             m_afterPartitionBarsView = new PartitionBarsView( m_previewAfterFrame );
             m_afterPartitionLabelsView = new PartitionLabelsView( m_previewAfterFrame );
             m_afterPartitionLabelsView->setCustomNewRootLabel( Calamares::Branding::instance()->
@@ -596,6 +622,7 @@ ChoicePage::updateActionChoicePreview( ChoicePage::Choice choice )
             layout->addWidget( m_afterPartitionLabelsView );
 
             m_previewAfterFrame->show();
+            m_previewAfterLabel->show();
 
             if ( m_choice == Erase )
                 m_selectLabel->hide();
@@ -611,6 +638,8 @@ ChoicePage::updateActionChoicePreview( ChoicePage::Choice choice )
     case Manual:
         m_selectLabel->hide();
         m_previewAfterFrame->hide();
+        m_previewBeforeLabel->setText( tr( "Device:" ) );
+        m_previewAfterLabel->hide();
         break;
     }
 
@@ -626,15 +655,8 @@ ChoicePage::updateActionChoicePreview( ChoicePage::Choice choice )
         previewSelectionMode = QAbstractItemView::NoSelection;
     }
 
-    foreach ( QObject* child, m_previewBeforeFrame->children() )
-    {
-        PartitionBarsView* pbv = qobject_cast< PartitionBarsView* >( child );
-        if ( pbv )
-            pbv->setSelectionMode( previewSelectionMode );
-        PartitionLabelsView* plv = qobject_cast< PartitionLabelsView* >( child );
-        if ( plv )
-            plv->setSelectionMode( previewSelectionMode );
-    }
+    m_beforePartitionBarsView->setSelectionMode( previewSelectionMode );
+    m_beforePartitionLabelsView->setSelectionMode( previewSelectionMode );
 }
 
 
