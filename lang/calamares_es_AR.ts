@@ -463,74 +463,81 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
 <context>
     <name>ChoicePage</name>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="100"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="101"/>
         <source>Pick a storage de&amp;vice:</source>
         <translation>Elija un dispositivo de almacenamiento:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="101"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="102"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="596"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="641"/>
+        <source>Device:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="211"/>
+        <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself.  Having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;, either use an existing without formatting or create one.&lt;font color=&quot;red&quot;&gt; Currently there is a bug in manual partitioning which makes the GUI not progress after the summary page&lt;/font&gt;.  This does not effect the actual install, clicking on the summary page will move the GUI to the install page. Do not cancel the install, the finish page will show correctly afterward.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="606"/>
         <source>Before:</source>
         <translation>Antes:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="102"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="632"/>
+        <source>&lt;strong&gt;Select which partition to replace&lt;/strong&gt;</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="103"/>
         <source>After:</source>
         <translation>Luego:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="209"/>
-        <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself.  Having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;, either use an existing without formatting or create one.</source>
-        <translation>&lt;strong&gt;Particionamiento Manual&lt;/strong&gt;&lt;br/&gt;Puede crear o redimensionar particiones Ud. mismo. Para instalaciones UEFI es necesario tener una tabla partición GPT y &lt;strong&gt;partición /boot en fat32 de 512mb&lt;/strong&gt;, o bien usar una existente sin formato o crear una.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="669"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="695"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="719"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="758"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="689"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="715"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="739"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="778"/>
         <source>&lt;strong&gt;Erase disk&lt;/strong&gt;&lt;br/&gt;This will &lt;font color=&quot;red&quot;&gt;delete&lt;/font&gt; all data currently present on the selected storage device.</source>
         <translation>&lt;strong&gt;Borrar disco&lt;/strong&gt;&lt;br/&gt;Esto &lt;font color=&quot;red&quot;&gt;borrará&lt;/font&gt; todos los datos que se encuentren actualmente en el dispositivo de almacenamiento seleccionado.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="690"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="714"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="753"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="710"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="734"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="773"/>
         <source>&lt;strong&gt;Install alongside&lt;/strong&gt;&lt;br/&gt;The installer will shrink a partition to make room for %1.</source>
         <translation>&lt;strong&gt;Instalar junto a otro SO&lt;/strong&gt;&lt;br/&gt;El instalador reducirá una partición para hacer lugar para %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="700"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="723"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="762"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="720"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="743"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="782"/>
         <source>&lt;strong&gt;Replace a partition&lt;/strong&gt;&lt;br/&gt;Replaces a partition with %1.</source>
         <translation>&lt;strong&gt;Reemplazar una partición&lt;/strong&gt;&lt;br/&gt;Reemplaza una partición con %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="349"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="352"/>
         <source>Boot loader location:</source>
         <translation>Ubicación del cargador de arranque:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="607"/>
-        <source>Select which partition to replace</source>
-        <translation>Seleccione que partición reemplazar</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="664"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="684"/>
         <source>This storage device does not seem to have an operating system on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
         <translation>Este dispositivo de almacenamiento parece no tener un sistema de operativo. ¿Qué le gustaría hacer?&lt;br/&gt;Podrá revisar y confirmar sus elecciones antes de que cualquier cambio se aplique al dispositivo de almacenamiento.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="684"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="704"/>
         <source>This storage device has %1 on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
         <translation>Este dispositivo de almacenamiento tiene %1 en él. ¿Qué desea hacer?&lt;br/&gt;Podrá revisar y confirmar sus opciones antes de que cualquier cambio se realice en el dispositivo de almacenamiento.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="709"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="729"/>
         <source>This storage device already has an operating system on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
         <translation>Este dispositivo de almacenamiento ya tiene un sistema operativo.¿Qué desearía hacer?&lt;br/&gt;Podrá revisar y confirmar sus opciones antes de que se haga cualquier cambio en el dispositivo de almacenamiento.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="748"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="768"/>
         <source>This storage device has multiple operating systems on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
         <translation>Este dispositivo de almacenamiento tiene múltiples sistemas operativos.¿Qué desearía hacer?&lt;br/&gt;Podrá revisar y confirmar sus opciones antes de que se haga cualquier cambio en el dispositivo de almacenamiento.</translation>
     </message>
@@ -1384,31 +1391,33 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <name>PartitionModel</name>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="137"/>
+        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="169"/>
         <source>Free Space</source>
         <translation>Espacio libre</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="141"/>
+        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="173"/>
         <source>New partition</source>
         <translation>Partición nueva</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="222"/>
+        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="242"/>
         <source>Name</source>
         <translation>Nombre</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="224"/>
+        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="244"/>
         <source>File System</source>
         <translation>Sistema de archivos</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="226"/>
+        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="246"/>
         <source>Mount Point</source>
         <translation>Punto de montaje</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="228"/>
+        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="248"/>
         <source>Size</source>
         <translation>Tamaño</translation>
     </message>
@@ -1456,7 +1465,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
         <translation>Instalar el cargador de &amp;arranque en:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="135"/>
+        <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="139"/>
         <source>Are you sure you want to create a new partition table on %1?</source>
         <translation>¿Está seguro de querer crear una nueva tabla de particiones en %1?</translation>
     </message>
@@ -1736,6 +1745,19 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="237"/>
         <source>Could not open device &apos;%1&apos;.</source>
         <translation>No se pudo abrir el dispositivo &apos;%1&apos;.</translation>
+    </message>
+</context>
+<context>
+    <name>ScanningDialog</name>
+    <message>
+        <location filename="../src/modules/partition/gui/ScanningDialog.cpp" line="83"/>
+        <source>Scanning storage devices...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ScanningDialog.cpp" line="84"/>
+        <source>Partitioning</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
