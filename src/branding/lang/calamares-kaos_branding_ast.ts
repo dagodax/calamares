@@ -4,7 +4,7 @@
     <message>
         <location filename="../kaos_branding/show.qml" line="47"/>
         <source>Here the actual install of KaOS will start.&lt;br/&gt;Use the left &lt;b&gt;mouse button&lt;/b&gt; to go to the next slide, right for previous.&lt;br/&gt;After creating your chosen disk setup in the first 10 % &lt;br/&gt;the full copying of the ISO will take the longest of this install phase &lt;br/&gt;and will run until approximately 30%.&lt;br/&gt;</source>
-        <translation>Equí ye u entamará la instalación actual de KaOS.&lt;br/&gt;Usa&apos;l &lt;b&gt;botón esquierdu del mur&lt;/b&gt; pa dir a la dispositiva siguiente, el drechu pa dir a la anterior.&lt;br/&gt;Dempués de crear la to configuración de discos escoyida nel primer 10%, &lt;br/&gt;la copia completa de la ISO ye lo que más tardará nesta fas d&apos;instalación &lt;br/&gt; y executaráse fasta aproximadaménte&apos;l 30%.&lt;br/&gt;</translation>
+        <translation>Equí ye u entamará la instalación actual de KaOS.&lt;br/&gt;Usa&apos;l &lt;b&gt;botón esquierdu del mur&lt;/b&gt; pa dir a la dispositiva siguiente,&lt;br/&gt;el drechu pa dir a la anterior.&lt;br/&gt;Dempués de crear la to configuración de discos escoyida nel primer 10%, &lt;br/&gt;la copia completa de la ISO ye lo que más tardará nesta fas d&apos;instalación &lt;br/&gt; y executaráse fasta aproximadaménte&apos;l 30%.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../kaos_branding/show.qml" line="73"/>
@@ -24,7 +24,7 @@
     <message>
         <location filename="../kaos_branding/show.qml" line="144"/>
         <source>For package management Octopi is the GUI application.&lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>L&apos;aplicación pa la xestión de paquetes ye Octopi.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../kaos_branding/show.qml" line="166"/>
