@@ -213,9 +213,7 @@ ChoicePage::setupChoices()
                                             "<font color=\"red\"> Currently there is a bug in manual partitioning which makes the GUI "
                                             "not progress after the summary page</font>.  This does not effect the actual install, "
                                             "clicking on the summary page will move the GUI to the install page. Do not cancel the "
-                                            "install, the finish page will show correctly afterward.")
-                                        .arg( Calamares::Branding::instance()->
-                                              string( Calamares::Branding::ShortVersionedName ) ) );
+                                            "install, the finish page will show correctly afterward.") );
     )
     m_somethingElseButton->setIconSize( iconSize );
     m_somethingElseButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::PartitionManual,

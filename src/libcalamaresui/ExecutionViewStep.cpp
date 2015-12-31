@@ -152,6 +152,7 @@ QList< Calamares::job_ptr >
 ExecutionViewStep::jobs() const
 {
     return QList< Calamares::job_ptr >();
+    cDebug() << "loading ok ";
 }
 
 
