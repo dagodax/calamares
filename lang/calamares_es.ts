@@ -472,12 +472,12 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="596"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="641"/>
         <source>Device:</source>
-        <translation type="unfinished"/>
+        <translation>Dispositivo:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="211"/>
         <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself.  Having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;, either use an existing without formatting or create one.&lt;font color=&quot;red&quot;&gt; Currently there is a bug in manual partitioning which makes the GUI not progress after the summary page&lt;/font&gt;.  This does not effect the actual install, clicking on the summary page will move the GUI to the install page. Do not cancel the install, the finish page will show correctly afterward.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Particionamiento manual&lt;/strong&gt;&lt;br/&gt;Puede crear o redimensionar particiones Ud. mismo. Para instalaciones UEFI se debe contar con una tabla de partición GPT y &lt;strong&gt;una partición /boot fat32 de 512MB&lt;/strong&gt;, o bien puede una existente sin formato o crear una.&lt;font color=&quot;red&quot;&gt; Actualmente hay un error en el particionamiento manual que hace que la GUI no progrese luego de la página de resumen&lt;/font&gt;. Esto no afecta a la instalación en proceso, haciendo clic en la página de resumen moverá la GUI a la página de instalación. No cancele la instalación, la página final se mostrará correctamente después.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="606"/>
@@ -487,7 +487,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="632"/>
         <source>&lt;strong&gt;Select which partition to replace&lt;/strong&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Seleccione la partición a reemplazar&lt;/storng&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="103"/>
@@ -1752,12 +1752,12 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/partition/gui/ScanningDialog.cpp" line="83"/>
         <source>Scanning storage devices...</source>
-        <translation type="unfinished"/>
+        <translation>Buscando dispositivos de almacenamiento...</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ScanningDialog.cpp" line="84"/>
         <source>Partitioning</source>
-        <translation type="unfinished"/>
+        <translation>Particionando</translation>
     </message>
 </context>
 <context>
