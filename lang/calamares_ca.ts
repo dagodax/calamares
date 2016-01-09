@@ -472,12 +472,12 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="596"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="641"/>
         <source>Device:</source>
-        <translation type="unfinished"/>
+        <translation>Dispositiu:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="211"/>
         <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself.  Having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;, either use an existing without formatting or create one.&lt;font color=&quot;red&quot;&gt; Currently there is a bug in manual partitioning which makes the GUI not progress after the summary page&lt;/font&gt;.  This does not effect the actual install, clicking on the summary page will move the GUI to the install page. Do not cancel the install, the finish page will show correctly afterward.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Particions manuals&lt;/strong&gt;&lt;br/&gt;Podeu crear o canviar la mida de les particions. És imprescindible tenir una taula de particions GPT i una partició &lt;strong&gt;fat32 de 512Mb per a /boot per a instal·lacions UEFI&lt;/strong&gt;. O bé useu-ne una d&apos;existent sense formatar-la o bé creeu-ne una. &lt;font color=&quot;red&quot;&gt; Ara hi ha un error al partiment manual que fa que la interfície gràfica no avanci després de la pantalla de resum&lt;/font&gt;. Això no afecta la instal·lació. Si es clica a la pàgina de resum s&apos;avançarà a la pàgina d&apos;instal·lació. No cancel·leu la instal·lació, la pàgina d&apos;acabament es mostrarà, després, correctament.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="606"/>
@@ -487,7 +487,7 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="632"/>
         <source>&lt;strong&gt;Select which partition to replace&lt;/strong&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Seleccioneu quina partició reemplaçar&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="103"/>
@@ -856,12 +856,12 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="79"/>
         <source>The &lt;strong&gt;boot environment&lt;/strong&gt; of this system.&lt;br&gt;&lt;br&gt;Older x86 systems only support &lt;strong&gt;BIOS&lt;/strong&gt;.&lt;br&gt;Modern systems usually use &lt;strong&gt;EFI&lt;/strong&gt;, but may also show up as BIOS if the boot environment runs in compatibility mode.&lt;br&gt;Relevant entries in the system setup utility include: CSM, compatibility support module, Legacy boot mode, BIOS mode, etc.</source>
-        <translation>L&apos;&lt;strong&gt;entorn d&apos;arrencada&lt;/strong&gt; d&apos;aquest sistema.&lt;br&gt;&lt;br&gt;Els sistemes antics x86 només tenen suport per a &lt;strong&gt;BIOS&lt;/strong&gt;.&lt;br&gt;Els moderns normalment usen &lt;strong&gt;EFI&lt;/strong&gt;, però també poden mostrar BIOS si l&apos;entorn d&apos;arrencada s&apos;executa en mode de compatibilitat.&lt;br&gt;Les entrades rellevants a la utilitat de configuració del sistema inclouen la compatibilitat amb CSM, el mòdul de suport de compatibilitat, mode d&apos;arrencada Legacy, mode BIOS, etc.</translation>
+        <translation>L&apos;&lt;strong&gt;entorn d&apos;arrencada&lt;/strong&gt; d&apos;aquest sistema.&lt;br&gt;&lt;br&gt;Els sistemes antics x86 només tenen suport per a &lt;strong&gt;BIOS&lt;/strong&gt;.&lt;br&gt;Els moderns normalment usen &lt;strong&gt;EFI&lt;/strong&gt;, però també poden mostrar-se com a BIOS si l&apos;entorn d&apos;arrencada s&apos;executa en mode de compatibilitat.&lt;br&gt;Les entrades rellevants a la utilitat de configuració del sistema inclouen la compatibilitat amb CSM, el mòdul de suport de compatibilitat, mode d&apos;arrencada de llegat, mode BIOS, etc.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="87"/>
         <source>The type of &lt;strong&gt;partition table&lt;/strong&gt; currently present on the selected storage device.&lt;br&gt;&lt;br&gt;Common values on x86-compatible systems include &lt;strong&gt;GPT&lt;/strong&gt; and &lt;strong&gt;MSDOS&lt;/strong&gt;.&lt;br&gt;Some systems may use other, less common partition table types, like BSD or Sun.&lt;br&gt;The only way to change the partition table type is to erase and recreate the partition table from scratch, which destroys all data on the storage device.&lt;br&gt;This installer will keep the current partition table unless you explicitly choose otherwise.&lt;br&gt;If unsure, on modern systems GPT is preferred.</source>
-        <translation>El tipus de &lt;strong&gt;taula de particions&lt;/strong&gt; actualment present al dispositiu d&apos;emmagatzematge seleccionat. &lt;br&gt; Valors comuns sobre els sistemes compatibles x86 inclouen &lt;strong&gt;GPT&lt;/strong&gt; i &lt;strong&gt;MSDOS&lt;/strong &gt;. &lt;br&gt; Alguns sistemes poden utilitzar altres tipus de taules de particions menys comuns, com ara BSD o Sun. &lt;br&gt;L&apos;única manera de canviar el tipus de taula de particions és esborrar i tornar a crear la taula de particions des de zero, fet que destrueix totes les dades del dispositiu d&apos;emmagatzematge. &lt;br&gt; Aquest instal·lador mantindrà la taula de particions actual llevat que decidiu expressament el contrari. &lt;br&gt;Si no n&apos;esteu segurs, als sistemes moderns es prefereix GPT.</translation>
+        <translation>El tipus de &lt;strong&gt;taula de particions&lt;/strong&gt; actualment present al dispositiu d&apos;emmagatzematge seleccionat. &lt;br&gt; Els valors comuns dels sistemes compatibles amb x86 inclouen &lt;strong&gt;GPT&lt;/strong&gt; i &lt;strong&gt;MSDOS&lt;/strong &gt;. &lt;br&gt; Alguns sistemes poden utilitzar altres tipus de taules de particions menys comuns, com ara BSD o Sun. &lt;br&gt;L&apos;única manera de canviar el tipus de taula de particions és esborrar i tornar a crear la taula de particions des de zero, fet que destrueix totes les dades del dispositiu d&apos;emmagatzematge. &lt;br&gt; Aquest instal·lador mantindrà la taula de particions actual llevat que decidiu expressament el contrari. &lt;br&gt;Si no n&apos;esteu segur, als sistemes moderns es prefereix GPT.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="108"/>
@@ -871,7 +871,7 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="124"/>
         <source>This system was started with a &lt;strong&gt;BIOS&lt;/strong&gt; boot environment.&lt;br&gt;&lt;br&gt;Older systems which do not support EFI start from BIOS.&lt;br&gt;New systems that support EFI can also start in BIOS mode through a compatibility layer, sometimes known as CSM, Legacy boot mode or BIOS mode. On such systems EFI should be preferred, unless you wish to dual boot with an old operating system, like Windows XP. In that case, a MSDOS partition table should also be used instead of GPT.&lt;br&gt;In order to boot from a BIOS environment, this installer must install a boot loader, like &lt;strong&gt;GRUB&lt;/strong&gt;, either at the beginning of a partition or on the &lt;strong&gt;Master Boot Record&lt;/strong&gt; near the beginning of the partition table (preferred). This is automatic, unless you choose manual partitioning, in which case you must set it up on your own.</source>
-        <translation>Aquest sistema s&apos;ha iniciat amb un entorn d&apos;arrencada &lt;strong&gt;BIOS &lt;/strong&gt;. &lt;br&gt;&lt;br&gt;Els sistemes més antics que no suporten l&apos;arrencada EFI del BIOS. &lt;br&gt; Els nous sistemes que tenen suport d&apos;EFI també es poden iniciar en mode BIOS a través d&apos;un capa de compatibilitat, de vegades coneguda com a CSM, la manera d&apos;arrencada Legacy o la manera BIOS. En aquests sistemes s&apos;ha de preferir EFI, a menys que es vulgui una arrencada dual amb un sistema operatiu antic, com ara Windows XP. En aquest cas també s&apos;ha d&apos;utilitzar una taula de particions MS-DOS en lloc de GPT. &lt;br&gt; Per arrencar des d&apos;un entorn BIOS, aquest instal·lador ha d&apos;instal·lar un carregador d&apos;arrencada, com ara el &lt;strong&gt;GRUB&lt;/strong&gt;, ja sigui al començament d&apos;una partició o al &lt;strong&gt;Master Boot Record&lt;/strong&gt;, a prop del començament de la taula de particions (preferit). Això és automàtic, llevat que trieu un partiment manual, en què caldrà que ho configureu.</translation>
+        <translation>Aquest sistema s&apos;ha iniciat amb un entorn d&apos;arrencada &lt;strong&gt;BIOS &lt;/strong&gt;. &lt;br&gt;&lt;br&gt;Els sistemes més antics que no suporten l&apos;arrencada EFI del BIOS. &lt;br&gt; Els nous sistemes que tenen suport d&apos;EFI també es poden iniciar en mode BIOS a través d&apos;un capa de compatibilitat, de vegades coneguda com a CSM, la manera d&apos;arrencada de llegat, Legacy, o la manera BIOS. En aquests sistemes s&apos;ha de preferir EFI, a menys que es vulgui una arrencada dual amb un sistema operatiu antic, com ara Windows XP. En aquest cas també s&apos;ha d&apos;utilitzar una taula de particions MS-DOS en lloc de GPT. &lt;br&gt; Per arrencar des d&apos;un entorn BIOS, aquest instal·lador ha d&apos;instal·lar un carregador d&apos;arrencada, com ara el &lt;strong&gt;GRUB&lt;/strong&gt;, ja sigui al començament d&apos;una partició o al &lt;strong&gt;Master Boot Record&lt;/strong&gt;, a prop del començament de la taula de particions (preferit). Això és automàtic, llevat que trieu un partiment manual, en què caldrà que ho configureu.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="174"/>
@@ -1752,12 +1752,12 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/partition/gui/ScanningDialog.cpp" line="83"/>
         <source>Scanning storage devices...</source>
-        <translation type="unfinished"/>
+        <translation>Escanejant els dispositius d&apos;emmagatzematge...</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ScanningDialog.cpp" line="84"/>
         <source>Partitioning</source>
-        <translation type="unfinished"/>
+        <translation>Particions</translation>
     </message>
 </context>
 <context>
