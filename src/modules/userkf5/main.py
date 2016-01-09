@@ -100,8 +100,6 @@ def run():
     # fix SUID to capable permissions on iputils
     libcalamares.utils.target_env_call(
         ['setcap', 'cap_net_raw=ep', '/usr/bin/ping'])
-    libcalamares.utils.target_env_call(
-        ['setcap', 'cap_net_raw=ep', '/usr/bin/ping6'])
 
     # set pacman.conf for kf5 needed repos
     #shutil.copy2('/etc/skel/pacman.conf', '%s/etc/pacman.conf' % install_path)

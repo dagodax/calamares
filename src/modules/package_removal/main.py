@@ -52,7 +52,7 @@ def run():
     if os.path.exists("%s/etc/kdeos-hwdetect.conf" % install_path):
         print('Removing live start-up packages')
         libcalamares.utils.target_env_call(
-            ['pacman', '-Rns', '--noconfirm', 'kdeos-hardware-detection'])
+            ['pacman', '-Rns', '--noconfirm', 'hardware-detection'])
 
     # Remove init-live
     if os.path.exists("%s/etc/live" % install_path):
