@@ -176,14 +176,14 @@ ChoicePage::setupChoices()
 
     QSize iconSize( CalamaresUtils::defaultIconSize().width() * 2.5,
                     CalamaresUtils::defaultIconSize().height() * 2.5 );
-    QButtonGroup* grp = new QButtonGroup( this );
+    m_grp = new QButtonGroup( this );
 
     m_alongsideButton = new PrettyRadioButton;
     m_alongsideButton->setIconSize( iconSize );
     m_alongsideButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::PartitionAlongside,
                                                                CalamaresUtils::Original,
                                                                iconSize ) );
-    grp->addButton( m_alongsideButton->buttonWidget() );
+    m_grp->addButton( m_alongsideButton->buttonWidget(), Alongside );
 
     m_eraseButton = createEraseButton();
 
@@ -191,7 +191,7 @@ ChoicePage::setupChoices()
     m_eraseButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::PartitionEraseAuto,
                                                            CalamaresUtils::Original,
                                                            iconSize ) );
-    grp->addButton( m_eraseButton->buttonWidget() );
+    m_grp->addButton( m_eraseButton->buttonWidget(), Erase );
 
     m_replaceButton = new PrettyRadioButton;
 
@@ -199,7 +199,7 @@ ChoicePage::setupChoices()
     m_replaceButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::PartitionReplaceOs,
                                                              CalamaresUtils::Original,
                                                              iconSize ) );
-    grp->addButton( m_replaceButton->buttonWidget() );
+    m_grp->addButton( m_replaceButton->buttonWidget(), Replace );
 
     m_itemsLayout->addWidget( m_alongsideButton );
     m_itemsLayout->addWidget( m_replaceButton );
@@ -222,51 +222,34 @@ ChoicePage::setupChoices()
                                                                    CalamaresUtils::Original,
                                                                    iconSize ) );
     m_itemsLayout->addWidget( m_somethingElseButton );
-    grp->addButton( m_somethingElseButton->buttonWidget() );
+    m_grp->addButton( m_somethingElseButton->buttonWidget(), Manual );
 
     m_itemsLayout->addStretch();
 
-    connect( m_alongsideButton->buttonWidget(), &QRadioButton::toggled,
-             this, [ this ]( bool checked )
+    connect( m_grp, static_cast< void( QButtonGroup::* )( int, bool ) >( &QButtonGroup::buttonToggled ),
+             this, [ this ]( int id, bool checked )
     {
-        if ( checked )
+        if ( checked )  // An action was picked.
         {
-            m_choice = Alongside;
-            setNextEnabled( true );
+            m_choice = static_cast< Choice >( id );
+            if ( m_choice == Replace )
+            {
+                setNextEnabled( false );
+            }
+            else
+            {
+                setNextEnabled( true );
+            }
             emit actionChosen();
         }
-    } );
-
-    connect( m_eraseButton->buttonWidget(), &QRadioButton::toggled,
-             this, [ this ]( bool checked )
-    {
-        if ( checked )
+        else    // An action was unpicked, either on its own or because of another selection.
         {
-            m_choice = Erase;
-            setNextEnabled( true );
-            emit actionChosen();
-        }
-    } );
-
-    connect( m_replaceButton->buttonWidget(), &QRadioButton::toggled,
-             this, [ this ]( bool checked )
-    {
-        if ( checked )
-        {
-            m_choice = Replace;
-            setNextEnabled( false );
-            emit actionChosen();
-        }
-    } );
-
-    connect( m_somethingElseButton->buttonWidget(), &QRadioButton::toggled,
-             this, [ this ]( bool checked )
-    {
-        if ( checked )
-        {
-            m_choice = Manual;
-            setNextEnabled( true );
-            emit actionChosen();
+            if ( m_grp->checkedButton() == nullptr )  // If no other action is chosen, we must
+            {                                         // set m_choice to NoChoice and reset previews.
+                m_choice = NoChoice;
+                setNextEnabled( false );
+                emit actionChosen();
+            }
         }
     } );
 
@@ -336,7 +319,7 @@ ChoicePage::createBootloaderComboBox( ExpandableRadioButton* parentButton )
         if ( bcb->model() != m_core->bootLoaderModel() )
             bcb->setModel( m_core->bootLoaderModel() );
         bcb->setCurrentIndex( m_lastSelectedDeviceIndex );
-    } );
+    }, Qt::QueuedConnection );
     // ^ Must be Queued so it's sure to run when the widget is already visible.
 
     return bcb;
@@ -447,11 +430,15 @@ ChoicePage::applyActionChoice( ChoicePage::Choice choice )
             [ = ]
             {
                 PartitionActions::doAutopartition( m_core, selectedDevice() );
+                emit deviceChosen();
             },
             this );
         }
         else
+        {
             PartitionActions::doAutopartition( m_core, selectedDevice() );
+            emit deviceChosen();
+        }
 
         break;
     case Replace:
@@ -700,6 +687,10 @@ ChoicePage::setupActions()
 
         m_replaceButton->hide();
         m_alongsideButton->hide();
+        m_grp->setExclusive( false );
+        m_replaceButton->buttonWidget()->setChecked( false );
+        m_alongsideButton->buttonWidget()->setChecked( false );
+        m_grp->setExclusive( true );
     }
     else if ( osproberEntriesForCurrentDevice.count() == 1 )
     {
@@ -753,8 +744,18 @@ ChoicePage::setupActions()
                                                 string( Calamares::Branding::ShortVersionedName ) ) );
             )
         }
-        if ( !osproberEntriesForCurrentDevice.first().canBeResized )
+
+        m_replaceButton->show();
+
+        if ( osproberEntriesForCurrentDevice.first().canBeResized )
+            m_alongsideButton->show();
+        else
+        {
             m_alongsideButton->hide();
+            m_grp->setExclusive( false );
+            m_alongsideButton->buttonWidget()->setChecked( false );
+            m_grp->setExclusive( true );
+        }
     }
     else
     {
@@ -792,8 +793,17 @@ ChoicePage::setupActions()
                                             string( Calamares::Branding::ShortVersionedName ) ) );
         )
 
-        if ( !atLeastOneCanBeResized )
+        m_replaceButton->show();
+
+        if ( atLeastOneCanBeResized )
+            m_alongsideButton->show();
+        else
+        {
             m_alongsideButton->hide();
+            m_grp->setExclusive( false );
+            m_alongsideButton->buttonWidget()->setChecked( false );
+            m_grp->setExclusive( true );
+        }
     }
 
     bool isEfi = QDir( "/sys/firmware/efi/efivars" ).exists();

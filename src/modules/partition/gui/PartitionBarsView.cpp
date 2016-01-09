@@ -474,6 +474,19 @@ PartitionBarsView::computeItemsVector( const QModelIndex& parent ) const
         items[ row ] = { size, index };
     }
 
-    return qMakePair( items, total );
+    // The sizes we have are perfect, but now we have to hardcode a minimum size for small
+    // partitions and compensate for it in the total.
+    qreal adjustedTotal = total;
+    for ( int row = 0; row < count; ++row )
+    {
+        if ( items[ row ].size < 0.01 * total ) // If this item is smaller than 1% of everything,
+        {                                       // force its width to 1%.
+            adjustedTotal -= items[ row ].size;
+            items[ row ].size = qRound( 0.01 * total );
+            adjustedTotal += items[ row ].size;
+        }
+    }
+
+    return qMakePair( items, adjustedTotal );
 }
 
