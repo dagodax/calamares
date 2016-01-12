@@ -53,7 +53,7 @@ def run():
     # copy installation log before umount
     if(os.path.exists('/home/live/installation.log')):
         shutil.copy2('/home/live/installation.log', 
-                     '%s/var/log/installation.log' % root_mount_point)
+                     '{!s}/var/log/installation.log'.format(root_mount_point))
 
     if not root_mount_point:
         return ("No mount point for root partition in globalstorage",
