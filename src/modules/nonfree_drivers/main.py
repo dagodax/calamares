@@ -45,7 +45,7 @@ def run():
 
     # setup proprietary drivers, if detected
     print('setup proprietary drivers')
-    if os.path.exists('/tmp/nvidia'):
+    if os.path.exists('/var/log/nvidia'):
         print('nvidia detected')
         print('removing unneeded packages')
         libcalamares.utils.target_env_call(
@@ -62,8 +62,8 @@ def run():
             libcalamares.utils.target_env_call(
                 ['pacman', '-Ud', '--force', '--noconfirm', nvidia])
         shutil.rmtree('%s/opt/kdeos/pkgs' % (install_path))
-    elif os.path.exists('/tmp/nvidia-304xx'):
-        print('nvidia-304xx detected')
+    elif os.path.exists('/var/log/nvidia-340xx'):
+        print('nvidia-340xx detected')
         print('removing unneeded packages')
         libcalamares.utils.target_env_call(
             ['pacman', '-Rdd', '--noconfirm', 'libgl'])
@@ -72,12 +72,12 @@ def run():
         print('installing driver')
         shutil.copytree(
             '/opt/kdeos/pkgs', '%s/opt/kdeos/pkgs' % (install_path))
-        for nvidia_304_utils in glob.glob('/opt/kdeos/pkgs/nvidia-304xx-utils*'):
+        for nvidia_340_utils in glob.glob('/opt/kdeos/pkgs/nvidia-340xx-utils*'):
             libcalamares.utils.target_env_call(
-                ['pacman', '-Ud', '--force', '--noconfirm', nvidia_304_utils])
-        for nvidia_304 in glob.glob('/opt/kdeos/pkgs/nvidia-304xx-3*'):
+                ['pacman', '-Ud', '--force', '--noconfirm', nvidia_340_utils])
+        for nvidia_340 in glob.glob('/opt/kdeos/pkgs/nvidia-340xx-34*'):
             libcalamares.utils.target_env_call(
-                ['pacman', '-Ud', '--force', '--noconfirm', nvidia_304])
+                ['pacman', '-Ud', '--force', '--noconfirm', nvidia_340])
         shutil.rmtree('%s/opt/kdeos/pkgs' % (install_path))
 
     print('done setting up hardware')

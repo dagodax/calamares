@@ -3,7 +3,7 @@
 #
 # === This file is part of Calamares - <http://github.com/calamares> ===
 #
-#   Copyright 2014, Anke Boersma <demm@kaosx.us>
+#   Copyright 2014-2016, Anke Boersma <demm@kaosx.us>
 #
 #   Calamares is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -29,6 +29,7 @@ def run():
     """ Package removal module. Live only packages, surplus language packs """
 
     install_path = libcalamares.globalstorage.value("rootMountPoint")
+    fw_type = libcalamares.globalstorage.value("firmwareType")
 
     # remove any db.lck
     db_lock = os.path.join(install_path, "var/lib/pacman/db.lck")
@@ -59,6 +60,18 @@ def run():
         print('Removing live configuration packages')
         libcalamares.utils.target_env_call(
             ['pacman', '-R', '--noconfirm', 'init-live'])
+            
+    # Remove surplus bootloader packages
+    if fw_type == 'efi':
+        print('Removing grub packages')
+        libcalamares.utils.target_env_call(
+            ['pacman', '-Rns', '--noconfirm', 'grub', 'grub-theme-midna'])
+        
+    if fw_type == 'bios':
+        print('Removing EFI packages')
+        libcalamares.utils.target_env_call(
+            ['pacman', '-Rns', '--noconfirm', 'efibootmgr'])
+       
 
     # Remove KDE l10n
     this_locale = libcalamares.globalstorage.value("lcLocale")[:2]
