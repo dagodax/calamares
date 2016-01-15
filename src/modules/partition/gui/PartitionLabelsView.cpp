@@ -1,7 +1,7 @@
 /* === This file is part of Calamares - <http://github.com/calamares> ===
  *
  *   Copyright 2014, Aurélien Gâteau <agateau@kde.org>
- *   Copyright 2015, Teo Mrnjavac <teo@kde.org>
+ *   Copyright 2015-2016, Teo Mrnjavac <teo@kde.org>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -53,6 +53,7 @@ buildUnknownDisklabelTexts( Device* dev )
 
 PartitionLabelsView::PartitionLabelsView( QWidget* parent )
     : QAbstractItemView( parent )
+    , canBeSelected( []( const QModelIndex& ) { return true; } )
 {
     setSizePolicy( QSizePolicy::Expanding, QSizePolicy::Fixed );
     setFrameStyle( QFrame::NoFrame );
@@ -494,6 +495,25 @@ PartitionLabelsView::setCustomNewRootLabel( const QString& text )
 }
 
 
+void
+PartitionLabelsView::setSelectionModel( QItemSelectionModel* selectionModel )
+{
+    QAbstractItemView::setSelectionModel( selectionModel );
+    connect( selectionModel, &QItemSelectionModel::selectionChanged,
+             this, [=]
+    {
+        viewport()->repaint();
+    } );
+}
+
+
+void
+PartitionLabelsView::setSelectionFilter( SelectionFilter canBeSelected )
+{
+    this->canBeSelected = canBeSelected;
+}
+
+
 QModelIndex
 PartitionLabelsView::moveCursor( CursorAction cursorAction, Qt::KeyboardModifiers modifiers )
 {
@@ -511,7 +531,9 @@ PartitionLabelsView::isIndexHidden( const QModelIndex& index ) const
 void
 PartitionLabelsView::setSelection( const QRect& rect, QItemSelectionModel::SelectionFlags flags )
 {
-    selectionModel()->select( indexAt( rect.topLeft() ), flags );
+    QModelIndex eventIndex = indexAt( rect.topLeft() );
+    if ( canBeSelected( eventIndex ) )
+        selectionModel()->select( eventIndex, flags );
 }
 
 
@@ -527,10 +549,7 @@ PartitionLabelsView::mouseMoveEvent( QMouseEvent* event )
     else
         m_hoveredIndex = QModelIndex();
 
-    if ( oldHoveredIndex != m_hoveredIndex )
-    {
-        viewport()->repaint();
-    }
+    viewport()->repaint();
 }
 
 
@@ -542,6 +561,17 @@ PartitionLabelsView::leaveEvent( QEvent* event )
         m_hoveredIndex = QModelIndex();
         viewport()->repaint();
     }
+}
+
+
+void
+PartitionLabelsView::mousePressEvent( QMouseEvent* event )
+{
+    QModelIndex candidateIndex = indexAt( event->pos() );
+    if ( canBeSelected( candidateIndex ) )
+        QAbstractItemView::mousePressEvent( event );
+    else
+        event->accept();
 }
 
 

@@ -1,6 +1,6 @@
 /* === This file is part of Calamares - <http://github.com/calamares> ===
  *
- *   Copyright 2014, Teo Mrnjavac <teo@kde.org>
+ *   Copyright 2014-2016, Teo Mrnjavac <teo@kde.org>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -21,6 +21,7 @@
 
 #include <QWidget>
 
+class Device;
 
 struct PartitionSplitterItem
 {
@@ -38,7 +39,7 @@ class PartitionSplitterWidget : public QWidget
 public:
     explicit PartitionSplitterWidget( QWidget* parent = nullptr );
 
-    void init( const QList< PartitionSplitterItem >& items );
+    void init( Device* dev );
 
     void setSplitPartition( const QString& path,
                             qint64 minSize,
@@ -50,6 +51,7 @@ public:
     qint64 newPartitionSize() const;
 
     QSize sizeHint() const override;
+    QSize minimumSizeHint() const override;
 
 signals:
     void partitionResized( const QString&, qint64, qint64 );
@@ -61,6 +63,8 @@ protected:
     void mouseReleaseEvent( QMouseEvent* event ) override;
 
 private:
+    void setupItems( const QList< PartitionSplitterItem >& items );
+
     void drawPartitions( QPainter* painter,
                          const QRect& rect,
                          const QList< PartitionSplitterItem >& items );

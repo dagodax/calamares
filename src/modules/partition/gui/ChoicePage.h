@@ -1,6 +1,6 @@
 /* === This file is part of Calamares - <http://github.com/calamares> ===
  *
- *   Copyright 2014-2015, Teo Mrnjavac <teo@kde.org>
+ *   Copyright 2014-2016, Teo Mrnjavac <teo@kde.org>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -35,6 +35,7 @@ class QListView;
 
 class ExpandableRadioButton;
 class PartitionBarsView;
+class PartitionSplitterWidget;
 class PartitionLabelsView;
 class PartitionCoreModule;
 class PrettyRadioButton;
@@ -64,6 +65,8 @@ public:
 
     Choice currentChoice() const;
 
+    void doAlongsideApply();
+
 signals:
     void nextStatusChanged( bool );
     void actionChosen();
@@ -71,6 +74,7 @@ signals:
 
 private slots:
     void doReplaceSelectedPartition( const QModelIndex& current, const QModelIndex& previous );
+    void doAlongsideSetupSplitter( const QModelIndex& current, const QModelIndex& previous );
 
 private:
     void setNextEnabled( bool enabled );
@@ -107,6 +111,7 @@ private:
     QPointer< PartitionLabelsView > m_beforePartitionLabelsView;
     QPointer< PartitionBarsView > m_afterPartitionBarsView;
     QPointer< PartitionLabelsView > m_afterPartitionLabelsView;
+    QPointer< PartitionSplitterWidget > m_afterPartitionSplitterWidget;
 
     int m_lastSelectedDeviceIndex;
 

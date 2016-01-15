@@ -1,6 +1,6 @@
 /* === This file is part of Calamares - <http://github.com/calamares> ===
  *
- *   Copyright 2014, Teo Mrnjavac <teo@kde.org>
+ *   Copyright 2014-2016, Teo Mrnjavac <teo@kde.org>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -18,8 +18,14 @@
 
 #include "PartitionSplitterWidget.h"
 
+#include "core/ColorUtils.h"
+#include "core/PartitionIterator.h"
+
 #include "utils/Logger.h"
 #include "utils/CalamaresUtilsGui.h"
+
+#include <kpmcore/core/device.h>
+#include <kpmcore/core/partition.h>
 
 #include <QApplication>
 #include <QPainter>
@@ -27,10 +33,10 @@
 #include <QStyleOption>
 
 
-static const int VIEW_HEIGHT = CalamaresUtils::defaultFontHeight() + 8;
+static const int VIEW_HEIGHT = qMax( CalamaresUtils::defaultFontHeight() + 8, // wins out with big fonts
+                                     (int)( CalamaresUtils::defaultFontHeight() * 0.6 ) + 22 ); // wins out with small fonts
 static const int CORNER_RADIUS = 3;
-static const int EXTENDED_PARTITION_MARGIN = 4;
-
+static const int EXTENDED_PARTITION_MARGIN = qMax( 4, VIEW_HEIGHT / 6 );
 
 PartitionSplitterWidget::PartitionSplitterWidget( QWidget* parent )
     : QWidget( parent )
@@ -48,7 +54,36 @@ PartitionSplitterWidget::PartitionSplitterWidget( QWidget* parent )
 
 
 void
-PartitionSplitterWidget::init( const QList<PartitionSplitterItem>& items )
+PartitionSplitterWidget::init( Device* dev )
+{
+    QList< PartitionSplitterItem > allPartitionItems;
+    PartitionSplitterItem* extendedPartitionItem = nullptr;
+    for ( auto it = PartitionIterator::begin( dev );
+          it != PartitionIterator::end( dev ); ++it )
+    {
+        PartitionSplitterItem newItem = {
+            ( *it )->partitionPath(),
+            ColorUtils::colorForPartition( *it ),
+            false,
+            ( *it )->capacity(),
+            {}
+        };
+
+        if ( ( *it )->roles().has( PartitionRole::Logical ) && extendedPartitionItem )
+            extendedPartitionItem->children.append( newItem );
+        else
+        {
+            allPartitionItems.append( newItem );
+            if ( ( *it )->roles().has( PartitionRole::Extended ) )
+                extendedPartitionItem = &allPartitionItems.last();
+        }
+    }
+
+    setupItems( allPartitionItems );
+}
+
+void
+PartitionSplitterWidget::setupItems( const QList<PartitionSplitterItem>& items )
 {
     m_itemToResize = nullptr;
     m_itemToResizeNext = nullptr;
@@ -76,8 +111,40 @@ PartitionSplitterWidget::setSplitPartition( const QString& path,
 
     if ( m_itemToResize || m_itemToResizeNext || !m_itemToResizePath.isEmpty() )
     {
-        cDebug() << "ERROR: trying to split partition but partition to split is already set.";
-        return;
+        cDebug() << "NOTICE: trying to split partition but partition to split is already set.";
+
+        // We need to remove the itemToResizeNext from wherever it is
+        for ( int i = 0; i < m_items.count(); ++i )
+        {
+            if ( m_items[ i ].itemPath == m_itemToResize->itemPath &&
+                 i + 1 < m_items.count() )
+            {
+                m_items[ i ].size = m_items[ i ].size + m_itemToResizeNext->size;
+                m_items.removeAt( i + 1 );
+                m_itemToResizeNext = nullptr;
+                break;
+            }
+            else if ( !m_items[ i ].children.isEmpty() )
+            {
+                for ( int j = 0; j < m_items[ i ].children.count(); ++j )
+                {
+                    if ( m_items[ i ].children[ j ].itemPath == m_itemToResize->itemPath &&
+                         j + 1 < m_items[ i ].children.count() )
+                    {
+                        m_items[ i ].children[ j ].size =
+                                m_items[ i ].children[ j ].size + m_itemToResizeNext->size;
+                        m_items[ i ].children.removeAt( j + 1 );
+                        m_itemToResizeNext = nullptr;
+                        break;
+                    }
+                }
+                if ( !m_itemToResizeNext )
+                    break;
+            }
+        }
+
+        m_itemToResize = nullptr;
+        m_itemToResizePath.clear();
     }
 
     PartitionSplitterItem* itemToResize = _findItem( m_items,
@@ -164,21 +231,30 @@ PartitionSplitterWidget::sizeHint() const
 }
 
 
+QSize
+PartitionSplitterWidget::minimumSizeHint() const
+{
+    return sizeHint();
+}
+
+
 void
 PartitionSplitterWidget::paintEvent( QPaintEvent* event )
 {
     QPainter painter( this );
     painter.fillRect( rect(), palette().window() );
     painter.setRenderHint( QPainter::Antialiasing );
-    if ( m_itemToResize && m_itemToResizeNext )
-        drawPartitions( &painter, rect(), m_items );
+
+    drawPartitions( &painter, rect(), m_items );
 }
 
 
 void
 PartitionSplitterWidget::mousePressEvent( QMouseEvent* event )
 {
-    if ( event->button() == Qt::LeftButton )
+    if ( m_itemToResize &&
+         m_itemToResizeNext &&
+         event->button() == Qt::LeftButton )
     {
         if ( qAbs( event->x() - m_resizeHandleX ) < HANDLE_SNAP )
             m_resizing = true;
@@ -253,7 +329,7 @@ PartitionSplitterWidget::mouseMoveEvent( QMouseEvent* event )
     }
     else
     {
-        if ( m_itemToResize )
+        if ( m_itemToResize && m_itemToResizeNext )
         {
             if ( qAbs( event->x() - m_resizeHandleX ) < HANDLE_SNAP )
                 setCursor( Qt::SplitHCursor );
@@ -322,7 +398,7 @@ PartitionSplitterWidget::drawResizeHandle( QPainter* painter,
 
     painter->setRenderHint( QPainter::Antialiasing, true );
 
-    qreal h = rect_.height();
+    qreal h = VIEW_HEIGHT; // Put the arrow in the center regardless of inner box height
     int scaleFactor = qRound( height() / static_cast< qreal >( VIEW_HEIGHT ) );
     QList< QPair< qreal, qreal > > arrow_offsets = {
         qMakePair( 0, h / 2 - 1 ),
@@ -399,12 +475,20 @@ PartitionSplitterWidget::drawPartitions( QPainter* painter,
             drawPartitions( painter, subRect, item.children );
         }
 
-        if ( item.itemPath == m_itemToResize->itemPath )
-            m_resizeHandleX = x + width;
+        // If an item to resize and the following new item both exist,
+        // and this is not the very first partition,
+        // and the partition preceding this one is the item to resize...
+        if ( m_itemToResize &&
+             m_itemToResizeNext &&
+             row > 0 &&
+             items[ row - 1 ].itemPath == m_itemToResize->itemPath )
+        {
+            m_resizeHandleX = x;
+            drawResizeHandle( painter, rect, m_resizeHandleX );
+        }
 
         x += width;
     }
-    drawResizeHandle( painter, rect, m_resizeHandleX );
 }
 
 

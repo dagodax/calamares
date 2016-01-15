@@ -1,6 +1,6 @@
 /* === This file is part of Calamares - <http://github.com/calamares> ===
  *
- *   Copyright 2014-2015, Teo Mrnjavac <teo@kde.org>
+ *   Copyright 2014-2016, Teo Mrnjavac <teo@kde.org>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -24,12 +24,14 @@
 #include "core/DeviceModel.h"
 #include "core/PartitionModel.h"
 #include "core/OsproberEntry.h"
+#include "core/PartUtils.h"
 
 #include "ReplaceWidget.h"
 #include "PrettyRadioButton.h"
 #include "ExpandableRadioButton.h"
 #include "PartitionBarsView.h"
 #include "PartitionLabelsView.h"
+#include "PartitionSplitterWidget.h"
 #include "DeviceInfoWidget.h"
 #include "ScanningDialog.h"
 
@@ -38,8 +40,12 @@
 #include "utils/Retranslator.h"
 #include "Branding.h"
 #include "core/KPMHelpers.h"
+#include "JobQueue.h"
+#include "GlobalStorage.h"
+#include "core/PartitionInfo.h"
 
 #include <kpmcore/core/device.h>
+#include <kpmcore/core/partition.h>
 
 #include <QBoxLayout>
 #include <QButtonGroup>
@@ -210,12 +216,8 @@ ChoicePage::setupChoices()
     CALAMARES_RETRANSLATE(
         m_somethingElseButton->setText( tr( "<strong>Manual partitioning</strong><br/>"
                                             "You can create or resize partitions yourself."
-                                            "  Having a GPT partition table and <strong>fat32 512Mb /boot partition "
-                                            "is a must for UEFI installs</strong>, either use an existing without formatting or create one."
-                                            "<font color=\"red\"> Currently there is a bug in manual partitioning which makes the GUI "
-                                            "not progress after the summary page</font>.  This does not effect the actual install, "
-                                            "clicking on the summary page will move the GUI to the install page. Do not cancel the "
-                                            "install, the finish page will show correctly afterward." ) );
+                                            " Having a GPT partition table and <strong>fat32 512Mb /boot partition "
+                                            "is a must for UEFI installs</strong>, either use an existing without formatting or create one." ) );
     )
     m_somethingElseButton->setIconSize( iconSize );
     m_somethingElseButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::PartitionManual,
@@ -458,6 +460,29 @@ ChoicePage::applyActionChoice( ChoicePage::Choice choice )
                  this, SLOT( doReplaceSelectedPartition( QModelIndex, QModelIndex ) ),
                  Qt::UniqueConnection );
         break;
+
+    case Alongside:
+        if ( m_core->isDirty() )
+        {
+            ScanningDialog::run( QtConcurrent::run( [ = ]
+            {
+                QMutexLocker locker( &m_coreMutex );
+                m_core->revertDevice( selectedDevice() );
+            } ),
+            [this]
+            {
+                // We need to reupdate after reverting because the splitter widget is
+                // not a true view.
+                updateActionChoicePreview( currentChoice() );
+            },
+            this );
+        }
+        setNextEnabled( !m_beforePartitionBarsView->selectionModel()->selectedRows().isEmpty() );
+
+        connect( m_beforePartitionBarsView->selectionModel(), SIGNAL( currentRowChanged( QModelIndex, QModelIndex ) ),
+                 this, SLOT( doAlongsideSetupSplitter( QModelIndex, QModelIndex ) ),
+                 Qt::UniqueConnection );
+        break;
     case NoChoice:
     case Manual:
         break;
@@ -467,9 +492,117 @@ ChoicePage::applyActionChoice( ChoicePage::Choice choice )
 
 
 void
+ChoicePage::doAlongsideSetupSplitter( const QModelIndex& current,
+                                      const QModelIndex& previous )
+{
+    Q_UNUSED( previous );
+    if ( !current.isValid() )
+        return;
+
+    if ( !m_afterPartitionSplitterWidget )
+        return;
+
+    const PartitionModel* modl = qobject_cast< const PartitionModel* >( current.model() );
+    if ( !modl )
+        return;
+
+    Partition* part = modl->partitionForIndex( current );
+
+    double requiredStorageGB = Calamares::JobQueue::instance()
+                                    ->globalStorage()
+                                    ->value( "requiredStorageGB" )
+                                    .toDouble();
+
+    qint64 requiredStorageB = ( requiredStorageGB + 0.1 + 2.0 ) * 1024 * 1024 * 1024;
+
+    m_afterPartitionSplitterWidget->setSplitPartition(
+                part->partitionPath(),
+                part->used() * 1.1,
+                part->capacity() - requiredStorageB,
+                part->capacity() / 2,
+                Calamares::Branding::instance()->
+                    string( Calamares::Branding::ProductName ) );
+
+    setNextEnabled( m_beforePartitionBarsView->selectionModel()->currentIndex().isValid() );
+
+    cDebug() << "Partition selected for Alongside.";
+}
+
+
+void
+ChoicePage::doAlongsideApply()
+{
+    Q_ASSERT( m_afterPartitionSplitterWidget->splitPartitionSize() >= 0 );
+    Q_ASSERT( m_afterPartitionSplitterWidget->newPartitionSize()   >= 0 );
+
+    QString path = m_beforePartitionBarsView->
+                   selectionModel()->
+                   currentIndex().data( PartitionModel::PartitionPathRole ).toString();
+
+    DeviceModel* dm = m_core->deviceModel();
+    for ( int i = 0; i < dm->rowCount(); ++i )
+    {
+        Device* dev = dm->deviceForIndex( dm->index( i ) );
+        Partition* candidate = KPMHelpers::findPartitionByPath( { dev }, path );
+        if ( candidate )
+        {
+            qint64 firstSector = candidate->firstSector();
+            qint64 oldLastSector = candidate->lastSector();
+            qint64 newLastSector = firstSector +
+                                   m_afterPartitionSplitterWidget->splitPartitionSize() /
+                                   dev->logicalSectorSize();
+
+            m_core->resizePartition( dev, candidate, firstSector, newLastSector );
+            Partition* newPartition = KPMHelpers::createNewPartition(
+                                          candidate->parent(),
+                                          *dev,
+                                          candidate->roles(),
+                                          FileSystem::Ext4,
+                                          newLastSector + 2, // *
+                                          oldLastSector );
+            PartitionInfo::setMountPoint( newPartition, "/" );
+            PartitionInfo::setFormat( newPartition, true );
+            // * for some reason ped_disk_add_partition refuses to create a new partition
+            //   if it starts on the sector immediately after the last used sector, so we
+            //   have to push it one sector further, therefore + 2 instead of + 1.
+
+            m_core->createPartition( dev, newPartition );
+            m_core->setBootLoaderInstallPath( dev->deviceNode() );
+
+            /*if ( m_isEfi )
+            {
+                QList< Partition* > efiSystemPartitions = m_core->efiSystemPartitions();
+                if ( efiSystemPartitions.count() == 1 )
+                {
+                    PartitionInfo::setMountPoint(
+                            efiSystemPartitions.first(),
+                            Calamares::JobQueue::instance()->
+                                globalStorage()->
+                                    value( "efiSystemPartition" ).toString() );
+                }
+                else if ( efiSystemPartitions.count() > 1 )
+                {
+                    PartitionInfo::setMountPoint(
+                            efiSystemPartitions.at( m_efiComboBox->currentIndex() ),
+                            Calamares::JobQueue::instance()->
+                                globalStorage()->
+                                    value( "efiSystemPartition" ).toString() );
+                }
+            }*/
+
+            m_core->dumpQueue();
+
+            break;
+        }
+    }
+}
+
+
+void
 ChoicePage::doReplaceSelectedPartition( const QModelIndex& current,
                                         const QModelIndex& previous )
 {
+    Q_UNUSED( previous );
     if ( !current.isValid() )
         return;
 
@@ -587,13 +720,44 @@ ChoicePage::updateActionChoicePreview( ChoicePage::Choice choice )
     switch ( choice )
     {
     case Alongside:
-        m_previewBeforeLabel->setText( tr( "Device:" ) );
-        m_previewAfterLabel->hide();
-        // split widget goes here
-        //label->setText( tr( "Drag to split:" ) );
-        m_selectLabel->hide();
+        {
+            m_previewBeforeLabel->setText( tr( "Before:" ) );
+            m_selectLabel->setText( tr( "<strong>Select which partition to shrink, "
+                                        "then drag to resize</strong>" ) );
+            m_selectLabel->show();
 
-        break;
+            m_afterPartitionSplitterWidget = new PartitionSplitterWidget( m_previewAfterFrame );
+            m_afterPartitionSplitterWidget->init( selectedDevice() );
+            layout->addWidget( m_afterPartitionSplitterWidget );
+
+            QLabel* sizeLabel = new QLabel( m_previewAfterFrame );
+            layout->addWidget( sizeLabel );
+            sizeLabel->setWordWrap( true );
+            connect( m_afterPartitionSplitterWidget, &PartitionSplitterWidget::partitionResized,
+                     this, [ this, sizeLabel ]( const QString& path, qint64 size, qint64 sizeNext )
+            {
+                sizeLabel->setText( tr( "%1 will be shrunk to %2MB and a new "
+                                        "%3MB partition will be created for %4." )
+                                    .arg( m_beforePartitionBarsView->selectionModel()->currentIndex().data().toString() )
+                                    .arg( size / ( 1024 * 1024 ) )
+                                    .arg( sizeNext / ( 1024 * 1024 ) )
+                                    .arg( Calamares::Branding::instance()->
+                                        string( Calamares::Branding::ShortProductName ) ) );
+            } );
+
+            m_previewAfterFrame->show();
+            m_previewAfterLabel->show();
+
+            SelectionFilter filter = [ this ]( const QModelIndex& index )
+            {
+                return PartUtils::canBeResized( m_core,
+                                                index.data( PartitionModel::PartitionPathRole ).toString() );
+            };
+            m_beforePartitionBarsView->setSelectionFilter( filter );
+            m_beforePartitionLabelsView->setSelectionFilter( filter );
+
+            break;
+        }
     case Erase:
     case Replace:
         {

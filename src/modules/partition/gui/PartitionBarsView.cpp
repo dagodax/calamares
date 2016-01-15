@@ -1,7 +1,7 @@
 /* === This file is part of Calamares - <http://github.com/calamares> ===
  *
  *   Copyright 2014, Aurélien Gâteau <agateau@kde.org>
- *   Copyright 2015, Teo Mrnjavac <teo@kde.org>
+ *   Copyright 2015-2016, Teo Mrnjavac <teo@kde.org>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -53,6 +53,7 @@ static const int SELECTION_MARGIN = qMin( ( EXTENDED_PARTITION_MARGIN - 2 ) / 2,
 PartitionBarsView::PartitionBarsView( QWidget* parent )
     : QAbstractItemView( parent )
     , m_hoveredIndex( QModelIndex() )
+    , canBeSelected( []( const QModelIndex& ) { return true; } )
 {
     setSizePolicy( QSizePolicy::Expanding, QSizePolicy::Fixed );
     setFrameStyle( QFrame::NoFrame );
@@ -385,6 +386,25 @@ PartitionBarsView::scrollTo( const QModelIndex& index, ScrollHint hint )
 }
 
 
+void
+PartitionBarsView::setSelectionModel( QItemSelectionModel* selectionModel )
+{
+    QAbstractItemView::setSelectionModel( selectionModel );
+    connect( selectionModel, &QItemSelectionModel::selectionChanged,
+             this, [=]
+    {
+        viewport()->repaint();
+    } );
+}
+
+
+void
+PartitionBarsView::setSelectionFilter( std::function< bool ( const QModelIndex& ) > canBeSelected )
+{
+    this->canBeSelected = canBeSelected;
+}
+
+
 QModelIndex
 PartitionBarsView::moveCursor( CursorAction cursorAction, Qt::KeyboardModifiers modifiers )
 {
@@ -418,7 +438,12 @@ PartitionBarsView::setSelection( const QRect& rect, QItemSelectionModel::Selecti
     //      TL;DR: this sucks, look away. -- Teo 12/2015
     int x1, y1, x2, y2;
     rect.getCoords( &x1, &y1, &x2, &y2 );
-    selectionModel()->select( indexAt( QPoint( x2, y2 ) ), flags );
+
+    QModelIndex eventIndex = indexAt( QPoint( x2, y2 ) );
+    if ( canBeSelected( eventIndex ) )
+        selectionModel()->select( eventIndex, flags );
+
+    viewport()->repaint();
 }
 
 
@@ -449,6 +474,17 @@ PartitionBarsView::leaveEvent( QEvent* event )
         m_hoveredIndex = QModelIndex();
         viewport()->repaint();
     }
+}
+
+
+void
+PartitionBarsView::mousePressEvent( QMouseEvent* event )
+{
+    QModelIndex candidateIndex = indexAt( event->pos() );
+    if ( canBeSelected( candidateIndex ) )
+        QAbstractItemView::mousePressEvent( event );
+    else
+        event->accept();
 }
 
 
