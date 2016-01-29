@@ -79,6 +79,7 @@ ChoicePage::ChoicePage( QWidget* parent )
     , m_isEfi( false )
     , m_beforePartitionBarsView( nullptr )
     , m_beforePartitionLabelsView( nullptr )
+    , m_bootloaderComboBox( nullptr )
 {
     setupUi( this );
 
@@ -185,8 +186,8 @@ ChoicePage::setupChoices()
     //  3) Manual
     //  TBD: upgrade option?
 
-    QSize iconSize( CalamaresUtils::defaultIconSize().width() * 2.5,
-                    CalamaresUtils::defaultIconSize().height() * 2.5 );
+    QSize iconSize( CalamaresUtils::defaultIconSize().width() * 2,
+                    CalamaresUtils::defaultIconSize().height() * 2 );
     m_grp = new QButtonGroup( this );
 
     m_alongsideButton = new PrettyRadioButton;
@@ -547,6 +548,9 @@ ChoicePage::doReplaceSelectedPartition( const QModelIndex& current,
     [=]
     {
         setNextEnabled( !m_beforePartitionBarsView->selectionModel()->selectedRows().isEmpty() );
+        if ( !m_bootloaderComboBox.isNull() &&
+             m_bootloaderComboBox->currentIndex() < 0 )
+            m_bootloaderComboBox->setCurrentIndex( m_lastSelectedDeviceIndex );
     }, this );
 }
 
@@ -710,9 +714,22 @@ ChoicePage::updateActionChoicePreview( ChoicePage::Choice choice )
                 eraseLayout->addWidget( eraseBootloaderLabel );
                 eraseBootloaderLabel->setText( tr( "Boot loader location:" ) );
 
-                QComboBox* eraseBootloaderCombo = createBootloaderComboBox( eraseWidget );
-                eraseLayout->addWidget( eraseBootloaderCombo );
-                eraseBootloaderLabel->setBuddy( eraseBootloaderCombo );
+                m_bootloaderComboBox = createBootloaderComboBox( eraseWidget );
+                connect( m_core, &PartitionCoreModule::deviceReverted,
+                         this, [ this ]( Device* dev )
+                {
+                    if ( !m_bootloaderComboBox.isNull() )
+                    {
+                        if ( m_bootloaderComboBox->model() != m_core->bootLoaderModel() )
+                            m_bootloaderComboBox->setModel( m_core->bootLoaderModel() );
+
+                        m_bootloaderComboBox->setCurrentIndex( m_lastSelectedDeviceIndex );
+                    }
+                }, Qt::QueuedConnection );
+                // ^ Must be Queued so it's sure to run when the widget is already visible.
+
+                eraseLayout->addWidget( m_bootloaderComboBox );
+                eraseBootloaderLabel->setBuddy( m_bootloaderComboBox );
                 eraseLayout->addStretch();
 
                 layout->addWidget( eraseWidget );
@@ -765,44 +782,17 @@ ChoicePage::createBootloaderComboBox( QWidget* parent )
 
     // When the chosen bootloader device changes, we update the choice in the PCM
     connect( bcb, static_cast< void (QComboBox::*)(int) >( &QComboBox::currentIndexChanged ),
-             [=]( int newIndex )
+             [this]( int newIndex )
     {
-        QVariant var = bcb->itemData( newIndex, BootLoaderModel::BootLoaderPathRole );
-        if ( !var.isValid() )
-            return;
-        m_core->setBootLoaderInstallPath( var.toString() );
-    } );
-
-    // If the user picks a new device, we update the bootloader choice to that
-    // same device automatically.
-    auto updateBootloaderDevice = [bcb, this]()
-    {
-        Device* currd = selectedDevice();
-        if ( !currd )
-            return;
-        QString devPath = currd->deviceNode();
-        for ( int i = 0; i < bcb->count(); ++i )
+        QComboBox* bcb = qobject_cast< QComboBox* >( sender() );
+        if ( bcb )
         {
-            QVariant var = bcb->itemData( i, BootLoaderModel::BootLoaderPathRole );
+            QVariant var = bcb->itemData( newIndex, BootLoaderModel::BootLoaderPathRole );
             if ( !var.isValid() )
-                continue;
-            if ( var.toString() == devPath )
-            {
-                bcb->setCurrentIndex( i );
                 return;
-            }
+            m_core->setBootLoaderInstallPath( var.toString() );
         }
-    };
-    connect( this, &ChoicePage::deviceChosen,
-             this, updateBootloaderDevice );
-    connect( m_core, &PartitionCoreModule::deviceReverted,
-             this, [ this, bcb ]( Device* dev )
-    {
-        if ( bcb->model() != m_core->bootLoaderModel() )
-            bcb->setModel( m_core->bootLoaderModel() );
-        bcb->setCurrentIndex( m_lastSelectedDeviceIndex );
-    }, Qt::QueuedConnection );
-    // ^ Must be Queued so it's sure to run when the widget is already visible.
+    } );
 
     return bcb;
 }
