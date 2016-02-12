@@ -25,6 +25,7 @@
 #include "core/PartitionModel.h"
 #include "core/OsproberEntry.h"
 #include "core/PartUtils.h"
+#include "core/PartitionIterator.h"
 
 #include "ReplaceWidget.h"
 #include "PrettyRadioButton.h"
@@ -308,11 +309,28 @@ ChoicePage::applyDeviceChoice()
 
     if ( m_core->isDirty() )
     {
-        m_core->revertDevice( selectedDevice() );
+        ScanningDialog::run( QtConcurrent::run( [ = ]
+        {
+            QMutexLocker locker( &m_coreMutex );
+            m_core->revertAllDevices();
+        } ),
+        [ this ]
+        {
+            continueApplyDeviceChoice();
+        },
+        this );
     }
+    else
+    {
+        continueApplyDeviceChoice();
+    }
+}
 
+
+void
+ChoicePage::continueApplyDeviceChoice()
+{
     Device* currd = selectedDevice();
-
 
     // The device should only be nullptr immediately after a PCM reset.
     // applyDeviceChoice() will be called again momentarily as soon as we handle the
@@ -579,8 +597,14 @@ ChoicePage::updateDeviceStatePreview()
     CalamaresUtils::unmarginLayout( layout );
     layout->setSpacing( 6 );
 
+    PartitionBarsView::NestedPartitionsMode mode = Calamares::JobQueue::instance()->globalStorage()->
+                                                   value( "drawNestedPartitions" ).toBool() ?
+                                                       PartitionBarsView::DrawNestedPartitions :
+                                                       PartitionBarsView::NoNestedPartitions;
     m_beforePartitionBarsView = new PartitionBarsView( m_previewBeforeFrame );
+    m_beforePartitionBarsView->setNestedPartitionsMode( mode );
     m_beforePartitionLabelsView = new PartitionLabelsView( m_previewBeforeFrame );
+    m_beforePartitionLabelsView->setExtendedPartitionHidden( mode == PartitionBarsView::NoNestedPartitions );
 
     Device* deviceBefore = m_core->createImmutableDeviceCopy( currentDevice );
 
@@ -641,6 +665,11 @@ ChoicePage::updateActionChoicePreview( ChoicePage::Choice choice )
     CalamaresUtils::unmarginLayout( layout );
     layout->setSpacing( 6 );
 
+    PartitionBarsView::NestedPartitionsMode mode = Calamares::JobQueue::instance()->globalStorage()->
+                                                   value( "drawNestedPartitions" ).toBool() ?
+                                                       PartitionBarsView::DrawNestedPartitions :
+                                                       PartitionBarsView::NoNestedPartitions;
+
     switch ( choice )
     {
     case Alongside:
@@ -651,7 +680,7 @@ ChoicePage::updateActionChoicePreview( ChoicePage::Choice choice )
             m_selectLabel->show();
 
             m_afterPartitionSplitterWidget = new PartitionSplitterWidget( m_previewAfterFrame );
-            m_afterPartitionSplitterWidget->init( selectedDevice() );
+            m_afterPartitionSplitterWidget->init( selectedDevice(), mode == PartitionBarsView::DrawNestedPartitions );
             layout->addWidget( m_afterPartitionSplitterWidget );
 
             QLabel* sizeLabel = new QLabel( m_previewAfterFrame );
@@ -674,8 +703,7 @@ ChoicePage::updateActionChoicePreview( ChoicePage::Choice choice )
 
             SelectionFilter filter = [ this ]( const QModelIndex& index )
             {
-                return PartUtils::canBeResized( m_core,
-                                                index.data( PartitionModel::PartitionPathRole ).toString() );
+                return PartUtils::canBeResized( (Partition*)( index.data( PartitionModel::PartitionPtrRole ).value< void* >() ) );
             };
             m_beforePartitionBarsView->setSelectionFilter( filter );
             m_beforePartitionLabelsView->setSelectionFilter( filter );
@@ -687,7 +715,9 @@ ChoicePage::updateActionChoicePreview( ChoicePage::Choice choice )
         {
             m_previewBeforeLabel->setText( tr( "Current:" ) );
             m_afterPartitionBarsView = new PartitionBarsView( m_previewAfterFrame );
+            m_afterPartitionBarsView->setNestedPartitionsMode( mode );
             m_afterPartitionLabelsView = new PartitionLabelsView( m_previewAfterFrame );
+            m_afterPartitionLabelsView->setExtendedPartitionHidden( mode == PartitionBarsView::NoNestedPartitions );
             m_afterPartitionLabelsView->setCustomNewRootLabel( Calamares::Branding::instance()->
                                                   string( Calamares::Branding::BootloaderEntryName ) );
 
@@ -742,6 +772,13 @@ ChoicePage::updateActionChoicePreview( ChoicePage::Choice choice )
                 m_selectLabel->hide();
             else
             {
+                SelectionFilter filter = [ this ]( const QModelIndex& index )
+                {
+                    return PartUtils::canBeReplaced( (Partition*)( index.data( PartitionModel::PartitionPtrRole ).value< void* >() ) );
+                };
+                m_beforePartitionBarsView->setSelectionFilter( filter );
+                m_beforePartitionLabelsView->setSelectionFilter( filter );
+
                 m_selectLabel->show();
                 m_selectLabel->setText( tr( "<strong>Select a partition to install on</strong>" ) );
             }
@@ -815,6 +852,18 @@ ChoicePage::setupActions()
         m_deviceInfoWidget->setPartitionTableType( currentDevice->partitionTable()->type() );
     else
         m_deviceInfoWidget->setPartitionTableType( PartitionTable::unknownTableType );
+
+    bool atLeastOneCanBeResized = false;
+
+    for ( auto it = PartitionIterator::begin( currentDevice );
+          it != PartitionIterator::end( currentDevice ); ++it )
+    {
+        if ( PartUtils::canBeResized( *it ) )
+        {
+            atLeastOneCanBeResized = true;
+            break;
+        }
+    }
 
     if ( osproberEntriesForCurrentDevice.count() == 0 )
     {
@@ -891,7 +940,7 @@ ChoicePage::setupActions()
 
         m_replaceButton->show();
 
-        if ( osproberEntriesForCurrentDevice.first().canBeResized )
+        if ( atLeastOneCanBeResized )
             m_alongsideButton->show();
         else
         {
@@ -904,17 +953,6 @@ ChoicePage::setupActions()
     else
     {
         // osproberEntriesForCurrentDevice has at least 2 items.
-
-        bool atLeastOneCanBeResized = false;
-
-        foreach ( const OsproberEntry& entry, osproberEntriesForCurrentDevice )
-        {
-            if ( entry.canBeResized )
-            {
-                atLeastOneCanBeResized = true;
-                break;
-            }
-        }
 
         CALAMARES_RETRANSLATE(
             m_messageLabel->setText( tr( "This storage device has multiple operating systems on it. "

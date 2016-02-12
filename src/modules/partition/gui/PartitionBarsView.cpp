@@ -52,6 +52,7 @@ static const int SELECTION_MARGIN = qMin( ( EXTENDED_PARTITION_MARGIN - 2 ) / 2,
 
 PartitionBarsView::PartitionBarsView( QWidget* parent )
     : QAbstractItemView( parent )
+    , m_nestedPartitionsMode( NoNestedPartitions )
     , m_hoveredIndex( QModelIndex() )
     , canBeSelected( []( const QModelIndex& ) { return true; } )
 {
@@ -72,6 +73,14 @@ PartitionBarsView::PartitionBarsView( QWidget* parent )
 
 PartitionBarsView::~PartitionBarsView()
 {
+}
+
+
+void
+PartitionBarsView::setNestedPartitionsMode( PartitionBarsView::NestedPartitionsMode mode )
+{
+    m_nestedPartitionsMode = mode;
+    viewport()->repaint();
 }
 
 
@@ -199,25 +208,26 @@ PartitionBarsView::drawPartitions( QPainter* painter, const QRect& rect, const Q
     PartitionModel* modl = qobject_cast< PartitionModel* >( model() );
     if ( !modl )
         return;
-    const int count = modl->rowCount( parent );
     const int totalWidth = rect.width();
 
     auto pair = computeItemsVector( parent );
     QVector< PartitionBarsView::Item >& items = pair.first;
     qreal& total = pair.second;
     int x = rect.x();
-    for ( int row = 0; row < count; ++row )
+    for ( int row = 0; row < items.count(); ++row )
     {
         const auto& item = items[ row ];
         int width;
-        if ( row < count - 1 )
+        if ( row < items.count() - 1 )
             width = totalWidth * ( item.size / total );
         else
             // Make sure we fill the last pixel column
             width = rect.right() - x + 1;
 
         drawSection( painter, rect, x, width, item.index );
-        if ( modl->hasChildren( item.index ) )
+
+        if ( m_nestedPartitionsMode == DrawNestedPartitions &&
+             modl->hasChildren( item.index ) )
         {
             QRect subRect(
                 x + EXTENDED_PARTITION_MARGIN,
@@ -230,7 +240,7 @@ PartitionBarsView::drawPartitions( QPainter* painter, const QRect& rect, const Q
         x += width;
     }
 
-    if ( !count &&
+    if ( !items.count() &&
          !modl->device()->partitionTable() ) // No disklabel or unknown
     {
         int width = rect.right() - rect.x() + 1;
@@ -254,18 +264,17 @@ PartitionBarsView::indexAt( const QPoint &point,
     PartitionModel* modl = qobject_cast< PartitionModel* >( model() );
     if ( !modl )
         return QModelIndex();
-    const int count = modl->rowCount( parent );
     const int totalWidth = rect.width();
 
     auto pair = computeItemsVector( parent );
     QVector< PartitionBarsView::Item >& items = pair.first;
     qreal& total = pair.second;
     int x = rect.x();
-    for ( int row = 0; row < count; ++row )
+    for ( int row = 0; row < items.count(); ++row )
     {
         const auto& item = items[ row ];
         int width;
-        if ( row < count - 1 )
+        if ( row < items.count() - 1 )
             width = totalWidth * ( item.size / total );
         else
             // Make sure we fill the last pixel column
@@ -274,7 +283,8 @@ PartitionBarsView::indexAt( const QPoint &point,
         QRect thisItemRect( x, rect.y(), width, rect.height() );
         if ( thisItemRect.contains( point ) )
         {
-            if ( modl->hasChildren( item.index ) )
+            if ( m_nestedPartitionsMode == DrawNestedPartitions &&
+                 modl->hasChildren( item.index ) )
             {
                 QRect subRect(
                     x + EXTENDED_PARTITION_MARGIN,
@@ -282,6 +292,7 @@ PartitionBarsView::indexAt( const QPoint &point,
                     width - 2 * EXTENDED_PARTITION_MARGIN,
                     rect.height() - 2 * EXTENDED_PARTITION_MARGIN
                 );
+
                 if ( subRect.contains( point ) )
                 {
                     return indexAt( point, subRect, item.index );
@@ -315,18 +326,17 @@ PartitionBarsView::visualRect( const QModelIndex& index,
     PartitionModel* modl = qobject_cast< PartitionModel* >( model() );
     if ( !modl )
         return QRect();
-    const int count = modl->rowCount( parent );
     const int totalWidth = rect.width();
 
     auto pair = computeItemsVector( parent );
     QVector< PartitionBarsView::Item >& items = pair.first;
     qreal& total = pair.second;
     int x = rect.x();
-    for ( int row = 0; row < count; ++row )
+    for ( int row = 0; row < items.count(); ++row )
     {
         const auto& item = items[ row ];
         int width;
-        if ( row < count - 1 )
+        if ( row < items.count() - 1 )
             width = totalWidth * ( item.size / total );
         else
             // Make sure we fill the last pixel column
@@ -336,7 +346,8 @@ PartitionBarsView::visualRect( const QModelIndex& index,
         if ( item.index == index )
             return thisItemRect;
 
-        if ( modl->hasChildren( item.index ) &&
+        if ( m_nestedPartitionsMode == DrawNestedPartitions &&
+             modl->hasChildren( item.index ) &&
              index.parent() == item.index )
         {
             QRect subRect(
@@ -345,6 +356,7 @@ PartitionBarsView::visualRect( const QModelIndex& index,
                 width - 2 * EXTENDED_PARTITION_MARGIN,
                 rect.height() - 2 * EXTENDED_PARTITION_MARGIN
             );
+
             QRect candidateVisualRect = visualRect( index, subRect, item.index );
             if ( !candidateVisualRect.isNull() )
                 return candidateVisualRect;
@@ -498,17 +510,30 @@ PartitionBarsView::updateGeometries()
 QPair< QVector< PartitionBarsView::Item >, qreal >
 PartitionBarsView::computeItemsVector( const QModelIndex& parent ) const
 {
-    const int count = model()->rowCount( parent );
-    QVector< PartitionBarsView::Item > items( count );
+    int count = model()->rowCount( parent );
+    QVector< PartitionBarsView::Item > items;
 
     qreal total = 0;
     for ( int row = 0; row < count; ++row )
     {
         QModelIndex index = model()->index( row, 0, parent );
-        qreal size = index.data( PartitionModel::SizeRole ).toLongLong();
-        total += size;
-        items[ row ] = { size, index };
+        if ( m_nestedPartitionsMode == NoNestedPartitions &&
+             model()->hasChildren( index ) )
+        {
+            QPair< QVector< PartitionBarsView::Item >, qreal > childVect =
+                    computeItemsVector( index );
+            items += childVect.first;
+            total += childVect.second;
+        }
+        else
+        {
+            qreal size = index.data( PartitionModel::SizeRole ).toLongLong();
+            total += size;
+            items.append( { size, index } );
+        }
     }
+
+    count = items.count();
 
     // The sizes we have are perfect, but now we have to hardcode a minimum size for small
     // partitions and compensate for it in the total.
@@ -518,7 +543,7 @@ PartitionBarsView::computeItemsVector( const QModelIndex& parent ) const
         if ( items[ row ].size < 0.01 * total ) // If this item is smaller than 1% of everything,
         {                                       // force its width to 1%.
             adjustedTotal -= items[ row ].size;
-            items[ row ].size = qRound( 0.01 * total );
+            items[ row ].size = 0.01 * total;
             adjustedTotal += items[ row ].size;
         }
     }

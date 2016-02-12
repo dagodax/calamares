@@ -1,6 +1,7 @@
 /* === This file is part of Calamares - <http://github.com/calamares> ===
  *
  *   Copyright 2014, Aurélien Gâteau <agateau@kde.org>
+ *   Copyright 2015-2016, Teo Mrnjavac <teo@kde.org>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -33,6 +34,8 @@
 
 #include "utils/Retranslator.h"
 #include "Branding.h"
+#include "JobQueue.h"
+#include "GlobalStorage.h"
 
 // KPMcore
 #include <kpmcore/core/device.h>
@@ -56,6 +59,11 @@ PartitionPage::PartitionPage( PartitionCoreModule* core, QWidget* parent )
     m_ui->setupUi( this );
     m_ui->deviceComboBox->setModel( m_core->deviceModel() );
     m_ui->bootLoaderComboBox->setModel( m_core->bootLoaderModel() );
+    PartitionBarsView::NestedPartitionsMode mode = Calamares::JobQueue::instance()->globalStorage()->
+                                                   value( "drawNestedPartitions" ).toBool() ?
+                                                       PartitionBarsView::DrawNestedPartitions :
+                                                       PartitionBarsView::NoNestedPartitions;
+    m_ui->partitionBarsView->setNestedPartitionsMode( mode );
     updateButtons();
     updateBootLoaderInstallPath();
 
