@@ -29,6 +29,7 @@
 
 // Qt
 #include <QDebug>
+#include <QGuiApplication>
 #include <QMouseEvent>
 #include <QPainter>
 
@@ -138,7 +139,10 @@ PartitionBarsView::drawSection( QPainter* painter, const QRect& rect_, int x, in
          m_hoveredIndex.isValid() &&
          index == m_hoveredIndex )
     {
-        painter->setBrush( color.lighter( 115 ) );
+        if ( canBeSelected( index ) )
+            painter->setBrush( color.lighter( 115 ) );
+        else
+            painter->setBrush( color );
     }
     else
     {
@@ -469,10 +473,18 @@ PartitionBarsView::mouseMoveEvent( QMouseEvent* event )
         m_hoveredIndex = candidateIndex;
     }
     else
+    {
         m_hoveredIndex = QModelIndex();
+        QGuiApplication::restoreOverrideCursor();
+    }
 
     if ( oldHoveredIndex != m_hoveredIndex )
     {
+        if ( m_hoveredIndex.isValid() && !canBeSelected( m_hoveredIndex ) )
+            QGuiApplication::setOverrideCursor( Qt::ForbiddenCursor );
+        else
+            QGuiApplication::restoreOverrideCursor();
+
         viewport()->repaint();
     }
 }
@@ -481,6 +493,7 @@ PartitionBarsView::mouseMoveEvent( QMouseEvent* event )
 void
 PartitionBarsView::leaveEvent( QEvent* event )
 {
+    QGuiApplication::restoreOverrideCursor();
     if ( m_hoveredIndex.isValid() )
     {
         m_hoveredIndex = QModelIndex();

@@ -41,7 +41,7 @@ def run():
     if os.path.exists("%s/usr/bin/calamares" % install_path):
         print('Removing installer packages')
         libcalamares.utils.target_env_call(
-            ['pacman', '-Rns', '--noconfirm', 'calamares', 'keyboardctl'])
+            ['pacman', '-Rns', '--noconfirm', 'calamares', 'calamares-debug', 'keyboardctl'])
 
     # Remove welcome
     if os.path.exists("%s/usr/bin/welcome" % install_path):
