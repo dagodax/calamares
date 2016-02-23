@@ -2,32 +2,32 @@
 <context>
     <name>AlongsidePage</name>
     <message>
-        <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="75"/>
+        <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="77"/>
         <source>Choose partition to shrink:</source>
-        <translation>Memilih partisi untuk diiris:</translation>
+        <translation>Pilihlah partisi untuk diiris:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="76"/>
+        <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="78"/>
         <source>Allocate drive space by dragging the divider below:</source>
         <translation>Alokasikan ruang disk menurut penyeretan sekat di bawah:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="119"/>
+        <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="121"/>
         <source>With this operation, the partition &lt;strong&gt;%1&lt;/strong&gt; which contains %4 will be shrunk to %2MB and a new %3MB partition will be created for %5.</source>
         <translation>Dengan operasi ini, partisi &lt;strong&gt;%1&lt;/strong&gt; yang berisi %4 akan diiris ke %2MB dan %3MB partisi baru akan dibuat untuk %5.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="219"/>
+        <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="198"/>
         <source>An EFI system partition cannot be found anywhere on this system. Please go back and use manual partitioning to set up %1.</source>
         <translation>Sebuah partisi sistem EFI tidak bisa ditemukan dimanapun pada sistem ini. Silakan kembali dan gunakan pemartisian manual untuk mempersiapkan %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="229"/>
+        <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="208"/>
         <source>The EFI system partition at %1 will be used for starting %2.</source>
         <translation>Partisi sistem EFI di %1 akan digunakan untuk memulai %2.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="239"/>
+        <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="218"/>
         <source>EFI system partition:</source>
         <translation>Partisi sistem EFI:</translation>
     </message>
@@ -135,6 +135,24 @@ p, li { white-space: pre-wrap; }
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; color:#343434;&quot;&gt;Persiapan&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+</context>
+<context>
+    <name>BootInfoWidget</name>
+    <message>
+        <location filename="../src/modules/partition/gui/BootInfoWidget.cpp" line="61"/>
+        <source>The &lt;strong&gt;boot environment&lt;/strong&gt; of this system.&lt;br&gt;&lt;br&gt;Older x86 systems only support &lt;strong&gt;BIOS&lt;/strong&gt;.&lt;br&gt;Modern systems usually use &lt;strong&gt;EFI&lt;/strong&gt;, but may also show up as BIOS if started in compatibility mode.</source>
+        <translation>&lt;strong&gt;Lingkungan boot&lt;/strong&gt; sistem ini.&lt;br&gt;&lt;br&gt;Sistem x86 lawas hanya mendukung &lt;strong&gt;BIOS&lt;/strong&gt;.&lt;br&gt;Sistem modern biasanya menggunakan &lt;strong&gt;EFI&lt;/strong&gt;, tetapi juga dapat muncul sebagai BIOS jika lingkungan boot dimulai dalam mode kompatibilitas.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/BootInfoWidget.cpp" line="75"/>
+        <source>This system was started with an &lt;strong&gt;EFI&lt;/strong&gt; boot environment.&lt;br&gt;&lt;br&gt;To configure startup from an EFI environment, this installer must deploy a boot loader application, like &lt;strong&gt;GRUB&lt;/strong&gt; or &lt;strong&gt;systemd-boot&lt;/strong&gt; on an &lt;strong&gt;EFI System Partition&lt;/strong&gt;. This is automatic, unless you choose manual partitioning, in which case you must choose it or create it on your own.</source>
+        <translation>Sistem ini dimulai dengan lingkungan boot &lt;strong&gt;EFI&lt;/strong&gt;.&lt;br&gt;Untuk mengkonfigurasi pemulaian dari sebuah lingkungan EFI, pemasang ini harus menggunakan aplikasi pemuat boot, seperti &lt;strong&gt;GRUB&lt;/strong&gt; atau &lt;strong&gt;systemd-boot&lt;/strong&gt; pada &lt;strong&gt;EFI System Partition&lt;/strong&gt;. Ini adalah otomatis, kecuali jika Anda memilih pemartisian manual, dalam hal ini Anda harus memilih atau menciptakannya sendiri.</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/BootInfoWidget.cpp" line="87"/>
+        <source>This system was started with a &lt;strong&gt;BIOS&lt;/strong&gt; boot environment.&lt;br&gt;&lt;br&gt;To configure startup from a BIOS environment, this installer must install a boot loader, like &lt;strong&gt;GRUB&lt;/strong&gt;, either at the beginning of a partition or on the &lt;strong&gt;Master Boot Record&lt;/strong&gt; near the beginning of the partition table (preferred). This is automatic, unless you choose manual partitioning, in which case you must set it up on your own.</source>
+        <translation>Sistem ini dimulai dengan lingkungan boot &lt;strong&gt;BIOS&lt;/strong&gt;.&lt;br&gt;Untuk mengkonfigurasi pemulaian dari lingkungan BIOS, pemasang ini harus memasang pemuat boot, seperti &lt;strong&gt;GRUB&lt;/strong&gt;, baik di awal partisi atau pada &lt;strong&gt;Master Boot Record&lt;/strong&gt; di bagian awal tabel partisi (yang disukai). Ini adalah otomatis, kecuali jika Anda memilih partisi manual, dalam hal ini Anda harus mengaturnya sendiri.</translation>
     </message>
 </context>
 <context>
@@ -462,83 +480,104 @@ The installer will quit and all changes will be lost.</source>
 <context>
     <name>ChoicePage</name>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="579"/>
-        <source>This computer currently does not seem to have an operating system on it. What would you like to do?</source>
-        <translation>Komputer ini sekarang tampaknya tidak memiliki sistem operasi di atasnya. Apa yang ingin Anda lakukan?</translation>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="116"/>
+        <source>After:</source>
+        <translation>Sesudah:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="603"/>
-        <source>This computer currently has %1 on it. What would you like to do?</source>
-        <translation>Komputer ini sekarang tampaknya memiliki %1 di atasnya. Apa yang ingin Anda lakukan?</translation>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="958"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="988"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1012"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1050"/>
+        <source>&lt;strong&gt;Erase disk&lt;/strong&gt;&lt;br/&gt;This will &lt;font color=&quot;red&quot;&gt;delete&lt;/font&gt; all data currently present on the selected storage device.</source>
+        <translation>&lt;strong&gt;Setip diska&lt;/strong&gt;&lt;br/&gt;Ini akan &lt;font color=&quot;red&quot;&gt;menghapus&lt;/font&gt; semua data yang ada saat ini pada perangkat penyimpanan terpilih.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="607"/>
-        <source>&lt;strong&gt;Install %2 alongside %1&lt;/strong&gt;&lt;br/&gt;The installer will shrink the %1 volume to make room for %2. You can choose which operating system you want each time the computer starts up.</source>
-        <translation>&lt;strong&gt;Pasang %2 di samping %1&lt;/strong&gt;&lt;br/&gt;Pemasang akan mengiris volume %1 akan membuat ruang untuk %2. Anda dapat memilih sistem operasi mana yang Anda inginkan setiap komputer dihidupkan.</translation>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="983"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1007"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1045"/>
+        <source>&lt;strong&gt;Install alongside&lt;/strong&gt;&lt;br/&gt;The installer will shrink a partition to make room for %1.</source>
+        <translation>&lt;strong&gt;Pasang di samping&lt;/strong&gt;&lt;br/&gt;Pemasang akan mengiris sebuah partisi untuk membuat ruang bagi %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="627"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="658"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="705"/>
-        <source>&lt;strong&gt;Replace a partition with %1&lt;/strong&gt;&lt;br/&gt;You will be offered a choice of which partition to erase.</source>
-        <translation>&lt;strong&gt;Ganti partisi dengan %1&lt;/strong&gt;&lt;br/&gt;Anda akan ditawarkan untuk memilih partisi mana yang akan disetip.</translation>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="993"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1016"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1054"/>
+        <source>&lt;strong&gt;Replace a partition&lt;/strong&gt;&lt;br/&gt;Replaces a partition with %1.</source>
+        <translation>&lt;strong&gt;Ganti partisi&lt;/strong&gt;Ganti partisi dengan %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="639"/>
-        <source>&lt;strong&gt;Install %1 alongside your current operating system&lt;/strong&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.</source>
-        <translation>&lt;strong&gt;Pasang %1 di samping sistem operasi Anda sekarang&lt;/strong&gt;&lt;br/&gt;Pemasang akan mengiris volume yang ada untuk membuat ruang bagi %2. Anda dapat memilih sistem operasi mana yang Anda inginkan setiap komputer dihidupkan.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="686"/>
-        <source>&lt;strong&gt;Install %1 alongside your current operating systems&lt;/strong&gt;&lt;br/&gt;The installer will shrink an existing volume to make room for %2. You can choose which operating system you want each time the computer starts up.</source>
-        <translation>&lt;strong&gt;Pasang %1 di samping sistem operasi Anda sekarang&lt;/strong&gt;&lt;br/&gt;Pemasang akan mengiris volume yang ada untuk membuat ruang bagi %2. Anda dapat memilih sistem operasi mana yang Anda inginkan setiap komputer dihidupkan.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="106"/>
-        <source>Storage de&amp;vice:</source>
-        <translation>Perangkat pe&amp;nyimpanan:</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="234"/>
-        <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself, or choose multiple partitions for %1.  Having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;, either use an existing without formatting or create one.&lt;font color=&quot;red&quot;&gt; Currently there is a bug in manual partitioning which makes the GUI not progress after the summary page&lt;/font&gt;.  This does not effect the actual install, clicking on the summary page will move the GUI to the install page. Do not cancel the install, the finish page will show correctly afterward.</source>
-        <translation>&lt;strong&gt;Pemartisian manual&lt;/strong&gt;&lt;br/&gt;Anda dapat membuat atau mengubah ukuran partisi sendiri, atau memilih beberapa partisi untuk %1. Memiliki sebuah tabel partisi GPT dan &lt;strong&gt;partisi /boot fat32 512M adalah suatu keharusan untuk UEFI installs&lt;/strong&gt;, gunakanlah salah satu yang ada tanpa memformat atau membuat.&lt;font color=&quot;red&quot;&gt; Saat ini telah ada kutu dalam pemartisian manual yang mana GUI tidak terprogres setelah halaman ringkasan&lt;/font&gt;.Ini tidak mempengaruhi pemasangan sesungguhnya, mengeklik pada halaman ringkasan akan pindah GUI ke halaman pasang. Jangan membatalkan pemasangan, halaman finis akan ditampilkan setelah ini.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="329"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="769"/>
         <source>Boot loader location:</source>
         <translation>Lokasi pemuat boot:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="537"/>
-        <source>Drag to split:</source>
-        <translation>Seret untuk membelah:</translation>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="114"/>
+        <source>Select storage de&amp;vice:</source>
+        <translation>Pilih perangkat pe&amp;nyimpanan:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="543"/>
-        <source>Preview:</source>
-        <translation>Pratinjau:</translation>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="115"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="701"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="740"/>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="816"/>
+        <source>Current:</source>
+        <translation>Saat ini:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="582"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="648"/>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="695"/>
-        <source>&lt;strong&gt;Erase disk and install %1&lt;/strong&gt;&lt;br/&gt;This will &lt;font color=&quot;red&quot;&gt;delete&lt;/font&gt; all the data currently present on %2 (if any), including programs, documents, photos, music, and other files.&lt;br/&gt;You will be able to review and confirm your choice before proceeding.</source>
-        <translation>&lt;strong&gt;Setip disk dan pasang %1&lt;/strong&gt;&lt;br/&gt;Ini akan &lt;font color=&quot;red&quot;&gt;menghapus&lt;/font&gt; semua data yang ada saat ini pada %2 (jika ada), termasuk program, dokumen, foto, musik, dan berkas lainnya.&lt;br/&gt;Anda dapat meninjau dan mengkonfirmasi pilihan Anda sebelum melanjutkan.</translation>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="222"/>
+        <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself. Having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;, either use an existing without formatting or create one.</source>
+        <translation>&lt;strong&gt;Pemartisian manual&lt;/strong&gt;&lt;br/&gt;Anda bisa menciptakan atau mengubah ukuran partisi sendiri. Memiliki sebuah tabel partisi GPT dan &lt;strong&gt;partisi /boot fat32 512M adalah suatu keharusan untuk UEFI installs&lt;/strong&gt;, gunakanlah salah satu yang ada tanpa memformat atau membuat lagi.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="615"/>
-        <source>&lt;strong&gt;Erase disk with %3 and install %1&lt;/strong&gt;&lt;br/&gt;This will &lt;font color=&quot;red&quot;&gt;delete&lt;/font&gt; all the data currently present on %2 (if any), including programs, documents, photos, music, and other files.&lt;br/&gt;You will be able to review and confirm your choice before proceeding.</source>
-        <translation>&lt;strong&gt;Setip disk %3 dan pasang %1&lt;/strong&gt;&lt;br/&gt;Ini akan &lt;font color=&quot;red&quot;&gt;menghapus&lt;/font&gt; semua data yang ada saat ini pada %2 (jika ada), termasuk program, dokumen, foto, musik, dan berkas lainnya.&lt;br/&gt;Anda dapat meninjau dan mengkonfirmasi pilihan Anda sebelum melanjutkan.</translation>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="702"/>
+        <source>&lt;strong&gt;Select a partition to shrink, then drag the bottom bar to resize&lt;/strong&gt;</source>
+        <translation>&lt;strong&gt;Pilih partisi untuk diiris, kemudian seret bilah bawah untuk mengubah ukuran&lt;/strong&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="636"/>
-        <source>This computer already has an operating system on it. What would you like to do?</source>
-        <translation>Komputer ini sudah memiliki sistem operasi di atasnya. Apa yang ingin Anda lakukan?</translation>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="716"/>
+        <source>%1 will be shrunk to %2MB and a new %3MB partition will be created for %4.</source>
+        <translation>%1 akan diiris ke %2MB dan sebuah %3MB partisi baru akan diciptakan untuk %4.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="683"/>
-        <source>This computer currently has multiple operating systems on it. What would you like to do?</source>
-        <translation>Komputer ini sekarang tampaknya memiliki beberapa sistem operasi di atasnya. Apa yang ingin Anda lakukan?</translation>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="807"/>
+        <source>&lt;strong&gt;Select a partition to install on&lt;/strong&gt;</source>
+        <translation>&lt;strong&gt;Pilih sebuah partisi untuk memasangnya&lt;/strong&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="862"/>
+        <source>An EFI system partition cannot be found anywhere on this system. Please go back and use manual partitioning to set up %1.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="872"/>
+        <source>The EFI system partition at %1 will be used for starting %2.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="881"/>
+        <source>EFI system partition:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="953"/>
+        <source>This storage device does not seem to have an operating system on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="977"/>
+        <source>This storage device has %1 on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1002"/>
+        <source>This storage device already has an operating system on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1040"/>
+        <source>This storage device has multiple operating systems on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.ui" line="14"/>
@@ -851,9 +890,42 @@ The installer will quit and all changes will be lost.</source>
     </message>
 </context>
 <context>
+    <name>DeviceInfoWidget</name>
+    <message>
+        <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="63"/>
+        <source>The type of &lt;strong&gt;partition table&lt;/strong&gt; on the selected storage device.&lt;br&gt;&lt;br&gt;The only way to change the partition table type is to erase and recreate the partition table from scratch, which destroys all data on the storage device.&lt;br&gt;This installer will keep the current partition table unless you explicitly choose otherwise.&lt;br&gt;If unsure, on modern systems GPT is preferred.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="107"/>
+        <source>This device has a &lt;strong&gt;%1&lt;/strong&gt; partition table.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="114"/>
+        <source>This is a &lt;strong&gt;loop&lt;/strong&gt; device.&lt;br&gt;&lt;br&gt;It is a pseudo-device with no partition table that makes a file accessible as a block device. This kind of setup usually only contains a single filesystem.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="121"/>
+        <source>This installer &lt;strong&gt;cannot detect a partition table&lt;/strong&gt; on the selected storage device.&lt;br&gt;&lt;br&gt;The device either has no partition table, or the partition table is corrupted or of an unknown type.&lt;br&gt;This installer can create a new partition table for you, either automatically, or through the manual partitioning page.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="131"/>
+        <source>&lt;br&gt;&lt;br&gt;This is the recommended partition table type for modern systems which start from an &lt;strong&gt;EFI&lt;/strong&gt; boot environment.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="137"/>
+        <source>&lt;br&gt;&lt;br&gt;This partition table type is only advisable on older systems which start from a &lt;strong&gt;BIOS&lt;/strong&gt; boot environment. GPT is recommended in most other cases.&lt;br&gt;&lt;br&gt;&lt;strong&gt;Warning:&lt;/strong&gt; the MBR partition table is an obsolete MS-DOS era standard.&lt;br&gt;Only 4 &lt;em&gt;primary&lt;/em&gt; partitions may be created, and of those 4, one can be an &lt;em&gt;extended&lt;/em&gt; partition, which may in turn contain many &lt;em&gt;logical&lt;/em&gt; partitions.</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>DeviceModel</name>
     <message>
-        <location filename="../src/modules/partition/core/DeviceModel.cpp" line="79"/>
+        <location filename="../src/modules/partition/core/DeviceModel.cpp" line="80"/>
         <source>%1 - %2 (%3)</source>
         <translation>%1 - %2 (%3)</translation>
     </message>
@@ -1301,34 +1373,74 @@ The installer will quit and all changes will be lost.</source>
     </message>
 </context>
 <context>
+    <name>PartitionLabelsView</name>
+    <message>
+        <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="190"/>
+        <source>Root</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="193"/>
+        <source>Home</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="195"/>
+        <source>Boot</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="198"/>
+        <source>EFI system</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="200"/>
+        <source>Swap</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="202"/>
+        <source>New partition for %1</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="219"/>
+        <source>%1  %2</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>PartitionModel</name>
     <message>
-        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="136"/>
+        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="137"/>
+        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="169"/>
         <source>Free Space</source>
         <translation>Ruang Bebas</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="140"/>
+        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="141"/>
+        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="173"/>
         <source>New partition</source>
         <translation>Partisi baru</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="179"/>
+        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="242"/>
         <source>Name</source>
         <translation>Nama</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="181"/>
+        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="244"/>
         <source>File System</source>
         <translation>Sistem Berkas</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="183"/>
+        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="246"/>
         <source>Mount Point</source>
         <translation>Titik Kait</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="185"/>
+        <location filename="../src/modules/partition/core/PartitionModel.cpp" line="248"/>
         <source>Size</source>
         <translation>Ukuran</translation>
     </message>
@@ -1376,7 +1488,7 @@ The installer will quit and all changes will be lost.</source>
         <translation>Pasang boot &amp;loader pada:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="135"/>
+        <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="147"/>
         <source>Are you sure you want to create a new partition table on %1?</source>
         <translation>Apakah Anda yakin ingin membuat tabel partisi baru pada %1?</translation>
     </message>
@@ -1384,67 +1496,67 @@ The installer will quit and all changes will be lost.</source>
 <context>
     <name>PartitionViewStep</name>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="69"/>
+        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="65"/>
         <source>Gathering system information...</source>
         <translation>Kumpulan informasi sistem...</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="117"/>
+        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="104"/>
         <source>Partitions</source>
         <translation>Partisi</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="154"/>
+        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="141"/>
         <source>Install %1 &lt;strong&gt;alongside&lt;/strong&gt; another operating system.</source>
         <translation>Pasang %1 &lt;strong&gt;di samping&lt;/strong&gt; operasi sistem yang lain.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="159"/>
+        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="146"/>
         <source>&lt;strong&gt;Erase&lt;/strong&gt; disk and install %1.</source>
         <translation>&lt;strong&gt;Setip&lt;/strong&gt; disk dan pasang %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="164"/>
+        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="151"/>
         <source>&lt;strong&gt;Replace&lt;/strong&gt; a partition with %1.</source>
         <translation>&lt;strong&gt;Ganti&lt;/strong&gt; partisi dengan %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="169"/>
+        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="156"/>
         <source>&lt;strong&gt;Manual&lt;/strong&gt; partitioning.</source>
         <translation>Mempartisi &lt;strong&gt;manual&lt;/strong&gt;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="182"/>
+        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="169"/>
         <source>Install %1 &lt;strong&gt;alongside&lt;/strong&gt; another operating system on disk &lt;strong&gt;%2&lt;/strong&gt; (%3).</source>
         <translation>Pasang %1 &lt;strong&gt;di samping&lt;/strong&gt; operasi sistem yang lain pada disk &lt;strong&gt;%2&lt;/strong&gt; (%3).</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="189"/>
+        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="176"/>
         <source>&lt;strong&gt;Erase&lt;/strong&gt; disk &lt;strong&gt;%2&lt;/strong&gt; (%3) and install %1.</source>
         <translation>&lt;strong&gt;Setip&lt;/strong&gt; disk &lt;strong&gt;%2&lt;/strong&gt; (%3) dan pasang %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="196"/>
+        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="183"/>
         <source>&lt;strong&gt;Replace&lt;/strong&gt; a partition on disk &lt;strong&gt;%2&lt;/strong&gt; (%3) with %1.</source>
         <translation>&lt;strong&gt;Ganti&lt;/strong&gt; partisi pada disk &lt;strong&gt;%2&lt;/strong&gt; (%3) dengan %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="203"/>
+        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="190"/>
         <source>&lt;strong&gt;Manual&lt;/strong&gt; partitioning on disk &lt;strong&gt;%1&lt;/strong&gt; (%2).</source>
         <translation>Pemartisian &lt;strong&gt;manual&lt;/strong&gt; pada disk &lt;strong&gt;%1&lt;/strong&gt; (%2).</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="211"/>
+        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="198"/>
         <source>Disk &lt;strong&gt;%1&lt;/strong&gt; (%2)</source>
         <translation>Disk &lt;strong&gt;%1&lt;/strong&gt; (%2)</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="223"/>
-        <source>Before:</source>
-        <translation>Sebelum:</translation>
+        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="226"/>
+        <source>Current:</source>
+        <translation>Saat ini:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="229"/>
+        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="242"/>
         <source>After:</source>
         <translation>Sesudah:</translation>
     </message>
@@ -1463,89 +1575,99 @@ The installer will quit and all changes will be lost.</source>
         <translation>Baku</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionPreview.cpp" line="46"/>
+        <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="49"/>
         <source>Unpartitioned space or unknown partition table</source>
         <translation>Ruang tidak terpartisi atau tabel partisi tidak diketahui</translation>
     </message>
+    <message>
+        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="150"/>
+        <source>unknown</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="152"/>
+        <source>extended</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="154"/>
+        <source>unformatted</source>
+        <translation type="unfinished"/>
+    </message>
 </context>
 <context>
-    <name>ReplacePage</name>
+    <name>ReplaceWidget</name>
     <message>
-        <location filename="../src/modules/partition/gui/ReplacePage.ui" line="14"/>
+        <location filename="../src/modules/partition/gui/ReplaceWidget.ui" line="14"/>
         <source>Form</source>
-        <translation>Formulir</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ReplacePage.ui" line="22"/>
-        <source>Dis&amp;k:</source>
-        <translation>Dis&amp;k:</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="152"/>
+        <location filename="../src/modules/partition/gui/ReplaceWidget.cpp" line="134"/>
         <source>Select where to install %1.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;this will delete all files on the selected partition.</source>
-        <translation>Pilih di mana memasang %1.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Peringatan: &lt;/font&gt;Ini akan menghapus semua berkas pada partisi terpilih.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="179"/>
+        <location filename="../src/modules/partition/gui/ReplaceWidget.cpp" line="161"/>
         <source>The selected item does not appear to be a valid partition.</source>
-        <translation>Item yang dipilih tidak muncul untuk menjadi partisi yang sah.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="187"/>
+        <location filename="../src/modules/partition/gui/ReplaceWidget.cpp" line="169"/>
         <source>%1 cannot be installed on empty space. Please select an existing partition.</source>
-        <translation>%1 tidak dapat dipasang pada ruang kosong. Silakan pilih partisi yang ada.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="198"/>
+        <location filename="../src/modules/partition/gui/ReplaceWidget.cpp" line="180"/>
         <source>%1 cannot be installed on an extended partition. Please select an existing primary or logical partition.</source>
-        <translation>%1 tidak dapat dipasang pada sebuah partisi. Silakan pilih partisi primer atau logical yang ada.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="209"/>
+        <location filename="../src/modules/partition/gui/ReplaceWidget.cpp" line="191"/>
         <source>%1 cannot be installed on this partition.</source>
-        <translation>%1 tidak bisa dipasang pada partisi.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="216"/>
+        <location filename="../src/modules/partition/gui/ReplaceWidget.cpp" line="198"/>
         <source>Data partition (%1)</source>
-        <translation>Data partisi (%1)</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="233"/>
+        <location filename="../src/modules/partition/gui/ReplaceWidget.cpp" line="215"/>
         <source>Unknown system partition (%1)</source>
-        <translation>Sistem partisi (%1) tidak diketahui.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="238"/>
+        <location filename="../src/modules/partition/gui/ReplaceWidget.cpp" line="220"/>
         <source>%1 system partition (%2)</source>
-        <translation>Sistem partisi (%2) %1</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="249"/>
+        <location filename="../src/modules/partition/gui/ReplaceWidget.cpp" line="231"/>
         <source>&lt;strong&gt;%4&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;The partition %1 is too small for %2. Please select a partition with capacity at least %3 GiB.</source>
-        <translation>&lt;strong&gt;%4&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Partisi %1 terlalu kecil untuk %2. Silakan pilih partisi dengan kapasitas setidaknya %3 GiB.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="273"/>
+        <location filename="../src/modules/partition/gui/ReplaceWidget.cpp" line="255"/>
         <source>&lt;strong&gt;%2&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;An EFI system partition cannot be found anywhere on this system. Please go back and use manual partitioning to set up %1.</source>
-        <translation>&lt;strong&gt;%2&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Sebuah partisi sistem EFI tidak bisa ditemukan dimanapun pada sistem ini. Silakan kembali dan gunakan pemartisian manual untuk mempersiapkan %1.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="285"/>
-        <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="304"/>
-        <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="329"/>
+        <location filename="../src/modules/partition/gui/ReplaceWidget.cpp" line="267"/>
+        <location filename="../src/modules/partition/gui/ReplaceWidget.cpp" line="286"/>
+        <location filename="../src/modules/partition/gui/ReplaceWidget.cpp" line="311"/>
         <source>&lt;strong&gt;%3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;%1 will be installed on %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Warning: &lt;/font&gt;all data on partition %2 will be lost.</source>
-        <translation>&lt;strong&gt;%3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;%1 akan dipasang pada %2.&lt;br/&gt;&lt;font color=&quot;red&quot;&gt;Peringatan: &lt;/font&gt;semua data pada partisi %2 akan hilang.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="295"/>
+        <location filename="../src/modules/partition/gui/ReplaceWidget.cpp" line="277"/>
         <source>The EFI system partition at %1 will be used for starting %2.</source>
-        <translation>Partisi sistem EFI di %1 akan digunakan untuk memulai %2.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/ReplacePage.cpp" line="313"/>
+        <location filename="../src/modules/partition/gui/ReplaceWidget.cpp" line="295"/>
         <source>EFI system partition:</source>
-        <translation>Partisi sistem EFI:</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -1646,6 +1768,19 @@ The installer will quit and all changes will be lost.</source>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="237"/>
         <source>Could not open device &apos;%1&apos;.</source>
         <translation>Tidak dapat membuka perangkat &apos;%1&apos;.</translation>
+    </message>
+</context>
+<context>
+    <name>ScanningDialog</name>
+    <message>
+        <location filename="../src/modules/partition/gui/ScanningDialog.cpp" line="83"/>
+        <source>Scanning storage devices...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/ScanningDialog.cpp" line="84"/>
+        <source>Partitioning</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -1751,37 +1886,37 @@ The installer will quit and all changes will be lost.</source>
 <context>
     <name>SetTimezoneJob</name>
     <message>
-        <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="42"/>
+        <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="43"/>
         <source>Set timezone to %1/%2</source>
         <translation>Setel zona waktu ke %1/%2</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="65"/>
+        <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="71"/>
         <source>Cannot access selected timezone path.</source>
         <translation>Tidak dapat mengakses alur zona waktu terpilih.</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="66"/>
+        <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="72"/>
         <source>Bad path: %1</source>
         <translation>Alur buruk: %1</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="80"/>
+        <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="86"/>
         <source>Cannot set timezone.</source>
         <translation>Tidak bisa menyetel zona waktu.</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="81"/>
+        <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="87"/>
         <source>Link creation failed, target: %1; link name: %2</source>
         <translation>Pembuatan tautan gagal, sasaran: %1; nama tautan: %2</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="89"/>
+        <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="95"/>
         <source>Cannot set timezone,</source>
         <translation>Tidak bisa menyetel zona-waktu,</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="90"/>
+        <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="96"/>
         <source>Cannot open /etc/timezone for writing</source>
         <translation>Tidak bisa membuka /etc/timezone untuk penulisan</translation>
     </message>
