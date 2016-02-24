@@ -4,10 +4,10 @@ componentName:  kaos_branding
 strings:
     productName:         KaOS
     shortProductName:    KaOS
-    version:             2016.01
+    version:             2016.03
     shortVersion:        KaOS
-    versionedName:       KaOS 2016.01
-    shortVersionedName:  KaOS 2016.01
+    versionedName:       KaOS 2016.03
+    shortVersionedName:  KaOS 2016.03
     bootloaderEntryName: KaOS
     productUrl:          http://kaosx.us/
     supportUrl:          http://kaosx.us/knowledge-base/
