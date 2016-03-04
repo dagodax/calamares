@@ -71,6 +71,7 @@ ChoicePage::ChoicePage( QWidget* parent )
     , m_choice( NoChoice )
     , m_nextEnabled( false )
     , m_core( nullptr )
+    , m_grp( nullptr )
     , m_alongsideButton( nullptr )
     , m_eraseButton( nullptr )
     , m_replaceButton( nullptr )
@@ -446,6 +447,11 @@ ChoicePage::doAlongsideSetupSplitter( const QModelIndex& current,
         return;
 
     Partition* part = modl->partitionForIndex( current );
+    if ( !part )
+    {
+        cDebug() << Q_FUNC_INFO << "Partition not found for index" << current;
+        return;
+    }
 
     double requiredStorageGB = Calamares::JobQueue::instance()
                                     ->globalStorage()
