@@ -1,7 +1,9 @@
 /* === This file is part of Calamares - <http://github.com/calamares> ===
  *
- *   Copyright 2014, Aurélien Gâteau <agateau@kde.org>
- *   Copyright 2015, Teo Mrnjavac <teo@kde.org>
+ *   Copyright 2016, Teo Mrnjavac <teo@kde.org>
+ *
+ *   Based on the SetPartFlagsJob class from KDE Partition Manager,
+ *   Copyright 2008, 2010, Volker Lanz <vl@fidra.de>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -17,42 +19,34 @@
  *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef RESIZEPARTITIONJOB_H
-#define RESIZEPARTITIONJOB_H
+#ifndef SETPARTITIONFLAGSJOB_H
+#define SETPARTITIONFLAGSJOB_H
 
 #include <jobs/PartitionJob.h>
 
+#include <kpmcore/core/partitiontable.h>
+
 class Device;
 class Partition;
-class FileSystem;
 
 /**
- * This job resizes an existing partition.
- *
- * It can grow, shrink and/or move a partition while preserving its content.
+ * This job changes the flags on an existing partition.
  */
-class ResizePartitionJob : public PartitionJob
+class SetPartFlagsJob : public PartitionJob
 {
     Q_OBJECT
 public:
-    ResizePartitionJob( Device* device, Partition* partition, qint64 firstSector, qint64 lastSector );
+    SetPartFlagsJob( Device* device, Partition* partition, PartitionTable::Flags flags );
     QString prettyName() const override;
     QString prettyDescription() const override;
     QString prettyStatusMessage() const override;
     Calamares::JobResult exec() override;
 
-    void updatePreview();
-
     Device* device() const;
 
 private:
     Device* m_device;
-    qint64 m_oldFirstSector;
-    qint64 m_oldLastSector;
-    qint64 m_newFirstSector;
-    qint64 m_newLastSector;
-
-    Calamares::JobResult execJobList( const QList< Calamares::job_ptr >& jobs );
+    PartitionTable::Flags m_flags;
 };
 
-#endif /* RESIZEPARTITIONJOB_H */
+#endif // SETPARTITIONFLAGSJOB_H

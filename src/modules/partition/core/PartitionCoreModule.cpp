@@ -34,6 +34,7 @@
 #include "jobs/FillGlobalStorageJob.h"
 #include "jobs/FormatPartitionJob.h"
 #include "jobs/ResizePartitionJob.h"
+#include "jobs/SetPartitionFlagsJob.h"
 
 #include "Typedefs.h"
 #include "utils/Logger.h"
@@ -201,7 +202,9 @@ PartitionCoreModule::createPartitionTable( Device* device, PartitionTable::Table
 }
 
 void
-PartitionCoreModule::createPartition( Device* device, Partition* partition )
+PartitionCoreModule::createPartition( Device *device,
+                                      Partition *partition,
+                                      PartitionTable::Flags flags )
 {
     auto deviceInfo = infoForDevice( device );
     Q_ASSERT( deviceInfo );
@@ -211,6 +214,12 @@ PartitionCoreModule::createPartition( Device* device, Partition* partition )
     job->updatePreview();
 
     deviceInfo->jobs << Calamares::job_ptr( job );
+
+    if ( flags != PartitionTable::FlagNone )
+    {
+        SetPartFlagsJob* fJob = new SetPartFlagsJob( device, partition, flags );
+        deviceInfo->jobs << Calamares::job_ptr( fJob );
+    }
 
     refresh();
 }
@@ -240,6 +249,16 @@ PartitionCoreModule::deletePartition( Device* device, Partition* partition )
     QList< Calamares::job_ptr >& jobs = deviceInfo->jobs;
     if ( partition->state() == Partition::StateNew )
     {
+        // First remove matching SetPartFlagsJobs
+        for ( auto it = jobs.begin(); it != jobs.end(); )
+        {
+            SetPartFlagsJob* job = qobject_cast< SetPartFlagsJob* >( it->data() );
+            if ( job && job->partition() == partition )
+                it = jobs.erase( it );
+            else
+                ++it;
+        }
+
         // Find matching CreatePartitionJob
         auto it = std::find_if( jobs.begin(), jobs.end(), [ partition ]( Calamares::job_ptr job )
         {
@@ -257,6 +276,7 @@ PartitionCoreModule::deletePartition( Device* device, Partition* partition )
             cDebug() << "Failed to remove partition from preview";
             return;
         }
+
         device->partitionTable()->updateUnallocated( *device );
         jobs.erase( it );
         // The partition is no longer referenced by either a job or the device
@@ -296,7 +316,10 @@ PartitionCoreModule::formatPartition( Device* device, Partition* partition )
 }
 
 void
-PartitionCoreModule::resizePartition( Device* device, Partition* partition, qint64 first, qint64 last )
+PartitionCoreModule::resizePartition( Device* device,
+                                      Partition* partition,
+                                      qint64 first,
+                                      qint64 last )
 {
     auto deviceInfo = infoForDevice( device );
     Q_ASSERT( deviceInfo );
@@ -304,6 +327,22 @@ PartitionCoreModule::resizePartition( Device* device, Partition* partition, qint
 
     ResizePartitionJob* job = new ResizePartitionJob( device, partition, first, last );
     job->updatePreview();
+    deviceInfo->jobs << Calamares::job_ptr( job );
+
+    refresh();
+}
+
+void
+PartitionCoreModule::setPartitionFlags( Device* device,
+                                        Partition* partition,
+                                        PartitionTable::Flags flags )
+{
+    auto deviceInfo = infoForDevice( device );
+    Q_ASSERT( deviceInfo );
+    PartitionModel::ResetHelper( partitionModelForDevice( device ) );
+
+    SetPartFlagsJob* job = new SetPartFlagsJob( device, partition, flags );
+
     deviceInfo->jobs << Calamares::job_ptr( job );
 
     refresh();
