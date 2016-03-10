@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # === This file is part of Calamares - <http://github.com/calamares> ===
 #
-#   Copyright 2014-2015, Anke Boersma <demm@kaosx.us>
+#   Copyright 2014-2016, Anke Boersma <demm@kaosx.us>
 #   Copyright 2014, Benjamin Vaudour <benjamin.vaudour@yahoo.fr>
 #
 #   Calamares is free software: you can redistribute it and/or modify
@@ -125,6 +125,8 @@ def install_bootloader(boot_loader, fw_type):
         loader_path = os.path.join(
             install_path, "boot", "loader", "loader.conf")
         partitions = libcalamares.globalstorage.value("partitions")
+        device = ""
+        
         for partition in partitions:
             if partition["mountPoint"] == "/boot":
                 print(partition["device"])
@@ -140,6 +142,12 @@ def install_bootloader(boot_loader, fw_type):
                     print("EFI directory: /boot")
                     print("Boot partition: \"{!s}\"".format(boot_p))
                     print("Boot device: \"{!s}\"".format(device))
+                    
+        if not device:
+            print("WARNING: no EFI system partition or EFI system partition mount point not set.")
+            print("         >>> no EFI bootloader will be installed <<<")
+            return None
+        print("Set 'EF00' flag")
         subprocess.call(["sgdisk", "--typecode=%s:EF00" % boot_p, "%s" % device])
         subprocess.call(
             ["bootctl", "--path=%s/boot" % install_path, "install"])
