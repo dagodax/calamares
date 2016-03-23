@@ -1,4 +1,4 @@
-find_package( Qt5 ${QT_VERSION} CONFIG REQUIRED WebKit WebKitWidgets )
+find_package( Qt5 ${QT_VERSION} CONFIG REQUIRED WebEngine WebEngineWidgets )
 
 include_directories( ${PROJECT_BINARY_DIR}/src/libcalamaresui
                      ${QT_QTWEBKIT_INCLUDE_DIR} )
@@ -14,7 +14,7 @@ calamares_add_plugin( webview
         WebViewStep.cpp
     LINK_LIBRARIES
         calamaresui
-        Qt5::WebKit
-        Qt5::WebKitWidgets
+        Qt5::WebEngine
+        Qt5::WebEngineWidgets
     SHARED_LIB
 )
