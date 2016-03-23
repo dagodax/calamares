@@ -1,7 +1,7 @@
 find_package( Qt5 ${QT_VERSION} CONFIG REQUIRED WebEngine WebEngineWidgets )
 
 include_directories( ${PROJECT_BINARY_DIR}/src/libcalamaresui
-                     ${QT_QTWEBKIT_INCLUDE_DIR} )
+                     ${QT_QTWEBENGINE_INCLUDE_DIR} )
 
 set( CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH}
                        ${CMAKE_CURRENT_SOURCE_DIR}/CMakeModules )
