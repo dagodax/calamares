@@ -1,3 +1,4 @@
 [submodule "thirdparty/libcrashreporter-qt"]
 	path = thirdparty/libcrashreporter-qt
-	url = git@github.com:dschmidt/libcrashreporter-qt
+	url = https://github.com/teo/libcrashreporter-qt
+	branch = out-of-process-gdb
