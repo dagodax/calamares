@@ -56,6 +56,12 @@ find_package( YamlCpp 0.5.1 REQUIRED )
 find_package( PolkitQt5-1 REQUIRED )
 
 option( WITH_PYTHON "Enable Python modules support." ON )
+option( WITH_CRASHREPORTER "Build with CrashReporter" ON )
+
+if( CMAKE_SYSTEM_PROCESSOR MATCHES "arm" OR NOT EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/thirdparty/libcrashreporter-qt/CMakeLists.txt" )
+    message( STATUS "Build of crashreporter disabled." )
+    set( WITH_CRASHREPORTER OFF )
+endif()
 
 macro_optional_find_package( PythonLibs 3.3 )
 macro_log_feature(
@@ -152,6 +158,9 @@ file( COPY CalamaresAddBrandingSubdirectory.cmake DESTINATION "${PROJECT_BINARY_
 
 set( CALAMARES_LIBRARIES calamares )
 
+set( THIRDPARTY_DIR "${CMAKE_SOURCE_DIR}/thirdparty" )
+
+add_subdirectory( thirdparty )
 add_subdirectory( src )
 
 macro_display_feature_log()
@@ -165,7 +174,7 @@ set( CMAKE_INSTALL_CMAKEDIR "${CMAKE_INSTALL_LIBDIR}/cmake/Calamares" CACHE PATH
 set( CMAKE_INSTALL_FULL_CMAKEDIR "${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_CMAKEDIR}" )
 export( TARGETS calamares
     FILE "${PROJECT_BINARY_DIR}/CalamaresLibraryDepends.cmake" )
-    
+
 # Export the package for use from the build-tree
 # (this registers the build-tree with a global CMake-registry)
 export( PACKAGE Calamares )
