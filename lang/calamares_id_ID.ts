@@ -222,7 +222,7 @@ Output:
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="266"/>
         <source>Main script file %1 for python job %2 is not readable.</source>
-        <translation>Skrip utama berkas %1 untuk tugas python %2 tidak dapat dibaca.</translation>
+        <translation>Skrip utama berkas %1 bagi tugas python %2 tidak dapat dibaca.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="311"/>
@@ -336,12 +336,12 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/jobs/CheckFileSystemJob.cpp" line="34"/>
         <source>Checking file system on partition %1.</source>
-        <translation>Memeriksa sistem berkas pada partisi %1.</translation>
+        <translation>Memeriksa file system pada partisi %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CheckFileSystemJob.cpp" line="58"/>
         <source>The file system check on partition %1 failed.</source>
-        <translation>Pemeriksaan sistem berkas pada partisi %1 gagal.</translation>
+        <translation>Pemeriksaan file system pada partisi %1 gagal.</translation>
     </message>
 </context>
 <context>
@@ -546,12 +546,12 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="89"/>
         <source>Fi&amp;le System:</source>
-        <translation type="unfinished"/>
+        <translation>Fi&amp;le System:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="181"/>
         <source>Flags:</source>
-        <translation type="unfinished"/>
+        <translation>Flags:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="118"/>
@@ -589,12 +589,12 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="48"/>
         <source>Create new %2MB partition on %4 (%3) with file system %1.</source>
-        <translation>Buat partisi baru %2MB pada %4 (%3) dengan sistem berkas %1.</translation>
+        <translation>Buat partisi baru %2MB pada %4 (%3) dengan file system %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="59"/>
         <source>Create new &lt;strong&gt;%2MB&lt;/strong&gt; partition on &lt;strong&gt;%4&lt;/strong&gt; (%3) with file system &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation>Buat partisi baru &lt;strong&gt;%2MB&lt;/strong&gt; pada &lt;strong&gt;%4&lt;/strong&gt; (%3) dengan sistem berkas &lt;strong&gt;%1&lt;/strong&gt;.</translation>
+        <translation>Buat partisi baru &lt;strong&gt;%2MB&lt;/strong&gt; pada &lt;strong&gt;%4&lt;/strong&gt; (%3) dengan file system &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="71"/>
@@ -619,7 +619,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="126"/>
         <source>The installer failed to create file system on partition %1.</source>
-        <translation>Pemasang gagal membuat sistem berkas pada partisi %1.</translation>
+        <translation>Pemasang gagal membuat file system pada partisi %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="134"/>
@@ -875,7 +875,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="145"/>
         <source>Flags:</source>
-        <translation type="unfinished"/>
+        <translation>Flags:</translation>
     </message>
 </context>
 <context>
@@ -947,17 +947,17 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="48"/>
         <source>Format partition %1 (file system: %2, size: %3 MB) on %4.</source>
-        <translation>Format partisi %1 (sistem berkas: %2, ukuran: %3 MB) pada %4.</translation>
+        <translation>Format partisi %1 (file system: %2, ukuran: %3 MB) pada %4.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="59"/>
         <source>Format &lt;strong&gt;%3MB&lt;/strong&gt; partition &lt;strong&gt;%1&lt;/strong&gt; with file system &lt;strong&gt;%2&lt;/strong&gt;.</source>
-        <translation>Format &lt;strong&gt;%3MB&lt;/strong&gt; partisi &lt;strong&gt;%1&lt;/strong&gt; dengan sistem berkas &lt;strong&gt;%2&lt;/strong&gt;.</translation>
+        <translation>Format &lt;strong&gt;%3MB&lt;/strong&gt; partisi &lt;strong&gt;%1&lt;/strong&gt; dengan file system &lt;strong&gt;%2&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="70"/>
         <source>Formatting partition %1 with file system %2.</source>
-        <translation>Memformat partisi %1 dengan sistem berkas %2.</translation>
+        <translation>Memformat partisi %1 dengan file system %2.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="82"/>
@@ -977,7 +977,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="107"/>
         <source>The installer failed to create file system on partition %1.</source>
-        <translation>Pemasang gagal membuat sistem berkas pada partisi %1.</translation>
+        <translation>Pemasang gagal membuat file system pada partisi %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="115"/>
@@ -1144,17 +1144,17 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="66"/>
         <source>Move file system of partition %1.</source>
-        <translation>Pindah sistem berkas partisi %1.</translation>
+        <translation>Pindah file system partisi %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="80"/>
         <source>Could not open file system on partition %1 for moving.</source>
-        <translation>Tidak dapat membuka sistem berkas pada partisi %1 untuk memindah.</translation>
+        <translation>Tidak dapat membuka file system pada partisi %1 untuk memindah.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="86"/>
         <source>Could not create target for moving file system on partition %1.</source>
-        <translation>Tidak dapat membuat target untuk memindah sistem berkas pada partisi %1.</translation>
+        <translation>Tidak dapat membuat target untuk memindah file system pada partisi %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/MoveFileSystemJob.cpp" line="95"/>
@@ -1337,7 +1337,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="244"/>
         <source>File System</source>
-        <translation>Sistem Berkas</translation>
+        <translation>File System</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/PartitionModel.cpp" line="246"/>
@@ -1468,22 +1468,22 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="386"/>
         <source>No EFI system partition configured</source>
-        <translation type="unfinished"/>
+        <translation>Tidak ada partisi EFI system terkonfigurasi</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="387"/>
         <source>An EFI system partition is necessary to start %1.&lt;br/&gt;&lt;br/&gt;To configure an EFI system partition, go back and select or create a FAT32 filesystem with the &lt;strong&gt;esp&lt;/strong&gt; flag enabled and mount point &lt;strong&gt;%2&lt;/strong&gt;.&lt;br/&gt;&lt;br/&gt;You can continue without setting up an EFI system partition but your system may fail to start.</source>
-        <translation type="unfinished"/>
+        <translation>Sebuah partisi EFI system diperlukan untuk memulai %1.&lt;br/&gt;&lt;br/&gt;Untuk mengkonfigurasi partisi EFI system, kembalilah dan pilih atau buat sebuah filesystem FAT32 dengan flag &lt;strong&gt;esp&lt;/strong&gt; yang diaktifkan dan titik kait &lt;strong&gt;%2&lt;/strong&gt;.&lt;br/&gt;&lt;br/&gt;Anda bisa melanjutkan tanpa menyetel partisi EFI system tetapi sistem Anda mungkin gagal untuk memulai.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="401"/>
         <source>EFI system partition flag not set</source>
-        <translation type="unfinished"/>
+        <translation>Flag partisi EFI system tidak disetel</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="402"/>
         <source>An EFI system partition is necessary to start %1.&lt;br/&gt;&lt;br/&gt;A partition was configured with mount point &lt;strong&gt;%2&lt;/strong&gt; but its &lt;strong&gt;esp&lt;/strong&gt; flag is not set.&lt;br/&gt;To set the flag, go back and edit the partition.&lt;br/&gt;&lt;br/&gt;You can continue without setting the flag but your system may fail to start.</source>
-        <translation type="unfinished"/>
+        <translation>Sebuah partisi EFI system diperlukan untuk memulai %1.&lt;br/&gt;&lt;br/&gt;Sebuah partisi telah dikonfigurasi dengan titik kait &lt;strong&gt;%2&lt;/strong&gt; tetapi flag &lt;strong&gt;esp&lt;/strong&gt;-nya tidak disetel.&lt;br/&gt;Untuk menyetel flag, kembalilah dan edit partisinya.&lt;br/&gt;&lt;br/&gt;Anda bisa melanjutkan tanpa menyetel partisi EFI system tetapi sistem Anda mungkin gagal untuk memulai.</translation>
     </message>
 </context>
 <context>
@@ -1653,17 +1653,17 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="76"/>
         <source>Resize file system on partition %1.</source>
-        <translation>Ubah ukuran sistem berkas pada partisi %1.</translation>
+        <translation>Ubah ukuran file system pada partisi %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="91"/>
         <source>Parted failed to resize filesystem.</source>
-        <translation>Gagal dipisah untuk mengubah-ukuran sistem-berkas.</translation>
+        <translation>Parted gagal untuk mengubah-ukuran filesystem.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="101"/>
         <source>Failed to resize filesystem.</source>
-        <translation>Gagal untuk mengubah-ukuran sistem-berkas.</translation>
+        <translation>Gagal mengubah-ukuran filesystem.</translation>
     </message>
 </context>
 <context>
@@ -1767,47 +1767,47 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="47"/>
         <source>Set flags on partition %1.</source>
-        <translation type="unfinished"/>
+        <translation>Setel flags pada partisi %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="56"/>
         <source>Clear flags on partition &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Bersihkan flags pada partisi &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="59"/>
         <source>Flag partition &lt;strong&gt;%1&lt;/strong&gt; as &lt;strong&gt;%2&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Flag partisi &lt;strong&gt;%1&lt;/strong&gt; sebagai &lt;strong&gt;%2&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="71"/>
         <source>Clearing flags on partition &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Membersihkan flags pada partisi &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="74"/>
         <source>Setting flags &lt;strong&gt;%2&lt;/strong&gt; on partition &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Menyetel flags &lt;strong&gt;%2&lt;/strong&gt; pada partisi &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="90"/>
         <source>The installer failed to set flags on partition %1.</source>
-        <translation type="unfinished"/>
+        <translation>Pemasang gagal menyetel flags pada partisi %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="98"/>
         <source>Could not open device &apos;%1&apos;.</source>
-        <translation type="unfinished"/>
+        <translation>Tidak dapat membuka perangkat &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="107"/>
         <source>Could not open partition table on device &apos;%1&apos;.</source>
-        <translation type="unfinished"/>
+        <translation>Tidak dapat membuka tabel partisi pada perangkat &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="119"/>
         <source>Could not find partition &apos;%1&apos;.</source>
-        <translation type="unfinished"/>
+        <translation>Tidak dapat menemukan partisi &apos;%1&apos;.</translation>
     </message>
 </context>
 <context>

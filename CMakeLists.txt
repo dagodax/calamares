@@ -100,7 +100,7 @@ set( CALAMARES_DESCRIPTION_SUMMARY "The distribution-independent installer frame
 set( CALAMARES_TRANSLATION_LANGUAGES ast ca cs de en es es_AR fr hr hu id_ID it nl_NL pl pt_BR pt_PT ru sl sr_RS sv tr_TR )
 
 set( CALAMARES_VERSION_MAJOR 2 )
-set( CALAMARES_VERSION_MINOR 1 )
+set( CALAMARES_VERSION_MINOR 2 )
 set( CALAMARES_VERSION_PATCH 0 )
 set( CALAMARES_VERSION_RC 0 )
 
