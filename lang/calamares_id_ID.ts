@@ -272,7 +272,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="225"/>
         <source>The %1 installer is about to make changes to your disk in order to install %2.&lt;br/&gt;&lt;strong&gt;You will not be able to undo these changes.&lt;/strong&gt;</source>
-        <translation>Pemasang %1 adalah sesuatu untuk membuat perubahan pada disk Anda dalam urutan untuk memasang %2.&lt;br/&gt;&lt;strong&gt;Anda tidak akan dapat membatalkan perubahan tersebut.&lt;/strong&gt;</translation>
+        <translation>Pemasang %1 adalah sesuatu untuk membuat perubahan pada disk Anda seperti dalam urutan untuk memasang %2.&lt;br/&gt;&lt;strong&gt;Anda tidak akan dapat membatalkan perubahan tersebut.&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="232"/>
@@ -406,7 +406,7 @@ The installer will quit and all changes will be lost.</source>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1080"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1118"/>
         <source>&lt;strong&gt;Replace a partition&lt;/strong&gt;&lt;br/&gt;Replaces a partition with %1.</source>
-        <translation>&lt;strong&gt;Ganti partisi&lt;/strong&gt;Ganti partisi dengan %1.</translation>
+        <translation>&lt;strong&gt;Pergantian partisi&lt;/strong&gt;&lt;br/&gt;Ganti partisi dengan %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="810"/>
@@ -1356,12 +1356,12 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="457"/>
         <source>Use the same password for the administrator account.</source>
-        <translation>Gunakan sandi yang sama untuk akun administrator.</translation>
+        <translation>Gunakan sandi yang sama untuk akun pengurus.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="480"/>
         <source>Choose a password for the administrator account.</source>
-        <translation>Pilihlah sebuah sandi untuk akun administrator.</translation>
+        <translation>Pilihlah sebuah sandi untuk akun pengurus.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="585"/>
