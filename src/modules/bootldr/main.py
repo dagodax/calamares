@@ -72,8 +72,8 @@ def create_conf(uuid, conf_path):
         'title   {!s} GNU/Linux, with Linux kernel\n'.format(distribution),
         'linux   {!s}\n'.format(kernel),
         'initrd  {!s}\n'.format(img),
-        'options root=UUID={!s} quiet systemd.show_status=0 resume=UUID={!s} {!s} rw\n'.format(
-            uuid, swap, cryptdevice_params),
+        'options root=UUID={!s} quiet systemd.show_status=0 resume=UUID={!s} {!s}
+            rw\n'.format( uuid, swap, " ".join(cryptdevice_params)),
     ]
 
     with open(conf_path, 'w') as f:
@@ -99,8 +99,8 @@ def create_fallback(uuid, fallback_path):
         'title   {!s} GNU/Linux, with Linux fallback kernel\n'.format(distribution),
         'linux   {!s}\n'.format(kernel),
         'initrd  {!s}\n'.format(fb_img),
-        'options root=UUID={!s} quiet systemd.show_status=0 resume=UUID={!s} {!s} rw\n'.format(
-            uuid, swap, cryptdevice_params),
+        'options root=UUID={!s} quiet systemd.show_status=0 resume=UUID={!s} {!s}
+            rw\n'.format( uuid, swap, " ".join(cryptdevice_params)),
     ]
 
     with open(fallback_path, 'w') as f:
@@ -159,7 +159,8 @@ def install_bootloader(boot_loader, fw_type):
             print("         >>> no EFI bootloader will be installed <<<")
             return None
         print("Set 'EF00' flag")
-        subprocess.call(["sgdisk", "--typecode={!s}:EF00".format(boot_p), "{!s}".format(device)])
+        subprocess.call(
+            ["sgdisk", "--typecode={!s}:EF00".format(boot_p), "{!s}".format(device)])
         subprocess.call(
             ["bootctl", "--path={!s}/boot".format(install_path), "install"])
         create_conf(uuid, conf_path)

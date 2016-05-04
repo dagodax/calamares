@@ -45,9 +45,10 @@ def modify_grub_default(partitions, root_mount_point, distributor):
             ]
 
     if swap_uuid != "":
-        kernel_cmd = 'GRUB_CMDLINE_LINUX_DEFAULT="resume=UUID={!s} quiet systemd.show_status=0 {!s}"'.format(swap_uuid, cryptdevice_params)
+        kernel_cmd = 'GRUB_CMDLINE_LINUX_DEFAULT="resume=UUID={!s} quiet systemd.show_status=0 {!s}"'.format(
+            swap_uuid, " ".join(cryptdevice_params))
     else:
-        kernel_cmd = 'GRUB_CMDLINE_LINUX_DEFAULT="quiet systemd.show_status=0 {!s}"'.format(cryptdevice_params)
+        kernel_cmd = 'GRUB_CMDLINE_LINUX_DEFAULT="quiet systemd.show_status=0 {!s}"'.format(" ".join(cryptdevice_params))
 
     if not os.path.exists(default_dir):
         os.mkdir(default_dir)
