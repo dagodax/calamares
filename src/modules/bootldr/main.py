@@ -73,7 +73,7 @@ def create_conf(uuid, conf_path):
         'linux   {!s}\n'.format(kernel),
         'initrd  {!s}\n'.format(img),
         'options root=UUID={!s} quiet systemd.show_status=0 resume=UUID={!s} {!s}
-            rw\n'.format( uuid, swap, " ".join(cryptdevice_params)),
+            rw\n'.format(uuid, swap, " ".join(cryptdevice_params)),
     ]
 
     with open(conf_path, 'w') as f:
@@ -100,7 +100,7 @@ def create_fallback(uuid, fallback_path):
         'linux   {!s}\n'.format(kernel),
         'initrd  {!s}\n'.format(fb_img),
         'options root=UUID={!s} quiet systemd.show_status=0 resume=UUID={!s} {!s}
-            rw\n'.format( uuid, swap, " ".join(cryptdevice_params)),
+            rw\n'.format(uuid, swap, " ".join(cryptdevice_params)),
     ]
 
     with open(fallback_path, 'w') as f:
