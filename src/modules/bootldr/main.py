@@ -55,17 +55,25 @@ def create_conf(uuid, conf_path):
     img = libcalamares.job.configuration["img"]
     partitions = libcalamares.globalstorage.value("partitions")
     swap = ""
+    cryptdevice_params = []
     for partition in partitions:
         if partition["fs"] == "linuxswap":
             swap = partition["uuid"]
+    if partition["mountPoint"] == "/" and partition["luksMapperName"]:
+            cryptdevice_params = [
+                "cryptdevice=UUID={!s}:{!s}".format(partition["uuid"],
+                                                    partition["luksMapperName"]),
+                "root=/dev/mapper/{!s}".format(partition["luksMapperName"])
+            ]
 
     lines = [
         '## Please edit the paths and kernel parameters according to your system.\n',
         '\n',
-        'title   %s GNU/Linux, with Linux kernel\n' % distribution,
-        'linux   %s\n' % kernel,
-        'initrd  %s\n' % img,
-        'options root=UUID=%s quiet systemd.show_status=0 resume=UUID=%s rw\n' % (uuid, swap),
+        'title   {!s} GNU/Linux, with Linux kernel\n'.format(distribution),
+        'linux   {!s}\n'.format(kernel),
+        'initrd  {!s}\n'.format(img),
+        'options root=UUID={!s} quiet systemd.show_status=0 resume=UUID={!s} {!s} rw\n'.format(
+            uuid, swap, cryptdevice_params),
     ]
 
     with open(conf_path, 'w') as f:
@@ -80,6 +88,7 @@ def create_fallback(uuid, fallback_path):
     fb_img = libcalamares.job.configuration["fallback"]
     partitions = libcalamares.globalstorage.value("partitions")
     swap = ""
+    cryptdevice_params = []
     for partition in partitions:
         if partition["fs"] == "linuxswap":
             swap = partition["uuid"]
@@ -87,10 +96,11 @@ def create_fallback(uuid, fallback_path):
     lines = [
         '## Please edit the paths and kernel parameters according to your system.\n',
         '\n',
-        'title   %s GNU/Linux, with Linux fallback kernel\n' % distribution,
-        'linux   %s\n' % kernel,
-        'initrd  %s\n' % fb_img,
-        'options root=UUID=%s quiet systemd.show_status=0 resume=UUID=%s rw\n' % (uuid, swap),
+        'title   {!s} GNU/Linux, with Linux fallback kernel\n'.format(distribution),
+        'linux   {!s}\n'.format(kernel),
+        'initrd  {!s}\n'.format(fb_img),
+        'options root=UUID={!s} quiet systemd.show_status=0 resume=UUID={!s} {!s} rw\n'.format(
+            uuid, swap, cryptdevice_params),
     ]
 
     with open(fallback_path, 'w') as f:
@@ -103,8 +113,8 @@ def create_loader(loader_path):
     distribution = libcalamares.job.configuration["distribution"]
     timeout = libcalamares.job.configuration["timeout"]
     lines = [
-        'timeout %s\n' % timeout,
-        'default %s\n' % distribution,
+        'timeout {!s}\n'.format(timeout),
+        'default {!s}\n'.format(distribution),
     ]
 
     with open(loader_path, 'w') as f:
@@ -119,9 +129,10 @@ def install_bootloader(boot_loader, fw_type):
         uuid = get_uuid()
         distribution = libcalamares.job.configuration["distribution"]
         conf_path = os.path.join(
-            install_path, "boot", "loader", "entries", "%s.conf" % distribution)
+            install_path, "boot", "loader", "entries",
+            "{!s}.conf".format(distribution))
         fallback_path = os.path.join(
-            install_path, "boot", "loader", "entries", "%s-fallback.conf" % distribution)
+            install_path, "boot", "loader", "entries", "{!s}-fallback.conf".format(distribution)
         loader_path = os.path.join(
             install_path, "boot", "loader", "loader.conf")
         partitions = libcalamares.globalstorage.value("partitions")
@@ -148,9 +159,9 @@ def install_bootloader(boot_loader, fw_type):
             print("         >>> no EFI bootloader will be installed <<<")
             return None
         print("Set 'EF00' flag")
-        subprocess.call(["sgdisk", "--typecode=%s:EF00" % boot_p, "%s" % device])
+        subprocess.call(["sgdisk", "--typecode={!s}:EF00".format(boot_p), "{!s}".format(device)])
         subprocess.call(
-            ["bootctl", "--path=%s/boot" % install_path, "install"])
+            ["bootctl", "--path={!s}/boot".format(install_path), "install"])
         create_conf(uuid, conf_path)
         create_fallback(uuid, fallback_path)
         create_loader(loader_path)

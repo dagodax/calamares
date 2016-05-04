@@ -31,14 +31,23 @@ def modify_grub_default(partitions, root_mount_point, distributor):
         return ("Directory does not exist", "The directory {} does not exist on "
         "the target".format(default_dir))
 
+    cryptdevice_params = []
+
     for partition in partitions:
         if partition["fs"] == "linuxswap":
             swap_uuid = partition["uuid"]
 
+        if partition["mountPoint"] == "/" and partition["luksMapperName"]:
+            cryptdevice_params = [
+                "cryptdevice=UUID={!s}:{!s}".format(partition["uuid"],
+                                                    partition["luksMapperName"]),
+                "root=/dev/mapper/{!s}".format(partition["luksMapperName"])
+            ]
+
     if swap_uuid != "":
-        kernel_cmd = 'GRUB_CMDLINE_LINUX_DEFAULT="resume=UUID=%s quiet systemd.show_status=0"' % swap_uuid
+        kernel_cmd = 'GRUB_CMDLINE_LINUX_DEFAULT="resume=UUID={!s} quiet systemd.show_status=0 {!s}"'.format(swap_uuid, cryptdevice_params)
     else:
-        kernel_cmd = 'GRUB_CMDLINE_LINUX_DEFAULT="quiet systemd.show_status=0"'
+        kernel_cmd = 'GRUB_CMDLINE_LINUX_DEFAULT="quiet systemd.show_status=0 {!s}"'.format(cryptdevice_params)
 
     if not os.path.exists(default_dir):
         os.mkdir(default_dir)
@@ -52,12 +61,13 @@ def modify_grub_default(partitions, root_mount_point, distributor):
         elif lines[i].startswith("GRUB_CMDLINE_LINUX_DEFAULT"):
             lines[i] = kernel_cmd
         elif lines[i].startswith("#GRUB_DISTRIBUTOR") or lines[i].startswith("GRUB_DISTRIBUTOR"):
-            lines[i] = "GRUB_DISTRIBUTOR=%s" % distributor
+            lines[i] = "GRUB_DISTRIBUTOR=\"{!s}\"".format(distributor)
 
     with open(default_grub, 'w') as grub_file:
         grub_file.write("\n".join(lines) + "\n")
 
     return None
+
 
 def run():
 

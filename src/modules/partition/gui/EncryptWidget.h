@@ -1,6 +1,6 @@
 /* === This file is part of Calamares - <http://github.com/calamares> ===
  *
- *   Copyright 2014-2015, Teo Mrnjavac <teo@kde.org>
+ *   Copyright 2016, Teo Mrnjavac <teo@kde.org>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -16,24 +16,42 @@
  *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef PARTITIONACTIONS_H
-#define PARTITIONACTIONS_H
 
-#include <QString>
+#ifndef ENCRYPTWIDGET_H
+#define ENCRYPTWIDGET_H
 
-class PartitionCoreModule;
-class Device;
-class Partition;
+#include "ui_EncryptWidget.h"
 
-namespace PartitionActions
+class EncryptWidget : public QWidget, private Ui::EncryptWidget
 {
-void doAutopartition( PartitionCoreModule* core,
-                      Device* dev,
-                      const QString& luksPassphrase = QString() );
+    Q_OBJECT
 
-void doReplacePartition( PartitionCoreModule* core,
-                         Device* dev,
-                         Partition* partition );
-}
+public:
+    enum State : unsigned short
+    {
+        EncryptionDisabled = 0,
+        EncryptionUnconfirmed,
+        EncryptionConfirmed
+    };
 
-#endif // PARTITIONACTIONS_H
+    explicit EncryptWidget( QWidget* parent = nullptr );
+
+    State state() const;
+
+    QString passphrase() const;
+
+signals:
+    void stateChanged( State );
+
+protected:
+    void changeEvent( QEvent* e );
+
+private:
+    void updateState();
+    void onPassphraseEdited();
+    void onCheckBoxStateChanged( int state );
+
+    State m_state;
+};
+
+#endif // ENCRYPTWIDGET_H

@@ -121,6 +121,7 @@ ChoicePage::ChoicePage( QWidget* parent )
     m_previewAfterFrame->setSizePolicy( QSizePolicy::Preferred, QSizePolicy::Expanding );
     m_previewAfterLabel->hide();
     m_previewAfterFrame->hide();
+    m_encryptWidget->hide();
     // end
 }
 
@@ -156,6 +157,9 @@ ChoicePage::init( PartitionCoreModule* core )
     connect( m_drivesCombo,
              static_cast< void ( QComboBox::* )( int ) >( &QComboBox::currentIndexChanged ),
              this, &ChoicePage::applyDeviceChoice );
+
+    connect( m_encryptWidget, &EncryptWidget::stateChanged,
+             this, &ChoicePage::updateNextEnabled );
 
     ChoicePage::applyDeviceChoice();
 }
@@ -240,14 +244,8 @@ ChoicePage::setupChoices()
         if ( checked )  // An action was picked.
         {
             m_choice = static_cast< Choice >( id );
-            if ( m_choice == Replace )
-            {
-                setNextEnabled( false );
-            }
-            else
-            {
-                setNextEnabled( true );
-            }
+            updateNextEnabled();
+
             emit actionChosen();
         }
         else    // An action was unpicked, either on its own or because of another selection.
@@ -255,7 +253,8 @@ ChoicePage::setupChoices()
             if ( m_grp->checkedButton() == nullptr )  // If no other action is chosen, we must
             {                                         // set m_choice to NoChoice and reset previews.
                 m_choice = NoChoice;
-                setNextEnabled( false );
+                updateNextEnabled();
+
                 emit actionChosen();
             }
         }
@@ -394,7 +393,7 @@ ChoicePage::applyActionChoice( ChoicePage::Choice choice )
             []{},
             this );
         }
-        setNextEnabled( !m_beforePartitionBarsView->selectionModel()->selectedRows().isEmpty() );
+        updateNextEnabled();
 
         connect( m_beforePartitionBarsView->selectionModel(), SIGNAL( currentRowChanged( QModelIndex, QModelIndex ) ),
                  this, SLOT( doReplaceSelectedPartition( QModelIndex, QModelIndex ) ),
@@ -417,7 +416,7 @@ ChoicePage::applyActionChoice( ChoicePage::Choice choice )
             },
             this );
         }
-        setNextEnabled( !m_beforePartitionBarsView->selectionModel()->selectedRows().isEmpty() );
+        updateNextEnabled();
 
         connect( m_beforePartitionBarsView->selectionModel(), SIGNAL( currentRowChanged( QModelIndex, QModelIndex ) ),
                  this, SLOT( doAlongsideSetupSplitter( QModelIndex, QModelIndex ) ),
@@ -468,7 +467,7 @@ ChoicePage::doAlongsideSetupSplitter( const QModelIndex& current,
                 Calamares::Branding::instance()->
                     string( Calamares::Branding::ProductName ) );
 
-    setNextEnabled( m_beforePartitionBarsView->selectionModel()->currentIndex().isValid() );
+    updateNextEnabled();
 
     if ( m_isEfi )
         setupEfiSystemPartitionSelector();
@@ -630,7 +629,7 @@ ChoicePage::doReplaceSelectedPartition( const QModelIndex& current,
         if ( m_isEfi )
             setupEfiSystemPartitionSelector();
 
-        setNextEnabled( !m_beforePartitionBarsView->selectionModel()->selectedRows().isEmpty() );
+        updateNextEnabled();
         if ( !m_bootloaderComboBox.isNull() &&
              m_bootloaderComboBox->currentIndex() < 0 )
             m_bootloaderComboBox->setCurrentIndex( m_lastSelectedDeviceIndex );
@@ -772,10 +771,12 @@ ChoicePage::updateActionChoicePreview( ChoicePage::Choice choice )
             };
             m_beforePartitionBarsView->setSelectionFilter( filter );
             m_beforePartitionLabelsView->setSelectionFilter( filter );
+            m_encryptWidget->hide();
 
             break;
         }
     case Erase:
+        m_encryptWidget->show();
     case Replace:
         {
             m_previewBeforeLabel->setText( tr( "Current:" ) );
@@ -856,6 +857,7 @@ ChoicePage::updateActionChoicePreview( ChoicePage::Choice choice )
         m_previewAfterFrame->hide();
         m_previewBeforeLabel->setText( tr( "Current:" ) );
         m_previewAfterLabel->hide();
+        m_encryptWidget->hide();
         break;
     }
 
@@ -905,7 +907,7 @@ ChoicePage::setupEfiSystemPartitionSelector()
                         "partitioning to set up %1." )
                     .arg( Calamares::Branding::instance()->
                           string( Calamares::Branding::ShortProductName ) ) );
-        setNextEnabled( false );
+        updateNextEnabled();
     }
     else if ( efiSystemPartitions.count() == 1 ) //probably most usual situation
     {
@@ -1195,8 +1197,42 @@ ChoicePage::currentChoice() const
 
 
 void
-ChoicePage::setNextEnabled( bool enabled )
+ChoicePage::updateNextEnabled()
 {
+    bool enabled = false;
+
+    switch ( m_choice )
+    {
+    case NoChoice:
+        enabled = false;
+        break;
+    case Replace:
+        enabled = !m_beforePartitionBarsView->selectionModel()->
+                  selectedRows().isEmpty();
+        break;
+    case Alongside:
+        enabled = !m_beforePartitionBarsView->selectionModel()->
+                  selectedRows().isEmpty() &&
+                  m_beforePartitionBarsView->selectionModel()->
+                  currentIndex().isValid();
+        break;
+    case Erase:
+    case Manual:
+        enabled = true;
+    }
+
+    if ( m_isEfi &&
+         ( m_choice == Alongside ||
+           m_choice == Replace ) )
+    {
+        if ( m_core->efiSystemPartitions().count() == 0 )
+            enabled = false;
+    }
+
+    if ( m_encryptWidget->isVisible() &&
+         m_encryptWidget->state() == EncryptWidget::EncryptionUnconfirmed )
+        enabled = false;
+
     if ( enabled == m_nextEnabled )
         return;
 
