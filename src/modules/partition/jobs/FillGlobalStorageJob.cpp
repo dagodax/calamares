@@ -37,6 +37,7 @@
 #include <QDebug>
 #include <QDir>
 #include <QFileInfo>
+#include <QProcess>
 
 typedef QHash<QString, QString> UuidForPartitionHash;
 
@@ -62,6 +63,22 @@ findPartitionUuids( QList < Device* > devices )
     return hash;
 }
 
+
+static QString
+getLuksUuid( const QString& path )
+{
+    QProcess process;
+    process.setProgram( "cryptsetup" );
+    process.setArguments( { "luksUUID", path } );
+    process.start();
+    process.waitForFinished();
+    if ( process.exitStatus() != QProcess::NormalExit || process.exitCode() )
+        return QString();
+    QString uuid = QString::fromLocal8Bit( process.readAllStandardOutput() ).trimmed();
+    return uuid;
+}
+
+
 static QVariant
 mapForPartition( Partition* partition, const QString& uuid )
 {
@@ -81,7 +98,9 @@ mapForPartition( Partition* partition, const QString& uuid )
         const FS::luks* luksFs = dynamic_cast< const FS::luks* >( &fsRef );
         if ( luksFs )
         {
-            map[ "luksMapperName" ] = luksFs->suggestedMapperName( partition->partitionPath() );
+            map[ "luksMapperName" ] = luksFs->mapperName( partition->partitionPath() ).split( "/" ).last();
+            map[ "luksUuid" ] = getLuksUuid( partition->partitionPath() );
+            map[ "luksPassphrase" ] = luksFs->passphrase();
             cDebug() << "luksMapperName:" << map[ "luksMapperName" ];
         }
     }
