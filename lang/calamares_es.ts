@@ -365,7 +365,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="142"/>
         <source>This program will ask you some questions and set up %2 on your computer.</source>
-        <translation type="unfinished"/>
+        <translation>Este programa le hará algunas preguntas y configurará %2 en su máquina.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="166"/>
