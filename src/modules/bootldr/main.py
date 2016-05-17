@@ -73,8 +73,7 @@ def create_conf(uuid, conf_path):
         'title   {!s} GNU/Linux, with Linux kernel\n'.format(distribution),
         'linux   {!s}\n'.format(kernel),
         'initrd  {!s}\n'.format(img),
-        'options root=UUID={!s} quiet systemd.show_status=0 resume=UUID={!s} {!s}
-            rw\n'.format(uuid, swap, " ".join(cryptdevice_params)),
+        'options root=UUID={!s} quiet systemd.show_status=0 resume=UUID={!s} {!s} rw\n'.format(uuid, swap, " ".join(cryptdevice_params)),
     ]
 
     with open(conf_path, 'w') as f:
@@ -100,8 +99,7 @@ def create_fallback(uuid, fallback_path):
         'title   {!s} GNU/Linux, with Linux fallback kernel\n'.format(distribution),
         'linux   {!s}\n'.format(kernel),
         'initrd  {!s}\n'.format(fb_img),
-        'options root=UUID={!s} quiet systemd.show_status=0 resume=UUID={!s} {!s}
-            rw\n'.format(uuid, swap, " ".join(cryptdevice_params)),
+        'options root=UUID={!s} quiet systemd.show_status=0 resume=UUID={!s} {!s} rw\n'.format(uuid, swap, " ".join(cryptdevice_params)),
     ]
 
     with open(fallback_path, 'w') as f:
@@ -133,7 +131,7 @@ def install_bootloader(boot_loader, fw_type):
             install_path, "boot", "loader", "entries",
             "{!s}.conf".format(distribution))
         fallback_path = os.path.join(
-            install_path, "boot", "loader", "entries", "{!s}-fallback.conf".format(distribution)
+            install_path, "boot", "loader", "entries", "{!s}-fallback.conf".format(distribution))
         loader_path = os.path.join(
             install_path, "boot", "loader", "loader.conf")
         partitions = libcalamares.globalstorage.value("partitions")
