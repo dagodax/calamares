@@ -364,16 +364,16 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="142"/>
-        <source>This program will ask you some questions and set up %2 on your computer.&lt;br/&gt; Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID.&lt;br/&gt;</source>
-        <translation>Tento program se zeptá na pár otázek a nastaví %2 pro váš počítač.&lt;br/&gt;Pamatujte, že instalátor je stále v rané fázi vývoje.&lt;br/&gt;LUKS/LVM nebo RAID ještě nejsou implementovány.&lt;br/&gt;</translation>
+        <source>This program will ask you some questions and set up %2 on your computer.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="168"/>
+        <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="166"/>
         <source>For best results, please ensure that this computer:</source>
         <translation>Pro nejlepší výsledky zajistěte, aby měl tento počítač:</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="196"/>
+        <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="194"/>
         <source>System requirements</source>
         <translation>Systémové požadavky</translation>
     </message>

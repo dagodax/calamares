@@ -363,16 +363,16 @@ The installer will quit and all changes will be lost.</source>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="142"/>
-        <source>This program will ask you some questions and set up %2 on your computer.&lt;br/&gt; Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID.&lt;br/&gt;</source>
-        <translation>Program ini akan menanyakan Anda beberapa pertanyaan dan mengeset %2 pada komputer Anda.&lt;br/&gt; Ingat, pemasang ini masih dalam tahap awal.&lt;br/&gt;LUKS/LVM atau RAID belum diimplementasikan.&lt;br/&gt;</translation>
+        <source>This program will ask you some questions and set up %2 on your computer.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="168"/>
+        <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="166"/>
         <source>For best results, please ensure that this computer:</source>
         <translation>Untuk hasil terbaik, silakan pastikan bahwa komputer ini:</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="196"/>
+        <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="194"/>
         <source>System requirements</source>
         <translation>Persyaratan sistem</translation>
     </message>

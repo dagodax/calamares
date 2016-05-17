@@ -364,16 +364,16 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="142"/>
-        <source>This program will ask you some questions and set up %2 on your computer.&lt;br/&gt; Remember, this installer is still in an early stage.&lt;br/&gt;Not implemented yet is LUKS/LVM or RAID.&lt;br/&gt;</source>
-        <translation>Dit programma stelt je enkele vragen en zal %2 instellen op je computer.&lt;br/&gt; Onthou, dit installeerprogramma is nog in een vroeg stadium.&lt;br/&gt;Nog niet geimplementeerd is LUKS/LVM of RAID.&lt;br/&gt;</translation>
+        <source>This program will ask you some questions and set up %2 on your computer.</source>
+        <translation>Dit programma zal u enkele vragen stellen en % 2 op uw computer installeren.</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="168"/>
+        <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="166"/>
         <source>For best results, please ensure that this computer:</source>
         <translation>Voor het beste resultaat, zorgt u er a.u.b. voor dat deze computer:</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="196"/>
+        <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="194"/>
         <source>System requirements</source>
         <translation>Systeemvereisten</translation>
     </message>
