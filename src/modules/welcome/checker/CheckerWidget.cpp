@@ -140,9 +140,7 @@ CheckerWidget::init( const QList< PrepareEntry >& checkEntries )
         }
         CALAMARES_RETRANSLATE(
             textLabel->setText( tr( "This program will ask you some questions and "
-                                    "set up %2 on your computer.<br/>" 
-                                    " Remember, this installer is still in an early stage.<br/>"
-                                    "Not implemented yet is LUKS/LVM or RAID.<br/>" )
+                                    "set up %2 on your computer." )
                                 .arg( Calamares::Branding::instance()->
                                       string( Calamares::Branding::ProductName ) ) );
             textLabel->setAlignment( Qt::AlignCenter );
