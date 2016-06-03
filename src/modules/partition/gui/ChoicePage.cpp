@@ -413,6 +413,7 @@ ChoicePage::applyActionChoice( ChoicePage::Choice choice )
                 // We need to reupdate after reverting because the splitter widget is
                 // not a true view.
                 updateActionChoicePreview( currentChoice() );
+                updateNextEnabled();
             },
             this );
         }
@@ -485,6 +486,19 @@ ChoicePage::onEncryptWidgetStateChanged()
         if ( state == EncryptWidget::EncryptionConfirmed ||
              state == EncryptWidget::EncryptionDisabled )
             applyActionChoice( m_choice );
+    }
+    else if ( m_choice == Replace )
+    {
+        if ( m_beforePartitionBarsView &&
+             m_beforePartitionBarsView->selectionModel()->currentIndex().isValid() &&
+             ( state == EncryptWidget::EncryptionConfirmed ||
+               state == EncryptWidget::EncryptionDisabled ) )
+        {
+            doReplaceSelectedPartition( m_beforePartitionBarsView->
+                                            selectionModel()->
+                                                currentIndex(),
+                                        QModelIndex() );
+        }
     }
     updateNextEnabled();
 }
@@ -612,13 +626,28 @@ ChoicePage::doReplaceSelectedPartition( const QModelIndex& current,
                 }
             }
 
-            Partition* newPartition = KPMHelpers::createNewPartition(
+            Partition* newPartition = nullptr;
+            if ( m_encryptWidget->state() == EncryptWidget::EncryptionConfirmed )
+            {
+                newPartition = KPMHelpers::createNewEncryptedPartition(
+                    newParent,
+                    *selectedDevice(),
+                    newRoles,
+                    FileSystem::Ext4,
+                    selectedPartition->firstSector(),
+                    selectedPartition->lastSector(),
+                    m_encryptWidget->passphrase() );
+            }
+            else
+            {
+                newPartition = KPMHelpers::createNewPartition(
                     newParent,
                     *selectedDevice(),
                     newRoles,
                     FileSystem::Ext4,
                     selectedPartition->firstSector(),
                     selectedPartition->lastSector() );
+            }
 
             PartitionInfo::setMountPoint( newPartition, "/" );
             PartitionInfo::setFormat( newPartition, true );
@@ -635,7 +664,8 @@ ChoicePage::doReplaceSelectedPartition( const QModelIndex& current,
             if ( selectedPartition )
                 PartitionActions::doReplacePartition( m_core,
                                                       selectedDevice(),
-                                                      selectedPartition );
+                                                      selectedPartition,
+                                                      m_encryptWidget->passphrase() );
         }
     } ),
     [=]
@@ -790,9 +820,9 @@ ChoicePage::updateActionChoicePreview( ChoicePage::Choice choice )
             break;
         }
     case Erase:
-        m_encryptWidget->show();
     case Replace:
         {
+            m_encryptWidget->show();
             m_previewBeforeLabel->setText( tr( "Current:" ) );
             m_afterPartitionBarsView = new PartitionBarsView( m_previewAfterFrame );
             m_afterPartitionBarsView->setNestedPartitionsMode( mode );
@@ -852,7 +882,6 @@ ChoicePage::updateActionChoicePreview( ChoicePage::Choice choice )
                 m_selectLabel->hide();
             else
             {
-                m_encryptWidget->hide();
                 SelectionFilter filter = [ this ]( const QModelIndex& index )
                 {
                     return PartUtils::canBeReplaced( (Partition*)( index.data( PartitionModel::PartitionPtrRole ).value< void* >() ) );
@@ -1222,13 +1251,11 @@ ChoicePage::updateNextEnabled()
         enabled = false;
         break;
     case Replace:
-        enabled = !m_beforePartitionBarsView->selectionModel()->
-                  selectedRows().isEmpty();
+        enabled = m_beforePartitionBarsView->selectionModel()->
+                  currentIndex().isValid();
         break;
     case Alongside:
-        enabled = !m_beforePartitionBarsView->selectionModel()->
-                  selectedRows().isEmpty() &&
-                  m_beforePartitionBarsView->selectionModel()->
+        enabled = m_beforePartitionBarsView->selectionModel()->
                   currentIndex().isValid();
         break;
     case Erase:
