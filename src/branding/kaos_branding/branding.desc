@@ -4,15 +4,15 @@ componentName:  kaos_branding
 strings:
     productName:         KaOS
     shortProductName:    KaOS
-    version:             2016.04
+    version:             2016.06
     shortVersion:        KaOS
-    versionedName:       KaOS 2016.04
-    shortVersionedName:  KaOS 2016.04
+    versionedName:       KaOS 2016.06
+    shortVersionedName:  KaOS 2016.06
     bootloaderEntryName: KaOS
-    productUrl:          http://kaosx.us/
-    supportUrl:          http://kaosx.us/knowledge-base/
-    knownIssuesUrl:      http://kaosx.us/download/#Known_Issues
-    releaseNotesUrl:     http://kaosx.us/release-notes
+    productUrl:          https://kaosx.us/
+    supportUrl:          https://kaosx.us/docs/
+    knownIssuesUrl:      https://kaosx.us/pages/download/#known-issues-a-idknownissuesa
+    releaseNotesUrl:     https://kaosx.us/pages/release_notes
 
 images:
     productLogo:         "squid.png"
