@@ -85,6 +85,12 @@ ChoicePage::ChoicePage( QWidget* parent )
 {
     setupUi( this );
 
+    m_defaultFsType = Calamares::JobQueue::instance()->
+                        globalStorage()->
+                        value( "defaultFileSystemType" ).toString();
+    if ( FileSystem::typeForName( m_defaultFsType ) == FileSystem::Unknown )
+        m_defaultFsType = "ext4";
+
     // Set up drives combo
     m_mainLayout->setDirection( QBoxLayout::TopToBottom );
     m_drivesLayout->setDirection( QBoxLayout::LeftToRight );
@@ -568,13 +574,31 @@ ChoicePage::doAlongsideApply()
                                    dev->logicalSectorSize();
 
             m_core->resizePartition( dev, candidate, firstSector, newLastSector );
-            Partition* newPartition = KPMHelpers::createNewPartition(
-                                          candidate->parent(),
-                                          *dev,
-                                          candidate->roles(),
-                                          FileSystem::Ext4,
-                                          newLastSector + 2, // *
-                                          oldLastSector );
+            Partition* newPartition = nullptr;
+            QString luksPassphrase = m_encryptWidget->passphrase();
+            if ( luksPassphrase.isEmpty() )
+            {
+                newPartition = KPMHelpers::createNewPartition(
+                    candidate->parent(),
+                    *dev,
+                    candidate->roles(),
+                    FileSystem::typeForName( m_defaultFsType ),
+                    newLastSector + 2, // *
+                    oldLastSector
+                );
+            }
+            else
+            {
+                newPartition = KPMHelpers::createNewEncryptedPartition(
+                    candidate->parent(),
+                    *dev,
+                    candidate->roles(),
+                    FileSystem::typeForName( m_defaultFsType ),
+                    newLastSector + 2, // *
+                    oldLastSector,
+                    luksPassphrase
+                );
+            }
             PartitionInfo::setMountPoint( newPartition, "/" );
             PartitionInfo::setFormat( newPartition, true );
             // * for some reason ped_disk_add_partition refuses to create a new partition
@@ -633,7 +657,7 @@ ChoicePage::doReplaceSelectedPartition( const QModelIndex& current,
                     newParent,
                     *selectedDevice(),
                     newRoles,
-                    FileSystem::Ext4,
+                    FileSystem::typeForName( m_defaultFsType ),
                     selectedPartition->firstSector(),
                     selectedPartition->lastSector(),
                     m_encryptWidget->passphrase() );
@@ -644,7 +668,7 @@ ChoicePage::doReplaceSelectedPartition( const QModelIndex& current,
                     newParent,
                     *selectedDevice(),
                     newRoles,
-                    FileSystem::Ext4,
+                    FileSystem::typeForName( m_defaultFsType ),
                     selectedPartition->firstSector(),
                     selectedPartition->lastSector() );
             }
@@ -782,6 +806,7 @@ ChoicePage::updateActionChoicePreview( ChoicePage::Choice choice )
     {
     case Alongside:
         {
+            m_encryptWidget->show();
             m_previewBeforeLabel->setText( tr( "Current:" ) );
             m_selectLabel->setText( tr( "<strong>Select a partition to shrink, "
                                         "then drag the bottom bar to resize</strong>" ) );
@@ -815,7 +840,6 @@ ChoicePage::updateActionChoicePreview( ChoicePage::Choice choice )
             };
             m_beforePartitionBarsView->setSelectionFilter( filter );
             m_beforePartitionLabelsView->setSelectionFilter( filter );
-            m_encryptWidget->hide();
 
             break;
         }
@@ -1271,7 +1295,8 @@ ChoicePage::updateNextEnabled()
             enabled = false;
     }
 
-    if ( m_encryptWidget->isVisible() &&
+    if ( m_choice != Manual &&
+         m_encryptWidget->isVisible() &&
          m_encryptWidget->state() == EncryptWidget::EncryptionUnconfirmed )
         enabled = false;
 
