@@ -42,12 +42,12 @@
     <message>
         <location filename="../src/modules/partition/gui/BootInfoWidget.cpp" line="75"/>
         <source>This system was started with an &lt;strong&gt;EFI&lt;/strong&gt; boot environment.&lt;br&gt;&lt;br&gt;To configure startup from an EFI environment, this installer must deploy a boot loader application, like &lt;strong&gt;GRUB&lt;/strong&gt; or &lt;strong&gt;systemd-boot&lt;/strong&gt; on an &lt;strong&gt;EFI System Partition&lt;/strong&gt;. This is automatic, unless you choose manual partitioning, in which case you must choose it or create it on your own.</source>
-        <translation>Sistem ini dimulai dengan lingkungan boot &lt;strong&gt;EFI&lt;/strong&gt;.&lt;br&gt;Untuk mengkonfigurasi pemulaian dari sebuah lingkungan EFI, pemasang ini harus menggunakan aplikasi pemuat boot, seperti &lt;strong&gt;GRUB&lt;/strong&gt; atau &lt;strong&gt;systemd-boot&lt;/strong&gt; pada &lt;strong&gt;EFI System Partition&lt;/strong&gt;. Ini adalah otomatis, kecuali jika Anda memilih pemartisian manual, dalam hal ini Anda harus memilih atau menciptakannya sendiri.</translation>
+        <translation>Sistem ini dimulai dengan lingkungan boot &lt;strong&gt;EFI&lt;/strong&gt;.&lt;br&gt;Untuk mengkonfigurasi pemulaian dari sebuah lingkungan EFI, pemasang ini harus menggunakan aplikasi pemuat boot, seperti &lt;strong&gt;GRUB&lt;/strong&gt; atau &lt;strong&gt;systemd-boot&lt;/strong&gt; pada &lt;strong&gt;EFI System Partition&lt;/strong&gt;. Ini adalah otomatis, kecuali jika kamu memilih pemartisian manual, dalam hal ini kamu harus memilih atau menciptakannya sendiri.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/BootInfoWidget.cpp" line="87"/>
         <source>This system was started with a &lt;strong&gt;BIOS&lt;/strong&gt; boot environment.&lt;br&gt;&lt;br&gt;To configure startup from a BIOS environment, this installer must install a boot loader, like &lt;strong&gt;GRUB&lt;/strong&gt;, either at the beginning of a partition or on the &lt;strong&gt;Master Boot Record&lt;/strong&gt; near the beginning of the partition table (preferred). This is automatic, unless you choose manual partitioning, in which case you must set it up on your own.</source>
-        <translation>Sistem ini dimulai dengan lingkungan boot &lt;strong&gt;BIOS&lt;/strong&gt;.&lt;br&gt;Untuk mengkonfigurasi pemulaian dari lingkungan BIOS, pemasang ini harus memasang pemuat boot, seperti &lt;strong&gt;GRUB&lt;/strong&gt;, baik di awal partisi atau pada &lt;strong&gt;Master Boot Record&lt;/strong&gt; di bagian awal tabel partisi (yang disukai). Ini adalah otomatis, kecuali jika Anda memilih partisi manual, dalam hal ini Anda harus mengaturnya sendiri.</translation>
+        <translation>Sistem ini dimulai dengan lingkungan boot &lt;strong&gt;BIOS&lt;/strong&gt;.&lt;br&gt;Untuk mengkonfigurasi pemulaian dari lingkungan BIOS, pemasang ini harus memasang pemuat boot, seperti &lt;strong&gt;GRUB&lt;/strong&gt;, baik di awal partisi atau pada &lt;strong&gt;Master Boot Record&lt;/strong&gt; di bagian awal tabel partisi (yang disukai). Ini adalah otomatis, kecuali jika kamu memilih partisi manual, dalam hal ini kamu harus mengaturnya sendiri.</translation>
     </message>
 </context>
 <context>
@@ -262,7 +262,7 @@ Output:
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="91"/>
         <source>Do you really want to cancel the current install process?
 The installer will quit and all changes will be lost.</source>
-        <translation>Apakah Anda yakin ingin membatalkan proses pemasangan sekarang? Pemasang akan keluar dan semua perubahan akan hilang.</translation>
+        <translation>Apakah kamu yakin ingin membatalkan proses pemasangan sekarang? Pemasang akan keluar dan semua perubahan akan hilang.</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="224"/>
@@ -272,7 +272,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="225"/>
         <source>The %1 installer is about to make changes to your disk in order to install %2.&lt;br/&gt;&lt;strong&gt;You will not be able to undo these changes.&lt;/strong&gt;</source>
-        <translation>Pemasang %1 adalah sesuatu untuk membuat perubahan pada disk Anda seperti dalam urutan untuk memasang %2.&lt;br/&gt;&lt;strong&gt;Anda tidak akan dapat membatalkan perubahan tersebut.&lt;/strong&gt;</translation>
+        <translation>Pemasang %1 adalah sesuatu untuk membuat perubahan pada disk-mu seperti dalam urutan untuk memasang %2.&lt;br/&gt;&lt;strong&gt;Kamu tidak akan dapat membatalkan perubahan tersebut.&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="232"/>
@@ -364,7 +364,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="142"/>
         <source>This program will ask you some questions and set up %2 on your computer.</source>
-        <translation>Program ini akan menanyakan Anda beberapa pertanyaan dan mempersiapkan %2 pada komputer Anda.</translation>
+        <translation>Program ini akan menanyakan kamu beberapa pertanyaan dan mempersiapkan %2 pada komputermu.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="166"/>
@@ -429,7 +429,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="227"/>
         <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself. Having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;, either use an existing without formatting or create one.</source>
-        <translation>&lt;strong&gt;Pemartisian manual&lt;/strong&gt;&lt;br/&gt;Anda bisa menciptakan atau mengubah ukuran partisi sendiri. Memiliki sebuah tabel partisi GPT dan &lt;strong&gt;partisi /boot fat32 512M adalah suatu keharusan untuk UEFI installs&lt;/strong&gt;, gunakanlah salah satu yang ada tanpa memformat atau membuat lagi.</translation>
+        <translation>&lt;strong&gt;Pemartisian manual&lt;/strong&gt;&lt;br/&gt;Kamu bisa menciptakan atau mengubah ukuran partisi sendiri. Memiliki sebuah tabel partisi GPT dan &lt;strong&gt;partisi /boot fat32 512M adalah suatu keharusan untuk UEFI installs&lt;/strong&gt;, gunakanlah salah satu yang ada tanpa memformat atau membuat lagi.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="756"/>
@@ -464,22 +464,22 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1023"/>
         <source>This storage device does not seem to have an operating system on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
-        <translation>Perangkat penyimpanan ini tampaknya tidak memiliki sistem operasi di atasnya. Apa yang akan Anda lakukan?&lt;br/&gt;Anda dapat meninjau dan mengkonfirmasi pilihan Anda sebelum perubahan apapun dilakukan pada perangkat penyimpanan.</translation>
+        <translation>Perangkat penyimpanan ini tampaknya tidak memiliki sistem operasi di atasnya. Apa yang akan kamu lakukan?&lt;br/&gt;Kamu dapat meninjau dan mengkonfirmasi pilihanmu sebelum perubahan apapun dilakukan pada perangkat penyimpanan.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1057"/>
         <source>This storage device has %1 on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
-        <translation>Perangkat penyimpanan ini memiliki %1 di atasnya. Apa yang akan Anda lakukan?&lt;br/&gt;Anda dapat meninjau dan mengkonfirmasi pilihan Anda sebelum perubahan dilakukan pada perangkat penyimpanan.</translation>
+        <translation>Perangkat penyimpanan ini memiliki %1 di atasnya. Apa yang akan kamu lakukan?&lt;br/&gt;Kamu dapat meninjau dan mengkonfirmasi pilihanmu sebelum perubahan dilakukan pada perangkat penyimpanan.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1082"/>
         <source>This storage device already has an operating system on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
-        <translation>Perangkat penyimpanan ini sudah memiliki sistem operasi di atasnya. Apa yang akan Anda lakukan?&lt;br/&gt;Anda dapat meninjau dan mengkonfirmasi pilihan Anda sebelum perubahan dilakukan pada perangkat penyimpanan.</translation>
+        <translation>Perangkat penyimpanan ini sudah memiliki sistem operasi di atasnya. Apa yang akan kamu lakukan?&lt;br/&gt;Kamu dapat meninjau dan mengkonfirmasi pilihanmu sebelum perubahan dilakukan pada perangkat penyimpanan.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1120"/>
         <source>This storage device has multiple operating systems on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
-        <translation>Perangkat penyimpanan ini sudah memiliki beberapa sistem operasi di atasnya. Apa yang akan Anda lakukan?&lt;br/&gt;Anda dapat meninjau dan mengkonfirmasi pilihan Anda sebelum perubahan dilakukan pada perangkat penyimpanan.</translation>
+        <translation>Perangkat penyimpanan ini sudah memiliki beberapa sistem operasi di atasnya. Apa yang akan kamu lakukan?&lt;br/&gt;Kamu dapat meninjau dan mengkonfirmasi pilihanmu sebelum perubahan dilakukan pada perangkat penyimpanan.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.ui" line="14"/>
@@ -564,14 +564,14 @@ The installer will quit and all changes will be lost.</source>
         <location filename="../thirdparty/libcrashreporter-qt/src/libcrashreporter-gui/CrashReporter.ui" line="284"/>
         <location filename="../thirdparty/libcrashreporter-qt_a/src/libcrashreporter-gui/CrashReporter.ui" line="258"/>
         <source>You can disable sending crash reports in the configuration dialog.</source>
-        <translation>Anda bisa menonaktifkan pengiriman laporan kemacetan dalam dialog konfigurasi.</translation>
+        <translation>kamu bisa menonaktifkan pengiriman laporan kemacetan dalam dialog konfigurasi.</translation>
     </message>
     <message>
         <location filename="../thirdparty/libcrashreporter-qt/src/libcrashreporter-gui/CrashReporter.cpp" line="107"/>
         <location filename="../thirdparty/libcrashreporter-qt/src/libcrashreporter-gui/CrashReporter.cpp" line="114"/>
         <location filename="../thirdparty/libcrashreporter-qt/src/libcrashreporter-gui/CrashReporter.cpp" line="150"/>
         <source>We cannot gather useful debug information on your system.</source>
-        <translation>Kita tidak bisa mengumpulkan informasi berguna awakutu pada sistem Anda.</translation>
+        <translation>Kita tidak bisa mengumpulkan informasi awakutu yang berguna pada sistemmu.</translation>
     </message>
     <message>
         <location filename="../thirdparty/libcrashreporter-qt/src/libcrashreporter-gui/CrashReporter.cpp" line="108"/>
@@ -734,7 +734,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="65"/>
         <source>What kind of partition table do you want to create?</source>
-        <translation>Tabel partisi seperti apa yang ingin Anda buat?</translation>
+        <translation>Tabel partisi seperti apa yang ingin kamu buat?</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionTableDialog.ui" line="72"/>
@@ -886,7 +886,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="63"/>
         <source>The type of &lt;strong&gt;partition table&lt;/strong&gt; on the selected storage device.&lt;br&gt;&lt;br&gt;The only way to change the partition table type is to erase and recreate the partition table from scratch, which destroys all data on the storage device.&lt;br&gt;This installer will keep the current partition table unless you explicitly choose otherwise.&lt;br&gt;If unsure, on modern systems GPT is preferred.</source>
-        <translation>Tipe &lt;strong&gt;tabel partisi&lt;/strong&gt; pada perangkat penyimpanan yang dipilih.&lt;br&gt;&lt;br&gt;Satu-satunya cara untuk mengubah tabel partisi adalah dengan menyetip dan menciptakan ulang tabel partisi dari awal, dimana memusnahkan semua data pada perangkat penyimpanan.&lt;br&gt;Pemasang ini akan menjaga tabel partisi saat ini kecuali Anda secara gamblang memilih sebaliknya.&lt;br&gt;Jika tidak yakin, pada sistem modern GPT lebih disukai.</translation>
+        <translation>Tipe &lt;strong&gt;tabel partisi&lt;/strong&gt; pada perangkat penyimpanan yang dipilih.&lt;br&gt;&lt;br&gt;Satu-satunya cara untuk mengubah tabel partisi adalah dengan menyetip dan menciptakan ulang tabel partisi dari awal, dimana memusnahkan semua data pada perangkat penyimpanan.&lt;br&gt;Pemasang ini akan menjaga tabel partisi saat ini kecuali kamu secara gamblang memilih sebaliknya.&lt;br&gt;Jika tidak yakin, pada sistem modern GPT lebih disukai.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="107"/>
@@ -901,7 +901,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="121"/>
         <source>This installer &lt;strong&gt;cannot detect a partition table&lt;/strong&gt; on the selected storage device.&lt;br&gt;&lt;br&gt;The device either has no partition table, or the partition table is corrupted or of an unknown type.&lt;br&gt;This installer can create a new partition table for you, either automatically, or through the manual partitioning page.</source>
-        <translation>Pemasang ini &lt;strong&gt;tidak bisa mendeteksi tabel partisi&lt;/strong&gt; pada perangkat penyimpanan yang dipilih.&lt;br&gt;&lt;br&gt;Perangkat baik yang tidak memiliki tabel partisi, atau tabel partisi korup atau tipe yang tidak diketahui.&lt;br&gt;Pemasang ini bisa membuat tabel partisi baru untuk Anda, baik secara otomatis, atau melalui halaman pemartisian manual.</translation>
+        <translation>Pemasang ini &lt;strong&gt;tidak bisa mendeteksi tabel partisi&lt;/strong&gt; pada perangkat penyimpanan yang dipilih.&lt;br&gt;&lt;br&gt;Perangkat baik yang tidak memiliki tabel partisi, atau tabel partisi korup atau tipe yang tidak diketahui.&lt;br&gt;Pemasang ini bisa membuat tabel partisi baru untuk kamu, baik secara otomatis, atau melalui halaman pemartisian manual.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="131"/>
@@ -975,7 +975,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/EncryptWidget.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"/>
+        <translation>Formulir</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EncryptWidget.ui" line="20"/>
@@ -1046,7 +1046,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/finished/FinishedPage.cpp" line="50"/>
         <source>&lt;h1&gt;All done.&lt;/h1&gt;&lt;br/&gt;%1 has been installed on your computer.&lt;br/&gt;You may now restart into your new system, or continue using the %2 Live environment.</source>
-        <translation>&lt;h1&gt;Semua kelar.&lt;/h1&gt;&lt;br/&gt; %1 telah dipasang pada komputer Anda.&lt;br/&gt;Sekarang Anda dapat memulai ulang ke dalam sistem baru Anda, atau terus menggunakan lingkungan Live %2.</translation>
+        <translation>&lt;h1&gt;Semua kelar.&lt;/h1&gt;&lt;br/&gt; %1 telah dipasang pada komputermu.&lt;br/&gt;Sekarang kamu dapat memulai ulang ke dalam sistem barumu, atau terus menggunakan lingkungan Live %2.</translation>
     </message>
 </context>
 <context>
@@ -1154,7 +1154,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="118"/>
         <source>Please review the End User License Agreements (EULAs) above.&lt;br/&gt;If you do not agree with the terms, the setup procedure cannot continue.</source>
-        <translation>Harap tinjau Perjanjian Lisensi Pengguna Akhir (EULA) di atas. Jika Anda tidak setuju dengan ketentuan, persiapan prosedur tidak dapat dilanjutkan.</translation>
+        <translation>Harap tinjau Perjanjian Lisensi Pengguna Akhir (EULA) di atas. Jika kamu tidak setuju dengan ketentuan, persiapan prosedur tidak dapat dilanjutkan.</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="124"/>
@@ -1164,7 +1164,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="127"/>
         <source>Please review the End User License Agreements (EULAs) above.&lt;br/&gt;If you do not agree with the terms, proprietary software will not be installed, and open source alternatives will be used instead.</source>
-        <translation>Harap tinjau Perjanjian Lisensi Pengguna Akhir (EULA) di atas.&lt;br/&gt;Jika Anda tidak setuju dengan ketentuan, perangkat lunak berpemilik tidak akan dipasang, dan alternatifnya perangkat lunak sumber terbuka yang akan digunakan sebagai gantinya.</translation>
+        <translation>Harap tinjau Perjanjian Lisensi Pengguna Akhir (EULA) di atas.&lt;br/&gt;Jika kamu tidak setuju dengan ketentuan, perangkat lunak berpemilik tidak akan dipasang, dan alternatifnya perangkat lunak sumber terbuka yang akan digunakan sebagai gantinya.</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="157"/>
@@ -1318,7 +1318,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/keyboard/KeyboardPage.ui" line="131"/>
         <source>Type here to test your keyboard</source>
-        <translation>Ketik di sini untuk menguji keyboard</translation>
+        <translation>Ketik di sini untuk menguji keyboard-mu</translation>
     </message>
 </context>
 <context>
@@ -1331,12 +1331,12 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="36"/>
         <source>What is your name?</source>
-        <translation>Siapakah nama Anda?</translation>
+        <translation>Siapa namamu?</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="117"/>
         <source>What name do you want to use to log in?</source>
-        <translation>Nama siapa yang ingin Anda gunakan untuk masuk log?</translation>
+        <translation>Nama siapa yang ingin kamu gunakan untuk masuk log?</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="197"/>
@@ -1349,12 +1349,12 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="200"/>
         <source>&lt;small&gt;If more than one person will use this computer, you can set up multiple accounts after installation.&lt;/small&gt;</source>
-        <translation>&lt;small&gt;Jika lebih dari satu orang yang akan menggunakan komputer ini, Anda dapat mempersiapkan beberapa akun sesudah pemasangan.&lt;/small&gt;</translation>
+        <translation>&lt;small&gt;Jika lebih dari satu orang yang akan menggunakan komputer ini, kamu dapat mempersiapkan beberapa akun sesudah pemasangan.&lt;/small&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="335"/>
         <source>Choose a password to keep your account safe.</source>
-        <translation>Pilihlah sebuah sandi untuk menjaga akun Anda tetap aman.</translation>
+        <translation>Pilihlah sebuah sandi untuk menjaga akunmu tetap aman.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="440"/>
@@ -1369,7 +1369,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="309"/>
         <source>&lt;small&gt;This name will be used if you make the computer visible to others on a network.&lt;/small&gt;</source>
-        <translation>&lt;small&gt;Nama ini akan digunakan jika Anda membuat komputer terlihat ke lainnya pada jaringan.&lt;/small&gt;</translation>
+        <translation>&lt;small&gt;Nama ini akan digunakan jika kamu membuat komputer terlihat ke lainnya pada jaringan.&lt;/small&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/users/page_usersetup.ui" line="450"/>
@@ -1510,7 +1510,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="153"/>
         <source>Are you sure you want to create a new partition table on %1?</source>
-        <translation>Apakah Anda yakin ingin membuat tabel partisi baru pada %1?</translation>
+        <translation>Apakah kamu yakin ingin membuat tabel partisi baru pada %1?</translation>
     </message>
 </context>
 <context>
@@ -1588,7 +1588,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="387"/>
         <source>An EFI system partition is necessary to start %1.&lt;br/&gt;&lt;br/&gt;To configure an EFI system partition, go back and select or create a FAT32 filesystem with the &lt;strong&gt;esp&lt;/strong&gt; flag enabled and mount point &lt;strong&gt;%2&lt;/strong&gt;.&lt;br/&gt;&lt;br/&gt;You can continue without setting up an EFI system partition but your system may fail to start.</source>
-        <translation>Sebuah partisi EFI system diperlukan untuk memulai %1.&lt;br/&gt;&lt;br/&gt;Untuk mengkonfigurasi partisi EFI system, kembalilah dan pilih atau buat sebuah filesystem FAT32 dengan bendera &lt;strong&gt;esp&lt;/strong&gt; yang diaktifkan dan titik kait &lt;strong&gt;%2&lt;/strong&gt;.&lt;br/&gt;&lt;br/&gt;Anda bisa melanjutkan tanpa menyetel partisi EFI system tetapi sistem Anda mungkin gagal untuk memulai.</translation>
+        <translation>Sebuah partisi EFI system diperlukan untuk memulai %1.&lt;br/&gt;&lt;br/&gt;Untuk mengkonfigurasi partisi EFI system, kembalilah dan pilih atau ciptakan sebuah filesystem FAT32 dengan bendera &lt;strong&gt;esp&lt;/strong&gt; yang diaktifkan dan titik kait &lt;strong&gt;%2&lt;/strong&gt;.&lt;br/&gt;&lt;br/&gt;Kamu bisa melanjutkan tanpa menyetel partisi EFI system tetapi mungkin sistemmu gagal untuk memulai.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="401"/>
@@ -1598,7 +1598,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="402"/>
         <source>An EFI system partition is necessary to start %1.&lt;br/&gt;&lt;br/&gt;A partition was configured with mount point &lt;strong&gt;%2&lt;/strong&gt; but its &lt;strong&gt;esp&lt;/strong&gt; flag is not set.&lt;br/&gt;To set the flag, go back and edit the partition.&lt;br/&gt;&lt;br/&gt;You can continue without setting the flag but your system may fail to start.</source>
-        <translation>Sebuah partisi EFI system diperlukan untuk memulai %1.&lt;br/&gt;&lt;br/&gt;Sebuah partisi telah dikonfigurasi dengan titik kait &lt;strong&gt;%2&lt;/strong&gt; tetapi bendera &lt;strong&gt;esp&lt;/strong&gt;-nya tidak disetel.&lt;br/&gt;Untuk menyetel bendera, kembalilah dan edit partisinya.&lt;br/&gt;&lt;br/&gt;Anda bisa melanjutkan tanpa menyetel partisi EFI system tetapi sistem Anda mungkin gagal untuk memulai.</translation>
+        <translation>Sebuah partisi EFI system diperlukan untuk memulai %1.&lt;br/&gt;&lt;br/&gt;Sebuah partisi telah dikonfigurasi dengan titik kait &lt;strong&gt;%2&lt;/strong&gt; tetapi bendera &lt;strong&gt;esp&lt;/strong&gt;-nya tidak disetel.&lt;br/&gt;Untuk menyetel bendera, kembalilah dan edit partisinya.&lt;br/&gt;&lt;br/&gt;Kamu bisa melanjutkan tanpa menyetel partisi EFI system tetapi mungkin sistemmu gagal untuk memulai.</translation>
     </message>
 </context>
 <context>
@@ -2019,7 +2019,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/summary/SummaryPage.cpp" line="46"/>
         <source>This is an overview of what will happen once you start the install procedure.</source>
-        <translation>Ini adalah rintisan tentang apa yang akan terjadi setelah Anda mulai prosedur memasang.</translation>
+        <translation>Ini adalah rintisan tentang apa yang akan terjadi setelah kamu mulai prosedur memasang.</translation>
     </message>
 </context>
 <context>
@@ -2035,33 +2035,33 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="268"/>
         <source>Your username is too long.</source>
-        <translation>Nama pengguna Anda terlalu panjang.</translation>
+        <translation>Nama penggunamu terlalu panjang.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="278"/>
         <source>Your username contains invalid characters. Only lowercase letters and numbers are allowed.</source>
-        <translation>Nama pengguna Anda mengandung karakter tidak sah. Hanya huruf kecil dan angka yang diperbolehkan.</translation>
+        <translation>Nama penggunamu mengandung karakter tidak sah. Hanya huruf kecil dan angka yang diperbolehkan.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="322"/>
         <source>Your hostname is too short.</source>
-        <translation>Hostname Anda terlalu pendek.</translation>
+        <translation>Hostname-mu terlalu pendek.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="333"/>
         <source>Your hostname is too long.</source>
-        <translation>Hostname Anda terlalu panjang.</translation>
+        <translation>Hostname-mu terlalu panjang.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="344"/>
         <source>Your hostname contains invalid characters. Only letters, numbers and dashes are allowed.</source>
-        <translation>Nama host Anda mengandung karakter tidak sah. Hanya huruf, angka dan tanda pisah yang diperbolehkan.</translation>
+        <translation>Hostname-mu mengandung karakter tidak sah. Hanya huruf, angka dan tanda pisah yang diperbolehkan.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="375"/>
         <location filename="../src/modules/users/UsersPage.cpp" line="408"/>
         <source>Your passwords do not match!</source>
-        <translation>Sandi Anda tidak cocok!</translation>
+        <translation>Sandimu tidak cocok!</translation>
     </message>
 </context>
 <context>
@@ -2138,7 +2138,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="47"/>
         <source>Here the actual install of KaOS will start.&lt;br/&gt;Use the left &lt;b&gt;mouse button&lt;/b&gt; to go to the next slide, right for previous.&lt;br/&gt;After creating your chosen disk setup in the first 10 % &lt;br/&gt;the full copying of the ISO will take the longest of this install phase &lt;br/&gt;and will run until approximately 30%.&lt;br/&gt;</source>
-        <translation>Di sini memasang KaOS yang sebenarnya akan mulai.&lt;br/&gt;Gunakan &lt;b&gt;tombol mouse&lt;/br&gt; kiri untuk ke slide selanjutnya, kanan untuk sebelumnya.&lt;br/&gt;Setelah membuat persiapan disk yang Anda pilih dalam 10% pertama &lt;br/&gt;penyalinan penuh ISO akan memakan waktu yang lama bagi fase pasang ini dan akan berlangsung sampai sekitar 30%.&lt;br/&gt;</translation>
+        <translation>Di sini memasang KaOS yang sebenarnya akan dimulai.&lt;br/&gt;Gunakan &lt;b&gt;tombol mouse&lt;/br&gt; kiri untuk ke slide selanjutnya, kanan untuk sebelumnya.&lt;br/&gt;Setelah membuat persiapan disk yang kamu pilih dalam 10% pertama &lt;br/&gt;penyalinan penuh ISO akan memakan waktu yang lama bagi fase pasang ini dan akan berlangsung sampai sekira 30%.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="73"/>
@@ -2163,7 +2163,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="167"/>
         <source>May using KaOS be a pleasant experience for you.</source>
-        <translation>Mungkin menggunakan KaOS menjadi pengalaman yang menyenangkan bagi Anda.</translation>
+        <translation>Mungkin menggunakan KaOS menjadi pengalaman yang menyenangkan bagi kamu.</translation>
     </message>
 </context>
 </TS>
