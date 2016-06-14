@@ -92,6 +92,13 @@ def create_fallback(uuid, fallback_path):
     for partition in partitions:
         if partition["fs"] == "linuxswap":
             swap = partition["uuid"]
+            
+        if partition["mountPoint"] == "/" and "luksMapperName" in partition:
+            cryptdevice_params = [
+                "cryptdevice=UUID={!s}:{!s}".format(partition["luksUuid"],
+                                                    partition["luksMapperName"]),
+                "root=/dev/mapper/{!s}".format(partition["luksMapperName"])
+            ]
 
     lines = [
         '## Please edit the paths and kernel parameters according to your system.\n',

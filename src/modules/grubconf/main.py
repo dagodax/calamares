@@ -64,6 +64,9 @@ def modify_grub_default(partitions, root_mount_point, distributor):
         elif lines[i].startswith("#GRUB_DISTRIBUTOR") or lines[i].startswith("GRUB_DISTRIBUTOR"):
             lines[i] = "GRUB_DISTRIBUTOR=\"{!s}\"".format(distributor)
 
+    if cryptdevice_params:
+        lines.append("GRUB_ENABLE_CRYPTODISK=y")
+
     with open(default_grub, 'w') as grub_file:
         grub_file.write("\n".join(lines) + "\n")
 
