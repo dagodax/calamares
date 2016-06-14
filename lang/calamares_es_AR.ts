@@ -1001,7 +1001,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/partition/gui/EncryptWidget.cpp" line="149"/>
         <source>Please enter the same passphrase in both boxes.</source>
-        <translation type="unfinished"/>
+        <translation>Por favor ingrese la misma frase de contraseña en ambas cajas de diálogo.</translation>
     </message>
 </context>
 <context>
