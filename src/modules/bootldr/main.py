@@ -54,12 +54,15 @@ def create_conf(uuid, conf_path):
     kernel = libcalamares.job.configuration["kernel"]
     img = libcalamares.job.configuration["img"]
     partitions = libcalamares.globalstorage.value("partitions")
+
+    kernel_params = ["quiet systemd.show_status=0"]
     swap = ""
     cryptdevice_params = []
+
     for partition in partitions:
         if partition["fs"] == "linuxswap":
             swap = partition["uuid"]
-            
+
         if partition["mountPoint"] == "/" and "luksMapperName" in partition:
             cryptdevice_params = [
                 "cryptdevice=UUID={!s}:{!s}".format(partition["luksUuid"],
@@ -67,13 +70,21 @@ def create_conf(uuid, conf_path):
                 "root=/dev/mapper/{!s}".format(partition["luksMapperName"])
             ]
 
+    if cryptdevice_params:
+        kernel_params.extend(cryptdevice_params)
+    else:
+        kernel_params.append("root=UUID={!s}".format(uuid))
+
+    if swap:
+        kernel_params.append("resume=UUID={!s}".format(swap))
+
     lines = [
         '## Please edit the paths and kernel parameters according to your system.\n',
         '\n',
         'title   {!s} GNU/Linux, with Linux kernel\n'.format(distribution),
         'linux   {!s}\n'.format(kernel),
         'initrd  {!s}\n'.format(img),
-        'options root=UUID={!s} quiet systemd.show_status=0 resume=UUID={!s} {!s} rw\n'.format(uuid, swap, " ".join(cryptdevice_params)),
+        'options {!s} rw\n'.format(" ".join(kernel_params)),
     ]
 
     with open(conf_path, 'w') as f:
@@ -87,12 +98,15 @@ def create_fallback(uuid, fallback_path):
     kernel = libcalamares.job.configuration["kernel"]
     fb_img = libcalamares.job.configuration["fallback"]
     partitions = libcalamares.globalstorage.value("partitions")
+
+    kernel_params = ["quiet systemd.show_status=0"]
     swap = ""
     cryptdevice_params = []
+
     for partition in partitions:
         if partition["fs"] == "linuxswap":
             swap = partition["uuid"]
-            
+
         if partition["mountPoint"] == "/" and "luksMapperName" in partition:
             cryptdevice_params = [
                 "cryptdevice=UUID={!s}:{!s}".format(partition["luksUuid"],
@@ -100,13 +114,21 @@ def create_fallback(uuid, fallback_path):
                 "root=/dev/mapper/{!s}".format(partition["luksMapperName"])
             ]
 
+    if cryptdevice_params:
+        kernel_params.extend(cryptdevice_params)
+    else:
+        kernel_params.append("root=UUID={!s}".format(uuid))
+
+    if swap:
+        kernel_params.append("resume=UUID={!s}".format(swap))
+
     lines = [
         '## Please edit the paths and kernel parameters according to your system.\n',
         '\n',
         'title   {!s} GNU/Linux, with Linux fallback kernel\n'.format(distribution),
         'linux   {!s}\n'.format(kernel),
         'initrd  {!s}\n'.format(fb_img),
-        'options root=UUID={!s} quiet systemd.show_status=0 resume=UUID={!s} {!s} rw\n'.format(uuid, swap, " ".join(cryptdevice_params)),
+        'options {!s} rw\n'.format(" ".join(kernel_params)),
     ]
 
     with open(fallback_path, 'w') as f:
@@ -143,7 +165,7 @@ def install_bootloader(boot_loader, fw_type):
             install_path, "boot", "loader", "loader.conf")
         partitions = libcalamares.globalstorage.value("partitions")
         device = ""
-        
+
         for partition in partitions:
             if partition["mountPoint"] == "/boot":
                 print(partition["device"])
