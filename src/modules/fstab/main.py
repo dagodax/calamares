@@ -4,6 +4,7 @@
 # === This file is part of Calamares - <http://github.com/calamares> ===
 #
 #   Copyright 2014, Aurélien Gâteau <agateau@kde.org>
+#   Copyright 2016, Teo Mrnjavac <teo@kde.org>
 #
 #   Calamares is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -73,7 +74,7 @@ def disk_name_for_partition(partition):
     """
     name = os.path.basename(partition["device"])
 
-    if name.startswith("/dev/mmcblk"):
+    if name.startswith("/dev/mmcblk") or name.startswith("/dev/nvme"):
         return re.sub("p[0-9]+$", "", name)
 
     return re.sub("[0-9]+$", "", name)
