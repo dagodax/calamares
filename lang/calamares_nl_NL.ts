@@ -365,7 +365,7 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="142"/>
         <source>This program will ask you some questions and set up %2 on your computer.</source>
-        <translation>Dit programma zal u enkele vragen stellen en % 2 op uw computer installeren.</translation>
+        <translation>Dit programma zal u enkele vragen stellen en %2 op uw computer installeren.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="166"/>
