@@ -335,12 +335,12 @@ The installer will quit and all changes will be lost.</source>
 <context>
     <name>CheckFileSystemJob</name>
     <message>
-        <location filename="../src/modules/partition/jobs/CheckFileSystemJob.cpp" line="34"/>
+        <location filename="../src/modules/partition/jobs/CheckFileSystemJob.cpp" line="39"/>
         <source>Checking file system on partition %1.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/CheckFileSystemJob.cpp" line="58"/>
+        <location filename="../src/modules/partition/jobs/CheckFileSystemJob.cpp" line="77"/>
         <source>The file system check on partition %1 failed.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1066,42 +1066,42 @@ The installer will quit and all changes will be lost.</source>
 <context>
     <name>FormatPartitionJob</name>
     <message>
-        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="48"/>
+        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="49"/>
         <source>Format partition %1 (file system: %2, size: %3 MB) on %4.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="59"/>
+        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="60"/>
         <source>Format &lt;strong&gt;%3MB&lt;/strong&gt; partition &lt;strong&gt;%1&lt;/strong&gt; with file system &lt;strong&gt;%2&lt;/strong&gt;.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="70"/>
+        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="71"/>
         <source>Formatting partition %1 with file system %2.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="82"/>
+        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="83"/>
         <source>The installer failed to format partition %1 on disk &apos;%2&apos;.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="90"/>
+        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="91"/>
         <source>Could not open device &apos;%1&apos;.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="99"/>
+        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="100"/>
         <source>Could not open partition table.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="107"/>
+        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="124"/>
         <source>The installer failed to create file system on partition %1.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="115"/>
+        <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="133"/>
         <source>The installer failed to update partition table on disk &apos;%1&apos;.</source>
         <translation type="unfinished"></translation>
     </message>

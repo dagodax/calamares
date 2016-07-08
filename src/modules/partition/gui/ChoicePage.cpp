@@ -556,6 +556,8 @@ ChoicePage::doAlongsideApply()
     Q_ASSERT( m_afterPartitionSplitterWidget->splitPartitionSize() >= 0 );
     Q_ASSERT( m_afterPartitionSplitterWidget->newPartitionSize()   >= 0 );
 
+    QMutexLocker locker( &m_coreMutex );
+
     QString path = m_beforePartitionBarsView->
                    selectionModel()->
                    currentIndex().data( PartitionModel::PartitionPathRole ).toString();

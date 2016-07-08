@@ -368,8 +368,10 @@ void
 PartitionViewStep::onActivate()
 {
     // if we're coming back to PVS from the next VS
-    if ( m_widget->currentWidget() == m_choicePage )
+    if ( m_widget->currentWidget() == m_choicePage &&
+         m_choicePage->currentChoice() == ChoicePage::Alongside )
     {
+        m_choicePage->applyActionChoice( ChoicePage::Alongside );
 //        m_choicePage->reset();
         //FIXME: ReplaceWidget should be reset maybe?
     }
@@ -475,6 +477,17 @@ PartitionViewStep::setConfigurationMap( const QVariantMap& configurationMap )
     else
     {
         gs->insert( "drawNestedPartitions", false );
+    }
+
+    if ( configurationMap.contains( "alwaysShowPartitionLabels" ) &&
+         configurationMap.value( "alwaysShowPartitionLabels" ).type() == QVariant::Bool )
+    {
+        gs->insert( "alwaysShowPartitionLabels",
+                    configurationMap.value( "alwaysShowPartitionLabels", true ).toBool() );
+    }
+    else
+    {
+        gs->insert( "alwaysShowPartitionLabels", true );
     }
 
     if ( configurationMap.contains( "defaultFileSystemType" ) &&
