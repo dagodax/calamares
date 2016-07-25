@@ -30,6 +30,7 @@
 #include <GlobalStorage.h>
 
 #include <QProcess>
+#include <QTemporaryDir>
 
 namespace PartUtils
 {
@@ -136,6 +137,120 @@ canBeResized( PartitionCoreModule* core, const QString& partitionPath )
 }
 
 
+FstabEntryList
+lookForFstabEntries( const QString& partitionPath )
+{
+    FstabEntryList fstabEntries;
+    QTemporaryDir mountsDir;
+
+    int exit = QProcess::execute( "mount", { partitionPath, mountsDir.path() } );
+    if ( !exit ) // if all is well
+    {
+        QFile fstabFile( mountsDir.path() + "/etc/fstab" );
+        if ( fstabFile.open( QIODevice::ReadOnly | QIODevice::Text ) )
+        {
+            QStringList fstabLines = QString::fromLocal8Bit( fstabFile.readAll() )
+                                     .split( '\n' );
+
+            foreach ( const QString& rawLine, fstabLines )
+            {
+                QString line = rawLine.simplified();
+                if ( line.startsWith( '#' ) )
+                    continue;
+
+                QStringList splitLine = line.split( ' ' );
+                if ( splitLine.length() != 6 )
+                    continue;
+
+                fstabEntries.append( { splitLine.at( 0 ), // path, or UUID, or LABEL, etc.
+                                       splitLine.at( 1 ), // mount point
+                                       splitLine.at( 2 ), // fs type
+                                       splitLine.at( 3 ), // options
+                                       splitLine.at( 4 ).toInt(), //dump
+                                       splitLine.at( 5 ).toInt()  //pass
+                                     } );
+            }
+
+            fstabFile.close();
+        }
+
+        QProcess::execute( "umount", { "-R", mountsDir.path() } );
+    }
+
+    return fstabEntries;
+}
+
+
+QString
+findPartitionPathForMountPoint( const FstabEntryList& fstab,
+                                const QString& mountPoint )
+{
+    if ( fstab.isEmpty() )
+        return QString();
+
+    foreach ( const FstabEntry& entry, fstab )
+    {
+        if ( entry.mountPoint == mountPoint )
+        {
+            QProcess readlink;
+            QString partPath;
+
+            if ( entry.partitionNode.startsWith( "/dev" ) ) // plain dev node
+            {
+                partPath = entry.partitionNode;
+            }
+            else if ( entry.partitionNode.startsWith( "LABEL=" ) )
+            {
+                partPath = entry.partitionNode.mid( 6 );
+                partPath.remove( "\"" );
+                partPath.replace( "\\040", "\\ " );
+                partPath.prepend( "/dev/disk/by-label/" );
+            }
+            else if ( entry.partitionNode.startsWith( "UUID=" ) )
+            {
+                partPath = entry.partitionNode.mid( 5 );
+                partPath.remove( "\"" );
+                partPath = partPath.toLower();
+                partPath.prepend( "/dev/disk/by-uuid/" );
+            }
+            else if ( entry.partitionNode.startsWith( "PARTLABEL=" ) )
+            {
+                partPath = entry.partitionNode.mid( 10 );
+                partPath.remove( "\"" );
+                partPath.replace( "\\040", "\\ " );
+                partPath.prepend( "/dev/disk/by-partlabel/" );
+            }
+            else if ( entry.partitionNode.startsWith( "PARTUUID=" ) )
+            {
+                partPath = entry.partitionNode.mid( 9 );
+                partPath.remove( "\"" );
+                partPath = partPath.toLower();
+                partPath.prepend( "/dev/disk/by-partuuid/" );
+            }
+
+            // At this point we either have /dev/sda1, or /dev/disk/by-something/...
+
+            if ( partPath.startsWith( "/dev/disk/by-" ) ) // we got a fancy node
+            {
+                readlink.start( "readlink", { "-en", partPath });
+                if ( !readlink.waitForStarted( 1000 ) )
+                    return QString();
+                if ( !readlink.waitForFinished( 1000 ) )
+                    return QString();
+                if ( readlink.exitCode() != 0 || readlink.exitStatus() != QProcess::NormalExit )
+                    return QString();
+                partPath = QString::fromLocal8Bit(
+                               readlink.readAllStandardOutput() ).trimmed();
+            }
+
+            return partPath;
+        }
+    }
+
+    return QString();
+}
+
+
 OsproberEntryList
 runOsprober( PartitionCoreModule* core )
 {
@@ -177,10 +292,15 @@ runOsprober( PartitionCoreModule* core )
             if ( !path.startsWith( "/dev/" ) ) //basic sanity check
                 continue;
 
+            FstabEntryList fstabEntries = lookForFstabEntries( path );
+            QString homePath = findPartitionPathForMountPoint( fstabEntries, "/home" );
+
             osproberEntries.append( { prettyName,
                                       path,
                                       canBeResized( core, path ),
-                                      lineColumns } );
+                                      lineColumns,
+                                      fstabEntries,
+                                      homePath } );
             osproberCleanLines.append( line );
         }
     }

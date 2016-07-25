@@ -104,13 +104,22 @@ PartitionCoreModule::PartitionCoreModule( QObject* parent )
 {
     if ( !KPMHelpers::initKPMcore() )
         qFatal( "Failed to initialize KPMcore backend" );
-    FileSystemFactory::init();
-    init();
 }
+
 
 void
 PartitionCoreModule::init()
 {
+    QMutexLocker locker( &m_revertMutex );
+    doInit();
+}
+
+
+void
+PartitionCoreModule::doInit()
+{
+    FileSystemFactory::init();
+
     CoreBackend* backend = CoreBackendManager::self()->backend();
     QList< Device* > devices = backend->scanDevices( true );
 
@@ -546,7 +555,7 @@ PartitionCoreModule::revert()
     QMutexLocker locker( &m_revertMutex );
     qDeleteAll( m_deviceInfos );
     m_deviceInfos.clear();
-    init();
+    doInit();
     updateIsDirty();
     emit reverted();
 }
