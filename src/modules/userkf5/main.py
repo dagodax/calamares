@@ -65,6 +65,7 @@ def run():
         ('mimeapps.list', '.local/share/applications/'),
         ('xdg-user-dirs-update.desktop', '.config/autostart/'),
         ('octopi-notifier.desktop', '.config/autostart/'),
+        ('kaptan.desktop', '.config/autostart/'),
         ('libre.sh', '.config/plasma-workspace/env/'),
         ('stylerc', '.config/qtcurve/'),
         ('katerc', '.config/'),
