@@ -34,7 +34,7 @@
 
 
 LocalePage::LocalePage( QWidget* parent )
-    : QWidget()
+    : QWidget( parent )
     , m_blockTzWidgetSet( false )
 {
     QBoxLayout* mainLayout = new QVBoxLayout;
@@ -81,6 +81,17 @@ LocalePage::LocalePage( QWidget* parent )
     localeLayout->addWidget( m_localeChangeButton );
     mainLayout->addLayout( localeLayout );
 
+    QBoxLayout* formatsLayout = new QHBoxLayout;
+    m_formatsLabel = new QLabel( this );
+    m_formatsLabel->setWordWrap( true );
+    m_formatsLabel->setSizePolicy( QSizePolicy::Expanding, QSizePolicy::Preferred );
+    formatsLayout->addWidget( m_formatsLabel );
+
+    m_formatsChangeButton = new QPushButton( this );
+    m_formatsChangeButton->setSizePolicy( QSizePolicy::Preferred, QSizePolicy::Preferred );
+    formatsLayout->addWidget( m_formatsChangeButton );
+    mainLayout->addLayout( formatsLayout );
+
     setLayout( mainLayout );
 
     connect( m_regionCombo,
@@ -113,6 +124,7 @@ LocalePage::LocalePage( QWidget* parent )
              static_cast< void ( QComboBox::* )( int ) >( &QComboBox::currentIndexChanged ),
              [this]( int currentIndex )
     {
+        Q_UNUSED( currentIndex )
         if ( !m_blockTzWidgetSet )
             m_tzWidget->setCurrentLocation( m_regionCombo->currentData().toString(),
                                             m_zoneCombo->currentData().toString() );
@@ -145,37 +157,88 @@ LocalePage::LocalePage( QWidget* parent )
     } );
 
     connect( m_localeChangeButton, &QPushButton::clicked,
-             [this]()
+             [this]
     {
-        LCLocaleDialog* dlg = new LCLocaleDialog( lcLocale(),
-                                                  m_localeGenLines,
-                                                  this );
+        LCLocaleDialog* dlg =
+                new LCLocaleDialog( m_selectedLocaleConfiguration.isEmpty() ?
+                                        guessLocaleConfiguration().lang :
+                                        m_selectedLocaleConfiguration.lang,
+                                    m_localeGenLines,
+                                    this );
         dlg->exec();
         if ( dlg->result() == QDialog::Accepted &&
              !dlg->selectedLCLocale().isEmpty() )
         {
-            m_selectedLocale = dlg->selectedLCLocale();
-            m_localeLabel->setText( tr( "The system locale is set to %1." )
-                                    .arg( prettyLCLocale( m_selectedLocale ) ) );
+            m_selectedLocaleConfiguration.lang = dlg->selectedLCLocale();
+            m_localeLabel->setText( tr( "The system language will be set to %1." )
+                                    .arg( prettyLCLocale(
+                                        m_selectedLocaleConfiguration.lang ) ) );
         }
 
         dlg->deleteLater();
+    } );
+
+    connect( m_formatsChangeButton, &QPushButton::clicked,
+             [this]
+    {
+        LCLocaleDialog* dlg =
+                new LCLocaleDialog( m_selectedLocaleConfiguration.isEmpty() ?
+                                        guessLocaleConfiguration().lc_numeric :
+                                        m_selectedLocaleConfiguration.lc_numeric,
+                                    m_localeGenLines,
+                                    this );
+        dlg->exec();
+        if ( dlg->result() == QDialog::Accepted &&
+             !dlg->selectedLCLocale().isEmpty() )
+        {
+            // TODO: improve the granularity of this setting.
+            m_selectedLocaleConfiguration.lc_numeric = dlg->selectedLCLocale();
+            m_selectedLocaleConfiguration.lc_time = dlg->selectedLCLocale();
+            m_selectedLocaleConfiguration.lc_monetary = dlg->selectedLCLocale();
+            m_selectedLocaleConfiguration.lc_paper = dlg->selectedLCLocale();
+            m_selectedLocaleConfiguration.lc_name = dlg->selectedLCLocale();
+            m_selectedLocaleConfiguration.lc_address = dlg->selectedLCLocale();
+            m_selectedLocaleConfiguration.lc_telephone = dlg->selectedLCLocale();
+            m_selectedLocaleConfiguration.lc_measurement = dlg->selectedLCLocale();
+            m_selectedLocaleConfiguration.lc_identification = dlg->selectedLCLocale();
+
+            m_formatsLabel->setText( tr( "The numbers and dates locale will be set to %1." )
+                                    .arg( prettyLCLocale(
+                                        m_selectedLocaleConfiguration.lc_numeric ) ) );
+        }
+
+        dlg->deleteLater();
+
     } );
 
     CALAMARES_RETRANSLATE(
         m_regionLabel->setText( tr( "Region:" ) );
         m_zoneLabel->setText( tr( "Zone:" ) );
 
-        m_localeLabel->setText( tr( "The system locale is set to %1." )
-                                .arg( prettyLCLocale( lcLocale() ) ) );
+        updateLocaleLabels();
 
         m_localeChangeButton->setText( tr( "&Change..." ) );
+        m_formatsChangeButton->setText( tr( "&Change..." ) );
     )
 }
 
 
 LocalePage::~LocalePage()
 {}
+
+
+void
+LocalePage::updateLocaleLabels()
+{
+    LocaleConfiguration lc = m_selectedLocaleConfiguration.isEmpty() ?
+                             guessLocaleConfiguration() :
+                             m_selectedLocaleConfiguration;
+    m_localeLabel->setText( tr( "The system language will be set to %1." )
+                            .arg( prettyLCLocale( lc.lang ) ) );
+
+    m_formatsLabel->setText( tr( "The numbers and dates locale will be set to %1." )
+                            .arg( prettyLCLocale( lc.lc_numeric ) ) );
+}
 
 
 void
@@ -280,6 +343,38 @@ LocalePage::init( const QString& initialRegion,
             m_localeGenLines.append( lineString );
         }
     }
+
+    if ( m_localeGenLines.isEmpty() )
+    {
+        cDebug() << "WARNING: cannot acquire a list of available locales."
+                 << "The locale and localecfg modules will be broken as long as this "
+                    "system does not provide"
+                 << " * a /usr/share/i18n/SUPPORTED file"
+                 << "\tOR"
+                 << " * a well-formed /etc/locale.gen"
+                 << "\tOR"
+                 << " * a complete pre-compiled locale-gen database which allows complete locale -a output.";
+
+        return; // something went wrong and there's nothing we can do about it.
+    }
+
+    // Assuming we have a list of supported locales, we usually only want UTF-8 ones
+    // because it's not 1995.
+    for ( auto it = m_localeGenLines.begin(); it != m_localeGenLines.end(); )
+    {
+        if ( !it->contains( "UTF-8", Qt::CaseInsensitive ) )
+            it = m_localeGenLines.erase( it );
+        else
+            ++it;
+    }
+
+    // We strip " UTF-8" from "en_US.UTF-8 UTF-8" because it's redundant redundant.
+    for ( auto it = m_localeGenLines.begin(); it != m_localeGenLines.end(); ++it )
+    {
+        if ( it->endsWith( " UTF-8" ) )
+            it->chop( 6 );
+        *it = it->simplified();
+    }
 }
 
 
@@ -308,10 +403,12 @@ LocalePage::createJobs()
 }
 
 
-QString
-LocalePage::lcLocale()
+QMap< QString, QString >
+LocalePage::localesMap()
 {
-    return m_selectedLocale.isEmpty() ? guessLCLocale() : m_selectedLocale;
+    return m_selectedLocaleConfiguration.isEmpty() ?
+                guessLocaleConfiguration().toMap() :
+                m_selectedLocaleConfiguration.toMap();
 }
 
 
@@ -322,66 +419,32 @@ LocalePage::onActivate()
 }
 
 
-QString
-LocalePage::guessLCLocale()
+LocaleConfiguration
+LocalePage::guessLocaleConfiguration()
 {
-    QLocale myLocale = QLocale();
+    QLocale myLocale = QLocale();   // User-selected language
 
+    // If we cannot say anything about available locales
     if ( m_localeGenLines.isEmpty() )
-        return "en_US.UTF-8 UTF-8";
-
-    QString myLanguage = myLocale.name().split( '_' ).first();
-    QStringList linesForLanguage;
-    foreach ( QString line, m_localeGenLines )
     {
-        if ( line.startsWith( myLanguage ) )
-            linesForLanguage.append( line );
+        cDebug() << "WARNING: cannot acquire a list of available locales."
+                 << "The locale and localecfg modules will be broken as long as this "
+                    "system does not provide"
+                 << " * a /usr/share/i18n/SUPPORTED file"
+                 << "\tOR"
+                 << " * a well-formed /etc/locale.gen"
+                 << "\tOR"
+                 << " * a complete pre-compiled locale-gen database which allows complete locale -a output.";
+        return LocaleConfiguration::createDefault();
     }
 
-    if ( linesForLanguage.length() == 0 )
-        return "en_US.UTF-8 UTF-8";
-    else if ( linesForLanguage.length() == 1 )
-        return linesForLanguage.first();
-    else
-    {
-        QStringList linesForLanguageUtf;
-        foreach ( QString line, linesForLanguage )
-        {
-            if ( line.contains( "UTF-8" ) )
-                linesForLanguageUtf.append( line );
-        }
+    QString myLanguageLocale = myLocale.name();
+    if ( myLanguageLocale.isEmpty() )
+        return LocaleConfiguration::createDefault();
 
-        if ( linesForLanguageUtf.length() == 1 )
-            return linesForLanguageUtf.first();
-    }
-
-    // FIXME: use reverse geocoding to guess the country
-    QString prefix = myLocale.name();
-    QStringList linesForLanguageAndCountry;
-    foreach ( QString line, linesForLanguage )
-    {
-        if ( line.startsWith( prefix ) )
-            linesForLanguageAndCountry.append( line );
-    }
-
-    if ( linesForLanguageAndCountry.length() == 0 )
-        return "en_US.UTF-8 UTF-8";
-    else if ( linesForLanguageAndCountry.length() == 1 )
-        return linesForLanguageAndCountry.first();
-    else
-    {
-        QStringList linesForLanguageAndCountryUtf;
-        foreach ( QString line, linesForLanguageAndCountry )
-        {
-            if ( line.contains( "UTF-8" ) )
-                linesForLanguageAndCountryUtf.append( line );
-        }
-
-        if ( linesForLanguageAndCountryUtf.length() == 1 )
-            return linesForLanguageAndCountryUtf.first();
-    }
-
-    return "en_US.UTF-8 UTF-8";
+    return LocaleConfiguration::fromLanguageAndLocation( myLanguageLocale,
+                                                         m_localeGenLines,
+                                                         m_tzWidget->getCurrentLocation().country );
 }
 
 
@@ -391,7 +454,11 @@ LocalePage::prettyLCLocale( const QString& lcLocale )
     QString localeString = lcLocale;
     if ( localeString.endsWith( " UTF-8" ) )
         localeString.remove( " UTF-8" );
-    return localeString;
+
+    QLocale locale( localeString );
+    //: Language (Country)
+    return tr( "%1 (%2)" ).arg( QLocale::languageToString( locale.language() ) )
+                          .arg( QLocale::countryToString( locale.country() ) );
 }
 
 void
@@ -402,4 +469,7 @@ LocalePage::updateGlobalStorage()
             ->insert( "locationRegion", location.region );
     Calamares::JobQueue::instance()->globalStorage()
             ->insert( "locationZone", location.zone );
+
+    m_selectedLocaleConfiguration = guessLocaleConfiguration();
+    updateLocaleLabels();
 }
