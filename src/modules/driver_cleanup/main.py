@@ -58,7 +58,7 @@ def run():
                                                         'xf86-video-nouveau'])
                     except Exception as e:
                         pass
-                if "amdgpu" in line or "radeon" in line:
+                if "amdgpu" in line:
                     print(line)
                 else:
                     try:
