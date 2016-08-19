@@ -3,7 +3,7 @@
 #
 # === This file is part of Calamares - <http://github.com/calamares> ===
 #
-#   Copyright 2014 KaOS (http://kaosx.us)
+#   Copyright 2014-2016 KaOS (http://kaosx.us)
 #
 #   Calamares is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -44,18 +44,26 @@ def run():
             for line in searchfile:
                 if "intel" in line:
                     print(line)
-                else:
-                    try:
-                        libcalamares.utils.target_env_call(['pacman', '-R', '--noconfirm',
-                                                        'xf86-video-vmware'])
-                    except Exception as e:
-                        pass
+                #else:
+                #    try:
+                #        libcalamares.utils.target_env_call(['pacman', '-R', '--noconfirm',
+                #                                        'xf86-video-vmware'])
+                #    except Exception as e:
+                #        pass
                 if "nouveau" in line:
                     print(line)
                 else:
                     try:
                         libcalamares.utils.target_env_call(['pacman', '-R', '--noconfirm',
                                                         'xf86-video-nouveau'])
+                    except Exception as e:
+                        pass
+                if "amdgpu" in line or "radeon" in line:
+                    print(line)
+                else:
+                    try:
+                        libcalamares.utils.target_env_call(['pacman', '-R', '--noconfirm',
+                                                        'xf86-video-amdgpu'])
                     except Exception as e:
                         pass
                 if "ati" in line or "radeon" in line:
@@ -78,7 +86,7 @@ def run():
     else:
         try:
             libcalamares.utils.target_env_call(['pacman', '-R', '--noconfirm', 'xf86-video-ati',
-                                            'xf86-video-vmware'])
+                                            'xf86-video-vmware', 'xf86-video-amdgpu'])
         except Exception as e:
             pass
 
