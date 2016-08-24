@@ -74,11 +74,11 @@ def run():
        
 
     # Remove KDE l10n
-    this_locale = libcalamares.globalstorage.value("localeConf")["LC_ADDRESS"][:2]
+    this_locale = libcalamares.globalstorage.value("localeConf")["LANG"][:2]
     #this_locale = 'us'
     list_of_pkgs = []
 
-    print(libcalamares.globalstorage.value("localeConf")["LC_ADDRESS"])
+    print(libcalamares.globalstorage.value("localeConf")["LANG"])
     print(this_locale)
 
     p = subprocess.Popen("pacman -Q | grep -i kde-l10n | awk '{print $1}'",
