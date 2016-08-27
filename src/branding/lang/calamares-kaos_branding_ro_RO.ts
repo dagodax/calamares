@@ -1,35 +1,35 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="id_ID" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ro_RO" version="2.1">
 <context>
     <name>show</name>
     <message>
         <location filename="../kaos_branding/show.qml" line="47"/>
         <source>Here the actual install of KaOS will start.&lt;br/&gt;Use the left &lt;b&gt;mouse button&lt;/b&gt; to go to the next slide, right for previous.&lt;br/&gt;After creating your chosen disk setup in the first 10 % &lt;br/&gt;the full copying of the ISO will take the longest of this install phase &lt;br/&gt;and will run until approximately 30%.&lt;br/&gt;</source>
-        <translation>Di sini memasang KaOS yang sebenarnya akan mulai.&lt;br/&gt; Gunakan &lt;b&gt;tombol mouse&lt;/br&gt; kiri untuk pergi ke slide berikutnya, kanan untuk sebelumnya.&lt;br/&gt;Setelah membuat persiapan disk yang kamu pilih dalam 10% pertama &lt;br/&gt;penyalinan penuh ISO akan memakan waktu yang lama bagi fase pasang ini &lt;br/&gt;dan akan berlangsung sampai sekitar 30%.&lt;br/&gt;</translation>
+        <translation>Aici va începe efectiv instalarea KaOS.&lt;br/&gt;Folosiți butonul &lt;b&gt;mouse stânga&lt;/b&gt; pentru a avansa la următorul diapozitiv, clic dreapta pentru cel anterior.&lt;br/&gt;După crearea configurației dorită de disc, primele 10% din instalare, adică copierea efectivă&lt;br/&gt;a ISO-ului va dura cel mai mult din faza de instalare &lt;br/&gt;și va dura aproximativ 30% din timp.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../kaos_branding/show.qml" line="73"/>
         <source>After the ISO is copied some 25 post-install modules will run.&lt;br/&gt;This includes setting user specific options, &lt;br/&gt;removing Live Session only packages&lt;br/&gt;and adjusting hardware setup.&lt;br/&gt;</source>
-        <translation>Setelah ISO tersebut disalin sekira 25 pasca pasang modul akan berjalan.&lt;br/&gt; Ini termasuk pilihan setelan spesifik pengguna,&lt;br/&gt; menghapus paket Sesi Live saja&lt;br/&gt; dan menyesuaikan persiapan perangkat keras.&lt;br/&gt;</translation>
+        <translation>După ce este copiat ISO-ul, vor rula aproximativ 25 de module post-instalare.&lt;br/&gt;Aceasta include setarea opțiunilor specifice pentru utilizator, &lt;br/&gt;ștergerea pachetelor valabile doar pentru sesiunea live&lt;br/&gt;și ajustarea configurației hardware.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../kaos_branding/show.qml" line="98"/>
         <source>The default Office Suite is Calligra.&lt;br/&gt;LibreOffice is available in the repositories. &lt;br/&gt;</source>
-        <translation>Secara baku Rangkaian Perkantoran adalah Calligra.&lt;br/&gt;LibreOffice telah tersedia di repositori. &lt;br/&gt;</translation>
+        <translation>Suita implicită de Office este Calligra.&lt;br/&gt;În depozite mai este disponibil și LibreOffice.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../kaos_branding/show.qml" line="121"/>
         <source>Qt/KDE specific internet applications include the Qupzilla web-browser &lt;br/&gt;and kde-telepathy for chat and Instant Messaging. &lt;br/&gt;</source>
-        <translation>Aplikasi internet Qt/KDE tertentu termasuk peramban web Qupzilla &lt;br/&gt;dan untuk obrolan kde-telepathy dan Instant Messaging. &lt;br/&gt;</translation>
+        <translation>Aplicații specifice pentru internet Qt/KDE includ browserul Qupzilla &lt;br/&gt;și kde-telepathy pentru chat și mesagerie instant.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../kaos_branding/show.qml" line="144"/>
         <source>For package management Octopi is the GUI application.&lt;br/&gt;</source>
-        <translation>Untuk pengelolaan paket Octopi adalah aplikasi Antarmuka Pengguna Grafis.&lt;br/&gt;</translation>
+        <translation>Octopi este aplicația GUI pentru gestiunea pachetelor.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../kaos_branding/show.qml" line="166"/>
         <source>May using KaOS be a pleasant experience for you.</source>
-        <translation>Mungkin menggunakan KaOS menjadi pengalaman yang menyenangkan bagimu.</translation>
+        <translation>Fie ca spiritul KaOS-ului să vă aducă o experiență plăcută în utilizare.</translation>
     </message>
 </context>
 </TS>
