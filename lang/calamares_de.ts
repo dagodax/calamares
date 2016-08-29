@@ -610,13 +610,13 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
         <location filename="../thirdparty/libcrashreporter-qt/src/libcrashreporter-gui/CrashReporter.cpp" line="285"/>
         <location filename="../thirdparty/libcrashreporter-qt_a/src/libcrashreporter-gui/CrashReporter.cpp" line="196"/>
         <source>Sent! &lt;b&gt;Many thanks&lt;/b&gt;. Please refer to crash &lt;b&gt;%1&lt;/b&gt; in bug reports.</source>
-        <translation>Gesendet! &lt;b&gt;Vielen Dank&lt;/b&gt;. Bitte geben Sie zu Absturz &lt;b&gt;%1&lt;/b&gt; in den Fehlerberichten.</translation>
+        <translation>Gesendet! &lt;b&gt;Vielen Dank&lt;/b&gt;. Bitte gehen Sie zu Absturz &lt;b&gt;%1&lt;/b&gt; in den Fehlerberichten.</translation>
     </message>
     <message>
         <location filename="../thirdparty/libcrashreporter-qt/src/libcrashreporter-gui/CrashReporter.cpp" line="294"/>
         <location filename="../thirdparty/libcrashreporter-qt_a/src/libcrashreporter-gui/CrashReporter.cpp" line="205"/>
         <source>Failed to send crash info.</source>
-        <translation>Fehlerberichterstattung fehlgeschlagen.</translation>
+        <translation>Fehlerberichtsinformationen konnten nicht gesendet werden.</translation>
     </message>
 </context>
 <context>
@@ -707,7 +707,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="83"/>
         <source>The installer failed to create partition on disk &apos;%1&apos;.</source>
-        <translation>Das Installationsprogramm scheiterte beim Erstellen der Partition auf Datenträger &apos;%1&apos;.</translation>
+        <translation>Das Installationsprogramm konnte die Partition auf Datenträger &apos;%1&apos; nicht erstellen.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="92"/>
@@ -722,12 +722,12 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="126"/>
         <source>The installer failed to create file system on partition %1.</source>
-        <translation>Das Installationsprogramm scheiterte beim Erstellen des Dateisystems auf Partition %1.</translation>
+        <translation>Das Installationsprogramm konnte das Dateisystem auf Partition %1 nicht erstellen.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="134"/>
         <source>The installer failed to update partition table on disk &apos;%1&apos;.</source>
-        <translation>Das Installationsprogramm scheiterte beim Aktualisieren der Partitionstabelle auf Datenträger &apos;%1&apos;.</translation>
+        <translation>Das Installationsprogramm konnte die Partitionstabelle auf Datenträger &apos;%1&apos; nicht aktualisieren.</translation>
     </message>
 </context>
 <context>
@@ -1093,7 +1093,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="83"/>
         <source>The installer failed to format partition %1 on disk &apos;%2&apos;.</source>
-        <translation>Das Formatieren von Partition %1 auf Datenträger &apos;%2&apos; ist fehlgeschlagen.</translation>
+        <translation>Das Installationsprogramm konnte die Partition %1 auf Datenträger &apos;%2&apos; nicht formatieren.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="91"/>
@@ -1108,12 +1108,12 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="124"/>
         <source>The installer failed to create file system on partition %1.</source>
-        <translation>Das Dateisystem auf Partition %1 konnte nicht erstellt werden.</translation>
+        <translation>Das Installationsprogramm konnte das Dateisystem auf Partition %1 nicht erstellen.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="133"/>
         <source>The installer failed to update partition table on disk &apos;%1&apos;.</source>
-        <translation>Das Aktualisieren der Partitionstabelle auf Datenträger &apos;%1&apos; ist fehlgeschlagen.</translation>
+        <translation>Das Installationsprogramm konnte die Partitionstabelle auf Datenträger &apos;%1&apos; nicht aktualisieren.</translation>
     </message>
 </context>
 <context>
@@ -1234,13 +1234,13 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
         <location filename="../src/modules/locale/LocalePage.cpp" line="174"/>
         <location filename="../src/modules/locale/LocalePage.cpp" line="237"/>
         <source>The system language will be set to %1.</source>
-        <translation type="unfinished"/>
+        <translation>Die Systemsprache wird auf %1 festgelegt.</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="206"/>
         <location filename="../src/modules/locale/LocalePage.cpp" line="240"/>
         <source>The numbers and dates locale will be set to %1.</source>
-        <translation type="unfinished"/>
+        <translation>Die Zahlen- und Datumsumgebung wird auf %1 festgelegt.</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LocalePage.cpp" line="216"/>
@@ -1267,7 +1267,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
         <location filename="../src/modules/locale/LocalePage.cpp" line="462"/>
         <source>%1 (%2)</source>
         <extracomment>Language (Country)</extracomment>
-        <translation type="unfinished"/>
+        <translation>%1 (%2)</translation>
     </message>
 </context>
 <context>

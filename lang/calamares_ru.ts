@@ -42,12 +42,12 @@
     <message>
         <location filename="../src/modules/partition/gui/BootInfoWidget.cpp" line="75"/>
         <source>This system was started with an &lt;strong&gt;EFI&lt;/strong&gt; boot environment.&lt;br&gt;&lt;br&gt;To configure startup from an EFI environment, this installer must deploy a boot loader application, like &lt;strong&gt;GRUB&lt;/strong&gt; or &lt;strong&gt;systemd-boot&lt;/strong&gt; on an &lt;strong&gt;EFI System Partition&lt;/strong&gt;. This is automatic, unless you choose manual partitioning, in which case you must choose it or create it on your own.</source>
-        <translation type="unfinished"/>
+        <translation>Эта система стартовала в &lt;strong&gt;EFI&lt;/strong&gt; среде загрузки.&lt;br&gt;&lt;br&gt;Для конфигурации загрузки из среды EFI, этот установщик должен развернуть загрузчик, например &lt;strong&gt;GRUB&lt;/strong&gt; или &lt;strong&gt;systemd-boot&lt;/strong&gt; в &lt;strong&gt;EFI System Partition&lt;/strong&gt;. Это произойдет автоматически, если вы не выбрали ручную разметку, в этом случае вы должны выбрать его или создать самостоятельно.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/BootInfoWidget.cpp" line="87"/>
         <source>This system was started with a &lt;strong&gt;BIOS&lt;/strong&gt; boot environment.&lt;br&gt;&lt;br&gt;To configure startup from a BIOS environment, this installer must install a boot loader, like &lt;strong&gt;GRUB&lt;/strong&gt;, either at the beginning of a partition or on the &lt;strong&gt;Master Boot Record&lt;/strong&gt; near the beginning of the partition table (preferred). This is automatic, unless you choose manual partitioning, in which case you must set it up on your own.</source>
-        <translation type="unfinished"/>
+        <translation>Эта система стартовала в &lt;strong&gt;BIOS&lt;/strong&gt; среде загрузки.&lt;br&gt;&lt;br&gt;Для конфигурации загрузки из среды BIOS, этот установщик должен установить загрузчик, например &lt;strong&gt;GRUB&lt;/strong&gt;, в начало раздела или в &lt;strong&gt;Master Boot Record&lt;/strong&gt; близкий к началу таблицы разделов (предпочтительно). Это произойдет автоматически, если вы не выбрали ручную разметку, в этом случае вы должны настроить его самостоятельно.</translation>
     </message>
 </context>
 <context>
@@ -103,7 +103,7 @@
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="57"/>
         <source>Tools</source>
-        <translation type="unfinished"/>
+        <translation>Инструменты</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.cpp" line="102"/>
@@ -588,7 +588,7 @@ The installer will quit and all changes will be lost.</source>
         <location filename="../thirdparty/libcrashreporter-qt_a/src/libcrashreporter-gui/CrashReporter.cpp" line="184"/>
         <location filename="../thirdparty/libcrashreporter-qt_a/src/libcrashreporter-gui/CrashReporter.cpp" line="204"/>
         <source>Close</source>
-        <translation type="unfinished"/>
+        <translation>Закрыть</translation>
     </message>
     <message>
         <location filename="../thirdparty/libcrashreporter-qt/src/libcrashreporter-gui/CrashReporter.cpp" line="143"/>
@@ -649,7 +649,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="168"/>
         <source>Flags:</source>
-        <translation type="unfinished"/>
+        <translation>Флаги:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="148"/>
@@ -897,7 +897,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="63"/>
         <source>The type of &lt;strong&gt;partition table&lt;/strong&gt; on the selected storage device.&lt;br&gt;&lt;br&gt;The only way to change the partition table type is to erase and recreate the partition table from scratch, which destroys all data on the storage device.&lt;br&gt;This installer will keep the current partition table unless you explicitly choose otherwise.&lt;br&gt;If unsure, on modern systems GPT is preferred.</source>
-        <translation type="unfinished"/>
+        <translation>Тип &lt;strong&gt;таблицы разделов&lt;/strong&gt; на выбранном устройстве хранения.&lt;br&gt;&lt;br&gt;Единственный способ изменить тип таблицы, состоит в том чтобы стереть и создать таблицу разделов с нуля, что уничтожит все данные на устройстве хранения.&lt;br&gt;Этот установщик сохранит текущую таблицу разделов, если вы явно не вберете иное.&lt;br&gt;Если не уверены, для современных систем предпочтительней GPT.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="107"/>
@@ -912,7 +912,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="121"/>
         <source>This installer &lt;strong&gt;cannot detect a partition table&lt;/strong&gt; on the selected storage device.&lt;br&gt;&lt;br&gt;The device either has no partition table, or the partition table is corrupted or of an unknown type.&lt;br&gt;This installer can create a new partition table for you, either automatically, or through the manual partitioning page.</source>
-        <translation type="unfinished"/>
+        <translation>Этот установщик &lt;strong&gt;не может обнаружить таблицу разделов&lt;/strong&gt; на выбранном устройстве хранения.&lt;br&gt;&lt;br&gt;Устройство либо не имеет таблицы разделов, либо она повреждена или имеет неизвестны тип&lt;br&gt;Этот установщик может создать для вас новую таблицу, автоматически, либо вручную через страницу создания разделов.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="131"/>
@@ -922,7 +922,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="137"/>
         <source>&lt;br&gt;&lt;br&gt;This partition table type is only advisable on older systems which start from a &lt;strong&gt;BIOS&lt;/strong&gt; boot environment. GPT is recommended in most other cases.&lt;br&gt;&lt;br&gt;&lt;strong&gt;Warning:&lt;/strong&gt; the MBR partition table is an obsolete MS-DOS era standard.&lt;br&gt;Only 4 &lt;em&gt;primary&lt;/em&gt; partitions may be created, and of those 4, one can be an &lt;em&gt;extended&lt;/em&gt; partition, which may in turn contain many &lt;em&gt;logical&lt;/em&gt; partitions.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;br&gt;&lt;br&gt;Этот тип таблицы разделов рекомендуется только для устаревших систем, стартующих из &lt;strong&gt;BIOS&lt;/strong&gt; среды загрузки. В большинстве других случаев, рекомендуется GPT.&lt;br&gt;&lt;br&gt;&lt;strong&gt;Внимание:&lt;/strong&gt; MBR таблица разделов это устаревший стандарт эпохи MS-DOS.&lt;br&gt;Только 4 &lt;em&gt;основных&lt;/em&gt; раздела могут быть созданы, и из них 4 могут быть &lt;em&gt;расширенным&lt;/em&gt; разделом, который может в свою очередь содержать множество &lt;em&gt;логических&lt;/em&gt; разделов.</translation>
     </message>
 </context>
 <context>
@@ -978,7 +978,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="145"/>
         <source>Flags:</source>
-        <translation type="unfinished"/>
+        <translation>Флаги:</translation>
     </message>
 </context>
 <context>
@@ -986,7 +986,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/EncryptWidget.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"/>
+        <translation>Форма</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EncryptWidget.ui" line="32"/>
@@ -1070,7 +1070,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/finished/FinishedViewStep.cpp" line="43"/>
         <source>Finish</source>
-        <translation type="unfinished"/>
+        <translation>Завершить</translation>
     </message>
 </context>
 <context>
@@ -2151,7 +2151,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="72"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014-2015 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini, Rohan Garg and the &lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;KaOS translators team&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;http://calamares.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;для %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Правообладатель 2014-2015 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Благодарности: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini, Rohan Garg и &lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;KaOS команда переводчиков&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;http://calamares.io/&quot;&gt;Calamares&lt;/a&gt; развитие спонсируется &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="195"/>
