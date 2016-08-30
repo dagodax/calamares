@@ -14,7 +14,7 @@
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="121"/>
         <source>With this operation, the partition &lt;strong&gt;%1&lt;/strong&gt; which contains %4 will be shrunk to %2MB and a new %3MB partition will be created for %5.</source>
-        <translation type="unfinished"/>
+        <translation>Этим действием, раздел &lt;strong&gt;%1&lt;/strong&gt; имеющий %4 будет уменьшен до %2MB а новый радел %3MB будет создан для %5.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/AlongsidePage.cpp" line="198"/>
@@ -37,7 +37,7 @@
     <message>
         <location filename="../src/modules/partition/gui/BootInfoWidget.cpp" line="61"/>
         <source>The &lt;strong&gt;boot environment&lt;/strong&gt; of this system.&lt;br&gt;&lt;br&gt;Older x86 systems only support &lt;strong&gt;BIOS&lt;/strong&gt;.&lt;br&gt;Modern systems usually use &lt;strong&gt;EFI&lt;/strong&gt;, but may also show up as BIOS if started in compatibility mode.</source>
-        <translation type="unfinished"/>
+        <translation>Среда &lt;strong&gt;загрузки&lt;/strong&gt; этой системы.&lt;br&gt;&lt;br&gt;Старые системы x86 поддерживают только&lt;strong&gt;BIOS&lt;/strong&gt;.&lt;br&gt;Современные обычно  используют &lt;strong&gt;EFI&lt;/strong&gt;, но могут отображаться как BIOS, если запущены в режиме совместимости.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/BootInfoWidget.cpp" line="75"/>
@@ -70,7 +70,7 @@
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="111"/>
         <source>Do not install a boot loader</source>
-        <translation type="unfinished"/>
+        <translation>Не установлен загрузчик</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="125"/>
@@ -430,7 +430,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="236"/>
         <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself. Having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;, either use an existing without formatting or create one.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Ручная разметка&lt;/strong&gt;&lt;br/&gt;Вы можете создавать или изменять разделы самостоятельно. GPT таблица и &lt;strong&gt;fat32 512Mb /boot раздел, являются обязательным условием установки в UEFI&lt;/strong&gt;, используйте подходящий без форматирования либо создайте.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="768"/>
@@ -470,22 +470,22 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1167"/>
         <source>This storage device does not seem to have an operating system on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
-        <translation type="unfinished"/>
+        <translation>Кажется это устройство хранения не содержит операционной системы. Что вы желаете сделать?&lt;br/&gt;Вы сможете просмотреть и подтвердить свой выбор, прежде чем любые изменения произойдут на устройстве хранения.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1201"/>
         <source>This storage device has %1 on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
-        <translation type="unfinished"/>
+        <translation>Это устройство хранения содержит %1. Что вы желаете сделать?&lt;br/&gt;Вы сможете просмотреть и подтвердить свой выбор, прежде чем любые изменения произойдут на устройстве хранения.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1226"/>
         <source>This storage device already has an operating system on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
-        <translation type="unfinished"/>
+        <translation>Это устройство хранения уже содержит операционную систему. Что вы желаете сделать?&lt;br/&gt;Вы сможете просмотреть и подтвердить свой выбор, прежде чем любые изменения произойдут на устройстве хранения.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1264"/>
         <source>This storage device has multiple operating systems on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
-        <translation type="unfinished"/>
+        <translation>Это устройство хранения содержит несколько операционных систем. Что вы желаете сделать?&lt;br/&gt;Вы сможете просмотреть и подтвердить свой выбор, прежде чем любые изменения произойдут на устройстве хранения.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.ui" line="14"/>
@@ -546,25 +546,25 @@ The installer will quit and all changes will be lost.</source>
         <location filename="../thirdparty/libcrashreporter-qt/src/libcrashreporter-gui/CrashReporter.ui" line="104"/>
         <location filename="../thirdparty/libcrashreporter-qt_a/src/libcrashreporter-gui/CrashReporter.ui" line="104"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../thirdparty/libcrashreporter-qt/src/libcrashreporter-gui/CrashReporter.ui" line="213"/>
         <location filename="../thirdparty/libcrashreporter-qt_a/src/libcrashreporter-gui/CrashReporter.ui" line="238"/>
         <source>Abort</source>
-        <translation type="unfinished"/>
+        <translation>Прервать</translation>
     </message>
     <message>
         <location filename="../thirdparty/libcrashreporter-qt/src/libcrashreporter-gui/CrashReporter.ui" line="257"/>
         <location filename="../thirdparty/libcrashreporter-qt_a/src/libcrashreporter-gui/CrashReporter.ui" line="156"/>
         <source>Send this report</source>
-        <translation type="unfinished"/>
+        <translation>Отправить этот отчёт</translation>
     </message>
     <message>
         <location filename="../thirdparty/libcrashreporter-qt/src/libcrashreporter-gui/CrashReporter.ui" line="264"/>
         <location filename="../thirdparty/libcrashreporter-qt_a/src/libcrashreporter-gui/CrashReporter.ui" line="163"/>
         <source>Don&apos;t send</source>
-        <translation type="unfinished"/>
+        <translation>Не отправлять</translation>
     </message>
     <message>
         <location filename="../thirdparty/libcrashreporter-qt/src/libcrashreporter-gui/CrashReporter.ui" line="284"/>
@@ -801,7 +801,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="64"/>
         <source>Creating user %1.</source>
-        <translation type="unfinished"/>
+        <translation>Создание пользователя %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="80"/>
@@ -869,7 +869,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="58"/>
         <source>Deleting partition %1.</source>
-        <translation type="unfinished"/>
+        <translation>Удаление раздела %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/DeletePartitionJob.cpp" line="67"/>
@@ -907,7 +907,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="114"/>
         <source>This is a &lt;strong&gt;loop&lt;/strong&gt; device.&lt;br&gt;&lt;br&gt;It is a pseudo-device with no partition table that makes a file accessible as a block device. This kind of setup usually only contains a single filesystem.</source>
-        <translation type="unfinished"/>
+        <translation>Это &lt;strong&gt;loop&lt;/strong&gt; устройство.&lt;br&gt;&lt;br&gt;Это псевдо-устройство без таблицы разделов, которое делает файл доступным как блочное устройство. Этот вид установки, обычно содержит одну файловую систему.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/DeviceInfoWidget.cpp" line="121"/>
@@ -1175,12 +1175,12 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="124"/>
         <source>&lt;h1&gt;License Agreement&lt;/h1&gt;In case non-free was selected, this installer will install proprietary packages &lt;br/&gt;that have additional End User License Agreements (EULAs) attached to them.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Лицензионное соглашение&lt;/h1&gt;В случае выбора несвободного ПО, этот установщик установит проприетарные пакеты,&lt;br/&gt; которые имеют прилагаемое к ним, дополнительное лицензионное соглашение конечного пользователя (EULAs).</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="127"/>
         <source>Please review the End User License Agreements (EULAs) above.&lt;br/&gt;If you do not agree with the terms, proprietary software will not be installed, and open source alternatives will be used instead.</source>
-        <translation type="unfinished"/>
+        <translation>Просмотрите выше, лицензионное соглашение конечного пользователя (EULAs).&lt;br/&gt;Если вы не согласны с условиями, проприетарные программы не будут установлены и вместо них будут использованы альтернативные с отрытым кодом.</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="157"/>
@@ -1607,32 +1607,32 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="243"/>
         <source>Current:</source>
-        <translation type="unfinished"/>
+        <translation>Сейчас:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="259"/>
         <source>After:</source>
-        <translation type="unfinished"/>
+        <translation>После:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="403"/>
         <source>No EFI system partition configured</source>
-        <translation type="unfinished"/>
+        <translation>Не настроен системный раздел EFI</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="404"/>
         <source>An EFI system partition is necessary to start %1.&lt;br/&gt;&lt;br/&gt;To configure an EFI system partition, go back and select or create a FAT32 filesystem with the &lt;strong&gt;esp&lt;/strong&gt; flag enabled and mount point &lt;strong&gt;%2&lt;/strong&gt;.&lt;br/&gt;&lt;br/&gt;You can continue without setting up an EFI system partition but your system may fail to start.</source>
-        <translation type="unfinished"/>
+        <translation>Для старта %1 необходим системный раздел EFI.&lt;br/&gt;&lt;br/&gt;Для настройки системного раздела EFI, вернитесь, выберите или создайте раздел с файловой системой FAT32, включённым флагом &lt;strong&gt;esp&lt;/strong&gt; и точной монтирования &lt;strong&gt;%2&lt;/strong&gt;.&lt;br/&gt;&lt;br/&gt;Вы можете продолжить без установки системного раздела EFI, но ваша система не запуститься.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="418"/>
         <source>EFI system partition flag not set</source>
-        <translation type="unfinished"/>
+        <translation>Не установлен флаг системного раздела EFI</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="419"/>
         <source>An EFI system partition is necessary to start %1.&lt;br/&gt;&lt;br/&gt;A partition was configured with mount point &lt;strong&gt;%2&lt;/strong&gt; but its &lt;strong&gt;esp&lt;/strong&gt; flag is not set.&lt;br/&gt;To set the flag, go back and edit the partition.&lt;br/&gt;&lt;br/&gt;You can continue without setting the flag but your system may fail to start.</source>
-        <translation type="unfinished"/>
+        <translation>Для старта %1 необходим системный раздел EFI.&lt;br/&gt;&lt;br/&gt;Раздел был настроен с точкой монтирования &lt;strong&gt;%2&lt;/strong&gt; но флаг &lt;strong&gt;esp&lt;/strong&gt; небыл установлен.&lt;br/&gt;Для установки флага, вернитесь и отредактируйте раздел.&lt;br/&gt;&lt;br/&gt;Вы можете продолжить без установки флага но ваша система не запустится.</translation>
     </message>
 </context>
 <context>
@@ -1651,27 +1651,27 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="49"/>
         <source>Unpartitioned space or unknown partition table</source>
-        <translation type="unfinished"/>
+        <translation>Неразмеченное пространство или неизвестная таблица разделов</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="195"/>
         <source>unknown</source>
-        <translation type="unfinished"/>
+        <translation>неизвестно</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="197"/>
         <source>extended</source>
-        <translation type="unfinished"/>
+        <translation>расширенный</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="199"/>
         <source>unformatted</source>
-        <translation type="unfinished"/>
+        <translation>не форматированный</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="201"/>
         <source>swap</source>
-        <translation type="unfinished"/>
+        <translation>раздел подкачки</translation>
     </message>
 </context>
 <context>
@@ -1679,7 +1679,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/ReplaceWidget.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"/>
+        <translation>Форма</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ReplaceWidget.cpp" line="134"/>
@@ -1987,7 +1987,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="49"/>
         <source>Setting password for user %1.</source>
-        <translation type="unfinished"/>
+        <translation>Установка пароля для пользователя %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="59"/>
@@ -2040,12 +2040,12 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="96"/>
         <source>Cannot set timezone,</source>
-        <translation type="unfinished"/>
+        <translation>Не установлен часовой пояс,</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="97"/>
         <source>Cannot open /etc/timezone for writing</source>
-        <translation type="unfinished"/>
+        <translation>Невозможно открыть /etc/timezone для записи</translation>
     </message>
 </context>
 <context>
@@ -2116,27 +2116,27 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="75"/>
         <source>&amp;Language:</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Язык:</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="250"/>
         <source>&amp;Release notes</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Примечания к выпуску</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="240"/>
         <source>&amp;Known issues</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Известные проблемы</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="193"/>
         <source>&amp;Support</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Поддержка</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="183"/>
         <source>&amp;About</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Описание</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="56"/>
@@ -2156,7 +2156,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="195"/>
         <source>%1 support</source>
-        <translation type="unfinished"/>
+        <translation>%1 поддержка</translation>
     </message>
 </context>
 <context>
@@ -2164,7 +2164,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/welcome/WelcomeViewStep.cpp" line="50"/>
         <source>Welcome</source>
-        <translation type="unfinished"/>
+        <translation>Добро пожаловать</translation>
     </message>
 </context>
 <context>
@@ -2172,32 +2172,33 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="47"/>
         <source>Here the actual install of KaOS will start.&lt;br/&gt;Use the left &lt;b&gt;mouse button&lt;/b&gt; to go to the next slide, right for previous.&lt;br/&gt;After creating your chosen disk setup in the first 10 % &lt;br/&gt;the full copying of the ISO will take the longest of this install phase &lt;br/&gt;and will run until approximately 30%.&lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Здесь начнётся реальная установка KaOS.&lt;br/&gt;Используйте левую &lt;b&gt;кнопку мыши&lt;/b&gt; для следования дальше, правую для
+возвращения.&lt;br/&gt;После создания выбранного диска в первые 10 %, &lt;br/&gt;начнётся полное копирование ISO, это самая длинная фаза &lt;br/&gt;продлится примерно до 30%.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="73"/>
         <source>After the ISO is copied some 25 post-install modules will run.&lt;br/&gt;This includes setting user specific options, &lt;br/&gt;removing Live Session only packages&lt;br/&gt;and adjusting hardware setup.&lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>После копирования ISO, будут запущены 25 после-установочных модулей.&lt;br/&gt;Это содержит настройку параметров пользователя, &lt;br/&gt;удаление пакетов live-сенаса&lt;br/&gt;и настройка установки оборудования.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="98"/>
         <source>The default Office Suite is Calligra.&lt;br/&gt;LibreOffice is available in the repositories. &lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Офисный пакет по умолчанию - Calligra.&lt;br/&gt;LibreOffice доступен в репозиториях. &lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="121"/>
         <source>Qt/KDE specific internet applications include the &lt;br/&gt;Qupzilla web-browser and kde-telepathy for &lt;br/&gt;chat and Instant Messaging. &lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Специфические для Qt/KDE интернет-приложения включают &lt;br/&gt;веб-браузер Qupzilla и kde-telepathy для &lt;br/&gt;чата и мгновенных сообщений. &lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="145"/>
         <source>For package management Octopi is the GUI application.&lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Для управления пакетами - Octopi, приложение с графическим интерфейсом.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="167"/>
         <source>May using KaOS be a pleasant experience for you.</source>
-        <translation type="unfinished"/>
+        <translation>Возможно использование KaOS, будет для Вас приятным опытом.</translation>
     </message>
 </context>
 </TS>
