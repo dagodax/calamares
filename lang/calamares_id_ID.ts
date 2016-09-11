@@ -142,15 +142,15 @@
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="89"/>
         <source>External command crashed</source>
-        <translation>Perintah eksternal macet</translation>
+        <translation>Perintah eksternal mogok</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="90"/>
         <source>Command %1 crashed.
 Output:
 %2</source>
-        <translation>Perintah %1 macet.
-Output:
+        <translation>Perintah %1 mogok.
+Keluaran:
 %2</translation>
     </message>
     <message>
@@ -569,7 +569,7 @@ The installer will quit and all changes will be lost.</source>
         <location filename="../thirdparty/libcrashreporter-qt/src/libcrashreporter-gui/CrashReporter.ui" line="284"/>
         <location filename="../thirdparty/libcrashreporter-qt_a/src/libcrashreporter-gui/CrashReporter.ui" line="258"/>
         <source>You can disable sending crash reports in the configuration dialog.</source>
-        <translation>kamu bisa menonaktifkan pengiriman laporan kemacetan dalam dialog konfigurasi.</translation>
+        <translation>Kamu bisa menonaktifkan pengiriman laporan kemogokan di dialog konfigurasi.</translation>
     </message>
     <message>
         <location filename="../thirdparty/libcrashreporter-qt/src/libcrashreporter-gui/CrashReporter.cpp" line="107"/>
@@ -609,13 +609,13 @@ The installer will quit and all changes will be lost.</source>
         <location filename="../thirdparty/libcrashreporter-qt/src/libcrashreporter-gui/CrashReporter.cpp" line="285"/>
         <location filename="../thirdparty/libcrashreporter-qt_a/src/libcrashreporter-gui/CrashReporter.cpp" line="196"/>
         <source>Sent! &lt;b&gt;Many thanks&lt;/b&gt;. Please refer to crash &lt;b&gt;%1&lt;/b&gt; in bug reports.</source>
-        <translation>Terkirim! &lt;b&gt;Terimakasih banyak&lt;/b&gt;. Silakan lihat kemacetan &lt;b&gt;%1&lt;/b&gt; dalam laporan kutu.</translation>
+        <translation>Terkirim! &lt;b&gt;Terima kasih banyak&lt;/b&gt;. Silakan lihat kemogokan &lt;b&gt;%1&lt;/b&gt; dalam laporan kutu.</translation>
     </message>
     <message>
         <location filename="../thirdparty/libcrashreporter-qt/src/libcrashreporter-gui/CrashReporter.cpp" line="294"/>
         <location filename="../thirdparty/libcrashreporter-qt_a/src/libcrashreporter-gui/CrashReporter.cpp" line="205"/>
         <source>Failed to send crash info.</source>
-        <translation>Gagal mengirim info kemacetan.</translation>
+        <translation>Gagal mengirim info kemogokan.</translation>
     </message>
 </context>
 <context>
@@ -2150,7 +2150,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="72"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014-2015 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini, Rohan Garg and the &lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;KaOS translators team&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;http://calamares.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</source>
-        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;untuk %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Hak Cipta 2014-2015 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Terimakasih untuk: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini, Rohan Garg dan &lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;regu penerjemah KOS&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Pengembangan &lt;a href=&quot;http://calamares.io/&quot;&gt;Calamares&lt;/a&gt; disponsori oleh &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</translation>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;untuk %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Hak Cipta 2014-2015 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Terima kasih untuk: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Philip Müller, Pier Luigi Fiorini, Rohan Garg dan &lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;regu penerjemah KaOS&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Pengembangan &lt;a href=&quot;http://calamares.io/&quot;&gt;Calamares&lt;/a&gt; disponsori oleh &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="195"/>
@@ -2196,7 +2196,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="167"/>
         <source>May using KaOS be a pleasant experience for you.</source>
-        <translation>Mungkin menggunakan KaOS menjadi pengalaman yang menyenangkan bagi kamu.</translation>
+        <translation>Mungkin menggunakan KaOS menjadi pengalaman yang menyenangkan bagimu.</translation>
     </message>
 </context>
 </TS>
