@@ -22,6 +22,7 @@
 import os
 import shutil
 import subprocess
+import re
 
 import libcalamares
 
@@ -52,6 +53,15 @@ def run():
                 #        pass
                 if "nouveau" in line:
                     print(line)
+                    sddm_conf_path = os.path.join(install_path, "etc/sddm.conf")
+                    text = []
+                    with open(sddm_conf_path, 'r') as sddm_conf:
+                        text = sddm_conf.readlines()
+                    with open(sddm_conf_path, 'w') as sddm_conf:
+                        for line in text:
+                            if re.match('Session=plasmawayland.desktop', line):
+                                line = 'Session=plasma.desktop'
+                            sddm_conf.write(line)                    
                 else:
                     try:
                         libcalamares.utils.target_env_call(['pacman', '-R', '--noconfirm',

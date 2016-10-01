@@ -22,6 +22,7 @@ import os
 import shutil
 import glob
 import subprocess
+import re
 
 import libcalamares
 
@@ -62,6 +63,17 @@ def run():
             libcalamares.utils.target_env_call(
                 ['pacman', '-Ud', '--force', '--noconfirm', nvidia])
         shutil.rmtree('%s/opt/kdeos/pkgs' % (install_path))
+        
+        sddm_conf_path = os.path.join(install_path, "etc/sddm.conf")
+        text = []
+        with open(sddm_conf_path, 'r') as sddm_conf:
+            text = sddm_conf.readlines()
+        with open(sddm_conf_path, 'w') as sddm_conf:
+            for line in text:
+                if re.match('Session=plasmawayland.desktop', line):
+                    line = 'Session=plasma.desktop'
+                sddm_conf.write(line)
+                
     elif os.path.exists('/var/log/nvidia-340xx'):
         print('nvidia-340xx detected')
         print('removing unneeded packages')
@@ -79,6 +91,16 @@ def run():
             libcalamares.utils.target_env_call(
                 ['pacman', '-Ud', '--force', '--noconfirm', nvidia_340])
         shutil.rmtree('%s/opt/kdeos/pkgs' % (install_path))
+        
+        sddm_conf_path = os.path.join(install_path, "etc/sddm.conf")
+        text = []
+        with open(sddm_conf_path, 'r') as sddm_conf:
+            text = sddm_conf.readlines()
+        with open(sddm_conf_path, 'w') as sddm_conf:
+            for line in text:
+                if re.match('Session=plasmawayland.desktop', line):
+                    line = 'Session=plasma.desktop'
+                sddm_conf.write(line)
 
     print('done setting up hardware')
 
