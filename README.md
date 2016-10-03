@@ -14,7 +14,7 @@
 Main:
 * Compiler with C++11 support: GCC >= 4.9.0 or Clang >= 3.5.1
 * CMake >= 2.8.12
-* Qt >= 5.3
+* Qt >= 5.6
 * yaml-cpp >= 0.5.1
 * Python >= 3.3
 * Boost.Python >= 1.55.0

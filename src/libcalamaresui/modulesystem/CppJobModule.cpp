@@ -1,6 +1,7 @@
 /* === This file is part of Calamares - <http://github.com/calamares> ===
  *
  *   Copyright 2014, Teo Mrnjavac <teo@kde.org>
+ *   Copyright 2016, Kevin Kofler <kevin.kofler@chello.at>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -16,12 +17,11 @@
  *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "ViewModule.h"
+#include "CppJobModule.h"
 
 #include "utils/PluginFactory.h"
 #include "utils/Logger.h"
-#include "viewpages/ViewStep.h"
-#include "ViewManager.h"
+#include "CppJob.h"
 
 #include <QDir>
 #include <QPluginLoader>
@@ -30,21 +30,21 @@ namespace Calamares {
 
 
 Module::Type
-ViewModule::type() const
+CppJobModule::type() const
 {
-    return View;
+    return Job;
 }
 
 
 Module::Interface
-ViewModule::interface() const
+CppJobModule::interface() const
 {
     return QtPlugin;
 }
 
 
 void
-ViewModule::loadSelf()
+CppJobModule::loadSelf()
 {
     if ( m_loader )
     {
@@ -55,35 +55,35 @@ ViewModule::loadSelf()
             return;
         }
 
-        m_viewStep = pf->create< Calamares::ViewStep >();
-        if ( !m_viewStep )
+        CppJob *cppJob = pf->create< Calamares::CppJob >();
+        if ( !cppJob )
         {
             cDebug() << Q_FUNC_INFO << m_loader->errorString();
             return;
         }
-//        cDebug() << "ViewModule loading self for instance" << instanceKey()
-//                 << "\nViewModule at address" << this
+//        cDebug() << "CppJobModule loading self for instance" << instanceKey()
+//                 << "\nCppJobModule at address" << this
 //                 << "\nCalamares::PluginFactory at address" << pf
-//                 << "\nViewStep at address" << m_viewStep;
+//                 << "\nCppJob at address" << cppJob;
 
-        m_viewStep->setModuleInstanceKey( instanceKey() );
-        m_viewStep->setConfigurationMap( m_configurationMap );
-        ViewManager::instance()->addViewStep( m_viewStep );
+        cppJob->setModuleInstanceKey( instanceKey() );
+        cppJob->setConfigurationMap( m_configurationMap );
+        m_job = Calamares::job_ptr( static_cast< Calamares::Job * >( cppJob ) );
         m_loaded = true;
-        cDebug() << "ViewModule" << instanceKey() << "loading complete.";
+        cDebug() << "CppJobModule" << instanceKey() << "loading complete.";
     }
 }
 
 
 QList< job_ptr >
-ViewModule::jobs() const
+CppJobModule::jobs() const
 {
-    return m_viewStep->jobs();
+    return QList< job_ptr >() << m_job;
 }
 
 
 void
-ViewModule::initFrom( const QVariantMap& moduleDescriptor )
+CppJobModule::initFrom( const QVariantMap& moduleDescriptor )
 {
     Module::initFrom( moduleDescriptor );
     QDir directory( location() );
@@ -114,13 +114,13 @@ ViewModule::initFrom( const QVariantMap& moduleDescriptor )
     m_loader = new QPluginLoader( load );
 }
 
-ViewModule::ViewModule()
+CppJobModule::CppJobModule()
     : Module()
     , m_loader( nullptr )
 {
 }
 
-ViewModule::~ViewModule()
+CppJobModule::~CppJobModule()
 {
     delete m_loader;
 }

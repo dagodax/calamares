@@ -56,7 +56,11 @@ def run():
     # We need to overwrite the default resolv.conf in the chroot.
     source_resolv = "/etc/resolv.conf"
     target_resolv = os.path.join(root_mount_point, "etc/resolv.conf")
-    if os.path.exists(source_resolv):
+    if source_resolv != target_resolv and os.path.exists(source_resolv):
+        try:
+            os.remove(target_resolv)
+        except FileNotFoundError:
+            libcalamares.utils.debug("Couldn't remove {}".format(target_resolv))
         try:
             shutil.copy(source_resolv, target_resolv)
         except FileNotFoundError:

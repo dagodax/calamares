@@ -82,12 +82,16 @@ ChoicePage::ChoicePage( QWidget* parent )
     , m_beforePartitionLabelsView( nullptr )
     , m_bootloaderComboBox( nullptr )
     , m_lastSelectedDeviceIndex( -1 )
+    , m_enableEncryptionWidget( true )
 {
     setupUi( this );
 
     m_defaultFsType = Calamares::JobQueue::instance()->
                         globalStorage()->
                         value( "defaultFileSystemType" ).toString();
+    m_enableEncryptionWidget = Calamares::JobQueue::instance()->
+                               globalStorage()->
+                               value( "enableLuksAutomatedPartitioning" ).toBool();
     if ( FileSystem::typeForName( m_defaultFsType ) == FileSystem::Unknown )
         m_defaultFsType = "ext4";
 
@@ -592,7 +596,7 @@ ChoicePage::doAlongsideApply()
             qint64 oldLastSector = candidate->lastSector();
             qint64 newLastSector = firstSector +
                                    m_afterPartitionSplitterWidget->splitPartitionSize() /
-                                   dev->logicalSectorSize();
+                                   dev->logicalSize();
 
             m_core->resizePartition( dev, candidate, firstSector, newLastSector );
             Partition* newPartition = nullptr;
@@ -815,7 +819,7 @@ ChoicePage::updateDeviceStatePreview()
     m_beforePartitionLabelsView = new PartitionLabelsView( m_previewBeforeFrame );
     m_beforePartitionLabelsView->setExtendedPartitionHidden( mode == PartitionBarsView::NoNestedPartitions );
 
-    Device* deviceBefore = m_core->createImmutableDeviceCopy( currentDevice );
+    Device* deviceBefore = m_core->immutableDeviceCopy( currentDevice );
 
     PartitionModel* model = new PartitionModel( m_beforePartitionBarsView );
     model->init( deviceBefore, m_core->osproberEntries() );
@@ -886,7 +890,8 @@ ChoicePage::updateActionChoicePreview( ChoicePage::Choice choice )
     {
     case Alongside:
         {
-            m_encryptWidget->show();
+            if ( m_enableEncryptionWidget )
+                m_encryptWidget->show();
             m_previewBeforeLabel->setText( tr( "Current:" ) );
             m_selectLabel->setText( tr( "<strong>Select a partition to shrink, "
                                         "then drag the bottom bar to resize</strong>" ) );
@@ -932,7 +937,8 @@ ChoicePage::updateActionChoicePreview( ChoicePage::Choice choice )
     case Erase:
     case Replace:
         {
-            m_encryptWidget->show();
+            if ( m_enableEncryptionWidget )
+                m_encryptWidget->show();
             m_previewBeforeLabel->setText( tr( "Current:" ) );
             m_afterPartitionBarsView = new PartitionBarsView( m_previewAfterFrame );
             m_afterPartitionBarsView->setNestedPartitionsMode( mode );
