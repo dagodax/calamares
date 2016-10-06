@@ -59,7 +59,7 @@ def run():
         ('kickoffrc', '.config/'),
         ('konsolerc', '.config/'),
         ('.bashrc', ''),
-        ('.xinitrc', ''),
+        ('.xinitrc.debug', ''),
         ('mimeapps.list', '.local/share/applications/'),
         ('xdg-user-dirs-update.desktop', '.config/autostart/'),
         ('octopi-notifier.desktop', '.config/autostart/'),
