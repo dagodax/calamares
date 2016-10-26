@@ -37,17 +37,17 @@
     <message>
         <location filename="../src/modules/partition/gui/BootInfoWidget.cpp" line="61"/>
         <source>The &lt;strong&gt;boot environment&lt;/strong&gt; of this system.&lt;br&gt;&lt;br&gt;Older x86 systems only support &lt;strong&gt;BIOS&lt;/strong&gt;.&lt;br&gt;Modern systems usually use &lt;strong&gt;EFI&lt;/strong&gt;, but may also show up as BIOS if started in compatibility mode.</source>
-        <translation type="unfinished"/>
+        <translation>O &lt;strong&gt; ambiente de inicialização &lt;/ strong&gt; deste sistema. &lt;br&gt; Sistemas x86 mais antigos tem suporte somente a &lt;strong&gt; BIOS &lt;/ strong&gt;. &lt;br&gt; Sistemas modernos costumam usar &lt;strong&gt; EFI &lt;/ strong&gt;, mas também podem aparecer como BIOS se iniciado no modo de compatibilidade.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/BootInfoWidget.cpp" line="75"/>
         <source>This system was started with an &lt;strong&gt;EFI&lt;/strong&gt; boot environment.&lt;br&gt;&lt;br&gt;To configure startup from an EFI environment, this installer must deploy a boot loader application, like &lt;strong&gt;GRUB&lt;/strong&gt; or &lt;strong&gt;systemd-boot&lt;/strong&gt; on an &lt;strong&gt;EFI System Partition&lt;/strong&gt;. This is automatic, unless you choose manual partitioning, in which case you must choose it or create it on your own.</source>
-        <translation type="unfinished"/>
+        <translation>Este sistema foi iniciado com um &lt;strong&gt; EFI &lt;/ strong&gt; ambiente de inicialização. &lt;br&gt; Para configurar a inicialização de um ambiente EFI, este instalador deve implantar um aplicativo gerenciador de inicialização, como &lt;strong&gt; GRUB &lt;/ strong&gt; ou &lt;strong&gt; systemd-boot &lt;/ strong&gt; em um &lt;strong&gt; partição de sistema EFI &lt;/ strong&gt;. Isso é automático, a menos que você escolher o particionamento manual, caso em que você deve escolhê-lo ou criá-lo em seu próprio país.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/BootInfoWidget.cpp" line="87"/>
         <source>This system was started with a &lt;strong&gt;BIOS&lt;/strong&gt; boot environment.&lt;br&gt;&lt;br&gt;To configure startup from a BIOS environment, this installer must install a boot loader, like &lt;strong&gt;GRUB&lt;/strong&gt;, either at the beginning of a partition or on the &lt;strong&gt;Master Boot Record&lt;/strong&gt; near the beginning of the partition table (preferred). This is automatic, unless you choose manual partitioning, in which case you must set it up on your own.</source>
-        <translation type="unfinished"/>
+        <translation>Este sistema foi iniciado com um &lt;strong&gt; BIOS &lt;/ strong&gt; ambiente de inicialização. &lt;br&gt; Para configurar a inicialização de um ambiente BIOS, este instalador deve instalar um carregador de inicialização, como &lt;strong&gt; GRUB &lt;/ strong&gt;, seja no início de uma partição ou no &lt;strong&gt; master boot Record &lt;/ strong&gt; perto do início da tabela de partição (de preferência). Isso é automático, a menos que você escolher o particionamento manual, caso em que você deve configurá-lo em seu próprio país.</translation>
     </message>
 </context>
 <context>
@@ -366,7 +366,7 @@ O instalador será fechado e todas as alterações serão perdidas.</translation
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="142"/>
         <source>This program will ask you some questions and set up %2 on your computer.</source>
-        <translation type="unfinished"/>
+        <translation>Este programa irá pedir-lhe algumas perguntas e configurar % 2 no computador.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/CheckerWidget.cpp" line="166"/>
@@ -392,7 +392,7 @@ O instalador será fechado e todas as alterações serão perdidas.</translation
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1236"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1274"/>
         <source>&lt;strong&gt;Erase disk&lt;/strong&gt;&lt;br/&gt;This will &lt;font color=&quot;red&quot;&gt;delete&lt;/font&gt; all data currently present on the selected storage device.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;Strong&gt; apagar o disco &lt;/ strong&gt; &lt;br/&gt; Isto &lt;font color = &quot;red&quot;&gt; excluir &lt;/ font&gt; todos os dados actualmente presentes no dispositivo de armazenamento selecionado.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1176"/>
@@ -400,7 +400,7 @@ O instalador será fechado e todas as alterações serão perdidas.</translation
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1231"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1269"/>
         <source>&lt;strong&gt;Install alongside&lt;/strong&gt;&lt;br/&gt;The installer will shrink a partition to make room for %1.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;Strong&gt; Instalar ao lado &lt;/ strong&gt; &lt;br/&gt; O instalador vai encolher uma partição para liberar espaço para 1%.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1181"/>
@@ -1623,7 +1623,7 @@ O instalador será fechado e todas as alterações serão perdidas.</translation
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="404"/>
         <source>An EFI system partition is necessary to start %1.&lt;br/&gt;&lt;br/&gt;To configure an EFI system partition, go back and select or create a FAT32 filesystem with the &lt;strong&gt;esp&lt;/strong&gt; flag enabled and mount point &lt;strong&gt;%2&lt;/strong&gt;.&lt;br/&gt;&lt;br/&gt;You can continue without setting up an EFI system partition but your system may fail to start.</source>
-        <translation type="unfinished"/>
+        <translation>Uma partição de sistema EFI é necessário iniciar% 1. &lt;br/&gt; Para configurar uma partição de sistema EFI, volte e selecione ou crie um sistema de arquivos FAT32 com o &lt;strong&gt; esp &lt;/ strong&gt; bandeira habilitado e ponto de montagem &lt;strong&gt;% 2 &lt;/ strong&gt;. &lt;br/&gt; Você pode continuar sem a criação de uma partição de sistema EFI, mas seu sistema pode falhar ao iniciar.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="418"/>
@@ -1633,7 +1633,7 @@ O instalador será fechado e todas as alterações serão perdidas.</translation
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="419"/>
         <source>An EFI system partition is necessary to start %1.&lt;br/&gt;&lt;br/&gt;A partition was configured with mount point &lt;strong&gt;%2&lt;/strong&gt; but its &lt;strong&gt;esp&lt;/strong&gt; flag is not set.&lt;br/&gt;To set the flag, go back and edit the partition.&lt;br/&gt;&lt;br/&gt;You can continue without setting the flag but your system may fail to start.</source>
-        <translation type="unfinished"/>
+        <translation>Uma partição de sistema EFI é necessário iniciar% 1. &lt;br/&gt; Uma partição foi configurado com ponto de montagem &lt;strong&gt;% 2 &lt;/ strong&gt;, mas a sua &lt;strong&gt; esp &lt;/ strong&gt; bandeira não está definido. &lt;br/&gt; para definir a bandeira, voltar e editar a partição. &lt;br/&gt; Você pode continuar sem definir a bandeira, mas o seu sistema pode falhar ao iniciar.</translation>
     </message>
 </context>
 <context>
