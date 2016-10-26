@@ -3,7 +3,7 @@
 #
 # === This file is part of Calamares - <http://github.com/calamares> ===
 #
-#   Copyright 2014-2015, Anke Boersma <demm@kaosx.us>
+#   Copyright 2014-2016, Anke Boersma <demm@kaosx.us>
 #
 #   Calamares is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -40,8 +40,7 @@ def run():
         '.local/share/konsole',
         '.config/autostart',
         '.config/plasma-workspace/env',
-        '.config/qtcurve',
-        '.kde4/share/config'
+        '.config/qtcurve'
     ]
     for d in common_dirs:
         libcalamares.utils.target_env_call(
@@ -64,7 +63,6 @@ def run():
         ('xdg-user-dirs-update.desktop', '.config/autostart/'),
         ('octopi-notifier.desktop', '.config/autostart/'),
         ('kaptan.desktop', '.config/autostart/'),
-        ('libre.sh', '.config/plasma-workspace/env/'),
         ('stylerc', '.config/qtcurve/'),
         ('katerc', '.config/'),
         ('kcminputrc', '.config/'),
