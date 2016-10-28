@@ -163,32 +163,7 @@ def install_bootloader(boot_loader, fw_type):
             install_path, "boot", "loader", "entries", "{!s}-fallback.conf".format(distribution))
         loader_path = os.path.join(
             install_path, "boot", "loader", "loader.conf")
-        partitions = libcalamares.globalstorage.value("partitions")
-        device = ""
-
-        for partition in partitions:
-            if partition["mountPoint"] == "/boot":
-                print(partition["device"])
-                boot_device = partition["device"]
-                boot_p = boot_device[-1:]
-                device = boot_device[:-1]
-
-                if not boot_p or not device:
-                    return ("EFI directory /boot not found!",
-                            "Boot partition: \"{!s}\"",
-                            "Boot device: \"{!s}\"".format(boot_p, device))
-                else:
-                    print("EFI directory: /boot")
-                    print("Boot partition: \"{!s}\"".format(boot_p))
-                    print("Boot device: \"{!s}\"".format(device))
-                    
-        if not device:
-            print("WARNING: no EFI system partition or EFI system partition mount point not set.")
-            print("         >>> no EFI bootloader will be installed <<<")
-            return None
-        print("Set 'EF00' flag")
-        subprocess.call(
-            ["sgdisk", "--typecode={!s}:EF00".format(boot_p), "{!s}".format(device)])
+        
         subprocess.call(
             ["bootctl", "--path={!s}/boot".format(install_path), "install"])
         create_conf(uuid, conf_path)
