@@ -103,18 +103,18 @@
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="57"/>
         <source>Type:</source>
-        <translation type="unfinished"/>
+        <translation>Tipo:</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="64"/>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="78"/>
         <source>none</source>
-        <translation type="unfinished"/>
+        <translation>ninguno</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="71"/>
         <source>Interface:</source>
-        <translation type="unfinished"/>
+        <translation>Interface:</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="93"/>
@@ -852,12 +852,12 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="171"/>
         <source>Cannot add user %1 to groups: %2.</source>
-        <translation type="unfinished"/>
+        <translation>No se puede añadir el usuario %1 a grupos: %2.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="174"/>
         <source>usermod terminated with error code %1.</source>
-        <translation type="unfinished"/>
+        <translation>usermod terminó con código de error %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="184"/>
@@ -1653,12 +1653,12 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="456"/>
         <source>Boot partition not encrypted</source>
-        <translation type="unfinished"/>
+        <translation>Partición de arranque no encriptada</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="457"/>
         <source>A separate boot partition was set up together with an encrypted root partition, but the boot partition is not encrypted.&lt;br/&gt;&lt;br/&gt;There are security concerns with this kind of setup, because important system files are kept on an unencrypted partition.&lt;br/&gt;You may continue if you wish, but filesystem unlocking will happen later during system startup.&lt;br/&gt;To encrypt the boot partition, go back and recreate it, selecting &lt;strong&gt;Encrypt&lt;/strong&gt; in the partition creation window.</source>
-        <translation type="unfinished"/>
+        <translation>Se creó una partición de arranque separada junto con una partición root encriptada, pero la partición de arranque no está encriptada.&lt;br/&gt;&lt;/br&gt;Hay problemas de seguridad con este tipo de configuración, ya que los archivos importantes del sistema se mantienen en una partición no cifrada.&lt;br/&gt;Si lo desea puede continuar, pero el desbloqueo del sistema de archivos ocurrirá más tarde durante el inicio del sistema.&lt;br/&gt;Para encriptar la partición de arranque, vuelva atrás y creela nuevamente, seleccionando &lt;strong&gt;Encriptar&lt;/strong&gt; en la ventana de creación de la partición. </translation>
     </message>
 </context>
 <context>
@@ -1945,7 +1945,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/keyboard/SetKeyboardLayoutJob.cpp" line="330"/>
         <source>Failed to write keyboard configuration to existing /etc/default directory.</source>
-        <translation type="unfinished"/>
+        <translation>Error al escribir la configuración del teclado en el directorio /etc/default existente.</translation>
     </message>
 </context>
 <context>
@@ -1958,12 +1958,12 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="51"/>
         <source>Set flags on %1MB %2 partition.</source>
-        <translation type="unfinished"/>
+        <translation>Establecer indicadores en %1MB partición %2.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="55"/>
         <source>Set flags on new partition.</source>
-        <translation type="unfinished"/>
+        <translation>Establecer indicadores en la nueva partición.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="66"/>
@@ -1973,12 +1973,12 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="70"/>
         <source>Clear flags on %1MB &lt;strong&gt;%2&lt;/strong&gt; partition.</source>
-        <translation type="unfinished"/>
+        <translation>Limpiar indicadores en %1MB partición &lt;strong%2&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="74"/>
         <source>Clear flags on new partition.</source>
-        <translation type="unfinished"/>
+        <translation>Limpiar indicadores en la nueva partición.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="78"/>
@@ -1988,12 +1988,12 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="84"/>
         <source>Flag %1MB &lt;strong&gt;%2&lt;/strong&gt; partition as &lt;strong&gt;%3&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Indicador %1MB partición &lt;strong&gt;%2&lt;/strong&gt; como &lt;strong&gt;%3&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="90"/>
         <source>Flag new partition as &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Indicador de nueva partición como &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="102"/>
@@ -2003,12 +2003,12 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="106"/>
         <source>Clearing flags on %1MB &lt;strong&gt;%2&lt;/strong&gt; partition.</source>
-        <translation type="unfinished"/>
+        <translation>Limpiando indicadores en %1M partición &lt;strong&gt;%2&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="110"/>
         <source>Clearing flags on new partition.</source>
-        <translation type="unfinished"/>
+        <translation>Limpiando indicadores en la nueva partición.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="114"/>
@@ -2018,12 +2018,12 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="120"/>
         <source>Setting flags &lt;strong&gt;%3&lt;/strong&gt; on %1MB &lt;strong&gt;%2&lt;/strong&gt; partition.</source>
-        <translation type="unfinished"/>
+        <translation>Estableciendo indicadores &lt;strong&gt;%3&lt;/strong&gt; en %1MB partición &lt;strong&gt;%2&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="126"/>
         <source>Setting flags &lt;strong&gt;%1&lt;/strong&gt; on new partition.</source>
-        <translation type="unfinished"/>
+        <translation>Estableciendo indicadores &lt;strong&gt;%1&lt;/strong&gt; en nueva partición.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="140"/>

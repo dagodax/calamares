@@ -103,18 +103,18 @@
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="57"/>
         <source>Type:</source>
-        <translation type="unfinished"/>
+        <translation>Typ:</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="64"/>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="78"/>
         <source>none</source>
-        <translation type="unfinished"/>
+        <translation>keine</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="71"/>
         <source>Interface:</source>
-        <translation type="unfinished"/>
+        <translation>Schnittstelle:</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="93"/>
@@ -852,7 +852,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="171"/>
         <source>Cannot add user %1 to groups: %2.</source>
-        <translation type="unfinished"/>
+        <translation>Kann Benutzer %1 nicht zu Gruppen hinzufügen: %2.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="174"/>
@@ -1653,7 +1653,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="456"/>
         <source>Boot partition not encrypted</source>
-        <translation type="unfinished"/>
+        <translation>Boot-Partition nicht verschlüsselt</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="457"/>
