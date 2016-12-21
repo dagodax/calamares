@@ -20,6 +20,7 @@
 #include "WebViewStep.h"
 
 #include <QVariant>
+#include <QApplication>
 
 #ifdef WEBVIEW_WITH_WEBKIT
 #include <QWebView>
