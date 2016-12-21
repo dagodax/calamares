@@ -34,7 +34,9 @@ WebViewStep::WebViewStep( QObject* parent )
     : Calamares::ViewStep( parent )
 {
     emit nextStatusChanged( true );
-    QtWebEngine::initialize();
+    #ifdef WEBVIEW_WITH_WEBENGINE
+        QtWebEngine::initialize();
+    #endif
     m_view = new C_QWEBVIEW();
 #ifdef WEBVIEW_WITH_WEBKIT
     m_view->settings()->setFontFamily( QWebSettings::StandardFont,
