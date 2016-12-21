@@ -20,7 +20,6 @@
 #include "WebViewStep.h"
 
 #include <QVariant>
-#include <QApplication>
 
 #ifdef WEBVIEW_WITH_WEBKIT
 #include <QWebView>
@@ -34,7 +33,6 @@ WebViewStep::WebViewStep( QObject* parent )
     : Calamares::ViewStep( parent )
 {
     emit nextStatusChanged( true );
-    QCoreApplication::setAttribute(Qt::AA_ShareOpenGLContexts);
     m_view = new C_QWEBVIEW();
 #ifdef WEBVIEW_WITH_WEBKIT
     m_view->settings()->setFontFamily( QWebSettings::StandardFont,
