@@ -48,14 +48,12 @@ def run():
 
     print('setup distribution specific settings')
     distro_settings = [
-        ('auroraerc', '.config/'),
         ('kwinrc', '.config/'),
         ('plasma-org.kde.plasma.desktop-appletsrc', '.config/'),
         ('bookmarks.xml', '.local/share/konqueror/'),
         ('kdeglobals', '.config/'),
         ('kscreenlockerrc', '.config/'),
         ('ksplashrc', '.config/'),
-        ('kickoffrc', '.config/'),
         ('konsolerc', '.config/'),
         ('.bashrc', ''),
         ('.xinitrc.debug', ''),
