@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # === This file is part of Calamares - <http://github.com/calamares> ===
 #
-#   Copyright 2014-2016, Anke Boersma <demm@kaosx.us>
+#   Copyright 2014-2017, Anke Boersma <demm@kaosx.us>
 #   Copyright 2014, Benjamin Vaudour <benjamin.vaudour@yahoo.fr>
 #
 #   Calamares is free software: you can redistribute it and/or modify
@@ -204,7 +204,7 @@ def install_bootloader(boot_loader, fw_type):
 
 def run():
 
-    if libcalamares.globalstorage.value("bootLoader") is None:
+    if libcalamares.globalstorage.value("bootLoader") is None and fw_type != "efi":
         print('no bootloader install')
         return None
 

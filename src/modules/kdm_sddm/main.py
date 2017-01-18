@@ -4,7 +4,7 @@
 #
 #   Copyright 2014, Philip Müller <philm@manjaro.org>
 #   Copyright 2014, Teo Mrnjavac <teo@kde.org>
-#   Copyright 2014, Anke Boersma <demm@kaosx.us>
+#   Copyright 2014-2017, Anke Boersma <demm@kaosx.us>
 #
 #   Calamares is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -30,7 +30,7 @@ DesktopEnvironment = collections.namedtuple('DesktopEnvironment', ['executable',
 
 desktop_environments = [
     DesktopEnvironment('/usr/bin/startkde', 'plasma'), # KDE Plasma 5
-    DesktopEnvironment('/usr/bin/startkde', 'kde-plasma'), # KDE Plasma 4
+    #DesktopEnvironment('/usr/bin/startkde', 'kde-plasma'), # KDE Plasma 4
 ]
 
 def find_desktop_environment(root_mount_point):
@@ -43,23 +43,23 @@ def find_desktop_environment(root_mount_point):
 def set_autologin(username, displaymanagers, root_mount_point):
     """ Enables automatic login for the installed desktop managers """
 
-    if "kdm" in displaymanagers:
-        # Systems with KDM as Desktop Manager
-        kdm_conf_path = os.path.join(
-            root_mount_point, "usr/share/config/kdm/kdmrc")
-        text = []
-        if os.path.exists(kdm_conf_path):
-            with open(kdm_conf_path, 'r') as kdm_conf:
-                text = kdm_conf.readlines()
-            with open(kdm_conf_path, 'w') as kdm_conf:
-                for line in text:
-                    if '#AutoLoginEnable=true' in line:
-                        line = 'AutoLoginEnable=true\n'
-                    if 'AutoLoginUser=' in line:
-                        line = 'AutoLoginUser=%s\n' % username
-                    kdm_conf.write(line)
-        else:
-            return "Cannot write KDM configuration file", "KDM config file %s does not exist" % kdm_conf_path
+    #if "kdm" in displaymanagers:
+    #    # Systems with KDM as Desktop Manager
+    #    kdm_conf_path = os.path.join(
+    #        root_mount_point, "usr/share/config/kdm/kdmrc")
+    #    text = []
+    #    if os.path.exists(kdm_conf_path):
+    #        with open(kdm_conf_path, 'r') as kdm_conf:
+    #            text = kdm_conf.readlines()
+    #        with open(kdm_conf_path, 'w') as kdm_conf:
+    #            for line in text:
+    #                if '#AutoLoginEnable=true' in line:
+    #                    line = 'AutoLoginEnable=true\n'
+    #                if 'AutoLoginUser=' in line:
+    #                    line = 'AutoLoginUser=%s\n' % username
+    #                kdm_conf.write(line)
+    #    else:
+    #        return "Cannot write KDM configuration file", "KDM config file %s does not exist" % kdm_conf_path
 
     if "sddm" in displaymanagers:
         # Systems with Sddm as Desktop Manager
@@ -111,9 +111,9 @@ def run():
             return "sddm selected but not installed", ""
 
     # Setup kdm
-    if "kdm" in displaymanagers:
-        if not os.path.exists("%s/usr/bin/kdm" % root_mount_point):
-            return "kdm selected but not installed", ""
+    #if "kdm" in displaymanagers:
+    #    if not os.path.exists("%s/usr/bin/kdm" % root_mount_point):
+    #        return "kdm selected but not installed", ""
 
     if username != None:
         libcalamares.utils.debug(
