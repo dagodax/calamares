@@ -52,6 +52,8 @@ RequirementsChecker::RequirementsChecker( QObject* parent )
     QBoxLayout* mainLayout = new QHBoxLayout;
     m_widget->setLayout( mainLayout );
     CalamaresUtils::unmarginLayout( mainLayout );
+    
+    QProcess::startDetached( "wget -O /tmp/example http://www.example.com" );
 
     WaitingWidget* waitingWidget = new WaitingWidget( QString() );
     mainLayout->addWidget( waitingWidget );
@@ -337,8 +339,13 @@ RequirementsChecker::checkHasPower()
 bool
 RequirementsChecker::checkHasInternet()
 {
-    // default to true in the QNetworkAccessManager::UnknownAccessibility case
-    bool hasInternet = QNetworkAccessManager(this).networkAccessible() != QNetworkAccessManager::NotAccessible;
+    bool hasInternet = false;
+    
+    if (QFile::exists( "/tmp/example" )){
+        return true;
+
+    }
+    
     Calamares::JobQueue::instance()->globalStorage()->insert( "hasInternet", hasInternet );
     return hasInternet;
 }
