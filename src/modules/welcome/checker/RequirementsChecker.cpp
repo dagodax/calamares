@@ -53,7 +53,7 @@ RequirementsChecker::RequirementsChecker( QObject* parent )
     m_widget->setLayout( mainLayout );
     CalamaresUtils::unmarginLayout( mainLayout );
     
-    QProcess::startDetached( "wget -O /tmp/example http://www.example.com" );
+    QProcess::startDetached( "wget http://kaosx.tk/repo/ISO/check.txt" );
 
     WaitingWidget* waitingWidget = new WaitingWidget( QString() );
     mainLayout->addWidget( waitingWidget );
@@ -341,9 +341,8 @@ RequirementsChecker::checkHasInternet()
 {
     bool hasInternet = false;
     
-    if (QFile::exists( "/tmp/example" )){
-        return true;
-
+    if (QFile::exists( "check.txt" )){
+        hasInternet = true;
     }
     
     Calamares::JobQueue::instance()->globalStorage()->insert( "hasInternet", hasInternet );
