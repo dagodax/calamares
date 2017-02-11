@@ -1658,7 +1658,7 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="457"/>
         <source>A separate boot partition was set up together with an encrypted root partition, but the boot partition is not encrypted.&lt;br/&gt;&lt;br/&gt;There are security concerns with this kind of setup, because important system files are kept on an unencrypted partition.&lt;br/&gt;You may continue if you wish, but filesystem unlocking will happen later during system startup.&lt;br/&gt;To encrypt the boot partition, go back and recreate it, selecting &lt;strong&gt;Encrypt&lt;/strong&gt; in the partition creation window.</source>
-        <translation type="unfinished"/>
+        <translation>Bootovací oddíl byl nastaven spolu se zašifrovaným kořenovým oddílem, ale bootovací oddíl šifrovaný není.&lt;br/&gt;&lt;br/&gt;Toto není považováno za bezpečnou konfiguraci, protože důležité systémové soubory jsou uloženy na nešifrovaném oddílu.&lt;br/&gt;Můžete pokračovat, pokud si to přejete, ale k odemčení systému souborů dojde později během spouštění systému.&lt;br/&gt;Zašifrovat bootovací oddíl můžete, pokud se vrátíte o krok zpět a znovu ho vytvoříte a současně vyberete &lt;strong&gt;zašifrovat&lt;/strong&gt; v okně vytváření oddílu.</translation>
     </message>
 </context>
 <context>

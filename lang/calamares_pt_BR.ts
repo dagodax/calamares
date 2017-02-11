@@ -103,18 +103,18 @@
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="57"/>
         <source>Type:</source>
-        <translation type="unfinished"/>
+        <translation>Tipo:</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="64"/>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="78"/>
         <source>none</source>
-        <translation type="unfinished"/>
+        <translation>nenhum</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="71"/>
         <source>Interface:</source>
-        <translation type="unfinished"/>
+        <translation>Interface:</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="93"/>
@@ -661,7 +661,7 @@ O instalador será fechado e todas as alterações serão perdidas.</translation
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="119"/>
         <source>Fi&amp;le System:</source>
-        <translation type="unfinished"/>
+        <translation>Sis&amp;tema de arquivos:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="168"/>
@@ -1284,7 +1284,7 @@ O instalador será fechado e todas as alterações serão perdidas.</translation
         <location filename="../src/modules/locale/LocalePage.cpp" line="465"/>
         <source>%1 (%2)</source>
         <extracomment>Language (Country)</extracomment>
-        <translation type="unfinished"/>
+        <translation>%1 (%2)</translation>
     </message>
 </context>
 <context>
@@ -1468,17 +1468,17 @@ O instalador será fechado e todas as alterações serão perdidas.</translation
     <message>
         <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="203"/>
         <source>New partition for %1</source>
-        <translation type="unfinished"/>
+        <translation>Nova partição para %1</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="205"/>
         <source>New partition</source>
-        <translation type="unfinished"/>
+        <translation>Nova partição</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionLabelsView.cpp" line="222"/>
         <source>%1  %2</source>
-        <translation type="unfinished"/>
+        <translation>%1  %2</translation>
     </message>
 </context>
 <context>
@@ -1526,7 +1526,7 @@ O instalador será fechado e todas as alterações serão perdidas.</translation
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="22"/>
         <source>Storage de&amp;vice:</source>
-        <translation type="unfinished"/>
+        <translation>Dispositi&amp;vo de armazenamento:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="51"/>
@@ -1698,7 +1698,7 @@ O instalador será fechado e todas as alterações serão perdidas.</translation
     <message>
         <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="207"/>
         <source>swap</source>
-        <translation type="unfinished"/>
+        <translation>swap</translation>
     </message>
 </context>
 <context>
