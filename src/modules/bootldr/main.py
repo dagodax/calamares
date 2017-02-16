@@ -204,12 +204,13 @@ def install_bootloader(boot_loader, fw_type):
 
 def run():
 
+    #detect_firmware_type()
+    boot_loader = libcalamares.globalstorage.value("bootLoader")
+    fw_type = libcalamares.globalstorage.value("firmwareType")
+    
     if libcalamares.globalstorage.value("bootLoader") is None and fw_type != "efi":
         print('no bootloader install')
         return None
-
-    detect_firmware_type()
-    boot_loader = libcalamares.globalstorage.value("bootLoader")
-    fw_type = libcalamares.globalstorage.value("firmwareType")
+    
     install_bootloader(boot_loader, fw_type)
     return None
