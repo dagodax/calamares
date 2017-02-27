@@ -71,6 +71,14 @@ def run():
         print('Removing EFI packages')
         libcalamares.utils.target_env_call(
             ['pacman', '-Rns', '--noconfirm', 'efibootmgr'])
+        
+    # Remove VirtualBox Guest packages
+    if 'hypervisor' in open('/proc/cpuinfo').read():
+        print('Virtual Machine')
+    else:
+        print('Removing guest-utils')
+        libcalamares.utils.target_env_call(
+            ['pacman', '-R', '--noconfirm', 'virtualbox-guest-utils', 'virtualbox-guest-modules])
        
 
     # Remove KDE l10n
