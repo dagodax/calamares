@@ -78,7 +78,7 @@ def run():
     else:
         print('Removing guest-utils')
         libcalamares.utils.target_env_call(
-            ['pacman', '-R', '--noconfirm', 'virtualbox-guest-utils', 'virtualbox-guest-modules])
+            ['pacman', '-R', '--noconfirm', 'virtualbox-guest-utils', 'virtualbox-guest-modules'])
        
 
     # Remove KDE l10n
