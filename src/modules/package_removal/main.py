@@ -73,8 +73,9 @@ def run():
             ['pacman', '-Rns', '--noconfirm', 'efibootmgr'])
         
     # Remove VirtualBox Guest packages
-    if 'hypervisor' in open('/proc/cpuinfo').read():
-        print('Virtual Machine')
+    vbox = subprocess.check_output('systemd-detect-virt')
+    if 'oracle' in str(vbox):
+        print('VirtualBox')
     else:
         print('Removing guest-utils')
         libcalamares.utils.target_env_call(
