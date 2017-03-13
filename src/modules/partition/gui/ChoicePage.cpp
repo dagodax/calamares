@@ -240,7 +240,8 @@ ChoicePage::setupChoices()
         m_somethingElseButton->setText( tr( "<strong>Manual partitioning</strong><br/>"
                                             "You can create or resize partitions yourself."
                                             " Having a GPT partition table and <strong>fat32 512Mb /boot partition "
-                                            "is a must for UEFI installs</strong>, either use an existing without formatting or create one." ) );
+                                            "is a must for UEFI installs</strong>, either use an existing without formatting or create one."
+                                            "For a GPT partiton table on BIOS systems you must start with 8MB of unformatted space and assign the bios_grub flag to it" ) );
     )
     m_somethingElseButton->setIconSize( iconSize );
     m_somethingElseButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::PartitionManual,
