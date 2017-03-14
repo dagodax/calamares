@@ -392,7 +392,11 @@ PartitionViewStep::onLeave()
 
     if ( m_widget->currentWidget() == m_manualPartitionPage )
     {
+        bool isEfi = false;
         if ( QDir( "/sys/firmware/efi/efivars" ).exists() )
+            isEfi = true;
+        
+        if ( isEfi )
         {
             QString espMountPoint = Calamares::JobQueue::instance()->globalStorage()->
                                         value( "efiSystemPartition").toString();
@@ -432,6 +436,32 @@ PartitionViewStep::onLeave()
                               .arg( espMountPoint );
             }
 
+            if ( !message.isEmpty() )
+            {
+                QMessageBox::warning( m_manualPartitionPage,
+                                      message,
+                                      description );
+            }
+        }
+            
+        if ( !isEfi && PartitionTable::gpt )
+        {
+            
+            Partition* bios_p = m_core->findPartitionByMountPoint( "" );
+            QString message;
+            QString description;
+            if ( !bios_p->activeFlags().testFlag( PartitionTable::FlagBiosGrub ) )
+            {
+                message = tr( "No bios_grub flag is set" );
+                description = tr( "An unformatted 8 MB partition is necessary to start %1."
+                                  "<br/><br/>"
+                                  "To configure a GPT partition table on BIOS, go back and "
+                                  "select or create a 8 MB unformatted partition with the "
+                                  "<strong>bios_grub</strong> flag enabled.<br/><br/>"
+                                  "Your install will fail without." )
+                              .arg( Calamares::Branding::instance()->
+                                    string( Calamares::Branding::ShortProductName ) );
+            }
             if ( !message.isEmpty() )
             {
                 QMessageBox::warning( m_manualPartitionPage,
