@@ -452,6 +452,7 @@ PartitionViewStep::onLeave()
         QRegularExpressionMatch reGpt = re.match(line);
 
         PartitionTable::TableType tableType = PartitionTable::nameToTableType(reGpt.captured(1));
+        cDebug() << "Table:" << tableType;
         if ( !isEfi && tableType == PartitionTable::gpt )
         {
             
