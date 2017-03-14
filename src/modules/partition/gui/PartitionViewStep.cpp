@@ -55,6 +55,7 @@
 #include <QTimer>
 #include <QtConcurrent/QtConcurrent>
 #include <QFutureWatcher>
+#include <QRegularExpressionMatch>
 
 PartitionViewStep::PartitionViewStep( QObject* parent )
     : Calamares::ViewStep( parent )
@@ -444,7 +445,14 @@ PartitionViewStep::onLeave()
             }
         }
             
-        if ( !isEfi && PartitionTable::gpt )
+        //pTable = PartitionTable::nameToTableType();
+        //Partition* biosGpt = PartitionTable::gpt;
+        QString line;
+        QRegularExpression re(QStringLiteral("(\\d+);(\\d+);(\\d+);(\\w+);(\\w+);(\"\\w*\");(\"[^\"]*\")"));
+        QRegularExpressionMatch reGpt = re.match(line);
+
+        PartitionTable::TableType tableType = PartitionTable::nameToTableType(reGpt.captured(1));
+        if ( !isEfi && tableType == PartitionTable::gpt )
         {
             
             Partition* bios_p = m_core->findPartitionByMountPoint( "" );
