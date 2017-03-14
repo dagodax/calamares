@@ -462,7 +462,7 @@ PartitionViewStep::onLeave()
                               .arg( Calamares::Branding::instance()->
                                     string( Calamares::Branding::ShortProductName ) );
             }
-            else if ( !bios_p ) )
+            else if ( !bios_p )
             {
                 message = tr( "No bios_grub flag is set" );
                 description = tr( "An unformatted 8 MB partition is necessary to start %1."
