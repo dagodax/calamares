@@ -450,6 +450,7 @@ PartitionViewStep::onLeave()
         QString line;
         QRegularExpression re(QStringLiteral("(\\d+);(\\d+);(\\d+);(\\w+);(\\w+);(\"\\w*\");(\"[^\"]*\")"));
         QRegularExpressionMatch reGpt = re.match(line);
+        re.setPattern(QStringLiteral("align:\\s\"(cylinder|sector)\""));
 
         PartitionTable::TableType tableType = PartitionTable::nameToTableType(reGpt.captured(1));
         cDebug() << "Table:" << tableType;
