@@ -28,6 +28,7 @@
 #include <QObject>
 
 class ChoicePage;
+class Device;
 class PartitionPage;
 class PartitionCoreModule;
 class QStackedWidget;
@@ -72,6 +73,7 @@ private:
     PartitionCoreModule* m_core;
     QStackedWidget*   m_widget;
     ChoicePage*       m_choicePage;
+    Device*           m_device;
     PartitionPage*    m_manualPartitionPage;
 
     QWidget*          m_waitingWidget;

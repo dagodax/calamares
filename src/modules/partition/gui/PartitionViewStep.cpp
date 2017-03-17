@@ -55,7 +55,6 @@
 #include <QTimer>
 #include <QtConcurrent/QtConcurrent>
 #include <QFutureWatcher>
-#include <QRegularExpressionMatch>
 
 PartitionViewStep::PartitionViewStep( QObject* parent )
     : Calamares::ViewStep( parent )
@@ -63,6 +62,7 @@ PartitionViewStep::PartitionViewStep( QObject* parent )
     , m_widget( new QStackedWidget() )
     , m_choicePage( nullptr )
     , m_manualPartitionPage( nullptr )
+    , m_device( nullptr )
 {
     m_widget->setContentsMargins( 0, 0, 0, 0 );
 
@@ -445,17 +445,10 @@ PartitionViewStep::onLeave()
             }
         }
             
-        //pTable = PartitionTable::nameToTableType();
-        //Partition* biosGpt = PartitionTable::gpt;
-        QString line;
-        QRegularExpression re(QStringLiteral("(\\d+);(\\d+);(\\d+);(\\w+);(\\w+);(\"\\w*\");(\"[^\"]*\")"));
-        QRegularExpressionMatch reGpt = re.match(line);
-        re.setPattern(QStringLiteral("align:\\s\"(cylinder|sector)\""));
-
-        PartitionTable::TableType tableType = PartitionTable::nameToTableType(reGpt.captured(1));
-        cDebug() << "Table:" << tableType;
-        if ( !isEfi && tableType == PartitionTable::gpt )
+        if ( !isEfi && m_device->partitionTable()->typeName() == PartitionTable::gpt )
         {
+            
+            cDebug() << "BIOS device: GPT";
             
             Partition* bios_p = m_core->findPartitionByMountPoint( "" );
             QString message;
@@ -475,7 +468,7 @@ PartitionViewStep::onLeave()
             else if ( !bios_p )
             {
                 message = tr( "No bios_grub flag is set" );
-                description = tr( "An unformatted 8 MB partition is necessary to start %1."
+                description = tr( "An unformatted, unmounted 8 MB partition is necessary to start %1."
                                   "<br/><br/>"
                                   "To configure a GPT partition table on BIOS, go back and "
                                   "select or create a 8 MB unformatted partition with the "
