@@ -62,7 +62,6 @@ PartitionViewStep::PartitionViewStep( QObject* parent )
     , m_widget( new QStackedWidget() )
     , m_choicePage( nullptr )
     , m_manualPartitionPage( nullptr )
-    , m_device( nullptr )
 {
     m_widget->setContentsMargins( 0, 0, 0, 0 );
 
@@ -445,42 +444,32 @@ PartitionViewStep::onLeave()
             }
         }
             
-        if ( !isEfi && m_device->partitionTable()->typeName() == PartitionTable::gpt )
+        if ( !isEfi )
         {
             
-            cDebug() << "BIOS device: GPT";
+            cDebug() << "device: BIOS";
             
             Partition* bios_p = m_core->findPartitionByMountPoint( "" );
             QString message;
             QString description;
-            if ( bios_p && !bios_p->activeFlags().testFlag( PartitionTable::FlagBiosGrub ) )
-            {
-                message = tr( "No bios_grub flag is set" );
-                description = tr( "An unformatted 8 MB partition is necessary to start %1."
-                                  "<br/><br/>"
-                                  "To configure a GPT partition table on BIOS, go back and "
-                                  "select or create a 8 MB unformatted partition with the "
-                                  "<strong>bios_grub</strong> flag enabled.<br/><br/>"
-                                  "Your install will fail without." )
-                              .arg( Calamares::Branding::instance()->
-                                    string( Calamares::Branding::ShortProductName ) );
-            }
-            else if ( !bios_p )
-            {
-                message = tr( "No bios_grub flag is set" );
-                description = tr( "An unformatted, unmounted 8 MB partition is necessary to start %1."
-                                  "<br/><br/>"
-                                  "To configure a GPT partition table on BIOS, go back and "
-                                  "select or create a 8 MB unformatted partition with the "
-                                  "<strong>bios_grub</strong> flag enabled.<br/><br/>"
-                                  "Your install will fail without." )
-                              .arg( Calamares::Branding::instance()->
-                                    string( Calamares::Branding::ShortProductName ) );
-            }
+
+            message = tr( "Option to use GPT on BIOS" );
+            description = tr( "A GPT partition table is the best option for all "
+                              "systems. This installer supports such a setup for "
+                              "BIOS systems too."
+                              "<br/><br/>"
+                              "To configure a GPT partition table on BIOS, go back "
+                              "and set the partion table to GPT, next create a 8 MB "
+                              "unformatted partition with the "
+                              "<strong>bios_grub</strong> flag enabled.<br/><br/>"
+                              "An unformatted 8 MB partition is necessary "
+                              "to start %1 on a BIOS system with GPT." )
+                          .arg( Calamares::Branding::instance()->
+                                string( Calamares::Branding::ShortProductName ) );
             
             if ( !message.isEmpty() )
             {
-                QMessageBox::warning( m_manualPartitionPage,
+                QMessageBox::information( m_manualPartitionPage,
                                       message,
                                       description );
             }
