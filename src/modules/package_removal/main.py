@@ -79,9 +79,9 @@ def run():
         if 'oracle' in str(vbox):
             print('VirtualBox')
         else:
-        print('Removing guest-utils')
-        libcalamares.utils.target_env_call(
-            ['pacman', '-R', '--noconfirm', 'virtualbox-guest-utils', 'virtualbox-guest-modules'])
+            print('Removing guest-utils')
+            libcalamares.utils.target_env_call(
+                ['pacman', '-R', '--noconfirm', 'virtualbox-guest-utils', 'virtualbox-guest-modules'])
     else:
         print('Removing guest-utils')
         libcalamares.utils.target_env_call(
