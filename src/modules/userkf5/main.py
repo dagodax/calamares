@@ -79,18 +79,19 @@ def run():
     libcalamares.utils.target_env_call(
         ['chown', '-R', '%s:users' % user, "/home/%s" % user])
 
-    #sddm_conf_path = os.path.join(install_path, "etc/sddm.conf")
-    #text = []
-    # with open(sddm_conf_path, "r") as sddm_conf:
-    #     text = sddm_conf.readlines()
-    #           with open(sddm_conf_path, "w") as sddm_conf:
-    #     for line in text:
-    #         if 'Current=maui' in line:
-    #             line = 'Current=midna\n'
-    #         if 'CursorTheme=' in line:
-    #             line = 'CursorTheme=breeze\n'
-    #     sddm_conf.write(line)
-    # sddm_conf.close()
+    # switch to wayland session if plasmawayland found in Live mode
+    if 'plasmawayland' in open('/etc/sddm.conf').read():
+        print('Wayland session')
+        sddm_conf_path = os.path.join(install_path, "etc/sddm.conf")
+        text = []
+        with open(sddm_conf_path, "r") as sddm_conf:
+            text = sddm_conf.readlines()
+            with open(sddm_conf_path, "w") as sddm_conf:
+                for line in text:
+                    if 'Session=plasma.desktop' in line:
+                        line = 'Session=plasmawayland.desktop\n'
+                    sddm_conf.write(line)
+        sddm_conf.close()
 
     # fix SUID to capable permissions on iputils
     libcalamares.utils.target_env_call(
@@ -109,9 +110,14 @@ def run():
         label +=s
     
     print(label)
-    m = re.search("KAOS_\d{8}", label);
-    print (m.group(0))
-    lines = (m.group(0))
+    if 'plasmawayland' in open('/etc/sddm.conf').read():
+        m = re.search("KAOS_Wayland_\d{8}", label);
+        print (m.group(0))
+        lines = (m.group(0))
+    else:
+        m = re.search("KAOS_\d{8}", label);
+        print (m.group(0))
+        lines = (m.group(0))
     
     if os.path.exists(path):
         with open(path, 'w') as f:
