@@ -1684,17 +1684,17 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="457"/>
-        <source>A GPT partition table is the best option for all systems. This installer supports such a setup for BIOS systems too.&lt;br/&gt;&lt;br/&gt;To configure a GPT partition table on BIOS, go back and set the partion table to GPT, next create a 8 MB unformatted partition with the &lt;strong&gt;bios_grub&lt;/strong&gt; flag enabled.&lt;br/&gt;&lt;br/&gt;An unformatted 8 MB partition is necessary to start %1 on a BIOS system with GPT.</source>
-        <translation>Una tabla de partición GPT es la mejor opción para todos los sistemas. Este instalador admite esa configuración también para sistemas BIOS.&lt;br/&gt;&lt;br/&gt;Para configurar una tabla de partición GPT en BIOS, vuelva atrás y configure una tabla de partición GPT, luego cree una partición sin formato de 8 MB con el indicador &lt;strong&gt;bios_grub&lt;/strong&gt; habilitado.&lt;br/&gt;&lt;br/&gt;Es necesaria una partición sin formato de 8MB para iniciar %1 en un sistema BIOS con GPT.</translation>
+        <source>A GPT partition table is the best option for all systems. This installer supports such a setup for BIOS systems too.&lt;br/&gt;&lt;br/&gt;To configure a GPT partition table on BIOS, (if not done so already) go back and set the partion table to GPT, next create a 8 MB unformatted partition with the &lt;strong&gt;bios_grub&lt;/strong&gt; flag enabled.&lt;br/&gt;&lt;br/&gt;An unformatted 8 MB partition is necessary to start %1 on a BIOS system with GPT.</source>
+        <translation>Una tabla de particiones GPT es la mejor opción para todos los sistemas. Este instalador soporta esa configuración también para sistemas BIOS.&lt;br/&gt;&lt;br/&gt;Para configurar una tabla de partición GPT en BIOS, (si no lo ha hecho ya) vuelva atrás y configure una tabla de partición GPT, luego cree una partición sin formato de 8 MB con el indicador &lt;strong&gt;bios_grub&lt;/strong&gt; habilitado.&lt;br/&gt;&lt;br/&gt;Es necesaria una partición sin formato de 8MB para iniciar %1 en un sistema BIOS con GPT.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="491"/>
+        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="492"/>
         <location filename="../src/modules/partition/gui/PartitionViewStep_orig.cpp" line="456"/>
         <source>Boot partition not encrypted</source>
         <translation>Partición de arranque no encriptada</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="492"/>
+        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="493"/>
         <location filename="../src/modules/partition/gui/PartitionViewStep_orig.cpp" line="457"/>
         <source>A separate boot partition was set up together with an encrypted root partition, but the boot partition is not encrypted.&lt;br/&gt;&lt;br/&gt;There are security concerns with this kind of setup, because important system files are kept on an unencrypted partition.&lt;br/&gt;You may continue if you wish, but filesystem unlocking will happen later during system startup.&lt;br/&gt;To encrypt the boot partition, go back and recreate it, selecting &lt;strong&gt;Encrypt&lt;/strong&gt; in the partition creation window.</source>
         <translation>Se creó una partición de arranque separada junto con una partición root encriptada, pero la partición de arranque no está encriptada.&lt;br/&gt;&lt;/br&gt;Hay problemas de seguridad con este tipo de configuración, ya que los archivos importantes del sistema se mantienen en una partición no cifrada.&lt;br/&gt;Si lo desea puede continuar, pero el desbloqueo del sistema de archivos ocurrirá más tarde durante el inicio del sistema.&lt;br/&gt;Para encriptar la partición de arranque, vuelva atrás y creela nuevamente, seleccionando &lt;strong&gt;Encriptar&lt;/strong&gt; en la ventana de creación de la partición. </translation>

@@ -447,7 +447,7 @@ O instalador será fechado e todas as alterações serão perdidas.</translation
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="234"/>
         <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself. Having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;, either use an existing without formatting or create one.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Particionamento Manual&lt;/strong&gt;&lt;br/&gt;Você pode criar ou redimensionar partições você mesmo. Ter uma tabela de partição GPT e &lt;strong&gt; uma partição /boot fat32 com 512Mb é o melhor para instalações UEFI&lt;/strong&gt;, tanto usando uma partição existente sem formatação como criando uma.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="778"/>
@@ -706,7 +706,7 @@ O instalador será fechado e todas as alterações serão perdidas.</translation
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="268"/>
         <source>Mountpoint already in use. Please select another one.</source>
-        <translation type="unfinished"/>
+        <translation>Ponto de montagem já em uso. Selecione outro.</translation>
     </message>
 </context>
 <context>
@@ -1005,7 +1005,7 @@ O instalador será fechado e todas as alterações serão perdidas.</translation
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.cpp" line="306"/>
         <source>Mountpoint already in use. Please select another one.</source>
-        <translation type="unfinished"/>
+        <translation>Ponto de montagem já em uso. Selecione outro.</translation>
     </message>
 </context>
 <context>
@@ -1681,21 +1681,21 @@ O instalador será fechado e todas as alterações serão perdidas.</translation
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="456"/>
         <source>Option to use GPT on BIOS</source>
-        <translation type="unfinished"/>
+        <translation>Opção de utilizar GPT na BIOS</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="457"/>
-        <source>A GPT partition table is the best option for all systems. This installer supports such a setup for BIOS systems too.&lt;br/&gt;&lt;br/&gt;To configure a GPT partition table on BIOS, go back and set the partion table to GPT, next create a 8 MB unformatted partition with the &lt;strong&gt;bios_grub&lt;/strong&gt; flag enabled.&lt;br/&gt;&lt;br/&gt;An unformatted 8 MB partition is necessary to start %1 on a BIOS system with GPT.</source>
+        <source>A GPT partition table is the best option for all systems. This installer supports such a setup for BIOS systems too.&lt;br/&gt;&lt;br/&gt;To configure a GPT partition table on BIOS, (if not done so already) go back and set the partion table to GPT, next create a 8 MB unformatted partition with the &lt;strong&gt;bios_grub&lt;/strong&gt; flag enabled.&lt;br/&gt;&lt;br/&gt;An unformatted 8 MB partition is necessary to start %1 on a BIOS system with GPT.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="491"/>
+        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="492"/>
         <location filename="../src/modules/partition/gui/PartitionViewStep_orig.cpp" line="456"/>
         <source>Boot partition not encrypted</source>
         <translation>Partição de boot não encriptada</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="492"/>
+        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="493"/>
         <location filename="../src/modules/partition/gui/PartitionViewStep_orig.cpp" line="457"/>
         <source>A separate boot partition was set up together with an encrypted root partition, but the boot partition is not encrypted.&lt;br/&gt;&lt;br/&gt;There are security concerns with this kind of setup, because important system files are kept on an unencrypted partition.&lt;br/&gt;You may continue if you wish, but filesystem unlocking will happen later during system startup.&lt;br/&gt;To encrypt the boot partition, go back and recreate it, selecting &lt;strong&gt;Encrypt&lt;/strong&gt; in the partition creation window.</source>
         <translation>Foi configurada uma partição de boot separada em conjunto com uma partição de root encriptada, mas a partição de boot não é encriptada.&lt;br/&gt;&lt;br/&gt;Há preocupações de segurança com este tipo de configuração, porque os ficheiros de sistema importantes são mantidos numa partição não encriptada.&lt;br/&gt;Você pode continuar se quiser, mas o desbloqueio do sistema de arquivos acontecerá mais tarde durante o boot do sistema.&lt;br/&gt;Para encriptar a partição de boot, volte e recrie-a, selecionando &lt;strong&gt;Encriptar&lt;/strong&gt; na janela de criação da partição.</translation>
@@ -2124,12 +2124,12 @@ O instalador será fechado e todas as alterações serão perdidas.</translation
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="70"/>
         <source>Cannot disable root account.</source>
-        <translation type="unfinished"/>
+        <translation>Não é possível desativar a conta root.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="71"/>
         <source>passwd terminated with error code %1.</source>
-        <translation type="unfinished"/>
+        <translation>passwd terminado com o código de erro %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="87"/>
@@ -2283,7 +2283,7 @@ O instalador será fechado e todas as alterações serão perdidas.</translation
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="72"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014-2017 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Lisa Vitolo, Philip Müller, Pier Luigi Fiorini, Rohan Garg and the &lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;KaOS translators team&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;http://calamares.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014-2017 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Obrigado a: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Lisa Vitolo, Philip Müller, Pier Luigi Fiorini, Rohan Garg e à &lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;Equipa de Tradução do KaOS&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;O desenvolvimento do &lt;a href=&quot;http://calamares.io/&quot;&gt;Calamares&lt;/a&gt; é suportado por &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="196"/>

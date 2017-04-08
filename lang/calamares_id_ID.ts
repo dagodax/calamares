@@ -1683,17 +1683,17 @@ The installer will quit and all changes will be lost.</source>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="457"/>
-        <source>A GPT partition table is the best option for all systems. This installer supports such a setup for BIOS systems too.&lt;br/&gt;&lt;br/&gt;To configure a GPT partition table on BIOS, go back and set the partion table to GPT, next create a 8 MB unformatted partition with the &lt;strong&gt;bios_grub&lt;/strong&gt; flag enabled.&lt;br/&gt;&lt;br/&gt;An unformatted 8 MB partition is necessary to start %1 on a BIOS system with GPT.</source>
-        <translation>Sebuah tabel partisi GPT adalah pilihan terbaik untuk semua sistem. Pemasang ini mendukung seperti halnya setup untuk sistem BIOS juga.&lt;br/&gt;&lt;br/&gt;Untuk mengkonfigurasi sebuah tabel partisi GPT pada BIOS, pergi kembali dan siapkan tabel partisi ke GPT, selanjutnya ciptakan sebuah partisi tak diformat 8 MB dengan bendera &lt;strong&gt;bios_grub&lt;/strong&gt; yang diaktifkan.&lt;br/&gt;&lt;br/&gt;Sebuah partisi tak diformat 8 MB adalah penting untuk memulai %1 pada sebuah sistem BIOS dengan GPT.</translation>
+        <source>A GPT partition table is the best option for all systems. This installer supports such a setup for BIOS systems too.&lt;br/&gt;&lt;br/&gt;To configure a GPT partition table on BIOS, (if not done so already) go back and set the partion table to GPT, next create a 8 MB unformatted partition with the &lt;strong&gt;bios_grub&lt;/strong&gt; flag enabled.&lt;br/&gt;&lt;br/&gt;An unformatted 8 MB partition is necessary to start %1 on a BIOS system with GPT.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="491"/>
+        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="492"/>
         <location filename="../src/modules/partition/gui/PartitionViewStep_orig.cpp" line="456"/>
         <source>Boot partition not encrypted</source>
         <translation>Partisi boot tidak dienkripsi</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="492"/>
+        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="493"/>
         <location filename="../src/modules/partition/gui/PartitionViewStep_orig.cpp" line="457"/>
         <source>A separate boot partition was set up together with an encrypted root partition, but the boot partition is not encrypted.&lt;br/&gt;&lt;br/&gt;There are security concerns with this kind of setup, because important system files are kept on an unencrypted partition.&lt;br/&gt;You may continue if you wish, but filesystem unlocking will happen later during system startup.&lt;br/&gt;To encrypt the boot partition, go back and recreate it, selecting &lt;strong&gt;Encrypt&lt;/strong&gt; in the partition creation window.</source>
         <translation>Sebuah partisi boot terpisah telah diset bersama-sama dengan partisi root terenkripsi, namun partisi boot tidak dienkripsi.&lt;br/&gt;&lt;br/&gt;Ada kekhawatiran keamanan dengan jenis setup ini, karena file sistem yang penting disimpan di partisi terenkripsi.&lt;br/&gt;Kamu bisa terus jika kamu ingin, tapi filesystem unlocking akan terjadi nanti saat startup.&lt;br/&gt;Untuk mengenkripsi partisi boot, kembali dan menciptakan itu, memilih &lt;strong&gt;Encrypt&lt;/strong&gt; di jendela penciptaan partisi.</translation>

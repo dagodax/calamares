@@ -1684,17 +1684,17 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="457"/>
-        <source>A GPT partition table is the best option for all systems. This installer supports such a setup for BIOS systems too.&lt;br/&gt;&lt;br/&gt;To configure a GPT partition table on BIOS, go back and set the partion table to GPT, next create a 8 MB unformatted partition with the &lt;strong&gt;bios_grub&lt;/strong&gt; flag enabled.&lt;br/&gt;&lt;br/&gt;An unformatted 8 MB partition is necessary to start %1 on a BIOS system with GPT.</source>
-        <translation>Een GPT partitietabel is de beste optie voor alle systemen. Dit installatieprogramma ondersteunt een dergelijke setup voor BIOS-systemen ook.&lt;br/&gt;&lt;br/&gt;Om een GPT partitietabel op BIOS te configureren, ga terug en zet de partitietabel naar GPT, vervolgens creëer een 8 MB niet-geformatteerde partitie met de &lt;strong&gt;bios_grub&lt;/ strong&gt; vlag ingeschakeld.&lt;br/&gt;&lt;br/&gt;Een niet-geformatteerde 8 MB partitie is nodig om % 1 te starten op een BIOS-systeem met GPT.</translation>
+        <source>A GPT partition table is the best option for all systems. This installer supports such a setup for BIOS systems too.&lt;br/&gt;&lt;br/&gt;To configure a GPT partition table on BIOS, (if not done so already) go back and set the partion table to GPT, next create a 8 MB unformatted partition with the &lt;strong&gt;bios_grub&lt;/strong&gt; flag enabled.&lt;br/&gt;&lt;br/&gt;An unformatted 8 MB partition is necessary to start %1 on a BIOS system with GPT.</source>
+        <translation>Een GPT partitietabel is de beste optie voor alle systemen. Dit installatieprogramma ondersteunt een dergelijke setup voor BIOS-systemen ook.&lt;br/&gt;&lt;br/&gt;Om een GPT partitietabel op BIOS te configureren, (als dat nog niet gedaan is) ga terug en zet de partitietabel naar GPT, vervolgens creëer een 8 MB niet-geformatteerde partitie met de &lt;strong&gt;bios_grub&lt;/ strong&gt; vlag ingeschakeld.&lt;br/&gt;&lt;br/&gt;Een niet-geformatteerde 8 MB partitie is nodig om % 1 te starten op een BIOS-systeem met GPT.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="491"/>
+        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="492"/>
         <location filename="../src/modules/partition/gui/PartitionViewStep_orig.cpp" line="456"/>
         <source>Boot partition not encrypted</source>
         <translation>Boot partitie niet versleuteld</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="492"/>
+        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="493"/>
         <location filename="../src/modules/partition/gui/PartitionViewStep_orig.cpp" line="457"/>
         <source>A separate boot partition was set up together with an encrypted root partition, but the boot partition is not encrypted.&lt;br/&gt;&lt;br/&gt;There are security concerns with this kind of setup, because important system files are kept on an unencrypted partition.&lt;br/&gt;You may continue if you wish, but filesystem unlocking will happen later during system startup.&lt;br/&gt;To encrypt the boot partition, go back and recreate it, selecting &lt;strong&gt;Encrypt&lt;/strong&gt; in the partition creation window.</source>
         <translation>Een aparte boot partitie is opgezet samen met een versleutelde root-partitie, maar de boot partitie is niet versleuteld.&lt;br/&gt;&lt;br/&gt;Er is bezorgheid over de beveiliging in dit soort setup, omdat belangrijke systeembestanden op een niet-versleutelde partitie worden gehouden.&lt;br/&gt;Je kunt doorgaan als je wilt, maar filesystem unlocken zal later gebeuren tijdens het opstarten.&lt;br/&gt;Om de boot partitie te versleutelen, ga terug en maak het opnieuw op, selecteer &lt;strong&gt;Versleutelen&lt;/strong&gt; in het venster partitie creatie.</translation>
