@@ -1684,7 +1684,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="457"/>
         <source>A GPT partition table is the best option for all systems. This installer supports such a setup for BIOS systems too.&lt;br/&gt;&lt;br/&gt;To configure a GPT partition table on BIOS, (if not done so already) go back and set the partion table to GPT, next create a 8 MB unformatted partition with the &lt;strong&gt;bios_grub&lt;/strong&gt; flag enabled.&lt;br/&gt;&lt;br/&gt;An unformatted 8 MB partition is necessary to start %1 on a BIOS system with GPT.</source>
-        <translation type="unfinished"/>
+        <translation>Sebuah tabel partisi GPT adalah pilihan terbaik untuk semua sistem. Pemasang ini mendukung seperti halnya setup untuk sistem BIOS juga.&lt;br/&gt;&lt;br/&gt;Untuk mengkonfigurasi sebuah tabel partisi GPT pada BIOS, (jika kamu belum kelar menyiapkannya) pergi kembali dan siapkan tabel partisi ke GPT, selanjutnya ciptakan sebuah partisi tak diformat 8 MB dengan bendera &lt;strong&gt;bios_grub&lt;/strong&gt; yang diaktifkan.&lt;br/&gt;&lt;br/&gt;Sebuah partisi tak diformat 8 MB adalah penting untuk memulai %1 pada sebuah sistem BIOS dengan GPT.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="492"/>

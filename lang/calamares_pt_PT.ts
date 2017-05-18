@@ -1686,7 +1686,7 @@ O instalador será fechado e todas as alterações serão perdidas.</translation
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="457"/>
         <source>A GPT partition table is the best option for all systems. This installer supports such a setup for BIOS systems too.&lt;br/&gt;&lt;br/&gt;To configure a GPT partition table on BIOS, (if not done so already) go back and set the partion table to GPT, next create a 8 MB unformatted partition with the &lt;strong&gt;bios_grub&lt;/strong&gt; flag enabled.&lt;br/&gt;&lt;br/&gt;An unformatted 8 MB partition is necessary to start %1 on a BIOS system with GPT.</source>
-        <translation type="unfinished"/>
+        <translation>Uma tabela de partição GPT é a melhor opção para todos os sistemas. Este instalador suporta também essa configuração para sistemas com BIOS.&lt;br/&gt;&lt;br/&gt;Para configurar uma tabela de partição GPT na BIOS, (se não foi feito ainda) volte atrás e defina a tabela de partição como GPT, de seguida crie uma partição não formatada de 8 MB com &lt;strong&gt;bios_grub&lt;/strong&gt; e flag ativa.&lt;br/&gt;&lt;br/&gt;Uma partição não formatada de 8 MB é necessária para iniciar %1 num sistema BIOS com GPT.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="492"/>
