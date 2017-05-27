@@ -57,11 +57,15 @@ def create_conf(uuid, conf_path):
 
     kernel_params = ["quiet systemd.show_status=0"]
     swap = ""
+    swap_luks= ""
     cryptdevice_params = []
 
     for partition in partitions:
-        if partition["fs"] == "linuxswap":
+        if partition["fs"] == "linuxswap" in partition and partition["fs"] == "luksMapperName" not in partition:
             swap = partition["uuid"]
+            
+    if partition["fs"] == "linuxswap" and "luksMapperName" in partition:
+        swap_luks = partition["luksMapperName"]
 
         if partition["mountPoint"] == "/" and "luksMapperName" in partition:
             cryptdevice_params = [
@@ -77,6 +81,8 @@ def create_conf(uuid, conf_path):
 
     if swap:
         kernel_params.append("resume=UUID={!s}".format(swap))
+    if swap_luks:
+        kernel_params.append("resume=/dev/mapper/{!s}".format(swap_luks))
 
     lines = [
         '## Please edit the paths and kernel parameters according to your system.\n',

@@ -43,24 +43,6 @@ def find_desktop_environment(root_mount_point):
 def set_autologin(username, displaymanagers, root_mount_point):
     """ Enables automatic login for the installed desktop managers """
 
-    #if "kdm" in displaymanagers:
-    #    # Systems with KDM as Desktop Manager
-    #    kdm_conf_path = os.path.join(
-    #        root_mount_point, "usr/share/config/kdm/kdmrc")
-    #    text = []
-    #    if os.path.exists(kdm_conf_path):
-    #        with open(kdm_conf_path, 'r') as kdm_conf:
-    #            text = kdm_conf.readlines()
-    #        with open(kdm_conf_path, 'w') as kdm_conf:
-    #            for line in text:
-    #                if '#AutoLoginEnable=true' in line:
-    #                    line = 'AutoLoginEnable=true\n'
-    #                if 'AutoLoginUser=' in line:
-    #                    line = 'AutoLoginUser=%s\n' % username
-    #                kdm_conf.write(line)
-    #    else:
-    #        return "Cannot write KDM configuration file", "KDM config file %s does not exist" % kdm_conf_path
-
     if "sddm" in displaymanagers:
         # Systems with Sddm as Desktop Manager
         sddm_conf_path = os.path.join(root_mount_point, "etc/sddm.conf")
@@ -87,8 +69,7 @@ def set_autologin(username, displaymanagers, root_mount_point):
 
 def run():
     """ Configure display managers """
-    # We acquire a list of displaymanagers, either from config or (overridden) from globalstorage.
-    # This module will try to set up (including autologin) all the displaymanagers in the list, in that specific order.
+    # This module will try to set up (including autologin) a displaymanagers.
     # Most distros will probably only ship one displaymanager.
     # If a displaymanager is in the list but not installed, this module quits with error.
 
@@ -109,11 +90,6 @@ def run():
     if "sddm" in displaymanagers:
         if not os.path.exists("%s/usr/bin/sddm" % root_mount_point):
             return "sddm selected but not installed", ""
-
-    # Setup kdm
-    #if "kdm" in displaymanagers:
-    #    if not os.path.exists("%s/usr/bin/kdm" % root_mount_point):
-    #        return "kdm selected but not installed", ""
 
     if username != None:
         libcalamares.utils.debug(
