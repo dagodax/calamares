@@ -69,7 +69,7 @@ def set_autologin(username, displaymanagers, root_mount_point):
 
 def run():
     """ Configure display managers """
-    # This module will try to set up (including autologin) a displaymanagers.
+    # This module will try to set up (including autologin) a displaymanager.
     # Most distros will probably only ship one displaymanager.
     # If a displaymanager is in the list but not installed, this module quits with error.
 
