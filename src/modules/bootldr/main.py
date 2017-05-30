@@ -65,7 +65,7 @@ def create_conf(uuid, conf_path):
             swap = partition["uuid"]
 
         if partition["fs"] == "linuxswap" and "luksMapperName" in partition:
-        swap_luks = partition["luksMapperName"]
+            swap_luks = partition["luksMapperName"]
 
         if partition["mountPoint"] == "/" and "luksMapperName" in partition:
             cryptdevice_params = [
