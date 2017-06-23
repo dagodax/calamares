@@ -47,7 +47,7 @@ def run():
     if os.path.exists("%s/usr/bin/welcome" % install_path):
         print('Removing live ISO packages')
         libcalamares.utils.target_env_call(
-            ['pacman', '-R', '--noconfirm', 'welcome'])
+            ['pacman', '-Rns', '--noconfirm', 'welcome'])
 
     # Remove hardware detection
     if os.path.exists("%s/etc/kdeos-hwdetect.conf" % install_path):
@@ -73,19 +73,20 @@ def run():
             ['pacman', '-Rns', '--noconfirm', 'efibootmgr'])
         
     # Remove VirtualBox Guest packages
-    if 'hypervisor' in open('/proc/cpuinfo').read():
-        print('Virtual Machine')
-        vbox = subprocess.check_output('systemd-detect-virt')
-        if 'oracle' in str(vbox):
-            print('VirtualBox')
+    if os.path.exists("%s/usr/bin/VBoxClient" % install_path):
+        if 'hypervisor' in open('/proc/cpuinfo').read():
+            print('Virtual Machine')
+            vbox = subprocess.check_output('systemd-detect-virt')
+            if 'oracle' in str(vbox):
+                print('VirtualBox')
+            else:
+                print('Removing guest-utils')
+                libcalamares.utils.target_env_call(
+                    ['pacman', '-R', '--noconfirm', 'virtualbox-guest-utils', 'virtualbox-guest-modules'])
         else:
             print('Removing guest-utils')
             libcalamares.utils.target_env_call(
                 ['pacman', '-R', '--noconfirm', 'virtualbox-guest-utils', 'virtualbox-guest-modules'])
-    else:
-        print('Removing guest-utils')
-        libcalamares.utils.target_env_call(
-            ['pacman', '-R', '--noconfirm', 'virtualbox-guest-utils', 'virtualbox-guest-modules'])
        
 
     # Remove KDE l10n
