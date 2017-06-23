@@ -2,6 +2,7 @@
  *
  *   Copyright 2014, Aurélien Gâteau <agateau@kde.org>
  *   Copyright 2014-2015, Teo Mrnjavac <teo@kde.org>
+ *   Copyright 2017, Adriaan de Groot <groot@kde.org>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -157,7 +158,7 @@ PartitionCoreModule::doInit()
 
     // Remove the device which contains / from the list
     for ( QList< Device* >::iterator it = devices.begin(); it != devices.end(); )
-        if ( hasRootPartition( *it ) ||
+        if ( ! (*it) || hasRootPartition( *it ) ||
              (*it)->deviceNode().startsWith( "/dev/zram") ||
              isIso9660( *it ) )
             it = devices.erase( it );
@@ -171,6 +172,7 @@ PartitionCoreModule::doInit()
         m_deviceInfos << deviceInfo;
         cDebug() << device->deviceNode() << device->capacity() << device->name() << device->prettyName();
     }
+    cDebug() << ".." << devices.count() << "devices detected.";
     m_deviceModel->init( devices );
 
     // The following PartUtils::runOsprober call in turn calls PartUtils::canBeResized,

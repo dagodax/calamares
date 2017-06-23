@@ -1,6 +1,7 @@
 /* === This file is part of Calamares - <http://github.com/calamares> ===
  *
  *   Copyright 2014, Aurélien Gâteau <agateau@kde.org>
+ *   Copyright 2017, Adriaan de Groot <groot@kde.org>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -24,7 +25,6 @@
 #include <core/KPMHelpers.h>
 
 // CalaPM
-#include <CalaPM.h>
 #include <backend/corebackend.h>
 #include <backend/corebackendmanager.h>
 #include <fs/filesystemfactory.h>
@@ -166,7 +166,7 @@ PartitionJobTests::initTestCase()
         QSKIP( "Skipping test, CALAMARES_TEST_DISK is not set. It should point to a disk which can be safely formatted" );
     }
 
-    QVERIFY( CalaPM::init() );
+    QVERIFY( KPMHelpers::initKPMcore() );
     FileSystemFactory::init();
 
     refreshDevice();
@@ -212,7 +212,7 @@ PartitionJobTests::newCreatePartitionJob( Partition* freeSpacePartition, Partiti
     qint64 lastSector;
 
     if ( size > 0 )
-        lastSector = firstSector + size / m_device->logicalSectorSize();
+        lastSector = firstSector + size / m_device->logicalSize();
     else
         lastSector = freeSpacePartition->lastSector();
     FileSystem* fs = FileSystemFactory::create( type, firstSector, lastSector );
@@ -335,7 +335,7 @@ PartitionJobTests::testResizePartition()
     QFETCH( int, newStartMB );
     QFETCH( int, newSizeMB );
 
-    const qint64 sectorForMB = MB / m_device->logicalSectorSize();
+    const qint64 sectorForMB = MB / m_device->logicalSize();
 
     qint64 oldFirst = sectorForMB * oldStartMB;
     qint64 oldLast  = oldFirst + sectorForMB * oldSizeMB - 1;
