@@ -43,8 +43,7 @@ CalamaresWindow::CalamaresWindow( QWidget* parent )
 
     CALAMARES_RETRANSLATE(
         setWindowTitle( tr( "%1 Installer" )
-                        .arg( Calamares::Branding::instance()->
-                              string( Calamares::Branding::ProductName ) ) );
+                        .arg( *Calamares::Branding::ProductName ) );
     )
 
     using CalamaresUtils::windowMinimumHeight;
@@ -142,7 +141,7 @@ CalamaresWindow::CalamaresWindow( QWidget* parent )
     CalamaresUtils::unmarginLayout( sideLayout );
     CalamaresUtils::unmarginLayout( mainLayout );
 
-    Calamares::ViewManager* vm = new Calamares::ViewManager( this );
+    Calamares::ViewManager* vm = Calamares::ViewManager::instance( this );
 
     mainLayout->addWidget( vm->centralWidget() );
 }

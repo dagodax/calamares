@@ -82,6 +82,7 @@ Branding::Branding( const QString& brandingFilePath,
     : QObject( parent )
     , m_descriptorPath( brandingFilePath )
     , m_componentName()
+    , m_welcomeStyleCalamares( false )
 {
     cDebug() << "Using Calamares branding file at" << brandingFilePath;
     QFile file( brandingFilePath );
@@ -109,6 +110,7 @@ Branding::Branding( const QString& brandingFilePath,
                 bail( "Syntax error in strings map." );
 
             m_welcomeStyleCalamares = doc[ "welcomeStyleCalamares" ].as< bool >( false );
+            m_welcomeExpandingLogo = doc[ "welcomeExpandingLogo" ].as< bool >( true );
 
             QVariantMap strings =
                 CalamaresUtils::yamlMapToVariant( doc[ "strings" ] ).toMap();
@@ -273,12 +275,6 @@ QString
 Branding::slideshowPath() const
 {
     return m_slideshowPath;
-}
-
-bool
-Branding::welcomeStyleCalamares() const
-{
-    return m_welcomeStyleCalamares;
 }
 
 void
