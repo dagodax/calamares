@@ -1,6 +1,10 @@
 ---
 componentName:  kaos_branding
 
+# Should the welcome image (productWelcome, below) be scaled
+# up beyond its natural size?
+welcomeExpandingLogo:   true
+
 strings:
     productName:         KaOS
     shortProductName:    KaOS
