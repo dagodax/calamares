@@ -62,6 +62,7 @@ def run():
         ('octopi-notifier.desktop', '.config/autostart/'),
         ('kaptan.desktop', '.config/autostart/'),
         ('stylerc', '.config/qtcurve/'),
+        ('dolphinrc', '.config/'),
         ('katerc', '.config/'),
         ('kcminputrc', '.config/'),
         ('plasmarc', '.config/'),
