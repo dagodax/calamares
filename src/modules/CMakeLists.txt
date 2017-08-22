@@ -15,4 +15,4 @@ foreach( SUBDIRECTORY ${SUBDIRECTORIES} )
 endforeach()
 
 include( CalamaresAddTranslations )
-add_calamares_python_translations( ${CALAMARES_TRANSLATION_LANGUAGES} )
+#add_calamares_python_translations( ${CALAMARES_TRANSLATION_LANGUAGES} )
