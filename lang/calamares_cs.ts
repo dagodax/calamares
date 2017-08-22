@@ -188,32 +188,32 @@ Výstup:
 <context>
     <name>Calamares::PythonJob</name>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="250"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="265"/>
         <source>Running %1 operation.</source>
         <translation>Spouští se %1 operace.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="263"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="280"/>
         <source>Bad working directory path</source>
         <translation>Neplatná cesta k pracovnímu adresáři</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="264"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="281"/>
         <source>Working directory %1 for python job %2 is not readable.</source>
         <translation>Pracovní adresář %1 pro pythonovskou úlohu %2 není čitelný.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="274"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="291"/>
         <source>Bad main script file</source>
         <translation>Špatný soubor s hlavním skriptem</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="275"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="292"/>
         <source>Main script file %1 for python job %2 is not readable.</source>
         <translation>Soubor s hlavním skriptem %1 pro pythonovskou úlohu %2 není čitelný.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="320"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="368"/>
         <source>Boost.Python error in job &quot;%1&quot;.</source>
         <translation>Chyba Boost.Python v úloze &quot;%1&quot;.</translation>
     </message>
@@ -240,7 +240,7 @@ Výstup:
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="76"/>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="310"/>
         <source>Cancel installation without changing the system.</source>
-        <translation type="unfinished"/>
+        <translation>Zrušení instalace beze změny systému.</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="99"/>
@@ -257,17 +257,17 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="105"/>
         <source>&amp;Yes</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Ano</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="106"/>
         <source>&amp;No</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Ne</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="186"/>
         <source>&amp;Close</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Zavřít</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="238"/>
@@ -292,12 +292,12 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="276"/>
         <source>&amp;Done</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Hotovo</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="277"/>
         <source>The installation is complete. Close the installer.</source>
-        <translation type="unfinished"/>
+        <translation>Instalace je hotova. Zavřete instalátor.</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="183"/>
@@ -523,22 +523,22 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
 <context>
     <name>ClearTempMountsJob</name>
     <message>
-        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="40"/>
+        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="42"/>
         <source>Clear all temporary mounts.</source>
         <translation>Uklidit všechna dočasná připojení.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="47"/>
+        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="49"/>
         <source>Clearing all temporary mounts.</source>
         <translation>Uklízí se všechna dočasná připojení.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="58"/>
+        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="60"/>
         <source>Cannot get list of temporary mounts.</source>
         <translation>Nelze získat seznam dočasných připojení.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="97"/>
+        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="99"/>
         <source>Cleared all temporary mounts.</source>
         <translation>Uklizena všechna dočasná připojení.</translation>
     </message>
@@ -636,6 +636,11 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
         <translation>Vytvořit oddíl</translation>
     </message>
     <message>
+        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="48"/>
+        <source> MiB</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="55"/>
         <source>Partition &amp;Type:</source>
         <translation>Typ &amp;oddílu:</translation>
@@ -669,11 +674,6 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="38"/>
         <source>Si&amp;ze:</source>
         <translation>V&amp;elikost:</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="48"/>
-        <source> MB</source>
-        <translation> MB</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="65"/>
@@ -985,12 +985,17 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
         <translation>Ve&amp;likost:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="132"/>
+        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="129"/>
+        <source> MiB</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="136"/>
         <source>Fi&amp;le System:</source>
         <translation>&amp;Souborový systém:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="145"/>
+        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="149"/>
         <source>Flags:</source>
         <translation>Příznaky:</translation>
     </message>
@@ -1086,15 +1091,25 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     <message>
         <location filename="../src/modules/finished/FinishedPage.cpp" line="110"/>
         <source>&lt;h1&gt;Installation Failed&lt;/h1&gt;&lt;br/&gt;%1 has not been installed on your computer.&lt;br/&gt;The error message was: %2.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Instalace selhala&lt;/h1&gt;&lt;br/&gt;%1 nebyl nainstalován na váš počítač.&lt;br/&gt;Chybová hláška byla: %2.</translation>
     </message>
 </context>
 <context>
     <name>FinishedViewStep</name>
     <message>
-        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="51"/>
+        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="56"/>
         <source>Finish</source>
         <translation>Dokončit</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="117"/>
+        <source>Installation Complete</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="118"/>
+        <source>The installation of %1 is complete.</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -1255,12 +1270,12 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
 <context>
     <name>LocalePage</name>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="236"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="387"/>
         <source>The system language will be set to %1.</source>
         <translation>Jazyk systému bude nastaven na %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="239"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="389"/>
         <source>The numbers and dates locale will be set to %1.</source>
         <translation>Čísla a datumy budou nastaveny na %1.</translation>
     </message>
@@ -1281,12 +1296,12 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
         <translation>&amp;Změnit...</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="391"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="398"/>
         <source>Set timezone to %1/%2.&lt;br/&gt;</source>
         <translation>Nastavit časové pásmo na %1/%2.&lt;br/&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="466"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="480"/>
         <source>%1 (%2)</source>
         <extracomment>Language (Country)</extracomment>
         <translation>%1 (%2)</translation>
@@ -1390,7 +1405,6 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
         <translation>Jaké jméno chcete používat při přihlašování?</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/page_usersetup.ui" line="197"/>
         <location filename="../src/modules/users/page_usersetup.ui" line="306"/>
         <location filename="../src/modules/users/page_usersetup.ui" line="437"/>
         <location filename="../src/modules/users/page_usersetup.ui" line="582"/>
@@ -1715,22 +1729,22 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
         <translation>Místo nerozdělené do oddílů nebo neznámá tabulka oddílů</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="201"/>
+        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="198"/>
         <source>unknown</source>
         <translation>neznámý</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="203"/>
+        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="200"/>
         <source>extended</source>
         <translation>rozšířený</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="205"/>
+        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="202"/>
         <source>unformatted</source>
         <translation>neformátovaný</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="207"/>
+        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="204"/>
         <source>swap</source>
         <translation>Odkládací místo</translation>
     </message>
@@ -1865,7 +1879,7 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="153"/>
         <source>The screen is too small to display the installer.</source>
-        <translation type="unfinished"/>
+        <translation>Obrazovka je příliš malá po instalátor.</translation>
     </message>
 </context>
 <context>
@@ -2278,7 +2292,7 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="60"/>
         <source>&lt;h1&gt;Welcome to the Calamares installer for %1.&lt;/h1&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Vítejte v Calamares instalátoru pro %1.&lt;/h1&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="73"/>
@@ -2288,10 +2302,10 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="75"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014-2017 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Copyright 2017 Adriaan de Groot &amp;lt;groot@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Lisa Vitolo, Philip Müller, Pier Luigi Fiorini, Rohan Garg and the &lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;KaOS translators team&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;http://calamares.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014-2017 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Copyright 2017 Adriaan de Groot &amp;lt;groot@kde.org&amp;gt;&lt;br/&gt;Díky: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Lisa Vitolo, Philip Müller, Pier Luigi Fiorini, Rohan Garg a &lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;týmu KaOS překladatelů&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Vývoj &lt;a href=&quot;http://calamares.io/&quot;&gt;Calamares&lt;/a&gt; sponzoruje &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.cpp" line="198"/>
+        <location filename="../src/modules/welcome/WelcomePage.cpp" line="201"/>
         <source>%1 support</source>
         <translation>%1 podpora</translation>
     </message>

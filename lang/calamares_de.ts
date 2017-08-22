@@ -188,32 +188,32 @@ Ausgabe:
 <context>
     <name>Calamares::PythonJob</name>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="250"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="265"/>
         <source>Running %1 operation.</source>
         <translation>%1 Aufgabe läuft.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="263"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="280"/>
         <source>Bad working directory path</source>
         <translation>Fehlerhafter Verzeichnis-Pfad</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="264"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="281"/>
         <source>Working directory %1 for python job %2 is not readable.</source>
         <translation>Arbeitsverzeichnis %1 für Python-Job %2 ist nicht lesbar.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="274"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="291"/>
         <source>Bad main script file</source>
         <translation>Fehlerhaftes Hauptskript</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="275"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="292"/>
         <source>Main script file %1 for python job %2 is not readable.</source>
         <translation>Hauptskript-Datei %1 für Python-Job %2 ist nicht lesbar.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="320"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="368"/>
         <source>Boost.Python error in job &quot;%1&quot;.</source>
         <translation>Boost.Python-Fehler in Job &quot;%1&quot;.</translation>
     </message>
@@ -523,22 +523,22 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
 <context>
     <name>ClearTempMountsJob</name>
     <message>
-        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="40"/>
+        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="42"/>
         <source>Clear all temporary mounts.</source>
         <translation>Löse alle temporär eingehängten Partitionen.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="47"/>
+        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="49"/>
         <source>Clearing all temporary mounts.</source>
         <translation>Alle temporären Einbindungen werden gelöst.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="58"/>
+        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="60"/>
         <source>Cannot get list of temporary mounts.</source>
         <translation>Das Installationsprogramm kann keine Liste der temporär eingehängten Partitionen machen.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="97"/>
+        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="99"/>
         <source>Cleared all temporary mounts.</source>
         <translation>Alle temporär eingehängten Partitionen sind jetzt entbunden.</translation>
     </message>
@@ -636,6 +636,11 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
         <translation>Partition erstellen</translation>
     </message>
     <message>
+        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="48"/>
+        <source> MiB</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="55"/>
         <source>Partition &amp;Type:</source>
         <translation>Partitions&amp;typ:</translation>
@@ -669,11 +674,6 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="38"/>
         <source>Si&amp;ze:</source>
         <translation>Gr&amp;öße:</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="48"/>
-        <source> MB</source>
-        <translation>MB</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="65"/>
@@ -985,12 +985,17 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
         <translation>Gr&amp;öße:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="132"/>
+        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="129"/>
+        <source> MiB</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="136"/>
         <source>Fi&amp;le System:</source>
         <translation>Da&amp;teisystem:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="145"/>
+        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="149"/>
         <source>Flags:</source>
         <translation>Markierungen:</translation>
     </message>
@@ -1092,9 +1097,19 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
 <context>
     <name>FinishedViewStep</name>
     <message>
-        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="51"/>
+        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="56"/>
         <source>Finish</source>
         <translation>Fertigstellen</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="117"/>
+        <source>Installation Complete</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="118"/>
+        <source>The installation of %1 is complete.</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -1255,12 +1270,12 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
 <context>
     <name>LocalePage</name>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="236"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="387"/>
         <source>The system language will be set to %1.</source>
         <translation>Die Systemsprache wird auf %1 festgelegt.</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="239"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="389"/>
         <source>The numbers and dates locale will be set to %1.</source>
         <translation>Die Zahlen- und Datumsumgebung wird auf %1 festgelegt.</translation>
     </message>
@@ -1281,12 +1296,12 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
         <translation>&amp;Ändern...</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="391"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="398"/>
         <source>Set timezone to %1/%2.&lt;br/&gt;</source>
         <translation>Setze Zeitzone auf %1/%2.&lt;br/&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="466"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="480"/>
         <source>%1 (%2)</source>
         <extracomment>Language (Country)</extracomment>
         <translation>%1 (%2)</translation>
@@ -1390,7 +1405,6 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
         <translation>Welchen Namen möchten Sie zum Anmelden benutzen?</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/page_usersetup.ui" line="197"/>
         <location filename="../src/modules/users/page_usersetup.ui" line="306"/>
         <location filename="../src/modules/users/page_usersetup.ui" line="437"/>
         <location filename="../src/modules/users/page_usersetup.ui" line="582"/>
@@ -1715,22 +1729,22 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
         <translation>Unpartitionierter Bereich oder unbekannte Partitionstabelle</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="201"/>
+        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="198"/>
         <source>unknown</source>
         <translation>unbekannt</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="203"/>
+        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="200"/>
         <source>extended</source>
         <translation>erweitert</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="205"/>
+        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="202"/>
         <source>unformatted</source>
         <translation>unformatiert</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="207"/>
+        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="204"/>
         <source>swap</source>
         <translation>Auslagerung</translation>
     </message>
@@ -2291,7 +2305,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.cpp" line="198"/>
+        <location filename="../src/modules/welcome/WelcomePage.cpp" line="201"/>
         <source>%1 support</source>
         <translation>%1 Unterstützung</translation>
     </message>

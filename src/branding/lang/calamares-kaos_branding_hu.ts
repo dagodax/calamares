@@ -4,7 +4,7 @@
     <message>
         <location filename="../kaos_branding/show.qml" line="47"/>
         <source>Here the actual install of KaOS will start.&lt;br/&gt;Use the left &lt;b&gt;mouse button&lt;/b&gt; to go to the next slide, right for previous.&lt;br/&gt;After creating your chosen disk setup in the first 10 % &lt;br/&gt;the full copying of the ISO will take the longest of this install phase &lt;br/&gt;and will run until approximately 30%.&lt;br/&gt;</source>
-        <translation>Itt kezdődik a KaOS tényleges telepítése. A következő oldalra lépéshez &lt;br/&gt;használd a bal&lt;b&gt;egérgombot&lt;/b&gt;, vagy a jobbat az előző oldalhoz. &lt;br/&gt;Miután kiválasztottad a megfelelő lemez beállítást az első 10 %-ban,&lt;br/&gt;elkezdődik a a leghosszabb folyamat a telepítés folyamán, az ISO átmásolása, ami nagyából 30%-ig tart.</translation>
+        <translation>Elkezdődik a KaOS tényleges telepítése. A következő oldalra lépéshez &lt;br/&gt;használja a bal&lt;b&gt;egérgombot&lt;/b&gt;, a jobbat az előző oldalhoz. &lt;br/&gt;Miután kiválasztotta a megfelelő lemez beállítást az első 10 %-ban,&lt;br/&gt;elkezdődik a a leghosszabb folyamat a telepítés folyamán, az ISO átmásolása, ami nagyából 30%-ig tart.</translation>
     </message>
     <message>
         <location filename="../kaos_branding/show.qml" line="73"/>

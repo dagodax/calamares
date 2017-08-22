@@ -188,32 +188,32 @@ Izlaz:
 <context>
     <name>Calamares::PythonJob</name>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="250"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="265"/>
         <source>Running %1 operation.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="263"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="280"/>
         <source>Bad working directory path</source>
         <translation>Loša putanja radnog direktorijuma</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="264"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="281"/>
         <source>Working directory %1 for python job %2 is not readable.</source>
         <translation>Radni direktorijum %1 za Pajton posao %2 nije čitljiv.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="274"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="291"/>
         <source>Bad main script file</source>
         <translation>Loš fajl glavne skripte</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="275"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="292"/>
         <source>Main script file %1 for python job %2 is not readable.</source>
         <translation>Fajl glavne skripte %1 za Pajton posao %2 nije čitljiv.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="320"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="368"/>
         <source>Boost.Python error in job &quot;%1&quot;.</source>
         <translation>Boost.Python greška u poslu „%1“.</translation>
     </message>
@@ -523,22 +523,22 @@ Instalacija će se prekinuti i izmene će biti izgubljene.</translation>
 <context>
     <name>ClearTempMountsJob</name>
     <message>
-        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="40"/>
+        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="42"/>
         <source>Clear all temporary mounts.</source>
         <translation>Očisti sva privremena montiranja.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="47"/>
+        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="49"/>
         <source>Clearing all temporary mounts.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="58"/>
+        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="60"/>
         <source>Cannot get list of temporary mounts.</source>
         <translation>Nemam listu privremenih montiranja.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="97"/>
+        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="99"/>
         <source>Cleared all temporary mounts.</source>
         <translation>Očišćena sva privremena montiranja.</translation>
     </message>
@@ -636,6 +636,11 @@ Instalacija će se prekinuti i izmene će biti izgubljene.</translation>
         <translation>Napravi particiju</translation>
     </message>
     <message>
+        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="48"/>
+        <source> MiB</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="55"/>
         <source>Partition &amp;Type:</source>
         <translation>&amp;Tip particije:</translation>
@@ -669,11 +674,6 @@ Instalacija će se prekinuti i izmene će biti izgubljene.</translation>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="38"/>
         <source>Si&amp;ze:</source>
         <translation>&amp;Veličina:</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="48"/>
-        <source> MB</source>
-        <translation> MB</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="65"/>
@@ -985,12 +985,17 @@ Instalacija će se prekinuti i izmene će biti izgubljene.</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="132"/>
+        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="129"/>
+        <source> MiB</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="136"/>
         <source>Fi&amp;le System:</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="145"/>
+        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="149"/>
         <source>Flags:</source>
         <translation type="unfinished"/>
     </message>
@@ -1092,8 +1097,18 @@ Instalacija će se prekinuti i izmene će biti izgubljene.</translation>
 <context>
     <name>FinishedViewStep</name>
     <message>
-        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="51"/>
+        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="56"/>
         <source>Finish</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="117"/>
+        <source>Installation Complete</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="118"/>
+        <source>The installation of %1 is complete.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1255,12 +1270,12 @@ Instalacija će se prekinuti i izmene će biti izgubljene.</translation>
 <context>
     <name>LocalePage</name>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="236"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="387"/>
         <source>The system language will be set to %1.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="239"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="389"/>
         <source>The numbers and dates locale will be set to %1.</source>
         <translation type="unfinished"/>
     </message>
@@ -1281,12 +1296,12 @@ Instalacija će se prekinuti i izmene će biti izgubljene.</translation>
         <translation>&amp;Izmeni...</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="391"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="398"/>
         <source>Set timezone to %1/%2.&lt;br/&gt;</source>
         <translation>Postavi vremensku zonu %1/%2.&lt;br/&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="466"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="480"/>
         <source>%1 (%2)</source>
         <extracomment>Language (Country)</extracomment>
         <translation type="unfinished"/>
@@ -1390,7 +1405,6 @@ Instalacija će se prekinuti i izmene će biti izgubljene.</translation>
         <translation>Koje korisničko ime želite?</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/page_usersetup.ui" line="197"/>
         <location filename="../src/modules/users/page_usersetup.ui" line="306"/>
         <location filename="../src/modules/users/page_usersetup.ui" line="437"/>
         <location filename="../src/modules/users/page_usersetup.ui" line="582"/>
@@ -1715,22 +1729,22 @@ Instalacija će se prekinuti i izmene će biti izgubljene.</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="201"/>
+        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="198"/>
         <source>unknown</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="203"/>
+        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="200"/>
         <source>extended</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="205"/>
+        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="202"/>
         <source>unformatted</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="207"/>
+        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="204"/>
         <source>swap</source>
         <translation type="unfinished"/>
     </message>
@@ -2291,7 +2305,7 @@ Instalacija će se prekinuti i izmene će biti izgubljene.</translation>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.cpp" line="198"/>
+        <location filename="../src/modules/welcome/WelcomePage.cpp" line="201"/>
         <source>%1 support</source>
         <translation type="unfinished"/>
     </message>

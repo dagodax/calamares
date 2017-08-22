@@ -188,32 +188,32 @@ Salida:
 <context>
     <name>Calamares::PythonJob</name>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="250"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="265"/>
         <source>Running %1 operation.</source>
         <translation>Ejecutando %1 operación.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="263"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="280"/>
         <source>Bad working directory path</source>
         <translation>Error en la ruta del directorio de trabajo</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="264"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="281"/>
         <source>Working directory %1 for python job %2 is not readable.</source>
         <translation>El directorio de trabajo %1 para el script de python %2 no se puede leer.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="274"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="291"/>
         <source>Bad main script file</source>
         <translation>Script principal erróneo</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="275"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="292"/>
         <source>Main script file %1 for python job %2 is not readable.</source>
         <translation>El script principal %1 del proceso python %2 no es accesible.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="320"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="368"/>
         <source>Boost.Python error in job &quot;%1&quot;.</source>
         <translation>Error Boost.Python en el proceso &quot;%1&quot;.</translation>
     </message>
@@ -523,22 +523,22 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
 <context>
     <name>ClearTempMountsJob</name>
     <message>
-        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="40"/>
+        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="42"/>
         <source>Clear all temporary mounts.</source>
         <translation>Limpiar montajes temporales.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="47"/>
+        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="49"/>
         <source>Clearing all temporary mounts.</source>
         <translation>Limpiando todos los montajes temporarios.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="58"/>
+        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="60"/>
         <source>Cannot get list of temporary mounts.</source>
         <translation>No se puede obtener la lista de montajes temporales.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="97"/>
+        <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="99"/>
         <source>Cleared all temporary mounts.</source>
         <translation>Se limpiaron todos los montajes temporales.</translation>
     </message>
@@ -636,6 +636,11 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
         <translation>Crear partición</translation>
     </message>
     <message>
+        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="48"/>
+        <source> MiB</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="55"/>
         <source>Partition &amp;Type:</source>
         <translation>&amp;Tipo de partición:</translation>
@@ -669,11 +674,6 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="38"/>
         <source>Si&amp;ze:</source>
         <translation>&amp;Tamaño:</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="48"/>
-        <source> MB</source>
-        <translation>MB</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.cpp" line="65"/>
@@ -985,12 +985,17 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
         <translation>Si&amp;ze:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="132"/>
+        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="129"/>
+        <source> MiB</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="136"/>
         <source>Fi&amp;le System:</source>
         <translation>Sistema de Fi&amp;le:</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="145"/>
+        <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="149"/>
         <source>Flags:</source>
         <translation>Indicadores:</translation>
     </message>
@@ -1092,9 +1097,19 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
 <context>
     <name>FinishedViewStep</name>
     <message>
-        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="51"/>
+        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="56"/>
         <source>Finish</source>
         <translation>Finalizar</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="117"/>
+        <source>Installation Complete</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="118"/>
+        <source>The installation of %1 is complete.</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -1255,12 +1270,12 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
 <context>
     <name>LocalePage</name>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="236"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="387"/>
         <source>The system language will be set to %1.</source>
         <translation>Se usará %1 como idioma del sistema.</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="239"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="389"/>
         <source>The numbers and dates locale will be set to %1.</source>
         <translation>Se usará %1 como formato de número y fechas.</translation>
     </message>
@@ -1281,12 +1296,12 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
         <translation>&amp;Cambiar...</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="391"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="398"/>
         <source>Set timezone to %1/%2.&lt;br/&gt;</source>
         <translation>Configurar zona horaria a %1/%2.&lt;br/&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="466"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="480"/>
         <source>%1 (%2)</source>
         <extracomment>Language (Country)</extracomment>
         <translation>%1 (%2)</translation>
@@ -1390,7 +1405,6 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
         <translation>¿Qué nombre desea usar para ingresar?</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/page_usersetup.ui" line="197"/>
         <location filename="../src/modules/users/page_usersetup.ui" line="306"/>
         <location filename="../src/modules/users/page_usersetup.ui" line="437"/>
         <location filename="../src/modules/users/page_usersetup.ui" line="582"/>
@@ -1715,22 +1729,22 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
         <translation>Espacio sin particionar o tabla de partición desconcida</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="201"/>
+        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="198"/>
         <source>unknown</source>
         <translation>desconocida</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="203"/>
+        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="200"/>
         <source>extended</source>
         <translation>extendida</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="205"/>
+        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="202"/>
         <source>unformatted</source>
         <translation>sin formato</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="207"/>
+        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="204"/>
         <source>swap</source>
         <translation>intercambio</translation>
     </message>
@@ -2291,7 +2305,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
         <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014-2017 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Copyright 2017 Adriaan de Groot &amp;lt;groot@kde.org&amp;gt;&lt;br/&gt;Gracias a: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Lisa Vitolo, Philip Müller, Pier Luigi Fiorini, Rohan Garg y al &lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;equipo de traductores de KaOS&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;El desarrollo de &lt;a href=&quot;http://calamares.io/&quot;&gt;Calamares&lt;/a&gt; está patrocinado por&lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.cpp" line="198"/>
+        <location filename="../src/modules/welcome/WelcomePage.cpp" line="201"/>
         <source>%1 support</source>
         <translation>%1 soporte</translation>
     </message>
