@@ -50,16 +50,16 @@ endmacro()
 # Translations of the Python modules that don't have their own
 # lang/ subdirectories -- these are collected in top-level
 # lang/python/<lang>/LC_MESSAGES/python.mo
-##macro(add_calamares_python_translations language)
-##    set( CALAMARES_LANGUAGES "" )
-##    list( APPEND CALAMARES_LANGUAGES ${ARGV} )
+macro(add_calamares_python_translations language)
+    set( CALAMARES_LANGUAGES "" )
+    list( APPEND CALAMARES_LANGUAGES ${ARGV} )
 
-##    install_calamares_gettext_translations( python
-##        SOURCE_DIR ${CMAKE_SOURCE_DIR}/lang/python
-##        FILENAME python.mo
-##        RENAME calamares-python.mo
-##    )
-##endmacro()
+    install_calamares_gettext_translations( python
+        SOURCE_DIR ${CMAKE_SOURCE_DIR}/lang/python
+        FILENAME python.mo
+        RENAME calamares-python.mo
+    )
+endmacro()
 
 # Installs a directory containing language-code-labeled subdirectories with
 # gettext data into the appropriate system directory. Allows renaming the
@@ -76,46 +76,46 @@ endmacro()
 # try installing $SOURCE_DIR/$lang/LC_MESSAGES/<filename>.mo into the
 # system gettext data directory (e.g. share/locale/), possibly renaming
 # filename.mo to renamed.mo in the process.
-##function( install_calamares_gettext_translations )
-#    # parse arguments ( name needs to be saved before passing ARGN into the macro )
-#    set( NAME ${ARGV0} )
-#    set( oneValueArgs NAME SOURCE_DIR FILENAME RENAME )
-#    cmake_parse_arguments( TRANSLATION "${options}" "${oneValueArgs}" "${multiValueArgs}" ${ARGN} )
+function( install_calamares_gettext_translations )
+    # parse arguments ( name needs to be saved before passing ARGN into the macro )
+    set( NAME ${ARGV0} )
+    set( oneValueArgs NAME SOURCE_DIR FILENAME RENAME )
+    cmake_parse_arguments( TRANSLATION "${options}" "${oneValueArgs}" "${multiValueArgs}" ${ARGN} )
 
-#    if( NOT TRANSLATION_NAME )
-#        set( TRANSLATION_NAME ${NAME} )
-#    endif()
-#    if( NOT TRANSLATION_FILENAME )
-#        set( TRANSLATION_FILENAME "${TRANSLATION_NAME}.mo" )
-#    endif()
-#    if( NOT TRANSLATION_RENAME )
-#        set( TRANSLATION_RENAME "${TRANSLATION_FILENAME}" )
-#    endif()
+    if( NOT TRANSLATION_NAME )
+        set( TRANSLATION_NAME ${NAME} )
+    endif()
+    if( NOT TRANSLATION_FILENAME )
+        set( TRANSLATION_FILENAME "${TRANSLATION_NAME}.mo" )
+    endif()
+    if( NOT TRANSLATION_RENAME )
+        set( TRANSLATION_RENAME "${TRANSLATION_FILENAME}" )
+    endif()
 
-#    message(STATUS "Installing gettext translations for ${TRANSLATION_NAME}")
-#    message(STATUS "  Installing ${TRANSLATION_FILENAME} from ${TRANSLATION_SOURCE_DIR}")
+    message(STATUS "Installing gettext translations for ${TRANSLATION_NAME}")
+    message(STATUS "  Installing ${TRANSLATION_FILENAME} from ${TRANSLATION_SOURCE_DIR}")
 
-#    set( TRANSLATION_NAME "${NAME}" )
-#    set( INSTALLED_TRANSLATIONS "" )
-#    foreach( lang ${CALAMARES_TRANSLATION_LANGUAGES} )  # Global
-#        set( lang_mo "${TRANSLATION_SOURCE_DIR}/${lang}/LC_MESSAGES/${TRANSLATION_FILENAME}" )
-#        if( lang STREQUAL "en" )
-#            message( STATUS "  Skipping ${TRANSLATION_NAME} translations for en_US" )
-#        else( EXISTS ${lang_mo} )
-#            list( APPEND INSTALLED_LANGUAGES "${lang}" )
-#            install(
-#                FILES ${lang_mo}
-#                DESTINATION ${CMAKE_INSTALL_LOCALEDIR}/${lang}/LC_MESSAGES/
-#                RENAME ${TRANSLATION_RENAME}
-#            )
-#            # TODO: make translations available in build dir too, for
-#            #       translation when running calamares -d from builddir.
-#            set(_build_lc ${CMAKE_BINARY_DIR}/lang/${lang}/LC_MESSAGES/)
-#            file(COPY ${lang_mo} DESTINATION ${_build_lc})
-#            if (NOT TRANSLATION_FILENAME STREQUAL TRANSLATION_RENAME)
-#                file(RENAME ${_build_lc}${TRANSLATION_FILENAME} ${_build_lc}${TRANSLATION_RENAME})
-#            endif()
+    set( TRANSLATION_NAME "${NAME}" )
+    set( INSTALLED_TRANSLATIONS "" )
+    foreach( lang ${CALAMARES_TRANSLATION_LANGUAGES} )  # Global
+        set( lang_mo "${TRANSLATION_SOURCE_DIR}/${lang}/LC_MESSAGES/${TRANSLATION_FILENAME}" )
+        if( lang STREQUAL "en" )
+            message( STATUS "  Skipping ${TRANSLATION_NAME} translations for en_US" )
+        else( EXISTS ${lang_mo} )
+            list( APPEND INSTALLED_LANGUAGES "${lang}" )
+            install(
+                FILES ${lang_mo}
+                DESTINATION ${CMAKE_INSTALL_LOCALEDIR}/${lang}/LC_MESSAGES/
+                RENAME ${TRANSLATION_RENAME}
+            )
+            # TODO: make translations available in build dir too, for
+            #       translation when running calamares -d from builddir.
+            set(_build_lc ${CMAKE_BINARY_DIR}/lang/${lang}/LC_MESSAGES/)
+            file(COPY ${lang_mo} DESTINATION ${_build_lc})
+            if (NOT TRANSLATION_FILENAME STREQUAL TRANSLATION_RENAME)
+                file(RENAME ${_build_lc}${TRANSLATION_FILENAME} ${_build_lc}${TRANSLATION_RENAME})
+            endif()
 
-#        endif()
-#    endforeach()
-#endfunction()
+        endif()
+    endforeach()
+endfunction()
