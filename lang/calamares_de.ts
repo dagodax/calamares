@@ -9,7 +9,7 @@
     <message>
         <location filename="../src/modules/partition/gui/BootInfoWidget.cpp" line="75"/>
         <source>This system was started with an &lt;strong&gt;EFI&lt;/strong&gt; boot environment.&lt;br&gt;&lt;br&gt;To configure startup from an EFI environment, this installer must deploy a boot loader application, like &lt;strong&gt;GRUB&lt;/strong&gt; or &lt;strong&gt;systemd-boot&lt;/strong&gt; on an &lt;strong&gt;EFI System Partition&lt;/strong&gt;. This is automatic, unless you choose manual partitioning, in which case you must choose it or create it on your own.</source>
-        <translation>Dieses System wurde mit einer &lt;strong&gt;EFI&lt;/strong&gt; Boot-Umgebung gestartet.&lt;br&gt;&lt;br&gt;Um einen Start von einer EFI Umgebung zu konfigurieren, muss dieser Installer eine Boot-Loader Applikation, wie &lt;strong&gt;GRUB&lt;/strong&gt; oder &lt;strong&gt;systemd-boot&lt;/strong&gt; auf einer &lt;strong&gt;EFI System Partition&lt;/strong&gt; einsetzen. Dies passiert automatisch, aussert es wird manuelle Partitionierung gewählt, in diesem Fall müssen Sie Ihn auswählen oder selbst erstellen.</translation>
+        <translation>Dieses System wurde mit einer &lt;strong&gt;EFI&lt;/strong&gt; Boot-Umgebung gestartet.&lt;br&gt;&lt;br&gt;Um einen Start von einer EFI Umgebung zu konfigurieren, muss dieses Installationsprogramm eine Boot-Lader-Applikation, wie &lt;strong&gt;GRUB&lt;/strong&gt; oder &lt;strong&gt;systemd-boot&lt;/strong&gt; auf einer &lt;strong&gt;EFI-Systempartition&lt;/strong&gt; einsetzen. Dies passiert automatisch, außer es wird manuelle Partitionierung gewählt, in diesem Fall müssen Sie Ihn auswählen oder selbst erstellen.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/BootInfoWidget.cpp" line="87"/>
@@ -277,7 +277,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="239"/>
         <source>The %1 installer is about to make changes to your disk in order to install %2.&lt;br/&gt;&lt;strong&gt;You will not be able to undo these changes.&lt;/strong&gt;</source>
-        <translation>Das %1 Installationsprogramm wird jetzt gleich Veränderungen an Ihrer Festplatte vornehmen, um %2 zu installieren. &lt;br/&gt;&lt;strong&gt;Sie werden nicht in der Lage sein, diese Änderungen rückgängig zu machen. &lt;/strong&gt;</translation>
+        <translation>Das Installationsprogramm %1 wird jetzt gleich Veränderungen an Ihrer Festplatte vornehmen, um %2 zu installieren. &lt;br/&gt;&lt;strong&gt;Sie werden nicht in der Lage sein, diese Änderungen rückgängig zu machen. &lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="244"/>
@@ -297,7 +297,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="277"/>
         <source>The installation is complete. Close the installer.</source>
-        <translation>Die Installation ist beendet. Installer schliessen.</translation>
+        <translation>Die Installation ist abgeschlossen. Schließen Sie das Installationsprogramm.</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="183"/>
@@ -638,7 +638,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="48"/>
         <source> MiB</source>
-        <translation type="unfinished"/>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="55"/>
@@ -855,7 +855,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="174"/>
         <source>usermod terminated with error code %1.</source>
-        <translation type="unfinished"/>
+        <translation>usermod wurde mit Fehlercode %1 beendet.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="184"/>
@@ -987,7 +987,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="129"/>
         <source> MiB</source>
-        <translation type="unfinished"/>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="136"/>
@@ -1091,25 +1091,25 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/finished/FinishedPage.cpp" line="110"/>
         <source>&lt;h1&gt;Installation Failed&lt;/h1&gt;&lt;br/&gt;%1 has not been installed on your computer.&lt;br/&gt;The error message was: %2.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;Installation fehlgeschlagen&lt;/h1&gt;&lt;br/&gt;%1 wurde nicht auf Ihrem Computer installiert.&lt;br/&gt;Die Fehlermeldung war: %2.</translation>
     </message>
 </context>
 <context>
     <name>FinishedViewStep</name>
     <message>
-        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="56"/>
+        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="60"/>
         <source>Finish</source>
         <translation>Fertigstellen</translation>
     </message>
     <message>
-        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="117"/>
+        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="126"/>
         <source>Installation Complete</source>
-        <translation type="unfinished"/>
+        <translation>Installation abgeschlossen</translation>
     </message>
     <message>
-        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="118"/>
+        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="127"/>
         <source>The installation of %1 is complete.</source>
-        <translation type="unfinished"/>
+        <translation>Die Installation von %1 ist abgeschlossen.</translation>
     </message>
 </context>
 <context>
@@ -1879,7 +1879,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/welcome/checker/RequirementsChecker.cpp" line="153"/>
         <source>The screen is too small to display the installer.</source>
-        <translation>Der Bildschirm ist zu klein, um den Installer anzuzeigen.</translation>
+        <translation>Der Bildschirm ist zu klein, um das Installationsprogramm anzuzeigen.</translation>
     </message>
 </context>
 <context>
@@ -2007,57 +2007,57 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="48"/>
         <source>Set flags on partition %1.</source>
-        <translation type="unfinished"/>
+        <translation>Markierungen auf der Partition %1 festlegen.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="51"/>
         <source>Set flags on %1MB %2 partition.</source>
-        <translation type="unfinished"/>
+        <translation>Markierungen auf der Partition %1MB %2 festlegen.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="55"/>
         <source>Set flags on new partition.</source>
-        <translation type="unfinished"/>
+        <translation>Markierungen auf der neuen Partition festlegen.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="66"/>
         <source>Clear flags on partition &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Markierungen auf der Partition &lt;strong&gt;%1&lt;/strong&gt; löschen.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="70"/>
         <source>Clear flags on %1MB &lt;strong&gt;%2&lt;/strong&gt; partition.</source>
-        <translation>Flaggen auf %1MB &lt;strong&gt;%2&lt;/strong&gt; Partition löschen.</translation>
+        <translation>Markierungen auf der Partition %1MB &lt;strong&gt;%2&lt;/strong&gt; löschen.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="74"/>
         <source>Clear flags on new partition.</source>
-        <translation>Flaggen auf neuer Partition löschen.</translation>
+        <translation>Markierungen auf der neuen Partition löschen.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="78"/>
         <source>Flag partition &lt;strong&gt;%1&lt;/strong&gt; as &lt;strong&gt;%2&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Partition &lt;strong&gt;%1&lt;/strong&gt; als &lt;strong&gt;%2&lt;/strong&gt; markieren.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="84"/>
         <source>Flag %1MB &lt;strong&gt;%2&lt;/strong&gt; partition as &lt;strong&gt;%3&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Partition %1MB &lt;strong&gt;%2&lt;/strong&gt; als &lt;strong&gt;%3&lt;/strong&gt; markieren.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="90"/>
         <source>Flag new partition as &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Neue Partition als &lt;strong&gt;%1&lt;/strong&gt; markieren.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="102"/>
         <source>Clearing flags on partition &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation>Flaggen auf der Partition &lt;strong&gt;%1&lt;/strong&gt; löschen.</translation>
+        <translation>Markierungen auf der Partition &lt;strong&gt;%1&lt;/strong&gt; werden gelöscht.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="106"/>
         <source>Clearing flags on %1MB &lt;strong&gt;%2&lt;/strong&gt; partition.</source>
-        <translation>Flaggen auf %1MB &lt;strong&gt;%2&lt;/strong&gt; Partition löschen.</translation>
+        <translation>Markierungen auf der Partition %1MB &lt;strong&gt;%2&lt;/strong&gt; werden gelöscht.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="110"/>
@@ -2067,22 +2067,22 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="114"/>
         <source>Setting flags &lt;strong&gt;%2&lt;/strong&gt; on partition &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Markierungen &lt;strong&gt;%2&lt;/strong&gt; auf der Partition &lt;strong&gt;%1&lt;/strong&gt; werden festgelegt.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="120"/>
         <source>Setting flags &lt;strong&gt;%3&lt;/strong&gt; on %1MB &lt;strong&gt;%2&lt;/strong&gt; partition.</source>
-        <translation type="unfinished"/>
+        <translation>Markierungen &lt;strong&gt;%3&lt;/strong&gt; auf der Partition %1MB &lt;strong&gt;%2&lt;/strong&gt; werden festgelegt.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="126"/>
         <source>Setting flags &lt;strong&gt;%1&lt;/strong&gt; on new partition.</source>
-        <translation>Setze Flaggen auf &lt;strong&gt;%1&lt;/strong&gt; der neuen Partition.</translation>
+        <translation>Markierungen &lt;strong&gt;%1&lt;/strong&gt; auf der neuen Partition werden festgelegt.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="140"/>
         <source>The installer failed to set flags on partition %1.</source>
-        <translation>Der Installer konnte keine Flagge auf der Partition %1 setzen.</translation>
+        <translation>Das Installationsprogramm konnte keine Markierungen auf der Partition %1 festlegen.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="148"/>
@@ -2143,7 +2143,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="120"/>
         <source>passwd terminated with error code %1.</source>
-        <translation type="unfinished"/>
+        <translation>passwd wurde mit Fehlercode %1 beendet.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/SetPasswordJob.cpp" line="135"/>
@@ -2287,22 +2287,22 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="60"/>
         <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;</source>
-        <translation>Willkommen im %1 Installationsprogramm.</translation>
+        <translation>Willkommen im Installationsprogramm %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="60"/>
         <source>&lt;h1&gt;Welcome to the Calamares installer for %1.&lt;/h1&gt;</source>
-        <translation>&lt;h1&gt;Willkommen zum Calamares Installer für %1.&lt;/h1&gt;</translation>
+        <translation>&lt;h1&gt;Willkommen zum Calamares-Installationsprogramm für %1.&lt;/h1&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="73"/>
         <source>About %1 installer</source>
-        <translation>Über das %1 Installationsprogramm</translation>
+        <translation>Über das Installationsprogramm %1</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="75"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014-2017 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Copyright 2017 Adriaan de Groot &amp;lt;groot@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Lisa Vitolo, Philip Müller, Pier Luigi Fiorini, Rohan Garg and the &lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;KaOS translators team&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;http://calamares.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014-2017 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Copyright 2017 Adriaan de Groot &amp;lt;groot@kde.org&amp;gt;&lt;br/&gt;Dank an: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Lisa Vitolo, Philip Müller, Pier Luigi Fiorini, Rohan Garg und das &lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;KaOS-Übersetzungsteam&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;http://calamares.io/&quot;&gt;Calamares&lt;/a&gt;-Entwicklung wird gefördert von &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="201"/>

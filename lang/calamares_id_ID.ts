@@ -37,7 +37,7 @@
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="111"/>
         <source>Do not install a boot loader</source>
-        <translation>jangan memasang boot loader</translation>
+        <translation>Jangan pasang boot loader</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/core/BootLoaderModel.cpp" line="125"/>
@@ -91,7 +91,7 @@
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.cpp" line="182"/>
         <source>Debug information</source>
-        <translation>Informasi awakutu</translation>
+        <translation>Informasi debug</translation>
     </message>
 </context>
 <context>
@@ -276,7 +276,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="239"/>
         <source>The %1 installer is about to make changes to your disk in order to install %2.&lt;br/&gt;&lt;strong&gt;You will not be able to undo these changes.&lt;/strong&gt;</source>
-        <translation>Pemasang %1 adalah sesuatu untuk membuat perubahan pada disk-mu seperti dalam urutan untuk memasang %2.&lt;br/&gt;&lt;strong&gt;Kamu tidak akan dapat membatalkan perubahan tersebut.&lt;/strong&gt;</translation>
+        <translation>Pemasang %1 akan membuat perubahan pada disk-mu seperti yang tertera untuk memasang %2.&lt;br/&gt;&lt;strong&gt;Kamu tidak akan mampu membatalkan perubahan tersebut.&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="244"/>
@@ -342,7 +342,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/calamares/CalamaresWindow.cpp" line="112"/>
         <source>Show debug information</source>
-        <translation>Tampilkan informasi awakutu</translation>
+        <translation>Tampilkan informasi debug</translation>
     </message>
 </context>
 <context>
@@ -585,7 +585,7 @@ The installer will quit and all changes will be lost.</source>
         <location filename="../thirdparty/libcrashreporter-qt/src/libcrashreporter-gui/CrashReporter.cpp" line="114"/>
         <location filename="../thirdparty/libcrashreporter-qt/src/libcrashreporter-gui/CrashReporter.cpp" line="150"/>
         <source>We cannot gather useful debug information on your system.</source>
-        <translation>Kita tidak bisa mengumpulkan informasi awakutu yang berguna pada sistemmu.</translation>
+        <translation>Kita tidak bisa mengumpulkan informasi debug yang berguna pada sistemmu.</translation>
     </message>
     <message>
         <location filename="../thirdparty/libcrashreporter-qt/src/libcrashreporter-gui/CrashReporter.cpp" line="108"/>
@@ -601,12 +601,12 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../thirdparty/libcrashreporter-qt/src/libcrashreporter-gui/CrashReporter.cpp" line="143"/>
         <source>Ready to send debug information (&lt;a href=&quot;%1&quot;&gt;view backtrace&lt;/a&gt;).</source>
-        <translation>Siap untuk mengirim informasi awakutu (&lt;a href=&quot;%1&quot;&gt;lihat pelacakan mundur&lt;/a&gt;).</translation>
+        <translation>Siap untuk mengirim informasi debug (&lt;a href=&quot;%1&quot;&gt;lihat pelacakan mundur&lt;/a&gt;).</translation>
     </message>
     <message>
         <location filename="../thirdparty/libcrashreporter-qt/src/libcrashreporter-gui/CrashReporter.cpp" line="159"/>
         <source>Gathering debug information...</source>
-        <translation>Mengumpulkan informasi awakutu...</translation>
+        <translation>Mengumpulkan informasi debug...</translation>
     </message>
     <message>
         <location filename="../thirdparty/libcrashreporter-qt/src/libcrashreporter-gui/CrashReporter.cpp" line="258"/>
@@ -618,7 +618,7 @@ The installer will quit and all changes will be lost.</source>
         <location filename="../thirdparty/libcrashreporter-qt/src/libcrashreporter-gui/CrashReporter.cpp" line="285"/>
         <location filename="../thirdparty/libcrashreporter-qt_a/src/libcrashreporter-gui/CrashReporter.cpp" line="196"/>
         <source>Sent! &lt;b&gt;Many thanks&lt;/b&gt;. Please refer to crash &lt;b&gt;%1&lt;/b&gt; in bug reports.</source>
-        <translation>Terkirim! &lt;b&gt;Terima kasih banyak&lt;/b&gt;. Silakan lihat kemogokan &lt;b&gt;%1&lt;/b&gt; dalam laporan kutu.</translation>
+        <translation>Terkirim! &lt;b&gt;Terima kasih banyak&lt;/b&gt;. Silakan lihat kemogokan &lt;b&gt;%1&lt;/b&gt; dalam laporan bug.</translation>
     </message>
     <message>
         <location filename="../thirdparty/libcrashreporter-qt/src/libcrashreporter-gui/CrashReporter.cpp" line="294"/>
@@ -637,7 +637,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="48"/>
         <source> MiB</source>
-        <translation type="unfinished"/>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="55"/>
@@ -986,7 +986,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="129"/>
         <source> MiB</source>
-        <translation type="unfinished"/>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="136"/>
@@ -1096,19 +1096,19 @@ The installer will quit and all changes will be lost.</source>
 <context>
     <name>FinishedViewStep</name>
     <message>
-        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="56"/>
+        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="60"/>
         <source>Finish</source>
         <translation>Selesai</translation>
     </message>
     <message>
-        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="117"/>
+        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="126"/>
         <source>Installation Complete</source>
-        <translation type="unfinished"/>
+        <translation>Pemasangan Lengkap</translation>
     </message>
     <message>
-        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="118"/>
+        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="127"/>
         <source>The installation of %1 is complete.</source>
-        <translation type="unfinished"/>
+        <translation>Pemasangan %1 telah lengkap.</translation>
     </message>
 </context>
 <context>
@@ -2337,7 +2337,7 @@ The installer will quit and all changes will be lost.</source>
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="121"/>
         <source>Qt/KDE specific internet applications include the &lt;br/&gt;Qupzilla web-browser and kde-telepathy for &lt;br/&gt;chat and Instant Messaging. &lt;br/&gt;</source>
-        <translation>Aplikasi internet Qt/KDE tertentu termasuk &lt;br/&gt;Qupzilla penjelajah web dan kde-telepathy  untuk &lt;br/&gt;obrolan dan Instant Messaging. &lt;br/&gt;</translation>
+        <translation>Aplikasi internet khusus Qt/KDE termasuk penjelajah web &lt;br/&gt;Qupzilla dan Instant Messaging dan kde-telepathy untuk &lt;br/&gt;chating. &lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="145"/>
