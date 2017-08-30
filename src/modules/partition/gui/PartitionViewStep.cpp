@@ -387,7 +387,7 @@ PartitionViewStep::onLeave()
     if ( m_widget->currentWidget() == m_manualPartitionPage )
     {
         bool isEfi = false;
-        if ( QDir( "/sys/firmware/efi/efivars" ).exists() )
+        if ( PartUtils::isEfiSystem() )
             isEfi = true;
         
         if ( isEfi )
