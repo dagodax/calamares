@@ -234,8 +234,10 @@ ChoicePage::setupChoices()
     CALAMARES_RETRANSLATE(
         m_somethingElseButton->setText( tr( "<strong>Manual partitioning</strong><br/>"
                                             "You can create or resize partitions yourself."
-                                            " Having a GPT partition table and <strong>fat32 512Mb /boot partition "
-                                            "is a must for UEFI installs</strong>, either use an existing without formatting or create one." ) );
+                                            " Having a GPT partition table and <strong>fat32 %1 %2 partition "
+                                            "is a must for UEFI installs</strong>, either use an existing without formatting or create one." )
+                                        .arg( entry.efiSize )
+                                        .arg( entry.efiSystemPartition ) );
     )
     m_somethingElseButton->setIconSize( iconSize );
     m_somethingElseButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::PartitionManual,
