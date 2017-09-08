@@ -236,8 +236,8 @@ ChoicePage::setupChoices()
                                             "You can create or resize partitions yourself."
                                             " Having a GPT partition table and <strong>fat32 %1 %2 partition "
                                             "is a must for UEFI installs</strong>, either use an existing without formatting or create one." )
-                                        .arg( entry.efiSize )
-                                        .arg( entry.efiSystemPartition ) );
+                                        .arg( efiSize )
+                                        .arg( efiSystemPartition ) );
     )
     m_somethingElseButton->setIconSize( iconSize );
     m_somethingElseButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::PartitionManual,
