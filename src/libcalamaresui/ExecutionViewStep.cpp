@@ -128,7 +128,6 @@ ExecutionViewStep::isAtEnd() const
 void
 ExecutionViewStep::onActivate()
 {
-    cDebug() << "loading ok ";
     CALAMARES_RETRANSLATE_WIDGET( m_widget,
         if ( !Calamares::Branding::instance()->slideshowPath().isEmpty() )
             m_slideShow->setSource( QUrl::fromLocalFile( Calamares::Branding::instance()
@@ -166,7 +165,7 @@ ExecutionViewStep::appendJobModuleInstanceKey( const QString& instanceKey )
 void
 ExecutionViewStep::updateFromJobQueue( qreal percent, const QString& message )
 {
-    m_progressBar->setValue( percent * m_progressBar->maximum() );
+    m_progressBar->setValue( int( percent * m_progressBar->maximum() ) );
     m_label->setText( message );
 }
 
