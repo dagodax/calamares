@@ -19,7 +19,7 @@ strings:
     releaseNotesUrl:     https://kaosx.us/pages/release_notes
 
 images:
-    productLogo:         "squid.png"
+    productLogo:         "kaos.png"
     productIcon:         "kaos.png"
     productWelcome:      "languages.png"
 
