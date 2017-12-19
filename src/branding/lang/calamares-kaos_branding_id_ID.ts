@@ -19,7 +19,7 @@
     <message>
         <location filename="../kaos_branding/show.qml" line="121"/>
         <source>Qt/KDE specific internet applications include the Qupzilla web-browser &lt;br/&gt;and kde-telepathy for chat and Instant Messaging. &lt;br/&gt;</source>
-        <translation>Aplikasi internet Qt/KDE tertentu termasuk peramban web Qupzilla &lt;br/&gt;dan untuk obrolan kde-telepathy dan Instant Messaging. &lt;br/&gt;</translation>
+        <translation>Aplikasi internet khusus Qt/KDE termasuk penjelajah web Qupzilla &lt;br/&gt;dan Instant Messaging dan kde-telepathy untuk chating. &lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../kaos_branding/show.qml" line="144"/>
