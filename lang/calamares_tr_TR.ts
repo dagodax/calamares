@@ -1099,17 +1099,17 @@ Kuruluma devam edebilirsiniz fakat bazı özellikler devre dışı kalabilir.</t
 <context>
     <name>FinishedViewStep</name>
     <message>
-        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="56"/>
+        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="60"/>
         <source>Finish</source>
         <translation>Kurulumu Tamamla</translation>
     </message>
     <message>
-        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="117"/>
+        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="126"/>
         <source>Installation Complete</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="118"/>
+        <location filename="../src/modules/finished/FinishedViewStep.cpp" line="127"/>
         <source>The installation of %1 is complete.</source>
         <translation type="unfinished"/>
     </message>
