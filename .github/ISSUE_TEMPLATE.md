@@ -4,15 +4,15 @@
   - [ ] Feature Request
 
 
-#### KaOS ISO date you are having issues with or have a request for
+#### Info regarding which version of Calamares is used, which Distribution
 
 > …
 
-#### How did you create the Live Media?
+#### Provide information on how the disks are set up, in detail, with full logs of commands issued 
 
 > …
 
-#### Did you check the md5sum of the downloaded ISO?
+#### What do you expect to have happen when Calamares installs?
 
 > …
 
@@ -24,9 +24,6 @@
 
 > …
 
-#### Include the installation.log:
- * Live mode: `~/installation.log`
- * Installed System: `/var/log/installation.log`
-
+#### Include the installation.log (usually ~/Calamares/Calamares/Calamares.log, of the user Calamares runs as):
 
 > …

@@ -1,6 +1,6 @@
 /* === This file is part of Calamares - <http://github.com/calamares> ===
  *
- *   Copyright 2014, Aurélien Gâteau <agateau@kde.org>
+ *   Copyright 2017, Adriaan de Groot <groot@kde.org>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -16,17 +16,31 @@
  *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <jobs/PartitionJob.h>
+#ifndef PLASMALNFJOB_H
+#define PLASMALNFJOB_H
 
-PartitionJob::PartitionJob( Partition* partition )
-    : m_partition( partition )
-{}
+#include <QObject>
+#include <QVariantMap>
 
-void PartitionJob::progress(int percent)
+#include <Job.h>
+
+class PlasmaLnfJob : public Calamares::Job
 {
-    if ( percent < 0 )
-        percent = 0;
-    if ( percent > 100 )
-        percent = 100;
-    emit progress( qreal( percent / 100.0 ) );
-}
+    Q_OBJECT
+
+public:
+    explicit PlasmaLnfJob( const QString& lnfPath, const QString& id );
+    virtual ~PlasmaLnfJob() override;
+
+    QString prettyName() const override;
+    QString prettyDescription() const override;
+    QString prettyStatusMessage() const override;
+
+    Calamares::JobResult exec() override;
+
+private:
+    QString m_lnfPath;
+    QString m_id;
+};
+
+#endif // PLASMALNFJOB_H

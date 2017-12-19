@@ -1,6 +1,6 @@
 /* === This file is part of Calamares - <http://github.com/calamares> ===
  *
- *   Copyright 2014, Aurélien Gâteau <agateau@kde.org>
+ *   Copyright 2017, Adriaan de Groot <groot@kde.org>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -16,23 +16,44 @@
  *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef CHECKFILESYSTEMJOB_H
-#define CHECKFILESYSTEMJOB_H
+#ifndef PLASMALNFPAGE_H
+#define PLASMALNFPAGE_H
 
-#include <jobs/PartitionJob.h>
+#include <QList>
+#include <QString>
+#include <QWidget>
 
-/**
- * Runs a file system check on an existing partition.
- */
-class CheckFileSystemJob : public PartitionJob
+namespace Ui
+{
+class PlasmaLnfPage;
+}
+
+struct PlasmaLnfDescriptor
+{
+    QString id;
+    QString name;
+} ;
+
+using PlasmaLnfList = QList<PlasmaLnfDescriptor>;
+
+class PlasmaLnfPage : public QWidget
 {
     Q_OBJECT
 public:
-    CheckFileSystemJob( Partition* partition );
+    explicit PlasmaLnfPage( QWidget* parent = nullptr );
 
-    QString prettyName() const override;
-    QString prettyStatusMessage() const override;
-    Calamares::JobResult exec() override;
+    void setLnfPath( const QString& path );
+
+public slots:
+    void activated( int index );
+
+signals:
+    void plasmaThemeSelected( const QString& id );
+
+private:
+    Ui::PlasmaLnfPage* ui;
+    QString m_lnfPath;
+    PlasmaLnfList m_availableLnf;
 };
 
-#endif /* CHECKFILESYSTEMJOB_H */
+#endif //PLASMALNFPAGE_H

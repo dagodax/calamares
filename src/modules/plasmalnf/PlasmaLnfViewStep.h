@@ -1,7 +1,6 @@
 /* === This file is part of Calamares - <http://github.com/calamares> ===
  *
- *   Copyright 2014, Aurélien Gâteau <agateau@kde.org>
- *   Copyright 2014-2015, Teo Mrnjavac <teo@kde.org>
+ *   Copyright 2017, Adriaan de Groot <groot@kde..org>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -17,25 +16,26 @@
  *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef EXECUTIONVIEWSTEP_H
-#define EXECUTIONVIEWSTEP_H
+#ifndef PLASMALNFVIEWSTEP_H
+#define PLASMALNFVIEWSTEP_H
 
+#include <utils/PluginFactory.h>
 #include <viewpages/ViewStep.h>
+#include <PluginDllMacro.h>
 
-#include <QStringList>
+#include <QObject>
+#include <QUrl>
+#include <QVariantMap>
 
-class QLabel;
-class QProgressBar;
-class QQuickWidget;
+class PlasmaLnfPage;
 
-namespace Calamares
-{
-
-class ExecutionViewStep : public ViewStep
+class PLUGINDLLEXPORT PlasmaLnfViewStep : public Calamares::ViewStep
 {
     Q_OBJECT
+
 public:
-    explicit ExecutionViewStep( QObject* parent = nullptr );
+    explicit PlasmaLnfViewStep( QObject* parent = nullptr );
+    virtual ~PlasmaLnfViewStep() override;
 
     QString prettyName() const override;
 
@@ -50,23 +50,22 @@ public:
     bool isAtBeginning() const override;
     bool isAtEnd() const override;
 
-    void onActivate() override;
+    void onLeave() override;
 
-    JobList jobs() const override;
+    Calamares::JobList jobs() const override;
 
-    void appendJobModuleInstanceKey( const QString& instanceKey );
+    void setConfigurationMap( const QVariantMap& configurationMap ) override;
+
+public slots:
+    void themeSelected( const QString& id );
 
 private:
-    QWidget* m_widget;
-    QProgressBar* m_progressBar;
-    QLabel* m_label;
-    QQuickWidget* m_slideShow;
-
-    QStringList m_jobInstanceKeys;
-
-    void updateFromJobQueue( qreal percent, const QString& message );
+    PlasmaLnfPage* m_widget;
+    QString m_lnfPath;
+    QString m_themeId;
+    QString m_liveUser;
 };
 
-}
+CALAMARES_PLUGIN_FACTORY_DECLARATION( PlasmaLnfViewStepFactory )
 
-#endif /* EXECUTIONVIEWSTEP_H */
+#endif // PLASMALNFVIEWSTEP_H
