@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # === This file is part of Calamares - <http://github.com/calamares> ===
 #
-#   Copyright 2014, Anke Boersma <demm@kaosx.us>
+#   Copyright 2014-2017, Anke Boersma <demm@kaosx.us>
 #
 #   Calamares is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -33,14 +33,28 @@ def run():
 
     """ Set hardware clock """
 
-    root_mount_point = libcalamares.globalstorage.value("rootMountPoint")
-    try:
-        subprocess.check_call(["hwclock", "--systohc", "--utc"])
-    except subprocess.CalledProcessError as e:
-        return "Cannot set hardware clock.",\
-               "hwclock terminated with exit code {}.".format(e.returncode)
+    hwclock_rtc = ["hwclock", "--systohc", "--utc"]
+    hwclock_isa = ["hwclock", "--systohc", "--utc", "--directisa"]
+    is_broken_rtc = False
+    is_broken_isa = False
 
-    shutil.copy2("/etc/adjtime", "%s/etc/" % root_mount_point)
+    ret = libcalamares.utils.target_env_call(hwclock_rtc)
+    if ret != 0:
+        is_broken_rtc = True
+        libcalamares.utils.debug("Hwclock returned error code {}".format(ret))
+        libcalamares.utils.debug("  .. RTC method failed, trying ISA bus method.")
+    else:
+        libcalamares.utils.debug("Hwclock set using RTC method.")
+    if is_broken_rtc:
+        ret = libcalamares.utils.target_env_call(hwclock_isa)
+        if  ret != 0:
+            is_broken_isa = True
+            libcalamares.utils.debug("Hwclock returned error code {}".format(ret))
+            libcalamares.utils.debug("  .. ISA bus method failed.")
+        else:
+            libcalamares.utils.debug("Hwclock set using ISA bus methode.")
+    if is_broken_rtc and is_broken_isa:
+        libcalamares.utils.debug("BIOS or Kernel BUG: Setting hwclock failed.")
     
     """ Set Alsa """
     
