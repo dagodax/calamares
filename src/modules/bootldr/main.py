@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# === This file is part of Calamares - <http://github.com/calamares> ===
+# === This file is part of Calamares - <https://github.com/calamares> ===
 #
 #   Copyright 2014-2017, Anke Boersma <demm@kaosx.us>
 #   Copyright 2014, Benjamin Vaudour <benjamin.vaudour@yahoo.fr>
