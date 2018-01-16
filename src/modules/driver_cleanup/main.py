@@ -40,59 +40,61 @@ def run():
         with misc.raised_privileges():
             os.remove(db_lock)
 
-    if os.path.exists("/var/log/used_gfx"):
-        with open("/var/log/used_gfx", "r") as searchfile:
-            for line in searchfile:
-                if "intel" in line:
-                    print(line)
-                #else:
-                #    try:
-                #        libcalamares.utils.target_env_call(['pacman', '-R', '--noconfirm',
-                #                                        'xf86-video-vmware'])
-                #    except Exception as e:
-                #        pass
-                if "nouveau" in line:
-                    print(line)
-                    sddm_conf_path = os.path.join(install_path, "etc/sddm.conf")
-                    text = []
-                    with open(sddm_conf_path, 'r') as sddm_conf:
-                        text = sddm_conf.readlines()
-                    with open(sddm_conf_path, 'w') as sddm_conf:
-                        for line in text:
-                            if re.match('Session=plasmawayland.desktop', line):
-                                line = 'Session=plasma.desktop'
-                            sddm_conf.write(line)                    
-                else:
-                    try:
-                        libcalamares.utils.target_env_call(['pacman', '-R', '--noconfirm',
-                                                        'xf86-video-nouveau'])
-                    except Exception as e:
-                        pass
-                if "amdgpu" in line:
-                    print(line)
-                else:
-                    try:
-                        libcalamares.utils.target_env_call(['pacman', '-R', '--noconfirm',
-                                                        'xf86-video-amdgpu'])
-                    except Exception as e:
-                        pass
-                if "ati" in line or "radeon" in line:
-                    print(line)
-                else:
-                    try:
-                        libcalamares.utils.target_env_call(['pacman', '-R', '--noconfirm',
-                                                        'xf86-video-ati'])
-                    except Exception as e:
-                        pass
-                if "vmware" in line:
-                    print(line)
-                else:
-                    try:
-                        libcalamares.utils.target_env_call(['pacman', '-R', '--noconfirm',
-                                                        'xf86-video-vmware'])
-                    except Exception as e:
-                        pass
-        searchfile.close()
+    searchf = "/var/log/used_gfx"
+    f = open("/var/log/used_gfx", "r")
+    file_c = f.read()
+    
+    if os.path.exists(searchf):
+        if "i915" in file_c:
+            print(file_c)
+        else:
+            try:
+                libcalamares.utils.target_env_call(['pacman', '-R', '--noconfirm',
+                                                'xf86-video-intel'])
+            except Exception as e:
+                pass
+        if "nouveau" in file_c:
+            print(file_c)
+            sddm_conf_path = os.path.join(install_path, "etc/sddm.conf")
+            text = []
+            with open(sddm_conf_path, 'r') as sddm_conf:
+                text = sddm_conf.readlines()
+            with open(sddm_conf_path, 'w') as sddm_conf:
+                for line in text:
+                    if re.match('Session=plasmawayland.desktop', line):
+                        line = 'Session=plasma.desktop'
+                    sddm_conf.write(line)                    
+        else:
+            try:
+                libcalamares.utils.target_env_call(['pacman', '-R', '--noconfirm',
+                                                'xf86-video-nouveau'])
+            except Exception as e:
+                pass
+        if "amdgpu" in file_c:
+            print(file_c)
+        else:
+            try:
+                libcalamares.utils.target_env_call(['pacman', '-R', '--noconfirm',
+                                                'xf86-video-amdgpu'])
+            except Exception as e:
+                pass
+        if "ati" in file_c or "radeon" in file_c:
+            print(file_c)
+        else:
+            try:
+                libcalamares.utils.target_env_call(['pacman', '-R', '--noconfirm',
+                                                'xf86-video-ati'])
+            except Exception as e:
+                pass
+        if "vmware" in file_c:
+            print(file_c)
+        else:
+            try:
+                libcalamares.utils.target_env_call(['pacman', '-R', '--noconfirm',
+                                                'xf86-video-vmware'])
+            except Exception as e:
+                pass
+        f.close()
     else:
         try:
             libcalamares.utils.target_env_call(['pacman', '-R', '--noconfirm', 'xf86-video-ati',
