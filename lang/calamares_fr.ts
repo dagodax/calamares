@@ -565,7 +565,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="151"/>
         <source>LVM LV name</source>
-        <translation type="unfinished"/>
+        <translation>Nom du LVM LV</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="188"/>
@@ -1038,12 +1038,12 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="66"/>
         <source>&amp;Cancel</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Annuler</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="67"/>
         <source>&amp;OK</source>
-        <translation type="unfinished"/>
+        <translation>&amp;OK</translation>
     </message>
 </context>
 <context>
@@ -1524,13 +1524,13 @@ ajoute le flag, revenez en arrière et éditez la partition.&lt;br/&gt;&lt;br/&g
     <message>
         <location filename="../src/modules/plasmalnf/PlasmaLnfJob.cpp" line="41"/>
         <source>Plasma Look-and-Feel Job</source>
-        <translation type="unfinished"/>
+        <translation>Job de thème</translation>
     </message>
     <message>
         <location filename="../src/modules/plasmalnf/PlasmaLnfJob.cpp" line="73"/>
         <location filename="../src/modules/plasmalnf/PlasmaLnfJob.cpp" line="74"/>
         <source>Could not select KDE Plasma Look-and-Feel package</source>
-        <translation type="unfinished"/>
+        <translation>Impossible de sélectionner le paquet de thème KDE Plasma</translation>
     </message>
 </context>
 <context>
@@ -1538,17 +1538,17 @@ ajoute le flag, revenez en arrière et éditez la partition.&lt;br/&gt;&lt;br/&g
     <message>
         <location filename="../src/modules/plasmalnf/page_plasmalnf.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"/>
+        <translation>Formulaire</translation>
     </message>
     <message>
         <location filename="../src/modules/plasmalnf/page_plasmalnf.ui" line="20"/>
         <source>Placeholder</source>
-        <translation type="unfinished"/>
+        <translation>Caractère générique</translation>
     </message>
     <message>
         <location filename="../src/modules/plasmalnf/PlasmaLnfPage.cpp" line="64"/>
         <source>Please choose a look-and-feel for the KDE Plasma Desktop. You can also skip this step and configure the look-and-feel once the system is installed.</source>
-        <translation type="unfinished"/>
+        <translation>Veuillez choiser le thème pour le bureau KDE Plasma. Vous pouvez également sauter cette étape et configurer le thème une fois le système installé.</translation>
     </message>
 </context>
 <context>
@@ -1556,7 +1556,7 @@ ajoute le flag, revenez en arrière et éditez la partition.&lt;br/&gt;&lt;br/&g
     <message>
         <location filename="../src/modules/plasmalnf/PlasmaLnfViewStep.cpp" line="51"/>
         <source>Look-and-Feel</source>
-        <translation type="unfinished"/>
+        <translation>Aspect visuel</translation>
     </message>
 </context>
 <context>
@@ -2043,12 +2043,12 @@ ajoute le flag, revenez en arrière et éditez la partition.&lt;br/&gt;&lt;br/&g
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="494"/>
         <source>Password is too short</source>
-        <translation type="unfinished"/>
+        <translation>Le mot de passe est trop court</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="513"/>
         <source>Password is too long</source>
-        <translation type="unfinished"/>
+        <translation>Le mot de passe est trop long</translation>
     </message>
 </context>
 <context>
@@ -2109,7 +2109,7 @@ ajoute le flag, revenez en arrière et éditez la partition.&lt;br/&gt;&lt;br/&g
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="75"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014-2017 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Copyright 2017 Adriaan de Groot &amp;lt;groot@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Lisa Vitolo, Philip Müller, Pier Luigi Fiorini, Rohan Garg and the &lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;KaOS translators team&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;pour %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014-2017 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Copyright 2017 Adriaan de Groot &amp;lt;groot@kde.org&amp;gt;&lt;br/&gt;Merci à : Anke Boersma, Aurélien Gâteau, Kevin Kofler, Lisa Vitolo, Philip Müller, Pier Luigi Fiorini, Rohan Garg et l’&lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;équipe de traducteurs KaOS&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;Le développement de &lt;a href=&quot;https://calamares.io/&quot;&gt;Calamares&lt;/a&gt; est sponsorisé par &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="201"/>

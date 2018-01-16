@@ -565,7 +565,7 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="151"/>
         <source>LVM LV name</source>
-        <translation type="unfinished"/>
+        <translation>Nom per a LVM LV</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="188"/>
@@ -1038,12 +1038,12 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="66"/>
         <source>&amp;Cancel</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Cancel·la</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="67"/>
         <source>&amp;OK</source>
-        <translation type="unfinished"/>
+        <translation>D&apos;ac&amp;ord</translation>
     </message>
 </context>
 <context>
@@ -1523,13 +1523,13 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/plasmalnf/PlasmaLnfJob.cpp" line="41"/>
         <source>Plasma Look-and-Feel Job</source>
-        <translation type="unfinished"/>
+        <translation>Tasca de l&apos;aspecte i comportament del Plasma</translation>
     </message>
     <message>
         <location filename="../src/modules/plasmalnf/PlasmaLnfJob.cpp" line="73"/>
         <location filename="../src/modules/plasmalnf/PlasmaLnfJob.cpp" line="74"/>
         <source>Could not select KDE Plasma Look-and-Feel package</source>
-        <translation type="unfinished"/>
+        <translation>No s&apos;ha pogut seleccionar el paquet de l&apos;aspecte i comportament del Plasma de KDE.</translation>
     </message>
 </context>
 <context>
@@ -1537,17 +1537,17 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/plasmalnf/page_plasmalnf.ui" line="14"/>
         <source>Form</source>
-        <translation type="unfinished"/>
+        <translation>Formulari</translation>
     </message>
     <message>
         <location filename="../src/modules/plasmalnf/page_plasmalnf.ui" line="20"/>
         <source>Placeholder</source>
-        <translation type="unfinished"/>
+        <translation>Marcador de posció</translation>
     </message>
     <message>
         <location filename="../src/modules/plasmalnf/PlasmaLnfPage.cpp" line="64"/>
         <source>Please choose a look-and-feel for the KDE Plasma Desktop. You can also skip this step and configure the look-and-feel once the system is installed.</source>
-        <translation type="unfinished"/>
+        <translation>Si us plau, trieu un aspecte i comportament per a l&apos;escriptori Plasma de KDE. També podeu ometre aquest pas i configurar-ho un cop instal·lat el sistema.</translation>
     </message>
 </context>
 <context>
@@ -1555,7 +1555,7 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/plasmalnf/PlasmaLnfViewStep.cpp" line="51"/>
         <source>Look-and-Feel</source>
-        <translation type="unfinished"/>
+        <translation>Aspecte i comportament</translation>
     </message>
 </context>
 <context>
@@ -2042,12 +2042,12 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="494"/>
         <source>Password is too short</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya és massa breu.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/UsersPage.cpp" line="513"/>
         <source>Password is too long</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya és massa llarga.</translation>
     </message>
 </context>
 <context>
@@ -2108,7 +2108,7 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="75"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014-2017 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Copyright 2017 Adriaan de Groot &amp;lt;groot@kde.org&amp;gt;&lt;br/&gt;Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Lisa Vitolo, Philip Müller, Pier Luigi Fiorini, Rohan Garg and the &lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;KaOS translators team&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014-2017 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Copyright 2017 Adriaan de Groot &amp;lt;groot@kde.org&amp;gt;&lt;br/&gt;Agraïments: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Lisa Vitolo, Philip Müller, Pier Luigi Fiorini, Rohan Garg i a &lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;l&apos;equip de traductors del KaOS&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;El desenvolupament del&lt;a href=&quot;https://calamares.io/&quot;&gt;Calamares&lt;/a&gt; està patrocinat per &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="201"/>
