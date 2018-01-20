@@ -65,7 +65,7 @@ def run():
     if fw_type == 'efi':
         print('Removing grub packages')
         libcalamares.utils.target_env_call(
-            ['pacman', '-Rns', '--noconfirm', 'grub', 'grub-theme-midna'])
+            ['pacman', '-Rncs', '--noconfirm', 'grub'])
         
     if fw_type == 'bios':
         print('Removing EFI packages')
