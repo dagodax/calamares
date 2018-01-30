@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # === This file is part of Calamares - <https://github.com/calamares> ===
 #
-#   Copyright 2014-2017, Anke Boersma <demm@kaosx.us>
+#   Copyright 2014-2018, Anke Boersma <demm@kaosx.us>
 #   Copyright 2014, Benjamin Vaudour <benjamin.vaudour@yahoo.fr>
 #
 #   Calamares is free software: you can redistribute it and/or modify
@@ -44,7 +44,7 @@ def get_uuid():
     print(partitions)
     for partition in partitions:
         if partition["mountPoint"] == "/":
-            print(partition["uuid"])
+            libcalamares.utils.debug(partition["uuid"])
             return partition["uuid"]
     return ""
 
@@ -175,7 +175,7 @@ def install_bootloader(boot_loader, fw_type):
 
         for partition in partitions:
             if partition["mountPoint"] == "/boot":
-                print(partition["device"])
+                libcalamares.utils.debug(partition["device"])
                 boot_device = partition["device"]
                 boot_p = boot_device[-1:]
                 device = boot_device[:-1]
@@ -216,7 +216,7 @@ def run():
     fw_type = libcalamares.globalstorage.value("firmwareType")
     
     if libcalamares.globalstorage.value("bootLoader") is None and fw_type != "efi":
-        print('no bootloader install')
+        libcalamares.utils.debug('no bootloader install')
         return None
     
     install_bootloader(boot_loader, fw_type)

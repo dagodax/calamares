@@ -3,7 +3,7 @@
 #
 # === This file is part of Calamares - <http://github.com/calamares> ===
 #
-#   Copyright 2014-2016 KaOS (http://kaosx.us)
+#   Copyright 2014-2018 KaOS (http://kaosx.us)
 #
 #   Calamares is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -46,7 +46,7 @@ def run():
     
     if os.path.exists(searchf):
         if "i915" in file_c:
-            print(file_c)
+            libcalamares.utils.debug(file_c)
         else:
             try:
                 libcalamares.utils.target_env_call(['pacman', '-R', '--noconfirm',
@@ -54,7 +54,7 @@ def run():
             except Exception as e:
                 pass
         if "nouveau" in file_c:
-            print(file_c)
+            libcalamares.utils.debug(file_c)
             sddm_conf_path = os.path.join(install_path, "etc/sddm.conf")
             text = []
             with open(sddm_conf_path, 'r') as sddm_conf:
@@ -71,7 +71,7 @@ def run():
             except Exception as e:
                 pass
         if "amdgpu" in file_c:
-            print(file_c)
+            libcalamares.utils.debug(file_c)
         else:
             try:
                 libcalamares.utils.target_env_call(['pacman', '-R', '--noconfirm',
@@ -79,7 +79,7 @@ def run():
             except Exception as e:
                 pass
         if "ati" in file_c or "radeon" in file_c:
-            print(file_c)
+            libcalamares.utils.debug(file_c)
         else:
             try:
                 libcalamares.utils.target_env_call(['pacman', '-R', '--noconfirm',
@@ -87,7 +87,7 @@ def run():
             except Exception as e:
                 pass
         if "vmware" in file_c:
-            print(file_c)
+            libcalamares.utils.debug(file_c)
         else:
             try:
                 libcalamares.utils.target_env_call(['pacman', '-R', '--noconfirm',
