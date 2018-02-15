@@ -105,7 +105,7 @@
 <context>
     <name>Calamares::JobThread</name>
     <message>
-        <location filename="../src/libcalamares/JobQueue.cpp" line="89"/>
+        <location filename="../src/libcalamares/JobQueue.cpp" line="86"/>
         <source>Done</source>
         <translation>Gereed</translation>
     </message>
@@ -121,68 +121,6 @@
         <location filename="../src/libcalamares/ProcessJob.cpp" line="60"/>
         <source>Running command %1 %2</source>
         <translation>Opdracht %1 %2 aan het uitvoeren</translation>
-    </message>
-    <message>
-        <location filename="../src/libcalamares/ProcessJob.cpp" line="155"/>
-        <source>External command crashed</source>
-        <translation>Externe opdracht is gecrashed</translation>
-    </message>
-    <message>
-        <location filename="../src/libcalamares/ProcessJob.cpp" line="156"/>
-        <source>Command %1 crashed.
-Output:
-%2</source>
-        <translation>Opdracht %1 is gecrashed.
-Output:
-%2</translation>
-    </message>
-    <message>
-        <location filename="../src/libcalamares/ProcessJob.cpp" line="161"/>
-        <source>External command failed to start</source>
-        <translation>Externe opdracht starten mislukt</translation>
-    </message>
-    <message>
-        <location filename="../src/libcalamares/ProcessJob.cpp" line="162"/>
-        <source>Command %1 failed to start.</source>
-        <translation>Opdracht %1 starten mislukt.</translation>
-    </message>
-    <message>
-        <location filename="../src/libcalamares/ProcessJob.cpp" line="166"/>
-        <source>Internal error when starting command</source>
-        <translation>Interne fout bij starten opdracht</translation>
-    </message>
-    <message>
-        <location filename="../src/libcalamares/ProcessJob.cpp" line="167"/>
-        <source>Bad parameters for process job call.</source>
-        <translation>Onjuiste parameters voor procestaak</translation>
-    </message>
-    <message>
-        <location filename="../src/libcalamares/ProcessJob.cpp" line="170"/>
-        <source>External command failed to finish</source>
-        <translation>Externe opdracht voltooiing mislukt</translation>
-    </message>
-    <message>
-        <location filename="../src/libcalamares/ProcessJob.cpp" line="171"/>
-        <source>Command %1 failed to finish in %2s.
-Output:
-%3</source>
-        <translation>Opdracht %1 mislukt voor voltooiing in %2s.
-Uitvoer:
-%3</translation>
-    </message>
-    <message>
-        <location filename="../src/libcalamares/ProcessJob.cpp" line="177"/>
-        <source>External command finished with errors</source>
-        <translation>Externe opdracht voltooid met fouten</translation>
-    </message>
-    <message>
-        <location filename="../src/libcalamares/ProcessJob.cpp" line="178"/>
-        <source>Command %1 finished with exit code %2.
-Output:
-%3</source>
-        <translation>Opdracht %1 voltooid met exit code %2.
-Uitvoer:
-%3</translation>
     </message>
 </context>
 <context>
@@ -227,85 +165,91 @@ Uitvoer:
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="74"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="257"/>
         <source>&amp;Next</source>
         <translation>&amp;Volgende</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="75"/>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="278"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="266"/>
         <source>&amp;Cancel</source>
         <translation>&amp;Annuleren</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="76"/>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="279"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="267"/>
         <source>Cancel installation without changing the system.</source>
         <translation>De installatie annuleren zonder het systeem te wijzigen.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="290"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="255"/>
+        <source>&amp;Install</source>
+        <translation>&amp;Installeer</translation>
+    </message>
+    <message>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="303"/>
         <source>Cancel installation?</source>
         <translation>Installatie annuleren?</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="291"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="304"/>
         <source>Do you really want to cancel the current install process?
 The installer will quit and all changes will be lost.</source>
         <translation>Wil je echt de huidige installatie proces annuleren?
 Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="296"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="309"/>
         <source>&amp;Yes</source>
         <translation>&amp;Ja</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="297"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="310"/>
         <source>&amp;No</source>
         <translation>&amp;Nee</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="161"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="162"/>
         <source>&amp;Close</source>
         <translation>&amp;Afsluiten</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="211"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="215"/>
         <source>Continue with setup?</source>
         <translation>Doorgaan met setup?</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="212"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="216"/>
         <source>The %1 installer is about to make changes to your disk in order to install %2.&lt;br/&gt;&lt;strong&gt;You will not be able to undo these changes.&lt;/strong&gt;</source>
         <translation>Het %1 installeer programma zal nu wijzigingen in je schijf maken om %2 te installeren.&lt;br/&gt;&lt;strong&gt;Je zult niet in staat zijn om deze veranderingen ongedaan te maken. .&lt;/strong&gt;</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="217"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="221"/>
         <source>&amp;Install now</source>
         <translation>&amp;Nu installeren</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="218"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="222"/>
         <source>Go &amp;back</source>
         <translation>Ga &amp;terug</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="247"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="261"/>
         <source>&amp;Done</source>
         <translation>&amp;Klaar</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="248"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="262"/>
         <source>The installation is complete. Close the installer.</source>
         <translation>De installatie is voltooid. Sluit het installatieprogramma.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="158"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="159"/>
         <source>Error</source>
         <translation>Fout</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="159"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="160"/>
         <source>Installation Failed</source>
         <translation>Installatie Mislukt</translation>
     </message>
@@ -313,22 +257,22 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
 <context>
     <name>CalamaresPython::Helper</name>
     <message>
-        <location filename="../src/libcalamares/PythonHelper.cpp" line="268"/>
+        <location filename="../src/libcalamares/PythonHelper.cpp" line="270"/>
         <source>Unknown exception type</source>
         <translation>Onbekend uitzonderingstype</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonHelper.cpp" line="282"/>
+        <location filename="../src/libcalamares/PythonHelper.cpp" line="284"/>
         <source>unparseable Python error</source>
         <translation>onuitvoerbare Python fout</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonHelper.cpp" line="322"/>
+        <location filename="../src/libcalamares/PythonHelper.cpp" line="324"/>
         <source>unparseable Python traceback</source>
         <translation>onuitvoerbare Python traceback</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonHelper.cpp" line="327"/>
+        <location filename="../src/libcalamares/PythonHelper.cpp" line="329"/>
         <source>Unfetchable Python error.</source>
         <translation>Onbekende Python fout.</translation>
     </message>
@@ -528,6 +472,19 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
         <location filename="../src/modules/partition/jobs/ClearTempMountsJob.cpp" line="99"/>
         <source>Cleared all temporary mounts.</source>
         <translation>Alle tijdelijke mounts geruimd.</translation>
+    </message>
+</context>
+<context>
+    <name>CommandList</name>
+    <message>
+        <location filename="../src/libcalamares/utils/CommandList.cpp" line="113"/>
+        <source>Could not run command.</source>
+        <translation>Kan de opdracht niet uitvoeren.</translation>
+    </message>
+    <message>
+        <location filename="../src/libcalamares/utils/CommandList.cpp" line="114"/>
+        <source>No rootMountPoint is defined, so command cannot be run in the target environment.</source>
+        <translation>Geen rootMountPoint is aangegeven, dus de opdracht kan niet uitgevoerd worden in target environment.</translation>
     </message>
 </context>
 <context>
@@ -946,7 +903,12 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
         <translation>From</translation>
     </message>
     <message>
-        <location filename="../src/modules/finished/FinishedPage.ui" line="77"/>
+        <location filename="../src/modules/finished/FinishedPage.ui" line="95"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;When this box is checked, your system will restart immediately when you click on &lt;span style=&quot; font-style:italic;&quot;&gt;Done&lt;/span&gt; or close the installer.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wanneer dit vakje is aangevinkt, zal je systeem onmiddellijk herstarten als je&lt;span style=&quot; font-style:italic;&quot;&gt;Klaar&lt;/span&gt; aanklikt of het installatieprogramma sluit.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/finished/FinishedPage.ui" line="98"/>
         <source>&amp;Restart now</source>
         <translation>&amp;Nu herstarten</translation>
     </message>
@@ -1175,6 +1137,249 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
         <location filename="../src/modules/locale/LocaleViewStep.cpp" line="169"/>
         <source>Location</source>
         <translation>Plaats</translation>
+    </message>
+</context>
+<context>
+    <name>PWQ</name>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="67"/>
+        <source>Password is too short</source>
+        <translation>Wachtwoord is te kort</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="89"/>
+        <source>Password is too long</source>
+        <translation>Wachtwoord is te lang</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="155"/>
+        <source>Password is too weak</source>
+        <translation>Wachtwoord is te zwak</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="162"/>
+        <source>Memory allocation error when setting &apos;%1&apos;</source>
+        <translation>Geheugentoewijzingsfout bij het instellen van &apos;%1&apos;</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="166"/>
+        <source>Memory allocation error</source>
+        <translation>Geheugen allocatie fout</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="168"/>
+        <source>The password is the same as the old one</source>
+        <translation>Het wachtwoord is hetzelfde als het oude</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="170"/>
+        <source>The password is a palindrome</source>
+        <translation>Het wachtwoord is een palindroom</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="172"/>
+        <source>The password differs with case changes only</source>
+        <translation>Het wachtwoord verschilt alleen met hoofdletterwijzigingen</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="174"/>
+        <source>The password is too similar to the old one</source>
+        <translation>Het wachtwoord lijkt te veel op het oude wachtwoord</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="176"/>
+        <source>The password contains the user name in some form</source>
+        <translation>Het wachtwoord bevat de gebruikersnaam in een of andere vorm</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="178"/>
+        <source>The password contains words from the real name of the user in some form</source>
+        <translation>Het wachtwoord bevat woorden van de echte naam van de gebruiker in een of andere vorm</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="180"/>
+        <source>The password contains forbidden words in some form</source>
+        <translation>Het wachtwoord bevat verboden woorden in een of andere vorm</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="183"/>
+        <source>The password contains less than %1 digits</source>
+        <translation>Het wachtwoord bevat minder dan %1 cijfers</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="184"/>
+        <source>The password contains too few digits</source>
+        <translation>Het wachtwoord bevat te weinig cijfers</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="187"/>
+        <source>The password contains less than %1 uppercase letters</source>
+        <translation>Het wachtwoord bevat minder dan % 1 hoofdletters</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="188"/>
+        <source>The password contains too few uppercase letters</source>
+        <translation>Het wachtwoord bevat te weinig hoofdletters</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="191"/>
+        <source>The password contains less than %1 lowercase letters</source>
+        <translation>Het wachtwoord bevat minder dan % 1 kleine letters </translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="192"/>
+        <source>The password contains too few lowercase letters</source>
+        <translation>Het wachtwoord bevat te weinig kleine letters</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="195"/>
+        <source>The password contains less than %1 non-alphanumeric characters</source>
+        <translation>Het wachtwoord bevat minder dan % 1 niet-alfanumerieke karakters</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="196"/>
+        <source>The password contains too few non-alphanumeric characters</source>
+        <translation>Het wachtwoord bevat te weinig niet-alfanumerieke karakters</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="199"/>
+        <source>The password is shorter than %1 characters</source>
+        <translation>Het wachtwoord is korter dan %1 letters</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="200"/>
+        <source>The password is too short</source>
+        <translation>Het wachtwoord is te kort</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="202"/>
+        <source>The password is just rotated old one</source>
+        <translation>Het wachtwoord is gewoon oud gedraaid</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="205"/>
+        <source>The password contains less than %1 character classes</source>
+        <translation>Het wachtwoord bevat minder dan %1 tekenklassen</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="206"/>
+        <source>The password does not contain enough character classes</source>
+        <translation>Het wachtwoord bevat niet genoeg tekenklassen</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="209"/>
+        <source>The password contains more than %1 same characters consecutively</source>
+        <translation>Het wachtwoord bevat meer dan %1 dezelfde tekens achter elkaar</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="210"/>
+        <source>The password contains too many same characters consecutively</source>
+        <translation>Het wachtwoord bevat te veel dezelfde tekens achter elkaar</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="213"/>
+        <source>The password contains more than %1 characters of the same class consecutively</source>
+        <translation>Het wachtwoord bevat meer dan %1 tekens van dezelfde klasse opeenvolgend</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="214"/>
+        <source>The password contains too many characters of the same class consecutively</source>
+        <translation>Het wachtwoord bevat achtereenvolgens te veel tekens van dezelfde klasse</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="217"/>
+        <source>The password contains monotonic sequence longer than %1 characters</source>
+        <translation>Het wachtwoord bevat een monotone reeks langer dan %1 tekens</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="218"/>
+        <source>The password contains too long of a monotonic character sequence</source>
+        <translation>Het wachtwoord bevat een te lange monotoon tekenreeks</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="220"/>
+        <source>No password supplied</source>
+        <translation>Geen wachtwoord opgegeven</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="222"/>
+        <source>Cannot obtain random numbers from the RNG device</source>
+        <translation>Kan geen willekeurige nummers van het RNG-apparaat verkrijgen</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="224"/>
+        <source>Password generation failed - required entropy too low for settings</source>
+        <translation>Wachtwoord generatie mislukt - vereist entropie te laag voor instellingen</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="229"/>
+        <source>The password fails the dictionary check - %1</source>
+        <translation>Het wachtwoord faalt de woordenboekcontrole -%1</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="231"/>
+        <source>The password fails the dictionary check</source>
+        <translation>Het wachtwoord faalt de woordenboekcontrole</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="235"/>
+        <source>Unknown setting - %1</source>
+        <translation>Onbekende instelling - %1</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="239"/>
+        <source>Unknown setting</source>
+        <translation>Onbekende instelling</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="243"/>
+        <source>Bad integer value of setting - %1</source>
+        <translation>Slechte gehele waarde van instelling - %1</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="247"/>
+        <source>Bad integer value</source>
+        <translation>Slechte gehele waarde van instelling</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="251"/>
+        <source>Setting %1 is not of integer type</source>
+        <translation>Het instellen van %1 is niet van het type integer</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="255"/>
+        <source>Setting is not of integer type</source>
+        <translation>Instelling is niet van het type integer</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="259"/>
+        <source>Setting %1 is not of string type</source>
+        <translation>Instelling van %1 is niet van het type string</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="263"/>
+        <source>Setting is not of string type</source>
+        <translation>Instelling heeft geen stringtype</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="265"/>
+        <source>Opening the configuration file failed</source>
+        <translation>Het openen van het configuratiebestand is mislukt</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="267"/>
+        <source>The configuration file is malformed</source>
+        <translation>Het configuratiebestand is verkeerd ingedeeld</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="269"/>
+        <source>Fatal failure</source>
+        <translation>Fatal failure</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="271"/>
+        <source>Unknown error</source>
+        <translation>Onbekende fout</translation>
     </message>
 </context>
 <context>
@@ -1496,23 +1701,23 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
         <translation>Een EFI systeem partitie is noodzakelijk om %1 te starten.&lt;br/&gt;&lt;br/&gt;Een partitie is geconfigureerd met mount point &lt;strong&gt;%2&lt;/strong&gt; maar de &lt;strong&gt;esp&lt;/strong&gt; flag is niet ingesteld.&lt;br/&gt;&lt;br/&gt;Je kunt doorgaan zonder het opzetten van een EFI-systeempartitie, maar het systeem kan niet worden gestart.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="448"/>
+        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="449"/>
         <source>Option to use GPT on BIOS</source>
         <translation>Optie om GPT op BIOS te gebruiken</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="449"/>
+        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="450"/>
         <source>A GPT partition table is the best option for all systems. This installer supports such a setup for BIOS systems too.&lt;br/&gt;&lt;br/&gt;To configure a GPT partition table on BIOS, (if not done so already) go back and set the partion table to GPT, next create a 8 MB unformatted partition with the &lt;strong&gt;bios_grub&lt;/strong&gt; flag enabled.&lt;br/&gt;&lt;br/&gt;An unformatted 8 MB partition is necessary to start %1 on a BIOS system with GPT.</source>
         <translation>Een GPT partitietabel is de beste optie voor alle systemen. Dit installatieprogramma ondersteunt een dergelijke setup voor BIOS-systemen ook.&lt;br/&gt;&lt;br/&gt;Om een GPT partitietabel op BIOS te configureren, (als dat nog niet gedaan is) ga terug en zet de partitietabel naar GPT, vervolgens creëer een 8 MB niet-geformatteerde partitie met de &lt;strong&gt;bios_grub&lt;/strong&gt; vlag ingeschakeld.&lt;br/&gt;&lt;br/&gt;Een niet-geformatteerde 8 MB partitie is nodig om %1 te starten op een BIOS-systeem met GPT.</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="484"/>
+        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="485"/>
         <location filename="../src/modules/partition/gui/PartitionViewStep_orig.cpp" line="456"/>
         <source>Boot partition not encrypted</source>
         <translation>Boot partitie niet versleuteld</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="485"/>
+        <location filename="../src/modules/partition/gui/PartitionViewStep.cpp" line="486"/>
         <location filename="../src/modules/partition/gui/PartitionViewStep_orig.cpp" line="457"/>
         <source>A separate boot partition was set up together with an encrypted root partition, but the boot partition is not encrypted.&lt;br/&gt;&lt;br/&gt;There are security concerns with this kind of setup, because important system files are kept on an unencrypted partition.&lt;br/&gt;You may continue if you wish, but filesystem unlocking will happen later during system startup.&lt;br/&gt;To encrypt the boot partition, go back and recreate it, selecting &lt;strong&gt;Encrypt&lt;/strong&gt; in the partition creation window.</source>
         <translation>Een aparte boot partitie is opgezet samen met een versleutelde root-partitie, maar de boot partitie is niet versleuteld.&lt;br/&gt;&lt;br/&gt;Er is bezorgheid over de beveiliging in dit soort setup, omdat belangrijke systeembestanden op een niet-versleutelde partitie worden gehouden.&lt;br/&gt;Je kunt doorgaan als je wilt, maar filesystem unlocken zal later gebeuren tijdens het opstarten.&lt;br/&gt;Om de boot partitie te versleutelen, ga terug en maak het opnieuw op, selecteer &lt;strong&gt;Versleutelen&lt;/strong&gt; in het venster partitie creatie.</translation>
@@ -1559,6 +1764,75 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
     </message>
 </context>
 <context>
+    <name>ProcessResult</name>
+    <message>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="263"/>
+        <source>
+There was no output from the command.</source>
+        <translation>
+Er was geen uitvoer van het commando.</translation>
+    </message>
+    <message>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="264"/>
+        <source>
+Output:
+</source>
+        <translation>
+Output:
+</translation>
+    </message>
+    <message>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="267"/>
+        <source>External command crashed.</source>
+        <translation>Externe opdracht is gecrashed.</translation>
+    </message>
+    <message>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="268"/>
+        <source>Command &lt;i&gt;%1&lt;/i&gt; crashed.</source>
+        <translation>Command &lt;i&gt;%1&lt;/i&gt; crashed.</translation>
+    </message>
+    <message>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="273"/>
+        <source>External command failed to start.</source>
+        <translation>Externe opdracht starten mislukt.</translation>
+    </message>
+    <message>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="274"/>
+        <source>Command &lt;i&gt;%1&lt;/i&gt; failed to start.</source>
+        <translation>Command &lt;i&gt;%1&lt;/i&gt; failed to start.</translation>
+    </message>
+    <message>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="278"/>
+        <source>Internal error when starting command.</source>
+        <translation>Interne fout bij starten opdracht.</translation>
+    </message>
+    <message>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="279"/>
+        <source>Bad parameters for process job call.</source>
+        <translation>Onjuiste parameters voor procestaak</translation>
+    </message>
+    <message>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="282"/>
+        <source>External command failed to finish.</source>
+        <translation>Externe opdracht voltooiing mislukt.</translation>
+    </message>
+    <message>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="283"/>
+        <source>Command &lt;i&gt;%1&lt;/i&gt; failed to finish in %2 seconds.</source>
+        <translation>Command &lt;i&gt;%1&lt;/i&gt; failed to finish in %2 seconds.</translation>
+    </message>
+    <message>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="289"/>
+        <source>External command finished with errors.</source>
+        <translation>Externe opdracht voltooid met fouten.</translation>
+    </message>
+    <message>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="290"/>
+        <source>Command &lt;i&gt;%1&lt;/i&gt; finished with exit code %2.</source>
+        <translation>Command &lt;i&gt;%1&lt;/i&gt; finished with exit code %2.</translation>
+    </message>
+</context>
+<context>
     <name>QObject</name>
     <message>
         <location filename="../src/modules/keyboard/keyboardwidget/keyboardglobal.cpp" line="82"/>
@@ -1577,22 +1851,22 @@ Het installeerprogramma zal stoppen en alle wijzigingen zullen verloren gaan.</t
         <translation>Niet gepartitioneerde ruimte of onbekende partitietabel</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="204"/>
+        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="206"/>
         <source>unknown</source>
         <translation>onbekend</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="206"/>
+        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="208"/>
         <source>extended</source>
         <translation>uitgebreid</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="208"/>
+        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="210"/>
         <source>unformatted</source>
         <translation>ongeformatteerd</translation>
     </message>
     <message>
-        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="210"/>
+        <location filename="../src/modules/partition/core/KPMHelpers.cpp" line="212"/>
         <source>swap</source>
         <translation>swap</translation>
     </message>
@@ -2010,45 +2284,35 @@ is verbonden met het internet</translation>
 <context>
     <name>UsersPage</name>
     <message>
-        <location filename="../src/modules/users/UsersPage.cpp" line="287"/>
+        <location filename="../src/modules/users/UsersPage.cpp" line="289"/>
         <source>Your username is too long.</source>
         <translation>Je gebruikersnaam is the lang.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/UsersPage.cpp" line="293"/>
+        <location filename="../src/modules/users/UsersPage.cpp" line="295"/>
         <source>Your username contains invalid characters. Only lowercase letters and numbers are allowed.</source>
         <translation>De gebruikersnaam bevat ongeldig karakters.  Alleen letters, cijfers en streepjes zijn toegestaan.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/UsersPage.cpp" line="331"/>
+        <location filename="../src/modules/users/UsersPage.cpp" line="333"/>
         <source>Your hostname is too short.</source>
         <translation>De hostname is te kort.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/UsersPage.cpp" line="337"/>
+        <location filename="../src/modules/users/UsersPage.cpp" line="339"/>
         <source>Your hostname is too long.</source>
         <translation>Je hostname is te lang.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/UsersPage.cpp" line="343"/>
+        <location filename="../src/modules/users/UsersPage.cpp" line="345"/>
         <source>Your hostname contains invalid characters. Only letters, numbers and dashes are allowed.</source>
         <translation>De hostname bevat ongeldige karakters.  Slechts letters, cijfers en streepjes zijn toegestaan. </translation>
     </message>
     <message>
-        <location filename="../src/modules/users/UsersPage.cpp" line="371"/>
-        <location filename="../src/modules/users/UsersPage.cpp" line="415"/>
+        <location filename="../src/modules/users/UsersPage.cpp" line="373"/>
+        <location filename="../src/modules/users/UsersPage.cpp" line="417"/>
         <source>Your passwords do not match!</source>
         <translation>De wachtwoorden komen niet overeen!</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/users/UsersPage.cpp" line="494"/>
-        <source>Password is too short</source>
-        <translation>Wachtwoord is te kort</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/users/UsersPage.cpp" line="513"/>
-        <source>Password is too long</source>
-        <translation>Wachtwoord is te lang</translation>
     </message>
 </context>
 <context>
