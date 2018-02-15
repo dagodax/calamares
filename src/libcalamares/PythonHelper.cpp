@@ -223,7 +223,7 @@ Helper::Helper( QObject* parent )
     }
     else
     {
-        cDebug() << "WARNING: creating PythonHelper more than once. This is very bad.";
+        cWarning() << "creating PythonHelper more than once. This is very bad.";
         return;
     }
 
@@ -231,7 +231,9 @@ Helper::Helper( QObject* parent )
 }
 
 Helper::~Helper()
-{}
+{
+    s_instance = nullptr;
+}
 
 
 boost::python::dict
