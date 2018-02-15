@@ -1547,7 +1547,7 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     <message>
         <location filename="../src/modules/plasmalnf/PlasmaLnfPage.cpp" line="64"/>
         <source>Please choose a look-and-feel for the KDE Plasma Desktop. You can also skip this step and configure the look-and-feel once the system is installed.</source>
-        <translation type="unfinished"/>
+        <translation>Prosím vyberte si vzhled pro KDE Plasma desktop. Tento krok můžete přeskočit a nastavit si vzhled až po instalaci systému.</translation>
     </message>
 </context>
 <context>

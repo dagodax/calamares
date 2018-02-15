@@ -565,7 +565,7 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="151"/>
         <source>LVM LV name</source>
-        <translation>Nom per a LVM LV</translation>
+        <translation>Nom per a LV LVM</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="188"/>
