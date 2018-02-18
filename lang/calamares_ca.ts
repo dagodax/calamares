@@ -184,7 +184,7 @@
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="255"/>
         <source>&amp;Install</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Instal·la</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="303"/>
@@ -479,12 +479,12 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/libcalamares/utils/CommandList.cpp" line="113"/>
         <source>Could not run command.</source>
-        <translation type="unfinished"/>
+        <translation>No s&apos;ha pogut executar l&apos;ordre.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/utils/CommandList.cpp" line="114"/>
         <source>No rootMountPoint is defined, so command cannot be run in the target environment.</source>
-        <translation type="unfinished"/>
+        <translation>No hi ha punt de muntatge d&apos;arrel definit; per tant, no es pot executar l&apos;ordre a l&apos;entorn de destinació.</translation>
     </message>
 </context>
 <context>
@@ -905,7 +905,7 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/finished/FinishedPage.ui" line="95"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;When this box is checked, your system will restart immediately when you click on &lt;span style=&quot; font-style:italic;&quot;&gt;Done&lt;/span&gt; or close the installer.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Quan aquesta casella està marcada, el sistema es reiniciarà immediatament quan cliqueu a &lt;span style=&quot; font-style:italic;&quot;&gt;Fet&lt;/span&gt; o tanqueu l&apos;instal·lador.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/finished/FinishedPage.ui" line="98"/>
@@ -1144,242 +1144,242 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="67"/>
         <source>Password is too short</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya és massa curta.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="89"/>
         <source>Password is too long</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya és massa llarga.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="155"/>
         <source>Password is too weak</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya és massa dèbil.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="162"/>
         <source>Memory allocation error when setting &apos;%1&apos;</source>
-        <translation type="unfinished"/>
+        <translation>Error d&apos;assignació de memòria mentre s&apos;establia &quot;%1&quot;.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="166"/>
         <source>Memory allocation error</source>
-        <translation type="unfinished"/>
+        <translation>Error d&apos;assignació de memòria</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="168"/>
         <source>The password is the same as the old one</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya és la mateixa que l&apos;anterior.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="170"/>
         <source>The password is a palindrome</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya és un palíndrom.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="172"/>
         <source>The password differs with case changes only</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya només es diferencia pels canvis de minúscules i majúscules.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="174"/>
         <source>The password is too similar to the old one</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya és massa semblant a l&apos;anterior.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="176"/>
         <source>The password contains the user name in some form</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya conté el nom d&apos;usuari d&apos;alguna manera.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="178"/>
         <source>The password contains words from the real name of the user in some form</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya conté paraules del nom real de l&apos;usuari d&apos;alguna manera.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="180"/>
         <source>The password contains forbidden words in some form</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya conté paraules prohibides d&apos;alguna manera.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="183"/>
         <source>The password contains less than %1 digits</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya conté menys de %1 dígits.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="184"/>
         <source>The password contains too few digits</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya conté massa pocs dígits.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="187"/>
         <source>The password contains less than %1 uppercase letters</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya conté menys de %1 lletres majúscules.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="188"/>
         <source>The password contains too few uppercase letters</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya conté massa poques lletres majúscules.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="191"/>
         <source>The password contains less than %1 lowercase letters</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya conté menys de %1 lletres minúscules.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="192"/>
         <source>The password contains too few lowercase letters</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya conté massa poques lletres minúscules.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="195"/>
         <source>The password contains less than %1 non-alphanumeric characters</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya conté menys de %1 caràcters no alfanumèrics.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="196"/>
         <source>The password contains too few non-alphanumeric characters</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya conté massa pocs caràcters no alfanumèrics.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="199"/>
         <source>The password is shorter than %1 characters</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya conté menys de %1 caràcters.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="200"/>
         <source>The password is too short</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya és massa curta.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="202"/>
         <source>The password is just rotated old one</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya és com l&apos;anterior però capgirada.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="205"/>
         <source>The password contains less than %1 character classes</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya conté menys de %1 classes de caràcters.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="206"/>
         <source>The password does not contain enough character classes</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya no conté prou classes de caràcters.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="209"/>
         <source>The password contains more than %1 same characters consecutively</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya conté més de %1 caràcters iguals consecutius.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="210"/>
         <source>The password contains too many same characters consecutively</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya conté massa caràcters iguals consecutius.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="213"/>
         <source>The password contains more than %1 characters of the same class consecutively</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya conté més de %1 caràcters iguals consecutius de la mateixa classe.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="214"/>
         <source>The password contains too many characters of the same class consecutively</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya conté massa caràcters iguals consecutius de la mateixa classe.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="217"/>
         <source>The password contains monotonic sequence longer than %1 characters</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya conté una seqüència monòtona de més de %1 de caràcters.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="218"/>
         <source>The password contains too long of a monotonic character sequence</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya conté una seqüència monòtona de caràcters massa llarga.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="220"/>
         <source>No password supplied</source>
-        <translation type="unfinished"/>
+        <translation>No s&apos;ha proporcionat cap contrasenya.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="222"/>
         <source>Cannot obtain random numbers from the RNG device</source>
-        <translation type="unfinished"/>
+        <translation>No es poden obtenir números aleatoris del dispositiu RNG.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="224"/>
         <source>Password generation failed - required entropy too low for settings</source>
-        <translation type="unfinished"/>
+        <translation>Ha fallat la generar la contrasenya. Entropia necessària massa baixa per als paràmetres.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="229"/>
         <source>The password fails the dictionary check - %1</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya no passa la comprovació del diccionari: %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="231"/>
         <source>The password fails the dictionary check</source>
-        <translation type="unfinished"/>
+        <translation>La contrasenya no passa la comprovació del diccionari.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="235"/>
         <source>Unknown setting - %1</source>
-        <translation type="unfinished"/>
+        <translation>Paràmetre desconegut: %1</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="239"/>
         <source>Unknown setting</source>
-        <translation type="unfinished"/>
+        <translation>Paràmetre desconegut</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="243"/>
         <source>Bad integer value of setting - %1</source>
-        <translation type="unfinished"/>
+        <translation>Valor enter del paràmetre incorrecte: %1</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="247"/>
         <source>Bad integer value</source>
-        <translation type="unfinished"/>
+        <translation>Valor enter incorrecte</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="251"/>
         <source>Setting %1 is not of integer type</source>
-        <translation type="unfinished"/>
+        <translation>El paràmetre %1 no és del tipus enter.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="255"/>
         <source>Setting is not of integer type</source>
-        <translation type="unfinished"/>
+        <translation>El paràmetre no és del tipus enter.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="259"/>
         <source>Setting %1 is not of string type</source>
-        <translation type="unfinished"/>
+        <translation>El paràmetre %1 no és del tipus cadena.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="263"/>
         <source>Setting is not of string type</source>
-        <translation type="unfinished"/>
+        <translation>El paràmetre no és del tipus cadena.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="265"/>
         <source>Opening the configuration file failed</source>
-        <translation type="unfinished"/>
+        <translation>Ha fallat obrir el fitxer de configuració.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="267"/>
         <source>The configuration file is malformed</source>
-        <translation type="unfinished"/>
+        <translation>El fitxer de configuració no està ben format.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="269"/>
         <source>Fatal failure</source>
-        <translation type="unfinished"/>
+        <translation>Fallada fatal</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="271"/>
         <source>Unknown error</source>
-        <translation type="unfinished"/>
+        <translation>Error desconegut</translation>
     </message>
 </context>
 <context>
@@ -1769,64 +1769,67 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
         <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="263"/>
         <source>
 There was no output from the command.</source>
-        <translation type="unfinished"/>
+        <translation>
+No hi ha hagut sortida de l&apos;ordre.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="264"/>
         <source>
 Output:
 </source>
-        <translation type="unfinished"/>
+        <translation>
+Sortida:
+</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="267"/>
         <source>External command crashed.</source>
-        <translation type="unfinished"/>
+        <translation>L&apos;ordre externa ha fallat.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="268"/>
         <source>Command &lt;i&gt;%1&lt;/i&gt; crashed.</source>
-        <translation type="unfinished"/>
+        <translation>Ha fallat l&apos;ordre &lt;i&gt;%1&lt;/i&gt;.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="273"/>
         <source>External command failed to start.</source>
-        <translation type="unfinished"/>
+        <translation>L&apos;ordre externa ha fallat l&apos;inici.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="274"/>
         <source>Command &lt;i&gt;%1&lt;/i&gt; failed to start.</source>
-        <translation type="unfinished"/>
+        <translation>L&apos;ordre &lt;i&gt;%1&lt;/i&gt; ha fallat l&apos;inici.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="278"/>
         <source>Internal error when starting command.</source>
-        <translation type="unfinished"/>
+        <translation>Error intern en iniciar l&apos;ordre.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="279"/>
         <source>Bad parameters for process job call.</source>
-        <translation type="unfinished"/>
+        <translation>Paràmetres incorrectes per a la crida de la tasca del procés.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="282"/>
         <source>External command failed to finish.</source>
-        <translation type="unfinished"/>
+        <translation>L&apos;ordre externa ha fallat l&apos;acabament.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="283"/>
         <source>Command &lt;i&gt;%1&lt;/i&gt; failed to finish in %2 seconds.</source>
-        <translation type="unfinished"/>
+        <translation>L&apos;ordre &lt;i&gt;%1&lt;/i&gt; ha fallat acabar en %2 segons.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="289"/>
         <source>External command finished with errors.</source>
-        <translation type="unfinished"/>
+        <translation>L&apos;ordre externa ha acabat amb errors.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="290"/>
         <source>Command &lt;i&gt;%1&lt;/i&gt; finished with exit code %2.</source>
-        <translation type="unfinished"/>
+        <translation>L&apos;ordre &lt;i&gt;%1&lt;/i&gt; ha acabat amb el codi de sortida %2.</translation>
     </message>
 </context>
 <context>

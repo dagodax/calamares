@@ -184,7 +184,7 @@
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="255"/>
         <source>&amp;Install</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Telepítés</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="303"/>
@@ -480,7 +480,7 @@ Telepítés nem folytatható. &lt;a href=&quot;#details&quot;&gt;Részletek...&l
     <message>
         <location filename="../src/libcalamares/utils/CommandList.cpp" line="113"/>
         <source>Could not run command.</source>
-        <translation type="unfinished"/>
+        <translation>Parancs futtatása nem lehetséges</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/utils/CommandList.cpp" line="114"/>
@@ -523,7 +523,7 @@ Telepítés nem folytatható. &lt;a href=&quot;#details&quot;&gt;Részletek...&l
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="151"/>
         <source>LVM LV name</source>
-        <translation type="unfinished"/>
+        <translation>LVM LV név</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="188"/>
@@ -1001,7 +1001,7 @@ Telepítés nem folytatható. &lt;a href=&quot;#details&quot;&gt;Részletek...&l
     <message>
         <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="66"/>
         <source>&amp;Cancel</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Mégse</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="67"/>
