@@ -120,7 +120,7 @@
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="60"/>
         <source>Running command %1 %2</source>
-        <translation>Esegui comando %1 %2</translation>
+        <translation>Esecuzione comando %1 %2</translation>
     </message>
 </context>
 <context>
@@ -128,7 +128,7 @@
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="265"/>
         <source>Running %1 operation.</source>
-        <translation>Eseguo %1 operazioni.</translation>
+        <translation>Esecuzione operazione %1.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonJob.cpp" line="280"/>
@@ -241,7 +241,7 @@ Il programma di installazione verrà chiuso e tutte le modifiche andranno perse.
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="262"/>
         <source>The installation is complete. Close the installer.</source>
-        <translation>L&apos;installazione è completata. Chiudi il programma.</translation>
+        <translation>L&apos;installazione è completata. Chiudi il programma di installazione.</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="159"/>
@@ -287,7 +287,7 @@ Il programma di installazione verrà chiuso e tutte le modifiche andranno perse.
     <message>
         <location filename="../src/calamares/CalamaresWindow.cpp" line="111"/>
         <source>Show debug information</source>
-        <translation>Visualizza informazioni di debug</translation>
+        <translation>Mostra informazioni di debug</translation>
     </message>
 </context>
 <context>
@@ -365,7 +365,7 @@ Il programma di installazione verrà chiuso e tutte le modifiche andranno perse.
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="972"/>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1051"/>
         <source>Current:</source>
-        <translation>Corrente:</translation>
+        <translation>Attuale:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="235"/>
@@ -694,7 +694,7 @@ Il programma di installazione verrà chiuso e tutte le modifiche andranno perse.
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="173"/>
         <source>usermod terminated with error code %1.</source>
-        <translation>usermod terminato con errore %1.</translation>
+        <translation>usermod terminato con codice di errore %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CreateUserJob.cpp" line="183"/>
@@ -786,7 +786,7 @@ Il programma di installazione verrà chiuso e tutte le modifiche andranno perse.
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="60"/>
         <source>&amp;Keep</source>
-        <translation>&amp;Lascia</translation>
+        <translation>&amp;Mantieni</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/EditExistingPartitionDialog.ui" line="70"/>
