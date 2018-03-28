@@ -3,7 +3,7 @@
 #
 # === This file is part of Calamares - <http://github.com/calamares> ===
 #
-#   Copyright 2014-2016, Anke Boersma <demm@kaosx.us>
+#   Copyright 2014-2018, Anke Boersma <demm@kaosx.us>
 #
 #   Calamares is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -60,7 +60,7 @@ def run():
         ('mimeapps.list', '.local/share/applications/'),
         ('xdg-user-dirs-update.desktop', '.config/autostart/'),
         ('octopi-notifier.desktop', '.config/autostart/'),
-        ('kaptan.desktop', '.config/autostart/'),
+        ('croeso.desktop', '.config/autostart/'),
         ('stylerc', '.config/qtcurve/'),
         ('dolphinrc', '.config/'),
         ('katerc', '.config/'),
