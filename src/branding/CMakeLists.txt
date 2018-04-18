@@ -1,12 +1,7 @@
-set( COMPONENT_NAME "kaos_branding" )
-
-if( IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/lang" )
-    add_subdirectory( lang )
-endif()
-
 file( GLOB SUBDIRECTORIES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "*" )
 foreach( SUBDIRECTORY ${SUBDIRECTORIES} )
-    if( IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/${SUBDIRECTORY}" )
+    set( _sd "${CMAKE_CURRENT_SOURCE_DIR}/${SUBDIRECTORY}" )
+    if( IS_DIRECTORY "${_sd}" AND EXISTS "${_sd}/branding.desc" )
         calamares_add_branding_subdirectory( ${SUBDIRECTORY} )
     endif()
 endforeach()

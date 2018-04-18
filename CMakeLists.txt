@@ -126,16 +126,12 @@ set( QT_VERSION 5.6.0 )
 find_package( Qt5 ${QT_VERSION} CONFIG REQUIRED Core Gui Widgets LinguistTools Svg Quick QuickWidgets )
 find_package( YAMLCPP 0.5.1 REQUIRED )
 find_package( PolkitQt5-1 REQUIRED )
-find_package(ECM 5.18 NO_MODULE)
-if( ECM_FOUND )
-    set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${CMAKE_MODULE_PATH})
-endif()
 
 # Find ECM once, and add it to the module search path; Calamares
 # modules that need ECM can do
 #   find_package(ECM ${ECM_VERSION} REQUIRED NO_MODULE),
 # no need to mess with the module path after.
-set( ECM_VERSION 5.10.0 )
+set( ECM_VERSION 5.18 )
 find_package(ECM ${ECM_VERSION} NO_MODULE)
 if( ECM_FOUND )
     set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${CMAKE_MODULE_PATH})
@@ -189,6 +185,21 @@ if( NOT PYTHONLIBS_FOUND OR NOT PYTHONQT_FOUND )
     set( WITH_PYTHONQT OFF )
 endif()
 
+### Transifex Translation status
+#
+# complete = 100% translated,
+# good = nearly complete (use own judgement, right now < 100 untranslated strings),
+# ok = incomplete (100 or more untranslated),
+# bad = 0% translated, placeholder in tx; these are not included.
+#
+# Language en (source language) is added later. It isn't listed in
+# Transifex either. Get the list of languages and their status
+# from https://transifex.com/calamares/calamares/ .
+set( _tx_complete ast ca cs de en es es_AR fr hr hu id_ID nl_NL pt_BR pt_PT)
+set( _tx_good ro_RO it pl ru sl sr_RS tr_TR)
+set( _tx_ok sv )
+set( _tx_bad zh_CN zh_TW)
+
 ###
 ### Calamares application info
 ###
@@ -196,13 +207,14 @@ set( CALAMARES_ORGANIZATION_NAME "Calamares" )
 set( CALAMARES_ORGANIZATION_DOMAIN "github.com/calamares" )
 set( CALAMARES_APPLICATION_NAME  "Calamares" )
 set( CALAMARES_DESCRIPTION_SUMMARY "The distribution-independent installer framework" )
-set( CALAMARES_TRANSLATION_LANGUAGES ast ca cs de en es es_AR fr hr hu id_ID it nl_NL pl pt_BR pt_PT ro_RO ru sl sr_RS sv tr_TR )
+set( CALAMARES_TRANSLATION_LANGUAGES en ${_tx_complete} ${_tx_good} ${_tx_ok} )
+list( SORT CALAMARES_TRANSLATION_LANGUAGES )
 
 ### Bump version here
 set( CALAMARES_VERSION_MAJOR 3 )
 set( CALAMARES_VERSION_MINOR 2 )
 set( CALAMARES_VERSION_PATCH 0 )
-set( CALAMARES_VERSION_RC 3 )
+set( CALAMARES_VERSION_RC 4 )
 
 set( CALAMARES_VERSION ${CALAMARES_VERSION_MAJOR}.${CALAMARES_VERSION_MINOR}.${CALAMARES_VERSION_PATCH} )
 set( CALAMARES_VERSION_SHORT "${CALAMARES_VERSION}" )
@@ -340,16 +352,20 @@ file( RELATIVE_PATH CONF_REL_INCLUDE_DIR "${CMAKE_INSTALL_FULL_CMAKEDIR}" "${CMA
 
 configure_file( CalamaresConfig.cmake.in "${PROJECT_BINARY_DIR}/CalamaresConfig.cmake" @ONLY )
 configure_file( CalamaresConfigVersion.cmake.in "${PROJECT_BINARY_DIR}/CalamaresConfigVersion.cmake" @ONLY )
+configure_file( CalamaresUse.cmake.in "${PROJECT_BINARY_DIR}/CalamaresUse.cmake" @ONLY )
 
 # Install the cmake files
 install(
     FILES
         "${PROJECT_BINARY_DIR}/CalamaresConfig.cmake"
         "${PROJECT_BINARY_DIR}/CalamaresConfigVersion.cmake"
+        "${PROJECT_BINARY_DIR}/CalamaresUse.cmake"
         "CMakeModules/CalamaresAddPlugin.cmake"
         "CMakeModules/CalamaresAddModuleSubdirectory.cmake"
         "CMakeModules/CalamaresAddLibrary.cmake"
         "CMakeModules/CalamaresAddBrandingSubdirectory.cmake"
+        "CMakeModules/CalamaresAddTranslations.cmake"
+        "CMakeModules/CMakeColors.cmake"
     DESTINATION
         "${CMAKE_INSTALL_CMAKEDIR}"
 )

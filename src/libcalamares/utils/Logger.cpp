@@ -31,35 +31,33 @@
 #include <QVariant>
 
 #include "utils/CalamaresUtils.h"
+#include "CalamaresVersion.h"
 
 #define LOGFILE_SIZE 1024 * 256
 
 static std::ofstream logfile;
-static unsigned int s_threshold = 0;  // Set to non-zero on first logging call
+static unsigned int s_threshold =
+#ifdef QT_NO_DEBUG
+            Logger::LOG_DISABLE;
+#else
+            Logger::LOGEXTRA + 1;  // Comparison is < in log() function
+#endif
 static QMutex s_mutex;
 
 namespace Logger
 {
 
+void
+setupLogLevel(unsigned int level)
+{
+    if ( level > LOGVERBOSE )
+        level = LOGVERBOSE;
+    s_threshold = level + 1;  // Comparison is < in log() function
+}
+
 static void
 log( const char* msg, unsigned int debugLevel, bool toDisk = true )
 {
-    if ( !s_threshold )
-    {
-        if ( qApp->arguments().contains( "--debug" ) ||
-             qApp->arguments().contains( "-d" ) ||
-             qApp->arguments().contains( "-D" ) )
-            s_threshold = LOGVERBOSE;
-        else
-#ifdef QT_NO_DEBUG
-            s_threshold = LOG_DISABLE;
-#else
-            s_threshold = LOGEXTRA;
-#endif
-        // Comparison is < threshold, below
-        ++s_threshold;
-    }
-
     if ( toDisk || debugLevel < s_threshold )
     {
         QMutexLocker lock( &s_mutex );
@@ -88,7 +86,7 @@ log( const char* msg, unsigned int debugLevel, bool toDisk = true )
 }
 
 
-void
+static void
 CalamaresLogHandler( QtMsgType type, const QMessageLogContext& context, const QString& msg )
 {
     static QMutex s_mutex;
@@ -118,10 +116,10 @@ CalamaresLogHandler( QtMsgType type, const QMessageLogContext& context, const QS
 }
 
 
-QString
+static QString
 logFile()
 {
-    return CalamaresUtils::appLogDir().filePath( "Calamares.log" );
+    return CalamaresUtils::appLogDir().filePath( "session.log" );
 }
 
 
@@ -148,15 +146,20 @@ setupLogfile()
         }
     }
 
+    // Since the log isn't open yet, this probably only goes to stdout
     cDebug() << "Using log file:" << logFile();
 
+    // Lock while (re-)opening the logfile
+    {
+    QMutexLocker lock( &s_mutex );
     logfile.open( logFile().toLocal8Bit(), std::ios::app );
+    if ( logfile.tellp() )
+        logfile << "\n\n" << std::endl;
+    logfile << "=== START CALAMARES " << CALAMARES_VERSION << std::endl;
+    }
+
     qInstallMessageHandler( CalamaresLogHandler );
 }
-
-}
-
-using namespace Logger;
 
 CLog::CLog( unsigned int debugLevel )
     : QDebug( &m_msg )
@@ -170,6 +173,26 @@ CLog::~CLog()
     log( m_msg.toUtf8().data(), m_debugLevel );
 }
 
-Logger::CDebug::~CDebug()
+CDebug::~CDebug()
 {
 }
+
+const char* continuation = "\n    ";
+
+QString toString( const QVariant& v )
+{
+    auto t = v.type();
+
+    if ( t == QVariant::List )
+    {
+        QStringList s;
+        auto l = v.toList();
+        for ( auto lit = l.constBegin(); lit != l.constEnd(); ++lit )
+            s << lit->toString();
+        return s.join(", ");
+    }
+    else
+        return v.toString();
+}
+
+}  // namespace

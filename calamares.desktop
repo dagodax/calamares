@@ -23,6 +23,10 @@ Categories=Qt;System;
 
 
 
+Name[bg]=Calamares
+Icon[bg]=calamares
+GenericName[bg]=Системен Инсталатор
+Comment[bg]=Calamares — Системен Инсталатор
 Name[ca]=Calamares
 Icon[ca]=calamares
 GenericName[ca]=Instal·lador de sistema
@@ -55,6 +59,10 @@ Name[he]=קלמארס
 Icon[he]=קלמארס
 GenericName[he]=אשף התקנה
 Comment[he]=קלמארס - אשף התקנה
+Name[hi]=Calamares
+Icon[hi]=calamares
+GenericName[hi]=सिस्टम इंस्टॉलर
+Comment[hi]=Calamares — सिस्टम इंस्टॉलर
 Name[hr]=Calamares
 Icon[hr]=calamares
 GenericName[hr]=Instalacija sustava

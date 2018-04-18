@@ -20,8 +20,9 @@
 #include "CalamaresUtilsSystem.h"
 
 #include "utils/Logger.h"
-#include "JobQueue.h"
 #include "GlobalStorage.h"
+#include "JobQueue.h"
+#include "Settings.h"
 
 #include <QCoreApplication>
 #include <QDir>
@@ -58,8 +59,15 @@ System::~System()
 {}
 
 
-System*System::instance()
+System*
+System::instance()
 {
+    if ( !s_instance )
+    {
+        cError() << "No Calamares system-object has been created.";
+        cError() << " .. using a bogus instance instead.";
+        return new System( true, nullptr );
+    }
     return s_instance;
 }
 
@@ -110,7 +118,7 @@ System::runCommand(
     if ( ( location == System::RunLocation::RunInTarget ) &&
          ( !gs || !gs->contains( "rootMountPoint" ) ) )
     {
-        cLog() << "No rootMountPoint in global storage";
+        cWarning() << "No rootMountPoint in global storage";
         return -3;
     }
 
@@ -123,7 +131,7 @@ System::runCommand(
         QString destDir = gs->value( "rootMountPoint" ).toString();
         if ( !QDir( destDir ).exists() )
         {
-            cLog() << "rootMountPoint points to a dir which does not exist";
+            cWarning() << "rootMountPoint points to a dir which does not exist";
             return -3;
         }
 
@@ -146,15 +154,15 @@ System::runCommand(
         if ( QDir( workingPath ).exists() )
             process.setWorkingDirectory( QDir( workingPath ).absolutePath() );
         else
-            cLog() << "Invalid working directory:" << workingPath;
+            cWarning() << "Invalid working directory:" << workingPath;
             return -3;
     }
 
-    cLog() << "Running" << program << arguments;
+    cDebug() << "Running" << program << arguments;
     process.start();
     if ( !process.waitForStarted() )
     {
-        cLog() << "Process failed to start" << process.error();
+        cWarning() << "Process failed to start" << process.error();
         return -2;
     }
 
@@ -166,8 +174,8 @@ System::runCommand(
 
     if ( !process.waitForFinished( timeoutSec ? ( timeoutSec * 1000 ) : -1 ) )
     {
-        cLog() << "Timed out. output so far:";
-        cLog() << process.readAllStandardOutput();
+        cWarning().noquote().nospace() << "Timed out. Output so far:\n" <<
+            process.readAllStandardOutput();
         return -4;
     }
 
@@ -175,16 +183,16 @@ System::runCommand(
 
     if ( process.exitStatus() == QProcess::CrashExit )
     {
-        cLog() << "Process crashed";
+        cWarning().noquote().nospace() << "Process crashed. Output so far:\n" << output;
         return -1;
     }
 
     auto r = process.exitCode();
-    cLog() << "Finished. Exit code:" << r;
-    if ( r != 0 )
+    cDebug() << "Finished. Exit code:" << r;
+    if ( ( r != 0 ) || Calamares::Settings::instance()->debugMode() )
     {
-        cLog() << "Target cmd:" << args;
-        cLog().noquote() << "Target output:\n" << output;
+        cDebug() << "Target cmd:" << args;
+        cDebug().noquote().nospace() << "Target output:\n" << output;
     }
     return ProcessResult(r, output);
 }
