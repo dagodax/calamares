@@ -184,7 +184,7 @@ LicensePage::setEntries( const QList< LicenseEntry >& entriesList )
                                  .arg( entry.prettyName )
                                  .arg( entry.prettyVendor );
             break;
-        case LicenseEntry::Software:
+        default:
             productDescription = tr( "<strong>%1</strong><br/>"
                                      "<font color=\"Grey\">by %2</font>" )
                                  .arg( entry.prettyName )
