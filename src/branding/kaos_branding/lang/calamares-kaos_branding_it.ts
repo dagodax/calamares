@@ -4,12 +4,12 @@
     <message>
         <location filename="../kaos_branding/show.qml" line="47"/>
         <source>Here the actual install of KaOS will start.&lt;br/&gt;Use the left &lt;b&gt;mouse button&lt;/b&gt; to go to the next slide, right for previous.&lt;br/&gt;After creating your chosen disk setup in the first 10 % &lt;br/&gt;the full copying of the ISO will take the longest of this install phase &lt;br/&gt;and will run until approximately 30%.&lt;br/&gt;</source>
-        <translation>L&apos;nstallazione di KaOS sta per avere inizio. &lt;br/&gt;Premi il &lt;b&gt;pulsante del mouse&lt;/b&gt;sinistro per andare alla prossima slide, il destro per visualizzare la precedente. &lt;br/&gt; Il primo 10% servirà per attualizzare le tue scelte di partizionamento,&lt;br/&gt; per la copia completa dal supporto USB ci vorrà un po&apos; di tempo,&lt;br/&gt;fino a circa il 30% del processo di installazione.&lt;br/&gt;.  </translation>
+        <translation>L&apos;nstallazione di KaOS sta per avere inizio. &lt;br/&gt;Premi il &lt;b&gt;pulsante del mouse&lt;/b&gt; sinistro per andare alla prossima slide, il destro per visualizzare la precedente. &lt;br/&gt; Il primo 10% servirà per attualizzare le tue scelte di partizionamento,&lt;br/&gt; per la copia completa dal supporto USB ci vorrà un po&apos; di tempo,&lt;br/&gt; fino a circa il 30% del processo di installazione.&lt;br/&gt;.  </translation>
     </message>
     <message>
         <location filename="../kaos_branding/show.qml" line="73"/>
         <source>After the ISO is copied some 25 post-install modules will run.&lt;br/&gt;This includes setting user specific options, &lt;br/&gt;removing Live Session only packages&lt;br/&gt;and adjusting hardware setup.&lt;br/&gt;</source>
-        <translation>Dopo che la ISO verrà copiata, verranno eseguiti 25 moduli post-installazione.&lt;br/&gt;Questi includono preferenze e scelte dell&apos;utente, &lt;br/&gt;rimuovendo i pacchetti della Sessione Live&lt;br/&gt;e finiranno con la configurazione dell&apos;hardware.&lt;br/&gt;</translation>
+        <translation>Dopo che la ISO verrà copiata, verranno eseguiti 25 moduli post-installazione.&lt;br/&gt; Questi includono preferenze e scelte dell&apos;utente, &lt;br/&gt;rimuovendo i pacchetti della Sessione Live&lt;br/&gt;e finiranno con la configurazione dell&apos;hardware.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../kaos_branding/show.qml" line="98"/>
