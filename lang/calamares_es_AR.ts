@@ -1752,7 +1752,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/plasmalnf/PlasmaLnfPage.cpp" line="67"/>
         <source>Please choose a look-and-feel for the KDE Plasma Desktop. You can also skip this step and configure the look-and-feel once the system is installed. Clicking on a look-and-feel selection will give you a live preview of that look-and-feel.</source>
-        <translation type="unfinished"/>
+        <translation>Por favor, escoja el aspecto que quiere para el Escritorio KDE Plasma. También puede saltearse este paso y configurar el aspecto una vez que el sistema esté instalado. Haciendo clic en un aspecto, obtendrá una vista previa de ese aspecto elegido.</translation>
     </message>
 </context>
 <context>
@@ -2270,7 +2270,7 @@ Salida:
         <location filename="../src/qml/calamares/slideshow/SlideCounter.qml" line="36"/>
         <source>%L1 / %L2</source>
         <extracomment>slide counter, %1 of %2 (numeric)</extracomment>
-        <translation type="unfinished"/>
+        <translation>%L1 / %L2</translation>
     </message>
 </context>
 <context>
