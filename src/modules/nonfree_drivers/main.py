@@ -3,7 +3,7 @@
 #
 # === This file is part of Calamares - <http://github.com/calamares> ===
 #
-#   Copyright 2014, Anke Boersma <demm@kaosx.us>
+#   Copyright 2014-2018, Anke Boersma <demm@kaosx.us>
 #
 #   Calamares is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
@@ -56,12 +56,40 @@ def run():
         print('installing driver')
         shutil.copytree(
             '/opt/kdeos/pkgs', '%s/opt/kdeos/pkgs' % (install_path))
-        for nvidia_utils in glob.glob('/opt/kdeos/pkgs/nvidia-utils-39*'):
+        for nvidia_utils in glob.glob('/opt/kdeos/pkgs/nvidia-utils-396*'):
             libcalamares.utils.target_env_call(
                 ['pacman', '-Ud', '--force', '--noconfirm', nvidia_utils])
-        for nvidia in glob.glob('/opt/kdeos/pkgs/nvidia-39*'):
+        for nvidia in glob.glob('/opt/kdeos/pkgs/nvidia-396*'):
             libcalamares.utils.target_env_call(
                 ['pacman', '-Ud', '--force', '--noconfirm', nvidia])
+        shutil.rmtree('%s/opt/kdeos/pkgs' % (install_path))
+        
+        sddm_conf_path = os.path.join(install_path, "etc/sddm.conf")
+        text = []
+        with open(sddm_conf_path, 'r') as sddm_conf:
+            text = sddm_conf.readlines()
+        with open(sddm_conf_path, 'w') as sddm_conf:
+            for line in text:
+                if re.match('Session=plasmawayland.desktop', line):
+                    line = 'Session=plasma.desktop'
+                sddm_conf.write(line)
+                
+    elif os.path.exists('/var/log/nvidia-390xx'):
+        print('nvidia-390xx detected')
+        print('removing unneeded packages')
+        libcalamares.utils.target_env_call(
+            ['pacman', '-Rdd', '--noconfirm', 'libgl'])
+        libcalamares.utils.target_env_call(
+            ['pacman', '-Rdd', '--noconfirm', 'xf86-video-nouveau'])
+        print('installing driver')
+        shutil.copytree(
+            '/opt/kdeos/pkgs', '%s/opt/kdeos/pkgs' % (install_path))
+        for nvidia_390_utils in glob.glob('/opt/kdeos/pkgs/nvidia-390xx-utils*'):
+            libcalamares.utils.target_env_call(
+                ['pacman', '-Ud', '--force', '--noconfirm', nvidia_390_utils])
+        for nvidia_390 in glob.glob('/opt/kdeos/pkgs/nvidia-390xx-39*'):
+            libcalamares.utils.target_env_call(
+                ['pacman', '-Ud', '--force', '--noconfirm', nvidia_390])
         shutil.rmtree('%s/opt/kdeos/pkgs' % (install_path))
         
         sddm_conf_path = os.path.join(install_path, "etc/sddm.conf")
