@@ -141,7 +141,7 @@ endif()
 
 option( INSTALL_CONFIG "Install configuration files" ON )
 option( WITH_PYTHON "Enable Python modules API (requires Boost.Python)." ON )
-option( WITH_PYTHONQT "Enable next generation Python modules API (experimental, requires PythonQt)." OFF )
+option( WITH_PYTHONQT "Enable next generation Python modules API (experimental, requires PythonQt)." ON )
 option( WITH_KF5Crash "Enable crash reporting with KCrash." ON )
 option( BUILD_TESTING "Build the testing tree." ON )
 
@@ -216,7 +216,7 @@ list( SORT CALAMARES_TRANSLATION_LANGUAGES )
 set( CALAMARES_VERSION_MAJOR 3 )
 set( CALAMARES_VERSION_MINOR 2 )
 set( CALAMARES_VERSION_PATCH 0 )
-set( CALAMARES_VERSION_RC 4 )
+set( CALAMARES_VERSION_RC 0 )
 
 set( CALAMARES_VERSION ${CALAMARES_VERSION_MAJOR}.${CALAMARES_VERSION_MINOR}.${CALAMARES_VERSION_PATCH} )
 set( CALAMARES_VERSION_SHORT "${CALAMARES_VERSION}" )
