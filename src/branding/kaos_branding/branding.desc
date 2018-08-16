@@ -8,10 +8,10 @@ welcomeExpandingLogo:   true
 strings:
     productName:         KaOS
     shortProductName:    KaOS
-    version:             2018.06
+    version:             2018.08
     shortVersion:        KaOS
-    versionedName:       KaOS 2018.06
-    shortVersionedName:  KaOS 2018.06
+    versionedName:       KaOS 2018.08
+    shortVersionedName:  KaOS 2018.08
     bootloaderEntryName: KaOS
     productUrl:          https://kaosx.us/
     supportUrl:          https://kaosx.us/docs/
