@@ -1,6 +1,7 @@
 /* === This file is part of Calamares - <https://github.com/calamares> ===
  *
  *   Copyright 2015, Teo Mrnjavac <teo@kde.org>
+ *   Copyright 2015-2018, Anke Boersma <demm@kaosx.us>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -119,7 +120,7 @@ Presentation
                 font.pixelSize: parent.width *.015
                 color: 'white'
                 text: qsTr("Qt/KDE specific internet applications include the <br/>"+
-                    "Qupzilla web-browser and kde-telepathy for <br/>"+
+                    "Falkon web-browser and kde-telepathy for <br/>"+
                     "chat and Instant Messaging. <br/>")
                 wrapMode: Text.WordWrap
                 width: 450
