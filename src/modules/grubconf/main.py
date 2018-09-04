@@ -32,12 +32,18 @@ def modify_grub_default(partitions, root_mount_point, distributor):
         "the target".format(default_dir))
 
     cryptdevice_params = []
+    
+    # GRUB needs to decrypt the partition that /boot is on, which may be / or /boot
+    boot_mountpoint = "/"
+    for partition in partitions:
+        if partition["mountPoint"] == "/boot":
+            boot_mountpoint = "/boot"
 
     for partition in partitions:
         if partition["fs"] == "linuxswap":
             swap_uuid = partition["uuid"]
 
-        if partition["mountPoint"] == "/" and "luksMapperName" in partition:
+        if partition["mountPoint"] == boot_mountpoint and "luksMapperName" in partition:
             cryptdevice_params = [
                 "cryptdevice=UUID={!s}:{!s}".format(partition["luksUuid"],
                                                     partition["luksMapperName"]),

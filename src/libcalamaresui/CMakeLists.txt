@@ -15,6 +15,7 @@ set( calamaresui_SOURCES
     utils/qjsonitem.cpp
 
     viewpages/AbstractPage.cpp
+    viewpages/BlankViewStep.cpp
     viewpages/ViewStep.cpp
 
     widgets/ClickableLabel.cpp
@@ -47,7 +48,8 @@ endif()
 
 if( WITH_PYTHONQT )
     include_directories(${PYTHON_INCLUDE_DIRS})
-    include_directories(${PYTHONQT_INCLUDE_DIR})
+    # *_DIRS because we also use extensions
+    include_directories(${PYTHONQT_INCLUDE_DIRS})
 
     list( APPEND calamaresui_SOURCES
         modulesystem/PythonQtViewModule.cpp
