@@ -4,17 +4,17 @@
     <message>
         <location filename="../src/modules/partition/gui/BootInfoWidget.cpp" line="69"/>
         <source>The &lt;strong&gt;boot environment&lt;/strong&gt; of this system.&lt;br&gt;&lt;br&gt;Older x86 systems only support &lt;strong&gt;BIOS&lt;/strong&gt;.&lt;br&gt;Modern systems usually use &lt;strong&gt;EFI&lt;/strong&gt;, but may also show up as BIOS if started in compatibility mode.</source>
-        <translation>Die&lt;strong&gt;Boot-Umgebung&lt;/strong&gt; dieses Systems.&lt;br&gt;Nur ältere x86 Systeme unterstüzen&lt;strong&gt;BIOS&lt;/strong&gt;.&lt;br&gt;Moderne Systeme verwenden normalerweise &lt;strong&gt;EFI&lt;/strong&gt;, aber sie können auch als BIOS angesehen werden, wenn im Kompatibilitäts-Modus gebootet wird.</translation>
+        <translation>Die&lt;strong&gt;Boot-Umgebung&lt;/strong&gt; dieses Systems.&lt;br&gt;Nur ältere x86 Systeme unterstüzen&lt;strong&gt;BIOS&lt;/strong&gt;.&lt;br&gt;Moderne Systeme verwenden normalerweise &lt;strong&gt;EFI&lt;/strong&gt;, aber sie können auch als BIOS emuliert werden, wenn im Kompatibilitäts-Modus gebootet wird.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/BootInfoWidget.cpp" line="79"/>
         <source>This system was started with an &lt;strong&gt;EFI&lt;/strong&gt; boot environment.&lt;br&gt;&lt;br&gt;To configure startup from an EFI environment, this installer must deploy a boot loader application, like &lt;strong&gt;GRUB&lt;/strong&gt; or &lt;strong&gt;systemd-boot&lt;/strong&gt; on an &lt;strong&gt;EFI System Partition&lt;/strong&gt;. This is automatic, unless you choose manual partitioning, in which case you must choose it or create it on your own.</source>
-        <translation>Dieses System wurde mit einer &lt;strong&gt;EFI&lt;/strong&gt; Boot-Umgebung gestartet.&lt;br&gt;&lt;br&gt;Um einen Start von einer EFI Umgebung zu konfigurieren, muss dieses Installationsprogramm eine Boot-Lader-Applikation, wie &lt;strong&gt;GRUB&lt;/strong&gt; oder &lt;strong&gt;systemd-boot&lt;/strong&gt; auf einer &lt;strong&gt;EFI-Systempartition&lt;/strong&gt; einsetzen. Dies passiert automatisch, außer es wird manuelle Partitionierung gewählt, in diesem Fall müssen Sie Ihn auswählen oder selbst erstellen.</translation>
+        <translation>Dieses System wurde mit einer &lt;strong&gt;EFI&lt;/strong&gt; Boot-Umgebung gestartet.&lt;br&gt;&lt;br&gt;Um einen Start von einer EFI Umgebung zu konfigurieren, muss dieses Installationsprogramm ein Bootloaderprogramm wie &lt;strong&gt;GRUB&lt;/strong&gt; oder &lt;strong&gt;systemd-boot&lt;/strong&gt; auf einer &lt;strong&gt;EFI-Systempartition&lt;/strong&gt; einsetzen. Dies passiert automatisch, außer es wird manuelle Partitionierung gewählt, in diesem Fall müssen Sie Ihn auswählen oder selbst erstellen.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/BootInfoWidget.cpp" line="91"/>
         <source>This system was started with a &lt;strong&gt;BIOS&lt;/strong&gt; boot environment.&lt;br&gt;&lt;br&gt;To configure startup from a BIOS environment, this installer must install a boot loader, like &lt;strong&gt;GRUB&lt;/strong&gt;, either at the beginning of a partition or on the &lt;strong&gt;Master Boot Record&lt;/strong&gt; near the beginning of the partition table (preferred). This is automatic, unless you choose manual partitioning, in which case you must set it up on your own.</source>
-        <translation type="unfinished"/>
+        <translation>Dieses System wurde mit einer &lt;strong&gt;BIOS&lt;/strong&gt; Boot-Umgebung gestartet.&lt;br&gt;&lt;br&gt;Um einen Start von einer BIOS Umgebung zu konfigurieren, muss dieses Installationsprogramm ein Bootloaderprogramm wie &lt;strong&gt;GRUB&lt;/strong&gt; entweder am Anfang einer Partition oder am einfach einer Partitionstabelle (bevorzugt) installieren. Dies passiert automatisch, außer es wird manuelle Partitionierung gewählt, in diesem Fall müssen Sie Ihn auswählen oder selbst erstellen.</translation>
     </message>
 </context>
 <context>
@@ -60,7 +60,7 @@
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="34"/>
         <source>JobQueue</source>
-        <translation>Job Warteschlange</translation>
+        <translation>Job Queue</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/utils/DebugWindow.ui" line="44"/>
@@ -184,7 +184,7 @@
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="255"/>
         <source>&amp;Install</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Installieren</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="303"/>
@@ -259,7 +259,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/libcalamares/PythonHelper.cpp" line="270"/>
         <source>Unknown exception type</source>
-        <translation>unbekannter Ausnahme Typ</translation>
+        <translation>unbekannter Ausnahmefehler</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/PythonHelper.cpp" line="284"/>
@@ -352,7 +352,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1000"/>
         <source>Boot loader location:</source>
-        <translation>Bootloader Platzierung:</translation>
+        <translation>Installiere Bootloader hier:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="126"/>
@@ -370,7 +370,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="235"/>
         <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself. Having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;, either use an existing without formatting or create one.</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Manuelles Partitionieren&lt;/strong&gt;&lt;br/&gt;Erstelle oder ändere die Größen von Partitionen selbst. Eine GPT Partitionstabelle und eine &lt;strong&gt;fat32 formattierte 300Mb große /boot Partition sind Pflicht für UEFI Installationen&lt;/strong&gt;, verwende eine bereits bestehende oder erstelle eine neue.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="797"/>
@@ -380,7 +380,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="927"/>
         <source>&lt;strong&gt;Select a partition to shrink, then drag the bottom bar to resize&lt;/strong&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;strong&gt;Wählen Sie eine Partition aus, die verkleinert werden soll und ziehe dann die untere Leiste in die passende Größe&lt;/strong&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="944"/>
@@ -410,22 +410,22 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1202"/>
         <source>This storage device does not seem to have an operating system on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
-        <translation type="unfinished"/>
+        <translation>Diese Festplatte scheint noch kein Betriebssystem zu beinhalten. Was möchtest du tun? &lt;br/&gt; Du wirst noch einmal um eine Bestätiguung dieser Entscheidung gefragt, bevor die Veränderungen wirklich angewendet werden. </translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1234"/>
         <source>This storage device has %1 on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
-        <translation type="unfinished"/>
+        <translation>Auf dieser Festplatte ist %1. Was möchtest du tun? Du wirst noch einmal um eine Bestätiguung dieser Entscheidung gefragt, bevor die Veränderungen wirklich angewendet werden.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1257"/>
         <source>This storage device already has an operating system on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
-        <translation type="unfinished"/>
+        <translation>Diese Festplatte scheint schon ein Betrebssystem zu beinhalten. Was möchtest du tun?&lt;br/&gt; Du wirst noch einmal um eine Bestätiguung dieser Entscheidung gefragt, bevor die Veränderungen wirklich angewendet werden.​</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1281"/>
         <source>This storage device has multiple operating systems on it. What would you like to do?&lt;br/&gt;You will be able to review and confirm your choices before any change is made to the storage device.</source>
-        <translation type="unfinished"/>
+        <translation>Diese Festplatte scheint mehrere Betrebssysteme zu beinhalten. Was möchtest du tun?&lt;br/&gt; Du wirst noch einmal um eine Bestätiguung dieser Entscheidung gefragt, bevor die Veränderungen wirklich angewendet werden.​</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.ui" line="14"/>
@@ -479,12 +479,12 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/libcalamares/utils/CommandList.cpp" line="113"/>
         <source>Could not run command.</source>
-        <translation type="unfinished"/>
+        <translation>Konnte Kommando nicht ausführen. </translation>
     </message>
     <message>
         <location filename="../src/libcalamares/utils/CommandList.cpp" line="114"/>
         <source>No rootMountPoint is defined, so command cannot be run in the target environment.</source>
-        <translation type="unfinished"/>
+        <translation>Es wurde kein Einhängepunkt für das Wurzelverzeichnis / definiert, deshalb kann nicht auf die angegebene Partition installiert werden. </translation>
     </message>
 </context>
 <context>
@@ -522,7 +522,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="151"/>
         <source>LVM LV name</source>
-        <translation type="unfinished"/>
+        <translation>LVM LV Name</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/CreatePartitionDialog.ui" line="188"/>
@@ -1000,12 +1000,12 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="66"/>
         <source>&amp;Cancel</source>
-        <translation type="unfinished"/>
+        <translation>Abbre&amp;chen</translation>
     </message>
     <message>
         <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="67"/>
         <source>&amp;OK</source>
-        <translation type="unfinished"/>
+        <translation>&amp;OK</translation>
     </message>
 </context>
 <context>
@@ -1144,12 +1144,12 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="63"/>
         <source>Password is too short</source>
-        <translation type="unfinished"/>
+        <translation>Passwort ist zu kurz</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="85"/>
         <source>Password is too long</source>
-        <translation type="unfinished"/>
+        <translation>Passwort ist zu lang</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="151"/>
@@ -1174,7 +1174,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="166"/>
         <source>The password is a palindrome</source>
-        <translation type="unfinished"/>
+        <translation>Das Passwort ist ein Palindrom</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="168"/>
@@ -1204,22 +1204,22 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="179"/>
         <source>The password contains less than %1 digits</source>
-        <translation type="unfinished"/>
+        <translation>Das Passwort enthält weniger als %1 Zahlen</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="180"/>
         <source>The password contains too few digits</source>
-        <translation type="unfinished"/>
+        <translation>Das Passwort enthält zu wenige Zahlen</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="183"/>
         <source>The password contains less than %1 uppercase letters</source>
-        <translation type="unfinished"/>
+        <translation>Das Passwort enthält weniger als %1 Großbuchstaben</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="184"/>
         <source>The password contains too few uppercase letters</source>
-        <translation type="unfinished"/>
+        <translation>Das Passwort enthält zu wenig Großbuchstaben</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="187"/>
@@ -1244,12 +1244,12 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="195"/>
         <source>The password is shorter than %1 characters</source>
-        <translation type="unfinished"/>
+        <translation>Das Passwort ist kürzer als %1 Zeichen</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="196"/>
         <source>The password is too short</source>
-        <translation type="unfinished"/>
+        <translation>Das Passwort ist zu kurz</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="198"/>
@@ -1259,47 +1259,47 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="201"/>
         <source>The password contains less than %1 character classes</source>
-        <translation type="unfinished"/>
+        <translation>Das Passwort enthält weniger als %1 Zeichenklassen</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="202"/>
         <source>The password does not contain enough character classes</source>
-        <translation type="unfinished"/>
+        <translation>Das Passwort enthält nicht genügend Zeichenklassen</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="205"/>
         <source>The password contains more than %1 same characters consecutively</source>
-        <translation type="unfinished"/>
+        <translation>Das Passwort enthält mehr als %1 gleiche Zeichen hintereinander</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="206"/>
         <source>The password contains too many same characters consecutively</source>
-        <translation type="unfinished"/>
+        <translation>Das Passwort enthält zu viele gleiche Zeichen hintereinander</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="209"/>
         <source>The password contains more than %1 characters of the same class consecutively</source>
-        <translation type="unfinished"/>
+        <translation>Das Passwort enthält mehr als %1 Zeichen der gleichen Klasse hintereinander</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="210"/>
         <source>The password contains too many characters of the same class consecutively</source>
-        <translation type="unfinished"/>
+        <translation>Das Passwort enthält zu viele Zeichen der gleichen Klasse hintereinander</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="213"/>
         <source>The password contains monotonic sequence longer than %1 characters</source>
-        <translation type="unfinished"/>
+        <translation>Das Passwort enthält eine gleichbleibende Zeichenfolge, die länger als %1 ist</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="214"/>
         <source>The password contains too long of a monotonic character sequence</source>
-        <translation type="unfinished"/>
+        <translation>Das Passwort enthält eine zu lange gleichbleibende Zeichenfolge</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="216"/>
         <source>No password supplied</source>
-        <translation type="unfinished"/>
+        <translation>Kein Passwort angegeben</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="218"/>
@@ -1324,12 +1324,12 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="231"/>
         <source>Unknown setting - %1</source>
-        <translation type="unfinished"/>
+        <translation>Unbekannte Einstellung - %1</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="235"/>
         <source>Unknown setting</source>
-        <translation type="unfinished"/>
+        <translation>Unbekannte Einstellung</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="239"/>
@@ -1364,22 +1364,22 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="261"/>
         <source>Opening the configuration file failed</source>
-        <translation type="unfinished"/>
+        <translation>Öffnen der Konfigurationsdatei fehlgeschlagen</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="263"/>
         <source>The configuration file is malformed</source>
-        <translation type="unfinished"/>
+        <translation>Die Konfigurationsdatei ist fehlerhaft</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="265"/>
         <source>Fatal failure</source>
-        <translation type="unfinished"/>
+        <translation>Fataler Fehler</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="267"/>
         <source>Unknown error</source>
-        <translation type="unfinished"/>
+        <translation>Unbekannter Fehler</translation>
     </message>
 </context>
 <context>
@@ -1747,7 +1747,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/plasmalnf/page_plasmalnf.ui" line="20"/>
         <source>Placeholder</source>
-        <translation type="unfinished"/>
+        <translation>Platzhalter</translation>
     </message>
     <message>
         <location filename="../src/modules/plasmalnf/PlasmaLnfPage.cpp" line="67"/>
@@ -1776,7 +1776,9 @@ There was no output from the command.</source>
         <source>
 Output:
 </source>
-        <translation type="unfinished"/>
+        <translation>
+Ausgabe:
+</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="275"/>
@@ -2267,7 +2269,7 @@ Output:
         <location filename="../src/qml/calamares/slideshow/SlideCounter.qml" line="36"/>
         <source>%L1 / %L2</source>
         <extracomment>slide counter, %1 of %2 (numeric)</extracomment>
-        <translation type="unfinished"/>
+        <translation>%L1 / %L2</translation>
     </message>
 </context>
 <context>
