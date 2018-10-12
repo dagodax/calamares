@@ -50,7 +50,7 @@
     <message>
         <location filename="../src/libcalamaresui/viewpages/BlankViewStep.cpp" line="69"/>
         <source>Blank Page</source>
-        <translation type="unfinished"/>
+        <translation>Page vide</translation>
     </message>
 </context>
 <context>
@@ -192,17 +192,17 @@
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="179"/>
         <source>Calamares Initialization Failed</source>
-        <translation type="unfinished"/>
+        <translation>L’initialisation de Calamares a échoué</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="180"/>
         <source>%1 can not be installed. Calamares was unable to load all of the configured modules. This is a problem with the way Calamares is being used by the distribution.</source>
-        <translation type="unfinished"/>
+        <translation>%1 ne peut être installé. Calamares n’a pu charger tous les modules configurés. Ceci est un problème lié à la façon dont la distribution utilise Calamares.</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="185"/>
         <source>&lt;br/&gt;The following modules could not be loaded:</source>
-        <translation type="unfinished"/>
+        <translation>&lt;br/&gt;Les modules suivants ne peuvent être chargés :</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="277"/>
@@ -508,12 +508,12 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/libcalamares/utils/CommandList.cpp" line="128"/>
         <source>The command runs in the host environment and needs to know the root path, but no rootMountPoint is defined.</source>
-        <translation type="unfinished"/>
+        <translation>La commande s’exécute dans l’environnement hôte et doit connaître le chemin racine, mais aucun point de montage racine n’est défini.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/utils/CommandList.cpp" line="139"/>
         <source>The command needs to know the user&apos;s name, but no username is defined.</source>
-        <translation type="unfinished"/>
+        <translation>La commande doit connaître le nom de l’utilisateur, mais aucun nom d’utilisateur n&apos;est défini.</translation>
     </message>
 </context>
 <context>
@@ -711,22 +711,22 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/jobs/CreateVolumeGroupJob.cpp" line="38"/>
         <source>Create new volume group named %1.</source>
-        <translation type="unfinished"/>
+        <translation>Créer un nouveau groupe de volumes nommé %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreateVolumeGroupJob.cpp" line="45"/>
         <source>Create new volume group named &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Créer un nouveau groupe de volumes nommé &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreateVolumeGroupJob.cpp" line="52"/>
         <source>Creating new volume group named %1.</source>
-        <translation type="unfinished"/>
+        <translation>Création d’un nouveau groupe de volumes nommé %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreateVolumeGroupJob.cpp" line="65"/>
         <source>The installer failed to create a volume group named &apos;%1&apos;.</source>
-        <translation type="unfinished"/>
+        <translation>Le programme d’installation n’a pu créer un groupe de volumes nommé &apos;%1&apos;.</translation>
     </message>
 </context>
 <context>
@@ -735,17 +735,17 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
         <location filename="../src/modules/partition/jobs/DeactivateVolumeGroupJob.cpp" line="34"/>
         <location filename="../src/modules/partition/jobs/DeactivateVolumeGroupJob.cpp" line="48"/>
         <source>Deactivate volume group named %1.</source>
-        <translation type="unfinished"/>
+        <translation>Désactiver le groupe de volumes nommé %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/DeactivateVolumeGroupJob.cpp" line="41"/>
         <source>Deactivate volume group named &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Désactiver le groupe de volumes nommé &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/DeactivateVolumeGroupJob.cpp" line="61"/>
         <source>The installer failed to deactivate a volume group named %1.</source>
-        <translation type="unfinished"/>
+        <translation>Le programme d’installation n’a pu désactiver un groupe de volumes nommé &apos;%1&apos;.</translation>
     </message>
 </context>
 <context>
@@ -814,7 +814,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/core/DeviceModel.cpp" line="89"/>
         <source>%1 - (%2)</source>
-        <translation type="unfinished"/>
+        <translation>%1 - (%2)</translation>
     </message>
 </context>
 <context>
@@ -1619,32 +1619,32 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="107"/>
         <source>Cre&amp;ate</source>
-        <translation type="unfinished"/>
+        <translation>Cré&amp;er</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="132"/>
         <source>New Volume Group</source>
-        <translation type="unfinished"/>
+        <translation>Nouveau groupe de volumes</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="139"/>
         <source>Resize Volume Group</source>
-        <translation type="unfinished"/>
+        <translation>Modifier la taille d’un groupe de volumes</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="146"/>
         <source>Deactivate Volume Group</source>
-        <translation type="unfinished"/>
+        <translation>Désactiver un groupe de volumes</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="153"/>
         <source>Remove Volume Group</source>
-        <translation type="unfinished"/>
+        <translation>Supprimer un groupe de volumes</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="180"/>
         <source>I&amp;nstall boot loader on:</source>
-        <translation type="unfinished"/>
+        <translation>I&amp;nstaller le chargeur de démarrage sur :</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="114"/>
@@ -1664,12 +1664,12 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="241"/>
         <source>Can not create new partition</source>
-        <translation type="unfinished"/>
+        <translation>Impossible de créer une nouvelle partition</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="242"/>
         <source>The partition table on %1 already has %2 primary partitions, and no more can be added. Please remove one primary partition and add an extended partition, instead.</source>
-        <translation type="unfinished"/>
+        <translation>La table de partitions sur %1 contient déjà %2 partitions primaires, et il n’est plus possible d’en ajouter d&apos;autres.</translation>
     </message>
 </context>
 <context>
@@ -1826,17 +1826,17 @@ ajoute le flag, revenez en arrière et éditez la partition.&lt;br/&gt;&lt;br/&g
     <message>
         <location filename="../src/modules/preservefiles/PreserveFiles.cpp" line="83"/>
         <source>Saving files for later ...</source>
-        <translation type="unfinished"/>
+        <translation>Enregistrer les fichiers pour plus tard...</translation>
     </message>
     <message>
         <location filename="../src/modules/preservefiles/PreserveFiles.cpp" line="89"/>
         <source>No files configured to save for later.</source>
-        <translation type="unfinished"/>
+        <translation>Aucun fichier configuré pour être sauvegardé pour plus tard.</translation>
     </message>
     <message>
         <location filename="../src/modules/preservefiles/PreserveFiles.cpp" line="145"/>
         <source>Not all of the configured files could be preserved.</source>
-        <translation type="unfinished"/>
+        <translation>Tous les fichiers configurés n’ont pu être préservés.</translation>
     </message>
 </context>
 <context>
@@ -1953,17 +1953,17 @@ Sortie :
         <location filename="../src/modules/partition/jobs/RemoveVolumeGroupJob.cpp" line="34"/>
         <location filename="../src/modules/partition/jobs/RemoveVolumeGroupJob.cpp" line="48"/>
         <source>Remove Volume Group named %1.</source>
-        <translation type="unfinished"/>
+        <translation>Supprimer le groupe de volumes nommé %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/RemoveVolumeGroupJob.cpp" line="41"/>
         <source>Remove Volume Group named &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Supprimer le groupe de volumes nommé &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/RemoveVolumeGroupJob.cpp" line="61"/>
         <source>The installer failed to remove a volume group named &apos;%1&apos;.</source>
-        <translation type="unfinished"/>
+        <translation>Le programme d’installation n’a pu supprimer un groupe de volumes nommé &apos;%1&apos;.</translation>
     </message>
 </context>
 <context>
@@ -2128,17 +2128,17 @@ Sortie :
         <location filename="../src/modules/partition/jobs/ResizeVolumeGroupJob.cpp" line="37"/>
         <location filename="../src/modules/partition/jobs/ResizeVolumeGroupJob.cpp" line="55"/>
         <source>Resize volume group named %1 from %2 to %3.</source>
-        <translation type="unfinished"/>
+        <translation>Modifier le groupe de volumes nommé %1 de %2 à %3.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizeVolumeGroupJob.cpp" line="46"/>
         <source>Resize volume group named &lt;strong&gt;%1&lt;/strong&gt; from &lt;strong&gt;%2&lt;/strong&gt; to &lt;strong&gt;%3&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Modifier le groupe de volumes nommé &lt;strong&gt;%1&lt;/strong&gt; de &lt;strong&gt;%2&lt;/strong&gt; à &lt;strong&gt;%3&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizeVolumeGroupJob.cpp" line="70"/>
         <source>The installer failed to resize a volume group named &apos;%1&apos;.</source>
-        <translation type="unfinished"/>
+        <translation>Le programme d&apos;installation n&apos;a pu redimensionner le groupe de volumes nommé &apos;%1&apos;.</translation>
     </message>
 </context>
 <context>
@@ -2450,37 +2450,37 @@ Sortie :
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="14"/>
         <source>VolumeGroupDialog</source>
-        <translation type="unfinished"/>
+        <translation>VolumeGroupDialog</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="20"/>
         <source>List of Physical Volumes</source>
-        <translation type="unfinished"/>
+        <translation>Liste des volumes physiques</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="30"/>
         <source>Volume Group Name:</source>
-        <translation type="unfinished"/>
+        <translation>Nom du groupe de volumes :</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="43"/>
         <source>Volume Group Type:</source>
-        <translation type="unfinished"/>
+        <translation>Type de groupe de volumes :</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="56"/>
         <source>Physical Extent Size:</source>
-        <translation type="unfinished"/>
+        <translation>Taille de l’étendue physique :</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="66"/>
         <source> MiB</source>
-        <translation type="unfinished"/>
+        <translation>Mio</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="82"/>
         <source>Total Size:</source>
-        <translation type="unfinished"/>
+        <translation>Taille totale :</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="92"/>
@@ -2488,22 +2488,22 @@ Sortie :
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="132"/>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="152"/>
         <source>---</source>
-        <translation type="unfinished"/>
+        <translation>---</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="102"/>
         <source>Used Size:</source>
-        <translation type="unfinished"/>
+        <translation>Taille utilisée :</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="122"/>
         <source>Total Sectors:</source>
-        <translation type="unfinished"/>
+        <translation>Nombre total de secteurs :</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="142"/>
         <source>Quantity of LVs:</source>
-        <translation type="unfinished"/>
+        <translation>Nombre de volumes logiques :</translation>
     </message>
 </context>
 <context>
@@ -2592,7 +2592,7 @@ Sortie :
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="122"/>
         <source>Qt/KDE specific internet applications include the &lt;br/&gt;Falkon web-browser and kde-telepathy for &lt;br/&gt;chat and Instant Messaging. &lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Parmi les applications internet spécifiquement Qt/KDE, on peut noter &lt;br/&gt;le navigateur Falkon et kde-telepathy pour &lt;br/&gt;la messagerie instantanée et client chat.&lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="146"/>

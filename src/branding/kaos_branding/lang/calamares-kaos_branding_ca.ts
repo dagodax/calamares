@@ -19,7 +19,7 @@
     <message>
         <location filename="../show.qml" line="122"/>
         <source>Qt/KDE specific internet applications include the &lt;br/&gt;Falkon web-browser and kde-telepathy for &lt;br/&gt;chat and Instant Messaging. &lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Les aplicacions específiques d&apos;Internet de Qt / KDE inclouen el &lt;br/&gt;navegador web Falkon i el kde-telepathy per a &lt;br/&gt;xat i missatgeria instantània. &lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../show.qml" line="146"/>

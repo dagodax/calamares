@@ -50,7 +50,7 @@
     <message>
         <location filename="../src/libcalamaresui/viewpages/BlankViewStep.cpp" line="69"/>
         <source>Blank Page</source>
-        <translation type="unfinished"/>
+        <translation>Pàgina en blanc</translation>
     </message>
 </context>
 <context>
@@ -192,17 +192,17 @@
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="179"/>
         <source>Calamares Initialization Failed</source>
-        <translation type="unfinished"/>
+        <translation>Ha fallat l&apos;inici del Calamares</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="180"/>
         <source>%1 can not be installed. Calamares was unable to load all of the configured modules. This is a problem with the way Calamares is being used by the distribution.</source>
-        <translation type="unfinished"/>
+        <translation>No es pot instal·lar %1. El Calamares no ha pogut carregar tots els mòduls configurats. Aquest és un problema amb la forma en què el Calamares és utilitzat per la distribució.</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="185"/>
         <source>&lt;br/&gt;The following modules could not be loaded:</source>
-        <translation type="unfinished"/>
+        <translation>&lt;br/&gt;No s&apos;han pogut carregar els mòduls següents:</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="277"/>
@@ -508,12 +508,12 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/libcalamares/utils/CommandList.cpp" line="128"/>
         <source>The command runs in the host environment and needs to know the root path, but no rootMountPoint is defined.</source>
-        <translation type="unfinished"/>
+        <translation>L&apos;odre s&apos;executa a l&apos;entorn de l&apos;amfitrió i necessita saber el camí de l&apos;arrel, però no hi ha definit el punt de muntatge de l&apos;arrel.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/utils/CommandList.cpp" line="139"/>
         <source>The command needs to know the user&apos;s name, but no username is defined.</source>
-        <translation type="unfinished"/>
+        <translation>L&apos;ordre necessita saber el nom d&apos;usuari, però no n&apos;hi ha cap de definit.</translation>
     </message>
 </context>
 <context>
@@ -711,22 +711,22 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/partition/jobs/CreateVolumeGroupJob.cpp" line="38"/>
         <source>Create new volume group named %1.</source>
-        <translation type="unfinished"/>
+        <translation>Crea un grup de volums anomenat %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreateVolumeGroupJob.cpp" line="45"/>
         <source>Create new volume group named &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Crea un grup de volums nou anomenat &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreateVolumeGroupJob.cpp" line="52"/>
         <source>Creating new volume group named %1.</source>
-        <translation type="unfinished"/>
+        <translation>Creant un grup de volums nou anomenat &amp;1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreateVolumeGroupJob.cpp" line="65"/>
         <source>The installer failed to create a volume group named &apos;%1&apos;.</source>
-        <translation type="unfinished"/>
+        <translation>L&apos;instal·lador ha fallat crear un grup de volums anomenat &quot;%1&quot;.</translation>
     </message>
 </context>
 <context>
@@ -735,17 +735,17 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
         <location filename="../src/modules/partition/jobs/DeactivateVolumeGroupJob.cpp" line="34"/>
         <location filename="../src/modules/partition/jobs/DeactivateVolumeGroupJob.cpp" line="48"/>
         <source>Deactivate volume group named %1.</source>
-        <translation type="unfinished"/>
+        <translation>Desactiva el grup de volums anomenat %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/DeactivateVolumeGroupJob.cpp" line="41"/>
         <source>Deactivate volume group named &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Desactiva el grup de volums anomenat &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/DeactivateVolumeGroupJob.cpp" line="61"/>
         <source>The installer failed to deactivate a volume group named %1.</source>
-        <translation type="unfinished"/>
+        <translation>L&apos;instal·lador ha fallat desactivar el grup de volums anomenat %1.</translation>
     </message>
 </context>
 <context>
@@ -814,7 +814,7 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/partition/core/DeviceModel.cpp" line="89"/>
         <source>%1 - (%2)</source>
-        <translation type="unfinished"/>
+        <translation>%1 - (%2)</translation>
     </message>
 </context>
 <context>
@@ -1619,32 +1619,32 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="107"/>
         <source>Cre&amp;ate</source>
-        <translation type="unfinished"/>
+        <translation>Cre&amp;a</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="132"/>
         <source>New Volume Group</source>
-        <translation type="unfinished"/>
+        <translation>Grup de volums nou</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="139"/>
         <source>Resize Volume Group</source>
-        <translation type="unfinished"/>
+        <translation>Canvia la mida del grup de volums</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="146"/>
         <source>Deactivate Volume Group</source>
-        <translation type="unfinished"/>
+        <translation>Desactiva el grup de volums</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="153"/>
         <source>Remove Volume Group</source>
-        <translation type="unfinished"/>
+        <translation>Suprimeix el grup de volums</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="180"/>
         <source>I&amp;nstall boot loader on:</source>
-        <translation type="unfinished"/>
+        <translation>I&amp;nstal·la el carregador d&apos;arrencada a:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="114"/>
@@ -1664,12 +1664,12 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="241"/>
         <source>Can not create new partition</source>
-        <translation type="unfinished"/>
+        <translation>No es pot crear la partició nova</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.cpp" line="242"/>
         <source>The partition table on %1 already has %2 primary partitions, and no more can be added. Please remove one primary partition and add an extended partition, instead.</source>
-        <translation type="unfinished"/>
+        <translation>La taula de particions de %1 ja té %2 particions primàries i no se n&apos;hi poden afegir més. Si us plau, suprimiu una partició primària i afegiu-hi una partició ampliada.</translation>
     </message>
 </context>
 <context>
@@ -1825,17 +1825,17 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/preservefiles/PreserveFiles.cpp" line="83"/>
         <source>Saving files for later ...</source>
-        <translation type="unfinished"/>
+        <translation>Es desen fitxers per a més tard...</translation>
     </message>
     <message>
         <location filename="../src/modules/preservefiles/PreserveFiles.cpp" line="89"/>
         <source>No files configured to save for later.</source>
-        <translation type="unfinished"/>
+        <translation>No s&apos;ha configurat cap fitxer per desar per a més tard.</translation>
     </message>
     <message>
         <location filename="../src/modules/preservefiles/PreserveFiles.cpp" line="145"/>
         <source>Not all of the configured files could be preserved.</source>
-        <translation type="unfinished"/>
+        <translation>No s&apos;han pogut conservar tots els fitxers configurats.</translation>
     </message>
 </context>
 <context>
@@ -1952,17 +1952,17 @@ Sortida:
         <location filename="../src/modules/partition/jobs/RemoveVolumeGroupJob.cpp" line="34"/>
         <location filename="../src/modules/partition/jobs/RemoveVolumeGroupJob.cpp" line="48"/>
         <source>Remove Volume Group named %1.</source>
-        <translation type="unfinished"/>
+        <translation>Suprimeix el grup de volums anomenat %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/RemoveVolumeGroupJob.cpp" line="41"/>
         <source>Remove Volume Group named &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Suprimeix el grup de volums anomenat &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/RemoveVolumeGroupJob.cpp" line="61"/>
         <source>The installer failed to remove a volume group named &apos;%1&apos;.</source>
-        <translation type="unfinished"/>
+        <translation>L&apos;instal·lador ha fallat suprimir un grup de volums anomenat &quot;%1&quot;.</translation>
     </message>
 </context>
 <context>
@@ -2127,17 +2127,17 @@ Sortida:
         <location filename="../src/modules/partition/jobs/ResizeVolumeGroupJob.cpp" line="37"/>
         <location filename="../src/modules/partition/jobs/ResizeVolumeGroupJob.cpp" line="55"/>
         <source>Resize volume group named %1 from %2 to %3.</source>
-        <translation type="unfinished"/>
+        <translation>Canvia la mida del grup de volums anomenat %1 de %2 a %3.º</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizeVolumeGroupJob.cpp" line="46"/>
         <source>Resize volume group named &lt;strong&gt;%1&lt;/strong&gt; from &lt;strong&gt;%2&lt;/strong&gt; to &lt;strong&gt;%3&lt;/strong&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Canvia la mida del grup de volums anomenat &lt;strong&gt;%1&lt;/strong&gt; de &lt;strong&gt;%2&lt;/strong&gt; a &lt;strong&gt;%3&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizeVolumeGroupJob.cpp" line="70"/>
         <source>The installer failed to resize a volume group named &apos;%1&apos;.</source>
-        <translation type="unfinished"/>
+        <translation>L&apos;instal·lador ha fallat canviar la mida del grup de volums anomenat &quot;%1&quot;.</translation>
     </message>
 </context>
 <context>
@@ -2449,37 +2449,37 @@ Sortida:
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="14"/>
         <source>VolumeGroupDialog</source>
-        <translation type="unfinished"/>
+        <translation>Diàleg del grup de volums</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="20"/>
         <source>List of Physical Volumes</source>
-        <translation type="unfinished"/>
+        <translation>Llista de volums físics</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="30"/>
         <source>Volume Group Name:</source>
-        <translation type="unfinished"/>
+        <translation>Nom del grup de volums:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="43"/>
         <source>Volume Group Type:</source>
-        <translation type="unfinished"/>
+        <translation>Tipus del grup de volums:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="56"/>
         <source>Physical Extent Size:</source>
-        <translation type="unfinished"/>
+        <translation>Mida de l&apos;extensió física:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="66"/>
         <source> MiB</source>
-        <translation type="unfinished"/>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="82"/>
         <source>Total Size:</source>
-        <translation type="unfinished"/>
+        <translation>Mida total:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="92"/>
@@ -2487,22 +2487,22 @@ Sortida:
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="132"/>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="152"/>
         <source>---</source>
-        <translation type="unfinished"/>
+        <translation>---</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="102"/>
         <source>Used Size:</source>
-        <translation type="unfinished"/>
+        <translation>Mida usada:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="122"/>
         <source>Total Sectors:</source>
-        <translation type="unfinished"/>
+        <translation>Sectors totals:</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="142"/>
         <source>Quantity of LVs:</source>
-        <translation type="unfinished"/>
+        <translation>Quantitat de volums lògics:</translation>
     </message>
 </context>
 <context>
@@ -2591,7 +2591,7 @@ Sortida:
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="122"/>
         <source>Qt/KDE specific internet applications include the &lt;br/&gt;Falkon web-browser and kde-telepathy for &lt;br/&gt;chat and Instant Messaging. &lt;br/&gt;</source>
-        <translation type="unfinished"/>
+        <translation>Les aplicacions específiques d&apos;Internet de Qt / KDE inclouen el &lt;br/&gt;navegador web Falkon i el kde-telepathy per a &lt;br/&gt;xat i missatgeria instantània. &lt;br/&gt;</translation>
     </message>
     <message>
         <location filename="../src/branding/kaos_branding/show.qml" line="146"/>

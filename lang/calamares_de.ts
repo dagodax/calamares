@@ -50,7 +50,7 @@
     <message>
         <location filename="../src/libcalamaresui/viewpages/BlankViewStep.cpp" line="69"/>
         <source>Blank Page</source>
-        <translation type="unfinished"/>
+        <translation>Leere Seite</translation>
     </message>
 </context>
 <context>
@@ -192,17 +192,17 @@
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="179"/>
         <source>Calamares Initialization Failed</source>
-        <translation type="unfinished"/>
+        <translation>Calamares konnte nicht gestartet werden</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="180"/>
         <source>%1 can not be installed. Calamares was unable to load all of the configured modules. This is a problem with the way Calamares is being used by the distribution.</source>
-        <translation type="unfinished"/>
+        <translation>%1 konnte nicht installiert werden. Calamares konnte die konfigurierten Module nicht laden.. Dies ist ein Problem, das durch die Nutzung von Calamares durch die Distribution entsteht. </translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="185"/>
         <source>&lt;br/&gt;The following modules could not be loaded:</source>
-        <translation type="unfinished"/>
+        <translation>&lt;br/&gt;Die folgenden Module konnten nicht geladen werden: </translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="277"/>
