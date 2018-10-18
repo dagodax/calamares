@@ -56,10 +56,10 @@ def run():
         print('installing driver')
         shutil.copytree(
             '/opt/kdeos/pkgs', '%s/opt/kdeos/pkgs' % (install_path))
-        for nvidia_utils in glob.glob('/opt/kdeos/pkgs/nvidia-utils-396*'):
+        for nvidia_utils in glob.glob('/opt/kdeos/pkgs/nvidia-utils-41*'):
             libcalamares.utils.target_env_call(
                 ['pacman', '-Ud', '--force', '--noconfirm', nvidia_utils])
-        for nvidia in glob.glob('/opt/kdeos/pkgs/nvidia-396*'):
+        for nvidia in glob.glob('/opt/kdeos/pkgs/nvidia-41*'):
             libcalamares.utils.target_env_call(
                 ['pacman', '-Ud', '--force', '--noconfirm', nvidia])
         shutil.rmtree('%s/opt/kdeos/pkgs' % (install_path))
