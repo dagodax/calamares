@@ -57,8 +57,9 @@ def create_conf(uuid, conf_path):
 
     kernel_params = ["quiet systemd.show_status=0"]
     swap = ""
-    swap_luks= ""
+    swap_luks = ""
     cryptdevice_params = []
+    btrfs_params = []
 
     for partition in partitions:
         if partition["fs"] == "linuxswap" and not "luksMapperName" in partition:
