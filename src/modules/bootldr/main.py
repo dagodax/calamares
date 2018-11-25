@@ -74,6 +74,9 @@ def create_conf(uuid, conf_path):
                 "root=/dev/mapper/{!s}".format(partition["luksMapperName"]),
                 "resume=/dev/mapper/{!s}".format(partition["luksMapperName"])
             ]
+            
+        if partition["fs"] == "btrfs" in partition:
+            btrfs_params = "rootflags=subvol=@"
 
     if cryptdevice_params:
         kernel_params.extend(cryptdevice_params)
@@ -84,6 +87,8 @@ def create_conf(uuid, conf_path):
         kernel_params.append("resume=UUID={!s}".format(swap))
     if swap_luks:
         kernel_params.append("resume=/dev/mapper/{!s}".format(swap_luks))
+    if btrfs_params:
+        kernel_params.append(btrfs_params)
 
     lines = [
         '## Please edit the paths and kernel parameters according to your system.\n',
