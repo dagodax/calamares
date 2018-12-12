@@ -393,7 +393,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="238"/>
         <source>&lt;strong&gt;Manual partitioning&lt;/strong&gt;&lt;br/&gt;You can create or resize partitions yourself. Having a GPT partition table and &lt;strong&gt;fat32 512Mb /boot partition is a must for UEFI installs&lt;/strong&gt;, either use an existing without formatting or create one.</source>
-        <translation>&lt;strong&gt;Manuelles Partitionieren&lt;/strong&gt;&lt;br/&gt;Erstelle oder ändere die Größen von Partitionen selbst. Eine GPT Partitionstabelle und eine &lt;strong&gt;fat32 formattierte 300Mb große /boot Partition sind Pflicht für UEFI Installationen&lt;/strong&gt;, verwende eine bereits bestehende oder erstelle eine neue.</translation>
+        <translation>&lt;strong&gt;Manuelles Partitionieren&lt;/strong&gt;&lt;br/&gt;Erstelle oder ändere die Größen von Partitionen selbst. Eine GPT Partitionstabelle und eine &lt;strong&gt;fat32 formattierte 512 Mb große /boot Partition sind Pflicht für UEFI Installationen&lt;/strong&gt;, verwende eine bereits bestehende oder erstelle eine neue.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="800"/>
