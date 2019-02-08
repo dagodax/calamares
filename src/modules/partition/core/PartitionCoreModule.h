@@ -20,6 +20,7 @@
 #ifndef PARTITIONCOREMODULE_H
 #define PARTITIONCOREMODULE_H
 
+#include "core/PartitionLayout.h"
 #include "core/PartitionModel.h"
 #include "Typedefs.h"
 
@@ -128,6 +129,12 @@ public:
 
     void createPartitionTable( Device* device, PartitionTable::TableType type );
 
+    /**
+     * @brief Add a job to do the actual partition-creation.
+     *
+     * If @p flags is not FlagNone, then the given flags are
+     * applied to the newly-created partition.
+     */
     void createPartition( Device* device, Partition* partition,
                           PartitionTable::Flags flags = PartitionTable::FlagNone );
 
@@ -148,6 +155,12 @@ public:
     void setPartitionFlags( Device* device, Partition* partition, PartitionTable::Flags flags );
 
     void setBootLoaderInstallPath( const QString& path );
+
+    void initLayout();
+    void initLayout( const QVariantList& config );
+
+    void layoutApply( Device *dev, qint64 firstSector, qint64 lastSector, QString luksPassphrase );
+    void layoutApply( Device *dev, qint64 firstSector, qint64 lastSector, QString luksPassphrase, PartitionNode* parent, const PartitionRole& role );
 
     /**
      * @brief jobs creates and returns a list of jobs which can then apply the changes
@@ -240,6 +253,7 @@ private:
     bool m_hasRootMountPoint = false;
     bool m_isDirty = false;
     QString m_bootLoaderInstallPath;
+    PartitionLayout* m_partLayout;
 
     void doInit();
     void updateHasRootMountPoint();

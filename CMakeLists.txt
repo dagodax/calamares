@@ -46,6 +46,7 @@ option( WITH_PYTHON "Enable Python modules API (requires Boost.Python)." ON )
 option( WITH_PYTHONQT "Enable next generation Python modules API (experimental, requires PythonQt)." ON )
 option( WITH_KF5Crash "Enable crash reporting with KCrash." ON )
 
+
 ### USE_*
 #
 # By convention, when there are multiple modules that implement similar
@@ -74,14 +75,15 @@ set( CALAMARES_DESCRIPTION_SUMMARY
 
 set( CALAMARES_VERSION_MAJOR 3 )
 set( CALAMARES_VERSION_MINOR 2 )
-set( CALAMARES_VERSION_PATCH 3 )
+set( CALAMARES_VERSION_PATCH 4 )
 set( CALAMARES_VERSION_RC 1 )
+
 
 ### Transifex (languages) info
 #
 # complete = 100% translated,
 # good = nearly complete (use own judgement, right now >= 75%)
-# ok = incomplete (more than 25% untranslated),
+# ok = incomplete (more than 25% untranslated, at least 5% translated),
 # bad = 0% translated, placeholder in tx; these are not included.
 #
 # Language en (source language) is added later. It isn't listed in
@@ -110,7 +112,7 @@ set( _tx_bad zh_CN zh_TW)
 ### Required versions
 #
 # See DEPENDENCIES section below.
-set( QT_VERSION 5.7.0 )
+set( QT_VERSION 5.10.0 )
 set( YAMLCPP_VERSION 0.5.1 )
 set( ECM_VERSION 5.18 )
 set( PYTHONLIBS_VERSION 3.3 )
@@ -140,6 +142,26 @@ set( CMAKE_CXX_STANDARD 14 )
 set( CMAKE_CXX_STANDARD_REQUIRED ON )
 set( CMAKE_C_STANDARD 99 )
 set( CMAKE_C_STANDARD_REQUIRED ON )
+
+# Debugging flags
+#
+# Possible debugging flags are:
+#  - DEBUG_TIMEZONES draws latitude and longitude lines on the timezone
+#    widget and enables chatty debug logging, for dealing with the timezone
+#    location database.
+#  - DEBUG_FILESYSTEMS does extra logging and checking when looking at
+#    partition configuration. Lists known KPMCore FS types.
+#
+# The flags listed here are enabled in Debug builds. By default, none
+# are **actually** listed, because they're for such specific scenarios.
+set( _enable_debug_flags
+    # DEBUG_TIMEZONES
+    # DEBUG_FILESYSTEMS
+)
+# Add those flags to the CXX flags in a suitable format.
+foreach( _edf ${_enable_debug_flags} )
+    string( APPEND CMAKE_CXX_FLAGS_DEBUG " -D${_edf}" )
+endforeach()
 
 set( CMAKE_C_FLAGS                  "${CMAKE_C_FLAGS} -Wall" )
 if( CMAKE_CXX_COMPILER_ID MATCHES "Clang" )
@@ -174,7 +196,7 @@ if( CMAKE_CXX_COMPILER_ID MATCHES "Clang" )
     set( SUPPRESS_3RDPARTY_WARNINGS "-Wno-everything" )
     set( SUPPRESS_BOOST_WARNINGS " -Wno-zero-as-null-pointer-constant -Wno-disabled-macro-expansion" )
 
-    set( CMAKE_CXX_FLAGS_DEBUG          "-g" )
+    set( CMAKE_CXX_FLAGS_DEBUG          "-g ${CMAKE_CXX_FLAGS_DEBUG}" )
     set( CMAKE_CXX_FLAGS_MINSIZEREL     "-Os -DNDEBUG" )
     set( CMAKE_CXX_FLAGS_RELEASE        "-O4 -DNDEBUG" )
     set( CMAKE_CXX_FLAGS_RELWITHDEBINFO "-O2 -g" )
@@ -236,6 +258,11 @@ set_package_properties(
 find_package(ECM ${ECM_VERSION} NO_MODULE)
 if( ECM_FOUND )
     set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${CMAKE_MODULE_PATH})
+    if ( BUILD_TESTING )
+        # ECM implies that we can build the tests, too
+        find_package( Qt5 COMPONENTS Test REQUIRED )
+        include( ECMAddTests )
+    endif()
 endif()
 
 find_package( KF5 COMPONENTS CoreAddons Crash )
@@ -288,12 +315,14 @@ endif()
 #
 set( prev_tx ${p_tx_complete} ${p_tx_good} ${p_tx_ok} ${p_tx_bad} )
 set( curr_tx ${_tx_complete} ${_tx_good} ${_tx_ok} ${_tx_bad} )
+set( tx_errors OFF )
 if ( prev_tx )
     # Gone in new list
     foreach( l ${prev_tx} )
         list( FIND curr_tx ${l} p_l )
         if( p_l EQUAL -1 )
             message(WARNING "Language ${l} was present in previous translations and is now absent.")
+            set( tx_errors ON )
         endif()
     endforeach()
 
@@ -302,10 +331,12 @@ if ( prev_tx )
         list( FIND prev_tx ${l} p_l )
         if( p_l EQUAL -1 )
             message(WARNING "Language ${l} is new.")
+            set( tx_errors ON )
         endif()
         set( p_l "lang/calamares_${l}.ts" )
         if( NOT EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/${p_l} )
             message(WARNING "Language ${l} has no .ts file yet.")
+            set( tx_errors ON )
         endif()
     endforeach()
 
@@ -314,6 +345,9 @@ if ( prev_tx )
 endif()
 unset( prev_tx )
 unset( curr_tx )
+if( tx_errors )
+    message( FATAL_ERROR "Translation warnings, see above." )
+endif()
 
 set( CALAMARES_TRANSLATION_LANGUAGES en ${_tx_complete} ${_tx_good} ${_tx_ok} )
 list( SORT CALAMARES_TRANSLATION_LANGUAGES )

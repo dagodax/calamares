@@ -2,6 +2,7 @@
  *
  *   Copyright 2014-2017, Teo Mrnjavac <teo@kde.org>
  *   Copyright 2017-2018, Adriaan de Groot <groot@kde.org>
+ *   Copyright 2019, Collabora Ltd
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -20,31 +21,33 @@
 #include "ChoicePage.h"
 
 #include "core/BootLoaderModel.h"
-#include "core/PartitionActions.h"
-#include "core/PartitionCoreModule.h"
 #include "core/DeviceModel.h"
-#include "core/PartitionModel.h"
+#include "core/KPMHelpers.h"
 #include "core/OsproberEntry.h"
 #include "core/PartUtils.h"
+#include "core/PartitionActions.h"
+#include "core/PartitionCoreModule.h"
+#include "core/PartitionInfo.h"
 #include "core/PartitionIterator.h"
+#include "core/PartitionModel.h"
 
-#include "ReplaceWidget.h"
-#include "PrettyRadioButton.h"
+#include "BootInfoWidget.h"
+#include "DeviceInfoWidget.h"
 #include "PartitionBarsView.h"
 #include "PartitionLabelsView.h"
 #include "PartitionSplitterWidget.h"
-#include "BootInfoWidget.h"
-#include "DeviceInfoWidget.h"
+#include "PrettyRadioButton.h"
+#include "ReplaceWidget.h"
 #include "ScanningDialog.h"
 
 #include "utils/CalamaresUtilsGui.h"
 #include "utils/Logger.h"
 #include "utils/Retranslator.h"
+#include "utils/Units.h"
+
 #include "Branding.h"
-#include "core/KPMHelpers.h"
-#include "JobQueue.h"
 #include "GlobalStorage.h"
-#include "core/PartitionInfo.h"
+#include "JobQueue.h"
 
 #include <kpmcore/core/device.h>
 #include <kpmcore/core/partition.h>
@@ -61,16 +64,32 @@
 #include <QFutureWatcher>
 #include <QtConcurrent/QtConcurrent>
 
+using PartitionActions::Choices::SwapChoice;
 
+/** @brief Given a set of swap choices, return a sensible value from it.
+ *
+ * "Sensible" here means: if there is one value, use it; otherwise, use
+ * NoSwap if there are no choices, or if NoSwap is one of the choices, in the set.
+ * If that's not possible, any value from the set.
+ */
+SwapChoice pickOne( const SwapChoiceSet& s )
+{
+    if ( s.count() == 0 )
+        return SwapChoice::NoSwap;
+    if ( s.count() == 1 )
+        return *( s.begin() );
+    if ( s.contains( SwapChoice::NoSwap ) )
+        return SwapChoice::NoSwap;
+    // Here, count > 1 but NoSwap is not a member.
+    return *( s.begin() );
+}
 
 /**
  * @brief ChoicePage::ChoicePage is the default constructor. Called on startup as part of
  *      the module loading code path.
- * @param compactMode if true, the drive selector will be a combo box on top, otherwise it
- *      will show up as a list view.
  * @param parent the QWidget parent.
  */
-ChoicePage::ChoicePage( QWidget* parent )
+ChoicePage::ChoicePage( const SwapChoiceSet& swapChoices, QWidget* parent )
     : QWidget( parent )
     , m_nextEnabled( false )
     , m_core( nullptr )
@@ -81,21 +100,25 @@ ChoicePage::ChoicePage( QWidget* parent )
     , m_eraseButton( nullptr )
     , m_replaceButton( nullptr )
     , m_somethingElseButton( nullptr )
+    , m_eraseSwapChoices( nullptr )
     , m_deviceInfoWidget( nullptr )
     , m_beforePartitionBarsView( nullptr )
     , m_beforePartitionLabelsView( nullptr )
     , m_bootloaderComboBox( nullptr )
     , m_lastSelectedDeviceIndex( -1 )
     , m_enableEncryptionWidget( true )
+    , m_allowManualPartitioning( true )
+    , m_availableSwapChoices( swapChoices )
+    , m_eraseSwapChoice( pickOne( swapChoices ) )
 {
     setupUi( this );
 
-    m_defaultFsType = Calamares::JobQueue::instance()->
-                        globalStorage()->
-                        value( "defaultFileSystemType" ).toString();
-    m_enableEncryptionWidget = Calamares::JobQueue::instance()->
-                               globalStorage()->
-                               value( "enableLuksAutomatedPartitioning" ).toBool();
+    auto gs = Calamares::JobQueue::instance()->globalStorage();
+
+    m_defaultFsType = gs->value( "defaultFileSystemType" ).toString();
+    m_enableEncryptionWidget = gs->value( "enableLuksAutomatedPartitioning" ).toBool();
+    m_allowManualPartitioning = gs->value( "allowManualPartitioning" ).toBool();
+
     if ( FileSystem::typeForName( m_defaultFsType ) == FileSystem::Unknown )
         m_defaultFsType = "ext4";
 
@@ -137,7 +160,7 @@ ChoicePage::ChoicePage( QWidget* parent )
     m_previewAfterFrame->hide();
     m_encryptWidget->hide();
     m_reuseHomeCheckBox->hide();
-    Calamares::JobQueue::instance()->globalStorage()->insert( "reuseHome", false );
+    gs->insert( "reuseHome", false );
 }
 
 
@@ -175,6 +198,20 @@ ChoicePage::init( PartitionCoreModule* core )
     ChoicePage::applyDeviceChoice();
 }
 
+
+/** @brief Creates a combobox with the given choices in it.
+ *
+ * No texts are set -- that happens later by the translator functions.
+ */
+static inline QComboBox*
+createCombo( const QSet< SwapChoice >& s )
+{
+    QComboBox* box = new QComboBox;
+    for ( SwapChoice c : { SwapChoice::NoSwap, SwapChoice::SmallSwap, SwapChoice::FullSwap, SwapChoice::ReuseSwap, SwapChoice::SwapFile } )
+        if ( s.contains( c ) )
+            box->addItem( QString(), c );
+    return box;
+}
 
 /**
  * @brief ChoicePage::setupChoices creates PrettyRadioButton objects for the action
@@ -229,17 +266,19 @@ ChoicePage::setupChoices()
                                                              iconSize ) );
     m_grp->addButton( m_replaceButton->buttonWidget(), Replace );
 
+    // Fill up swap options
+    // .. TODO: only if enabled in the config
+    if ( m_availableSwapChoices.count() > 1 )
+    {
+        m_eraseSwapChoices = createCombo( m_availableSwapChoices );
+        m_eraseButton->addOptionsComboBox( m_eraseSwapChoices );
+    }
+
     m_itemsLayout->addWidget( m_alongsideButton );
     m_itemsLayout->addWidget( m_replaceButton );
     m_itemsLayout->addWidget( m_eraseButton );
 
     m_somethingElseButton = new PrettyRadioButton;
-    CALAMARES_RETRANSLATE(
-        m_somethingElseButton->setText( tr( "<strong>Manual partitioning</strong><br/>"
-                                            "You can create or resize partitions yourself."
-                                            " Having a GPT partition table and <strong>fat32 512Mb /boot partition "
-                                            "is a must for UEFI installs</strong>, either use an existing without formatting or create one." ) );
-    )
     m_somethingElseButton->setIconSize( iconSize );
     m_somethingElseButton->setIcon( CalamaresUtils::defaultPixmap( CalamaresUtils::PartitionManual,
                                                                    CalamaresUtils::Original,
@@ -249,12 +288,12 @@ ChoicePage::setupChoices()
 
     m_itemsLayout->addStretch();
 
-    connect( m_grp, static_cast< void( QButtonGroup::* )( int, bool ) >( &QButtonGroup::buttonToggled ),
+    connect( m_grp, QOverload<int, bool>::of( &QButtonGroup::buttonToggled ),
              this, [ this ]( int id, bool checked )
     {
         if ( checked )  // An action was picked.
         {
-            m_choice = static_cast< Choice >( id );
+            m_choice = static_cast< InstallChoice >( id );
             updateNextEnabled();
 
             emit actionChosen();
@@ -276,14 +315,18 @@ ChoicePage::setupChoices()
     m_rightLayout->setStretchFactor( m_previewAfterFrame, 0 );
 
     connect( this, &ChoicePage::actionChosen,
-             this, [=]
-    {
-        Device* currd = selectedDevice();
-        if ( currd )
-        {
-            applyActionChoice( currentChoice() );
-        }
-    } );
+             this, &ChoicePage::onActionChanged );
+    if ( m_eraseSwapChoices )
+        connect( m_eraseSwapChoices, QOverload<int>::of(&QComboBox::currentIndexChanged),
+                 this, &ChoicePage::onActionChanged );
+
+    CALAMARES_RETRANSLATE(
+        m_somethingElseButton->setText( tr( "<strong>Manual partitioning</strong><br/>"
+                                            "You can create or resize partitions yourself."
+                                            " Having a GPT partition table and <strong>fat32 512Mb /boot partition "
+                                            "is a must for UEFI installs</strong>, either use an existing without formatting or create one." ) );
+        updateSwapChoicesTr( m_eraseSwapChoices );
+    )
 }
 
 
@@ -378,7 +421,18 @@ ChoicePage::continueApplyDeviceChoice()
 
 
 void
-ChoicePage::applyActionChoice( ChoicePage::Choice choice )
+ChoicePage::onActionChanged()
+{
+    Device* currd = selectedDevice();
+    if ( currd )
+    {
+        applyActionChoice( currentChoice() );
+    }
+}
+
+
+void
+ChoicePage::applyActionChoice( ChoicePage::InstallChoice choice )
 {
     m_beforePartitionBarsView->selectionModel()->
             disconnect( SIGNAL( currentRowChanged( QModelIndex, QModelIndex ) ) );
@@ -388,30 +442,37 @@ ChoicePage::applyActionChoice( ChoicePage::Choice choice )
     switch ( choice )
     {
     case Erase:
-        if ( m_core->isDirty() )
         {
-            ScanningDialog::run( QtConcurrent::run( [ = ]
-            {
-                QMutexLocker locker( &m_coreMutex );
-                m_core->revertDevice( selectedDevice() );
-            } ),
-            [ = ]
-            {
-                PartitionActions::doAutopartition( m_core,
-                                                   selectedDevice(),
-                                                   m_encryptWidget->passphrase() );
-                emit deviceChosen();
-            },
-            this );
-        }
-        else
-        {
-            PartitionActions::doAutopartition( m_core,
-                                               selectedDevice(),
-                                               m_encryptWidget->passphrase() );
-            emit deviceChosen();
-        }
+            auto gs = Calamares::JobQueue::instance()->globalStorage();
 
+            PartitionActions::Choices::AutoPartitionOptions options {
+                gs->value( "defaultFileSystemType" ).toString(),
+                m_encryptWidget->passphrase(),
+                gs->value( "efiSystemPartition" ).toString(),
+                CalamaresUtils::GiBtoBytes( gs->value( "requiredStorageGB" ).toDouble() ),
+                static_cast<PartitionActions::Choices::SwapChoice>( m_eraseSwapChoices->currentData().toInt() )
+            };
+
+            if ( m_core->isDirty() )
+            {
+                ScanningDialog::run( QtConcurrent::run( [ = ]
+                {
+                    QMutexLocker locker( &m_coreMutex );
+                    m_core->revertDevice( selectedDevice() );
+                } ),
+                [ = ]
+                {
+                    PartitionActions::doAutopartition( m_core, selectedDevice(), options );
+                    emit deviceChosen();
+                },
+                this );
+            }
+            else
+            {
+                PartitionActions::doAutopartition( m_core, selectedDevice(), options );
+                emit deviceChosen();
+            }
+        }
         break;
     case Replace:
         if ( m_core->isDirty() )
@@ -458,7 +519,7 @@ ChoicePage::applyActionChoice( ChoicePage::Choice choice )
     case Manual:
         break;
     }
-    updateActionChoicePreview( currentChoice() );
+    updateActionChoicePreview( choice );
 }
 
 
@@ -489,6 +550,7 @@ ChoicePage::doAlongsideSetupSplitter( const QModelIndex& current,
                                     ->value( "requiredStorageGB" )
                                     .toDouble();
 
+    // TODO: make this consistent
     qint64 requiredStorageB = qRound64( requiredStorageGB + 0.1 + 2.0 ) * 1024 * 1024 * 1024;
 
     m_afterPartitionSplitterWidget->setSplitPartition(
@@ -627,39 +689,10 @@ ChoicePage::doAlongsideApply()
                                    dev->logicalSize();
 
             m_core->resizePartition( dev, candidate, firstSector, newLastSector );
-            Partition* newPartition = nullptr;
-            QString luksPassphrase = m_encryptWidget->passphrase();
-            if ( luksPassphrase.isEmpty() )
-            {
-                newPartition = KPMHelpers::createNewPartition(
-                    candidate->parent(),
-                    *dev,
-                    candidate->roles(),
-                    FileSystem::typeForName( m_defaultFsType ),
-                    newLastSector + 2, // *
-                    oldLastSector
-                );
-            }
-            else
-            {
-                newPartition = KPMHelpers::createNewEncryptedPartition(
-                    candidate->parent(),
-                    *dev,
-                    candidate->roles(),
-                    FileSystem::typeForName( m_defaultFsType ),
-                    newLastSector + 2, // *
-                    oldLastSector,
-                    luksPassphrase
-                );
-            }
-            PartitionInfo::setMountPoint( newPartition, "/" );
-            PartitionInfo::setFormat( newPartition, true );
-            // * for some reason ped_disk_add_partition refuses to create a new partition
-            //   if it starts on the sector immediately after the last used sector, so we
-            //   have to push it one sector further, therefore + 2 instead of + 1.
-
-            m_core->createPartition( dev, newPartition );
-
+            m_core->layoutApply( dev, newLastSector + 2, oldLastSector,
+                                 m_encryptWidget->passphrase(), candidate->parent(),
+                                 candidate->roles()
+                               );
             m_core->dumpQueue();
 
             break;
@@ -727,33 +760,10 @@ ChoicePage::doReplaceSelectedPartition( const QModelIndex& current )
                 }
             }
 
-            Partition* newPartition = nullptr;
-            if ( m_encryptWidget->state() == EncryptWidget::EncryptionConfirmed )
-            {
-                newPartition = KPMHelpers::createNewEncryptedPartition(
-                    newParent,
-                    *selectedDevice(),
-                    newRoles,
-                    FileSystem::typeForName( m_defaultFsType ),
-                    selectedPartition->firstSector(),
-                    selectedPartition->lastSector(),
-                    m_encryptWidget->passphrase() );
-            }
-            else
-            {
-                newPartition = KPMHelpers::createNewPartition(
-                    newParent,
-                    *selectedDevice(),
-                    newRoles,
-                    FileSystem::typeForName( m_defaultFsType ),
-                    selectedPartition->firstSector(),
-                    selectedPartition->lastSector() );
-            }
-
-            PartitionInfo::setMountPoint( newPartition, "/" );
-            PartitionInfo::setFormat( newPartition, true );
-
-            m_core->createPartition( selectedDevice(), newPartition);
+            m_core->layoutApply( selectedDevice(), selectedPartition->firstSector(),
+                                 selectedPartition->lastSector(),
+                                 m_encryptWidget->passphrase(), newParent, newRoles
+                               );
         }
         else
         {
@@ -773,14 +783,19 @@ ChoicePage::doReplaceSelectedPartition( const QModelIndex& current )
                 if ( homePartitionPath->isEmpty() )
                     doReuseHomePartition = false;
 
-                PartitionActions::doReplacePartition( m_core,
-                                                      selectedDevice(),
-                                                      selectedPartition,
-                                                      m_encryptWidget->passphrase() );
+                Calamares::GlobalStorage* gs = Calamares::JobQueue::instance()->globalStorage();
+
+                PartitionActions::doReplacePartition(
+                    m_core,
+                    selectedDevice(),
+                    selectedPartition,
+                    {
+                        gs->value( "defaultFileSystemType" ).toString(),
+                        m_encryptWidget->passphrase()
+                    } );
                 Partition* homePartition = KPMHelpers::findPartitionByPath( { selectedDevice() },
                                                                             *homePartitionPath );
 
-                Calamares::GlobalStorage* gs = Calamares::JobQueue::instance()->globalStorage();
                 if ( homePartition && doReuseHomePartition )
                 {
                     PartitionInfo::setMountPoint( homePartition, "/home" );
@@ -893,7 +908,7 @@ ChoicePage::updateDeviceStatePreview()
  * @param choice the chosen partitioning action.
  */
 void
-ChoicePage::updateActionChoicePreview( ChoicePage::Choice choice )
+ChoicePage::updateActionChoicePreview( ChoicePage::InstallChoice choice )
 {
     Device* currentDevice = selectedDevice();
     Q_ASSERT( currentDevice );
@@ -1137,7 +1152,7 @@ ChoicePage::createBootloaderComboBox( QWidget* parent )
     bcb->setModel( m_core->bootLoaderModel() );
 
     // When the chosen bootloader device changes, we update the choice in the PCM
-    connect( bcb, static_cast< void (QComboBox::*)(int) >( &QComboBox::currentIndexChanged ),
+    connect( bcb, QOverload<int>::of( &QComboBox::currentIndexChanged ),
              this, [this]( int newIndex )
     {
         QComboBox* bcb = qobject_cast< QComboBox* >( sender() );
@@ -1163,6 +1178,13 @@ force_uncheck(QButtonGroup* grp, PrettyRadioButton* button)
     grp->setExclusive( true );
 }
 
+static inline QDebug&
+operator <<( QDebug& s, PartitionIterator& it )
+{
+    s << ( ( *it ) ? ( *it )->deviceNode() : QString( "<null device>" ) );
+    return s;
+}
+
 /**
  * @brief ChoicePage::setupActions happens every time a new Device* is selected in the
  *      device picker. Sets up the text and visibility of the partitioning actions based
@@ -1176,13 +1198,18 @@ ChoicePage::setupActions()
     OsproberEntryList osproberEntriesForCurrentDevice =
             getOsproberEntriesForDevice( currentDevice );
 
+    cDebug() << "Setting up actions for" << currentDevice->deviceNode()
+        << "with" << osproberEntriesForCurrentDevice.count() << "entries.";
+
     if ( currentDevice->partitionTable() )
         m_deviceInfoWidget->setPartitionTableType( currentDevice->partitionTable()->type() );
     else
         m_deviceInfoWidget->setPartitionTableType( PartitionTable::unknownTableType );
 
-    // Manual partitioning is always a possibility
-    m_somethingElseButton->show();
+    if ( m_allowManualPartitioning )
+        m_somethingElseButton->show();
+    else
+        force_uncheck( m_grp, m_somethingElseButton );
 
     bool atLeastOneCanBeResized = false;
     bool atLeastOneCanBeReplaced = false;
@@ -1192,18 +1219,30 @@ ChoicePage::setupActions()
 #ifdef WITH_KPMCOREGT33
     if ( currentDevice->type() == Device::Type::SoftwareRAID_Device &&
          static_cast< SoftwareRAID* >(currentDevice)->status() == SoftwareRAID::Status::Inactive )
+    {
+        cDebug() << ".. part of an inactive RAID device";
         isInactiveRAID = true;
+    }
 #endif
 
     for ( auto it = PartitionIterator::begin( currentDevice );
           it != PartitionIterator::end( currentDevice ); ++it )
     {
         if ( PartUtils::canBeResized( *it ) )
+        {
+            cDebug() << ".. contains resizable" << it;
             atLeastOneCanBeResized = true;
+        }
         if ( PartUtils::canBeReplaced( *it ) )
+        {
+            cDebug() << ".. contains replacable" << it;
             atLeastOneCanBeReplaced = true;
+        }
         if ( (*it)->isMounted() )
+        {
+            cDebug() << ".. contains mounted" << it;
             atLeastOneIsMounted = true;
+        }
     }
 
     if ( osproberEntriesForCurrentDevice.count() == 0 )
@@ -1320,7 +1359,12 @@ ChoicePage::setupActions()
     if ( !atLeastOneIsMounted && !isInactiveRAID )
         m_eraseButton->show();  // None mounted
     else
+    {
+        cDebug() << "Erase button suppressed"
+            << "mount?" << atLeastOneIsMounted
+            << "raid?" << isInactiveRAID;
         force_uncheck( m_grp, m_eraseButton );
+    }
 
     bool isEfi = PartUtils::isEfiSystem();
     bool efiSystemPartitionFound = !m_core->efiSystemPartitions().isEmpty();
@@ -1355,7 +1399,7 @@ ChoicePage::isNextEnabled() const
 }
 
 
-ChoicePage::Choice
+ChoicePage::InstallChoice
 ChoicePage::currentChoice() const
 {
     return m_choice;
@@ -1403,3 +1447,55 @@ ChoicePage::updateNextEnabled()
     emit nextStatusChanged( enabled );
 }
 
+void
+ChoicePage::updateSwapChoicesTr(QComboBox* box)
+{
+    if ( !box )
+        return;
+
+    static_assert(SwapChoice::NoSwap == 0, "Enum values out-of-sync");
+    for ( int index = 0; index < box->count(); ++index )
+    {
+        bool ok = false;
+        int value = 0;
+
+        switch ( value = box->itemData( index ).toInt( &ok ) )
+        {
+            // case 0:
+            case SwapChoice::NoSwap:
+                // toInt() returns 0 on failure, so check for ok
+                if ( ok )  // It was explicitly set to 0
+                    box->setItemText( index, tr( "No Swap" ) );
+                else
+                    cWarning() << "Box item" << index << box->itemText( index ) << "has non-integer role.";
+                break;
+            case SwapChoice::ReuseSwap:
+                box->setItemText( index, tr( "Reuse Swap" ) );
+                break;
+            case SwapChoice::SmallSwap:
+                box->setItemText( index, tr( "Swap (no Hibernate)" ) );
+                break;
+            case SwapChoice::FullSwap:
+                box->setItemText( index, tr( "Swap (with Hibernate)" ) );
+                break;
+            case SwapChoice::SwapFile:
+                box->setItemText( index, tr( "Swap to file" ) );
+                break;
+            default:
+                cWarning() << "Box item" << index << box->itemText( index ) << "has role" << value;
+        }
+    }
+}
+
+int
+ChoicePage::lastSelectedDeviceIndex()
+{
+    return m_lastSelectedDeviceIndex;
+}
+
+void
+ChoicePage::setLastSelectedDeviceIndex( int index )
+{
+    m_lastSelectedDeviceIndex = index;
+    m_drivesCombo->setCurrentIndex( m_lastSelectedDeviceIndex );
+}
