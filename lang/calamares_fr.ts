@@ -453,27 +453,27 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1488"/>
         <source>No Swap</source>
-        <translation type="unfinished"/>
+        <translation>Pas de Swap</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1493"/>
         <source>Reuse Swap</source>
-        <translation type="unfinished"/>
+        <translation>Réutiliser la Swap</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1496"/>
         <source>Swap (no Hibernate)</source>
-        <translation type="unfinished"/>
+        <translation>Swap (pas d’hibernation)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1499"/>
         <source>Swap (with Hibernate)</source>
-        <translation type="unfinished"/>
+        <translation>Swap (avec hibernation)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1502"/>
         <source>Swap to file</source>
-        <translation type="unfinished"/>
+        <translation>Swap dans un fichier</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.ui" line="14"/>
@@ -736,7 +736,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/gui/CreateVolumeGroupDialog.cpp" line="37"/>
         <source>Create Volume Group</source>
-        <translation type="unfinished"/>
+        <translation>Créer un groupe de volumes</translation>
     </message>
 </context>
 <context>
@@ -1977,12 +1977,12 @@ Sortie :
         <location filename="../src/libcalamaresui/utils/CalamaresUtilsGui.cpp" line="269"/>
         <source>%1 (%2)</source>
         <comment>Language (Country)</comment>
-        <translation type="unfinished"/>
+        <translation>%1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionDialogHelpers.cpp" line="47"/>
         <source>(no mount point)</source>
-        <translation type="unfinished"/>
+        <translation>(pas de point de montage)</translation>
     </message>
 </context>
 <context>
@@ -2165,7 +2165,7 @@ Sortie :
     <message>
         <location filename="../src/modules/partition/gui/ResizeVolumeGroupDialog.cpp" line="38"/>
         <source>Resize Volume Group</source>
-        <translation type="unfinished"/>
+        <translation>Redimensionner le groupe de volumes</translation>
     </message>
 </context>
 <context>
@@ -2496,7 +2496,7 @@ Sortie :
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="14"/>
         <source>Create Volume Group</source>
-        <translation type="unfinished"/>
+        <translation>Créer un groupe de volumes</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="20"/>
