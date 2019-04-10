@@ -121,10 +121,10 @@ def run():
             libcalamares.utils.target_env_call(
                 ['pacman', '-Rddn', '--noconfirm', '%s' % (pkg)])
 
-    # Remove Calligra l10n
+    # Remove LibreOffice l10n
     #list_of_pkgs = []
 
-    #p = subprocess.Popen("pacman -Q | grep -i calligra-l10n | awk '{print $1}'",
+    #p = subprocess.Popen("pacman -Q | grep -i libreoffice | awk '{print $1}'",
     #                     shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 
     # Iterates over every found pkg and put each one in a list

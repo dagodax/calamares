@@ -96,8 +96,8 @@ Presentation
                 anchors.horizontalCenterOffset: -100
                 font.pixelSize: parent.width *.015
                 color: 'white'
-                text: qsTr("The default Office Suite is Calligra.<br/>"+
-                    "LibreOffice is available in the repositories. <br/>")
+                text: qsTr("The default Office Suite is LibreOffice.<br/>"+
+                    "Calligra is available in the repositories. <br/>")
                 wrapMode: Text.WordWrap
                 width: 450
                 horizontalAlignment: Text.AlignLeft

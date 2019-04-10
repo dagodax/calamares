@@ -50,7 +50,7 @@
     <message>
         <location filename="../src/libcalamaresui/viewpages/BlankViewStep.cpp" line="69"/>
         <source>Blank Page</source>
-        <translation type="unfinished"/>
+        <translation>Prázdná strana</translation>
     </message>
 </context>
 <context>
@@ -192,7 +192,7 @@
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="183"/>
         <source>Calamares Initialization Failed</source>
-        <translation type="unfinished"/>
+        <translation>Inicializace Calamares se nezdařila</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="184"/>
@@ -453,27 +453,27 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1488"/>
         <source>No Swap</source>
-        <translation type="unfinished"/>
+        <translation>Žádné odkládací místo (swap)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1493"/>
         <source>Reuse Swap</source>
-        <translation type="unfinished"/>
+        <translation>Znovupoužití odkládacího místa (swap)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1496"/>
         <source>Swap (no Hibernate)</source>
-        <translation type="unfinished"/>
+        <translation>Odkládací místo - swap (bez hibernace)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1499"/>
         <source>Swap (with Hibernate)</source>
-        <translation type="unfinished"/>
+        <translation>Odkládací místo - swap (s hibernací)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1502"/>
         <source>Swap to file</source>
-        <translation type="unfinished"/>
+        <translation>Odkládací místo - swap do souboru</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.ui" line="14"/>
@@ -847,7 +847,7 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     <message>
         <location filename="../src/modules/partition/core/DeviceModel.cpp" line="89"/>
         <source>%1 - (%2)</source>
-        <translation type="unfinished"/>
+        <translation>%1 - (%2)</translation>
     </message>
 </context>
 <context>
@@ -984,7 +984,7 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     <message>
         <location filename="../src/modules/finished/FinishedPage.ui" line="95"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;When this box is checked, your system will restart immediately when you click on &lt;span style=&quot; font-style:italic;&quot;&gt;Done&lt;/span&gt; or close the installer.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Když je políčko zaškrtnuto, váš systém bude ihned restartován když kliknete na &lt;span style=&quot; font-style:italic;&quot;&gt;Hotovo&lt;/span&gt; nebo zavřete instalátor.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Když je políčko zaškrtnuto, váš systém bude ihned restartován, když klepnete na &lt;span style=&quot; font-style:italic;&quot;&gt;Hotovo&lt;/span&gt; nebo zavřete instalátor.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/finished/FinishedPage.ui" line="98"/>
@@ -1232,12 +1232,12 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="158"/>
         <source>Memory allocation error when setting &apos;%1&apos;</source>
-        <translation>Chyba alokace paměti při nastavování &apos;%1&apos;</translation>
+        <translation>Chyba v přidělení paměti při nastavování &apos;%1&apos;</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="162"/>
         <source>Memory allocation error</source>
-        <translation>Chyba alokace paměti</translation>
+        <translation>Chyba v přidělení paměti</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="164"/>
@@ -1247,7 +1247,7 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="166"/>
         <source>The password is a palindrome</source>
-        <translation>Heslo je palindrom</translation>
+        <translation>Heslo lze se stejným významem číst v libovolném směru</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="168"/>
@@ -1327,7 +1327,7 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="198"/>
         <source>The password is just rotated old one</source>
-        <translation>Heslo je pouze rotované staré heslo</translation>
+        <translation>Heslo je pouze vystřídané staré heslo</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="201"/>
@@ -1337,7 +1337,7 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="202"/>
         <source>The password does not contain enough character classes</source>
-        <translation>Heslo neobsahuje dostetek znakových tříd</translation>
+        <translation>Heslo neobsahuje dostatek znakových tříd</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="205"/>
@@ -1362,12 +1362,12 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="213"/>
         <source>The password contains monotonic sequence longer than %1 characters</source>
-        <translation>Heslo obsahuje monotónní sekvenci znaků delší než %1</translation>
+        <translation>Heslo obsahuje jednotvárnou řadu znaků delší než %1</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="214"/>
         <source>The password contains too long of a monotonic character sequence</source>
-        <translation>Heslo obsahuje příliš dlouhou monotónní sekvenci znaků </translation>
+        <translation>Heslo obsahuje příliš dlouhou jednotvárnou řadu znaků </translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="216"/>
@@ -1382,17 +1382,17 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="220"/>
         <source>Password generation failed - required entropy too low for settings</source>
-        <translation>Chyba generování hesla - požadovaná entropie byla přiliš nízká</translation>
+        <translation>Chyba při vytváření hesla - požadovaná míra neurčitosti systému byla přiliš nízká</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="225"/>
         <source>The password fails the dictionary check - %1</source>
-        <translation>Heslo neprošlo slovníkovým testem - %1</translation>
+        <translation>Heslo neprošlo slovníkovou zkouškou - %1</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="227"/>
         <source>The password fails the dictionary check</source>
-        <translation>Heslo neprošlo slovníkovým testem</translation>
+        <translation>Heslo neprošlo slovníkovou zkouškou</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="231"/>
@@ -1437,7 +1437,7 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="261"/>
         <source>Opening the configuration file failed</source>
-        <translation>Chyba otevírání konfiguračního souboru</translation>
+        <translation>Chyba při otevírání souboru s nastavením</translation>
     </message>
     <message>
         <location filename="../src/modules/users/CheckPWQuality.cpp" line="263"/>
@@ -1646,7 +1646,7 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="107"/>
         <source>Cre&amp;ate</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Vytvořit</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionPage.ui" line="132"/>
@@ -1836,7 +1836,7 @@ Instalátor bude ukončen a všechny změny budou ztraceny.</translation>
     <message>
         <location filename="../src/modules/plasmalnf/PlasmaLnfPage.cpp" line="67"/>
         <source>Please choose a look-and-feel for the KDE Plasma Desktop. You can also skip this step and configure the look-and-feel once the system is installed. Clicking on a look-and-feel selection will give you a live preview of that look-and-feel.</source>
-        <translation>Prosím vyberte si vzhled pro KDE Plasma desktop. Tento krok můžete přeskočit a nastavit si vzhled až po instalaci systému. Kliknutím na sekci vzhledu se můžete podívat na živou ukázku tohoto vzhledu.</translation>
+        <translation>Prosím vyberte si vzhled pro KDE Plasma desktop. Tento krok můžete přeskočit a nastavit si vzhled až po instalaci systému. Po klepnutí na část určenou pro vzhled se můžete podívat na živou ukázku tohoto vzhledu.</translation>
     </message>
 </context>
 <context>
@@ -1976,12 +1976,12 @@ Výstup:
         <location filename="../src/libcalamaresui/utils/CalamaresUtilsGui.cpp" line="269"/>
         <source>%1 (%2)</source>
         <comment>Language (Country)</comment>
-        <translation type="unfinished"/>
+        <translation>%1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionDialogHelpers.cpp" line="47"/>
         <source>(no mount point)</source>
-        <translation type="unfinished"/>
+        <translation>(žádný přípojný bod)</translation>
     </message>
 </context>
 <context>

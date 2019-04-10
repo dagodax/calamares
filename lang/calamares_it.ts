@@ -50,7 +50,7 @@
     <message>
         <location filename="../src/libcalamaresui/viewpages/BlankViewStep.cpp" line="69"/>
         <source>Blank Page</source>
-        <translation type="unfinished"/>
+        <translation>Pagina vuota</translation>
     </message>
 </context>
 <context>
@@ -192,7 +192,7 @@
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="183"/>
         <source>Calamares Initialization Failed</source>
-        <translation type="unfinished"/>
+        <translation>Inizializzazione di Calamares Fallita</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="184"/>
@@ -453,27 +453,27 @@ Il programma di installazione verrà chiuso e tutte le modifiche andranno perse.
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1488"/>
         <source>No Swap</source>
-        <translation type="unfinished"/>
+        <translation>No Swap</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1493"/>
         <source>Reuse Swap</source>
-        <translation type="unfinished"/>
+        <translation>Riusa Swap</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1496"/>
         <source>Swap (no Hibernate)</source>
-        <translation type="unfinished"/>
+        <translation>Swap (no Ibernazione)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1499"/>
         <source>Swap (with Hibernate)</source>
-        <translation type="unfinished"/>
+        <translation>Swap (con Ibernazione)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1502"/>
         <source>Swap to file</source>
-        <translation type="unfinished"/>
+        <translation>Swap su file</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.ui" line="14"/>
@@ -847,7 +847,7 @@ Il programma di installazione verrà chiuso e tutte le modifiche andranno perse.
     <message>
         <location filename="../src/modules/partition/core/DeviceModel.cpp" line="89"/>
         <source>%1 - (%2)</source>
-        <translation type="unfinished"/>
+        <translation>%1 - (%2)</translation>
     </message>
 </context>
 <context>
@@ -1975,7 +1975,7 @@ Output:
         <location filename="../src/libcalamaresui/utils/CalamaresUtilsGui.cpp" line="269"/>
         <source>%1 (%2)</source>
         <comment>Language (Country)</comment>
-        <translation type="unfinished"/>
+        <translation>%1 (%2)</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/PartitionDialogHelpers.cpp" line="47"/>
@@ -2428,7 +2428,7 @@ Output:
         <location filename="../src/qml/calamares/slideshow/SlideCounter.qml" line="36"/>
         <source>%L1 / %L2</source>
         <extracomment>slide counter, %1 of %2 (numeric)</extracomment>
-        <translation type="unfinished"/>
+        <translation>%L1 / %L2</translation>
     </message>
 </context>
 <context>
@@ -2519,7 +2519,7 @@ Output:
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="66"/>
         <source> MiB</source>
-        <translation type="unfinished"/>
+        <translation> MiB</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="82"/>
@@ -2532,7 +2532,7 @@ Output:
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="132"/>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="152"/>
         <source>---</source>
-        <translation type="unfinished"/>
+        <translation>---</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/VolumeGroupBaseDialog.ui" line="102"/>
