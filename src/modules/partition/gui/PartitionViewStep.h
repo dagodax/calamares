@@ -36,6 +36,8 @@ class PartitionPage;
 class PartitionCoreModule;
 class QStackedWidget;
 
+template<typename T> class QFutureWatcher;
+
 /**
  * The starting point of the module. Instantiates PartitionCoreModule,
  * ChoicePage and PartitionPage, then connects them.
@@ -67,7 +69,9 @@ public:
 
     void setConfigurationMap( const QVariantMap& configurationMap ) override;
 
-    QList< Calamares::job_ptr > jobs() const override;
+    Calamares::JobList jobs() const override;
+
+    Calamares::RequirementsList checkRequirements() override;
 
 private:
     void initPartitionCoreModule();
@@ -79,6 +83,7 @@ private:
     PartitionPage*    m_manualPartitionPage;
 
     QWidget*          m_waitingWidget;
+    QFutureWatcher<void>* m_future;
 
     QSet< PartitionActions::Choices::SwapChoice > m_swapChoices;
 };

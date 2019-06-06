@@ -19,11 +19,12 @@
 
 #include "PartitionLabelsView.h"
 
-#include <core/PartitionModel.h>
-#include <core/ColorUtils.h>
+#include "core/PartitionModel.h"
+#include "core/ColorUtils.h"
 
-#include <utils/CalamaresUtilsGui.h>
-#include <utils/Logger.h>
+#include "utils/CalamaresUtilsGui.h"
+#include "utils/Logger.h"
+#include "utils/Units.h"
 
 #include <kpmcore/core/device.h>
 #include <kpmcore/fs/filesystem.h>
@@ -35,6 +36,7 @@
 #include <QMouseEvent>
 #include <QPainter>
 
+using CalamaresUtils::operator""_MiB;
 
 static const int LAYOUT_MARGIN = 4;
 static const int LABEL_PARTITION_SQUARE_MARGIN =
@@ -61,13 +63,7 @@ PartitionLabelsView::PartitionLabelsView( QWidget* parent )
     setFrameStyle( QFrame::NoFrame );
     setSelectionBehavior( QAbstractItemView::SelectRows );
     setSelectionMode( QAbstractItemView::SingleSelection );
-
-    // Debug
-    connect( this, &PartitionLabelsView::clicked,
-             this, [=]( const QModelIndex& index )
-    {
-        cDebug() << "Clicked row" << index.row();
-    } );
+    this->setObjectName("partitionLabel");
     setMouseTracking( true );
 }
 
@@ -100,7 +96,7 @@ PartitionLabelsView::sizeHint() const
 void
 PartitionLabelsView::paintEvent( QPaintEvent* event )
 {
-    Q_UNUSED( event );
+    Q_UNUSED( event )
 
     QPainter painter( viewport() );
     painter.fillRect( rect(), palette().window() );
@@ -162,8 +158,8 @@ PartitionLabelsView::getIndexesToDraw( const QModelIndex& parent ) const
 
         //HACK: horrible special casing follows.
         //      To save vertical space, we choose to hide short instances of free space.
-        //      Arbitrary limit: 10MB.
-        const qint64 maxHiddenB = 10000000;
+        //      Arbitrary limit: 10MiB.
+        const qint64 maxHiddenB = 10_MiB;
         if ( index.data( PartitionModel::IsFreeSpaceRole ).toBool() &&
              index.data( PartitionModel::SizeRole ).toLongLong() <  maxHiddenB )
             continue;
@@ -230,6 +226,7 @@ PartitionLabelsView::buildTexts( const QModelIndex& index ) const
                                     PartitionModel::SizeColumn )
                           .data().toString();
     else
+        //: size[number]  filesystem[name]
         secondLine = tr( "%1  %2" )
                      .arg( index.sibling( index.row(),
                                           PartitionModel::SizeColumn )
@@ -477,7 +474,7 @@ PartitionLabelsView::visualRect( const QModelIndex& idx ) const
 QRegion
 PartitionLabelsView::visualRegionForSelection( const QItemSelection& selection ) const
 {
-    Q_UNUSED( selection );
+    Q_UNUSED( selection )
 
     return QRegion();
 }
@@ -542,8 +539,8 @@ PartitionLabelsView::setExtendedPartitionHidden( bool hidden )
 QModelIndex
 PartitionLabelsView::moveCursor( CursorAction cursorAction, Qt::KeyboardModifiers modifiers )
 {
-    Q_UNUSED( cursorAction );
-    Q_UNUSED( modifiers );
+    Q_UNUSED( cursorAction )
+    Q_UNUSED( modifiers )
 
     return QModelIndex();
 }
@@ -552,7 +549,7 @@ PartitionLabelsView::moveCursor( CursorAction cursorAction, Qt::KeyboardModifier
 bool
 PartitionLabelsView::isIndexHidden( const QModelIndex& index ) const
 {
-    Q_UNUSED( index );
+    Q_UNUSED( index )
 
     return false;
 }
@@ -597,7 +594,7 @@ PartitionLabelsView::mouseMoveEvent( QMouseEvent* event )
 void
 PartitionLabelsView::leaveEvent( QEvent* event )
 {
-    Q_UNUSED( event );
+    Q_UNUSED( event )
 
     QGuiApplication::restoreOverrideCursor();
     if ( m_hoveredIndex.isValid() )

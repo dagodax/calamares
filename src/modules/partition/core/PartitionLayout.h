@@ -1,6 +1,6 @@
 /* === This file is part of Calamares - <https://github.com/calamares> ===
  *
- *   Copyright 2018, Collabora Ltd
+ *   Copyright 2018-2019, Collabora Ltd <arnaud.ferraris@collabora.com>
  *   Copyright 2019, Adriaan de Groot <groot@kde.org>
  *
  *   Calamares is free software: you can redistribute it and/or modify
@@ -20,7 +20,9 @@
 #ifndef PARTITIONLAYOUT_H
 #define PARTITIONLAYOUT_H
 
-#include "Typedefs.h"
+#include "partition/PartitionSize.h"
+
+#include "core/PartUtils.h"
 
 // KPMcore
 #include <kpmcore/core/partitiontable.h>
@@ -36,29 +38,27 @@ class PartitionLayout
 {
 public:
 
-    enum SizeUnit
-    {
-        Percent = 0,
-        Byte,
-        KiB,
-        MiB,
-        GiB
-    };
-
     struct PartitionEntry
     {
         QString partLabel;
         QString partMountPoint;
         FileSystem::Type partFileSystem = FileSystem::Unknown;
-        double partSize = 0.0L;
-        SizeUnit partSizeUnit = Percent;
-        double partMinSize = 0.0L;
-        SizeUnit partMinSizeUnit = Percent;
+        CalamaresUtils::Partition::PartitionSize partSize;
+        CalamaresUtils::Partition::PartitionSize partMinSize;
+        CalamaresUtils::Partition::PartitionSize partMaxSize;
 
         /// @brief All-zeroes PartitionEntry
-        PartitionEntry() {};
-        /// @brief Parse @p size and @p min to their respective member variables
-        PartitionEntry( const QString& size, const QString& min );
+        PartitionEntry() {}
+        /// @brief Parse @p size, @p min and @p max to their respective member variables
+        PartitionEntry( const QString& size, const QString& min, const QString& max );
+
+        bool isValid() const
+        {
+            if ( !partSize.isValid() ||
+                 ( partMinSize.isValid() && partMaxSize.isValid() && partMinSize > partMaxSize ) )
+                return false;
+            return true;
+        }
     };
 
     PartitionLayout();
@@ -66,9 +66,9 @@ public:
     PartitionLayout( const PartitionLayout& layout );
     ~PartitionLayout();
 
-    void addEntry( PartitionEntry entry );
-    void addEntry( const QString& mountPoint, const QString& size, const QString& min = QString() );
-    void addEntry( const QString& label, const QString& mountPoint, const QString& fs, const QString& size, const QString& min = QString() );
+    bool addEntry( PartitionEntry entry );
+    bool addEntry( const QString& mountPoint, const QString& size, const QString& min = QString(), const QString& max = QString() );
+    bool addEntry( const QString& label, const QString& mountPoint, const QString& fs, const QString& size, const QString& min = QString(), const QString& max = QString() );
 
     /**
      * @brief Apply the current partition layout to the selected drive space.

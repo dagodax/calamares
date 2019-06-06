@@ -2,7 +2,7 @@
  *
  *   Copyright 2014-2015, Teo Mrnjavac <teo@kde.org>
  *   Copyright 2015,      Anke Boersma <demm@kaosx.us>
- *   Copyright 2017-2018, Adriaan de Groot <groot@kde.org>
+ *   Copyright 2017-2019, Adriaan de Groot <groot@kde.org>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -21,29 +21,36 @@
 #include "WelcomePage.h"
 
 #include "ui_WelcomePage.h"
+#include "checker/CheckerContainer.h"
+
+#include "Branding.h"
 #include "CalamaresVersion.h"
-#include "checker/RequirementsChecker.h"
-#include "utils/Logger.h"
-#include "utils/CalamaresUtilsGui.h"
-#include "utils/Retranslator.h"
+#include "Settings.h"
 #include "ViewManager.h"
+
+#include "locale/LabelModel.h"
+#include "modulesystem/ModuleManager.h"
+#include "utils/CalamaresUtilsGui.h"
+#include "utils/Logger.h"
+#include "utils/Retranslator.h"
 
 #include <QApplication>
 #include <QBoxLayout>
+#include <QComboBox>
 #include <QDesktopServices>
 #include <QFocusEvent>
 #include <QLabel>
-#include <QComboBox>
 #include <QMessageBox>
 
-#include "Branding.h"
-
-
-WelcomePage::WelcomePage( RequirementsChecker* requirementsChecker, QWidget* parent )
+WelcomePage::WelcomePage( QWidget* parent )
     : QWidget( parent )
     , ui( new Ui::WelcomePage )
-    , m_requirementsChecker( requirementsChecker )
+    , m_checkingWidget( new CheckerContainer( this ) )
+    , m_languages( nullptr )
 {
+    connect( Calamares::ModuleManager::instance(), &Calamares::ModuleManager::requirementsResult, m_checkingWidget, &CheckerContainer::requirementsChecked );
+    connect( Calamares::ModuleManager::instance(), &Calamares::ModuleManager::requirementsComplete, m_checkingWidget, &CheckerContainer::requirementsComplete );
+    connect( Calamares::ModuleManager::instance(), &Calamares::ModuleManager::requirementsProgress, m_checkingWidget, &CheckerContainer::requirementsProgress );
     ui->setupUi( this );
 
     ui->verticalLayout->insertSpacing( 1, CalamaresUtils::defaultFontHeight() * 2 );
@@ -57,8 +64,18 @@ WelcomePage::WelcomePage( RequirementsChecker* requirementsChecker, QWidget* par
         << *Calamares::Branding::VersionedName;
 
     CALAMARES_RETRANSLATE(
-        ui->mainText->setText( (Calamares::Branding::instance()->welcomeStyleCalamares() ? tr( "<h1>Welcome to the Calamares installer for %1.</h1>" ) : tr( "<h1>Welcome to the %1 installer.</h1>" ))
-                                .arg( *Calamares::Branding::VersionedName ) );
+        QString message;
+
+        if ( Calamares::Settings::instance()->isSetupMode() )
+            message = Calamares::Branding::instance()->welcomeStyleCalamares()
+                ? tr( "<h1>Welcome to the Calamares setup program for %1.</h1>" )
+                : tr( "<h1>Welcome to %1 setup.</h1>" );
+        else
+            message = Calamares::Branding::instance()->welcomeStyleCalamares()
+                ? tr( "<h1>Welcome to the Calamares installer for %1.</h1>" )
+                : tr( "<h1>Welcome to the %1 installer.</h1>" );
+
+        ui->mainText->setText( message.arg( *Calamares::Branding::VersionedName ) );
         ui->retranslateUi( this );
     )
 
@@ -69,18 +86,19 @@ WelcomePage::WelcomePage( RequirementsChecker* requirementsChecker, QWidget* par
     connect( ui->aboutButton, &QPushButton::clicked,
              this, [ this ]
     {
+        QString title = Calamares::Settings::instance()->isSetupMode()
+            ? tr( "About %1 setup" )
+            : tr( "About %1 installer" );
         QMessageBox mb( QMessageBox::Information,
-                        tr( "About %1 installer" )
-                            .arg( CALAMARES_APPLICATION_NAME ),
+                        title.arg( CALAMARES_APPLICATION_NAME ),
                         tr(
                             "<h1>%1</h1><br/>"
                             "<strong>%2<br/>"
                             "for %3</strong><br/><br/>"
                             "Copyright 2014-2017 Teo Mrnjavac &lt;teo@kde.org&gt;<br/>"
-                            "Copyright 2017 Adriaan de Groot &lt;groot@kde.org&gt;<br/>"
-                            "Thanks to: Anke Boersma, Aurélien Gâteau, Kevin Kofler, Lisa Vitolo,"
-                            " Philip Müller, Pier Luigi Fiorini, Rohan Garg and the <a "
-                            "href=\"https://www.transifex.com/kaos/kaos/\">KaOS "
+                            "Copyright 2017-2019 Adriaan de Groot &lt;groot@kde.org&gt;<br/>"
+                            "Thanks to <a href=\"https://calamares.io/team/\">the Calamares team</a> "
+                            "and the <a href=\"https://www.transifex.com/kaos/kaos/\">KaOS "
                             "translators team</a>.<br/><br/>"
                             "<a href=\"https://calamares.io/\">Calamares</a> "
                             "development is sponsored by <br/>"
@@ -102,35 +120,9 @@ WelcomePage::WelcomePage( RequirementsChecker* requirementsChecker, QWidget* par
         mb.exec();
     } );
 
-    ui->verticalLayout->insertWidget( 3, m_requirementsChecker->widget() );
+    ui->verticalLayout->insertWidget( 3, m_checkingWidget);
 }
 
-
-/** @brief Match the combobox of languages with a predicate
- *
- * Scans the entries in the @p list (actually a ComboBox) and if one
- * matches the given @p predicate, returns true and sets @p matchFound
- * to the locale that matched.
- *
- * If none match, returns false and leaves @p matchFound unchanged.
- */
-static
-bool matchLocale( QComboBox& list, QLocale& matchFound, std::function<bool(const QLocale&)> predicate)
-{
-    for (int i = 0; i < list.count(); i++)
-    {
-        QLocale thisLocale = list.itemData( i, Qt::UserRole ).toLocale();
-        if ( predicate(thisLocale) )
-        {
-            list.setCurrentIndex( i );
-            cDebug() << " .. Matched locale " << thisLocale.name();
-            matchFound = thisLocale;
-            return true;
-        }
-    }
-
-    return false;
-}
 
 void
 WelcomePage::initLanguages()
@@ -139,58 +131,45 @@ WelcomePage::initLanguages()
     ui->languageWidget->clear();
     ui->languageWidget->setInsertPolicy( QComboBox::InsertAtBottom );
 
-    {
-        std::list< CalamaresUtils::LocaleLabel > localeList;
-        const auto locales = QString( CALAMARES_TRANSLATION_LANGUAGES ).split( ';');
-        for ( const QString& locale : locales )
-        {
-            localeList.emplace_back( locale );
-        }
-
-        localeList.sort(); // According to the sortkey, which is english
-
-        for ( const auto& locale : localeList )
-        {
-            ui->languageWidget->addItem( locale.label(), locale.locale() );
-        }
-    }
+    m_languages = CalamaresUtils::Locale::availableTranslations();
+    ui->languageWidget->setModel( m_languages );
+    ui->languageWidget->setItemDelegate( new LocaleTwoColumnDelegate( ui->languageWidget ) );
 
     // Find the best initial translation
     QLocale defaultLocale = QLocale( QLocale::system().name() );
-    QLocale matchedLocale;
 
-    cDebug() << "Matching exact locale" << defaultLocale;
-    bool isTranslationAvailable =
-        matchLocale( *(ui->languageWidget), matchedLocale,
-                      [&](const QLocale& x){ return x.language() == defaultLocale.language() && x.country() == defaultLocale.country(); } );
+    cDebug() << "Matching locale" << defaultLocale;
+    int matchedLocaleIndex = m_languages->find(
+        [&](const QLocale& x){ return x.language() == defaultLocale.language() && x.country() == defaultLocale.country(); } );
 
-    if ( !isTranslationAvailable )
+    if ( matchedLocaleIndex < 0 )
     {
-        cDebug() << "Matching approximate locale" << defaultLocale.language();
+        cDebug() << Logger::SubEntry << "Matching approximate locale" << defaultLocale.language();
 
-        isTranslationAvailable =
-            matchLocale( *(ui->languageWidget), matchedLocale,
-                          [&](const QLocale& x){ return x.language() == defaultLocale.language(); } ) ;
+        matchedLocaleIndex = m_languages->find(
+            [&](const QLocale& x){ return x.language() == defaultLocale.language(); } );
     }
 
-    if ( !isTranslationAvailable )
+    if ( matchedLocaleIndex < 0 )
     {
         QLocale en_us( QLocale::English, QLocale::UnitedStates );
 
-        cDebug() << "Matching English (US)";
-        isTranslationAvailable =
-            matchLocale( *(ui->languageWidget), matchedLocale,
-                          [&](const QLocale& x){ return x == en_us; } );
+        cDebug() << Logger::SubEntry << "Matching English (US)";
+        matchedLocaleIndex = m_languages->find( en_us );
 
         // Now, if it matched, because we didn't match the system locale, switch to the one found
-        if ( isTranslationAvailable )
-            QLocale::setDefault( matchedLocale );
+        if ( matchedLocaleIndex >= 0 )
+            QLocale::setDefault( m_languages->locale( matchedLocaleIndex ).locale() );
     }
 
-    if ( isTranslationAvailable )
-        CalamaresUtils::installTranslator( matchedLocale.name(),
-                                           Calamares::Branding::instance()->translationsPathPrefix(),
-                                           qApp );
+    if ( matchedLocaleIndex >= 0 )
+    {
+        QString name = m_languages->locale( matchedLocaleIndex ).name();
+        cDebug() << Logger::SubEntry << "Matched with index" << matchedLocaleIndex << name;
+
+        CalamaresUtils::installTranslator( name, Calamares::Branding::instance()->translationsDirectory(), qApp );
+        ui->languageWidget->setCurrentIndex( matchedLocaleIndex );
+    }
     else
         cWarning() << "No available translation matched" << defaultLocale;
 
@@ -199,12 +178,12 @@ WelcomePage::initLanguages()
              this,
              [&]( int newIndex )
              {
-                 QLocale selectedLocale = ui->languageWidget->itemData( newIndex, Qt::UserRole ).toLocale();
+                 const auto& selectedLocale = m_languages->locale( newIndex ).locale();
                  cDebug() << "Selected locale" << selectedLocale;
 
                  QLocale::setDefault( selectedLocale );
                  CalamaresUtils::installTranslator( selectedLocale,
-                                                    Calamares::Branding::instance()->translationsPathPrefix(),
+                                                    Calamares::Branding::instance()->translationsDirectory(),
                                                     qApp );
              } );
 }
@@ -276,4 +255,31 @@ WelcomePage::focusInEvent( QFocusEvent* e )
     if ( ui->languageWidget )
         ui->languageWidget->setFocus();
     e->accept();
+}
+
+bool
+WelcomePage::verdict() const
+{
+    return m_checkingWidget->verdict();
+}
+
+void
+WelcomePage::externallySelectedLanguage( int row )
+{
+    if ( ( row >= 0 ) && ( row < ui->languageWidget->count() ) )
+        ui->languageWidget->setCurrentIndex( row );
+}
+
+void
+WelcomePage::setLanguageIcon( QPixmap i )
+{
+    ui->languageIcon->setPixmap( i );
+}
+
+
+void
+LocaleTwoColumnDelegate::paint(QPainter* painter, const QStyleOptionViewItem& option, const QModelIndex& index) const
+{
+    QStyledItemDelegate::paint( painter, option, index );
+    option.widget->style()->drawItemText( painter, option.rect, Qt::AlignRight | Qt::AlignVCenter, option.palette, false, index.data( CalamaresUtils::Locale::LabelModel::EnglishLabelRole ).toString() );
 }

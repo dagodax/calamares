@@ -19,22 +19,24 @@
 
 #include "LocalePage.h"
 
-#include "timezonewidget/timezonewidget.h"
 #include "SetTimezoneJob.h"
-#include "utils/CalamaresUtilsGui.h"
-#include "utils/Logger.h"
-#include "utils/Retranslator.h"
+#include "timezonewidget/timezonewidget.h"
+
 #include "GlobalStorage.h"
 #include "JobQueue.h"
 #include "LCLocaleDialog.h"
 #include "Settings.h"
+
+#include "locale/Label.h"
+#include "utils/CalamaresUtilsGui.h"
+#include "utils/Logger.h"
+#include "utils/Retranslator.h"
 
 #include <QBoxLayout>
 #include <QComboBox>
 #include <QLabel>
 #include <QPushButton>
 #include <QProcess>
-
 
 LocalePage::LocalePage( QWidget* parent )
     : QWidget( parent )
@@ -101,7 +103,7 @@ LocalePage::LocalePage( QWidget* parent )
              static_cast< void ( QComboBox::* )( int ) >( &QComboBox::currentIndexChanged ),
              [this]( int currentIndex )
     {
-        Q_UNUSED( currentIndex );
+        Q_UNUSED( currentIndex )
         QHash< QString, QList< LocaleGlobal::Location > > regions = LocaleGlobal::getLocations();
         if ( !regions.contains( m_regionCombo->currentData().toString() ) )
             return;
@@ -385,10 +387,10 @@ LocalePage::init( const QString& initialRegion,
 
 std::pair< QString, QString > LocalePage::prettyLocaleStatus( const LocaleConfiguration& lc ) const
 {
-    using CalamaresUtils::LocaleLabel;
+    using CalamaresUtils::Locale::Label;
 
-    LocaleLabel lang( lc.language(), LocaleLabel::LabelFormat::AlwaysWithCountry );
-    LocaleLabel num( lc.lc_numeric, LocaleLabel::LabelFormat::AlwaysWithCountry );
+    Label lang( lc.language(), Label::LabelFormat::AlwaysWithCountry );
+    Label num( lc.lc_numeric, Label::LabelFormat::AlwaysWithCountry );
 
     return std::make_pair< QString, QString >(
         tr( "The system language will be set to %1." ).arg( lang.label() ),

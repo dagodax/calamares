@@ -2,6 +2,8 @@
  *
  *   Copyright 2014-2015, Teo Mrnjavac <teo@kde.org>
  *   Copyright 2017-2018, Adriaan de Groot <groot@kde.org>
+ *   Copyright 2018, Raul Rodrigo Segura (raurodse)
+ *   Copyright 2019, Collabora Ltd <arnaud.ferraris@collabora.com>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -34,6 +36,8 @@
 #include <QDesktopWidget>
 #include <QLabel>
 #include <QTreeView>
+#include <QFile>
+#include <QFileInfo>
 
 static inline int
 windowDimensionToPixels( const Calamares::Branding::WindowDimension& u )
@@ -52,9 +56,15 @@ CalamaresWindow::CalamaresWindow( QWidget* parent )
     , m_debugWindow( nullptr )
     , m_viewManager( nullptr )
 {
+    // If we can never cancel, don't show the window-close button
+    if ( Calamares::Settings::instance()->disableCancel() )
+        setWindowFlag( Qt::WindowCloseButtonHint, false );
+
     CALAMARES_RETRANSLATE(
-        setWindowTitle( tr( "%1 Installer" )
-                        .arg( *Calamares::Branding::ProductName ) );
+        setWindowTitle( Calamares::Settings::instance()->isSetupMode()
+                            ? tr( "%1 Setup Program" ).arg( *Calamares::Branding::ProductName )
+                            : tr( "%1 Installer" ).arg( *Calamares::Branding::ProductName )
+                         );
     )
 
     const Calamares::Branding* const branding = Calamares::Branding::instance();
@@ -63,6 +73,9 @@ CalamaresWindow::CalamaresWindow( QWidget* parent )
     using CalamaresUtils::windowMinimumWidth;
     using CalamaresUtils::windowPreferredHeight;
     using CalamaresUtils::windowPreferredWidth;
+
+    // Needs to match what's checked in DebugWindow
+    this->setObjectName("mainApp");
 
     QSize availableSize = qApp->desktop()->availableGeometry( this ).size();
     QSize minimumSize( qBound( windowMinimumWidth, availableSize.width(), windowPreferredWidth ),
@@ -76,17 +89,19 @@ CalamaresWindow::CalamaresWindow( QWidget* parent )
     int w = qBound( minimumSize.width(), windowDimensionToPixels( brandingSizes.first ), availableSize.width() );
     int h = qBound( minimumSize.height(),  windowDimensionToPixels( brandingSizes.second ), availableSize.height() );
 
-    cDebug() << "  Proposed window size:" << w << h;
+    cDebug() << Logger::SubEntry << "Proposed window size:" << w << h;
     resize( w, h );
 
     QBoxLayout* mainLayout = new QHBoxLayout;
     setLayout( mainLayout );
 
     QWidget* sideBox = new QWidget( this );
+    sideBox->setObjectName("sidebarApp");
     mainLayout->addWidget( sideBox );
 
     QBoxLayout* sideLayout = new QVBoxLayout;
     sideBox->setLayout( sideLayout );
+    // Set this attribute into qss file
     sideBox->setFixedWidth( qBound( 100, CalamaresUtils::defaultFontHeight() * 12, w < windowPreferredWidth ? 100 : 190 ) );
     sideBox->setSizePolicy( QSizePolicy::Expanding, QSizePolicy::Expanding );
 
@@ -94,6 +109,8 @@ CalamaresWindow::CalamaresWindow( QWidget* parent )
     sideLayout->addLayout( logoLayout );
     logoLayout->addStretch();
     QLabel* logoLabel = new QLabel( sideBox );
+    logoLabel->setObjectName("logoApp");
+    //Define all values into qss file
     {
         QPalette plt = sideBox->palette();
         sideBox->setAutoFillBackground( true );
@@ -115,6 +132,7 @@ CalamaresWindow::CalamaresWindow( QWidget* parent )
     if ( Calamares::Settings::instance()->debugMode() )
     {
         QPushButton* debugWindowBtn = new QPushButton;
+        debugWindowBtn->setObjectName( "debugButton" );
         CALAMARES_RETRANSLATE(
             debugWindowBtn->setText( tr( "Show debug information" ) );
         )
@@ -149,8 +167,17 @@ CalamaresWindow::CalamaresWindow( QWidget* parent )
     m_viewManager = Calamares::ViewManager::instance( this );
     if ( branding->windowExpands() )
         connect( m_viewManager, &Calamares::ViewManager::enlarge, this, &CalamaresWindow::enlarge );
+    // NOTE: Although the ViewManager has a signal cancelEnabled() that
+    //       signals when the state of the cancel button changes (in
+    //       particular, to disable cancel during the exec phase),
+    //       we don't connect to it here. Changing the window flag
+    //       for the close button causes uncomfortable window flashing
+    //       and requires an extra show() (at least with KWin/X11) which
+    //       is too annoying. Instead, leave it up to ignoring-the-quit-
+    //       event, which is also the ViewManager's responsibility.
 
     mainLayout->addWidget( m_viewManager->centralWidget() );
+    setStyleSheet( Calamares::Branding::instance()->stylesheet() );
 }
 
 void

@@ -1,7 +1,8 @@
 /* === This file is part of Calamares - <https://github.com/calamares> ===
  *
  *   Copyright 2015-2016, Teo Mrnjavac <teo@kde.org>
- *   Copyright 2018, Adriaan de Groot <groot@kde.org>
+ *   Copyright 2018-2019 Adriaan de Groot <groot@kde.org>
+ *   Copyright 2019, Collabora Ltd <arnaud.ferraris@collabora.com>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -42,6 +43,25 @@
 namespace PartUtils
 {
 
+QString
+convenienceName( const Partition* const candidate )
+{
+    if ( !candidate->mountPoint().isEmpty() )
+        return candidate->mountPoint();
+    if ( !candidate->partitionPath().isEmpty() )
+        return candidate->partitionPath();
+    if ( !candidate->devicePath().isEmpty() )
+        return candidate->devicePath();
+    if ( !candidate->deviceNode().isEmpty() )
+        return candidate->devicePath();
+
+    QString p;
+    QTextStream s( &p );
+    s << (void *)candidate;
+
+    return p;
+}
+
 bool
 canBeReplaced( Partition* candidate )
 {
@@ -54,7 +74,7 @@ canBeReplaced( Partition* candidate )
     bool ok = false;
     double requiredStorageGB = Calamares::JobQueue::instance()
                                     ->globalStorage()
-                                    ->value( "requiredStorageGB" )
+                                    ->value( "requiredStorageGiB" )
                                     .toDouble( &ok );
 
     qint64 availableStorageB = candidate->capacity();
@@ -63,12 +83,12 @@ canBeReplaced( Partition* candidate )
              << QString( "(%1GB)" ).arg( requiredStorageB / 1024 / 1024 / 1024 );
     cDebug() << "Storage capacity  B:" << availableStorageB
              << QString( "(%1GB)" ).arg( availableStorageB / 1024 / 1024 / 1024 )
-             << "for" << candidate->partitionPath() << "   length:" << candidate->length();
+             << "for" << convenienceName( candidate ) << "   length:" << candidate->length();
 
     if ( ok &&
          availableStorageB > requiredStorageB )
     {
-        cDebug() << "Partition" << candidate->partitionPath() << "authorized for replace install.";
+        cDebug() << "Partition" << convenienceName( candidate ) << "authorized for replace install.";
 
         return true;
     }
@@ -85,24 +105,24 @@ canBeResized( Partition* candidate )
         return false;
     }
 
-    cDebug() << "Checking if" << candidate->partitionPath() << "can be resized.";
+    cDebug() << "Checking if" << convenienceName( candidate ) << "can be resized.";
     if ( !candidate->fileSystem().supportGrow() ||
          !candidate->fileSystem().supportShrink() )
     {
-        cDebug() << "  .. filesystem" << candidate->fileSystem().name()
+        cDebug() << Logger::SubEntry << "NO, filesystem" << candidate->fileSystem().name()
             << "does not support resize.";
         return false;
     }
 
     if ( KPMHelpers::isPartitionFreeSpace( candidate ) )
     {
-        cDebug() << "  .. partition is free space";
+        cDebug() << Logger::SubEntry << "NO, partition is free space";
         return false;
     }
 
     if ( candidate->isMounted() )
     {
-        cDebug() << "  .. partition is mounted";
+        cDebug() << Logger::SubEntry << "NO, partition is mounted";
         return false;
     }
 
@@ -111,13 +131,13 @@ canBeResized( Partition* candidate )
         PartitionTable* table = dynamic_cast< PartitionTable* >( candidate->parent() );
         if ( !table )
         {
-            cDebug() << "  .. no partition table found";
+            cDebug() << Logger::SubEntry << "NO, no partition table found";
             return false;
         }
 
         if ( table->numPrimaries() >= table->maxPrimaries() )
         {
-            cDebug() << "  .. partition table already has" 
+            cDebug() << Logger::SubEntry << "NO, partition table already has"
                 << table->maxPrimaries() << "primary partitions.";
             return false;
         }
@@ -126,37 +146,44 @@ canBeResized( Partition* candidate )
     bool ok = false;
     double requiredStorageGB = Calamares::JobQueue::instance()
                                     ->globalStorage()
-                                    ->value( "requiredStorageGB" )
+                                    ->value( "requiredStorageGiB" )
                                     .toDouble( &ok );
+    // We require a little more for partitioning overhead and swap file
     double advisedStorageGB = requiredStorageGB + 0.5 + 2.0;
-
     qint64 availableStorageB = candidate->available();
 
-    // We require a little more for partitioning overhead and swap file
-    // TODO: maybe make this configurable?
-    qint64 advisedStorageB = advisedStorageGB * 1024 * 1024 * 1024;
-    cDebug() << "Required  storage B:" << advisedStorageB
-             << QString( "(%1GB)" ).arg( advisedStorageGB );
-    cDebug() << "Available storage B:" << availableStorageB
-             << QString( "(%1GB)" ).arg( availableStorageB / 1024 / 1024 / 1024 )
-             << "for" << candidate->partitionPath() << "   length:" << candidate->length()
-             << "   sectorsUsed:" << candidate->sectorsUsed() << "   fsType:" << candidate->fileSystem().name();
+    qint64 advisedStorageB = CalamaresUtils::GiBtoBytes( advisedStorageGB );
 
     if ( ok &&
          availableStorageB > advisedStorageB )
     {
-        cDebug() << "Partition" << candidate->partitionPath() << "authorized for resize + autopartition install.";
+        cDebug() << "Partition" << convenienceName( candidate ) << "authorized for resize + autopartition install.";
 
         return true;
     }
-    return false;
+    else if ( ok )
+    {
+        Logger::CDebug deb;
+        deb << Logger::SubEntry << "NO, insufficient storage";
+        deb << Logger::Continuation << "Required  storage B:" << advisedStorageB
+                << QString( "(%1GB)" ).arg( advisedStorageGB );
+        deb << Logger::Continuation << "Available storage B:" << availableStorageB
+                << QString( "(%1GB)" ).arg( availableStorageB / 1024 / 1024 / 1024 )
+                << "for" << convenienceName( candidate ) << "length:" << candidate->length()
+                << "sectorsUsed:" << candidate->sectorsUsed() << "fsType:" << candidate->fileSystem().name();
+        return false;
+    }
+    else
+    {
+        cDebug() << Logger::SubEntry << "NO, requiredStorageGB is not set correctly.";
+        return false;
+    }
 }
 
 
 bool
 canBeResized( PartitionCoreModule* core, const QString& partitionPath )
 {
-    //FIXME: check for max partitions count on DOS MBR
     cDebug() << "Checking if" << partitionPath << "can be resized.";
     QString partitionWithOs = partitionPath;
     if ( partitionWithOs.startsWith( "/dev/" ) )
@@ -168,14 +195,13 @@ canBeResized( PartitionCoreModule* core, const QString& partitionPath )
             Partition* candidate = KPMHelpers::findPartitionByPath( { dev }, partitionWithOs );
             if ( candidate )
             {
-                cDebug() << "  .. found Partition* for" << partitionWithOs;
                 return canBeResized( candidate );
             }
         }
-        cDebug() << "  .. no Partition* found for" << partitionWithOs;
+        cDebug() << Logger::SubEntry << "no Partition* found for" << partitionWithOs;
     }
 
-    cDebug() << "Partition" << partitionWithOs << "CANNOT BE RESIZED FOR AUTOINSTALL.";
+    cDebug() << Logger::SubEntry << "Partition" << partitionWithOs << "CANNOT BE RESIZED FOR AUTOINSTALL.";
     return false;
 }
 
@@ -198,7 +224,7 @@ lookForFstabEntries( const QString& partitionPath )
             mountOptions.append( "noload" );
     }
 
-    cDebug() << "Checking device" << partitionPath 
+    cDebug() << "Checking device" << partitionPath
         << "for fstab (fs=" << r.getOutput() << ')';
 
     FstabEntryList fstabEntries;
@@ -209,9 +235,9 @@ lookForFstabEntries( const QString& partitionPath )
     if ( !exit ) // if all is well
     {
         QFile fstabFile( mountsDir.path() + "/etc/fstab" );
-        
-        cDebug() << "  .. reading" << fstabFile.fileName();
-        
+
+        cDebug() << Logger::SubEntry << "reading" << fstabFile.fileName();
+
         if ( fstabFile.open( QIODevice::ReadOnly | QIODevice::Text ) )
         {
             const QStringList fstabLines = QString::fromLocal8Bit( fstabFile.readAll() )
@@ -220,9 +246,9 @@ lookForFstabEntries( const QString& partitionPath )
             for ( const QString& rawLine : fstabLines )
                 fstabEntries.append( FstabEntry::fromEtcFstab( rawLine ) );
             fstabFile.close();
-            cDebug() << "  .. got" << fstabEntries.count() << "lines.";
+            cDebug() << Logger::SubEntry << "got" << fstabEntries.count() << "lines.";
             std::remove_if( fstabEntries.begin(), fstabEntries.end(), [](const FstabEntry& x) { return !x.isValid(); } );
-            cDebug() << "  .. got" << fstabEntries.count() << "fstab entries.";
+            cDebug() << Logger::SubEntry << "got" << fstabEntries.count() << "fstab entries.";
         }
         else
             cWarning() << "Could not read fstab from mounted fs";
@@ -381,13 +407,13 @@ isEfiSystem()
 bool
 isEfiBootable( const Partition* candidate )
 {
-    cDebug() << "Check EFI bootable" << candidate->partitionPath() << candidate->devicePath();
-    cDebug() << " .. flags" << candidate->activeFlags();
+    cDebug() << "Check EFI bootable" << convenienceName( candidate ) << candidate->devicePath();
+    cDebug() << Logger::SubEntry << "flags" << candidate->activeFlags();
 
     auto flags = PartitionInfo::flags( candidate );
 
     /* If bit 17 is set, old-style Esp flag, it's OK */
-    if ( flags.testFlag( PartitionTable::FlagEsp ) )
+    if ( flags.testFlag( KPM_PARTITION_FLAG_ESP ) )
         return true;
 
     /* Otherwise, if it's a GPT table, Boot (bit 0) is the same as Esp */
@@ -395,7 +421,7 @@ isEfiBootable( const Partition* candidate )
     while ( root && !root->isRoot() )
     {
         root = root->parent();
-        cDebug() << " .. moved towards root" << (void *)root;
+        cDebug() << Logger::SubEntry << "moved towards root" << (void *)root;
     }
 
     // Strange case: no root found, no partition table node?
@@ -403,9 +429,9 @@ isEfiBootable( const Partition* candidate )
         return false;
 
     const PartitionTable* table = dynamic_cast<const PartitionTable*>( root );
-    cDebug() << "  .. partition table" << (void *)table << "type" << ( table ? table->type() : PartitionTable::TableType::unknownTableType );
+    cDebug() << Logger::SubEntry << "partition table" << (void *)table << "type" << ( table ? table->type() : PartitionTable::TableType::unknownTableType );
     return table && ( table->type() == PartitionTable::TableType::gpt ) &&
-        flags.testFlag( PartitionTable::FlagBoot );
+        flags.testFlag( KPM_PARTITION_FLAG(Boot) );
 }
 
 QString

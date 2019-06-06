@@ -51,7 +51,7 @@
 
 #include <kpmcore/core/device.h>
 #include <kpmcore/core/partition.h>
-#ifdef WITH_KPMCOREGT33
+#ifdef WITH_KPMCORE4API
 #include <kpmcore/core/softwareraid.h>
 #endif
 
@@ -464,7 +464,7 @@ ChoicePage::applyActionChoice( ChoicePage::InstallChoice choice )
                 gs->value( "defaultFileSystemType" ).toString(),
                 m_encryptWidget->passphrase(),
                 gs->value( "efiSystemPartition" ).toString(),
-                CalamaresUtils::GiBtoBytes( gs->value( "requiredStorageGB" ).toDouble() ),
+                CalamaresUtils::GiBtoBytes( gs->value( "requiredStorageGiB" ).toDouble() ),
                 m_eraseSwapChoice
             };
 
@@ -542,7 +542,7 @@ void
 ChoicePage::doAlongsideSetupSplitter( const QModelIndex& current,
                                       const QModelIndex& previous )
 {
-    Q_UNUSED( previous );
+    Q_UNUSED( previous )
     if ( !current.isValid() )
         return;
 
@@ -562,11 +562,10 @@ ChoicePage::doAlongsideSetupSplitter( const QModelIndex& current,
 
     double requiredStorageGB = Calamares::JobQueue::instance()
                                     ->globalStorage()
-                                    ->value( "requiredStorageGB" )
+                                    ->value( "requiredStorageGiB" )
                                     .toDouble();
 
-    // TODO: make this consistent
-    qint64 requiredStorageB = qRound64( requiredStorageGB + 0.1 + 2.0 ) * 1024 * 1024 * 1024;
+    qint64 requiredStorageB = CalamaresUtils::GiBtoBytes( requiredStorageGB + 0.1 + 2.0 );
 
     m_afterPartitionSplitterWidget->setSplitPartition(
                 part->partitionPath(),
@@ -720,7 +719,7 @@ void
 ChoicePage::onPartitionToReplaceSelected( const QModelIndex& current,
                                           const QModelIndex& previous )
 {
-    Q_UNUSED( previous );
+    Q_UNUSED( previous )
     if ( !current.isValid() )
         return;
 
@@ -884,11 +883,6 @@ ChoicePage::updateDeviceStatePreview()
     PartitionModel* model = new PartitionModel( m_beforePartitionBarsView );
     model->init( deviceBefore, m_core->osproberEntries() );
 
-    // The QObject parents tree is meaningful for memory management here,
-    // see qDeleteAll above.
-    deviceBefore->setParent( model );  // Can't reparent across threads
-    model->setParent( m_beforePartitionBarsView );
-
     m_beforePartitionBarsView->setModel( model );
     m_beforePartitionLabelsView->setModel( model );
 
@@ -968,19 +962,18 @@ ChoicePage::updateActionChoicePreview( ChoicePage::InstallChoice choice )
             QLabel* sizeLabel = new QLabel( m_previewAfterFrame );
             layout->addWidget( sizeLabel );
             sizeLabel->setWordWrap( true );
-            connect( m_afterPartitionSplitterWidget, &PartitionSplitterWidget::partitionResized,
-                     this, [ this, sizeLabel ]( const QString& path,
-                                                qint64 size,
-                                                qint64 sizeNext )
-            {
-                Q_UNUSED( path )
-                sizeLabel->setText( tr( "%1 will be shrunk to %2MB and a new "
-                                        "%3MB partition will be created for %4." )
-                                    .arg( m_beforePartitionBarsView->selectionModel()->currentIndex().data().toString() )
-                                    .arg( size / ( 1024 * 1024 ) )
-                                    .arg( sizeNext / ( 1024 * 1024 ) )
-                                    .arg( *Calamares::Branding::ShortProductName ) );
-            } );
+            connect( m_afterPartitionSplitterWidget, &PartitionSplitterWidget::partitionResized, this,
+                [ this, sizeLabel ]( const QString& path, qint64 size, qint64 sizeNext )
+                {
+                    Q_UNUSED( path )
+                    sizeLabel->setText( tr( "%1 will be shrunk to %2MiB and a new "
+                                            "%3MiB partition will be created for %4." )
+                                        .arg( m_beforePartitionBarsView->selectionModel()->currentIndex().data().toString() )
+                                        .arg( CalamaresUtils::BytesToMiB( size ) )
+                                        .arg( CalamaresUtils::BytesToMiB( sizeNext ) )
+                                        .arg( *Calamares::Branding::ShortProductName ) );
+                }
+            );
 
             m_previewAfterFrame->show();
             m_previewAfterLabel->show();
@@ -1033,18 +1026,25 @@ ChoicePage::updateActionChoicePreview( ChoicePage::InstallChoice choice )
                 eraseBootloaderLabel->setText( tr( "Boot loader location:" ) );
 
                 m_bootloaderComboBox = createBootloaderComboBox( eraseWidget );
-                connect( m_core, &PartitionCoreModule::deviceReverted,
-                         this, [ this ]( Device* dev )
-                {
-                    Q_UNUSED( dev )
-                    if ( !m_bootloaderComboBox.isNull() )
+                connect( m_core->bootLoaderModel(), &QAbstractItemModel::modelReset,
+                    [ this ]()
                     {
-                        if ( m_bootloaderComboBox->model() != m_core->bootLoaderModel() )
-                            m_bootloaderComboBox->setModel( m_core->bootLoaderModel() );
-
-                        m_bootloaderComboBox->setCurrentIndex( m_lastSelectedDeviceIndex );
+                        if ( !m_bootloaderComboBox.isNull() )
+                            Calamares::restoreSelectedBootLoader( *m_bootloaderComboBox, m_core->bootLoaderInstallPath() );
                     }
-                }, Qt::QueuedConnection );
+                );
+                connect( m_core, &PartitionCoreModule::deviceReverted, this,
+                    [ this ]( Device* dev )
+                    {
+                        Q_UNUSED( dev )
+                        if ( !m_bootloaderComboBox.isNull() )
+                        {
+                            if ( m_bootloaderComboBox->model() != m_core->bootLoaderModel() )
+                                m_bootloaderComboBox->setModel( m_core->bootLoaderModel() );
+
+                            m_bootloaderComboBox->setCurrentIndex( m_lastSelectedDeviceIndex );
+                        }
+                    }, Qt::QueuedConnection );
                 // ^ Must be Queued so it's sure to run when the widget is already visible.
 
                 eraseLayout->addWidget( m_bootloaderComboBox );
@@ -1231,11 +1231,11 @@ ChoicePage::setupActions()
     bool atLeastOneIsMounted = false;  // Suppress 'erase' if so
     bool isInactiveRAID = false;
 
-#ifdef WITH_KPMCOREGT33
+#ifdef WITH_KPMCORE4API
     if ( currentDevice->type() == Device::Type::SoftwareRAID_Device &&
          static_cast< SoftwareRAID* >(currentDevice)->status() == SoftwareRAID::Status::Inactive )
     {
-        cDebug() << ".. part of an inactive RAID device";
+        cDebug() << Logger::SubEntry << "part of an inactive RAID device";
         isInactiveRAID = true;
     }
 #endif
@@ -1245,17 +1245,16 @@ ChoicePage::setupActions()
     {
         if ( PartUtils::canBeResized( *it ) )
         {
-            cDebug() << ".. contains resizable" << it;
+            cDebug() << Logger::SubEntry << "contains resizable" << it;
             atLeastOneCanBeResized = true;
         }
         if ( PartUtils::canBeReplaced( *it ) )
         {
-            cDebug() << ".. contains replaceable" << it;
+            cDebug() << Logger::SubEntry << "contains replaceable" << it;
             atLeastOneCanBeReplaced = true;
         }
         if ( (*it)->isMounted() )
         {
-            cDebug() << ".. contains mounted" << it;
             atLeastOneIsMounted = true;
         }
     }
@@ -1366,15 +1365,31 @@ ChoicePage::setupActions()
         )
     }
 
+#ifdef DEBUG_PARTITION_UNSAFE
+#ifdef DEBUG_PARTITION_LAME
+    // If things can't be broken, allow all the buttons
+    atLeastOneCanBeReplaced = true;
+    atLeastOneCanBeResized = true;
+    atLeastOneIsMounted = false;
+    isInactiveRAID = false;
+#endif
+#endif
+
     if ( atLeastOneCanBeReplaced )
         m_replaceButton->show();
     else
+    {
+        cDebug() << "Replace button suppressed because none can be replaced.";
         force_uncheck( m_grp, m_replaceButton );
+    }
 
     if ( atLeastOneCanBeResized )
         m_alongsideButton->show();
     else
+    {
+        cDebug() << "Alongside button suppressed because none can be resized.";
         force_uncheck( m_grp, m_alongsideButton );
+    }
 
     if ( !atLeastOneIsMounted && !isInactiveRAID )
         m_eraseButton->show();  // None mounted

@@ -1,10 +1,4 @@
-project( calamares )
-
 add_definitions( -DUIDLLEXPORT_PRO )
-
-if( NOT CMAKE_BUILD_TYPE STREQUAL "Release" )
-    message( "Building in debug mode, enabling all debug updates" )
-endif()
 
 set( calamaresSources
     main.cpp
@@ -27,8 +21,6 @@ include_directories(
     ../libcalamaresui
 )
 
-include( GNUInstallDirs )
-
 # Translations
 include( CalamaresAddTranslations )
 add_calamares_translations( ${CALAMARES_TRANSLATION_LANGUAGES} )
@@ -38,17 +30,10 @@ set( final_src ${calamaresSources} ${calamaresRc} ${trans_outfile} )
 add_executable( calamares_bin ${final_src} )
 set_target_properties(calamares_bin
     PROPERTIES
-        AUTOMOC TRUE
         ENABLE_EXPORTS TRUE
         RUNTIME_OUTPUT_NAME calamares
 )
-
-if( WITH_KF5Crash )
-    set( LINK_LIBRARIES
-        KF5::CoreAddons
-        KF5::Crash
-    )
-endif()
+calamares_automoc( calamares_bin )
 
 target_link_libraries( calamares_bin
     PRIVATE
@@ -56,8 +41,15 @@ target_link_libraries( calamares_bin
         calamaresui
         Qt5::Core
         Qt5::Widgets
-        ${LINK_LIBRARIES}
 )
+if( WITH_KF5Crash )
+    target_link_libraries( calamares_bin
+        PRIVATE
+            KF5::CoreAddons
+            KF5::Crash
+    )
+    target_compile_definitions( calamares_bin PRIVATE WITH_KF5Crash )
+endif()
 
 install( TARGETS calamares_bin
     BUNDLE DESTINATION .

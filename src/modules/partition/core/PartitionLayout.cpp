@@ -2,7 +2,7 @@
  *
  *   Copyright 2014-2017, Teo Mrnjavac <teo@kde.org>
  *   Copyright 2017-2018, Adriaan de Groot <groot@kde.org>
- *   Copyright 2018, Collabora Ltd
+ *   Copyright 2018-2019, Collabora Ltd <arnaud.ferraris@collabora.com>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -20,6 +20,8 @@
 
 #include "GlobalStorage.h"
 #include "JobQueue.h"
+
+#include "utils/Logger.h"
 
 #include "core/PartitionLayout.h"
 
@@ -60,8 +62,8 @@ PartitionLayout::PartitionLayout( PartitionLayout::PartitionEntry entry )
 }
 
 PartitionLayout::PartitionLayout( const PartitionLayout& layout )
-    : m_partLayout( layout.m_partLayout )
-    , m_defaultFsType( layout.m_defaultFsType )
+    : m_defaultFsType( layout.m_defaultFsType )
+    , m_partLayout( layout.m_partLayout )
 {
 }
 
@@ -69,84 +71,66 @@ PartitionLayout::~PartitionLayout()
 {
 }
 
-void
+bool
 PartitionLayout::addEntry( PartitionLayout::PartitionEntry entry )
 {
+    if ( !entry.isValid() )
+    {
+        cError() << "Partition size is invalid or has min size > max size";
+        return false;
+    }
+
     m_partLayout.append( entry );
+
+    return true;
 }
 
-static double
-parseSizeString( const QString& sizeString, PartitionLayout::SizeUnit* unit )
+PartitionLayout::PartitionEntry::PartitionEntry( const QString& size, const QString& min, const QString& max )
+    : partSize( size )
+    , partMinSize( min )
+    , partMaxSize( max )
 {
-    double value;
-    bool ok;
-    QString valueString;
-    QString unitString;
-
-    QRegExp rx( "[KkMmGg%]" );
-    int pos = rx.indexIn( sizeString );
-    if (pos > 0)
-    {
-        valueString = sizeString.mid( 0, pos );
-        unitString = sizeString.mid( pos );
-    }
-    else
-        valueString = sizeString;
-
-    value = valueString.toDouble( &ok );
-    if ( !ok )
-    {
-        /*
-         * In case the conversion fails, a size of 100% allows a few cases to pass
-         * anyway (e.g. when it is the last partition of the layout)
-         */
-        *unit = PartitionLayout::SizeUnit::Percent;
-        return 100;
-    }
-
-    if ( unitString.length() > 0 )
-    {
-        if ( unitString.at(0) == '%' )
-            *unit = PartitionLayout::SizeUnit::Percent;
-        else if ( unitString.at(0).toUpper() == 'K' )
-            *unit = PartitionLayout::SizeUnit::KiB;
-        else if ( unitString.at(0).toUpper() == 'M' )
-            *unit = PartitionLayout::SizeUnit::MiB;
-        else if ( unitString.at(0).toUpper() == 'G' )
-            *unit = PartitionLayout::SizeUnit::GiB;
-        else
-            *unit = PartitionLayout::SizeUnit::Byte;
-    }
-    else
-    {
-        *unit = PartitionLayout::SizeUnit::Byte;
-    }
-
-    return value;
 }
 
-PartitionLayout::PartitionEntry::PartitionEntry(const QString& size, const QString& min)
+bool
+PartitionLayout::addEntry( const QString& mountPoint, const QString& size, const QString& min, const QString& max )
 {
-    partSize = parseSizeString( size , &partSizeUnit );
-    if ( !min.isEmpty() )
-        partMinSize = parseSizeString( min , &partMinSizeUnit );
-}
+    PartitionLayout::PartitionEntry entry( size, min, max );
 
-void
-PartitionLayout::addEntry( const QString& mountPoint, const QString& size, const QString& min )
-{
-    PartitionLayout::PartitionEntry entry( size, min );
+    if ( !entry.isValid() )
+    {
+        cError() << "Partition size" << size << "is invalid or" << min << ">" << max;
+        return false;
+    }
+    if ( mountPoint.isEmpty() || !mountPoint.startsWith( QString( "/" ) ) )
+    {
+        cError() << "Partition mount point" << mountPoint << "is invalid";
+        return false;
+    }
 
     entry.partMountPoint = mountPoint;
     entry.partFileSystem = m_defaultFsType;
 
     m_partLayout.append( entry );
+
+    return true;
 }
 
-void
-PartitionLayout::addEntry( const QString& label, const QString& mountPoint, const QString& fs, const QString& size, const QString& min )
+bool
+PartitionLayout::addEntry( const QString& label, const QString& mountPoint, const QString& fs, const QString& size, const QString& min, const QString& max )
 {
-    PartitionLayout::PartitionEntry entry( size, min );
+    PartitionLayout::PartitionEntry entry( size, min, max );
+
+    if ( !entry.isValid() )
+    {
+        cError() << "Partition size" << size << "is invalid or" << min << ">" << max;
+        return false;
+    }
+    if ( mountPoint.isEmpty() || !mountPoint.startsWith( QString( "/" ) ) )
+    {
+        cError() << "Partition mount point" << mountPoint << "is invalid";
+        return false;
+    }
 
     entry.partLabel = label;
     entry.partMountPoint = mountPoint;
@@ -155,35 +139,8 @@ PartitionLayout::addEntry( const QString& label, const QString& mountPoint, cons
         entry.partFileSystem = m_defaultFsType;
 
     m_partLayout.append( entry );
-}
 
-static qint64
-sizeToSectors( double size, PartitionLayout::SizeUnit unit, qint64 totalSize, qint64 logicalSize )
-{
-    qint64 sectors;
-    double tmp;
-
-    if ( unit == PartitionLayout::SizeUnit::Percent )
-    {
-        tmp = static_cast<double>( totalSize ) * size / 100;
-        sectors = static_cast<qint64>( tmp );
-    }
-    else
-    {
-        tmp = size;
-        if ( unit >= PartitionLayout::SizeUnit::KiB )
-            tmp *= 1024;
-        if ( unit >= PartitionLayout::SizeUnit::MiB )
-            tmp *= 1024;
-        if ( unit >= PartitionLayout::SizeUnit::GiB )
-            tmp *= 1024;
-
-        sectors = PartitionActions::bytesToSectors( static_cast<unsigned long long>( tmp ),
-                                                    logicalSize
-                                                  );
-    }
-
-    return sectors;
+    return true;
 }
 
 QList< Partition* >
@@ -193,7 +150,7 @@ PartitionLayout::execute( Device *dev, qint64 firstSector,
                           const PartitionRole& role )
 {
     QList< Partition* > partList;
-    qint64 size, minSize, end;
+    qint64 minSize, maxSize, end;
     qint64 totalSize = lastSector - firstSector + 1;
     qint64 availableSize = totalSize;
 
@@ -204,11 +161,42 @@ PartitionLayout::execute( Device *dev, qint64 firstSector,
     {
         Partition *currentPartition = nullptr;
 
+        qint64 size = -1;
         // Calculate partition size
-        size = sizeToSectors( part.partSize, part.partSizeUnit, totalSize, dev->logicalSize() );
-        minSize = sizeToSectors( part.partMinSize, part.partMinSizeUnit, totalSize, dev->logicalSize() );
+        if ( part.partSize.isValid() )
+        {
+            size = part.partSize.toSectors( totalSize, dev->logicalSize() );
+        }
+        else
+        {
+            cWarning() << "Partition" << part.partMountPoint << "size ("
+                << size <<  "sectors) is invalid, skipping...";
+            continue;
+        }
+
+        if ( part.partMinSize.isValid() )
+            minSize = part.partMinSize.toSectors( totalSize, dev->logicalSize() );
+        else
+            minSize = 0;
+
+        if ( part.partMaxSize.isValid() )
+            maxSize = part.partMaxSize.toSectors( totalSize, dev->logicalSize() );
+        else
+            maxSize = availableSize;
+
+        // Make sure we never go under minSize once converted to sectors
+        if ( maxSize < minSize )
+        {
+            cWarning() << "Partition" << part.partMountPoint << "max size (" << maxSize
+                <<  "sectors) is < min size (" << minSize << "sectors), using min size";
+            maxSize = minSize;
+        }
+
+        // Adjust partition size based on user-defined boundaries and available space
         if ( size < minSize )
             size = minSize;
+        if ( size > maxSize )
+            size = maxSize;
         if ( size > availableSize )
             size = availableSize;
         end = firstSector + size - 1;
@@ -222,7 +210,7 @@ PartitionLayout::execute( Device *dev, qint64 firstSector,
                 part.partFileSystem,
                 firstSector,
                 end,
-                PartitionTable::FlagNone
+                KPM_PARTITION_FLAG(None)
             );
         }
         else
@@ -235,7 +223,7 @@ PartitionLayout::execute( Device *dev, qint64 firstSector,
                 firstSector,
                 end,
                 luksPassphrase,
-                PartitionTable::FlagNone
+                KPM_PARTITION_FLAG(None)
             );
         }
         PartitionInfo::setFormat( currentPartition, true );
