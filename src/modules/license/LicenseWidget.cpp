@@ -86,7 +86,7 @@ LicenseWidget::LicenseWidget( LicenseEntry entry, QWidget* parent )
         vLayout->addLayout( wiLayout );
         m_fullText = new QLabel( this );
         m_fullText->setText( loadLocalFile( m_entry.m_url ) );
-        m_fullText->hide();
+        m_fullText->show();
         m_fullText->setStyleSheet( "border-top: 1px solid black; margin-top: 1em; padding-top: 1em;" );
         m_fullText->setObjectName( "licenseItemFullText" );
 
@@ -173,7 +173,7 @@ LicenseWidget::expandClicked()
 
     // Show/hide based on the new arrow direction.
     if ( m_fullText )
-        m_fullText->setHidden( m_expandLicenseButton->arrowType() == Qt::UpArrow );
+        m_fullText->setVisible( m_expandLicenseButton->arrowType() == Qt::UpArrow );
 
     updateExpandToolTip();
 }
@@ -188,13 +188,13 @@ LicenseWidget::updateExpandToolTip()
 
         m_expandLicenseButton->setToolTip(
             isNowCollapsed
-            ? tr( "Shows the complete license text" )
-            : tr( "Hide license text" )
+            ? tr( "Hide license text" )
+            : tr( "Show the complete license text" )
             ) ;
         m_viewLicenseLabel->setText(
             isNowCollapsed
-            ? tr( "Show license agreement" )
-            : tr( "Hide license agreement" ) );
+            ? tr( "Hide license agreement" )
+            : tr( "Show license agreement" ) );
     }
     else
     {
