@@ -65,7 +65,7 @@
           <x>0</x>
           <y>0</y>
           <width>765</width>
-          <height>94</height>
+          <height>360</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="licenseEntriesLayout"/>

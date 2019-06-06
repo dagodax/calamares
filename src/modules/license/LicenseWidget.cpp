@@ -80,13 +80,13 @@ LicenseWidget::LicenseWidget( LicenseEntry entry, QWidget* parent )
     {
         QVBoxLayout* vLayout = new QVBoxLayout;
 
-        m_expandLicenseButton->setArrowType( Qt::UpArrow );
+        m_expandLicenseButton->setArrowType( Qt::DownArrow );
         connect( m_expandLicenseButton, &QAbstractButton::clicked, this, &LicenseWidget::expandClicked );
 
         vLayout->addLayout( wiLayout );
         m_fullText = new QLabel( this );
         m_fullText->setText( loadLocalFile( m_entry.m_url ) );
-        m_fullText->hide();
+        m_fullText->show();
         m_fullText->setStyleSheet( "border-top: 1px solid black; margin-top: 1em; padding-top: 1em;" );
         m_fullText->setObjectName( "licenseItemFullText" );
 
