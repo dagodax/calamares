@@ -437,7 +437,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="969"/>
         <source>%1 will be shrunk to %2MiB and a new %3MiB partition will be created for %4.</source>
-        <translation>%1 va être rétrécie à %2Mo et une nouvolle partition de %3Mo sera créée pour %4.</translation>
+        <translation>%1 va être rétrécie à %2Mio et une nouvolle partition de %3Mio sera créée pour %4.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/gui/ChoicePage.cpp" line="1271"/>
@@ -710,12 +710,12 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="44"/>
         <source>Create new %2MiB partition on %4 (%3) with file system %1.</source>
-        <translation>Créer une nouvelle partition de %2Mo sur %4 (%3) avec un système de fichier %1.</translation>
+        <translation>Créer une nouvelle partition de %2Mio sur %4 (%3) avec un système de fichier %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="55"/>
         <source>Create new &lt;strong&gt;%2MiB&lt;/strong&gt; partition on &lt;strong&gt;%4&lt;/strong&gt; (%3) with file system &lt;strong&gt;%1&lt;/strong&gt;.</source>
-        <translation>Créer une nouvelle partition de &lt;strong&gt;%2Mo&lt;/strong&gt; sur &lt;strong&gt;%4&lt;/strong&gt; (%3) avec une système de fichier &lt;strong&gt;%1&lt;/strong&gt;.</translation>
+        <translation>Créer une nouvelle partition de &lt;strong&gt;%2Mio&lt;/strong&gt; sur &lt;strong&gt;%4&lt;/strong&gt; (%3) avec une système de fichier &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/CreatePartitionJob.cpp" line="67"/>
@@ -1143,12 +1143,12 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="41"/>
         <source>Format partition %1 (file system: %2, size: %3 MiB) on %4.</source>
-        <translation>Formater la partition %1 (système de fichier : %2, taille : %3 Mo) sur %4.</translation>
+        <translation>Formater la partition %1 (système de fichier : %2, taille : %3 Mio) sur %4.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="52"/>
         <source>Format &lt;strong&gt;%3MiB&lt;/strong&gt; partition &lt;strong&gt;%1&lt;/strong&gt; with file system &lt;strong&gt;%2&lt;/strong&gt;.</source>
-        <translation>Formation la partition &lt;strong&gt;%1&lt;/strong&gt; de &lt;strong&gt;%3Mo&lt;/strong&gt; avec le système de fichier &lt;strong&gt;%2&lt;/strong&gt;.</translation>
+        <translation>Formation la partition &lt;strong&gt;%1&lt;/strong&gt; de &lt;strong&gt;%3Mio&lt;/strong&gt; avec le système de fichier &lt;strong&gt;%2&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/FormatPartitionJob.cpp" line="63"/>
@@ -1166,17 +1166,17 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="108"/>
         <source>has at least %1 GiB available drive space</source>
-        <translation>a au moins %1 Go de d&apos;espace disque disponible</translation>
+        <translation>a au moins %1 Gio de d&apos;espace disque disponible</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="109"/>
         <source>There is not enough drive space. At least %1 GiB is required.</source>
-        <translation>Il n’y a pas assez d’espace disque. Au moins %1 Go sont nécessaires.</translation>
+        <translation>Il n’y a pas assez d’espace disque. Au moins %1 Gio sont nécessaires.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="116"/>
         <source>has at least %1 GiB working memory</source>
-        <translation>a au moins %1 Go de mémoire de travail</translation>
+        <translation>a au moins %1 Gio de mémoire de travail</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="117"/>
@@ -2319,12 +2319,12 @@ Sortie :
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="55"/>
         <source>Resize &lt;strong&gt;%2MiB&lt;/strong&gt; partition &lt;strong&gt;%1&lt;/strong&gt; to &lt;strong&gt;%3MiB&lt;/strong&gt;.</source>
-        <translation>Redimensionner la partition &lt;strong&gt;%1&lt;/strong&gt; de &lt;strong&gt;%2Mo&lt;/strong&gt; à &lt;strong&gt;%3Mo&lt;/strong&gt;.</translation>
+        <translation>Redimensionner la partition &lt;strong&gt;%1&lt;/strong&gt; de &lt;strong&gt;%2Mio&lt;/strong&gt; à &lt;strong&gt;%3Mio&lt;/strong&gt;.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="66"/>
         <source>Resizing %2MiB partition %1 to %3MiB.</source>
-        <translation>Redimensionnement de la partition %1 de %2Mo à %3Mo.</translation>
+        <translation>Redimensionnement de la partition %1 de %2Mio à %3Mio.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/ResizePartitionJob.cpp" line="85"/>
@@ -2480,7 +2480,7 @@ Sortie :
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="52"/>
         <source>Set flags on %1MiB %2 partition.</source>
-        <translation>Configurer les flags sur la partition %2 de %1Mo.</translation>
+        <translation>Configurer les flags sur la partition %2 de %1Mio.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="56"/>
@@ -2500,17 +2500,17 @@ Sortie :
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="85"/>
         <source>Flag %1MiB &lt;strong&gt;%2&lt;/strong&gt; partition as &lt;strong&gt;%3&lt;/strong&gt;.</source>
-        <translation>Configuration des flags &lt;strong&gt;%3&lt;/strong&gt; pour la partition &lt;strong&gt;%2&lt;/strong&gt; de %1Mo.</translation>
+        <translation>Configuration des flags &lt;strong&gt;%3&lt;/strong&gt; pour la partition &lt;strong&gt;%2&lt;/strong&gt; de %1Mio.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="107"/>
         <source>Clearing flags on %1MiB &lt;strong&gt;%2&lt;/strong&gt; partition.</source>
-        <translation>Effacement des flags sur la partition &lt;strong&gt;%2&lt;/strong&gt; de %1Mo.</translation>
+        <translation>Effacement des flags sur la partition &lt;strong&gt;%2&lt;/strong&gt; de %1Mio.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="121"/>
         <source>Setting flags &lt;strong&gt;%3&lt;/strong&gt; on %1MiB &lt;strong&gt;%2&lt;/strong&gt; partition.</source>
-        <translation>Configuration des flags &lt;strong&gt;%3&lt;/strong&gt; pour la partition &lt;strong&gt;%2&lt;/strong&gt; de %1Mo.</translation>
+        <translation>Configuration des flags &lt;strong&gt;%3&lt;/strong&gt; pour la partition &lt;strong&gt;%2&lt;/strong&gt; de %1Mio.</translation>
     </message>
     <message>
         <location filename="../src/modules/partition/jobs/SetPartitionFlagsJob.cpp" line="75"/>
