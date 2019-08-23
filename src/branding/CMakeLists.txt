@@ -1,1 +1,1 @@
-calamares_add_branding_subdirectory( default )
+calamares_add_branding_subdirectory( kaos_branding )
