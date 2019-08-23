@@ -200,17 +200,17 @@ void
 WelcomePage::setupButton( Button role, const QString& url )
 {
     QPushButton* button = nullptr;
-    CalamaresUtils::ImageType icon = CalamaresUtils::Information;
+    CalamaresUtils::ImageType icon = CalamaresUtils::Release;
 
     switch ( role )
     {
     case Button::Donate:
         button = ui->donateButton;
-        icon = CalamaresUtils::Donate;
+        icon = CalamaresUtils::Release;
         break;
     case Button::KnownIssues:
         button = ui->knownIssuesButton;
-        icon = CalamaresUtils::Bugs;
+        icon = CalamaresUtils::Release;
         break;
     case Button::ReleaseNotes:
         button = ui->releaseNotesButton;
