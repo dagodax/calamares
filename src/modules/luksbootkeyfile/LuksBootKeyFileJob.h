@@ -1,6 +1,6 @@
 /* === This file is part of Calamares - <https://github.com/calamares> ===
  *
- *   Copyright 2018, Adriaan de Groot <groot@kde.org>
+ *   Copyright 2019, Adriaan de Groot <groot@kde.org>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -16,24 +16,33 @@
  *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef TESTS_H
-#define TESTS_H
+#ifndef LUKSBOOTKEYFILEJOB_H
+#define LUKSBOOTKEYFILEJOB_H
+
+#include "CppJob.h"
+#include "PluginDllMacro.h"
+#include "utils/PluginFactory.h"
 
 #include <QObject>
+#include <QVariantMap>
 
-class LibCalamaresTests : public QObject
+/** @brief Creates the LUKS boot key file and adds it to the cryptsetup.
+ *
+ * This job has no configuration, because it takes everything
+ * from the global storage settings set by others.
+ */
+class PLUGINDLLEXPORT LuksBootKeyFileJob : public Calamares::CppJob
 {
     Q_OBJECT
 public:
-    LibCalamaresTests();
-    ~LibCalamaresTests() override;
+    explicit LuksBootKeyFileJob( QObject* parent = nullptr );
+    virtual ~LuksBootKeyFileJob() override;
 
-private Q_SLOTS:
-    void initTestCase();
-    void testDebugLevels();
+    QString prettyName() const override;
 
-    void testLoadSaveYaml();  // Just settings.conf
-    void testLoadSaveYamlExtended();  // Do a find() in the src dir
+    Calamares::JobResult exec() override;
 };
 
-#endif
+CALAMARES_PLUGIN_FACTORY_DECLARATION( LuksBootKeyFileJobFactory )
+
+#endif  // LUKSBOOTKEYFILEJOB_H

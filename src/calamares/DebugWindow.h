@@ -1,10 +1,7 @@
 /* === This file is part of Calamares - <https://github.com/calamares> ===
  *
  *   Copyright 2015, Teo Mrnjavac <teo@kde.org>
- *
- *   Based on KPluginFactory from KCoreAddons, KDE project
- *   Copyright 2007, Matthias Kretz <kretz@kde.org>
- *   Copyright 2007, Bernhard Loos <nhuh.put@web.de>
+ *   Copyright 2019, Adriaan de Groot <groot@kde.org>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -20,35 +17,46 @@
  *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef UTILS_PLUGINFACTORY_P_H
-#define UTILS_PLUGINFACTORY_P_H
+#ifndef CALAMARES_DEBUGWINDOW_H
+#define CALAMARES_DEBUGWINDOW_H
 
-#include "PluginFactory.h"
+#include "VariantModel.h"
 
-#include <QtCore/QHash>
+#include <QVariant>
+#include <QWidget>
+
+#include <memory>
 
 namespace Calamares
 {
 
-class PluginFactoryPrivate
+// From the .ui file
+namespace Ui
 {
-    Q_DECLARE_PUBLIC(PluginFactory)
+class DebugWindow;
+}
+
+class DebugWindow : public QWidget
+{
+    Q_OBJECT
+
+public:
+    explicit DebugWindow();
+
+signals:
+    void closed();
+
 protected:
-    typedef QPair<const QMetaObject *, PluginFactory::CreateInstanceFunction> Plugin;
+    void closeEvent( QCloseEvent* e ) override;
 
-    PluginFactoryPrivate()
-        : catalogInitialized( false )
-        , q_ptr( nullptr )
-    {}
-    ~PluginFactoryPrivate() {}
-
-    QHash<QString, Plugin> createInstanceHash;
-    QString catalogName;
-    bool catalogInitialized;
-
-    PluginFactory *q_ptr;
+private:
+    Ui::DebugWindow* m_ui;
+    QVariant m_globals;
+    QVariant m_module;
+    std::unique_ptr< VariantModel > m_globals_model;
+    std::unique_ptr< VariantModel > m_module_model;
 };
 
-}  // namespace
 
+}  // namespace Calamares
 #endif

@@ -56,6 +56,10 @@ windowSize: 800px,520px
 # Note that ANSI_COLOR and CPE_NAME don't make sense here, and
 # are not supported (the rest are). Remember to quote the string
 # if it contains substitutions, or you'll get YAML exceptions.
+#
+# The *Url* entries are used on the welcome page, and they
+# are visible as buttons there if the corresponding *show* keys
+# are set to "true" (they can also be overridden).
 strings:
     productName:         "@{NAME}"
     shortProductName:    Generic
@@ -84,7 +88,7 @@ strings:
 #       the window. Use `welcomeExpandingLogo` to make it non-scaled.
 #       Recommended size is 320x150.
 #
-# These strings can also use substitutions from os-release (see above).
+# These filenames can also use substitutions from os-release (see above).
 images:
     productLogo:         "squid.png"
     productIcon:         "squid.png"
@@ -93,6 +97,17 @@ images:
 # The slideshow is displayed during execution steps (e.g. when the
 # installer is actually writing to disk and doing other slow things).
 slideshow:               "show.qml"
+# There are two available APIs for the slideshow:
+#  - 1 (the default) loads the entire slideshow when the installation-
+#      slideshow page is shown and starts the QML then. The QML
+#      is never stopped (after installation is done, times etc.
+#      continue to fire).
+#  - 2 loads the slideshow on startup and calls onActivate() and
+#      onLeave() in the root object. After the installation is done,
+#      the show is stopped (first by calling onLeave(), then destroying
+#      the QML components).
+slideshowAPI: 2
+
 
 # Colors for text and background components.
 #

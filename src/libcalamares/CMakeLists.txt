@@ -34,6 +34,7 @@ set( libSources
     locale/Label.cpp
     locale/LabelModel.cpp
     locale/Lookup.cpp
+    locale/TranslatableConfiguration.cpp
 
     # Partition service
     partition/PartitionSize.cpp
@@ -46,15 +47,20 @@ set( libSources
     utils/PluginFactory.cpp
     utils/Retranslator.cpp
     utils/String.cpp
+    utils/UMask.cpp
     utils/Variant.cpp
     utils/Yaml.cpp
 )
-set( kdsagSources
+set( _kdsagSources
     kdsingleapplicationguard/kdsingleapplicationguard.cpp
     kdsingleapplicationguard/kdsharedmemorylocker.cpp
     kdsingleapplicationguard/kdtoolsglobal.cpp
     kdsingleapplicationguard/kdlockedsharedmemorypointer.cpp
 )
+set( kdsagSources "" )
+foreach( _s ${_kdsagSources} )
+    list( APPEND kdsagSources ${CMAKE_SOURCE_DIR}/3rdparty/${_s} )
+endforeach()
 mark_thirdparty_code( ${kdsagSources} )
 
 include_directories(
@@ -114,6 +120,7 @@ target_link_libraries( calamares
     LINK_PUBLIC
         ${YAMLCPP_LIBRARY}
         Qt5::Core
+        KF5::CoreAddons
         ${OPTIONAL_PUBLIC_LIBRARIES}
 )
 
@@ -146,7 +153,7 @@ install( FILES ${utilsHeaders}                      DESTINATION include/libcalam
 #
 if ( ECM_FOUND AND BUILD_TESTING )
     ecm_add_test(
-            Tests.cpp
+            utils/Tests.cpp
         TEST_NAME
             libcalamarestest
         LINK_LIBRARIES
@@ -167,16 +174,26 @@ if ( ECM_FOUND AND BUILD_TESTING )
             ${YAMLCPP_LIBRARY}
     )
     calamares_automoc( geoiptest )
-    
+
     ecm_add_test(
             partition/Tests.cpp
         TEST_NAME
             libcalamarespartitiontest
         LINK_LIBRARIES
-            calamares  
+            calamares
             Qt5::Test
     )
     calamares_automoc( libcalamarespartitiontest )
+
+    ecm_add_test(
+            locale/Tests.cpp
+        TEST_NAME
+            libcalamareslocaletest
+        LINK_LIBRARIES
+            calamares
+            Qt5::Test
+    )
+    calamares_automoc( libcalamareslocaletest )
 endif()
 
 if( BUILD_TESTING )

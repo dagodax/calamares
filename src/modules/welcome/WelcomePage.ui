@@ -69,7 +69,7 @@
        <item>
         <widget class="QLabel" name="languageIcon">
          <property name="toolTip">
-          <string>Select language</string>
+          <string>Select application and system language</string>
          </property>
          <property name="text">
           <string/>
@@ -178,6 +178,56 @@
            </property>
            <property name="text">
             <string>&amp;About</string>
+           </property>
+           <property name="flat">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="donateButton">
+           <property name="toolTip">
+            <string>Open donations website</string>
+           </property>
+           <property name="palette">
+            <palette>
+             <active>
+              <colorrole role="Button">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>189</red>
+                 <green>195</green>
+                 <blue>199</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </active>
+             <inactive>
+              <colorrole role="Button">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>189</red>
+                 <green>195</green>
+                 <blue>199</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </inactive>
+             <disabled>
+              <colorrole role="Button">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>189</red>
+                 <green>195</green>
+                 <blue>199</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </disabled>
+            </palette>
+           </property>
+           <property name="text">
+            <string>&amp;Donate</string>
            </property>
            <property name="flat">
             <bool>false</bool>

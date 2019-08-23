@@ -21,11 +21,11 @@
 
 #include "Interface.h"
 
-#include <QtConcurrent/QtConcurrentRun>
 #include <QString>
 #include <QVariantMap>
+#include <QtConcurrent/QtConcurrentRun>
 
-namespace CalamaresUtils 
+namespace CalamaresUtils
 {
 namespace GeoIP
 {
@@ -46,7 +46,7 @@ public:
         None,
         JSON,
         XML
-    } ;
+    };
 
     /** @brief An unconfigured handler; this always returns errors. */
     Handler();
@@ -80,6 +80,8 @@ public:
 
     bool isValid() const { return m_type != Type::None; }
     Type type() const { return m_type; }
+    QString url() const { return m_url; }
+    QString selector() const { return m_selector; }
 
 private:
     Type m_type;
@@ -87,7 +89,6 @@ private:
     const QString m_selector;
 };
 
-}
-}  // namespace
+}  // namespace GeoIP
+}  // namespace CalamaresUtils
 #endif
-

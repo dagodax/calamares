@@ -1,6 +1,5 @@
 /* === This file is part of Calamares - <https://github.com/calamares> ===
  *
- *   Copyright 2015, Teo Mrnjavac <teo@kde.org>
  *   Copyright 2019, Adriaan de Groot <groot@kde.org>
  *
  *   Calamares is free software: you can redistribute it and/or modify
@@ -17,37 +16,29 @@
  *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef CALAMARES_DEBUGWINDOW_H
-#define CALAMARES_DEBUGWINDOW_H
+#include "UMask.h"
 
-#include <QWidget>
+#include <sys/stat.h>
+#include <sys/types.h>
 
-
-namespace Calamares {
-
-// From the .ui file
-namespace Ui
+namespace CalamaresUtils
 {
-    class DebugWindow;
+mode_t
+setUMask( mode_t u )
+{
+    return umask( u );
 }
 
-class DebugWindow : public QWidget
+UMask::UMask( mode_t u )
+    : m_mode( setUMask( u ) )
 {
-    Q_OBJECT
+}
 
-public:
-    explicit DebugWindow();
+UMask::~UMask()
+{
+    setUMask( m_mode );
+}
 
-signals:
-    void closed();
+static_assert( UMask::Safe == ( S_IRGRP | S_IWGRP | S_IXGRP | S_IROTH | S_IWOTH | S_IXOTH ), "Bad permissions." );
 
-protected:
-    void closeEvent( QCloseEvent* e ) override;
-
-private:
-    Ui::DebugWindow *m_ui;
-};
-
-
-}  // namespace
-#endif
+}  // namespace CalamaresUtils

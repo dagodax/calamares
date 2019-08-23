@@ -25,6 +25,9 @@
 #   SKIP_MODULES    : a space or semicolon-separated list of directory names
 #                     under src/modules that should not be built.
 #   USE_<foo>       : fills in SKIP_MODULES for modules called <foo>-<something>
+#   WITH_<foo>      : try to enable <foo> (these usually default to ON). For
+#                     a list of WITH_<foo> grep CMakeCache.txt after running
+#                     CMake once.
 #   BUILD_<foo>     : choose additional things to build
 #   DEBUG_<foo>     : special developer flags for debugging
 #
@@ -35,12 +38,12 @@
 # One special target is "show-version", which can be built
 # to obtain the version number from here.
 
-cmake_minimum_required( VERSION 3.2 FATAL_ERROR )
+cmake_minimum_required( VERSION 3.3 FATAL_ERROR )
 project( CALAMARES
-    VERSION 3.2.9
+    VERSION 3.2.13
     LANGUAGES C CXX )
 
-set( CALAMARES_VERSION_RC 0 )  # Set to 0 during release cycle, 1 during development
+set( CALAMARES_VERSION_RC 1 )  # Set to 0 during release cycle, 1 during development
 
 ### OPTIONS
 #
@@ -48,7 +51,7 @@ option( INSTALL_CONFIG "Install configuration files" OFF )
 option( INSTALL_POLKIT "Install Polkit configuration" ON )
 option( BUILD_TESTING "Build the testing tree." ON )
 option( WITH_PYTHON "Enable Python modules API (requires Boost.Python)." ON )
-option( WITH_PYTHONQT "Enable next generation Python modules API (experimental, requires PythonQt)." ON )
+option( WITH_PYTHONQT "Enable next generation Python modules API (experimental, requires PythonQt)." OFF )
 option( WITH_KF5Crash "Enable crash reporting with KCrash." ON )
 
 
@@ -84,7 +87,7 @@ set( CALAMARES_DESCRIPTION_SUMMARY
 # complete = 100% translated,
 # good = nearly complete (use own judgement, right now >= 75%)
 # ok = incomplete (more than 25% untranslated, at least 5% translated),
-# bad = 0% translated, placeholder in tx; these are not included.
+# incomplete = <5% translated, placeholder in tx; these are not included.
 #
 # Language en (source language) is added later. It isn't listed in
 # Transifex either. Get the list of languages and their status
@@ -96,18 +99,20 @@ set( CALAMARES_DESCRIPTION_SUMMARY
 # (sr@latin in particular) may need special handling in CalamaresUtils.cpp.
 #
 # TODO: drop the es_ES translation from Transifex
-# TODO: move eo (Esperanto) to _ok once Qt can actually create a
-#       locale for it.
 #
-# NOTE: when updating the list from Transifex, copy these four lines
+# NOTE: move eo (Esperanto) to _ok once Qt can actually create a
+#       locale for it. (Qt 5.12.2 can, see check later on).
+# NOTE: update these lines by running txstats.py, or copy these four lines
 #       and prefix each variable name with "p", so that the automatic
 #       checks for new languages and misspelled ones are done (that is,
 #       copy these four lines to four backup lines, add "p", and then update
 #       the original four lines with the current translations).
+#
+# Total 25 languages
 set( _tx_complete ast ca cs de en es es_AR fr hr hu id_ID nl_NL pt_BR pt_PT)
 set( _tx_good ro_RO it pl ru sl sr_RS tr_TR)
 set( _tx_ok sv )
-set( _tx_bad zh_CN zh_TW)
+set( _tx_incomplete zh_CN zh_TW)
 
 
 ### Required versions
@@ -124,6 +129,10 @@ set( BOOSTPYTHON_VERSION 1.55.0 )
 #
 set( CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/CMakeModules" )
 
+# Enable IN_LIST
+if( POLICY CMP0057 )
+    cmake_policy( SET CMP0057 NEW )
+endif()
 # CMake 3.9, 3.10 compatibility
 if( POLICY CMP0071 )
     cmake_policy( SET CMP0071 NEW )
@@ -190,7 +199,7 @@ if( CMAKE_CXX_COMPILER_ID MATCHES "Clang" )
     )
         string( APPEND CMAKE_CXX_FLAGS " ${CLANG_WARNINGS}" )
     endforeach()
-    set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DNOTREACHED='//'" )
+    set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DNOTREACHED='//' -DFALLTHRU='[[clang::fallthrough]]'")
 
     # Third-party code where we don't care so much about compiler warnings
     # (because it's uncomfortable to patch) get different flags; use
@@ -217,7 +226,7 @@ else()
     set( SUPPRESS_3RDPARTY_WARNINGS "" )
     set( SUPPRESS_BOOST_WARNINGS "" )
 
-    set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DNOTREACHED='__builtin_unreachable();'" )
+    set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DNOTREACHED='__builtin_unreachable();' -DFALLTHRU='/* */'" )
 endif()
 
 # Use mark_thirdparty_code() to reduce warnings from the compiler
@@ -245,6 +254,17 @@ include( CMakeColors )
 ### DEPENDENCIES
 #
 find_package( Qt5 ${QT_VERSION} CONFIG REQUIRED Concurrent Core Gui Widgets LinguistTools Svg Quick QuickWidgets )
+if( Qt5_VERSION VERSION_GREATER 5.12.1 )
+    # At least Qt 5.12.2 seems to support Esperanto in QLocale
+    if( "eo" IN_LIST _tx_incomplete )
+        message(STATUS "Esperanto support since Qt 5.12.2, enabling Esperanto locale")
+        list( REMOVE_ITEM _tx_incomplete "eo" )
+        list( APPEND _tx_ok "eo" )
+    endif()
+endif()
+# Optional Qt parts
+find_package( Qt5DBus CONFIG )
+
 find_package( YAMLCPP ${YAMLCPP_VERSION} REQUIRED )
 if( INSTALL_POLKIT )
     find_package( PolkitQt5-1 REQUIRED )
@@ -274,7 +294,14 @@ if( ECM_FOUND )
     include(KDEInstallDirs)
 endif()
 
-find_package( KF5 COMPONENTS CoreAddons Crash )
+find_package( KF5 QUIET COMPONENTS CoreAddons Crash )
+set_package_properties(
+    KF5::CoreAddons PROPERTIES
+    TYPE REQUIRED
+    DESCRIPTION "Classes built on QtCore for About Data"
+    URL "https://api.kde.org/frameworks/kcoreaddons/"
+    PURPOSE "About Calamares"
+)
 if( NOT KF5Crash_FOUND )
     set( WITH_KF5Crash OFF )
 endif()
@@ -322,8 +349,8 @@ endif()
 # then run an extra cmake-time check for consistency of the old
 # (p_tx*) and new (_tx*) lists.
 #
-set( prev_tx ${p_tx_complete} ${p_tx_good} ${p_tx_ok} ${p_tx_bad} )
-set( curr_tx ${_tx_complete} ${_tx_good} ${_tx_ok} ${_tx_bad} )
+set( prev_tx ${p_tx_complete} ${p_tx_good} ${p_tx_ok} ${p_tx_incomplete} )
+set( curr_tx ${_tx_complete} ${_tx_good} ${_tx_ok} ${_tx_incomplete} )
 set( tx_errors OFF )
 if ( prev_tx )
     # Gone in new list
@@ -573,10 +600,25 @@ add_custom_target( uninstall
 
 ### CMAKE SUMMARY REPORT
 #
-feature_summary(WHAT ALL)
-
 get_directory_property( SKIPPED_MODULES
     DIRECTORY src/modules
     DEFINITION LIST_SKIPPED_MODULES
 )
 calamares_explain_skipped_modules( ${SKIPPED_MODULES} )
+
+feature_summary(
+    WHAT DISABLED_FEATURES
+    DESCRIPTION "The following features have been disabled:"
+    QUIET_ON_EMPTY
+)
+feature_summary(
+    WHAT OPTIONAL_PACKAGES_NOT_FOUND
+    DESCRIPTION "The following OPTIONAL packages were not found:"
+    QUIET_ON_EMPTY
+)
+feature_summary(
+    WHAT REQUIRED_PACKAGES_NOT_FOUND
+    FATAL_ON_MISSING_REQUIRED_PACKAGES
+    DESCRIPTION "The following REQUIRED packages were not found:"
+    QUIET_ON_EMPTY
+)
