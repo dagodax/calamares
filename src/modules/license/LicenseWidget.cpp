@@ -1,6 +1,6 @@
 /* === This file is part of Calamares - <https://github.com/calamares> ===
  *
- *   Copyright 2015, Anke Boersma <demm@kaosx.us>
+ *   Copyright 2015-2019, Anke Boersma <demm@kaosx.us>
  *   Copyright 2015, Alexandre Arnt <qtgzmanager@gmail.com>
  *   Copyright 2015, Teo Mrnjavac <teo@kde.org>
  *   Copyright 2018, Adriaan de Groot <groot@kde.org>
@@ -88,7 +88,7 @@ LicenseWidget::LicenseWidget( LicenseEntry entry, QWidget* parent )
         vLayout->addLayout( wiLayout );
         m_fullText = new QLabel( this );
         m_fullText->setText( loadLocalFile( m_entry.m_url ) );
-        m_fullText->hide();
+        m_fullText->show();
         m_fullText->setStyleSheet( "border-top: 1px solid black; margin-top: 1em; padding-top: 1em;" );
         m_fullText->setObjectName( "licenseItemFullText" );
 
@@ -175,7 +175,7 @@ LicenseWidget::expandClicked()
     // Show/hide based on the new arrow direction.
     if ( m_fullText )
     {
-        m_fullText->setHidden( m_expandLicenseButton->arrowType() == Qt::UpArrow );
+        m_fullText->setVisible( m_expandLicenseButton->arrowType() == Qt::UpArrow );
     }
 
     updateExpandToolTip();
@@ -189,9 +189,9 @@ LicenseWidget::updateExpandToolTip()
     {
         const bool isNowCollapsed = m_expandLicenseButton->arrowType() == Qt::UpArrow;
 
-        m_expandLicenseButton->setToolTip( isNowCollapsed ? tr( "Shows the complete license text" )
-                                                          : tr( "Hide license text" ) );
-        m_viewLicenseLabel->setText( isNowCollapsed ? tr( "Show license agreement" ) : tr( "Hide license agreement" ) );
+        m_expandLicenseButton->setToolTip( isNowCollapsed ? tr( "Hide license text" )
+                                                          : tr( "Shows the complete license text" ) );
+        m_viewLicenseLabel->setText( isNowCollapsed ? tr( "Hide license agreement" ) : tr( "Show license agreement" ) );
     }
     else
     {
