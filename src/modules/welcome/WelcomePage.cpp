@@ -89,7 +89,7 @@ WelcomePage::WelcomePage( QWidget* parent )
         ui->supportButton->setText( tr( "%1 support" ).arg( *Calamares::Branding::ShortProductName ) ); )
 
     ui->aboutButton->setIcon( CalamaresUtils::defaultPixmap(
-        CalamaresUtils::Information,
+        CalamaresUtils::Release,
         CalamaresUtils::Original,
         2 * QSize( CalamaresUtils::defaultFontHeight(), CalamaresUtils::defaultFontHeight() ) ) );
     connect( ui->aboutButton, &QPushButton::clicked, this, [this] {
