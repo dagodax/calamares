@@ -164,7 +164,7 @@
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="52"/>
         <source> Run command &apos;%1&apos;.</source>
-        <translation type="unfinished"/>
+        <translation> Befehl &apos;%1&apos; ausführen.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="59"/>
@@ -1480,7 +1480,7 @@ Das Installationsprogramm wird beendet und alle Eingaben werden verworfen.</tran
     <message>
         <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="39"/>
         <source>Configuring LUKS key file.</source>
-        <translation type="unfinished"/>
+        <translation>LUKS-Schlüsseldatei wird konfiguriert.</translation>
     </message>
     <message>
         <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="156"/>
@@ -2784,12 +2784,12 @@ Ausgabe:
     <message>
         <location filename="../src/calamares/VariantModel.cpp" line="241"/>
         <source>Key</source>
-        <translation type="unfinished"/>
+        <translation>Schlüssel</translation>
     </message>
     <message>
         <location filename="../src/calamares/VariantModel.cpp" line="245"/>
         <source>Value</source>
-        <translation type="unfinished"/>
+        <translation>Wert</translation>
     </message>
 </context>
 <context>
@@ -2866,7 +2866,7 @@ Ausgabe:
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="230"/>
         <source>&amp;Donate</source>
-        <translation type="unfinished"/>
+        <translation>Spen&amp;den</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="240"/>

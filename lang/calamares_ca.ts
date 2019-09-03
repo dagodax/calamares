@@ -159,12 +159,12 @@
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="52"/>
         <source>Run command &apos;%1&apos; in target system.</source>
-        <translation type="unfinished"/>
+        <translation>Executeu l&apos;ordre &quot;%1&quot; al sistema de destinació.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="52"/>
         <source> Run command &apos;%1&apos;.</source>
-        <translation type="unfinished"/>
+        <translation>Executeu l&apos;ordre &quot;%1&quot;.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="59"/>
@@ -258,17 +258,17 @@
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="212"/>
         <source>Would you like to paste the install log to the web?</source>
-        <translation type="unfinished"/>
+        <translation>Voleu enganxar el registre d&apos;instal·lació a la xarxa?</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="250"/>
         <source>Install Log Paste URL</source>
-        <translation type="unfinished"/>
+        <translation>URL de publicació del registre d&apos;instal·lació</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="253"/>
         <source>The upload was unsuccessful. No web-paste was done.</source>
-        <translation type="unfinished"/>
+        <translation>La càrrega no s&apos;ha fet correctament. No s&apos;ha enganxat res a la xarxa.</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="269"/>
@@ -426,7 +426,8 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
         <location filename="../src/libcalamaresui/utils/Paste.cpp" line="34"/>
         <source>Install log posted to:
 %1</source>
-        <translation type="unfinished"/>
+        <translation>Registre d&apos;instal·lació publicat a
+%1</translation>
     </message>
 </context>
 <context>
@@ -1405,7 +1406,7 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/license/LicenseWidget.cpp" line="193"/>
         <source>Shows the complete license text</source>
-        <translation type="unfinished"/>
+        <translation>Mostra el text complet de la llicència.</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicenseWidget.cpp" line="194"/>
@@ -1480,35 +1481,35 @@ L&apos;instal·lador sortirà i es pedran tots els canvis.</translation>
     <message>
         <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="39"/>
         <source>Configuring LUKS key file.</source>
-        <translation type="unfinished"/>
+        <translation>Configurant el fitxer de clau de LUKS</translation>
     </message>
     <message>
         <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="156"/>
         <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="164"/>
         <source>No partitions are defined.</source>
-        <translation type="unfinished"/>
+        <translation>No s&apos;ha definit cap partició.</translation>
     </message>
     <message>
         <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="192"/>
         <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="199"/>
         <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="207"/>
         <source>Encrypted rootfs setup error</source>
-        <translation type="unfinished"/>
+        <translation>Error de configuració de rootfs encriptat</translation>
     </message>
     <message>
         <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="193"/>
         <source>Root partition %1 is LUKS but no passphrase has been set.</source>
-        <translation type="unfinished"/>
+        <translation>La partició d&apos;arrel %1 és de LUKS però no se n&apos;ha establert cap contrasenya.</translation>
     </message>
     <message>
         <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="200"/>
         <source>Could not create LUKS key file for root partition %1.</source>
-        <translation type="unfinished"/>
+        <translation>No s&apos;ha pogut crear el fitxer de clau de LUKS per a la partició d&apos;arrel %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="208"/>
         <source>Could configure LUKS key file on partition %1.</source>
-        <translation type="unfinished"/>
+        <translation>No s&apos;ha pogut configurar el fitxer de clau de LUKS a la partició %1.</translation>
     </message>
 </context>
 <context>
@@ -2784,12 +2785,12 @@ Sortida:
     <message>
         <location filename="../src/calamares/VariantModel.cpp" line="241"/>
         <source>Key</source>
-        <translation type="unfinished"/>
+        <translation>Clau</translation>
     </message>
     <message>
         <location filename="../src/calamares/VariantModel.cpp" line="245"/>
         <source>Value</source>
-        <translation type="unfinished"/>
+        <translation>Valor</translation>
     </message>
 </context>
 <context>
@@ -2856,22 +2857,22 @@ Sortida:
         <location filename="../src/modules/welcome/WelcomePage.ui" line="69"/>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="82"/>
         <source>Select application and system language</source>
-        <translation type="unfinished"/>
+        <translation>Seleccioneu l&apos;aplicació i la llengua del sistema</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="190"/>
         <source>Open donations website</source>
-        <translation type="unfinished"/>
+        <translation>Obre el lloc web per a les donacions</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="230"/>
         <source>&amp;Donate</source>
-        <translation type="unfinished"/>
+        <translation>Feu una &amp;donació</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="240"/>
         <source>Open help and support website</source>
-        <translation type="unfinished"/>
+        <translation>Obre el lloc web per a l&apos;ajuda i el suport</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="300"/>
@@ -2977,12 +2978,12 @@ Sortida:
     <message>
         <location filename="../src/branding/default/show.qml" line="64"/>
         <source>This is a second Slide element.</source>
-        <translation type="unfinished"/>
+        <translation>Aquest és un segon element de la presentació.</translation>
     </message>
     <message>
         <location filename="../src/branding/default/show.qml" line="68"/>
         <source>This is a third Slide element.</source>
-        <translation type="unfinished"/>
+        <translation>Aquest és un tercer element de la presentació.</translation>
     </message>
 </context>
 </TS>

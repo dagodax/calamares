@@ -159,12 +159,12 @@
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="52"/>
         <source>Run command &apos;%1&apos; in target system.</source>
-        <translation type="unfinished"/>
+        <translation>Ejecutar comando &apos;%1&apos; en sistema destino.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="52"/>
         <source> Run command &apos;%1&apos;.</source>
-        <translation type="unfinished"/>
+        <translation>Ejecutar comando &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="59"/>
@@ -258,17 +258,17 @@
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="212"/>
         <source>Would you like to paste the install log to the web?</source>
-        <translation type="unfinished"/>
+        <translation>¿Le gustaría pegar el log de instalación en la web?</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="250"/>
         <source>Install Log Paste URL</source>
-        <translation type="unfinished"/>
+        <translation>Instalar Log Paste URL</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="253"/>
         <source>The upload was unsuccessful. No web-paste was done.</source>
-        <translation type="unfinished"/>
+        <translation>La carga no fue correcta. NO se hizo ningún pegado en la web.</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="269"/>
@@ -426,7 +426,8 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
         <location filename="../src/libcalamaresui/utils/Paste.cpp" line="34"/>
         <source>Install log posted to:
 %1</source>
-        <translation type="unfinished"/>
+        <translation>Instalar el registro publicado en:
+%1</translation>
     </message>
 </context>
 <context>
@@ -1405,7 +1406,7 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/license/LicenseWidget.cpp" line="193"/>
         <source>Shows the complete license text</source>
-        <translation type="unfinished"/>
+        <translation>Mostrar el texto completo de la licencia</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicenseWidget.cpp" line="194"/>
@@ -1480,35 +1481,35 @@ Saldrá del instalador y se perderán todos los cambios.</translation>
     <message>
         <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="39"/>
         <source>Configuring LUKS key file.</source>
-        <translation type="unfinished"/>
+        <translation>Configuración del archivo de claves LUKS.</translation>
     </message>
     <message>
         <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="156"/>
         <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="164"/>
         <source>No partitions are defined.</source>
-        <translation type="unfinished"/>
+        <translation>No se definieron particiones.</translation>
     </message>
     <message>
         <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="192"/>
         <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="199"/>
         <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="207"/>
         <source>Encrypted rootfs setup error</source>
-        <translation type="unfinished"/>
+        <translation>Error de configuración de cifrado rootfs</translation>
     </message>
     <message>
         <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="193"/>
         <source>Root partition %1 is LUKS but no passphrase has been set.</source>
-        <translation type="unfinished"/>
+        <translation>La partición Root %1 es LUKS pero no se ha establecido ninguna contraseña.</translation>
     </message>
     <message>
         <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="200"/>
         <source>Could not create LUKS key file for root partition %1.</source>
-        <translation type="unfinished"/>
+        <translation>No se pudo crear el archivo de clave LUKS para la partición raíz %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="208"/>
         <source>Could configure LUKS key file on partition %1.</source>
-        <translation type="unfinished"/>
+        <translation>Puede configurar el archivo de la llave LUKS en la partición %1.</translation>
     </message>
 </context>
 <context>
@@ -2784,12 +2785,12 @@ Salida:
     <message>
         <location filename="../src/calamares/VariantModel.cpp" line="241"/>
         <source>Key</source>
-        <translation type="unfinished"/>
+        <translation>Clave</translation>
     </message>
     <message>
         <location filename="../src/calamares/VariantModel.cpp" line="245"/>
         <source>Value</source>
-        <translation type="unfinished"/>
+        <translation>Valor</translation>
     </message>
 </context>
 <context>
@@ -2856,22 +2857,22 @@ Salida:
         <location filename="../src/modules/welcome/WelcomePage.ui" line="69"/>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="82"/>
         <source>Select application and system language</source>
-        <translation type="unfinished"/>
+        <translation>Seleccione el idioma de la aplicación y del sistema.</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="190"/>
         <source>Open donations website</source>
-        <translation type="unfinished"/>
+        <translation>Abrir el sitio web para donaciones</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="230"/>
         <source>&amp;Donate</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Donar</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="240"/>
         <source>Open help and support website</source>
-        <translation type="unfinished"/>
+        <translation>Abrir el sitio web de ayuda y soporte</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="300"/>
@@ -2977,12 +2978,12 @@ Salida:
     <message>
         <location filename="../src/branding/default/show.qml" line="64"/>
         <source>This is a second Slide element.</source>
-        <translation type="unfinished"/>
+        <translation>Este es un segundo elemento de la Diapositiva.</translation>
     </message>
     <message>
         <location filename="../src/branding/default/show.qml" line="68"/>
         <source>This is a third Slide element.</source>
-        <translation type="unfinished"/>
+        <translation>Este es un tercer elemento de la Diapositiva.</translation>
     </message>
 </context>
 </TS>

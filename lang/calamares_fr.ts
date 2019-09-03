@@ -159,12 +159,12 @@
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="52"/>
         <source>Run command &apos;%1&apos; in target system.</source>
-        <translation type="unfinished"/>
+        <translation>Exécuter la commande &apos;%1&apos; sur le système cible.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="52"/>
         <source> Run command &apos;%1&apos;.</source>
-        <translation type="unfinished"/>
+        <translation>Exécuter la commande &apos;%1&apos;.</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/ProcessJob.cpp" line="59"/>
@@ -258,17 +258,17 @@
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="212"/>
         <source>Would you like to paste the install log to the web?</source>
-        <translation type="unfinished"/>
+        <translation>Souhaitez-vous copier le log d’installation sur le Web ?</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="250"/>
         <source>Install Log Paste URL</source>
-        <translation type="unfinished"/>
+        <translation>URL de la copie du log d’installation</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="253"/>
         <source>The upload was unsuccessful. No web-paste was done.</source>
-        <translation type="unfinished"/>
+        <translation>Le téléversement n’a pas réussi. Aucune copie web n’a été effectuée.</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ViewManager.cpp" line="269"/>
@@ -425,7 +425,8 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
         <location filename="../src/libcalamaresui/utils/Paste.cpp" line="34"/>
         <source>Install log posted to:
 %1</source>
-        <translation type="unfinished"/>
+        <translation>Log d’installation posté sur :
+%1</translation>
     </message>
 </context>
 <context>
@@ -1259,7 +1260,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
         <location filename="../src/modules/oemid/IDJob.cpp" line="59"/>
         <location filename="../src/modules/oemid/IDJob.cpp" line="67"/>
         <source>OEM Batch Identifier</source>
-        <translation type="unfinished"/>
+        <translation>OEM Batch Identifier</translation>
     </message>
     <message>
         <location filename="../src/modules/oemid/IDJob.cpp" line="48"/>
@@ -1404,7 +1405,7 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/license/LicenseWidget.cpp" line="193"/>
         <source>Shows the complete license text</source>
-        <translation type="unfinished"/>
+        <translation>Affiche le texte complet de la licence</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicenseWidget.cpp" line="194"/>
@@ -1479,35 +1480,35 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="39"/>
         <source>Configuring LUKS key file.</source>
-        <translation type="unfinished"/>
+        <translation>Configuration du fichier de clé de LUKS.</translation>
     </message>
     <message>
         <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="156"/>
         <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="164"/>
         <source>No partitions are defined.</source>
-        <translation type="unfinished"/>
+        <translation>Aucune partition n’est définie.</translation>
     </message>
     <message>
         <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="192"/>
         <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="199"/>
         <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="207"/>
         <source>Encrypted rootfs setup error</source>
-        <translation type="unfinished"/>
+        <translation>Erreur de configuration d’un rootfs chiffré</translation>
     </message>
     <message>
         <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="193"/>
         <source>Root partition %1 is LUKS but no passphrase has been set.</source>
-        <translation type="unfinished"/>
+        <translation>La partition racine %1 est LUKS mais aucune phrase de passe n’a été définie.</translation>
     </message>
     <message>
         <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="200"/>
         <source>Could not create LUKS key file for root partition %1.</source>
-        <translation type="unfinished"/>
+        <translation>Impossible de créer le fichier de clé LUKS pour la partition racine %1.</translation>
     </message>
     <message>
         <location filename="../src/modules/luksbootkeyfile/LuksBootKeyFileJob.cpp" line="208"/>
         <source>Could configure LUKS key file on partition %1.</source>
-        <translation type="unfinished"/>
+        <translation>Permet de configurer un fichier clé LUKS sur la partition %1.</translation>
     </message>
 </context>
 <context>
@@ -1520,12 +1521,12 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/oemid/OEMPage.ui" line="38"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter a batch-identifier here. This will be stored in the target system.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter a batch-identifier here. This will be stored in the target system.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/oemid/OEMPage.ui" line="48"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;h1&gt;OEM Configuration&lt;/h1&gt;&lt;p&gt;Calamares will use OEM settings while configuring the target system.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"/>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;h1&gt;OEM Configuration&lt;/h1&gt;&lt;p&gt;Calamares will use OEM settings while configuring the target system.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
@@ -1533,12 +1534,12 @@ L&apos;installateur va fermer et tous les changements seront perdus.</translatio
     <message>
         <location filename="../src/modules/oemid/OEMViewStep.cpp" line="121"/>
         <source>OEM Configuration</source>
-        <translation type="unfinished"/>
+        <translation>OEM Configuration</translation>
     </message>
     <message>
         <location filename="../src/modules/oemid/OEMViewStep.cpp" line="126"/>
         <source>Set the OEM Batch Identifier to &lt;code&gt;%1&lt;/code&gt;.</source>
-        <translation type="unfinished"/>
+        <translation>Set the OEM Batch Identifier to &lt;code&gt;%1&lt;/code&gt;.</translation>
     </message>
 </context>
 <context>
@@ -2784,12 +2785,12 @@ Sortie :
     <message>
         <location filename="../src/calamares/VariantModel.cpp" line="241"/>
         <source>Key</source>
-        <translation type="unfinished"/>
+        <translation>CLé</translation>
     </message>
     <message>
         <location filename="../src/calamares/VariantModel.cpp" line="245"/>
         <source>Value</source>
-        <translation type="unfinished"/>
+        <translation>Valeur</translation>
     </message>
 </context>
 <context>
@@ -2856,22 +2857,22 @@ Sortie :
         <location filename="../src/modules/welcome/WelcomePage.ui" line="69"/>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="82"/>
         <source>Select application and system language</source>
-        <translation type="unfinished"/>
+        <translation>Sélectionner la langue du système et des applications</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="190"/>
         <source>Open donations website</source>
-        <translation type="unfinished"/>
+        <translation>Site web pour effectuer des dons librement</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="230"/>
         <source>&amp;Donate</source>
-        <translation type="unfinished"/>
+        <translation>&amp;Faire un don</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="240"/>
         <source>Open help and support website</source>
-        <translation type="unfinished"/>
+        <translation>Site web d’aide et de support</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.ui" line="300"/>
@@ -2977,12 +2978,12 @@ Sortie :
     <message>
         <location filename="../src/branding/default/show.qml" line="64"/>
         <source>This is a second Slide element.</source>
-        <translation type="unfinished"/>
+        <translation>This is a second Slide element.</translation>
     </message>
     <message>
         <location filename="../src/branding/default/show.qml" line="68"/>
         <source>This is a third Slide element.</source>
-        <translation type="unfinished"/>
+        <translation>This is a third Slide element.</translation>
     </message>
 </context>
 </TS>
