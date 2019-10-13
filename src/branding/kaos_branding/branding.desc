@@ -63,10 +63,10 @@ windowSize: 850px,630px
 strings:
     productName:         KaOS
     shortProductName:    KaOS
-    version:             2019.09
+    version:             2019.10
     shortVersion:        KaOS
-    versionedName:       KaOS 2019.09
-    shortVersionedName:  KaOS 2019.09
+    versionedName:       KaOS 2019.10
+    shortVersionedName:  KaOS 2019.10
     bootloaderEntryName: KaOS
     productUrl:          https://kaosx.us/
     supportUrl:          https://kaosx.us/docs/
