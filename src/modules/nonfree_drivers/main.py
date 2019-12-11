@@ -74,6 +74,36 @@ def run():
                     line = 'Session=plasma.desktop'
                 sddm_conf.write(line)
                 
+    if os.path.exists('/var/log/nvidia-prime'):
+        print('nvidia detected')
+        print('removing unneeded packages')
+        libcalamares.utils.target_env_call(
+            ['pacman', '-Rdd', '--noconfirm', 'libgl'])
+        libcalamares.utils.target_env_call(
+            ['pacman', '-Rdd', '--noconfirm', 'xf86-video-nouveau'])
+        print('installing driver')
+        shutil.copytree(
+            '/opt/kdeos/pkgs', '%s/opt/kdeos/pkgs' % (install_path))
+        for nvidia_utils in glob.glob('/opt/kdeos/pkgs/nvidia-utils-44*'):
+            libcalamares.utils.target_env_call(
+                ['pacman', '-Ud', '--force', '--noconfirm', nvidia_utils])
+        for nvidia in glob.glob('/opt/kdeos/pkgs/nvidia-44*'):
+            libcalamares.utils.target_env_call(
+                ['pacman', '-Ud', '--force', '--noconfirm', nvidia])
+        libcalamares.utils.target_env_call(
+                ['pacman', '-Ud', '--force', '--noconfirm', 'prime'])
+        shutil.rmtree('%s/opt/kdeos/pkgs' % (install_path))
+        
+        sddm_conf_path = os.path.join(install_path, "etc/sddm.conf")
+        text = []
+        with open(sddm_conf_path, 'r') as sddm_conf:
+            text = sddm_conf.readlines()
+        with open(sddm_conf_path, 'w') as sddm_conf:
+            for line in text:
+                if re.match('Session=plasmawayland.desktop', line):
+                    line = 'Session=plasma.desktop'
+                sddm_conf.write(line)
+                
     elif os.path.exists('/var/log/nvidia-390xx'):
         print('nvidia-390xx detected')
         print('removing unneeded packages')
