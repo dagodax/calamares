@@ -50,18 +50,16 @@ def run():
         print('nvidia detected')
         print('removing unneeded packages')
         libcalamares.utils.target_env_call(
-            ['pacman', '-Rdd', '--noconfirm', 'libgl'])
-        libcalamares.utils.target_env_call(
             ['pacman', '-Rdd', '--noconfirm', 'xf86-video-nouveau'])
         print('installing driver')
         shutil.copytree(
             '/opt/kdeos/pkgs', '%s/opt/kdeos/pkgs' % (install_path))
-        for nvidia_utils in glob.glob('/opt/kdeos/pkgs/nvidia-utils-44*'):
+        for nvidia_utils in glob.glob('/opt/kdeos/pkgs/nvidia-utils-1:44*'):
             libcalamares.utils.target_env_call(
-                ['pacman', '-Ud', '--force', '--noconfirm', nvidia_utils])
-        for nvidia in glob.glob('/opt/kdeos/pkgs/nvidia-44*'):
+                ['pacman', '-Ud', '--noconfirm', nvidia_utils])
+        for nvidia in glob.glob('/opt/kdeos/pkgs/nvidia-1:44*'):
             libcalamares.utils.target_env_call(
-                ['pacman', '-Ud', '--force', '--noconfirm', nvidia])
+                ['pacman', '-Ud', '--noconfirm', nvidia])
         shutil.rmtree('%s/opt/kdeos/pkgs' % (install_path))
         
         sddm_conf_path = os.path.join(install_path, "etc/sddm.conf")
@@ -75,23 +73,21 @@ def run():
                 sddm_conf.write(line)
                 
     if os.path.exists('/var/log/nvidia-prime'):
-        print('nvidia detected')
+        print('nvidia prime detected')
         print('removing unneeded packages')
-        libcalamares.utils.target_env_call(
-            ['pacman', '-Rdd', '--noconfirm', 'libgl'])
         libcalamares.utils.target_env_call(
             ['pacman', '-Rdd', '--noconfirm', 'xf86-video-nouveau'])
         print('installing driver')
         shutil.copytree(
             '/opt/kdeos/pkgs', '%s/opt/kdeos/pkgs' % (install_path))
-        for nvidia_utils in glob.glob('/opt/kdeos/pkgs/nvidia-utils-44*'):
+        for nvidia_utils in glob.glob('/opt/kdeos/pkgs/nvidia-utils-1:44*'):
             libcalamares.utils.target_env_call(
-                ['pacman', '-Ud', '--force', '--noconfirm', nvidia_utils])
-        for nvidia in glob.glob('/opt/kdeos/pkgs/nvidia-44*'):
+                ['pacman', '-Ud', '--noconfirm', nvidia_utils])
+        for nvidia in glob.glob('/opt/kdeos/pkgs/nvidia-1:44*'):
             libcalamares.utils.target_env_call(
-                ['pacman', '-Ud', '--force', '--noconfirm', nvidia])
+                ['pacman', '-Ud', '--noconfirm', nvidia])
         libcalamares.utils.target_env_call(
-                ['pacman', '-Ud', '--force', '--noconfirm', 'prime'])
+                ['pacman', '-Ud', '--noconfirm', 'prime'])
         shutil.rmtree('%s/opt/kdeos/pkgs' % (install_path))
         
         sddm_conf_path = os.path.join(install_path, "etc/sddm.conf")
@@ -108,18 +104,16 @@ def run():
         print('nvidia-390xx detected')
         print('removing unneeded packages')
         libcalamares.utils.target_env_call(
-            ['pacman', '-Rdd', '--noconfirm', 'libgl'])
-        libcalamares.utils.target_env_call(
             ['pacman', '-Rdd', '--noconfirm', 'xf86-video-nouveau'])
         print('installing driver')
         shutil.copytree(
             '/opt/kdeos/pkgs', '%s/opt/kdeos/pkgs' % (install_path))
         for nvidia_390_utils in glob.glob('/opt/kdeos/pkgs/nvidia-390xx-utils*'):
             libcalamares.utils.target_env_call(
-                ['pacman', '-Ud', '--force', '--noconfirm', nvidia_390_utils])
+                ['pacman', '-Ud', '--noconfirm', nvidia_390_utils])
         for nvidia_390 in glob.glob('/opt/kdeos/pkgs/nvidia-390xx-39*'):
             libcalamares.utils.target_env_call(
-                ['pacman', '-Ud', '--force', '--noconfirm', nvidia_390])
+                ['pacman', '-Ud', '--noconfirm', nvidia_390])
         shutil.rmtree('%s/opt/kdeos/pkgs' % (install_path))
         
         sddm_conf_path = os.path.join(install_path, "etc/sddm.conf")
@@ -136,18 +130,16 @@ def run():
         print('nvidia-340xx detected')
         print('removing unneeded packages')
         libcalamares.utils.target_env_call(
-            ['pacman', '-Rdd', '--noconfirm', 'libgl'])
-        libcalamares.utils.target_env_call(
             ['pacman', '-Rdd', '--noconfirm', 'xf86-video-nouveau'])
         print('installing driver')
         shutil.copytree(
             '/opt/kdeos/pkgs', '%s/opt/kdeos/pkgs' % (install_path))
         for nvidia_340_utils in glob.glob('/opt/kdeos/pkgs/nvidia-340xx-utils*'):
             libcalamares.utils.target_env_call(
-                ['pacman', '-Ud', '--force', '--noconfirm', nvidia_340_utils])
+                ['pacman', '-Ud', '--noconfirm', nvidia_340_utils])
         for nvidia_340 in glob.glob('/opt/kdeos/pkgs/nvidia-340xx-34*'):
             libcalamares.utils.target_env_call(
-                ['pacman', '-Ud', '--force', '--noconfirm', nvidia_340])
+                ['pacman', '-Ud', '--noconfirm', nvidia_340])
         shutil.rmtree('%s/opt/kdeos/pkgs' % (install_path))
         
         sddm_conf_path = os.path.join(install_path, "etc/sddm.conf")
