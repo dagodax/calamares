@@ -86,7 +86,7 @@ def run():
                                                 'xf86-video-ati'])
             except Exception as e:
                 pass
-        if "vmware" in file_c:
+        if "vmware" in file_c or "vmwgfx" in file_c:
             libcalamares.utils.debug(file_c)
         else:
             try:
