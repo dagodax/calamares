@@ -99,12 +99,12 @@
     <message>
         <location filename="../src/calamares/DebugWindow.ui" line="106"/>
         <source>Reload Stylesheet</source>
-        <translation type="unfinished"/>
+        <translation>Obnovit šablonu stylů</translation>
     </message>
     <message>
         <location filename="../src/calamares/DebugWindow.ui" line="113"/>
         <source>Widget Tree</source>
-        <translation type="unfinished"/>
+        <translation>Strom widgetů</translation>
     </message>
     <message>
         <location filename="../src/calamares/DebugWindow.cpp" line="225"/>
@@ -117,7 +117,7 @@
     <message>
         <location filename="../src/libcalamaresui/ExecutionViewStep.cpp" line="120"/>
         <source>Set up</source>
-        <translation type="unfinished"/>
+        <translation>Nastavit</translation>
     </message>
     <message>
         <location filename="../src/libcalamaresui/ExecutionViewStep.cpp" line="120"/>
@@ -130,7 +130,7 @@
     <message>
         <location filename="../src/libcalamares/JobExample.cpp" line="39"/>
         <source>Job failed (%1)</source>
-        <translation type="unfinished"/>
+        <translation>Úloha selhala (%1)</translation>
     </message>
     <message>
         <location filename="../src/libcalamares/JobExample.cpp" line="40"/>

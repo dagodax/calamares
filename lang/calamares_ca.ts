@@ -2897,7 +2897,7 @@ Sortida:
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="85"/>
         <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;</source>
-        <translation>&lt;h1&gt;Benvingut a l&apos;insta·lador %1.&lt;/h1&gt;</translation>
+        <translation>&lt;h1&gt;Benvingut/da a l&apos;insta·lador %1.&lt;/h1&gt;</translation>
     </message>
     <message>
         <location filename="../src/modules/welcome/WelcomePage.cpp" line="84"/>
@@ -2940,7 +2940,7 @@ Sortida:
     <message>
         <location filename="../src/modules/welcome/WelcomeViewStep.cpp" line="62"/>
         <source>Welcome</source>
-        <translation>Benvinguts</translation>
+        <translation>Benvingut/da</translation>
     </message>
 </context>
 <context>

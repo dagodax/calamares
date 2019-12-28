@@ -87,7 +87,7 @@ def run():
             libcalamares.utils.target_env_call(
                 ['pacman', '-Ud', '--noconfirm', nvidia])
         libcalamares.utils.target_env_call(
-                ['pacman', '-Ud', '--noconfirm', 'prime'])
+                ['pacman', '-Ud', '--noconfirm', 'prime*'])
         shutil.rmtree('%s/opt/kdeos/pkgs' % (install_path))
         
         sddm_conf_path = os.path.join(install_path, "etc/sddm.conf")
