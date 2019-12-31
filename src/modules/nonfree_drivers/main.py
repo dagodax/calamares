@@ -86,8 +86,9 @@ def run():
         for nvidia in glob.glob('/opt/kdeos/pkgs/nvidia-1:44*'):
             libcalamares.utils.target_env_call(
                 ['pacman', '-Ud', '--noconfirm', nvidia])
-        libcalamares.utils.target_env_call(
-                ['pacman', '-Ud', '--noconfirm', 'prime*'])
+        for prime in glob.glob('/opt/kdeos/pkgs/prime*'):
+            libcalamares.utils.target_env_call(
+                ['pacman', '-Ud', '--noconfirm', prime])
         shutil.rmtree('%s/opt/kdeos/pkgs' % (install_path))
         
         sddm_conf_path = os.path.join(install_path, "etc/sddm.conf")
