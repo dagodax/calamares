@@ -72,7 +72,7 @@ def run():
                     line = 'Session=plasma.desktop'
                 sddm_conf.write(line)
                 
-    if os.path.exists('/var/log/nvidia-prime'):
+    elif os.path.exists('/var/log/nvidia-prime'):
         print('nvidia prime detected')
         print('removing unneeded packages')
         libcalamares.utils.target_env_call(
