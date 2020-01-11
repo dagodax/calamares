@@ -34,6 +34,7 @@ windowExpanding:    normal
 # *windowExpanding*, above. If not set, use constants defined
 # in CalamaresUtilsGui, 800x520.
 windowSize: 850px,630px
+windowPlacment: center
 
 # These are strings shown to the user in the user interface.
 # There is no provision for translating them -- since they
