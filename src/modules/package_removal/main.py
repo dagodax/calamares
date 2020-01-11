@@ -121,31 +121,23 @@ def run():
             libcalamares.utils.target_env_call(
                 ['pacman', '-Rddn', '--noconfirm', '%s' % (pkg)])
 
-    # Remove LibreOffice l10n
-    #list_of_pkgs = []
+    # Packagechooser outcome / remove LibreOffice l10n
+    office = libcalamares.globalstorage.value("packagechooser_packagechooser")
+    
+    if not office_package:
+        print('Removing LibreOffice')
+        libcalamares.utils.target_env_call(
+                ['pacman', '-Rns', '--noconfirm', 'libreoffice'])
+        
+    else:
+        if office == 'calligra':
+            print('Installing Calligra')
+            libcalamares.utils.target_env_call(
+                ['pacman', '-U', '--noconfirm', '/opt/kdeos/pkgs/calligra*', '/opt/kdeos/pkgs/libspnav'])
+        
+        else:
+            print('LibreOffice selected')
+        
 
-    #p = subprocess.Popen("pacman -Q | grep -i libreoffice | awk '{print $1}'",
-    #                     shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
 
-    # Iterates over every found pkg and put each one in a list
-    #for line in p.stdout.readlines():
-    #    s = line.decode('ascii')
-    #    s = s.rstrip('\n')
-    #    list_of_pkgs.append(s)
-
-    #print(list_of_pkgs)
-
-    # Print the pkgs that do not have the locale 'this_locale' for future
-    # removal!
-    #for pkg in list_of_pkgs:
-    #    if pkg[14:16] != this_locale:
-    #        print(pkg)
-
-    # Remove the pkgs that do not have the locale 'this_locale'
-    #for pkg in list_of_pkgs:
-    #    if pkg[14:16] != this_locale:
-    #        print('Removing Calligra l10n packages')
-    #        libcalamares.utils.target_env_call(
-    #            ['pacman', '-Rddn', '--noconfirm', '%s' % (pkg)])
-
-    #print('package removal completed')
+    print('package removal completed')
