@@ -34,7 +34,11 @@ set( libSources
     locale/Label.cpp
     locale/LabelModel.cpp
     locale/Lookup.cpp
+    locale/TimeZone.cpp
     locale/TranslatableConfiguration.cpp
+
+    # Network service
+    network/Manager.cpp
 
     # Partition service
     partition/PartitionSize.cpp
@@ -194,6 +198,26 @@ if ( ECM_FOUND AND BUILD_TESTING )
             Qt5::Test
     )
     calamares_automoc( libcalamareslocaletest )
+
+    ecm_add_test(
+            network/Tests.cpp
+        TEST_NAME
+            libcalamaresnetworktest
+        LINK_LIBRARIES
+            calamares
+            Qt5::Test
+    )
+    calamares_automoc( libcalamaresnetworktest )
+
+    ecm_add_test(
+            modulesystem/Tests.cpp
+        TEST_NAME
+            libcalamaresmodulesystemtest
+        LINK_LIBRARIES
+            calamares
+            Qt5::Test
+    )
+    calamares_automoc( libcalamaresmodulesystemtest )
 endif()
 
 if( BUILD_TESTING )

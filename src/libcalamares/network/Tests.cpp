@@ -1,10 +1,6 @@
 /* === This file is part of Calamares - <https://github.com/calamares> ===
  *
- *   Copyright 2014, Teo Mrnjavac <teo@kde.org>
- *
- *   Originally from the Manjaro Installation Framework
- *   by Roland Singer <roland@manjaro.org>
- *   Copyright (C) 2007 Free Software Foundation, Inc.
+ *   Copyright 2019, Adriaan de Groot <groot@kde.org>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -20,13 +16,33 @@
  *   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef LOCALECONST_H
-#define LOCALECONST_H
+#include "Tests.h"
 
+#include "Manager.h"
 
-#define LOCALESDIR "/usr/share/i18n/locales"
-#define TZ_DATA_FILE "/usr/share/zoneinfo/zone.tab"
-#define USER_IMAGES_PATH "/usr/share/pixmaps/faces"
+#include <QtTest/QtTest>
 
+QTEST_GUILESS_MAIN( NetworkTests )
 
-#endif // LOCALECONST_H
+NetworkTests::NetworkTests() {}
+
+NetworkTests::~NetworkTests() {}
+
+void
+NetworkTests::initTestCase()
+{
+}
+
+void
+NetworkTests::testInstance()
+{
+    auto& nam = CalamaresUtils::Network::Manager::instance();
+    QVERIFY( !nam.hasInternet() );
+}
+
+void
+NetworkTests::testPing()
+{
+    auto& nam = CalamaresUtils::Network::Manager::instance();
+    QVERIFY( nam.synchronousPing( QUrl( "https://www.kde.org" ) ) );
+}

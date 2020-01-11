@@ -20,7 +20,6 @@
 
 #include "utils/Logger.h"
 
-#include <QNetworkReply>
 #include <QtXml/QDomDocument>
 
 namespace CalamaresUtils
@@ -74,10 +73,12 @@ QString
 GeoIPXML::rawReply( const QByteArray& data )
 {
     for ( const auto& e : getElementTexts( data, m_element ) )
+    {
         if ( !e.isEmpty() )
         {
             return e;
         }
+    }
 
     return QString();
 }

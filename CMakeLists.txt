@@ -40,10 +40,10 @@
 
 cmake_minimum_required( VERSION 3.3 FATAL_ERROR )
 project( CALAMARES
-    VERSION 3.2.15
+    VERSION 3.2.18
     LANGUAGES C CXX )
 
-set( CALAMARES_VERSION_RC 0 )  # Set to 0 during release cycle, 1 during development
+set( CALAMARES_VERSION_RC 1 )  # Set to 0 during release cycle, 1 during development
 
 ### OPTIONS
 #
@@ -113,7 +113,6 @@ set( _tx_complete ast ca cs de en es es_AR fr hr hu id_ID nl_NL pt_BR pt_PT)
 set( _tx_good ro_RO it pl ru sl sr_RS tr_TR)
 set( _tx_ok sv )
 set( _tx_incomplete zh_CN zh_TW)
-
 
 ### Required versions
 #
@@ -196,6 +195,7 @@ if( CMAKE_CXX_COMPILER_ID MATCHES "Clang" )
         -Wno-missing-prototypes
         -Wno-documentation-unknown-command
         -Wno-unknown-warning-option
+        -Werror=return-type
     )
         string( APPEND CMAKE_CXX_FLAGS " ${CLANG_WARNINGS}" )
     endforeach()
@@ -217,6 +217,8 @@ if( CMAKE_CXX_COMPILER_ID MATCHES "Clang" )
 
     set( CMAKE_SHARED_LINKER_FLAGS "-Wl,--no-undefined" )
 
+    # The path prefix is only relevant for CMake 3.16 and later, fixes #1286
+    set( CMAKE_AUTOMOC_PATH_PREFIX OFF )
     set( CALAMARES_AUTOMOC_OPTIONS "-butils/moc-warnings.h" )
     set( CALAMARES_AUTOUIC_OPTIONS --include utils/moc-warnings.h )
 else()
@@ -319,6 +321,10 @@ set_package_properties(
 )
 
 if ( PYTHONLIBS_FOUND )
+    # Since Boost provides CMake config files (starting with Boost 1.70.
+    # or so) the mess that is the Calamares find code picks the wrong
+    # bits. Suppress those CMake config files, as suggested by @jmrcpn
+    set(Boost_NO_BOOST_CMAKE ON)
     include( BoostPython3 )
     find_boost_python3( ${BOOSTPYTHON_VERSION} ${PYTHONLIBS_VERSION_STRING} CALAMARES_BOOST_PYTHON3_FOUND )
     set_package_properties(
@@ -446,6 +452,10 @@ add_feature_info( ExampleDistro ${mksquashfs_FOUND} "Create example-distro targe
 ### CALAMARES PROPER
 #
 set( CALAMARES_VERSION ${CALAMARES_VERSION_MAJOR}.${CALAMARES_VERSION_MINOR}.${CALAMARES_VERSION_PATCH} )
+# In rare cases we have hotfix-releases with a tweak
+if( CALAMARES_VERSION_TWEAK )
+    set( CALAMARES_VERSION "${CALAMARES_VERSION}.${CALAMARES_VERSION_TWEAK}" )
+endif()
 set( CALAMARES_VERSION_SHORT "${CALAMARES_VERSION}" )
 if( CALAMARES_VERSION_RC )
     set( CALAMARES_VERSION ${CALAMARES_VERSION}rc${CALAMARES_VERSION_RC} )
