@@ -4,5 +4,6 @@
         <file>images/calamares.png</file>
         <file>images/calligra.png</file>
         <file>images/libreoffice.png</file>
+        <file>images/plasma.png</file>
     </qresource>
 </RCC>
