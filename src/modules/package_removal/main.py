@@ -133,6 +133,8 @@ def run():
         if office == 'calligra':
             print('Installing Calligra')
             libcalamares.utils.target_env_call(
+                ['pacman', '-Rns', '--noconfirm', 'libreoffice'])
+            libcalamares.utils.target_env_call(
                 ['pacman', '-U', '--noconfirm', '/opt/kdeos/pkgs/calligra*', '/opt/kdeos/pkgs/libspnav'])
         
         if office == 'libreoffice':
