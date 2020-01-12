@@ -19,14 +19,13 @@
 #   along with Calamares. If not, see <http://www.gnu.org/licenses/>.
 
 import os
-import shutil
 import subprocess
 
 import libcalamares
 
 
 def run():
-    """ Package removal module. Live only packages, surplus language packs """
+    """ Package removal module. Live only packages, surplus language packs. """
 
     install_path = libcalamares.globalstorage.value("rootMountPoint")
     fw_type = libcalamares.globalstorage.value("firmwareType")
@@ -38,42 +37,42 @@ def run():
             os.remove(db_lock)
 
     # Remove Calamares and depends
-    if os.path.exists("%s/usr/bin/calamares" % install_path):
+    if os.path.exists("{!s}/usr/bin/calamares" .format(install_path)):
         print('Removing installer packages')
         libcalamares.utils.target_env_call(
             ['pacman', '-Rns', '--noconfirm', 'calamares', 'calamares-debug', 'console-setup'])
 
     # Remove welcome
-    if os.path.exists("%s/usr/bin/welcome" % install_path):
+    if os.path.exists("{!s}/usr/bin/welcome" .format(install_path)):
         print('Removing live ISO packages')
         libcalamares.utils.target_env_call(
             ['pacman', '-Rns', '--noconfirm', 'welcome'])
 
     # Remove hardware detection
-    if os.path.exists("%s/etc/kdeos-hwdetect.conf" % install_path):
+    if os.path.exists("{!s}/etc/kdeos-hwdetect.conf" .format(install_path)):
         print('Removing live start-up packages')
         libcalamares.utils.target_env_call(
             ['pacman', '-Rns', '--noconfirm', 'hardware-detection'])
 
     # Remove init-live
-    if os.path.exists("%s/etc/live" % install_path):
+    if os.path.exists("{!s}/etc/live" .format(install_path)):
         print('Removing live configuration packages')
         libcalamares.utils.target_env_call(
             ['pacman', '-R', '--noconfirm', 'init-live'])
-            
+
     # Remove surplus bootloader packages
     if fw_type == 'efi':
         print('Removing grub packages')
         libcalamares.utils.target_env_call(
             ['pacman', '-Rncs', '--noconfirm', 'grub'])
-        
+
     if fw_type == 'bios':
         print('Removing EFI packages')
         libcalamares.utils.target_env_call(
             ['pacman', '-Rns', '--noconfirm', 'efibootmgr'])
-        
+
     # Remove VirtualBox Guest packages
-    if os.path.exists("%s/usr/bin/VBoxClient" % install_path):
+    if os.path.exists("{!s}/usr/bin/VBoxClient" .format(install_path)):
         if 'hypervisor' in open('/proc/cpuinfo').read():
             print('Virtual Machine')
             vbox = subprocess.check_output('systemd-detect-virt')
@@ -87,11 +86,10 @@ def run():
             print('Removing guest-utils')
             libcalamares.utils.target_env_call(
                 ['pacman', '-R', '--noconfirm', 'virtualbox-guest-utils', 'virtualbox-guest-modules'])
-       
 
     # Remove KDE l10n
     this_locale = libcalamares.globalstorage.value("localeConf")["LANG"][:2]
-    #this_locale = 'us'
+    # this_locale = 'us'
     list_of_pkgs = []
 
     print(libcalamares.globalstorage.value("localeConf")["LANG"])
@@ -119,28 +117,30 @@ def run():
         if pkg[9:11] != this_locale:
             print('Removing KDE l10n packages')
             libcalamares.utils.target_env_call(
-                ['pacman', '-Rddn', '--noconfirm', '%s' % (pkg)])
+                ['pacman', '-Rddn', '--noconfirm', '{!s}' .format(pkg)])
 
     # Packagechooser outcome / remove LibreOffice l10n
     packages = libcalamares.globalstorage.value("packagechooser_packagechooser")
-    
+
     if not packages:
         print('Removing LibreOffice')
         libcalamares.utils.target_env_call(
                 ['pacman', '-Rns', '--noconfirm', 'libreoffice'])
-        
+
     else:
         if packages == 'calligra':
             print('Installing Calligra')
             libcalamares.utils.target_env_call(
                 ['pacman', '-Rns', '--noconfirm', 'libreoffice'])
             libcalamares.utils.target_env_call(
-                ['pacman', '-U', '--noconfirm', '/opt/kdeos/pkgs/calligra*', '/opt/kdeos/pkgs/libspnav'])
-        
+                ['pacman', '-U', '--noconfirm',
+                 '/opt/kdeos/pkgs/calligra*',
+                 '/opt/kdeos/pkgs/libspnav'])
+
         if packages == 'libreoffice':
             print('LibreOffice selected')
-            
-        if packages == 'minimal_install'
+
+        if packages == 'minimal_install':
             print('Minimal Install')
             libcalamares.utils.target_env_call(
                 ['pacman', '-Rncs', '--noconfirm',
@@ -173,7 +173,5 @@ def run():
                  'kpat',
                  'kde-telepathy',
                  'libreoffice'])
-        
-
 
     print('package removal completed')
