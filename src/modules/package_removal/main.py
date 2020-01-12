@@ -122,25 +122,25 @@ def run():
                 ['pacman', '-Rddn', '--noconfirm', '%s' % (pkg)])
 
     # Packagechooser outcome / remove LibreOffice l10n
-    office = libcalamares.globalstorage.value("packagechooser_packagechooser")
+    packages = libcalamares.globalstorage.value("packagechooser_packagechooser")
     
-    if not office:
+    if not packages:
         print('Removing LibreOffice')
         libcalamares.utils.target_env_call(
                 ['pacman', '-Rns', '--noconfirm', 'libreoffice'])
         
     else:
-        if office == 'calligra':
+        if packages == 'calligra':
             print('Installing Calligra')
             libcalamares.utils.target_env_call(
                 ['pacman', '-Rns', '--noconfirm', 'libreoffice'])
             libcalamares.utils.target_env_call(
                 ['pacman', '-U', '--noconfirm', '/opt/kdeos/pkgs/calligra*', '/opt/kdeos/pkgs/libspnav'])
         
-        if office == 'libreoffice':
+        if packages == 'libreoffice':
             print('LibreOffice selected')
             
-        if office == 'minimal_install'
+        if packages == 'minimal_install'
             print('Minimal Install')
             libcalamares.utils.target_env_call(
                 ['pacman', '-Rncs', '--noconfirm',
