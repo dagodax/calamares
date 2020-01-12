@@ -139,6 +139,40 @@ def run():
         
         if office == 'libreoffice':
             print('LibreOffice selected')
+            
+        if office == 'minimal_install'
+            print('Minimal Install')
+            libcalamares.utils.target_env_call(
+                ['pacman', '-Rncs', '--noconfirm',
+                 'plasma-workspace-wallpapers',
+                 'partitionmanager',
+                 'gwenview',
+                 'spectacle',
+                 'sweeper',
+                 'nomad-firewall',
+                 'quassel',
+                 'smplayer',
+                 'smtube',
+                 'elisa',
+                 'kde-gtk-config',
+                 'tomoyo-tools',
+                 'kcp',
+                 'pacmanlogviewer',
+                 'seafile',
+                 'kamoso',
+                 'kget',
+                 'kompare',
+                 'simplescreenrecorder',
+                 'krita',
+                 'pepper-flash',
+                 'k3b'
+                 'system-config-printer',
+                 'print-manager',
+                 'hplip',
+                 'pyqt5-python3',
+                 'kpat',
+                 'kde-telepathy',
+                 'libreoffice'])
         
 
 
