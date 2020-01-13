@@ -32,7 +32,7 @@ Item {
         contentHeight: 3500
         
         ScrollBar.vertical: ScrollBar {
-            width: 5
+            width: 15
             policy: ScrollBar.AlwaysOn
         }
 
@@ -47,7 +47,7 @@ Item {
             activeFocusOnPress: false
             wrapMode: Text.WordWrap
 
-            text: qsTr("<h3>KaOS - 2020.01</h3>
+            text: qsTr("<h3>KaOS - 2020.02</h3>
             <p>A nice way of starting 2020 is to present to you the January release of a new stable ISO.</p>
             
             <p>For the many changes in this release, two stand out.  First one is the addition of signed kernel modules for Linux 5.4. All internal modules are now signed automatically during the kernel build, out of tree modules like virtualbox-modules and NVIDIA packages have the signing added too. Building of those modules was adjusted to use the kernel specific signing files during each and every rebuild. You can harden your system by adding <code>module.sig_enforce=1</code> to your kernel boot line. To check if your systems contains any unsigned:</p>

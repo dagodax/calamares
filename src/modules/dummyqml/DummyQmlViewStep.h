@@ -19,10 +19,14 @@
 #ifndef DUMMYQMLVIEWSTEP_H
 #define DUMMYQMLVIEWSTEP_H
 
+#include <PluginDllMacro.h>
+#include "locale/TranslatableConfiguration.h"
+#include "utils/CalamaresUtilsSystem.h"
+#include "utils/Variant.h"
 #include "utils/PluginFactory.h"
 #include "viewpages/QmlViewStep.h"
 
-class DummyQmlViewStep : public Calamares::QmlViewStep
+class PLUGINDLLEXPORT DummyQmlViewStep : public Calamares::QmlViewStep
 {
     Q_OBJECT
 
@@ -30,9 +34,12 @@ public:
     DummyQmlViewStep( QObject* parent = nullptr );
     virtual ~DummyQmlViewStep() override;
 
-    virtual QString prettyName() const override;
+    QString prettyName() const override;
+    
+    void setConfigurationMap( const QVariantMap& configurationMap ) override;
 
 private:
+    CalamaresUtils::Locale::TranslatedString* m_notesName;  // As it appears in the sidebar
 };
 
 CALAMARES_PLUGIN_FACTORY_DECLARATION( DummyQmlViewStepFactory )
