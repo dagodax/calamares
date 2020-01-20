@@ -95,7 +95,7 @@ def create_conf(uuid, conf_path):
     lines = [
         '## Please edit the paths and kernel parameters according to your system.\n',
         '\n',
-        'title   {!s} GNU/Linux, with Linux kernel\n'.format(distribution),
+        'title   {!s} GNU/Linux, with Linux kernel (Type h or ? for a Help menu)\n'.format(distribution),
         'linux   {!s}\n'.format(kernel),
         'initrd  {!s}\n'.format(img),
         'options {!s} rw\n'.format(" ".join(kernel_params)),
