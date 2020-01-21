@@ -40,7 +40,7 @@ def run():
         '.local/share/konsole',
         '.config/autostart',
         '.config/plasma-workspace/env',
-        '.config/qtcurve'
+        '.config/Kvantum'
     ]
     for d in common_dirs:
         libcalamares.utils.target_env_call(
@@ -61,7 +61,7 @@ def run():
         ('xdg-user-dirs-update.desktop', '.config/autostart/'),
         ('octopi-notifier.desktop', '.config/autostart/'),
         ('croeso.desktop', '.config/autostart/'),
-        ('stylerc', '.config/qtcurve/'),
+        ('kvantum.kvconfig', '.config/Kvantum/'),
         ('dolphinrc', '.config/'),
         ('katerc', '.config/'),
         ('kcminputrc', '.config/'),
