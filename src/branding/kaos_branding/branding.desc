@@ -64,10 +64,10 @@ windowPlacement: center
 strings:
     productName:         KaOS
     shortProductName:    KaOS
-    version:             2020.01
+    version:             2020.02
     shortVersion:        KaOS
-    versionedName:       KaOS 2020.01
-    shortVersionedName:  KaOS 2020.01
+    versionedName:       KaOS 2020.02
+    shortVersionedName:  KaOS 2020.02
     bootloaderEntryName: KaOS
     productUrl:          https://kaosx.us/
     supportUrl:          https://kaosx.us/docs/
