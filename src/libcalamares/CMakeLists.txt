@@ -37,6 +37,9 @@ set( libSources
     locale/TimeZone.cpp
     locale/TranslatableConfiguration.cpp
 
+    # Modules
+    modulesystem/InstanceKey.cpp
+
     # Network service
     network/Manager.cpp
 
@@ -47,6 +50,7 @@ set( libSources
     utils/CalamaresUtilsSystem.cpp
     utils/CommandList.cpp
     utils/Dirs.cpp
+    utils/Entropy.cpp
     utils/Logger.cpp
     utils/PluginFactory.cpp
     utils/Retranslator.cpp
@@ -166,6 +170,18 @@ if ( ECM_FOUND AND BUILD_TESTING )
             Qt5::Test
     )
     calamares_automoc( libcalamarestest )
+
+    ecm_add_test(
+            utils/TestPaths.cpp
+        TEST_NAME
+            libcalamarestestpaths
+        LINK_LIBRARIES
+            calamares
+            Qt5::Core
+            Qt5::Test
+    )
+    calamares_automoc( libcalamarestestpaths )
+
 
     ecm_add_test(
             geoip/GeoIPTests.cpp
