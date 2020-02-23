@@ -107,7 +107,7 @@
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/calamares/DebugWindow.cpp" line="225"/>
+        <location filename="../src/calamares/DebugWindow.cpp" line="231"/>
         <source>Debug information</source>
         <translation>Informasi debug</translation>
     </message>
@@ -115,12 +115,12 @@
 <context>
     <name>Calamares::ExecutionViewStep</name>
     <message>
-        <location filename="../src/libcalamaresui/ExecutionViewStep.cpp" line="120"/>
+        <location filename="../src/libcalamaresui/viewpages/ExecutionViewStep.cpp" line="92"/>
         <source>Set up</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ExecutionViewStep.cpp" line="120"/>
+        <location filename="../src/libcalamaresui/viewpages/ExecutionViewStep.cpp" line="92"/>
         <source>Install</source>
         <translation>Pasang</translation>
     </message>
@@ -175,34 +175,52 @@
 <context>
     <name>Calamares::PythonJob</name>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="201"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="208"/>
         <source>Running %1 operation.</source>
         <translation>Menjalankan operasi %1.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="218"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="225"/>
         <source>Bad working directory path</source>
         <translation>Keburukan pengerjaan alur direktori</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="219"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="226"/>
         <source>Working directory %1 for python job %2 is not readable.</source>
         <translation>Pengerjaan direktori %1 untuk tugas python %2 tidak dapat dibaca.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="225"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="232"/>
         <source>Bad main script file</source>
         <translation>Keburukan utama berkas skrip</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="226"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="233"/>
         <source>Main script file %1 for python job %2 is not readable.</source>
         <translation>Skrip utama berkas %1 bagi tugas python %2 tidak dapat dibaca.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonJob.cpp" line="304"/>
+        <location filename="../src/libcalamares/PythonJob.cpp" line="311"/>
         <source>Boost.Python error in job &quot;%1&quot;.</source>
         <translation>Boost.Python galat dalam tugas &quot;%1&quot;.</translation>
+    </message>
+</context>
+<context>
+    <name>Calamares::QmlViewStep</name>
+    <message>
+        <location filename="../src/libcalamaresui/viewpages/QmlViewStep.cpp" line="92"/>
+        <source>Loading ...</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/libcalamaresui/viewpages/QmlViewStep.cpp" line="111"/>
+        <source>QML Step &lt;i&gt;%1&lt;/i&gt;.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/libcalamaresui/viewpages/QmlViewStep.cpp" line="319"/>
+        <source>Loading failed.</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -226,171 +244,174 @@
 <context>
     <name>Calamares::ViewManager</name>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="422"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="92"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="410"/>
         <source>&amp;Back</source>
         <translation>&amp;Kembali</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="417"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="94"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="405"/>
         <source>&amp;Next</source>
         <translation>&amp;Selanjutnya</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="442"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="96"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="430"/>
         <source>&amp;Cancel</source>
         <translation>&amp;Batal</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="406"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="394"/>
         <source>Cancel setup without changing the system.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="407"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="395"/>
         <source>Cancel installation without changing the system.</source>
         <translation>Batal pemasangan tanpa mengubah sistem.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="211"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="199"/>
         <source>Setup Failed</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="212"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="200"/>
         <source>Would you like to paste the install log to the web?</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="250"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="238"/>
         <source>Install Log Paste URL</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="253"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="241"/>
         <source>The upload was unsuccessful. No web-paste was done.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="269"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="257"/>
         <source>Calamares Initialization Failed</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="270"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="258"/>
         <source>%1 can not be installed. Calamares was unable to load all of the configured modules. This is a problem with the way Calamares is being used by the distribution.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="276"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="264"/>
         <source>&lt;br/&gt;The following modules could not be loaded:</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="337"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="325"/>
         <source>Continue with installation?</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="339"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="327"/>
         <source>The %1 setup program is about to make changes to your disk in order to set up %2.&lt;br/&gt;&lt;strong&gt;You will not be able to undo these changes.&lt;/strong&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="345"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="333"/>
         <source>&amp;Set up now</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="401"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="389"/>
         <source>&amp;Set up</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="401"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="389"/>
         <source>&amp;Install</source>
         <translation>&amp;Pasang</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="403"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="391"/>
         <source>Setup is complete. Close the setup program.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="502"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="490"/>
         <source>Cancel setup?</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="502"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="490"/>
         <source>Cancel installation?</source>
         <translation>Batalkan pemasangan?</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="503"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="491"/>
         <source>Do you really want to cancel the current setup process?
 The setup program will quit and all changes will be lost.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="505"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="493"/>
         <source>Do you really want to cancel the current install process?
 The installer will quit and all changes will be lost.</source>
         <translation>Apakah kamu yakin ingin membatalkan proses pemasangan sekarang? Pemasang akan keluar dan semua perubahan akan hilang.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="232"/>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="509"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="220"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="497"/>
         <source>&amp;Yes</source>
         <translation>&amp;Ya</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="233"/>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="510"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="221"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="498"/>
         <source>&amp;No</source>
         <translation>&amp;Tidak</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="239"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="227"/>
         <source>&amp;Close</source>
         <translation>&amp;Tutup</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="337"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="325"/>
         <source>Continue with setup?</source>
         <translation>Lanjutkan persiapan?</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="342"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="330"/>
         <source>The %1 installer is about to make changes to your disk in order to install %2.&lt;br/&gt;&lt;strong&gt;You will not be able to undo these changes.&lt;/strong&gt;</source>
         <translation>Pemasang %1 akan membuat perubahan pada disk-mu seperti yang tertera untuk memasang %2.&lt;br/&gt;&lt;strong&gt;Kamu tidak akan mampu membatalkan perubahan tersebut.&lt;/strong&gt;</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="345"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="333"/>
         <source>&amp;Install now</source>
         <translation>&amp;Pasang sekarang</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="352"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="340"/>
         <source>Go &amp;back</source>
         <translation>&amp;Mundur</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="427"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="415"/>
         <source>&amp;Done</source>
         <translation>&amp;Kelar</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="404"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="392"/>
         <source>The installation is complete. Close the installer.</source>
         <translation>Pemasangan telah lengkap. Tutup pemasang.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="225"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="213"/>
         <source>Error</source>
         <translation>Galat</translation>
     </message>
     <message>
-        <location filename="../src/libcalamaresui/ViewManager.cpp" line="211"/>
+        <location filename="../src/libcalamaresui/ViewManager.cpp" line="199"/>
         <source>Installation Failed</source>
         <translation>Pemasangan Gagal</translation>
     </message>
@@ -398,22 +419,22 @@ The installer will quit and all changes will be lost.</source>
 <context>
     <name>CalamaresPython::Helper</name>
     <message>
-        <location filename="../src/libcalamares/PythonHelper.cpp" line="303"/>
+        <location filename="../src/libcalamares/PythonHelper.cpp" line="308"/>
         <source>Unknown exception type</source>
         <translation>Tipe pengecualian tidak diketahui</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonHelper.cpp" line="321"/>
+        <location filename="../src/libcalamares/PythonHelper.cpp" line="326"/>
         <source>unparseable Python error</source>
         <translation>tidak dapat mengurai kesalahan Python</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonHelper.cpp" line="365"/>
+        <location filename="../src/libcalamares/PythonHelper.cpp" line="370"/>
         <source>unparseable Python traceback</source>
         <translation>tidak dapat mengurai lacak balik Python</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/PythonHelper.cpp" line="372"/>
+        <location filename="../src/libcalamares/PythonHelper.cpp" line="377"/>
         <source>Unfetchable Python error.</source>
         <translation>Tidak dapat mengambil kesalahan Python.</translation>
     </message>
@@ -823,22 +844,22 @@ The installer will quit and all changes will be lost.</source>
         <translation>Membuat pengguna %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CreateUserJob.cpp" line="81"/>
+        <location filename="../src/modules/users/CreateUserJob.cpp" line="83"/>
         <source>Sudoers dir is not writable.</source>
         <translation>Dir sudoers tidak dapat ditulis.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CreateUserJob.cpp" line="85"/>
+        <location filename="../src/modules/users/CreateUserJob.cpp" line="89"/>
         <source>Cannot create sudoers file for writing.</source>
         <translation>Tidak bisa membuat berkas sudoers untuk penulisan.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CreateUserJob.cpp" line="93"/>
+        <location filename="../src/modules/users/CreateUserJob.cpp" line="98"/>
         <source>Cannot chmod sudoers file.</source>
         <translation>Tidak bisa chmod berkas sudoers.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CreateUserJob.cpp" line="99"/>
+        <location filename="../src/modules/users/CreateUserJob.cpp" line="107"/>
         <source>Cannot open groups file for reading.</source>
         <translation>Tidak bisa membuka berkas grup untuk pembacaan.</translation>
     </message>
@@ -1190,62 +1211,72 @@ The installer will quit and all changes will be lost.</source>
 <context>
     <name>GeneralRequirements</name>
     <message>
-        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="108"/>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="126"/>
         <source>has at least %1 GiB available drive space</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="109"/>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="128"/>
         <source>There is not enough drive space. At least %1 GiB is required.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="116"/>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="137"/>
         <source>has at least %1 GiB working memory</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="117"/>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="139"/>
         <source>The system does not have enough working memory. At least %1 GiB is required.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="124"/>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="148"/>
         <source>is plugged in to a power source</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="125"/>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="149"/>
         <source>The system is not plugged in to a power source.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="132"/>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="156"/>
         <source>is connected to the Internet</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="133"/>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="157"/>
         <source>The system is not connected to the Internet.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="142"/>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="164"/>
+        <source>is running the installer as an administrator (root)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="167"/>
         <source>The setup program is not running with administrator rights.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="143"/>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="168"/>
         <source>The installer is not running with administrator rights.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="152"/>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="176"/>
+        <source>has a screen large enough to show the whole installer</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="179"/>
         <source>The screen is too small to display the setup program.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="153"/>
+        <location filename="../src/modules/welcome/checker/GeneralRequirements.cpp" line="180"/>
         <source>The screen is too small to display the installer.</source>
         <translation type="unfinished"/>
     </message>
@@ -1300,22 +1331,22 @@ The installer will quit and all changes will be lost.</source>
 <context>
     <name>LCLocaleDialog</name>
     <message>
-        <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="34"/>
+        <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="32"/>
         <source>System locale setting</source>
         <translation>Setelan lokal sistem</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="41"/>
+        <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="39"/>
         <source>The system locale setting affects the language and character set for some command line user interface elements.&lt;br/&gt;The current setting is &lt;strong&gt;%1&lt;/strong&gt;.</source>
         <translation>Setelan lokal sistem mempengaruhi bahasa dan set karakter untuk unsur-unsur beberapa baris perintah antarmuka pengguna.&lt;br/&gt;Setelan saat ini adalah &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="66"/>
+        <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="63"/>
         <source>&amp;Cancel</source>
         <translation>&amp;Batal</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="67"/>
+        <location filename="../src/modules/locale/LCLocaleDialog.cpp" line="64"/>
         <source>&amp;OK</source>
         <translation>&amp;Oke</translation>
     </message>
@@ -1328,29 +1359,39 @@ The installer will quit and all changes will be lost.</source>
         <translation>Formulir</translation>
     </message>
     <message>
-        <location filename="../src/modules/license/LicensePage.cpp" line="126"/>
+        <location filename="../src/modules/license/LicensePage.ui" line="22"/>
+        <source>&lt;h1&gt;License Agreement&lt;/h1&gt;</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/license/LicensePage.cpp" line="149"/>
         <source>I accept the terms and conditions above.</source>
         <translation>Saya menerima syarat dan ketentuan di atas.</translation>
     </message>
     <message>
         <location filename="../src/modules/license/LicensePage.cpp" line="151"/>
-        <source>&lt;h1&gt;License Agreement&lt;/h1&gt;This setup procedure will install proprietary software that is subject to licensing terms.</source>
-        <translation>&lt;h1&gt;Perjanjian Lisensi&lt;/h1&gt; Persiapan ini akan memasang perangkat lunak berpemilik yang tunduk pada persyaratan lisensi.</translation>
+        <source>Please review the End User License Agreements (EULAs).</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/license/LicensePage.cpp" line="154"/>
-        <source>Please review the End User License Agreements (EULAs) above.&lt;br/&gt;If you do not agree with the terms, the setup procedure cannot continue.</source>
-        <translation>Harap tinjau Perjanjian Lisensi Pengguna Akhir (EULA) di atas. Jika kamu tidak setuju dengan ketentuan, persiapan prosedur tidak dapat dilanjutkan.</translation>
+        <location filename="../src/modules/license/LicensePage.cpp" line="156"/>
+        <source>This setup procedure will install proprietary software that is subject to licensing terms.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/license/LicensePage.cpp" line="158"/>
-        <source>&lt;h1&gt;License Agreement&lt;/h1&gt;In case non-free was selected, this installer will install proprietary packages &lt;br/&gt;that have additional End User License Agreements (EULAs) attached to them.</source>
-        <translation>&lt;h1&gt;Persetujuan Lisensi&lt;/h1&gt;Dalam hal non-free yang dipilih, pemasang ini akan memasang paket berpemilik &lt;br/&gt;yang memiliki tambahan Perjanjian Lisensi Pengguna Akhir (EULA) terlampir.</translation>
+        <location filename="../src/modules/license/LicensePage.cpp" line="159"/>
+        <source>If you do not agree with the terms, the setup procedure cannot continue.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/license/LicensePage.cpp" line="161"/>
-        <source>Please review the End User License Agreements (EULAs) above.&lt;br/&gt;If you do not agree with the terms, proprietary software will not be installed, and open source alternatives will be used instead.</source>
-        <translation>Harap tinjau Perjanjian Lisensi Pengguna Akhir (EULA) di atas.&lt;br/&gt;Jika kamu tidak setuju dengan ketentuan, perangkat lunak berpemilik tidak akan dipasang, dan alternatifnya perangkat lunak sumber terbuka yang akan digunakan sebagai gantinya.</translation>
+        <location filename="../src/modules/license/LicensePage.cpp" line="164"/>
+        <source>In case non-free was selected, this installer will install proprietary packages &lt;br/&gt;that have additional End User License Agreements (EULAs) attached to them.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/license/LicensePage.cpp" line="167"/>
+        <source>If you do not agree with the terms, proprietary software will not be installed, and open source alternatives will be used instead.</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -1364,98 +1405,93 @@ The installer will quit and all changes will be lost.</source>
 <context>
     <name>LicenseWidget</name>
     <message>
-        <location filename="../src/modules/license/LicenseWidget.cpp" line="123"/>
+        <location filename="../src/modules/license/LicenseWidget.cpp" line="96"/>
+        <source>URL: %1</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/license/LicenseWidget.cpp" line="117"/>
         <source>&lt;strong&gt;%1 driver&lt;/strong&gt;&lt;br/&gt;by %2</source>
         <extracomment>%1 is an untranslatable product name, example: Creative Audigy driver</extracomment>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/license/LicenseWidget.cpp" line="130"/>
+        <location filename="../src/modules/license/LicenseWidget.cpp" line="124"/>
         <source>&lt;strong&gt;%1 graphics driver&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;Grey&quot;&gt;by %2&lt;/font&gt;</source>
         <extracomment>%1 is usually a vendor name, example: Nvidia graphics driver</extracomment>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/license/LicenseWidget.cpp" line="136"/>
+        <location filename="../src/modules/license/LicenseWidget.cpp" line="130"/>
         <source>&lt;strong&gt;%1 browser plugin&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;Grey&quot;&gt;by %2&lt;/font&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/license/LicenseWidget.cpp" line="142"/>
+        <location filename="../src/modules/license/LicenseWidget.cpp" line="136"/>
         <source>&lt;strong&gt;%1 codec&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;Grey&quot;&gt;by %2&lt;/font&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/license/LicenseWidget.cpp" line="148"/>
+        <location filename="../src/modules/license/LicenseWidget.cpp" line="142"/>
         <source>&lt;strong&gt;%1 package&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;Grey&quot;&gt;by %2&lt;/font&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/license/LicenseWidget.cpp" line="154"/>
+        <location filename="../src/modules/license/LicenseWidget.cpp" line="148"/>
         <source>&lt;strong&gt;%1&lt;/strong&gt;&lt;br/&gt;&lt;font color=&quot;Grey&quot;&gt;by %2&lt;/font&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/license/LicenseWidget.cpp" line="192"/>
+        <location filename="../src/modules/license/LicenseWidget.cpp" line="171"/>
+        <source>File: %1</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/license/LicenseWidget.cpp" line="194"/>
         <source>Hide license text</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/license/LicenseWidget.cpp" line="193"/>
-        <source>Shows the complete license text</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
         <location filename="../src/modules/license/LicenseWidget.cpp" line="194"/>
-        <source>Hide license agreement</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/modules/license/LicenseWidget.cpp" line="194"/>
-        <source>Show license agreement</source>
+        <source>Show the license text</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/modules/license/LicenseWidget.cpp" line="198"/>
-        <source>Opens the license agreement in a browser window.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/modules/license/LicenseWidget.cpp" line="200"/>
-        <source>&lt;a href=&quot;%1&quot;&gt;View license agreement&lt;/a&gt;</source>
+        <source>Open license agreement in browser.</source>
         <translation type="unfinished"/>
     </message>
 </context>
 <context>
     <name>LocalePage</name>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="396"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="259"/>
         <source>The system language will be set to %1.</source>
         <translation>Bahasa sistem akan disetel ke %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="397"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="260"/>
         <source>The numbers and dates locale will be set to %1.</source>
         <translation>Nomor dan tanggal lokal akan disetel ke %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="219"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="124"/>
         <source>Region:</source>
         <translation>Bagian:</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="220"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="125"/>
         <source>Zone:</source>
         <translation>Zona:</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="224"/>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="225"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="126"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="127"/>
         <source>&amp;Change...</source>
         <translation>&amp;Ubah...</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/LocalePage.cpp" line="404"/>
+        <location filename="../src/modules/locale/LocalePage.cpp" line="267"/>
         <source>Set timezone to %1/%2.&lt;br/&gt;</source>
         <translation>Setel zona waktu ke %1/%2.&lt;br/&gt;.</translation>
     </message>
@@ -1463,12 +1499,7 @@ The installer will quit and all changes will be lost.</source>
 <context>
     <name>LocaleViewStep</name>
     <message>
-        <location filename="../src/modules/locale/LocaleViewStep.cpp" line="55"/>
-        <source>Loading location data...</source>
-        <translation>Memuat data lokasi...</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/locale/LocaleViewStep.cpp" line="132"/>
+        <location filename="../src/modules/locale/LocaleViewStep.cpp" line="99"/>
         <source>Location</source>
         <translation>Lokasi</translation>
     </message>
@@ -1510,6 +1541,32 @@ The installer will quit and all changes will be lost.</source>
     </message>
 </context>
 <context>
+    <name>MachineIdJob</name>
+    <message>
+        <location filename="../src/modules/machineid/MachineIdJob.cpp" line="46"/>
+        <source>Generate machine-id.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/machineid/MachineIdJob.cpp" line="62"/>
+        <source>Configuration Error</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/machineid/MachineIdJob.cpp" line="63"/>
+        <source>No root mount point is set for MachineId.</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>NotesQmlViewStep</name>
+    <message>
+        <location filename="../src/modules/notesqml/NotesQmlViewStep.cpp" line="34"/>
+        <source>Notes</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>OEMPage</name>
     <message>
         <location filename="../src/modules/oemid/OEMPage.ui" line="28"/>
@@ -1543,117 +1600,117 @@ The installer will quit and all changes will be lost.</source>
 <context>
     <name>PWQ</name>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="63"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="57"/>
         <source>Password is too short</source>
         <translation>Sandi terlalu pendek</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="85"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="73"/>
         <source>Password is too long</source>
         <translation>Sandi terlalu panjang</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="169"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="149"/>
         <source>Password is too weak</source>
         <translation>Sandi terlalu lemah</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="176"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="157"/>
         <source>Memory allocation error when setting &apos;%1&apos;</source>
         <translation>Galat alokasi memori ketika menyetel &apos;%1&apos;</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="180"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="162"/>
         <source>Memory allocation error</source>
         <translation>Galat alokasi memori</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="182"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="164"/>
         <source>The password is the same as the old one</source>
         <translation>Kata sandinya sama dengan yang lawas</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="184"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="166"/>
         <source>The password is a palindrome</source>
         <translation>Kata sandi adalah sebuah palindrom</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="186"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="168"/>
         <source>The password differs with case changes only</source>
         <translation>Kata sandi berbeda hanya dengan perubahan huruf saja</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="188"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="170"/>
         <source>The password is too similar to the old one</source>
         <translation>Kata sandi terlalu persis terhadap sandi yang lawas</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="190"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="172"/>
         <source>The password contains the user name in some form</source>
         <translation>Kata sandi berisi nama pengguna dalam beberapa formulir</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="192"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="174"/>
         <source>The password contains words from the real name of the user in some form</source>
         <translation>Kata sandi berisi kata dari nama asli penggunanya dalam beberapa formulir</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="194"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="177"/>
         <source>The password contains forbidden words in some form</source>
         <translation>Kata sandi mengandung kata yang tersembunyi dalam beberapa formulir.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="197"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="181"/>
         <source>The password contains less than %1 digits</source>
         <translation>Kata sandi berisi kurang dari %1 digit</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="198"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="184"/>
         <source>The password contains too few digits</source>
         <translation>Kata sandi berisi terlalu banyak digit</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="201"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="188"/>
         <source>The password contains less than %1 uppercase letters</source>
         <translation>Kata sandi berisi kurang dari %1 huruf besar</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="202"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="191"/>
         <source>The password contains too few uppercase letters</source>
         <translation>Kata sandi berisi terlalu banyak huruf besar</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="205"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="195"/>
         <source>The password contains less than %1 lowercase letters</source>
         <translation>Kata sandi berisi kurang dari %1 huruf kecil</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="206"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="198"/>
         <source>The password contains too few lowercase letters</source>
         <translation>Kata sandi berisi terlalu banyak huruf kecil</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="209"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="202"/>
         <source>The password contains less than %1 non-alphanumeric characters</source>
         <translation>Kata sandi berisi kurang dari %1 karakter non alfanumerik</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="210"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="206"/>
         <source>The password contains too few non-alphanumeric characters</source>
         <translation>Kata sandi berisi terlalu banyak karakter non alfanumerik</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="213"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="210"/>
         <source>The password is shorter than %1 characters</source>
         <translation>Kata sandi lebih pendek dari %1 karakter</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="214"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="213"/>
         <source>The password is too short</source>
         <translation>Kata sandi terlalu pendek</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="216"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="215"/>
         <source>The password is just rotated old one</source>
         <translation>Kata sandi telah diputar salah satu yang lawas</translation>
     </message>
@@ -1663,124 +1720,170 @@ The installer will quit and all changes will be lost.</source>
         <translation>Kata sandi berisi kurang dari %1 kelas karakter</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="220"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="222"/>
         <source>The password does not contain enough character classes</source>
         <translation>Kata sandi tidak berisi kelas karakter yang cukup</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="223"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="226"/>
         <source>The password contains more than %1 same characters consecutively</source>
         <translation>Kata sandi berisi lebih dari %1 karakter yang sama secara berurutan</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="224"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="230"/>
         <source>The password contains too many same characters consecutively</source>
         <translation>Kata sandi berisi terlalu banyak karakter yang sama secara berurutan</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="227"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="234"/>
         <source>The password contains more than %1 characters of the same class consecutively</source>
         <translation>Kata sandi berisi lebih dari %1 karakter kelas yang sama secara berurutan</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="228"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="238"/>
         <source>The password contains too many characters of the same class consecutively</source>
         <translation>Kata sandi berisi terlalu banyak karakter kelas yang sama secara berurutan</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="231"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="243"/>
         <source>The password contains monotonic sequence longer than %1 characters</source>
         <translation>Kata sandi berisi urutan monotonik lebih panjang dari %1 karakter</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="232"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="247"/>
         <source>The password contains too long of a monotonic character sequence</source>
         <translation>Kata sandi berisi urutan karakter monotonik yang terlalu panjang</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="234"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="250"/>
         <source>No password supplied</source>
         <translation>Tiada kata sandi yang disuplai</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="236"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="252"/>
         <source>Cannot obtain random numbers from the RNG device</source>
         <translation>Tak bisa memperoleh angka acak dari perangkat RNG</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="238"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="254"/>
         <source>Password generation failed - required entropy too low for settings</source>
         <translation>Kata sandi yang dihasilkan gagal - entropi yang diperlukan terlalu rendah untuk setelan</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="243"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="260"/>
         <source>The password fails the dictionary check - %1</source>
         <translation>Kata sandi gagal memeriksa kamus - %1</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="245"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="263"/>
         <source>The password fails the dictionary check</source>
         <translation>Kata sandi gagal memeriksa kamus</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="249"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="267"/>
         <source>Unknown setting - %1</source>
         <translation>Setelan tidak diketahui - %1</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="253"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="271"/>
         <source>Unknown setting</source>
         <translation>Setelan tidak diketahui</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="257"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="275"/>
         <source>Bad integer value of setting - %1</source>
         <translation>Buruknya nilai bilangan bulat pada setelan - %1</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="261"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="280"/>
         <source>Bad integer value</source>
         <translation>Nilai bilangan bulat buruk</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="265"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="284"/>
         <source>Setting %1 is not of integer type</source>
         <translation>Setelan %1 bukanlah tipe bilangan bulat</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="269"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="289"/>
         <source>Setting is not of integer type</source>
         <translation>Setelan bukanlah tipe bilangan bulat</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="273"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="293"/>
         <source>Setting %1 is not of string type</source>
         <translation>Setelan %1 bukanlah tipe untaian</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="277"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="298"/>
         <source>Setting is not of string type</source>
         <translation>Setelan bukanlah tipe untaian</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="279"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="300"/>
         <source>Opening the configuration file failed</source>
         <translation>Pembukaan file konfigurasi gagal</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="281"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="302"/>
         <source>The configuration file is malformed</source>
         <translation>File konfigurasi telah berformat buruk</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="283"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="304"/>
         <source>Fatal failure</source>
         <translation>Kegagalan fatal</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/CheckPWQuality.cpp" line="285"/>
+        <location filename="../src/modules/users/CheckPWQuality.cpp" line="306"/>
         <source>Unknown error</source>
         <translation>Error tak diketahui</translation>
+    </message>
+    <message>
+        <location filename="../src/modules/users/UsersPage.cpp" line="528"/>
+        <source>Password is empty</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>PackageChooserPage</name>
+    <message>
+        <location filename="../src/modules/packagechooser/page_package.ui" line="20"/>
+        <source>Form</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/packagechooser/page_package.ui" line="40"/>
+        <source>Product Name</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/packagechooser/page_package.ui" line="53"/>
+        <source>TextLabel</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/packagechooser/page_package.ui" line="69"/>
+        <source>Long Product Description</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/packagechooser/PackageChooserPage.cpp" line="34"/>
+        <source>Package Selection</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/packagechooser/PackageChooserPage.cpp" line="35"/>
+        <source>Please pick a product from the list. The selected product will be installed.</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>PackageChooserViewStep</name>
+    <message>
+        <location filename="../src/modules/packagechooser/PackageChooserViewStep.cpp" line="70"/>
+        <source>Packages</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -1814,47 +1917,86 @@ The installer will quit and all changes will be lost.</source>
         <translation>Siapa namamu?</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/page_usersetup.ui" line="117"/>
+        <location filename="../src/modules/users/page_usersetup.ui" line="120"/>
         <source>What name do you want to use to log in?</source>
         <translation>Nama siapa yang ingin kamu gunakan untuk masuk log?</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/page_usersetup.ui" line="335"/>
+        <location filename="../src/modules/users/page_usersetup.ui" line="321"/>
         <source>Choose a password to keep your account safe.</source>
         <translation>Pilihlah sebuah sandi untuk menjaga akunmu tetap aman.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/page_usersetup.ui" line="440"/>
+        <location filename="../src/modules/users/page_usersetup.ui" line="345"/>
+        <location filename="../src/modules/users/page_usersetup.ui" line="370"/>
         <source>&lt;small&gt;Enter the same password twice, so that it can be checked for typing errors. A good password will contain a mixture of letters, numbers and punctuation, should be at least eight characters long, and should be changed at regular intervals.&lt;/small&gt;</source>
         <translation>&lt;small&gt;Masukkan sandi yang sama dua kali, sehingga dapat diperiksa untuk kesalahan mengetik. Sandi yang baik yang mengandung campuran huruf, angka dan tanda baca, setidaknya delapan karakter, dan sebaiknya diubah secara berkala.&lt;/small&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/page_usersetup.ui" line="226"/>
+        <location filename="../src/modules/users/page_usersetup.ui" line="219"/>
         <source>What is the name of this computer?</source>
         <translation>Nama apakah untuk komputer ini?</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/page_usersetup.ui" line="309"/>
+        <location filename="../src/modules/users/page_usersetup.ui" line="51"/>
+        <source>Your Full Name</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/users/page_usersetup.ui" line="144"/>
+        <source>login</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/users/page_usersetup.ui" line="243"/>
         <source>&lt;small&gt;This name will be used if you make the computer visible to others on a network.&lt;/small&gt;</source>
         <translation>&lt;small&gt;Nama ini akan digunakan jika kamu membuat komputer terlihat ke lainnya pada jaringan.&lt;/small&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/page_usersetup.ui" line="466"/>
+        <location filename="../src/modules/users/page_usersetup.ui" line="246"/>
+        <source>Computer Name</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/users/page_usersetup.ui" line="351"/>
+        <location filename="../src/modules/users/page_usersetup.ui" line="521"/>
+        <source>Password</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/users/page_usersetup.ui" line="376"/>
+        <location filename="../src/modules/users/page_usersetup.ui" line="546"/>
+        <source>Repeat Password</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/users/page_usersetup.ui" line="451"/>
+        <source>When this box is checked, password-strength checking is done and you will not be able to use a weak password.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/users/page_usersetup.ui" line="454"/>
+        <source>Require strong passwords.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/users/page_usersetup.ui" line="461"/>
         <source>Log in automatically without asking for the password.</source>
         <translation>Log masuk secara otomatis tanpa menanyakan sandi.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/page_usersetup.ui" line="473"/>
+        <location filename="../src/modules/users/page_usersetup.ui" line="468"/>
         <source>Use the same password for the administrator account.</source>
         <translation>Gunakan sandi yang sama untuk akun pengurus.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/page_usersetup.ui" line="496"/>
+        <location filename="../src/modules/users/page_usersetup.ui" line="491"/>
         <source>Choose a password for the administrator account.</source>
         <translation>Pilihlah sebuah sandi untuk akun pengurus.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/page_usersetup.ui" line="601"/>
+        <location filename="../src/modules/users/page_usersetup.ui" line="515"/>
+        <location filename="../src/modules/users/page_usersetup.ui" line="540"/>
         <source>&lt;small&gt;Enter the same password twice, so that it can be checked for typing errors.&lt;/small&gt;</source>
         <translation>&lt;small&gt;Masukkan sandi yang sama dua kali, sehingga dapat diperiksa untuk kesalahan mengetik.&lt;/small&gt;</translation>
     </message>
@@ -2155,14 +2297,14 @@ The installer will quit and all changes will be lost.</source>
 <context>
     <name>ProcessResult</name>
     <message>
-        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="407"/>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="464"/>
         <source>
 There was no output from the command.</source>
         <translation>
 Tidak adanya keluaran dari perintah.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="408"/>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="465"/>
         <source>
 Output:
 </source>
@@ -2171,52 +2313,52 @@ Keluaran:
 </translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="412"/>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="469"/>
         <source>External command crashed.</source>
         <translation>Perintah eksternal mogok.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="413"/>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="470"/>
         <source>Command &lt;i&gt;%1&lt;/i&gt; crashed.</source>
         <translation>Perintah &lt;i&gt;%1&lt;/i&gt; mogok.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="418"/>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="475"/>
         <source>External command failed to start.</source>
         <translation>Perintah eksternal gagal untuk dimulai.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="419"/>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="476"/>
         <source>Command &lt;i&gt;%1&lt;/i&gt; failed to start.</source>
         <translation>Perintah &lt;i&gt;%1&lt;/i&gt; gagal untuk dimulai.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="423"/>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="480"/>
         <source>Internal error when starting command.</source>
         <translation>Error internal ketika memulai perintah.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="424"/>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="481"/>
         <source>Bad parameters for process job call.</source>
         <translation>Parameter buruk untuk proses tugas menghubungi.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="428"/>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="485"/>
         <source>External command failed to finish.</source>
         <translation>Perintah eksternal gagal untuk diselesaikan.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="429"/>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="486"/>
         <source>Command &lt;i&gt;%1&lt;/i&gt; failed to finish in %2 seconds.</source>
         <translation>Perintah &lt;i&gt;%1&lt;/i&gt; gagal untuk diselesaikan dalam %2 detik.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="436"/>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="493"/>
         <source>External command finished with errors.</source>
         <translation>Perintah eksternal selesai dengan error.</translation>
     </message>
     <message>
-        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="437"/>
+        <location filename="../src/libcalamares/utils/CalamaresUtilsSystem.cpp" line="494"/>
         <source>Command &lt;i&gt;%1&lt;/i&gt; finished with exit code %2.</source>
         <translation>Perintah &lt;i&gt;%1&lt;/i&gt; selesai dengan mengeluarkan kode %2.</translation>
     </message>
@@ -2273,6 +2415,34 @@ Keluaran:
     <message>
         <location filename="../src/libcalamaresui/modulesystem/RequirementsChecker.cpp" line="65"/>
         <source>Requirements checking for module &lt;i&gt;%1&lt;/i&gt; is complete.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/machineid/Workers.cpp" line="45"/>
+        <location filename="../src/modules/machineid/Workers.cpp" line="53"/>
+        <location filename="../src/modules/machineid/Workers.cpp" line="57"/>
+        <location filename="../src/modules/machineid/Workers.cpp" line="101"/>
+        <source>File not found</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/machineid/Workers.cpp" line="46"/>
+        <source>Path &lt;pre&gt;%1&lt;/pre&gt; must be an absolute path.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/machineid/Workers.cpp" line="102"/>
+        <source>Could not create new random file &lt;pre&gt;%1&lt;/pre&gt;.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/packagechooser/PackageModel.cpp" line="79"/>
+        <source>No product</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/packagechooser/PackageModel.cpp" line="87"/>
+        <source>No description provided.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -2421,40 +2591,43 @@ Keluaran:
     </message>
 </context>
 <context>
-    <name>ResultsListWidget</name>
+    <name>ResultsListDialog</name>
     <message>
-        <location filename="../src/modules/welcome/checker/ResultsListWidget.cpp" line="96"/>
-        <source>This computer does not satisfy the minimum requirements for setting up %1.&lt;br/&gt;Setup cannot continue. &lt;a href=&quot;#details&quot;&gt;Details...&lt;/a&gt;</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/modules/welcome/checker/ResultsListWidget.cpp" line="100"/>
-        <source>This computer does not satisfy the minimum requirements for installing %1.&lt;br/&gt;Installation cannot continue. &lt;a href=&quot;#details&quot;&gt;Details...&lt;/a&gt;</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/modules/welcome/checker/ResultsListWidget.cpp" line="118"/>
-        <source>This computer does not satisfy some of the recommended requirements for setting up %1.&lt;br/&gt;Setup can continue, but some features might be disabled.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/modules/welcome/checker/ResultsListWidget.cpp" line="122"/>
-        <source>This computer does not satisfy some of the recommended requirements for installing %1.&lt;br/&gt;Installation can continue, but some features might be disabled.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/modules/welcome/checker/ResultsListWidget.cpp" line="160"/>
-        <source>This program will ask you some questions and set up %2 on your computer.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/modules/welcome/checker/ResultsListWidget.cpp" line="181"/>
+        <location filename="../src/modules/welcome/checker/ResultsListWidget.cpp" line="137"/>
         <source>For best results, please ensure that this computer:</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcome/checker/ResultsListWidget.cpp" line="209"/>
+        <location filename="../src/modules/welcome/checker/ResultsListWidget.cpp" line="138"/>
         <source>System requirements</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>ResultsListWidget</name>
+    <message>
+        <location filename="../src/modules/welcome/checker/ResultsListWidget.cpp" line="263"/>
+        <source>This computer does not satisfy the minimum requirements for setting up %1.&lt;br/&gt;Setup cannot continue. &lt;a href=&quot;#details&quot;&gt;Details...&lt;/a&gt;</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/welcome/checker/ResultsListWidget.cpp" line="267"/>
+        <source>This computer does not satisfy the minimum requirements for installing %1.&lt;br/&gt;Installation cannot continue. &lt;a href=&quot;#details&quot;&gt;Details...&lt;/a&gt;</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/welcome/checker/ResultsListWidget.cpp" line="274"/>
+        <source>This computer does not satisfy some of the recommended requirements for setting up %1.&lt;br/&gt;Setup can continue, but some features might be disabled.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/welcome/checker/ResultsListWidget.cpp" line="278"/>
+        <source>This computer does not satisfy some of the recommended requirements for installing %1.&lt;br/&gt;Installation can continue, but some features might be disabled.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/welcome/checker/ResultsListWidget.cpp" line="287"/>
+        <source>This program will ask you some questions and set up %2 on your computer.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -2474,29 +2647,29 @@ Keluaran:
 <context>
     <name>SetHostNameJob</name>
     <message>
-        <location filename="../src/modules/users/SetHostNameJob.cpp" line="38"/>
+        <location filename="../src/modules/users/SetHostNameJob.cpp" line="39"/>
         <source>Set hostname %1</source>
         <translation>Setel hostname %1</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/SetHostNameJob.cpp" line="45"/>
+        <location filename="../src/modules/users/SetHostNameJob.cpp" line="46"/>
         <source>Set hostname &lt;strong&gt;%1&lt;/strong&gt;.</source>
         <translation>Setel hostname &lt;strong&gt;%1&lt;/strong&gt;.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/SetHostNameJob.cpp" line="52"/>
+        <location filename="../src/modules/users/SetHostNameJob.cpp" line="53"/>
         <source>Setting hostname %1.</source>
         <translation>Menyetel hostname %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/SetHostNameJob.cpp" line="62"/>
-        <location filename="../src/modules/users/SetHostNameJob.cpp" line="69"/>
+        <location filename="../src/modules/users/SetHostNameJob.cpp" line="64"/>
+        <location filename="../src/modules/users/SetHostNameJob.cpp" line="71"/>
         <source>Internal Error</source>
         <translation>Galat Internal</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/SetHostNameJob.cpp" line="76"/>
-        <location filename="../src/modules/users/SetHostNameJob.cpp" line="87"/>
+        <location filename="../src/modules/users/SetHostNameJob.cpp" line="78"/>
+        <location filename="../src/modules/users/SetHostNameJob.cpp" line="89"/>
         <source>Cannot write hostname to target system</source>
         <translation>Tidak bisa menulis hostname untuk sistem sasaran</translation>
     </message>
@@ -2617,42 +2790,42 @@ Keluaran:
 <context>
     <name>SetPasswordJob</name>
     <message>
-        <location filename="../src/modules/users/SetPasswordJob.cpp" line="48"/>
+        <location filename="../src/modules/users/SetPasswordJob.cpp" line="49"/>
         <source>Set password for user %1</source>
         <translation>Setel sandi untuk pengguna %1</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/SetPasswordJob.cpp" line="55"/>
+        <location filename="../src/modules/users/SetPasswordJob.cpp" line="56"/>
         <source>Setting password for user %1.</source>
         <translation>Menyetel sandi untuk pengguna %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/SetPasswordJob.cpp" line="112"/>
+        <location filename="../src/modules/users/SetPasswordJob.cpp" line="90"/>
         <source>Bad destination system path.</source>
         <translation>Tujuan alur sistem buruk.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/SetPasswordJob.cpp" line="113"/>
+        <location filename="../src/modules/users/SetPasswordJob.cpp" line="91"/>
         <source>rootMountPoint is %1</source>
         <translation>rootMountPoint adalah %1</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/SetPasswordJob.cpp" line="123"/>
+        <location filename="../src/modules/users/SetPasswordJob.cpp" line="97"/>
         <source>Cannot disable root account.</source>
         <translation>Tak bisa menonaktifkan akun root.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/SetPasswordJob.cpp" line="124"/>
+        <location filename="../src/modules/users/SetPasswordJob.cpp" line="98"/>
         <source>passwd terminated with error code %1.</source>
         <translation>passwd berakhir dengan kode galat %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/SetPasswordJob.cpp" line="139"/>
+        <location filename="../src/modules/users/SetPasswordJob.cpp" line="106"/>
         <source>Cannot set password for user %1.</source>
         <translation>Tidak bisa menyetel sandi untuk pengguna %1.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/SetPasswordJob.cpp" line="141"/>
+        <location filename="../src/modules/users/SetPasswordJob.cpp" line="107"/>
         <source>usermod terminated with error code %1.</source>
         <translation>usermod berakhir dengan kode galat %1.</translation>
     </message>
@@ -2675,22 +2848,22 @@ Keluaran:
         <translation>Alur buruk: %1</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="86"/>
+        <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="80"/>
         <source>Cannot set timezone.</source>
         <translation>Tidak bisa menyetel zona waktu.</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="87"/>
+        <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="81"/>
         <source>Link creation failed, target: %1; link name: %2</source>
         <translation>Pembuatan tautan gagal, sasaran: %1; nama tautan: %2</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="96"/>
+        <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="86"/>
         <source>Cannot set timezone,</source>
         <translation>Tidak bisa menyetel zona waktu,</translation>
     </message>
     <message>
-        <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="97"/>
+        <location filename="../src/modules/locale/SetTimezoneJob.cpp" line="87"/>
         <source>Cannot open /etc/timezone for writing</source>
         <translation>Tidak bisa membuka /etc/timezone untuk penulisan</translation>
     </message>
@@ -2728,43 +2901,47 @@ Keluaran:
 <context>
     <name>UsersPage</name>
     <message>
-        <location filename="../src/modules/users/UsersPage.cpp" line="120"/>
+        <location filename="../src/modules/users/UsersPage.cpp" line="139"/>
         <source>&lt;small&gt;If more than one person will use this computer, you can create multiple accounts after setup.&lt;/small&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/users/UsersPage.cpp" line="126"/>
+        <location filename="../src/modules/users/UsersPage.cpp" line="145"/>
         <source>&lt;small&gt;If more than one person will use this computer, you can create multiple accounts after installation.&lt;/small&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/users/UsersPage.cpp" line="317"/>
+        <location filename="../src/modules/users/UsersPage.cpp" line="342"/>
         <source>Your username is too long.</source>
         <translation>Nama penggunamu terlalu panjang.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/UsersPage.cpp" line="323"/>
-        <source>Your username contains invalid characters. Only lowercase letters and numbers are allowed.</source>
-        <translation>Nama penggunamu mengandung karakter tidak sah. Hanya huruf kecil dan angka yang diperbolehkan.</translation>
+        <location filename="../src/modules/users/UsersPage.cpp" line="349"/>
+        <source>Your username must start with a lowercase letter or underscore.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/users/UsersPage.cpp" line="361"/>
+        <location filename="../src/modules/users/UsersPage.cpp" line="356"/>
+        <source>Only lowercase letters, numbers, underscore and hyphen are allowed.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/users/UsersPage.cpp" line="404"/>
+        <source>Only letters, numbers, underscore and hyphen are allowed.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/modules/users/UsersPage.cpp" line="392"/>
         <source>Your hostname is too short.</source>
         <translation>Hostname-mu terlalu pendek.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/UsersPage.cpp" line="367"/>
+        <location filename="../src/modules/users/UsersPage.cpp" line="397"/>
         <source>Your hostname is too long.</source>
         <translation>Hostname-mu terlalu panjang.</translation>
     </message>
     <message>
-        <location filename="../src/modules/users/UsersPage.cpp" line="373"/>
-        <source>Your hostname contains invalid characters. Only letters, numbers and dashes are allowed.</source>
-        <translation>Hostname-mu mengandung karakter tidak sah. Hanya huruf, angka dan tanda pisah yang diperbolehkan.</translation>
-    </message>
-    <message>
-        <location filename="../src/modules/users/UsersPage.cpp" line="401"/>
-        <location filename="../src/modules/users/UsersPage.cpp" line="445"/>
+        <location filename="../src/modules/users/UsersPage.cpp" line="421"/>
         <source>Your passwords do not match!</source>
         <translation>Sandimu tidak cocok!</translation>
     </message>
@@ -2772,7 +2949,7 @@ Keluaran:
 <context>
     <name>UsersViewStep</name>
     <message>
-        <location filename="../src/modules/users/UsersViewStep.cpp" line="54"/>
+        <location filename="../src/modules/users/UsersViewStep.cpp" line="55"/>
         <source>Users</source>
         <translation>Pengguna</translation>
     </message>
@@ -2892,44 +3069,52 @@ Keluaran:
         <translation>&amp;Tentang</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.cpp" line="85"/>
+        <location filename="../src/modules/welcome/WelcomePage.cpp" line="254"/>
         <source>&lt;h1&gt;Welcome to the %1 installer.&lt;/h1&gt;</source>
         <translation>&lt;h1&gt;Selamat datang di pemasang %1.&lt;/h1&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.cpp" line="84"/>
+        <location filename="../src/modules/welcome/WelcomePage.cpp" line="253"/>
         <source>&lt;h1&gt;Welcome to the Calamares installer for %1.&lt;/h1&gt;</source>
         <translation>&lt;h1&gt;Selamat datang di Calamares pemasang untuk %1.&lt;/h1&gt;</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.cpp" line="81"/>
+        <location filename="../src/modules/welcome/WelcomePage.cpp" line="247"/>
         <source>&lt;h1&gt;Welcome to the Calamares setup program for %1.&lt;/h1&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.cpp" line="82"/>
+        <location filename="../src/modules/welcome/WelcomePage.cpp" line="248"/>
         <source>&lt;h1&gt;Welcome to %1 setup.&lt;/h1&gt;</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.cpp" line="97"/>
+        <location filename="../src/modules/welcome/WelcomePage.cpp" line="266"/>
         <source>About %1 setup</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.cpp" line="97"/>
+        <location filename="../src/modules/welcome/WelcomePage.cpp" line="266"/>
         <source>About %1 installer</source>
         <translation>Tentang pemasang %1</translation>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.cpp" line="100"/>
+        <location filename="../src/modules/welcome/WelcomePage.cpp" line="269"/>
         <source>&lt;h1&gt;%1&lt;/h1&gt;&lt;br/&gt;&lt;strong&gt;%2&lt;br/&gt;for %3&lt;/strong&gt;&lt;br/&gt;&lt;br/&gt;Copyright 2014-2017 Teo Mrnjavac &amp;lt;teo@kde.org&amp;gt;&lt;br/&gt;Copyright 2017-2019 Adriaan de Groot &amp;lt;groot@kde.org&amp;gt;&lt;br/&gt;Thanks to &lt;a href=&quot;https://calamares.io/team/&quot;&gt;the Calamares team&lt;/a&gt; and the &lt;a href=&quot;https://www.transifex.com/kaos/kaos/&quot;&gt;KaOS translators team&lt;/a&gt;.&lt;br/&gt;&lt;br/&gt;&lt;a href=&quot;https://calamares.io/&quot;&gt;Calamares&lt;/a&gt; development is sponsored by &lt;br/&gt;&lt;a href=&quot;http://www.blue-systems.com/&quot;&gt;Blue Systems&lt;/a&gt; - Liberating Software.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../src/modules/welcome/WelcomePage.cpp" line="89"/>
+        <location filename="../src/modules/welcome/WelcomePage.cpp" line="259"/>
         <source>%1 support</source>
         <translation>%1 dukungan</translation>
+    </message>
+</context>
+<context>
+    <name>WelcomeQmlViewStep</name>
+    <message>
+        <location filename="../src/modules/welcomeq/WelcomeQmlViewStep.cpp" line="58"/>
+        <source>Welcome</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -2938,6 +3123,96 @@ Keluaran:
         <location filename="../src/modules/welcome/WelcomeViewStep.cpp" line="62"/>
         <source>Welcome</source>
         <translation>Selamat Datang</translation>
+    </message>
+</context>
+<context>
+    <name>notes</name>
+    <message>
+        <location filename="../src/branding/kaos_branding/notes.qml" line="50"/>
+        <source>&lt;h3&gt;KaOS - 2020.02&lt;/h3&gt;
+            &lt;p&gt;A nice way of starting 2020 is to present to you the January release of a new stable ISO.&lt;/p&gt;
+            
+            &lt;p&gt;For the many changes in this release, two stand out.  First one is the addition of signed kernel modules for Linux 5.4. All internal modules are now signed automatically during the kernel build, out of tree modules like virtualbox-modules and NVIDIA packages have the signing added too. Building of those modules was adjusted to use the kernel specific signing files during each and every rebuild. You can harden your system by adding &lt;code&gt;module.sig_enforce=1&lt;/code&gt; to your kernel boot line. To check if your systems contains any unsigned:&lt;/p&gt;
+            
+            &lt;p&gt;&lt;code&gt;for mod in $(lsmod | tail -n +2 | cut -d' ' -f1); do modinfo ${mod} | grep -q 'signature' || echo 'no signature for module: ${mod}' ; done&lt;/code&gt;&lt;/p&gt;
+            
+            &lt;p&gt;Second: To better accommodate hybrid systems and non-free NVIDIA, there is now a switch from libgl to vendor neutral libglvnd. This will make the NVIDIA bumblebee packages obsolete. Xorg-server was updated to 1.20.6, this now includes the needed patches to use Prime instead of Bumblebee. The needed scripts for this are packaged as the &lt;code&gt;prime&lt;/code&gt; package. The hardware-detection scripts and Calamares installer have their code adjusted to use the new Prime option. The availability of NVIDIA hybrid testing hardware was limited, so you might still encounter some issue with Prime.&lt;/p&gt;
+            
+            &lt;p&gt;Work has also continued last month to further remove python2. This time it was removed as makedepend from as many as possible.&lt;/b&gt;
+            
+            &lt;p&gt;You will find KDE Applications 19.12 on this ISO. Highlights of 19.12 include Kdenlive now comes with a spectacular new sound mixer. Dolphin redesigned advanced search options and now you can go backwards and forwards in the history of places you have already visited. KDE-Connect implemented a new Kirigami interface which provides new features for desktop-to-desktop users, such as media control, remote input, device ringing, file transfer and running commands. For Elisa, indexing music files has improved and now supports web radios and ships with a few examples for you to try.&lt;/b&gt;
+            Frameworks is at 5.65.0, Plasma at 5.17.4 and KDE Applications at 19.12.0. All built on Qt 5.14.0.
+            
+            &lt;p&gt;For the installer Calamares, support for non-free NVIDIA with Prime has been added.&lt;/p&gt;
+            
+            &lt;p&gt;Since LibreOffice 6.2, it is now possible to supply this as a pure Qt5/kf5 application.  LibreOffice has thus replaced Calligra as the default Office Application for KaOS.
+            
+            &lt;p&gt;KaOS' creation &lt;strong&gt;Croeso&lt;/strong&gt; (Welsh for welcome) for helping with configuring a new install is included.  It will run on the newly installed system and offers to adjust some 15 commonly used settings and replaces the formerly used, PyQt based first run wizard Kaptan.  It also includes a custom Wallpaper selector, distribution info and news.  It is written in QML and fits well with the Welcome application used in the Live system.  The latter now includes a fully rewritten (also in QML) Installation Guide.&lt;/p&gt;
+            
+            &lt;p&gt;There is an option to verify the authenticity of downloaded KaOS ISO files through GPG signature verification, see the Download page for further details and instructions.&lt;/p&gt;
+            
+            &lt;p&gt;A KaOS specific tool to write ISO files to USB is in use.  Not only does IsoWriter write to USB it also gives the option to recover your USB stick after using it for an ISO, something that regular dd copy or the previously used Imagewriter were not able to do. It includes the option to verify the written USB in comparison to the used ISO file.&lt;/p&gt;
+            
+            &lt;p&gt;Most notable major updates to the base of the system are LLVM/Clang 9.0.1, Glib2 2.62.4, Bison 3.4.2, Python3 3.7.6, Linux 5.4.7, Protobuf 3.11.1, Mesa 19.2.8, NetworkManager 1.22.2, Nano 4.7, GStreamer 1.16.2 and Qt 5.14.0&lt;/p&gt;
+            
+            &lt;p&gt;KaOS repositories no longer provide Qt 4.  It is a good three years ago that development for Qt 4 stopped, late 2015 all support including security fixes ended.  Any application that has not made the transition to Qt 5 in all this time can no longer be supported in KaOS.  Either they actually are no longer maintained or their development is ignoring the implications of building on a possible insecure toolkit.&lt;/p&gt;
+            
+            &lt;p&gt;The artwork includes custom icon themes for light and dark themes. Midna and Midna Dark both create a complete unified look from boot-up all the way through logout.&lt;/p&gt;
+
+            &lt;p&gt;This ISO uses the &lt;b&gt;CRC and finobt enabled&lt;/b&gt; XFS filesystem as default. CRCs enable enhanced error detection due to hardware issues, whilst the format changes also improves crash recovery algorithms and the ability  of  various  tools to validate and repair metadata corruptions when they are found.  The  free  inode  btree does not index used inodes, allowing faster, more consistent inode allocation performance as filesystems age.&lt;/p&gt;
+            
+            &lt;p&gt;&lt;strong&gt;Octopi&lt;/strong&gt; is becoming a very crucial part of full system maintenance for KaOS. It is not just a GUI frontend to pacman. Tools like making sure a mirror is synced before starting any update, looking at the pacman logs, an option to get a paste from a complete snapshot of all info of a system with the SysInfo tool are included. Also included are very simple ways to open files, like copy to clipboard the file path shown in Octopi. To make sure the system doesn't start using too much disk space for the pacman cache, but still giving the user the option to retain some recent packages, the cache-cleaner tool is a great addition. The built-in tool to access &lt;b&gt;KCP&lt;/b&gt; has now a much clearer place with the addition of its own foreign icon in the menu-bar. New added is the option to select custom icons for the systemtray.&lt;/p&gt;
+            
+            &lt;p&gt;For UEFI installs, KaOS uses the simple, transparent but quite powerful systemd-boot as bootloader.&lt;/p&gt;
+            
+            &lt;p&gt;To learn more about the goals and ideas behind KaOS, please read the &lt;b&gt;http://kaosx.us/&lt;/b&gt;, &lt;b&gt;http://kaosx.us/about/&lt;/b&gt;, and &lt;b&gt;http://kaosx.us/faq/&lt;/b&gt; pages.&lt;/p&gt;
+            
+            &lt;p&gt;To avoid any misunderstanding and confusion, KaOS is &lt;b&gt;not based upon, derived of, or inspired by&lt;/b&gt; any one particular distribution. It is completely independent, build entirely from scratch with its own repositories. To read more about this see &lt;b&gt;http://kaosx.us/about/based/&lt;/b&gt;. A &lt;b&gt;rolling release distribution&lt;/b&gt; never has a final release, every ISO is merely a snapshot of the current status of the repositories. An idea what is currently available:&lt;/p&gt;
+            
+            &lt;p&gt;The ISO ships with &lt;b&gt;Frameworks 5.65.0, Plasma 5.17.4, KDE Applications 19.12.0&lt;/b&gt;, Linux 5.4.7, Systemd 243, Kmod 26, NetworkManager 1.22.2, LibreOffice 6.3.4, Krita 4.2.8, Elisa, Xorg-Server 1.20.6, Mesa 19.2.8, Glibc 2.30, GCC 9.2.0, non-free Nvidia 440.44, Pepperflash and Python3 3.7.6 to name a few.&lt;/p&gt;
+            
+            &lt;p&gt;The package manager is &lt;strong&gt;Pacman 5.2.1&lt;/strong&gt;, with the simple but powerful Octopi 0.9.0 as GUI frontend. Falkon is the default web browser, it is Qt based and the successor of Qupzilla. &lt;b&gt;GFXboot&lt;/b&gt; is included with KaOS artwork, Grub theme is Midna, Look &amp;amp; Feel is a KaOS exclusive version Midna.&lt;/p&gt;
+            
+            &lt;p&gt;&lt;b&gt;Repositories&lt;/b&gt; of KaOS will stay limited in size and expect it to stay at the current maximum of about 2100-2200. A gist of what is available, besides the stable kernel there is Linux-next 5.4, LibreOffice 6.3.4,VLC, Vokoscreen, Blender, Kodi, Calibre, Sigil, Vulkan packages, a few games like 0ad and Knights.&lt;br /&gt;
+            A limited number of the most well-known GTK applications are available, examples Firefox 71.0, Chrome 81, Ardour 5.12.0, Inkscape 0.92.4, GIMP 2.10.14 and Google-talkplugin 5.41.3.0.1.&lt;br /&gt;
+            Complete language packs are available for KDE, Calligra, Firefox, LibreOffice and Thunderbird. For IM, Fcitx 4.2.9.6 is available as a rather complete group.&lt;/p&gt;
+            
+            &lt;p&gt;&lt;b&gt;Known issues:&lt;/b&gt;&lt;/p&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Some Intel CPU systems might have an issue kernel’s entropy pool and have a long boot delay, if encountered add &lt;strong&gt;random.trust_cpu=1&lt;/strong&gt; to the kernel boot line.
+                &lt;li&gt;Installing on RAID is currently not possible&lt;/li&gt;
+            &lt;/ul&gt;
+            
+            &lt;p&gt;To create &lt;b&gt;reliable&lt;/b&gt; installation media, please follow the instructions from the &lt;b&gt;http://kaosx.us/download/&lt;/b&gt; page. KaOS&apos;s ISO&apos;s &lt;b&gt;do not support Unetbootin or Rufus&lt;/b&gt;, and DVDs need a burn speed &lt;b&gt;no higher than 4x&lt;/b&gt;.&lt;/p&gt;</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>notesqml</name>
+    <message>
+        <location filename="../src/modules/notesqml/notesqml.qml" line="51"/>
+        <source>&lt;h3&gt;Generic GNU/Linux 2020.2 LTS &lt;quote&gt;Turgid Tuba&lt;/quote&gt;&lt;/h3&gt;
+            &lt;p&gt;This an example QML file, showing options in RichText with Flickable content.&lt;/p&gt;
+            
+            &lt;p&gt;QML with RichText can use HTML tags, Flickable content is useful for touchscreens.&lt;/p&gt;
+            
+            &lt;p&gt;&lt;b&gt;This is bold text&lt;/b&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;i&gt;This is italic text&lt;/i&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;u&gt;This is underlined text&lt;/u&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;center&gt;This text will be center-aligned.&lt;/center&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;s&gt;This is strikethrough&lt;/s&gt;&lt;/p&gt;
+            
+            &lt;p&gt;Code example:
+            &lt;code&gt;ls -l /home&lt;/code&gt;&lt;/p&gt;
+            
+            &lt;p&gt;&lt;b&gt;Lists:&lt;/b&gt;&lt;/p&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Intel CPU systems&lt;/li&gt;
+                &lt;li&gt;AMD CPU systems&lt;/li&gt;
+            &lt;/ul&gt;
+            
+            &lt;p&gt;The vertical scrollbar is adjustable, current width set to 10.&lt;/p&gt;</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
